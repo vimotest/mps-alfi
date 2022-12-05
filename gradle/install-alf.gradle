@@ -1,0 +1,52 @@
+/*
+  Gradle tasks to download and install the alf reference implementation.
+ */
+
+if (!project.hasProperty("alfVersion")) {
+    throw new RuntimeException("you need to set the property 'alfVersion'")
+}
+
+def alfDownloadLink = "https://github.com/ModelDriven/Alf-Reference-Implementation/releases/download/v${alfVersion}/alf.zip"
+def alfZipFile = file("build/download/alf-v${alfVersion}.zip")
+def alfInstallDir = file("build/alf")
+
+task downloadAlf {
+    group 'alf-install'
+    onlyIf {
+        !alfZipFile.exists()
+    }
+    doLast {
+        alfZipFile.parentFile.mkdirs()
+        println("downloading $alfDownloadLink ... (might take a moment, it is around 20-30 MB)")
+        new URL(alfDownloadLink).withInputStream { downloadInputStream -> alfZipFile.withOutputStream { it << downloadInputStream } }
+    }
+}
+
+task installAlf {
+    group 'alf-install'
+    dependsOn downloadAlf
+
+    onlyIf {
+        !alfInstallDir.exists()
+    }
+    doLast {
+        println("installing alf v$alfVersion")
+
+        alfInstallDir.deleteDir()
+        alfInstallDir.mkdir()
+
+        println("unzipping $alfZipFile into $alfInstallDir")
+        copy {
+            from(zipTree(alfZipFile)) {
+                include "alf/**"
+                eachFile { fcd ->
+                    fcd.relativePath = new RelativePath(true, fcd.relativePath.segments.drop(1))
+                }
+                includeEmptyDirs = false
+            }
+            into alfInstallDir
+        }
+
+        println("finished installing alf v$alfVersion")
+    }
+}

@@ -16,6 +16,7 @@ pkgs.mkShell {
   shellHook = ''
     alias gradlew=$(pwd)/gradlew
     export PREINSTALLED_JAVA_PATH='${java-to-use}'
+    alias alf="bash -c 'inner_cwd="'"$(pwd)"'";cd $(pwd)/build/alf; bash alf -m "'"$inner_cwd/Models" ''${@}'"' -- "
   '';
 }
 
