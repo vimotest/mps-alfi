@@ -117,6 +117,9 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -284,6 +287,36 @@
               <node concept="3qWCbU" id="2e1rFG9npoH" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2SMO68rC8ys" role="3bR37C">
+          <node concept="3bR9La" id="2SMO68rC8yt" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="sSER0Dh$2m" role="3bR37C">
+          <node concept="3bR9La" id="sSER0Dh$2n" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="sSER0Dh$2o" role="3bR37C">
+          <node concept="3bR9La" id="sSER0Dh$2p" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6HwE6YVC5Ue" role="3bR31x">
+          <node concept="3LXTmp" id="6HwE6YVC5Uf" role="3rtmxm">
+            <node concept="55IIr" id="6HwE6YVC5Ug" role="3LXTmr">
+              <node concept="2Ry0Ak" id="6HwE6YVC5Uh" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6HwE6YVC5Ui" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6HwE6YVC5Uk" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
         </node>
