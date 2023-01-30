@@ -66,6 +66,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -113,6 +116,7 @@
   </node>
   <node concept="18kY7G" id="sSER0D9qiS">
     <property role="TrG5h" value="check_EndOfLineComment" />
+    <property role="3GE5qa" value="lexical.comments" />
     <node concept="3clFbS" id="sSER0D9qiT" role="18ibNy">
       <node concept="3clFbJ" id="sSER0D9r4c" role="3cqZAp">
         <node concept="3fqX7Q" id="sSER0D9r4d" role="3clFbw">
@@ -153,6 +157,7 @@
   </node>
   <node concept="18kY7G" id="sSER0D9qj5">
     <property role="TrG5h" value="check_InLineComment" />
+    <property role="3GE5qa" value="lexical.comments" />
     <node concept="3clFbS" id="sSER0D9qj6" role="18ibNy">
       <node concept="3clFbJ" id="sSER0D9qq3" role="3cqZAp">
         <node concept="3fqX7Q" id="sSER0D9qq4" role="3clFbw">

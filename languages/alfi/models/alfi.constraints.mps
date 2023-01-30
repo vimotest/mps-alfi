@@ -80,8 +80,14 @@
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="6ldY1Si$Wia">
+    <property role="3GE5qa" value="lexical" />
     <ref role="1M2myG" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
     <node concept="EnEH3" id="6ldY1Si$Wj7" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -106,6 +112,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="sSER0Dcjvi">
+    <property role="3GE5qa" value="Statements" />
     <ref role="1M2myG" to="28lk:2SMO68r$0y0" resolve="Block" />
     <node concept="9SLcT" id="sSER0Dcjvj" role="9SGkU">
       <node concept="3clFbS" id="sSER0Dcjvk" role="2VODD2">
@@ -167,6 +174,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="sSER0DgJxn">
+    <property role="3GE5qa" value="lexical.comments" />
     <ref role="1M2myG" to="28lk:2SMO68r_3QK" resolve="EndOfLineComment" />
     <node concept="9SQb8" id="sSER0DgJxo" role="9SGkC">
       <node concept="3clFbS" id="sSER0DgJxp" role="2VODD2">
@@ -186,6 +194,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="sSER0Dhr0J">
+    <property role="3GE5qa" value="lexical.comments" />
     <ref role="1M2myG" to="28lk:2SMO68rC03P" resolve="InLineComment" />
     <node concept="9SQb8" id="sSER0Dhr0K" role="9SGkC">
       <node concept="3clFbS" id="sSER0Dhr0L" role="2VODD2">
