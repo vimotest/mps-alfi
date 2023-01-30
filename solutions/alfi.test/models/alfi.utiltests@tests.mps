@@ -633,7 +633,7 @@
         <node concept="3clFbS" id="2SMO68rzE9q" role="3clF47">
           <node concept="3vwNmj" id="2SMO68rzE9r" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzEYc" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzF2i" role="37wK5m">
                 <property role="Xl_RC" value="comment" />
@@ -643,7 +643,7 @@
           <node concept="3vwNmj" id="2SMO68rzFMa" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzFMb" role="3vwVQn">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="3cpWs3" id="2SMO68rzGHU" role="37wK5m">
                 <node concept="Xl_RD" id="2SMO68rzGIT" role="3uHU7w">
                   <property role="Xl_RC" value="comment" />
@@ -661,7 +661,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzGKz" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzGK$" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzGKC" role="37wK5m">
                 <property role="Xl_RC" value="comment* with a star" />
@@ -671,7 +671,7 @@
           <node concept="3vwNmj" id="2SMO68rzHtr" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzHts" role="3vwVQn">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="Xl_RD" id="2SMO68rzHtt" role="37wK5m">
                 <property role="Xl_RC" value="comment/ with a slash" />
               </node>
@@ -680,7 +680,7 @@
           <node concept="3vwNmj" id="2SMO68rzHCm" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzHCn" role="3vwVQn">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="Xl_RD" id="2SMO68rzHCo" role="37wK5m">
                 <property role="Xl_RC" value="comment* with/ a star and slash" />
               </node>
@@ -688,7 +688,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzKj9" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzKja" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzKjb" role="37wK5m">
                 <property role="Xl_RC" value="another comment * / with a star and slash" />
@@ -697,7 +697,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzHWN" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzHWO" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzHWP" role="37wK5m">
                 <property role="Xl_RC" value="c*" />
@@ -707,7 +707,7 @@
           <node concept="3vwNmj" id="2SMO68rzI8X" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzI8Y" role="3vwVQn">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="Xl_RD" id="2SMO68rzI8Z" role="37wK5m">
                 <property role="Xl_RC" value="c/" />
               </node>
@@ -715,7 +715,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzIdJ" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzIdK" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzIdL" role="37wK5m">
                 <property role="Xl_RC" value="/" />
@@ -724,7 +724,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzKDj" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzKDk" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzKDl" role="37wK5m">
                 <property role="Xl_RC" value="/comment" />
@@ -733,7 +733,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzIj6" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzIj7" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzIj8" role="37wK5m">
                 <property role="Xl_RC" value="/*" />
@@ -743,7 +743,7 @@
           <node concept="3vwNmj" id="2SMO68rzIp2" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzIp3" role="3vwVQn">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="Xl_RD" id="2SMO68rzIp4" role="37wK5m">
                 <property role="Xl_RC" value="comment /*" />
               </node>
@@ -751,7 +751,7 @@
           </node>
           <node concept="3vwNmj" id="2SMO68rzJCh" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJCi" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzJNO" role="37wK5m">
                 <property role="Xl_RC" value="" />
@@ -803,7 +803,7 @@
         <node concept="3clFbS" id="2SMO68rzEae" role="3clF47">
           <node concept="3vFxKo" id="2SMO68rzEai" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJ8Z" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzJ90" role="37wK5m">
                 <property role="Xl_RC" value="*Comment" />
@@ -812,7 +812,7 @@
           </node>
           <node concept="3vFxKo" id="2SMO68rzJBg" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJBh" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzJBi" role="37wK5m">
                 <property role="Xl_RC" value="*c" />
@@ -822,7 +822,7 @@
           <node concept="3vFxKo" id="2SMO68rzJSu" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJSv" role="3vFALc">
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <node concept="Xl_RD" id="2SMO68rzJSw" role="37wK5m">
                 <property role="Xl_RC" value="*" />
               </node>
@@ -830,7 +830,7 @@
           </node>
           <node concept="3vFxKo" id="2SMO68rzJUA" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJUB" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzJUC" role="37wK5m">
                 <property role="Xl_RC" value="Comment ** something" />
@@ -839,7 +839,7 @@
           </node>
           <node concept="3vFxKo" id="2SMO68rzJZj" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzJZk" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzJZl" role="37wK5m">
                 <property role="Xl_RC" value="Comment */ something" />
@@ -848,7 +848,7 @@
           </node>
           <node concept="3vFxKo" id="2SMO68rzK3R" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzK3S" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzK3T" role="37wK5m">
                 <property role="Xl_RC" value="Comment **" />
@@ -857,7 +857,7 @@
           </node>
           <node concept="3vFxKo" id="2SMO68rzK7I" role="3cqZAp">
             <node concept="2YIFZM" id="2SMO68rzK7J" role="3vFALc">
-              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidCommentText" />
+              <ref role="37wK5l" to="2a3x:2SMO68rz_zV" resolve="isValidDocumentationCommentText" />
               <ref role="1Pybhc" to="2a3x:2SMO68rz_o3" resolve="AlfCommentTextValidation" />
               <node concept="Xl_RD" id="2SMO68rzK7K" role="37wK5m">
                 <property role="Xl_RC" value="Comment */" />

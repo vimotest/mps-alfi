@@ -68,7 +68,7 @@
     <property role="TrG5h" value="Block" />
     <property role="34LRSv" value="{" />
     <property role="R4oN_" value="A sequence of statements" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2SMO68r$0y1" role="1TKVEi">
       <property role="IQ2ns" value="3328952194368014465" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
