@@ -32,14 +32,14 @@ task mpsTest {
     dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
 }
 
-task openProjectInMps {
+task startMpsAndOpenProject {
     group 'mps'
     dependsOn 'openProjectInMpsForCurrentOs'
 }
 
 task buildAndOpenProjectInMps {
     group 'mps'
-    dependsOn mpsBuild, openProjectInMps
+    dependsOn mpsBuild, startMpsAndOpenProject
 }
 
 apply from: 'gradle/install-alf.gradle'
