@@ -44,6 +44,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -74,6 +77,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -89,6 +93,10 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -242,9 +250,14 @@
           <node concept="2YIFZM" id="sSER0D8qOg" role="3cqZAk">
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
             <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" resolve="join" />
-            <node concept="10M0yZ" id="sSER0D8sSo" role="37wK5m">
-              <ref role="1PxDUh" to="2a3x:5ijjxpCQEAK" resolve="AlfLexConstants" />
-              <ref role="3cqZAo" to="2a3x:2SMO68r_8QV" resolve="LINE_TERMINATOR" />
+            <node concept="3cpWs3" id="2kuSLC0oonf" role="37wK5m">
+              <node concept="Xl_RD" id="2kuSLC0ooQ0" role="3uHU7B">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="10M0yZ" id="sSER0D8sSo" role="3uHU7w">
+                <ref role="1PxDUh" to="2a3x:5ijjxpCQEAK" resolve="AlfLexConstants" />
+                <ref role="3cqZAo" to="2a3x:2SMO68r_8QV" resolve="LINE_TERMINATOR" />
+              </node>
             </node>
             <node concept="37vLTw" id="sSER0D905W" role="37wK5m">
               <ref role="3cqZAo" node="sSER0D8NOb" resolve="lineStrings" />
@@ -383,9 +396,14 @@
           <node concept="2YIFZM" id="sSER0DgWX9" role="3cqZAk">
             <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" resolve="join" />
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-            <node concept="10M0yZ" id="sSER0DgWXa" role="37wK5m">
-              <ref role="3cqZAo" to="2a3x:2SMO68r_8QV" resolve="LINE_TERMINATOR" />
-              <ref role="1PxDUh" to="2a3x:5ijjxpCQEAK" resolve="AlfLexConstants" />
+            <node concept="3cpWs3" id="2kuSLC0opWV" role="37wK5m">
+              <node concept="Xl_RD" id="2kuSLC0oqar" role="3uHU7B">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="10M0yZ" id="sSER0DgWXa" role="3uHU7w">
+                <ref role="3cqZAo" to="2a3x:2SMO68r_8QV" resolve="LINE_TERMINATOR" />
+                <ref role="1PxDUh" to="2a3x:5ijjxpCQEAK" resolve="AlfLexConstants" />
+              </node>
             </node>
             <node concept="37vLTw" id="sSER0DgWXb" role="37wK5m">
               <ref role="3cqZAo" node="sSER0DgWWQ" resolve="lineStrings" />

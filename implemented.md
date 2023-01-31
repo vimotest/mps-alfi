@@ -22,17 +22,22 @@ Limitations are listed as subpoints of the chapters.
 ## Expressions (8)
 
 - [ ] 8.1 Overview (Local Names and Assigned Sources)
-- [ ] 8.2 Qualified Names
+- [x] 8.2 Qualified Names
+  - not TypeName
+  - not DotQualifiedName
+  - not Templates
 - [ ] 8.3 Primary Expressions
   - [x] 8.3.1 Overview (no implementation needed)
-  - [ ] 8.3.2 Literal Expressions
-  - [ ] 8.3.3 Name Expressions
-  - [ ] 8.3.4 this Expressions
+  - [x] 8.3.2 Literal Expressions
+    - only boolean and string
+  - [x] 8.3.3 Name Expressions
+  - [x] 8.3.4 this Expressions
   - [ ] 8.3.5 Parenthesized Expressions
   - [ ] 8.3.6 Property Access Expressions
-  - [ ] 8.3.7 Invocation Expressions
-  - [ ] 8.3.8 Tuples
-  - [ ] 8.3.9 Behavior Invocation Expressions
+  - [x] 8.3.7 Invocation Expressions
+  - [x] 8.3.8 Tuples
+    - not named Tuples
+  - [x] 8.3.9 Behavior Invocation Expressions
   - [ ] 8.3.10 Feature Invocation Expressions
   - [ ] 8.3.11 Super Invocation Expressions
   - [ ] 8.3.12 Instance Creation Expressions

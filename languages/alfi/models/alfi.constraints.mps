@@ -63,6 +63,7 @@
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="1213098023997" name="property" index="1MhHOB" />
@@ -231,6 +232,29 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="2kuSLC0o$L_">
+    <property role="3GE5qa" value="expressions.primary.literal" />
+    <ref role="1M2myG" to="28lk:2kuSLC0lUpG" resolve="StringLiteralExpression" />
+    <node concept="EnEH3" id="2kuSLC0o$LA" role="1MhHOB">
+      <ref role="EomxK" to="28lk:2kuSLC0lUpH" resolve="value" />
+      <node concept="QB0g5" id="2kuSLC0o$LC" role="QCWH9">
+        <node concept="3clFbS" id="2kuSLC0o$LD" role="2VODD2">
+          <node concept="3clFbF" id="2kuSLC0o$Qk" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0o$Vf" role="3clFbG">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="1Wqviy" id="2kuSLC0o$VR" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2kuSLC0q2mz">
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <ref role="1M2myG" to="28lk:2kuSLC0oUip" resolve="Tuple" />
+    <ref role="1MND4H" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
   </node>
 </model>
 

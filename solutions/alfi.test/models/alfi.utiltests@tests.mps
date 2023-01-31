@@ -1363,5 +1363,372 @@
       </node>
     </node>
   </node>
+  <node concept="3s_ewN" id="2kuSLC0nwYj">
+    <property role="3s_ewP" value="TestAlfStringLiteralValidation" />
+    <node concept="3Tm1VV" id="2kuSLC0nwYk" role="1B3o_S" />
+    <node concept="3s_gsd" id="2kuSLC0nwYl" role="3s_ewO">
+      <node concept="3s$Bmu" id="2kuSLC0nwYm" role="3s_gse">
+        <property role="3s$Bm0" value="testIsValidStringLiteralCorrect" />
+        <node concept="3cqZAl" id="2kuSLC0nwYn" role="3clF45" />
+        <node concept="3Tm1VV" id="2kuSLC0nwYo" role="1B3o_S" />
+        <node concept="3clFbS" id="2kuSLC0nwYp" role="3clF47">
+          <node concept="3vwNmj" id="2kuSLC0nwYq" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nypB" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidAlfStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="Xl_RD" id="2kuSLC0n$91" role="37wK5m">
+                <property role="Xl_RC" value="This is a string." />
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nwYt" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nI2A" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0oGPT" role="37wK5m">
+                <node concept="Xl_RD" id="2kuSLC0oGTm" role="3uHU7w">
+                  <property role="Xl_RC" value=") in it." />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oGxU" role="3uHU7B">
+                  <node concept="3cpWs3" id="2kuSLC0oFGc" role="3uHU7B">
+                    <node concept="Xl_RD" id="2kuSLC0nI2B" role="3uHU7B">
+                      <property role="Xl_RC" value="This is a string with a quote character (" />
+                    </node>
+                    <node concept="1Xhbcc" id="2kuSLC0oFJc" role="3uHU7w">
+                      <property role="1XhdNS" value="\\" />
+                    </node>
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oGJA" role="3uHU7w">
+                    <property role="1XhdNS" value="&quot;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nwYw" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nI6p" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0oI7R" role="37wK5m">
+                <node concept="Xl_RD" id="2kuSLC0oIbM" role="3uHU7w">
+                  <property role="Xl_RC" value=") in it." />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oI0h" role="3uHU7B">
+                  <node concept="3cpWs3" id="2kuSLC0oHid" role="3uHU7B">
+                    <node concept="Xl_RD" id="2kuSLC0nI6q" role="3uHU7B">
+                      <property role="Xl_RC" value="This is a string with a new line (" />
+                    </node>
+                    <node concept="1Xhbcc" id="2kuSLC0oHpZ" role="3uHU7w">
+                      <property role="1XhdNS" value="\\" />
+                    </node>
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oI0s" role="3uHU7w">
+                    <property role="1XhdNS" value="n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nwYz" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nIag" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0oJn6" role="37wK5m">
+                <node concept="3cpWs3" id="2kuSLC0oIBB" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0nIah" role="3uHU7B">
+                    <property role="Xl_RC" value="This is a string with a tab at the end." />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oIFz" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+                <node concept="1Xhbcc" id="2kuSLC0oJFi" role="3uHU7w">
+                  <property role="1XhdNS" value="t" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nwYA" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nIea" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0oJRn" role="37wK5m">
+                <node concept="3cpWs3" id="2kuSLC0oKmE" role="3uHU7B">
+                  <node concept="1Xhbcc" id="2kuSLC0oJVB" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oKG9" role="3uHU7B">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nIeb" role="3uHU7w">
+                  <property role="Xl_RC" value="This is a string with a backslash at the start" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nwYD" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nIi8" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0oMD4" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0oMDf" role="3uHU7w">
+                  <property role="1XhdNS" value="f" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oM0z" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0oM56" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oLbV" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0oMMF" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0oMMG" role="3vwVQn">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0oMMH" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0oMMI" role="3uHU7w">
+                  <property role="1XhdNS" value="\'" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oMMJ" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0oMMK" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oMML" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0oMTD" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0oMTE" role="3vwVQn">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0oMTF" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0oMTG" role="3uHU7w">
+                  <property role="1XhdNS" value="&quot;" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oMTH" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0oMTI" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oMTJ" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0oNoi" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0oNoj" role="3vwVQn">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0oNok" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0oNol" role="3uHU7w">
+                  <property role="1XhdNS" value="b" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0oNom" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0oNon" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0oNoo" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nMCz" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nMC$" role="3vwVQn">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="Xl_RD" id="2kuSLC0nMC_" role="37wK5m">
+                <property role="Xl_RC" value="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="2kuSLC0nMIW" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nMIX" role="3vwVQn">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="Xl_RD" id="2kuSLC0nMIY" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="2kuSLC0nwZa" role="3s_gse">
+        <property role="3s$Bm0" value="testIsValidStringLiteralWrong" />
+        <node concept="3cqZAl" id="2kuSLC0nwZb" role="3clF45" />
+        <node concept="3Tm1VV" id="2kuSLC0nwZc" role="1B3o_S" />
+        <node concept="3clFbS" id="2kuSLC0nwZd" role="3clF47">
+          <node concept="3vFxKo" id="2kuSLC0nwZe" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nIXF" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nNb_" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nNbK" role="3uHU7w">
+                  <property role="1XhdNS" value="\n" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nIXG" role="3uHU7B">
+                  <property role="Xl_RC" value="This is a string with a real new line." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nwZh" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nIXJ" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nNyR" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nNBL" role="3uHU7B">
+                  <property role="1XhdNS" value="\n" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nIXK" role="3uHU7w">
+                  <property role="Xl_RC" value="Newline at the start" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nwZk" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nJ0J" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nPab" role="37wK5m">
+                <node concept="Xl_RD" id="2kuSLC0nPjM" role="3uHU7w">
+                  <property role="Xl_RC" value="in the middle" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0nOhb" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0nJ0K" role="3uHU7B">
+                    <property role="Xl_RC" value="Newline" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0nOmf" role="3uHU7w">
+                    <property role="1XhdNS" value="\n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nP$K" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nP$L" role="3vFALc">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0nRhD" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nRof" role="3uHU7w">
+                  <property role="1XhdNS" value="&quot;" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nP$O" role="3uHU7B">
+                  <property role="Xl_RC" value="This is a string with an unescaped quote." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nP$P" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nP$Q" role="3vFALc">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0nP$R" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nP$S" role="3uHU7B">
+                  <property role="1XhdNS" value="&quot;" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nP$T" role="3uHU7w">
+                  <property role="Xl_RC" value="Quote at the start" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nP$U" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nP$V" role="3vFALc">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0nP$W" role="37wK5m">
+                <node concept="Xl_RD" id="2kuSLC0nP$X" role="3uHU7w">
+                  <property role="Xl_RC" value="in the middle" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0nP$Y" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0nP$Z" role="3uHU7B">
+                    <property role="Xl_RC" value="Quote" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0nP_0" role="3uHU7w">
+                    <property role="1XhdNS" value="&quot;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nThj" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nThk" role="3vFALc">
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <node concept="3cpWs3" id="2kuSLC0nThl" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nThm" role="3uHU7w">
+                  <property role="1XhdNS" value="\\" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nThn" role="3uHU7B">
+                  <property role="Xl_RC" value="This is a string with an unescaped backslash" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nTho" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nThp" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nThq" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nThr" role="3uHU7B">
+                  <property role="1XhdNS" value="\\" />
+                </node>
+                <node concept="Xl_RD" id="2kuSLC0nThs" role="3uHU7w">
+                  <property role="Xl_RC" value="Backslash at the start" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nTht" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nThu" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nThv" role="37wK5m">
+                <node concept="Xl_RD" id="2kuSLC0nThw" role="3uHU7w">
+                  <property role="Xl_RC" value="in the middle" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0nThx" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0nThy" role="3uHU7B">
+                    <property role="Xl_RC" value="Backslash" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0nThz" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vFxKo" id="2kuSLC0nwZn" role="3cqZAp">
+            <node concept="2YIFZM" id="2kuSLC0nJ0N" role="3vFALc">
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
+              <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
+              <node concept="3cpWs3" id="2kuSLC0nZkV" role="37wK5m">
+                <node concept="1Xhbcc" id="2kuSLC0nZtq" role="3uHU7w">
+                  <property role="1XhdNS" value="u" />
+                </node>
+                <node concept="3cpWs3" id="2kuSLC0nYgI" role="3uHU7B">
+                  <node concept="Xl_RD" id="2kuSLC0nJ0O" role="3uHU7B">
+                    <property role="Xl_RC" value="Unknown escape sequence" />
+                  </node>
+                  <node concept="1Xhbcc" id="2kuSLC0nYti" role="3uHU7w">
+                    <property role="1XhdNS" value="\\" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
