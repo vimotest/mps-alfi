@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi/sandbox/alfi.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/alfi.build/alfi.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/alfi.test/alfi.test.msd" folder="" />
+    </projectModules>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/alfi.iml" filepath="$PROJECT_DIR$/.idea/alfi.iml" />
+    </modules>
+  </component>
+</project>
