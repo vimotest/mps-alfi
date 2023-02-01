@@ -6,9 +6,7 @@ ext.alfVersion = "1.1.0k"
 // here add your required plugins
 // to find a plugin entry, search in https://plugins.jetbrains.com/ for the plugin name and obtain the ID from URL (e.g. 13242 for grammarcells)
 // if you need a specific version for a plugin, add it in []-brackets
-ext.mpsPlugins = [ "de.itemis.mps.extensions.build": 17136,
-                   "de.itemis.mps.grammarcells": 13242,
-                   "LangDoc[2021.2]": 12325]
+ext.mpsPlugins = [ ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
 
