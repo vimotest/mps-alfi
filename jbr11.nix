@@ -2,13 +2,13 @@
 
 openjdk11.overrideAttrs (oldAttrs: rec {
   pname = "jetbrains-jdk";
-  version = "11_0_13-b1751.25";
+  version = "11_0_14_1-b1751.46";
 
   src = fetchFromGitHub {
     owner = "JetBrains";
     repo = "JetBrainsRuntime";
     rev = "jb${version}";
-    sha256 = "sha256-TPNYZUkAoiZfp7Ci3fslKnRNGY1lnyIhXYUt6J31lwI=";
+    sha256 = "sha256-vhghxn2X7whwlwcthXyEtTLkwAUjUu8owABkf3a7LTQ=";
   };
   patches = [];
   meta = with lib; {

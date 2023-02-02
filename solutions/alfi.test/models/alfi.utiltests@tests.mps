@@ -1374,7 +1374,7 @@
         <node concept="3clFbS" id="2kuSLC0nwYp" role="3clF47">
           <node concept="3vwNmj" id="2kuSLC0nwYq" role="3cqZAp">
             <node concept="2YIFZM" id="2kuSLC0nypB" role="3vwVQn">
-              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidAlfStringLiteral" />
+              <ref role="37wK5l" to="2a3x:2kuSLC0moRo" resolve="isValidStringLiteral" />
               <ref role="1Pybhc" to="2a3x:2kuSLC0morN" resolve="AlfStringLiteralValidation" />
               <node concept="Xl_RD" id="2kuSLC0n$91" role="37wK5m">
                 <property role="Xl_RC" value="This is a string." />
