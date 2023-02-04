@@ -113,7 +113,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="sSER0Dcjvi">
-    <property role="3GE5qa" value="Statements" />
+    <property role="3GE5qa" value="statements" />
     <ref role="1M2myG" to="28lk:2SMO68r$0y0" resolve="Block" />
     <node concept="9SLcT" id="sSER0Dcjvj" role="9SGkU">
       <node concept="3clFbS" id="sSER0Dcjvk" role="2VODD2">
@@ -255,6 +255,11 @@
     <property role="3GE5qa" value="expressions.primary.invocation" />
     <ref role="1M2myG" to="28lk:2kuSLC0oUip" resolve="Tuple" />
     <ref role="1MND4H" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
+  </node>
+  <node concept="1M2fIO" id="6cBsaQxDBJD">
+    <property role="3GE5qa" value="statements.for" />
+    <ref role="1M2myG" to="28lk:6cBsaQxChVc" resolve="LoopVariableDefinition" />
+    <ref role="1MND4H" to="28lk:6cBsaQxChVf" resolve="InferredTypeLoopVariableDefinition" />
   </node>
 </model>
 

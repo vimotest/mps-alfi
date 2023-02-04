@@ -17,11 +17,17 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -42,12 +48,24 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -64,6 +82,10 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -72,6 +94,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="18kY7G" id="sSER0D91Vk">
@@ -189,6 +214,65 @@
     <node concept="1YaCAy" id="sSER0D9qj8" role="1YuTPh">
       <property role="TrG5h" value="inLineComment" />
       <ref role="1YaFvo" to="28lk:2SMO68rC03P" resolve="InLineComment" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6cBsaQxzoTM">
+    <property role="TrG5h" value="check_ConcurrentClause" />
+    <property role="3GE5qa" value="statements.if" />
+    <node concept="3clFbS" id="6cBsaQxzoTN" role="18ibNy">
+      <node concept="3clFbJ" id="6cBsaQxzoTT" role="3cqZAp">
+        <node concept="2OqwBi" id="6cBsaQxzqOt" role="3clFbw">
+          <node concept="2OqwBi" id="6cBsaQxzp38" role="2Oq$k0">
+            <node concept="1YBJjd" id="6cBsaQxzoU5" role="2Oq$k0">
+              <ref role="1YBMHb" node="6cBsaQxzoTP" resolve="concurrentClause" />
+            </node>
+            <node concept="3Tsc0h" id="6cBsaQxzpal" role="2OqNvi">
+              <ref role="3TtcxE" to="28lk:6cBsaQxgWyQ" resolve="clauses" />
+            </node>
+          </node>
+          <node concept="1v1jN8" id="6cBsaQxzsDg" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6cBsaQxzoTV" role="3clFbx">
+          <node concept="2MkqsV" id="6cBsaQxzsFP" role="3cqZAp">
+            <node concept="Xl_RD" id="6cBsaQxzsG1" role="2MkJ7o">
+              <property role="Xl_RC" value="Cannot have an empty concurrent clause. Either add a subclause or delete it." />
+            </node>
+            <node concept="1YBJjd" id="6cBsaQxzsIa" role="1urrMF">
+              <ref role="1YBMHb" node="6cBsaQxzoTP" resolve="concurrentClause" />
+            </node>
+            <node concept="3Cnw8n" id="6cBsaQxCcVz" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="6cBsaQxCcWx" resolve="fix_EmptyConcurrentClause" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6cBsaQxzoTP" role="1YuTPh">
+      <property role="TrG5h" value="concurrentClause" />
+      <ref role="1YaFvo" to="28lk:6cBsaQxgWyP" resolve="ConcurrentClause" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="6cBsaQxCcWx">
+    <property role="TrG5h" value="fix_EmptyConcurrentClause" />
+    <node concept="Q5ZZ6" id="6cBsaQxCcWy" role="Q6x$H">
+      <node concept="3clFbS" id="6cBsaQxCcWz" role="2VODD2">
+        <node concept="3clFbF" id="6cBsaQxCcWP" role="3cqZAp">
+          <node concept="2OqwBi" id="6cBsaQxCd3x" role="3clFbG">
+            <node concept="Q6c8r" id="6cBsaQxCcWO" role="2Oq$k0" />
+            <node concept="3YRAZt" id="6cBsaQxCd9v" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="6cBsaQxCd9W" role="QzAvj">
+      <node concept="3clFbS" id="6cBsaQxCd9X" role="2VODD2">
+        <node concept="3clFbF" id="6cBsaQxCdn8" role="3cqZAp">
+          <node concept="Xl_RD" id="6cBsaQxz_bA" role="3clFbG">
+            <property role="Xl_RC" value="Remove empty concurrent clause" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

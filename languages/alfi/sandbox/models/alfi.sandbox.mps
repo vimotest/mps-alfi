@@ -65,12 +65,42 @@
       <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ng" index="PJ9RI">
         <child id="520354255175429050" name="documentation" index="I883a" />
       </concept>
+      <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
+        <child id="7144803224883131093" name="typeName" index="327w9S" />
+        <child id="7144803224883131091" name="expression" index="327w9Y" />
+      </concept>
+      <concept id="7144803224883808437" name="alfi.structure.ConcurrentClause" flags="ng" index="32pbwo">
+        <child id="7144803224883808438" name="clauses" index="32pbwr" />
+      </concept>
+      <concept id="7144803224883743949" name="alfi.structure.NonFinalClause" flags="ng" index="32prLw">
+        <child id="7144803224883743950" name="condition" index="32prLz" />
+        <child id="7144803224883743956" name="body" index="32prLT" />
+      </concept>
+      <concept id="7144803224883743948" name="alfi.structure.IfStatement" flags="ng" index="32prLx">
+        <child id="7144803224883864292" name="nonFinalClauses" index="32oX99" />
+      </concept>
+      <concept id="7144803224889925327" name="alfi.structure.InferredTypeLoopVariableDefinition" flags="ng" index="32xATy">
+        <child id="7144803224889925328" name="expression" index="32xATX" />
+      </concept>
+      <concept id="7144803224889925323" name="alfi.structure.ForStatement" flags="ng" index="32xATA">
+        <child id="7144803224890013772" name="variableDefinitions" index="32xgzx" />
+        <child id="7144803224890013774" name="body" index="32xgzz" />
+      </concept>
+      <concept id="7144803224888718671" name="alfi.structure.WhileStatement" flags="ng" index="32Esny">
+        <child id="7144803224888718676" name="body" index="32EsnT" />
+        <child id="7144803224888718674" name="condition" index="32EsnZ" />
+      </concept>
+      <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT" />
+      <concept id="7144803224889115542" name="alfi.structure.BreakStatement" flags="ng" index="32GVcV" />
+      <concept id="7144803224888882713" name="alfi.structure.DoStatement" flags="ng" index="32H$qO">
+        <child id="7144803224888882716" name="body" index="32H$qL" />
+        <child id="7144803224888882714" name="condition" index="32H$qR" />
+      </concept>
     </language>
   </registry>
   <node concept="PCHHj" id="6HwE6YVBqJa">
     <property role="TrG5h" value="Test" />
     <node concept="PCHzy" id="6HwE6YVBqJb" role="PCHGa">
-      <node concept="PDIRY" id="6HwE6YVBqJf" role="PCHzz" />
       <node concept="P$H2n" id="6HwE6YVBQ_7" role="PCHzz">
         <node concept="1PaTwC" id="6HwE6YVBQ_8" role="IuZ_4">
           <node concept="3oM_SD" id="6HwE6YVBQ_9" role="1PaTwD">
@@ -185,6 +215,23 @@
           </node>
         </node>
       </node>
+      <node concept="327OUb" id="6cBsaQxyx9f" role="PCHzz">
+        <property role="TrG5h" value="foo" />
+        <node concept="_iklQ" id="6cBsaQxzmxq" role="327w9Y">
+          <property role="_iklR" value="asd" />
+        </node>
+        <node concept="_vnHb" id="6cBsaQxyx9j" role="327w9S">
+          <node concept="_vnHe" id="6cBsaQxyx9l" role="_vnH8">
+            <property role="TrG5h" value="asd" />
+          </node>
+          <node concept="_vnHe" id="6cBsaQxyxbn" role="_vnH8">
+            <property role="TrG5h" value="asd" />
+          </node>
+          <node concept="_vnHe" id="6cBsaQxzmxm" role="_vnH8">
+            <property role="TrG5h" value="asd" />
+          </node>
+        </node>
+      </node>
       <node concept="_jtW9" id="2kuSLC0qfFP" role="PCHzz">
         <node concept="_iklQ" id="2kuSLC0qfFN" role="_jtWe">
           <property role="_iklR" value="sda" />
@@ -195,7 +242,161 @@
           <property role="_iklR" value="Foooo" />
         </node>
       </node>
-      <node concept="PDbRn" id="2kuSLC0q2lh" role="PCHzz" />
+      <node concept="32prLx" id="6cBsaQxx64X" role="PCHzz">
+        <node concept="32pbwo" id="6cBsaQxx64Z" role="32oX99">
+          <node concept="32prLw" id="6cBsaQxx651" role="32pbwr">
+            <node concept="_iklQ" id="6cBsaQxx67E" role="32prLz">
+              <property role="_iklR" value="1" />
+            </node>
+            <node concept="PCHzy" id="6cBsaQxx655" role="32prLT">
+              <node concept="PDIRi" id="6cBsaQxx67z" role="PCHzz">
+                <node concept="1PaTwC" id="6cBsaQxx67$" role="I4nmN">
+                  <node concept="3oM_SD" id="6cBsaQxx67_" role="1PaTwD">
+                    <property role="3oM_SC" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32prLw" id="6cBsaQxxnfD" role="32pbwr">
+            <node concept="_iklQ" id="6cBsaQxxnfP" role="32prLz">
+              <property role="_iklR" value="sad" />
+            </node>
+            <node concept="PCHzy" id="6cBsaQxxnfF" role="32prLT">
+              <node concept="PDIRi" id="6cBsaQxxnfS" role="PCHzz">
+                <node concept="1PaTwC" id="6cBsaQxxnfT" role="I4nmN">
+                  <node concept="3oM_SD" id="6cBsaQxxnfU" role="1PaTwD">
+                    <property role="3oM_SC" value="ui" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32prLw" id="6cBsaQxxnnQ" role="32pbwr">
+            <node concept="_jtWu" id="6cBsaQxChNn" role="32prLz" />
+            <node concept="PCHzy" id="6cBsaQxxnnS" role="32prLT" />
+          </node>
+        </node>
+        <node concept="32pbwo" id="6cBsaQxxnfY" role="32oX99">
+          <node concept="32prLw" id="6cBsaQxxnfZ" role="32pbwr">
+            <node concept="_iklQ" id="6cBsaQxxngC" role="32prLz">
+              <property role="_iklR" value="asd" />
+            </node>
+            <node concept="PCHzy" id="6cBsaQxxng1" role="32prLT">
+              <node concept="PDbRn" id="6cBsaQxxngF" role="PCHzz" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQx_caN" role="PCHzz" />
+      <node concept="327OUb" id="6cBsaQxeYb8" role="PCHzz">
+        <property role="TrG5h" value="foo" />
+        <node concept="_jtWu" id="6cBsaQxeYcd" role="327w9Y" />
+        <node concept="_vnHb" id="6cBsaQxeYbc" role="327w9S">
+          <node concept="_vnHe" id="6cBsaQxeYbe" role="_vnH8">
+            <property role="TrG5h" value="Bar" />
+          </node>
+          <node concept="_vnHe" id="6cBsaQxeYca" role="_vnH8">
+            <property role="TrG5h" value="asd" />
+          </node>
+          <node concept="_vnHe" id="6cBsaQxfNEw" role="_vnH8">
+            <property role="TrG5h" value="fooo" />
+          </node>
+        </node>
+        <node concept="IbWbt" id="6cBsaQxhKLk" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQxhKLl" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQxhKLm" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32prLx" id="6cBsaQxhKIC" role="PCHzz">
+        <node concept="32pbwo" id="6cBsaQxhKIE" role="32oX99">
+          <node concept="32prLw" id="6cBsaQxkNah" role="32pbwr">
+            <node concept="_jtWu" id="6cBsaQxkNan" role="32prLz" />
+            <node concept="PCHzy" id="6cBsaQxkNaj" role="32prLT">
+              <node concept="PDIRi" id="6cBsaQxmZY$" role="PCHzz">
+                <node concept="1PaTwC" id="6cBsaQxmZY_" role="I4nmN">
+                  <node concept="3oM_SD" id="6cBsaQxmZYA" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IbWbt" id="6cBsaQx$0de" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQx$0df" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQx$0dg" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQxHXt$" role="PCHzz" />
+      <node concept="32Esny" id="6cBsaQx$jm$" role="PCHzz">
+        <node concept="_jtWu" id="6cBsaQx$jof" role="32EsnZ">
+          <property role="_jtWv" value="true" />
+        </node>
+        <node concept="PCHzy" id="6cBsaQx$jmC" role="32EsnT">
+          <node concept="PDbRn" id="6cBsaQx$T_S" role="PCHzz" />
+        </node>
+        <node concept="IbWbt" id="6cBsaQx$joj" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQx$jok" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQx$jol" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32H$qO" id="6cBsaQx$TDe" role="PCHzz">
+        <node concept="_jtWu" id="6cBsaQx$TF0" role="32H$qR">
+          <property role="_jtWv" value="true" />
+        </node>
+        <node concept="PCHzy" id="6cBsaQx$TDi" role="32H$qL">
+          <node concept="PDbRn" id="6cBsaQx_c9A" role="PCHzz" />
+        </node>
+        <node concept="IbWbt" id="6cBsaQx$TFd" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQx$TFe" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQx$TFf" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32GVcV" id="6cBsaQx_vwd" role="PCHzz">
+        <node concept="IbWbt" id="6cBsaQxA5lZ" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQxA5m0" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQxA5m1" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32G6VT" id="6cBsaQxA5id" role="PCHzz">
+        <node concept="IbWbt" id="6cBsaQxA5lR" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQxA5lS" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQxA5lT" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQxA5k1" role="PCHzz" />
+      <node concept="32xATA" id="6cBsaQxDDBl" role="PCHzz">
+        <node concept="32xATy" id="6cBsaQxDDBn" role="32xgzx">
+          <property role="TrG5h" value="name" />
+          <node concept="_jtWu" id="6cBsaQxDDDq" role="32xATX" />
+        </node>
+        <node concept="32xATy" id="6cBsaQxDDDs" role="32xgzx">
+          <property role="TrG5h" value="tasd" />
+          <node concept="_jtWu" id="6cBsaQxDDDy" role="32xATX" />
+        </node>
+        <node concept="PCHzy" id="6cBsaQxDDBr" role="32xgzz" />
+      </node>
+      <node concept="PDbRn" id="6cBsaQxHXb6" role="PCHzz" />
+      <node concept="PDbRn" id="6cBsaQxHihH" role="PCHzz" />
     </node>
     <node concept="IbWbt" id="6HwE6YVBQCm" role="I883a">
       <node concept="1PaTwC" id="6HwE6YVBQCn" role="IbWbu">

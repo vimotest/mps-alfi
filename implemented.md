@@ -78,17 +78,19 @@ Limitations are listed as subpoints of the chapters.
 - [x] 9.1 Overview (Block, Statement, DocumentedStatement)
 - [ ] 9.2 Annotated Statements
 - [ ] 9.3 In-line Statements
-- [ ] 9.4 Block Statements
+- [x] 9.4 Block Statements
 - [x] 9.5 Empty Statements
-- [ ] 9.6 Local Name Declaration Statements
-- [ ] 9.7 Expression Statements
-- [ ] 9.8 if Statements
+- [x] 9.6 Local Name Declaration Statements
+  - Only the let name : type version not the type name one
+  - Only normal expressions as initialization not the short variants
+- [x] 9.7 Expression Statements
+- [x] 9.8 if Statements
 - [ ] 9.9 switch Statements
-- [ ] 9.10 while Statements
-- [ ] 9.11 do Statements
-- [ ] 9.12 for Statements
-- [ ] 9.13 break Statements
-- [ ] 9.14 return Statements
+- [x] 9.10 while Statements
+- [x] 9.11 do Statements
+- [x] 9.12 for Statements
+- [x] 9.13 break Statements
+- [x] 9.14 return Statements
 - [ ] 9.15 accept Statements
 - [ ] 9.16 classify Statements
 
