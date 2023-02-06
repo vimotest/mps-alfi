@@ -261,5 +261,15 @@
     <ref role="1M2myG" to="28lk:6cBsaQxChVc" resolve="LoopVariableDefinition" />
     <ref role="1MND4H" to="28lk:6cBsaQxChVf" resolve="InferredTypeLoopVariableDefinition" />
   </node>
+  <node concept="1M2fIO" id="6cBsaQy2Fnn">
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <ref role="1M2myG" to="28lk:6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+    <ref role="1MND4H" to="28lk:6cBsaQxWHjS" resolve="FeatureReference" />
+  </node>
+  <node concept="1M2fIO" id="6cBsaQygVAp">
+    <property role="3GE5qa" value="expressions.assignment" />
+    <ref role="1M2myG" to="28lk:6cBsaQybPpu" resolve="Assignment_LeftHandSide" />
+    <ref role="1MND4H" to="28lk:6cBsaQybPpI" resolve="Assignment_NameLeftHandSide" />
+  </node>
 </model>
 

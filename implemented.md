@@ -15,9 +15,12 @@ Limitations are listed as subpoints of the chapters.
   - Comments are only supported on their own line
 - [x] 7.6 Names
 - [x] 7.7 Reserved words
-- [ ] 7.8 Primitive Literals
-- [ ] 7.9 Punctuation
-- [ ] 7.10 Operators
+- [x] 7.8 Primitive Literals
+  - only lowercase b and x in prefix for binary and hex naturals
+  - only uppercase A-F in value of hex naturals
+  - only lowercase e for exponent of reals
+- [x] 7.9 Punctuation (no need to explicitly implement anything here)
+- [x] 7.10 Operators (no need to explicitly implement anything here)
 
 ## Expressions (8)
 
@@ -29,18 +32,17 @@ Limitations are listed as subpoints of the chapters.
 - [ ] 8.3 Primary Expressions
   - [x] 8.3.1 Overview (no implementation needed)
   - [x] 8.3.2 Literal Expressions
-    - only boolean and string
   - [x] 8.3.3 Name Expressions
   - [x] 8.3.4 this Expressions
-  - [ ] 8.3.5 Parenthesized Expressions
-  - [ ] 8.3.6 Property Access Expressions
+  - [x] 8.3.5 Parenthesized Expressions
+  - [x] 8.3.6 Property Access Expressions
   - [x] 8.3.7 Invocation Expressions
   - [x] 8.3.8 Tuples
     - not named Tuples
   - [x] 8.3.9 Behavior Invocation Expressions
-  - [ ] 8.3.10 Feature Invocation Expressions
-  - [ ] 8.3.11 Super Invocation Expressions
-  - [ ] 8.3.12 Instance Creation Expressions
+  - [x] 8.3.10 Feature Invocation Expressions
+  - [x] 8.3.11 Super Invocation Expressions
+  - [x] 8.3.12 Instance Creation Expressions
   - [ ] 8.3.13 Link Operation Expressions
   - [ ] 8.3.14 Class Extent Expressions
   - [ ] 8.3.15 Sequence Construction Expressions
@@ -54,24 +56,25 @@ Limitations are listed as subpoints of the chapters.
   - [ ] 8.3.23 isUnique Expressions
 - [ ] 8.4 Increment and Decrement Expressions
 - [ ] 8.5 Unary Expressions
-  - [ ] 8.5.1 Overview (Base abstract syntax)
-  - [ ] 8.5.2 Boolean Unary Expressions
-  - [ ] 8.5.3 BitString Unary Expressions
-  - [ ] 8.5.4 Numeric Unary Expressions
-  - [ ] 8.5.5 Cast Expressions
+  - [x] 8.5.1 Overview (Base abstract syntax)
+  - [x] 8.5.2 Boolean Unary Expressions
+  - [x] 8.5.3 BitString Unary Expressions
+  - [x] 8.5.4 Numeric Unary Expressions
+  - [x] 8.5.5 Cast Expressions
   - [ ] 8.5.6 Isolation Expressions
 - [ ] 8.6 Binary Expressions
-  - [ ] 8.6.1 Overview (Base abstract syntax)
-  - [ ] 8.6.2 Arithmetic Expressions
-  - [ ] 8.6.3 Shift Expressions
-  - [ ] 8.6.4 Relational Expressions
+  - [x] 8.6.1 Overview (Base abstract syntax)
+  - [x] 8.6.2 Arithmetic Expressions
+  - [x] 8.6.3 Shift Expressions
+  - [x] 8.6.4 Relational Expressions
   - [ ] 8.6.5 Classification Expressions
-  - [ ] 8.6.6 Equality Expressions
-  - [ ] 8.6.7 Logical Expressions
-  - [ ] 8.6.8 Conditional Expressions
+  - [x] 8.6.6 Equality Expressions
+  - [x] 8.6.7 Logical Expressions
+  - [x] 8.6.8 Conditional Expressions
   - [ ] 8.6.9 Null-Coalescing Expressions
 - [ ] 8.7 Conditional-Test Expressions
-- [ ] 8.8 Assignment Expressions
+- [x] 8.8 Assignment Expressions
+  - Not indexed left hand side
 
 ## Statements (9)
 
