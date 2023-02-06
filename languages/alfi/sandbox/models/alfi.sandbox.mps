@@ -96,7 +96,15 @@
         <child id="7144803224883743956" name="body" index="32prLT" />
       </concept>
       <concept id="7144803224883743948" name="alfi.structure.IfStatement" flags="ng" index="32prLx">
+        <child id="7144803224883955094" name="finalClause" index="32onkV" />
         <child id="7144803224883864292" name="nonFinalClauses" index="32oX99" />
+      </concept>
+      <concept id="7144803224889925327" name="alfi.structure.InferredTypeLoopVariableDefinition" flags="ng" index="32xATy">
+        <child id="7144803224889925328" name="expression" index="32xATX" />
+      </concept>
+      <concept id="7144803224889925323" name="alfi.structure.ForStatement" flags="ng" index="32xATA">
+        <child id="7144803224890013772" name="variableDefinitions" index="32xgzx" />
+        <child id="7144803224890013774" name="body" index="32xgzz" />
       </concept>
       <concept id="7144803224891645265" name="alfi.structure.NumericUnaryExpression_Plus" flags="ng" index="32B2RW" />
       <concept id="7144803224891645264" name="alfi.structure.BitStringUnaryExpression" flags="ng" index="32B2RX" />
@@ -120,6 +128,9 @@
       <concept id="7144803224888882713" name="alfi.structure.DoStatement" flags="ng" index="32H$qO">
         <child id="7144803224888882716" name="body" index="32H$qL" />
         <child id="7144803224888882714" name="condition" index="32H$qR" />
+      </concept>
+      <concept id="7144803224889349509" name="alfi.structure.BlockStatement" flags="ng" index="32JMkC">
+        <child id="7144803224889349510" name="block" index="32JMkF" />
       </concept>
       <concept id="7144803224894408941" name="alfi.structure.RealLiteralExpression" flags="ng" index="32KJx0">
         <property id="7144803224897610144" name="showExponent" index="31ch4d" />
@@ -337,10 +348,17 @@
               <property role="_iklR" value="asd" />
             </node>
             <node concept="PCHzy" id="6cBsaQxxng1" role="32prLT">
-              <node concept="PDbRn" id="6cBsaQxxngF" role="PCHzz" />
+              <node concept="PDIRi" id="6cBsaQywT28" role="PCHzz">
+                <node concept="1PaTwC" id="6cBsaQywT29" role="I4nmN">
+                  <node concept="3oM_SD" id="6cBsaQywT2a" role="1PaTwD">
+                    <property role="3oM_SC" value="123" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
+        <node concept="PCHzy" id="6cBsaQywok0" role="32onkV" />
       </node>
       <node concept="PDbRn" id="6cBsaQx_caN" role="PCHzz" />
       <node concept="327OUb" id="6cBsaQxeYb8" role="PCHzz">
@@ -678,6 +696,13 @@
             </node>
           </node>
         </node>
+        <node concept="IbWbt" id="6cBsaQytex8" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQytex9" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQytexa" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PDbRn" id="6cBsaQylYQk" role="PCHzz" />
       <node concept="_jtW9" id="6cBsaQylUzs" role="PCHzz">
@@ -703,12 +728,70 @@
       <node concept="32Esny" id="6cBsaQylXiz" role="PCHzz">
         <node concept="_jtWu" id="6cBsaQylXm7" role="32EsnZ" />
         <node concept="PCHzy" id="6cBsaQylXiB" role="32EsnT">
-          <node concept="PDbRn" id="6cBsaQylXm9" role="PCHzz" />
+          <node concept="PDbRn" id="6cBsaQyseGW" role="PCHzz" />
         </node>
         <node concept="IbWbt" id="6cBsaQylXmd" role="I883a">
           <node concept="1PaTwC" id="6cBsaQylXme" role="IbWbu">
             <node concept="3oM_SD" id="6cBsaQylXmf" role="1PaTwD">
               <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQysePM" role="PCHzz" />
+      <node concept="32Esny" id="6cBsaQyseLc" role="PCHzz">
+        <node concept="32BnrC" id="6cBsaQysePx" role="32EsnZ">
+          <node concept="_jtWu" id="6cBsaQysePB" role="32BIco" />
+        </node>
+        <node concept="PCHzy" id="6cBsaQyseLg" role="32EsnT">
+          <node concept="PDIRi" id="6cBsaQysePF" role="PCHzz">
+            <node concept="1PaTwC" id="6cBsaQysePG" role="I4nmN">
+              <node concept="3oM_SD" id="6cBsaQysePH" role="1PaTwD">
+                <property role="3oM_SC" value="sad" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IbWbt" id="6cBsaQyseU9" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQyseUa" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQyseUb" role="1PaTwD">
+              <property role="3oM_SC" value="asd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQyrITK" role="PCHzz" />
+      <node concept="32JMkC" id="6cBsaQyrJ1V" role="PCHzz">
+        <node concept="PCHzy" id="6cBsaQyrJ1X" role="32JMkF">
+          <node concept="PDIRi" id="6cBsaQyrJ65" role="PCHzz">
+            <node concept="1PaTwC" id="6cBsaQyrJ66" role="I4nmN">
+              <node concept="3oM_SD" id="6cBsaQyrJ67" role="1PaTwD">
+                <property role="3oM_SC" value="fas" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IbWbt" id="6cBsaQyrJ6d" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQyrJ6e" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQyrJ6f" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PDbRn" id="6cBsaQyqIxj" role="PCHzz" />
+      <node concept="32xATA" id="6cBsaQyqIDc" role="PCHzz">
+        <node concept="32xATy" id="6cBsaQyqIDe" role="32xgzx">
+          <property role="TrG5h" value="a" />
+          <node concept="_jtWu" id="6cBsaQyqIHj" role="32xATX" />
+        </node>
+        <node concept="PCHzy" id="6cBsaQyqIDi" role="32xgzz">
+          <node concept="PDbRn" id="6cBsaQyqIHl" role="PCHzz" />
+        </node>
+        <node concept="IbWbt" id="6cBsaQyqIHp" role="I883a">
+          <node concept="1PaTwC" id="6cBsaQyqIHq" role="IbWbu">
+            <node concept="3oM_SD" id="6cBsaQyqIHr" role="1PaTwD">
+              <property role="3oM_SC" value="asd" />
             </node>
           </node>
         </node>
