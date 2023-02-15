@@ -586,7 +586,7 @@
         <node concept="VPM3Z" id="6cBsaQxnVmS" role="3F10Kt" />
       </node>
       <node concept="PMmxH" id="2SMO68rAHek" role="3EZMnx">
-        <ref role="PMmxG" node="2SMO68r$0ya" resolve="BlockStatements_EC" />
+        <ref role="PMmxG" node="2SMO68r$0ya" resolve="Block_BlockStatements_EC" />
         <node concept="lj46D" id="2SMO68rAHem" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1303,7 +1303,7 @@
       </node>
       <node concept="3F0ifn" id="6cBsaQxeqe$" role="3EZMnx">
         <property role="3F0ifm" value="[]" />
-        <ref role="1ERwB7" node="6cBsaQxg0iJ" resolve="LocalNameDeclarationStatement_RemoveCollectyion_ActionMap" />
+        <ref role="1ERwB7" node="6cBsaQxg0iJ" resolve="LocalNameDeclarationStatement_RemoveCollection_ActionMap" />
         <node concept="pkWqt" id="6cBsaQxeqeG" role="pqm2j">
           <node concept="3clFbS" id="6cBsaQxeqeH" role="2VODD2">
             <node concept="3clFbF" id="6cBsaQxerL_" role="3cqZAp">
@@ -1686,7 +1686,7 @@
       <node concept="3eGOoe" id="6cBsaQxjCzr" role="1Qtc8$" />
       <node concept="mvV$s" id="6cBsaQxjCzu" role="1Qtc8A">
         <node concept="A1WHu" id="6cBsaQxjCzw" role="A14EM">
-          <ref role="A1WHt" node="6cBsaQxicjf" resolve="AddIfClauses" />
+          <ref role="A1WHt" node="6cBsaQxicjf" resolve="AddClausesAtTheEnd" />
         </node>
         <node concept="3cWJ9i" id="6cBsaQxjC_B" role="3vPi4">
           <node concept="CtIbL" id="6cBsaQxjC_D" role="CtIbM">
@@ -1796,7 +1796,7 @@
       <node concept="3eGOoe" id="6cBsaQxtxzW" role="1Qtc8$" />
       <node concept="mvV$s" id="6cBsaQxtxzX" role="1Qtc8A">
         <node concept="A1WHu" id="6cBsaQxtxzY" role="A14EM">
-          <ref role="A1WHt" node="6cBsaQxtxyc" resolve="AddClausesAtTheEnd" />
+          <ref role="A1WHt" node="6cBsaQxtxyc" resolve="AddClausesInTheMiddle" />
         </node>
         <node concept="3cWJ9i" id="6cBsaQxtxzZ" role="3vPi4">
           <node concept="CtIbL" id="6cBsaQxtx$0" role="CtIbM">
@@ -2214,7 +2214,7 @@
           <ref role="1NtTu8" to="28lk:6cBsaQxTozK" resolve="fractionalPart" />
           <ref role="1ERwB7" node="6cBsaQy8Mxo" resolve="RemoveFractionalPart" />
           <node concept="A1WHu" id="6cBsaQy7S01" role="3vIgyS">
-            <ref role="A1WHt" node="6cBsaQy6UZ_" resolve="AddPartAfeterFractionalPart" />
+            <ref role="A1WHt" node="6cBsaQy6UZ_" resolve="AddPartAfterFractionalPart" />
           </node>
         </node>
         <node concept="2iRfu4" id="6cBsaQxTo$z" role="2iSdaV" />
@@ -2571,7 +2571,7 @@
       <node concept="3eGOoe" id="6cBsaQy6w47" role="1Qtc8$" />
       <node concept="mvV$s" id="6cBsaQy6w4a" role="1Qtc8A">
         <node concept="A1WHu" id="6cBsaQy6w4c" role="A14EM">
-          <ref role="A1WHt" node="6cBsaQy63gT" resolve="AddFractionalPart" />
+          <ref role="A1WHt" node="6cBsaQy63gT" resolve="AddPartAfterIntegerPart" />
         </node>
         <node concept="3cWJ9i" id="6cBsaQy6w4g" role="3vPi4">
           <node concept="CtIbL" id="6cBsaQy6w4i" role="CtIbM">
@@ -2651,7 +2651,7 @@
       <node concept="3eGOoe" id="6cBsaQy6X3S" role="1Qtc8$" />
       <node concept="mvV$s" id="6cBsaQy6X3V" role="1Qtc8A">
         <node concept="A1WHu" id="6cBsaQy6X3X" role="A14EM">
-          <ref role="A1WHt" node="6cBsaQy6UZ_" resolve="AddExponent" />
+          <ref role="A1WHt" node="6cBsaQy6UZ_" resolve="AddPartAfterFractionalPart" />
         </node>
         <node concept="3cWJ9i" id="6cBsaQy6X47" role="3vPi4">
           <node concept="CtIbL" id="6cBsaQy6X49" role="CtIbM">
@@ -2895,7 +2895,7 @@
         <ref role="1NtTu8" to="28lk:6cBsaQylkIp" resolve="operand1" />
       </node>
       <node concept="PMmxH" id="6cBsaQylkJf" role="3EZMnx">
-        <ref role="PMmxG" node="6cBsaQylkJd" resolve="BinaryExpression_Operator" />
+        <ref role="PMmxG" node="6cBsaQylkJd" resolve="BinaryExpression_Operator_EC" />
       </node>
       <node concept="3F1sOY" id="6cBsaQylkJ8" role="3EZMnx">
         <ref role="1NtTu8" to="28lk:6cBsaQylkIr" resolve="operand2" />
@@ -2919,7 +2919,7 @@
       <ref role="1NtTu8" to="28lk:6cBsaQylkJJ" resolve="opeator" />
     </node>
     <node concept="1PE4EZ" id="6cBsaQylkJU" role="1PM95z">
-      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator" />
+      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="6cBsaQym211">
@@ -2930,7 +2930,7 @@
       <ref role="1NtTu8" to="28lk:6cBsaQym20S" resolve="operator" />
     </node>
     <node concept="1PE4EZ" id="6cBsaQym213" role="1PM95z">
-      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator" />
+      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="6cBsaQym$Vo">
@@ -2952,7 +2952,7 @@
       <ref role="1NtTu8" to="28lk:6cBsaQyn5Yd" resolve="operator" />
     </node>
     <node concept="1PE4EZ" id="6cBsaQyn5Yo" role="1PM95z">
-      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator" />
+      <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="6cBsaQynBw6">
@@ -3032,7 +3032,7 @@
         <ref role="1NtTu8" to="28lk:6cBsaQxA5m6" resolve="block" />
         <node concept="1sVBvm" id="6cBsaQxBTK2" role="1sWHZn">
           <node concept="PMmxH" id="6cBsaQxBTL2" role="2wV5jI">
-            <ref role="PMmxG" node="2SMO68r$0ya" resolve="BlockStatements_EC" />
+            <ref role="PMmxG" node="2SMO68r$0ya" resolve="Block_BlockStatements_EC" />
           </node>
         </node>
       </node>

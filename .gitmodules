@@ -1,0 +1,3 @@
+[submodule "basic-lang"]
+	path = basic-lang
+	url = git@github.com:neumantm/basic-lang.git

@@ -6,7 +6,12 @@ ext.alfVersion = "1.1.0k"
 // here add your required plugins
 // to find a plugin entry, search in https://plugins.jetbrains.com/ for the plugin name and obtain the ID from URL (e.g. 13242 for grammarcells)
 // if you need a specific version for a plugin, add it in []-brackets
-ext.mpsPlugins = [ ]
+ext.mpsPlugins = []
+
+ext.customMpsPlugins = [
+  "de.itemis.mps.extensions": "https://projects.itemis.de/nexus/content/repositories/mbeddr/de/itemis/mps/extensions/2021.3.2450.28b2c76/extensions-2021.3.2450.28b2c76.zip",
+  "de.itemis.mps.grammarcells": "https://projects.itemis.de/nexus/service/local/repositories/mbeddr/content/io/github/jetbrains/mps-extensions/grammarcells/2021.3.2450.28b2c76/grammarcells-2021.3.2450.28b2c76.zip",
+]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
 

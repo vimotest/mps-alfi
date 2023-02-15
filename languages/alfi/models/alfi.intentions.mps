@@ -814,7 +814,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="6cBsaQyjIB$" role="37vLTx">
-              <ref role="3cqZAo" node="6cBsaQyjIBw" resolve="node" />
+              <ref role="3cqZAo" node="6cBsaQyjIBw" resolve="nameExpression" />
             </node>
           </node>
         </node>

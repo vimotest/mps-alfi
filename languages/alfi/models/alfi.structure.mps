@@ -433,7 +433,7 @@
     <property role="EcuMT" value="7144803224883743949" />
     <property role="3GE5qa" value="statements.if" />
     <property role="TrG5h" value="NonFinalClause" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6cBsaQxgGNe" role="1TKVEi">
       <property role="IQ2ns" value="7144803224883743950" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -454,7 +454,7 @@
     <property role="3GE5qa" value="statements.if" />
     <property role="TrG5h" value="ConcurrentClause" />
     <property role="R4oN_" value="The expression of all subclauses is evaluated in parallel" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6cBsaQxgWyQ" role="1TKVEi">
       <property role="IQ2ns" value="7144803224883808438" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -767,7 +767,7 @@
     <node concept="1TJgyi" id="6cBsaQxTozK" role="1TKVEl">
       <property role="IQ2nx" value="7144803224894408944" />
       <property role="TrG5h" value="fractionalPart" />
-      <ref role="AX2Wp" node="6cBsaQxTO6c" resolve="Real_FractionalPart" />
+      <ref role="AX2Wp" node="6cBsaQxTO6c" resolve="RealLiteral_FractionalPart" />
     </node>
     <node concept="1TJgyi" id="6cBsaQxTozN" role="1TKVEl">
       <property role="IQ2nx" value="7144803224894408947" />
@@ -950,7 +950,7 @@
     <property role="3GE5qa" value="expressions.assignment" />
     <property role="TrG5h" value="Assignment_LeftHandSide" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6cBsaQybPpv">
     <property role="EcuMT" value="7144803224899245663" />
