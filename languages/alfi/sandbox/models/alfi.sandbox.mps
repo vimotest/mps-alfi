@@ -26,6 +26,7 @@
       <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
         <child id="2674824929518763028" name="expression" index="_jtWe" />
       </concept>
+      <concept id="2674824929518763010" name="alfi.structure.Expression" flags="ng" index="_jtWo" />
       <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu">
         <property id="2674824929518763013" name="value" index="_jtWv" />
       </concept>
@@ -82,6 +83,9 @@
       </concept>
       <concept id="7144803224901733332" name="alfi.structure.ArithmeticExpression" flags="ng" index="31szHT">
         <property id="7144803224901733359" name="opeator" index="31szH2" />
+      </concept>
+      <concept id="7144803224902197132" name="alfi.structure.EqualityExpression" flags="ng" index="31uMWx">
+        <property id="7144803224902197133" name="operator" index="31uMWw" />
       </concept>
       <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
         <property id="7144803224883131098" name="hasMultiplicity" index="327w9R" />
@@ -796,6 +800,14 @@
           </node>
         </node>
       </node>
+      <node concept="PDbRn" id="6pZ_RG0Nn5q" role="PCHzz" />
+      <node concept="_jtW9" id="6pZ_RG0NnjK" role="PCHzz">
+        <node concept="31uMWx" id="6pZ_RG0NnjE" role="_jtWe">
+          <property role="31uMWw" value="6cBsaQyn5Y9/NotEqualTo" />
+          <node concept="_jtWo" id="6pZ_RG0NnjG" role="31szGO" />
+          <node concept="_jtWo" id="6pZ_RG0NnjI" role="31szGQ" />
+        </node>
+      </node>
     </node>
     <node concept="IbWbt" id="6HwE6YVBQCm" role="I883a">
       <node concept="1PaTwC" id="6HwE6YVBQCn" role="IbWbu">
@@ -827,6 +839,13 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="327OUb" id="44G_y7tAbdR" role="PCHzz">
+        <property role="TrG5h" value="asd" />
+        <node concept="_vnHb" id="44G_y7tAbdV" role="327w9S">
+          <node concept="_vnHe" id="44G_y7tAbdX" role="_vnH8" />
+        </node>
+        <node concept="_jtWo" id="1j8muv87dAm" role="327w9Y" />
       </node>
     </node>
   </node>

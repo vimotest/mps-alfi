@@ -1,0 +1,27 @@
+activity Test1 ( ) { 
+  let c: Integer = 1 + 23443 - 12; 
+  let y: Integer = 10 + 10; 
+  let z: String = "some string value"; 
+  let x: Integer = c + y; 
+  let foo: Boolean = y > x; 
+  let bar: String = ReadLine(); 
+  let baaaa: String = ReadLine(); 
+  let bazz: String = ReadLine(); 
+  let b: String = BooleanFunctions::ToString(1 == 2); 
+  let i: String = IntegerFunctions::ToString(1); 
+  WriteLine(z); 
+  WriteLine(z); 
+  let a: Integer = 1; 
+  WriteLine(IntegerFunctions::ToString(a)); 
+  WriteLine("var " + "c" + "[int]" + "=" + IntegerFunctions::ToString(c)); 
+  WriteLine("var " + "y" + "[int]" + "=" + IntegerFunctions::ToString(y)); 
+  WriteLine("var " + "z" + "[string]" + "=" + z); 
+  WriteLine("var " + "x" + "[int]" + "=" + IntegerFunctions::ToString(x)); 
+  WriteLine("var " + "foo" + "[boolean]" + "=" + BooleanFunctions::ToString(foo)); 
+  WriteLine("var " + "bar" + "[string]" + "=" + bar); 
+  WriteLine("var " + "baaaa" + "[string]" + "=" + baaaa); 
+  WriteLine("var " + "bazz" + "[string]" + "=" + bazz); 
+  WriteLine("var " + "b" + "[string]" + "=" + b); 
+  WriteLine("var " + "i" + "[string]" + "=" + i); 
+  WriteLine("var " + "a" + "[int]" + "=" + IntegerFunctions::ToString(a)); 
+}

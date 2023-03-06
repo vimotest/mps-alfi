@@ -1,0 +1,4 @@
+activity Test ( ) {
+  let foo: Boolean = true;
+  WriteLine(foo); 
+}
