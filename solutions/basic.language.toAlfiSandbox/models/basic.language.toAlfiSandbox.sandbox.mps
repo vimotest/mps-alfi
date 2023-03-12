@@ -6,8 +6,12 @@
     <use id="92de1c23-d913-4aa4-a196-a4ae01ec2e8b" name="basic.language.io" version="0" />
     <use id="3efc97ff-fb97-4546-91b8-c87fbfedfd60" name="basic.language" version="0" />
     <use id="5c45fcc5-be5a-4e1a-9d0a-f9d1859d878e" name="basic.language.dumpScope" version="0" />
+    <engage id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" />
   </languages>
-  <imports />
+  <imports>
+    <import index="lodc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library.primitivebehaviors(alfi.StandardModelLibrary/)" />
+    <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
+  </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -28,6 +32,7 @@
         <child id="7540833626062637172" name="declaredType" index="2ZrEhe" />
         <child id="8857111640020565440" name="value" index="1Pzvns" />
       </concept>
+      <concept id="8857111640020496478" name="basic.language.structure.BEmptyStatement" flags="ng" index="1Pzfx2" />
       <concept id="8857111640020600868" name="basic.language.structure.BMinusExpression" flags="ng" index="1Pzg0S" />
       <concept id="8857111640020600952" name="basic.language.structure.BBinaryExpression" flags="ng" index="1Pzg1$">
         <child id="8857111640020600953" name="left" index="1Pzg1_" />
@@ -178,6 +183,7 @@
       </node>
     </node>
     <node concept="IvCeC" id="6iIWuF8fkGi" role="1PzecN" />
+    <node concept="1Pzfx2" id="5KQf2y8bpwP" role="1PzecN" />
   </node>
 </model>
 

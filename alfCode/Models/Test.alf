@@ -1,4 +1,5 @@
 activity Test ( ) {
-  let foo: Boolean = true;
-  WriteLine(foo); 
+  let foo: Real = RealFunctions::ToReal("1.2");
+  foo = foo + 1;
+  BasicInputOutput::WriteLine(RealFunctions::ToString(foo ?? 1.5)); 
 }

@@ -121,7 +121,7 @@
         <child id="7144803224901733275" name="operand2" index="31szGQ" />
       </concept>
       <concept id="7144803224901733332" name="alfi.structure.ArithmeticExpression" flags="ng" index="31szHT">
-        <property id="7144803224901733359" name="opeator" index="31szH2" />
+        <property id="7144803224901733359" name="operator" index="31szH2" />
       </concept>
       <concept id="7144803224902197132" name="alfi.structure.EqualityExpression" flags="ng" index="31uMWx">
         <property id="7144803224902197133" name="operator" index="31uMWw" />

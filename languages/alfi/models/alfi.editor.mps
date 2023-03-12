@@ -1925,7 +1925,7 @@
   </node>
   <node concept="24kQdi" id="6cBsaQxI2wg">
     <property role="3GE5qa" value="expressions.primary" />
-    <ref role="1XX52x" to="28lk:6cBsaQxI2w6" resolve="ParenthesizedExpressions" />
+    <ref role="1XX52x" to="28lk:6cBsaQxI2w6" resolve="ParenthesizedExpression" />
     <node concept="3EZMnI" id="6cBsaQxI2wi" role="2wV5jI">
       <node concept="3F0ifn" id="6cBsaQxI2wp" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -2271,7 +2271,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6cBsaQxWHk2">
-    <property role="3GE5qa" value="expressions.primary" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
     <ref role="1XX52x" to="28lk:6cBsaQxWHjS" resolve="FeatureReference" />
     <node concept="3EZMnI" id="6cBsaQxWHk4" role="2wV5jI">
       <node concept="3F1sOY" id="6cBsaQxWHk5" role="3EZMnx">
@@ -2916,7 +2916,7 @@
     <property role="TrG5h" value="ArithmeticExpression_Operator_EC" />
     <ref role="1XX52x" to="28lk:6cBsaQylkJk" resolve="ArithmeticExpression" />
     <node concept="3F0A7n" id="6cBsaQylkJW" role="2wV5jI">
-      <ref role="1NtTu8" to="28lk:6cBsaQylkJJ" resolve="opeator" />
+      <ref role="1NtTu8" to="28lk:6cBsaQylkJJ" resolve="operator" />
     </node>
     <node concept="1PE4EZ" id="6cBsaQylkJU" role="1PM95z">
       <ref role="1PE7su" node="6cBsaQylkJd" resolve="BinaryExpression_Operator_EC" />

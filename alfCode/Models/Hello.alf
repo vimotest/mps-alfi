@@ -1,3 +1,28 @@
 activity Hello ( ) { 
-  WriteLine("Hello World!"); 
-}
+  WriteLine("sad"); 
+  let a: String = BooleanFunctions::ToString(true); 
+  let b: String = "foo " + a; 
+  WriteLine(b); 
+  if (1 > 2) { 
+  WriteLine("Nay"); 
+}else if (3 > 2) { 
+  WriteLine("Yay"); 
+}or if (false) { 
+  WriteLine("Foo"); 
+}else if (true) { 
+  WriteLine("Bar"); 
+}else { 
+  WriteLine("FooBar"); 
+} 
+   
+  let fooL: Integer[] = Arrays::asList(1, 2); 
+  let barL: String[] = Arrays::asList("a", "b"); 
+   
+  for (Integer foo : fooL, String S : barL, i in 3 .. 3 + barL.size(<< ... >>)) { 
+  WriteLine("Foo1" + IntegerFunctions::ToString(foo) + "," + S + IntegerFunctions::ToString(i)); 
+} 
+   
+  for (Integer foo : fooL, String S : barL, i in 3 .. 3 + barL.size(<< ... >>)) { 
+  WriteLine("Foo1" + IntegerFunctions::ToString(foo) + "," + S + IntegerFunctions::ToString(i)); 
+} 
+}}

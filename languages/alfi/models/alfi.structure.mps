@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -109,6 +110,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
       <ref role="20lvS9" node="2SMO68r$0y0" resolve="Block" />
+    </node>
+    <node concept="PrWs8" id="UynmLpHSMR" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0GM">
@@ -620,7 +624,7 @@
   <node concept="1TIwiD" id="6cBsaQxI2w6">
     <property role="EcuMT" value="7144803224891435014" />
     <property role="3GE5qa" value="expressions.primary" />
-    <property role="TrG5h" value="ParenthesizedExpressions" />
+    <property role="TrG5h" value="ParenthesizedExpression" />
     <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="2kuSLC0kNK2" resolve="Expression" />
     <node concept="1TJgyj" id="6cBsaQxI2w7" role="1TKVEi">
@@ -672,7 +676,7 @@
   <node concept="1TIwiD" id="6cBsaQxIPPi">
     <property role="EcuMT" value="7144803224891645266" />
     <property role="3GE5qa" value="expressions.unary" />
-    <property role="TrG5h" value="NumericUnaryExpressionMinus" />
+    <property role="TrG5h" value="NumericUnaryExpression_Minus" />
     <property role="34LRSv" value="-" />
     <ref role="1TJDcQ" node="6cBsaQxIpev" resolve="UnaryExpression" />
   </node>
@@ -851,7 +855,7 @@
   </node>
   <node concept="1TIwiD" id="6cBsaQxWHjS">
     <property role="EcuMT" value="7144803224895280376" />
-    <property role="3GE5qa" value="expressions.primary" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
     <property role="TrG5h" value="FeatureReference" />
     <ref role="1TJDcQ" node="6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
     <node concept="1TJgyj" id="6cBsaQxVTlE" role="1TKVEi">
@@ -1086,7 +1090,7 @@
     <ref role="1TJDcQ" node="6cBsaQylkIo" resolve="BinaryExpression" />
     <node concept="1TJgyi" id="6cBsaQylkJJ" role="1TKVEl">
       <property role="IQ2nx" value="7144803224901733359" />
-      <property role="TrG5h" value="opeator" />
+      <property role="TrG5h" value="operator" />
       <ref role="AX2Wp" node="6cBsaQylkJl" resolve="ArithmeticOperator" />
     </node>
   </node>
