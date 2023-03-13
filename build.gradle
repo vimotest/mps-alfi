@@ -11,6 +11,7 @@ ext.mpsPlugins = []
 ext.customMpsPlugins = [
   "de.itemis.mps.extensions": "https://projects.itemis.de/nexus/content/repositories/mbeddr/de/itemis/mps/extensions/2021.3.2450.28b2c76/extensions-2021.3.2450.28b2c76.zip",
   "de.itemis.mps.grammarcells": "https://projects.itemis.de/nexus/service/local/repositories/mbeddr/content/io/github/jetbrains/mps-extensions/grammarcells/2021.3.2450.28b2c76/grammarcells-2021.3.2450.28b2c76.zip",
+  "TextGenGen": "https://github.com/Fumapps/textGenGen/releases/download/2021.3.2-beta3/TextGenGen.zip",
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
