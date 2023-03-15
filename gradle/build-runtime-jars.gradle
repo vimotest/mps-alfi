@@ -1,0 +1,32 @@
+/*
+  Gradle tasks to build the alf runtime jar from the StandardModelLibrary java sources
+ */
+
+def classesDir = file('build/alfi/StandardModelLibrary/classes')
+def standardModelLibraryDir = file('solutions/alfi.StandardModelLibrary/libs')
+
+task buildStandardModelLibrary(type: JavaCompile) {
+  group 'build-runtime-jars'
+
+  source = fileTree(dir: 'solutions/alfi.StandardModelLibrary/src', include: '**/*.java')
+  destinationDir = classesDir
+  sourceCompatibility = '1.8'
+  targetCompatibility = '1.8'
+  classpath = files()
+}
+
+task packageStandardModelLibrary(type: Jar) {
+  group 'build-runtime-jars'
+  dependsOn buildStandardModelLibrary
+
+  destinationDirectory = standardModelLibraryDir
+  archiveBaseName = 'StandardModelLibrary'
+  from(classesDir) {
+    include '**/*'
+  }
+}
+
+task cleanStandardModelLibraryJar(type: Delete) {
+    group 'build-runtime-jars'
+    delete standardModelLibraryDir
+}
