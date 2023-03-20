@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "compitest"
+version = "0.1.0"
+description = "An integration test framework for executing various programs and comparing their output"
+authors = ["Tim Neumann <neumantm@fius.informatik.uni-stuttgart.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+mypy = "^1.1.1"
+types-pyyaml = "^6.0.12.8"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

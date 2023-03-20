@@ -10,6 +10,7 @@ pkgs.mkShell {
   # for tools
   nativeBuildInputs = with pkgs; [
     java-to-use
+    poetry
   ];
   # for dependencies
   buildInputs = with pkgs; [];

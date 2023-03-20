@@ -51,3 +51,12 @@ task buildAndOpenProjectInMps {
 }
 
 apply from: 'gradle/install-alf.gradle'
+
+apply from: 'gradle/compitest.gradle'
+
+task compiTest {
+    dependsOn 'mpsBuild', 'compitestRunTests'
+}
+compitestRunTests.configure {
+    mustRunAfter mpsBuild
+}

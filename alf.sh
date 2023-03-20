@@ -7,7 +7,7 @@ ALF_BUILD_DIR="$REPO_DIR/build/alf"
 CWD="$(pwd)"
 
 if ! [ -e "$ALF_BUILD_DIR/dist/alf.jar" ]; then
-  >&2 echo "Alf jar not found. Did you run the installAlf gradle task"
+  >&2 echo "Alf jar not found. Did you run the installAlf gradle task?"
   exit 1
 fi
 

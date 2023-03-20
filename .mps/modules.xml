@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/GenPlan/GenPlan.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.build/alfi.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/alfi.compitest/alfi.compitest.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.sandbox2/alfi.sandbox2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.test/alfi.test.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/basic.language.toAlfiSandbox/basic.language.toAlfiSandbox.msd" folder="" />

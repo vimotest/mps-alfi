@@ -1,0 +1,13 @@
+---
+name: compiTestPlan
+path: compitest/languages/compitest/
+testSuites:
+  - name: alfi.compitest
+    executors:
+      - AlfiJava
+      - AlfiAlf
+    tests:
+      - name: HelloWorld
+      - name: Hello
+        input:
+          - good

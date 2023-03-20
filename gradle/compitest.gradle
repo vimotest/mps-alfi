@@ -1,0 +1,27 @@
+/*
+  Gradle tasks to run the compitest scripts
+  Requires python 3.10 and python-poetry to be installed
+ */
+
+def alfiRepoRoot = file(".")
+def compitestDir = file("scripts/compitest/")
+
+task compitestRunTests {
+    group 'compitest'
+    doLast {
+      exec {
+        workingDir compitestDir
+        commandLine 'poetry', 'install', '--without', 'dev'
+      }
+      exec {
+        workingDir compitestDir
+        environment COMPITEST_ALFI_REPO_ROOT: alfiRepoRoot
+        commandLine 'poetry', 'run', 'python', 'main.py'
+      }
+    }
+}
+
+task compitestClean(type: Delete) {
+  group 'compitest'
+  delete file("build/compitest")
+}
