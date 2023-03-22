@@ -45,6 +45,12 @@
     </node>
     <node concept="2VgMA2" id="a$EN280ITm" role="2VgMA7">
       <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="3zQOmAClpkt" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="3zQOmAClpkz" role="2Qf6Ng">
+          <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+          <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="3OZQpz75VJ" role="2Qf7GQ">
         <property role="2Qf7GI" value="1009c2Af4wn/Extend" />
         <node concept="2V$Bhx" id="3OZQpz75X2" role="2Qf6Ng">
