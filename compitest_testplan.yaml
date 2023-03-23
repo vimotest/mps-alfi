@@ -11,3 +11,11 @@ testSuites:
       - name: Hello
         input:
           - good
+      - name: LiteralExpressionsTest
+      - name: UnaryExpressionsTest
+      - name: BinaryExpressionsTest
+      - name: BreakStatementTest
+      - name: DoStatementTest
+      - name: ForStatementTest
+      - name: IfStatementTest
+      - name: WhileStatementTest

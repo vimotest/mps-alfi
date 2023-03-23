@@ -1237,21 +1237,51 @@
         <node concept="3SKdUt" id="1H_SdzRcUEr" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUEt" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUEu" role="1PaTwD">
-              <property role="3oM_SC" value="Editor component follows &gt;&gt;&gt;" />
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoy" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoz" role="1PaTwD">
+              <property role="3oM_SC" value="follows" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo$" role="1PaTwD">
+              <property role="3oM_SC" value="&gt;&gt;&gt;" />
             </node>
           </node>
         </node>
         <node concept="3SKdUt" id="1H_SdzRcUEx" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUEz" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUE$" role="1PaTwD">
-              <property role="3oM_SC" value="Editor component follows &gt;&gt;&gt;" />
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoM" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoN" role="1PaTwD">
+              <property role="3oM_SC" value="follows" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoO" role="1PaTwD">
+              <property role="3oM_SC" value="&gt;&gt;&gt;" />
             </node>
           </node>
         </node>
         <node concept="3SKdUt" id="1H_SdzRcUEJ" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUEL" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUEM" role="1PaTwD">
-              <property role="3oM_SC" value="Inlined query computation follows &gt;&gt;&gt;" />
+              <property role="3oM_SC" value="Inlined" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQny" role="1PaTwD">
+              <property role="3oM_SC" value="query" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnz" role="1PaTwD">
+              <property role="3oM_SC" value="computation" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQn$" role="1PaTwD">
+              <property role="3oM_SC" value="follows" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQn_" role="1PaTwD">
+              <property role="3oM_SC" value="&gt;&gt;&gt;" />
             </node>
           </node>
         </node>
@@ -1264,7 +1294,58 @@
         <node concept="3SKdUt" id="1H_SdzRcUEV" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUEX" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUEY" role="1PaTwD">
-              <property role="3oM_SC" value="Simulation of a return statement (BaseLanguage does not have goto. Thus we use a loop statement and breaks):" />
+              <property role="3oM_SC" value="Simulation" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnQ" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnR" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnS" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnT" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnU" role="1PaTwD">
+              <property role="3oM_SC" value="(BaseLanguage" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnV" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnW" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnX" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnY" role="1PaTwD">
+              <property role="3oM_SC" value="goto." />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnZ" role="1PaTwD">
+              <property role="3oM_SC" value="Thus" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo0" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo1" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo2" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo3" role="1PaTwD">
+              <property role="3oM_SC" value="loop" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo4" role="1PaTwD">
+              <property role="3oM_SC" value="statement" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo5" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQo6" role="1PaTwD">
+              <property role="3oM_SC" value="breaks):" />
             </node>
           </node>
         </node>
@@ -1295,7 +1376,19 @@
         <node concept="3SKdUt" id="1H_SdzRcUF2" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUF4" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUF5" role="1PaTwD">
-              <property role="3oM_SC" value="&lt;&lt;&lt; Inlined query computation ends" />
+              <property role="3oM_SC" value="&lt;&lt;&lt;" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnG" role="1PaTwD">
+              <property role="3oM_SC" value="Inlined" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnH" role="1PaTwD">
+              <property role="3oM_SC" value="query" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnI" role="1PaTwD">
+              <property role="3oM_SC" value="computation" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQnJ" role="1PaTwD">
+              <property role="3oM_SC" value="ends" />
             </node>
           </node>
         </node>
@@ -1309,7 +1402,16 @@
         <node concept="3SKdUt" id="1H_SdzRcUFr" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUFt" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUFu" role="1PaTwD">
-              <property role="3oM_SC" value="&lt;&lt;&lt; Editor component ends" />
+              <property role="3oM_SC" value="&lt;&lt;&lt;" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoq" role="1PaTwD">
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQor" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQos" role="1PaTwD">
+              <property role="3oM_SC" value="ends" />
             </node>
           </node>
         </node>
@@ -1349,9 +1451,21 @@
         <node concept="3SKdUt" id="1H_SdzRcUGe" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUGg" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUGh" role="1PaTwD">
-              <property role="3oM_SC" value="&lt;&lt;&lt; Editor component ends" />
+              <property role="3oM_SC" value="&lt;&lt;&lt;" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoE" role="1PaTwD">
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoF" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQoG" role="1PaTwD">
+              <property role="3oM_SC" value="ends" />
             </node>
           </node>
+        </node>
+        <node concept="lc7rE" id="7bDXsfCgQUE" role="3cqZAp">
+          <node concept="l8MVK" id="7bDXsfCgRlI" role="lcghm" />
         </node>
       </node>
     </node>
@@ -1364,7 +1478,16 @@
         <node concept="3SKdUt" id="1H_SdzRcUGo" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUGq" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUGr" role="1PaTwD">
-              <property role="3oM_SC" value="Editor component follows &gt;&gt;&gt;" />
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ$H" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ$I" role="1PaTwD">
+              <property role="3oM_SC" value="follows" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ$J" role="1PaTwD">
+              <property role="3oM_SC" value="&gt;&gt;&gt;" />
             </node>
           </node>
         </node>
@@ -1406,7 +1529,28 @@
                 <node concept="3SKdUt" id="1H_SdzRcUHo" role="3cqZAp">
                   <node concept="1PaTwC" id="1H_SdzRcUHq" role="1aUNEU">
                     <node concept="3oM_SD" id="1H_SdzRcUHr" role="1PaTwD">
-                      <property role="3oM_SC" value="horizontal child collection: insert spaces between the elements" />
+                      <property role="3oM_SC" value="horizontal" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$P" role="1PaTwD">
+                      <property role="3oM_SC" value="child" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$Q" role="1PaTwD">
+                      <property role="3oM_SC" value="collection:" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$R" role="1PaTwD">
+                      <property role="3oM_SC" value="insert" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$S" role="1PaTwD">
+                      <property role="3oM_SC" value="spaces" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$T" role="1PaTwD">
+                      <property role="3oM_SC" value="between" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$U" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgQ$V" role="1PaTwD">
+                      <property role="3oM_SC" value="elements" />
                     </node>
                   </node>
                 </node>
@@ -1436,7 +1580,16 @@
         <node concept="3SKdUt" id="1H_SdzRcUI3" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUI5" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUI6" role="1PaTwD">
-              <property role="3oM_SC" value="&lt;&lt;&lt; Editor component ends" />
+              <property role="3oM_SC" value="&lt;&lt;&lt;" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ_5" role="1PaTwD">
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ_6" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgQ_7" role="1PaTwD">
+              <property role="3oM_SC" value="ends" />
             </node>
           </node>
         </node>
@@ -1450,7 +1603,16 @@
         <node concept="3SKdUt" id="1H_SdzRcUId" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUIf" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUIg" role="1PaTwD">
-              <property role="3oM_SC" value="Editor component follows &gt;&gt;&gt;" />
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRjm" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRjn" role="1PaTwD">
+              <property role="3oM_SC" value="follows" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRjo" role="1PaTwD">
+              <property role="3oM_SC" value="&gt;&gt;&gt;" />
             </node>
           </node>
         </node>
@@ -1485,7 +1647,28 @@
                 <node concept="3SKdUt" id="1H_SdzRcUIM" role="3cqZAp">
                   <node concept="1PaTwC" id="1H_SdzRcUIO" role="1aUNEU">
                     <node concept="3oM_SD" id="1H_SdzRcUIP" role="1PaTwD">
-                      <property role="3oM_SC" value="horizontal child collection: insert spaces between the elements" />
+                      <property role="3oM_SC" value="horizontal" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRiY" role="1PaTwD">
+                      <property role="3oM_SC" value="child" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRiZ" role="1PaTwD">
+                      <property role="3oM_SC" value="collection:" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRj0" role="1PaTwD">
+                      <property role="3oM_SC" value="insert" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRj1" role="1PaTwD">
+                      <property role="3oM_SC" value="spaces" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRj2" role="1PaTwD">
+                      <property role="3oM_SC" value="between" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRj3" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="7bDXsfCgRj4" role="1PaTwD">
+                      <property role="3oM_SC" value="elements" />
                     </node>
                   </node>
                 </node>
@@ -1507,7 +1690,16 @@
         <node concept="3SKdUt" id="1H_SdzRcUJ4" role="3cqZAp">
           <node concept="1PaTwC" id="1H_SdzRcUJ6" role="1aUNEU">
             <node concept="3oM_SD" id="1H_SdzRcUJ7" role="1PaTwD">
-              <property role="3oM_SC" value="&lt;&lt;&lt; Editor component ends" />
+              <property role="3oM_SC" value="&lt;&lt;&lt;" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRje" role="1PaTwD">
+              <property role="3oM_SC" value="Editor" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRjf" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="7bDXsfCgRjg" role="1PaTwD">
+              <property role="3oM_SC" value="ends" />
             </node>
           </node>
         </node>
