@@ -231,10 +231,14 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -462,6 +466,9 @@
   </registry>
   <node concept="bUwia" id="7T9E0zts_MG">
     <property role="TrG5h" value="main" />
+    <node concept="aNPBN" id="7bDXsfCkYiq" role="aQYdv">
+      <ref role="aOQi4" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+    </node>
     <node concept="3lhOvk" id="7T9E0ztt0Rr" role="3lj3bC">
       <ref role="30HIoZ" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
       <ref role="3lhOvi" node="7T9E0ztsTj8" resolve="Activity" />

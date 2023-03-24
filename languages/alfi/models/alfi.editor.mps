@@ -3144,5 +3144,47 @@
       <ref role="1PE7su" node="2SMO68r$0xh" resolve="DocumentedElement_Content_EC" />
     </node>
   </node>
+  <node concept="PKFIW" id="7bDXsfCibYF">
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="PackageDefinition_EC" />
+    <ref role="1XX52x" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+    <node concept="3EZMnI" id="7bDXsfCibYJ" role="2wV5jI">
+      <node concept="PMmxH" id="7bDXsfCibYQ" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="3F0A7n" id="7bDXsfCibYV" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7bDXsfCibZd" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="tpen:hXb$RYA" resolve="LeftBracket" />
+      </node>
+      <node concept="3F2HdR" id="7bDXsfCibZK" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+        <node concept="l2Vlx" id="7bDXsfCibZM" role="2czzBx" />
+        <node concept="pVoyu" id="7bDXsfCibZU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="7bDXsfCibZW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="7bDXsfCibZZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7bDXsfCibZn" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
+        <node concept="pVoyu" id="7bDXsfCibZB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7bDXsfCibYM" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="7bDXsfCibYH" role="1PM95z">
+      <ref role="1PE7su" node="2SMO68r$0xh" resolve="DocumentedElement_Content_EC" />
+    </node>
+  </node>
 </model>
 

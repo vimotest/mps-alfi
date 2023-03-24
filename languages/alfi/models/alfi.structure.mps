@@ -1274,5 +1274,13 @@
       <ref role="AX2Wp" node="6cBsaQyo9wt" resolve="ConditionalLogicalOperator" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7bDXsfCi5L0">
+    <property role="EcuMT" value="8280419611661851712" />
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="PackageDefinition" />
+    <property role="34LRSv" value="package" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="2SMO68r$0GW" resolve="NamespaceDefinition" />
+  </node>
 </model>
 

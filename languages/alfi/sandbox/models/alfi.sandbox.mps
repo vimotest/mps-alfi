@@ -11,7 +11,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
@@ -37,13 +46,22 @@
         <child id="2674824929519835218" name="nameBinding" index="_vnH8" />
       </concept>
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe" />
+      <concept id="520354255175379373" name="alfi.structure.DocumentedElementCommentContent" flags="ng" index="IbWbt">
+        <child id="520354255175379374" name="documentationLines" index="IbWbu" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
       </concept>
+      <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
+        <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
+      </concept>
       <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
+      <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ng" index="PJ9RI">
+        <child id="520354255175429050" name="documentation" index="I883a" />
+      </concept>
       <concept id="7144803224901733272" name="alfi.structure.BinaryExpression" flags="ng" index="31szGP">
         <child id="7144803224901733273" name="operand1" index="31szGO" />
         <child id="7144803224901733275" name="operand2" index="31szGQ" />
@@ -617,6 +635,48 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2qCqA3" id="7bDXsfCj65X">
+    <property role="TrG5h" value="Foo" />
+    <node concept="PCHHj" id="7bDXsfCj65Y" role="PCHHv">
+      <property role="TrG5h" value="FooA" />
+      <node concept="PCHzy" id="7bDXsfCj660" role="PCHGa">
+        <node concept="_jtW9" id="7bDXsfCkIQK" role="PCHzz">
+          <node concept="_uF8j" id="7bDXsfCkIQC" role="_jtWe">
+            <node concept="_vnHb" id="7bDXsfCkIQE" role="_uF8g">
+              <node concept="_vnHe" id="7bDXsfCkIQG" role="_vnH8">
+                <property role="TrG5h" value="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="7bDXsfCkIQI" role="_uFfl">
+              <node concept="_iklQ" id="7bDXsfCkIQQ" role="_vku1">
+                <property role="_iklR" value="HELLLOOOO PACKAGE!" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IbWbt" id="7bDXsfCj66d" role="I883a">
+        <node concept="1PaTwC" id="7bDXsfCj66e" role="IbWbu">
+          <node concept="3oM_SD" id="7bDXsfCj66f" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="IbWbt" id="7bDXsfCj66l" role="I883a">
+      <node concept="1PaTwC" id="7bDXsfCj66m" role="IbWbu">
+        <node concept="3oM_SD" id="7bDXsfCj66n" role="1PaTwD">
+          <property role="3oM_SC" value="asd" />
+        </node>
+      </node>
+    </node>
+    <node concept="2qCqA3" id="7bDXsfCj66T" role="PCHHv">
+      <property role="TrG5h" value="xyz" />
+      <node concept="PCHHj" id="7bDXsfCj674" role="PCHHv">
+        <property role="TrG5h" value="xyz1" />
       </node>
     </node>
   </node>

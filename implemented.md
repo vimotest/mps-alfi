@@ -104,7 +104,11 @@ Limitations are listed as subpoints of the chapters.
 - [x] 10.2 Namespaces
   - only structure, not the namespacing (typesystem) logic
   - no visibility
-- [ ] 10.3 Packages
+- [x] 10.3 Packages
+  - only structure, not the namespacing (typesystem) logic
+  - no visibility
+  - no stereotypes
+  - only Definition, not stub
 - [ ] 10.4 Classifiers
   - [x] 10.4.1 Overview
     - only Definition, not stub
