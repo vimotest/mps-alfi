@@ -1,0 +1,32 @@
+public import Other;
+
+package Bar {
+  public activity Baz() {
+    WriteLine("baz");
+    Bar::Asd::Xyz();
+    Weird::Shit::WS1();
+    Other::OtherActivity();
+    Some::Other::OtherActivity();
+  }
+  public package Asd {
+    public activity Xyz() {
+      WriteLine("Xyz");
+    }
+  }
+  public package Weird {
+    public package Shit {
+      public activity WS1() {
+        WriteLine("WS1");
+        W1();
+      }
+      public activity WS2() {}
+      public activity WS3() {}
+    }
+    public activity W1() {
+      WriteLine("W1");
+    }
+    public activity W2() {}
+  }
+  public package Some;
+  public activity Boo();
+}

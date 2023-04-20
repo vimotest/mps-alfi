@@ -45,6 +45,11 @@ jobs:
       - name: Tear down xvfb
         run: killall Xvfb
 
+      # Build Project again
+      # Somehow the java files for compitest are only compiled on the second build
+      - name: Build Project Again
+        run: sh ./gradlew mpsBuild
+
       # Archive Artifacts
       - name: Archive artifacts
         uses: actions/upload-artifact@v3

@@ -10,6 +10,8 @@
       <modulePath path="$PROJECT_DIR$/basic-lang/languages/test.language/test.language.mpl" folder="basic-lang" />
       <modulePath path="$PROJECT_DIR$/basic-lang/solutions/basic.language.test/basic.language.test.msd" folder="basic-lang" />
       <modulePath path="$PROJECT_DIR$/basic-lang/solutions/java.example/java.example.msd" folder="basic-lang" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/sandbox/alfi.PrimitiveMapping.sandbox.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/sandbox/alfi.sandbox.msd" folder="alfi" />

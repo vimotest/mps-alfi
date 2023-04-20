@@ -1,36 +1,13 @@
-activity Foo ( ) { 
-  let a: Integer = 123; 
-  let b: String = "asd"; 
-  WriteLine("Input please"); 
-  let c: String = ReadLine(<< ... >>); 
-  let d: Boolean = b == "asd"; 
-  let f: Integer = 123 / 1; 
-  let g: Boolean = 123 == 123; 
-  let h: Boolean = 123 > 1; 
-  let i: Boolean = 12 >= 123; 
-  let j: Boolean = 1 < 1; 
-  let k: Boolean = 1 <= 123; 
-  let l: Integer = 1 - 2; 
-  let m: Integer = 1 * 2; 
-  let u: Boolean = "1" != "2"; 
-  let v: Integer = 5 + 6; 
-  if (m == v) { 
-  let x: String = "123"; 
-} 
-  WriteLine(b); 
-  WriteLine(g); 
-  WriteLine("var " + "a" + "[int]" + "=" + a); 
-  WriteLine("var " + "b" + "[string]" + "=" + b); 
-  WriteLine("var " + "c" + "[string]" + "=" + c); 
-  WriteLine("var " + "d" + "[boolean]" + "=" + d); 
-  WriteLine("var " + "f" + "[int]" + "=" + f); 
-  WriteLine("var " + "g" + "[boolean]" + "=" + g); 
-  WriteLine("var " + "h" + "[boolean]" + "=" + h); 
-  WriteLine("var " + "i" + "[boolean]" + "=" + i); 
-  WriteLine("var " + "j" + "[boolean]" + "=" + j); 
-  WriteLine("var " + "k" + "[boolean]" + "=" + k); 
-  WriteLine("var " + "l" + "[int]" + "=" + l); 
-  WriteLine("var " + "m" + "[int]" + "=" + m); 
-  WriteLine("var " + "u" + "[boolean]" + "=" + u); 
-  WriteLine("var " + "v" + "[int]" + "=" + v); 
+activity Foo ( ) {
+//  let a : Integer = 0;
+//  WriteLine(IntegerFunctions::ToString(a));
+  end = false;
+  while(!end) {
+    a = 3;
+    b = 2;
+    WriteLine(IntegerFunctions::ToString(a));
+    WriteLine(IntegerFunctions::ToString(b));
+    end = true;
+  }
+  WriteLine(IntegerFunctions::ToString((Integer)a));
 }

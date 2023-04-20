@@ -26,7 +26,6 @@ Limitations are listed as subpoints of the chapters.
 
 - [ ] 8.1 Overview (Local Names and Assigned Sources)
 - [x] 8.2 Qualified Names
-  - not TypeName
   - not DotQualifiedName
   - not Templates
 - [ ] 8.3 Primary Expressions
@@ -94,37 +93,31 @@ Limitations are listed as subpoints of the chapters.
 - [x] 9.12 for Statements
 - [x] 9.13 break Statements
 - [x] 9.14 return Statements
-  - Not with expression
 - [ ] 9.15 accept Statements
 - [ ] 9.16 classify Statements
 
 ## Units (10)
 
-- [ ] 10.1 Overview
+- [x] 10.1 Overview
+  - no alias for imports
+  - no parameters for stereotypes
 - [x] 10.2 Namespaces
-  - only structure, not the namespacing (typesystem) logic
-  - no visibility
 - [x] 10.3 Packages
-  - only structure, not the namespacing (typesystem) logic
-  - no visibility
-  - no stereotypes
-  - only Definition, not stub
 - [ ] 10.4 Classifiers
   - [x] 10.4.1 Overview
-    - only Definition, not stub
     - not template parameters
-    - not specializations
     - no editor for abstract
   - [ ] 10.4.2 Classes
   - [ ] 10.4.3 Active Classes
-  - [ ] 10.4.4 Data Types
+  - [x] 10.4.4 Data Types
+    - only primitive datatypes
   - [ ] 10.4.5 Associations
   - [ ] 10.4.6 Enumerations
   - [ ] 10.4.7 Signals
   - [x] 10.4.8 Activities
-    - only Definition, not stub
     - not template parameters
-    - no editor for parameters and return parameter
+    - parameters cannot have comments or stereotypes
+    - parameters cannot have both the nonunique and ordered flags simultaneously (use the equivalent sequence flag)
 - [ ] 10.5 Features
 
 ## Standard Model Library (11)
@@ -136,8 +129,9 @@ During the transformation to a target language these stubs will be replaced by a
 
 - [x] 11.1 Overview (no implementation needed)
 - [x] 11.2 ~~ActionLanguage Profile~~ (not implemented in alfi as alfi is not a UML tool)
-- [ ] 11.3 Primitive Types
+- [x] 11.3 Primitive Types
 - [ ] 11.4 Primitive Behaviors
-- [ ] 11.5 Basic Input and Output
+- [x] 11.5 Basic Input and Output
+  - Only ReadLine and WriteLine and without errorStatus parameter
 - [ ] 11.6 Collection Functions
 - [ ] 11.7 Collection Classes
