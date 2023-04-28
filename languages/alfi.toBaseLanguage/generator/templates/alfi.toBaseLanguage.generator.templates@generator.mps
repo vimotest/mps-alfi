@@ -23,7 +23,6 @@
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -287,9 +286,7 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
-      <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
-        <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
-      </concept>
+      <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
@@ -309,7 +306,6 @@
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <property id="7898029224680692134" name="description" index="2n97ot" />
         <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
-        <reference id="1200917515464" name="labelDeclaration" index="2sgKRv" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
@@ -569,7 +565,6 @@
     <node concept="3lhOvk" id="7T9E0ztt0Rr" role="3lj3bC">
       <ref role="3lhOvi" node="7T9E0ztsTj8" resolve="Activity" />
       <ref role="30HIoZ" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
-      <ref role="2sgKRv" node="2X39vz3fRRw" resolve="namedNode" />
       <node concept="30G5F_" id="3c6l8$qsNiY" role="30HLyM">
         <node concept="3clFbS" id="3c6l8$qsNiZ" role="2VODD2">
           <node concept="3cpWs8" id="3En5LrUVAED" role="3cqZAp">
@@ -1571,7 +1566,7 @@
                             <node concept="2xdQw9" id="4Vswoj0xqVa" role="3cqZAp">
                               <property role="2xdLsb" value="gZ5fh_4/error" />
                               <node concept="Xl_RD" id="4Vswoj0xqVb" role="9lYJi">
-                                <property role="Xl_RC" value="While reducing Left hand side of assignment (which is a name): Target does not map to a local variable element" />
+                                <property role="Xl_RC" value="While reducing Left hand side of assignment (which is a name): Target does not map to a variable declaration" />
                               </node>
                             </node>
                             <node concept="3cpWs6" id="4Vswoj0xqVc" role="3cqZAp">
@@ -1585,25 +1580,20 @@
                               </node>
                               <node concept="1mIQ4w" id="4Vswoj0xqVh" role="2OqNvi">
                                 <node concept="chp4Y" id="4Vswoj0xqVi" role="cj9EA">
-                                  <ref role="cht4Q" to="tpee:i1Ircah" resolve="ILocalVariableElement" />
+                                  <ref role="cht4Q" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                         <node concept="3cpWs6" id="4Vswoj0xqVj" role="3cqZAp">
-                          <node concept="2OqwBi" id="4Vswoj0DlBa" role="3cqZAk">
-                            <node concept="1PxgMI" id="4Vswoj0xqVk" role="2Oq$k0">
-                              <property role="1BlNFB" value="true" />
-                              <node concept="37vLTw" id="4Vswoj0xqVm" role="1m5AlR">
-                                <ref role="3cqZAo" node="4Vswoj0xqUM" resolve="targetNode" />
-                              </node>
-                              <node concept="chp4Y" id="4Vswoj0DllL" role="3oSUPX">
-                                <ref role="cht4Q" to="tpee:i1Ircah" resolve="ILocalVariableElement" />
-                              </node>
+                          <node concept="1PxgMI" id="4BdRpMvrXsY" role="3cqZAk">
+                            <property role="1BlNFB" value="true" />
+                            <node concept="chp4Y" id="4BdRpMvrXAL" role="3oSUPX">
+                              <ref role="cht4Q" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
                             </node>
-                            <node concept="2qgKlT" id="4Vswoj0DlZm" role="2OqNvi">
-                              <ref role="37wK5l" to="tpek:i1ItFZH" resolve="getLocalVariableDeclaration" />
+                            <node concept="37vLTw" id="4BdRpMvrWda" role="1m5AlR">
+                              <ref role="3cqZAo" node="4Vswoj0xqUM" resolve="targetNode" />
                             </node>
                           </node>
                         </node>
@@ -1750,6 +1740,9 @@
           </node>
         </node>
       </node>
+      <node concept="2ZBi8u" id="4BdRpMve_dc" role="lGtFl">
+        <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
+      </node>
     </node>
     <node concept="2YIFZL" id="7T9E0ztsXgr" role="jymVt">
       <property role="TrG5h" value="main" />
@@ -1762,11 +1755,18 @@
               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
               <node concept="3$xsQk" id="7T9E0ztsYO1" role="3$ytzL">
                 <node concept="3clFbS" id="7T9E0ztsYO2" role="2VODD2">
-                  <node concept="3clFbF" id="7T9E0ztsZ0j" role="3cqZAp">
-                    <node concept="2OqwBi" id="7T9E0ztsZjx" role="3clFbG">
-                      <node concept="30H73N" id="7T9E0ztsZ0i" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="7T9E0ztt09S" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="3clFbF" id="4BdRpMveAA5" role="3cqZAp">
+                    <node concept="1PxgMI" id="4BdRpMveD2r" role="3clFbG">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="4BdRpMveDkO" role="3oSUPX">
+                        <ref role="cht4Q" to="tpee:6LFqxSRBTg8" resolve="MethodDeclaration" />
+                      </node>
+                      <node concept="2OqwBi" id="4BdRpMveAYY" role="1m5AlR">
+                        <node concept="1iwH7S" id="4BdRpMveAA4" role="2Oq$k0" />
+                        <node concept="1iwH70" id="4BdRpMveB_F" role="2OqNvi">
+                          <ref role="1iwH77" node="2X39vz3fRRw" resolve="namedNode" />
+                          <node concept="30H73N" id="4BdRpMveCoJ" role="1iwH7V" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2090,10 +2090,11 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="2ZBi8u" id="4BdRpMvrUhb" role="lGtFl">
+                    <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
+                  </node>
                 </node>
-                <node concept="raruj" id="7T9E0zttZFK" role="lGtFl">
-                  <ref role="2sdACS" node="2X39vz3fRRw" resolve="namedNode" />
-                </node>
+                <node concept="raruj" id="7T9E0zttZFK" role="lGtFl" />
               </node>
             </node>
           </node>
@@ -2998,7 +2999,7 @@
                             <node concept="2xdQw9" id="4Vswoj0x_Um" role="3cqZAp">
                               <property role="2xdLsb" value="gZ5fh_4/error" />
                               <node concept="Xl_RD" id="4Vswoj0x_Un" role="9lYJi">
-                                <property role="Xl_RC" value="While reducing Name expression: Target does not map to a LocalVariableElement" />
+                                <property role="Xl_RC" value="While reducing Name expression: Target does not map to a VariableDeclaration" />
                               </node>
                             </node>
                             <node concept="3cpWs6" id="4Vswoj0x_Uo" role="3cqZAp">
@@ -3012,25 +3013,20 @@
                               </node>
                               <node concept="1mIQ4w" id="4Vswoj0x_Ut" role="2OqNvi">
                                 <node concept="chp4Y" id="4Vswoj0x_Uu" role="cj9EA">
-                                  <ref role="cht4Q" to="tpee:i1Ircah" resolve="ILocalVariableElement" />
+                                  <ref role="cht4Q" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                         <node concept="3cpWs6" id="4Vswoj0x_Uv" role="3cqZAp">
-                          <node concept="2OqwBi" id="4Vswoj0Djan" role="3cqZAk">
-                            <node concept="1PxgMI" id="4Vswoj0x_Uw" role="2Oq$k0">
-                              <property role="1BlNFB" value="true" />
-                              <node concept="37vLTw" id="4Vswoj0x_Uy" role="1m5AlR">
-                                <ref role="3cqZAo" node="4Vswoj0x_TW" resolve="targetNode" />
-                              </node>
-                              <node concept="chp4Y" id="4Vswoj0DiGo" role="3oSUPX">
-                                <ref role="cht4Q" to="tpee:i1Ircah" resolve="ILocalVariableElement" />
-                              </node>
+                          <node concept="1PxgMI" id="4Vswoj0x_Uw" role="3cqZAk">
+                            <property role="1BlNFB" value="true" />
+                            <node concept="37vLTw" id="4Vswoj0x_Uy" role="1m5AlR">
+                              <ref role="3cqZAo" node="4Vswoj0x_TW" resolve="targetNode" />
                             </node>
-                            <node concept="2qgKlT" id="4Vswoj0Dju7" role="2OqNvi">
-                              <ref role="37wK5l" to="tpek:i1ItFZH" resolve="getLocalVariableDeclaration" />
+                            <node concept="chp4Y" id="4BdRpMvrZWy" role="3oSUPX">
+                              <ref role="cht4Q" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -6871,9 +6867,11 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="2ZBi8u" id="4BdRpMvEyyW" role="lGtFl">
+                      <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
+                    </node>
                   </node>
                   <node concept="1WS0z7" id="4VswoiZC72U" role="lGtFl">
-                    <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
                     <node concept="3JmXsc" id="4VswoiZC72V" role="3Jn$fo">
                       <node concept="3clFbS" id="4VswoiZC72W" role="2VODD2">
                         <node concept="3clFbF" id="4VswoiZC72X" role="3cqZAp">

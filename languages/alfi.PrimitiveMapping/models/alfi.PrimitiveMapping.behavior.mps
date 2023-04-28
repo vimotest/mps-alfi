@@ -9,6 +9,7 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="80bi" ref="r:95fc96a8-27f5-4ee9-87a9-d1035329badc(CsBaseLanguage.structure)" />
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" implicit="true" />
   </imports>
   <registry>
@@ -134,6 +135,32 @@
                         <node concept="1j9C0f" id="2X39vz362hm" role="2OqNvi">
                           <node concept="chp4Y" id="2X39vz365A9" role="3MHPCF">
                             <ref role="cht4Q" to="tpee:g96eOhU" resolve="GenericDeclaration" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="4BdRpMvcJ65" role="3X5gkp">
+              <node concept="21nZrQ" id="4BdRpMvcJ66" role="3X5Uda">
+                <ref role="21nZrZ" to="sk9k:4BdRpMvcFZk" resolve="cSharp" />
+              </node>
+              <node concept="3X5gDB" id="4BdRpMvcJjB" role="3X5gFO">
+                <node concept="3clFbS" id="4BdRpMvcJjD" role="3X5gD$">
+                  <node concept="3clFbF" id="4BdRpMvcJnO" role="3cqZAp">
+                    <node concept="2YIFZM" id="4BdRpMvcJEE" role="3clFbG">
+                      <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                      <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                      <node concept="2OqwBi" id="4BdRpMvcKJP" role="37wK5m">
+                        <node concept="2OqwBi" id="4BdRpMvcJY6" role="2Oq$k0">
+                          <node concept="13iPFW" id="4BdRpMvcJIT" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="4BdRpMvcKz6" role="2OqNvi" />
+                        </node>
+                        <node concept="1j9C0f" id="4BdRpMvcKXY" role="2OqNvi">
+                          <node concept="chp4Y" id="4BdRpMvcLcB" role="3MHPCF">
+                            <ref role="cht4Q" to="80bi:1HkqSaCLgAV" resolve="IReferencableMemberDeclaration" />
                           </node>
                         </node>
                       </node>
