@@ -591,6 +591,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2SMO68r$0y0" resolve="Block" />
     </node>
+    <node concept="PrWs8" id="5w9Q865XZs9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQxChVc">
     <property role="EcuMT" value="7144803224889925324" />

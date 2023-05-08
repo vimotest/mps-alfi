@@ -223,9 +223,11 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="2S6QgY" id="6cBsaQxgr0u">
@@ -1517,6 +1519,59 @@
               </node>
             </node>
             <node concept="2DeJg1" id="1KdBIfXp7EE" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5w9Q865Xh6o">
+    <property role="3GE5qa" value="units" />
+    <property role="2ZfUl3" value="true" />
+    <property role="TrG5h" value="RemoveErroneousOwnedMembers" />
+    <ref role="2ZfgGC" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+    <node concept="2S6ZIM" id="5w9Q865Xh6p" role="2ZfVej">
+      <node concept="3clFbS" id="5w9Q865Xh6q" role="2VODD2">
+        <node concept="3clFbF" id="5w9Q865Xi2M" role="3cqZAp">
+          <node concept="Xl_RD" id="5w9Q865Xi2L" role="3clFbG">
+            <property role="Xl_RC" value="Remove all owned members (children) of this package stub." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5w9Q865Xh6r" role="2ZfgGD">
+      <node concept="3clFbS" id="5w9Q865Xh6s" role="2VODD2">
+        <node concept="3clFbF" id="5w9Q865XqY7" role="3cqZAp">
+          <node concept="2OqwBi" id="5w9Q865Xt$F" role="3clFbG">
+            <node concept="2OqwBi" id="5w9Q865Xr8C" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5w9Q865XqY6" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5w9Q865XrT$" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="5w9Q865XvWM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5w9Q865XisK" role="2ZfVeh">
+      <node concept="3clFbS" id="5w9Q865XisL" role="2VODD2">
+        <node concept="3clFbF" id="5w9Q865XiwP" role="3cqZAp">
+          <node concept="1Wc70l" id="5w9Q865Xjzr" role="3clFbG">
+            <node concept="2OqwBi" id="5w9Q865XmVC" role="3uHU7w">
+              <node concept="2OqwBi" id="5w9Q865XjT3" role="2Oq$k0">
+                <node concept="2Sf5sV" id="5w9Q865XjC2" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5w9Q865XkQi" role="2OqNvi">
+                  <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="5w9Q865XqMf" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5w9Q865XiLC" role="3uHU7B">
+              <node concept="2Sf5sV" id="5w9Q865XiwO" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5w9Q865XjgR" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -334,9 +334,6 @@
   <node concept="1M2fIO" id="7bDXsfCi5We">
     <property role="3GE5qa" value="units" />
     <ref role="1M2myG" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
-    <node concept="EnEH3" id="604l4jmuLpE" role="1MhHOB">
-      <ref role="EomxK" to="28lk:2SMO68r$0GS" resolve="isStub" />
-    </node>
     <node concept="9SLcT" id="7bDXsfCi5XX" role="9SGkU">
       <node concept="3clFbS" id="7bDXsfCi5XY" role="2VODD2">
         <node concept="3clFbJ" id="7bDXsfCi9hk" role="3cqZAp">

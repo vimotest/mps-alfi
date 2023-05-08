@@ -122,16 +122,18 @@ Limitations are listed as subpoints of the chapters.
 
 ## Standard Model Library (11)
 
-The features of the standard model library will not be implemented in alfi.
-Rather, stubs will be provided.
+The features of the standard model library will not be implemented in the language definition of alfi.
+Rather, it will be implemented as a model written with/in alfi.
+All elements marked as primitive must be mapped to some actual implementation
 When running generated Alf code, the implementation will be provided by the Alf implementation.
-During the transformation to a target language these stubs will be replaced by a suitable implementation.
+For target languages, a mapping from these elements to suitable elements in the target language must be defined.
 
 - [x] 11.1 Overview (no implementation needed)
 - [x] 11.2 ~~ActionLanguage Profile~~ (not implemented in alfi as alfi is not a UML tool)
 - [x] 11.3 Primitive Types
-- [ ] 11.4 Primitive Behaviors
+- [x] 11.4 Primitive Behaviors
+  - Only the `ToString` methods
 - [x] 11.5 Basic Input and Output
-  - Only ReadLine and WriteLine and without errorStatus parameter
+  - Only `ReadLine` and `WriteLine` and without `errorStatus` parameter
 - [ ] 11.6 Collection Functions
 - [ ] 11.7 Collection Classes
