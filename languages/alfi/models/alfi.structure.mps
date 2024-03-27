@@ -1322,7 +1322,7 @@
     <property role="EcuMT" value="8550147057602730244" />
     <property role="3GE5qa" value="expressions.names" />
     <property role="TrG5h" value="NameReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7qCenb1KL$5" role="1TKVEi">
       <property role="IQ2ns" value="8550147057602730245" />
       <property role="20kJfa" value="target" />
@@ -1358,7 +1358,7 @@
     <property role="TrG5h" value="NamespaceDeclaration" />
     <property role="34LRSv" value="namespace" />
     <property role="R4oN_" value="Specify containing namespace" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4jcHaHwBAYS" role="1TKVEi">
       <property role="IQ2ns" value="4957535937981476792" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1375,7 +1375,7 @@
     <property role="3GE5qa" value="units" />
     <property role="TrG5h" value="Unit" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6OepWIVJVYW" role="1TKVEi">
       <property role="IQ2ns" value="7858332524534022076" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1405,7 +1405,7 @@
     <property role="3GE5qa" value="units" />
     <property role="TrG5h" value="ImportDeclaration" />
     <property role="34LRSv" value="import" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1KdBIfWJWnt" role="1TKVEl">
       <property role="IQ2nx" value="2021446509794411997" />
       <property role="TrG5h" value="visibility" />
@@ -1432,7 +1432,7 @@
     <property role="3GE5qa" value="units" />
     <property role="TrG5h" value="StereotypeAnnotation" />
     <property role="34LRSv" value="@" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1KdBIfWTSLC" role="1TKVEl">
       <property role="IQ2nx" value="2021446509797018728" />
       <property role="TrG5h" value="stereotypeName" />
@@ -1548,7 +1548,7 @@
     <property role="TrG5h" value="EmptyMultiplicityRange" />
     <property role="34LRSv" value="[]" />
     <property role="R4oN_" value="empty multiplicity range" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1KdBIfXLfKS" role="PzmwI">
       <ref role="PrY4T" node="1KdBIfXLfIO" resolve="MultiplictyRange" />
     </node>
@@ -1559,7 +1559,7 @@
     <property role="TrG5h" value="OnesidedMultiplicityRange" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="one-sided multiplicity range" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1KdBIfXLfR6" role="PzmwI">
       <ref role="PrY4T" node="1KdBIfXLfIO" resolve="MultiplictyRange" />
     </node>
@@ -1577,7 +1577,7 @@
     <property role="TrG5h" value="TwosidedMultiplicityRange" />
     <property role="34LRSv" value="[..]" />
     <property role="R4oN_" value="two-sided multiplicity range" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1KdBIfXLsZQ" role="1TKVEi">
       <property role="IQ2ns" value="2021446509811585014" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1638,7 +1638,7 @@
     <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
     <property role="TrG5h" value="OrderedFlag" />
     <property role="34LRSv" value="ordered" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5rdMfD7ytWK" role="PzmwI">
       <ref role="PrY4T" node="5rdMfD7ytV2" resolve="OrderingAndUniqnessFlag" />
     </node>

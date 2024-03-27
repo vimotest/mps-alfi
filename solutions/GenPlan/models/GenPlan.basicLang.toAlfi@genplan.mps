@@ -5,7 +5,6 @@
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
   </languages>
   <imports>
-    <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toBaselanguage@genplan)" />
     <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
   </imports>
   <registry>

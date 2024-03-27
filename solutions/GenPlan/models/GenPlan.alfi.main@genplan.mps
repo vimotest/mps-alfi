@@ -6,8 +6,8 @@
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
   </languages>
   <imports>
-    <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toBaselanguage@genplan)" />
     <import index="ckmt" ref="r:ffedea7e-6d1d-4894-b17a-a68bd5337214(GenPlan.alfi.toCsBaselanguage@genplan)" />
+    <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toBaselanguage@genplan)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">

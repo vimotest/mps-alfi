@@ -2,22 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/basic.language.dumpScope/basic.language.dumpScope.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/basic.language.generalToString/basic.language.generalToString.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/basic.language.io/basic.language.io.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/basic.language/basic.language.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/basic.language/sandbox/basic.language.sandbox.msd" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/languages/test.language/test.language.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/solutions/basic.language.test/basic.language.test.msd" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/basic-lang/solutions/java.example/java.example.msd" folder="basic-lang" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/sandbox/alfi.PrimitiveMapping.sandbox.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toCsBaseLanguage/alfi.toCsBaseLanguage.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/sandbox/alfi.sandbox.msd" folder="alfi" />
-      <modulePath path="$PROJECT_DIR$/languages/basic.language.io.toAlfi/basic.language.io.toAlfi.mpl" folder="basic-lang" />
-      <modulePath path="$PROJECT_DIR$/languages/basic.language.toAlfi/basic.language.toAlfi.mpl" folder="basic-lang" />
       <modulePath path="$PROJECT_DIR$/solutions/GenPlan/GenPlan.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.build/alfi.build.msd" folder="" />
@@ -25,7 +15,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/alfi.sandbox2/alfi.sandbox2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.sandbox3/alfi.sandbox3.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.test/alfi.test.msd" folder="alfi" />
-      <modulePath path="$PROJECT_DIR$/solutions/basic.language.toAlfiSandbox/basic.language.toAlfiSandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/cs.sandbox/cs.sandbox.msd" folder="" />
     </projectModules>
   </component>

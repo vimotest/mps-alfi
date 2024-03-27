@@ -262,7 +262,7 @@
             <node concept="3cpWs6" id="4Vswoj0ImjL" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImrN" role="3cqZAk">
                 <ref role="Rm8GQ" node="4Vswoj0IlHh" resolve="None" />
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
               </node>
             </node>
           </node>
@@ -271,7 +271,7 @@
           <node concept="3clFbS" id="4Vswoj0IlQ0" role="3clFbx">
             <node concept="3cpWs6" id="4Vswoj0ImDc" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImQQ" role="3cqZAk">
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
                 <ref role="Rm8GQ" node="4Vswoj0Iksi" resolve="Optional" />
               </node>
             </node>
@@ -293,13 +293,13 @@
         <node concept="3cpWs6" id="4Vswoj0In0J" role="3cqZAp">
           <node concept="Rm8GO" id="4Vswoj0Inet" role="3cqZAk">
             <ref role="Rm8GQ" node="4Vswoj0IkyT" resolve="List" />
-            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="4Vswoj0IlfS" role="1B3o_S" />
       <node concept="3uibUv" id="4Vswoj0IlmG" role="3clF45">
-        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
       </node>
       <node concept="37vLTG" id="4Vswoj0Ilvc" role="3clF46">
         <property role="TrG5h" value="parameter" />

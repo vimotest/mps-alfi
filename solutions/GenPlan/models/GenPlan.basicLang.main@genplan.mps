@@ -54,10 +54,10 @@
       </node>
     </node>
     <node concept="10T23i" id="6pZ_RG0O5IH" role="2VgMA7">
-      <ref role="10T23l" to="ynmg:6pZ_RG0O1mv" resolve="ToAlfi" />
+      <ref role="10T23l" to="ynmg:6pZ_RG0O1mv" resolve="BasicLangToAlfi" />
     </node>
     <node concept="10T23i" id="6pZ_RG0O5J5" role="2VgMA7">
-      <ref role="10T23l" to="g58d:6pZ_RG0O$m3" resolve="ToBaselanguage" />
+      <ref role="10T23l" to="g58d:6pZ_RG0O$m3" resolve="BasicLangToBaselanguage" />
     </node>
   </node>
 </model>

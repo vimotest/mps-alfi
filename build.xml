@@ -1021,7 +1021,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.GenPlan, java.compile.basic.language, java.compile.basic.language#01, java.compile.basic.language.io, java.compile.basic.language.io.generator, java.compile.basic.language.generalToString, java.compile.basic.language.generalToString.generator, java.compile.basic.language.dumpScope, java.compile.basic.language.dumpScope.generator, java.compile.basic.language.toAlfi, java.compile.basic.language.toAlfi.generator, java.compile.basic.language.io.toAlfi, java.compile.basic.language.io.toAlfi.generator, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.test, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toBaseLanguage, java.compile.alfi.toBaseLanguage.generator, java.compile.alfi.toCsBaseLanguage, java.compile.alfi.toCsBaseLanguage.generator, java.compile.alfi.sandbox, java.compile.alfi.sandbox2, java.compile.alfi.compitest" />
+  <target name="compileJava" depends="java.compile.GenPlan, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.test, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toBaseLanguage, java.compile.alfi.toBaseLanguage.generator, java.compile.alfi.toCsBaseLanguage, java.compile.alfi.toCsBaseLanguage.generator, java.compile.alfi.sandbox, java.compile.alfi.sandbox2, java.compile.alfi.compitest" />
   
   <target name="processResources" />
   
@@ -1036,19 +1036,11 @@
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.CsBaseLanguage}/CsBaseLanguage" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/de-itemis-mps-selection" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/mps-multiline" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/mps-richtext" />
-      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin path="${artifacts.mps}/plugins/mps-tooltips" />
-      <plugin path="${artifacts.CsStdLibrary}/CsStdLibrary" />
-      <plugin path="${artifacts.LangDoc}/LangDoc" />
+      <plugin path="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary" />
+      <plugin path="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -1073,16 +1065,12 @@
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.rules.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.rulesAndMessages.jar" />
-      <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.structure.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.typesystem.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.general-purpose.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.language-descriptor.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.templates.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editorlang.runtime.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/editor/typesystemIntegration.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
@@ -1169,10 +1157,6 @@
         <module file="${basedir}/languages/alfi/alfi.mpl" />
         <module file="${basedir}/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" />
         <module file="${basedir}/solutions/alfi.test/alfi.test.msd" />
-        <module file="${basedir}/basic-lang/languages/basic.language/basic.language.mpl" />
-        <module file="${basedir}/basic-lang/languages/basic.language.dumpScope/basic.language.dumpScope.mpl" />
-        <module file="${basedir}/basic-lang/languages/basic.language.generalToString/basic.language.generalToString.mpl" />
-        <module file="${basedir}/basic-lang/languages/basic.language.io/basic.language.io.mpl" />
       </chunk>
       <chunk>
         <module file="${basedir}/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" />
@@ -1181,8 +1165,6 @@
         <module file="${basedir}/solutions/alfi.sandbox2/alfi.sandbox2.msd" />
         <module file="${basedir}/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" />
         <module file="${basedir}/languages/alfi.toCsBaseLanguage/alfi.toCsBaseLanguage.mpl" />
-        <module file="${basedir}/languages/basic.language.io.toAlfi/basic.language.io.toAlfi.mpl" />
-        <module file="${basedir}/languages/basic.language.toAlfi/basic.language.toAlfi.mpl" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -1233,672 +1215,6 @@
         <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language" depends="fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language" />
-    <javac destdir="${build.tmp}/java/out/basic.language" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language#01" depends="java.compile.basic.language, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language#01" />
-    <javac destdir="${build.tmp}/java/out/basic.language#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.io" depends="java.compile.basic.language, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.io/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.io" />
-    <javac destdir="${build.tmp}/java/out/basic.language.io" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.io/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.io.generator" depends="java.compile.basic.language, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.io/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.io.generator" />
-    <javac destdir="${build.tmp}/java/out/basic.language.io.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.io/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.generalToString" depends="java.compile.basic.language, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.generalToString/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.generalToString" />
-    <javac destdir="${build.tmp}/java/out/basic.language.generalToString" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.generalToString/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.generalToString.generator" depends="java.compile.basic.language, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.generalToString/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.generalToString.generator" />
-    <javac destdir="${build.tmp}/java/out/basic.language.generalToString.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.generalToString/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.dumpScope" depends="java.compile.basic.language, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.dumpScope/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.dumpScope" />
-    <javac destdir="${build.tmp}/java/out/basic.language.dumpScope" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.dumpScope/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.dumpScope.generator" depends="java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/basic-lang/languages/basic.language.dumpScope/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.dumpScope.generator" />
-    <javac destdir="${build.tmp}/java/out/basic.language.dumpScope.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/basic-lang/languages/basic.language.dumpScope/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.dumpScope" />
-        <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.toAlfi" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.basic.language, fetchDependencies">
-    <mkdir dir="${project_home}/languages/basic.language.toAlfi/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.toAlfi" />
-    <javac destdir="${build.tmp}/java/out/basic.language.toAlfi" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/languages/basic.language.toAlfi/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/alfi" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.toAlfi.generator" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.toAlfi, fetchDependencies">
-    <mkdir dir="${project_home}/languages/basic.language.toAlfi/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.toAlfi.generator" />
-    <javac destdir="${build.tmp}/java/out/basic.language.toAlfi.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/languages/basic.language.toAlfi/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/alfi" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.toAlfi" />
-        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.io.toAlfi" depends="java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
-    <mkdir dir="${project_home}/languages/basic.language.io.toAlfi/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.io.toAlfi" />
-    <javac destdir="${build.tmp}/java/out/basic.language.io.toAlfi" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/languages/basic.language.io.toAlfi/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.dumpScope" />
-        <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.basic.language.io.toAlfi.generator" depends="java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, java.compile.basic.language.io.toAlfi, fetchDependencies">
-    <mkdir dir="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/basic.language.io.toAlfi.generator" />
-    <javac destdir="${build.tmp}/java/out/basic.language.io.toAlfi.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <pathelement path="${build.tmp}/java/out/basic.language" />
-        <pathelement path="${build.tmp}/java/out/basic.language.dumpScope" />
-        <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io" />
-        <pathelement path="${build.tmp}/java/out/basic.language.io.toAlfi" />
-        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
-        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
   </target>
@@ -2191,7 +1507,7 @@
       <classpath>
         <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
       </classpath>
     </javac>
   </target>
@@ -2362,7 +1678,7 @@
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2421,7 +1737,7 @@
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2645,8 +1961,8 @@
       <pathelement location="${artifacts.mps}/plugins/mps-core" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing" />
       <pathelement location="${build.tmp}/default/alfi.zip/alfi" />
-      <pathelement location="${artifacts.CsStdLibrary}/CsStdLibrary" />
-      <pathelement location="${artifacts.LangDoc}/LangDoc" />
+      <pathelement location="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary" />
+      <pathelement location="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.tmp}/default/alfi.zip1/alfi/languages/alfi/alfi.test.jar" id="mps.tests.path" />
@@ -2710,11 +2026,6 @@
     <delete dir="${project_home}/languages/alfi.PrimitiveMapping/generator/source_gen" />
     <delete dir="${project_home}/languages/alfi/generator/source_gen" />
     <delete dir="${project_home}/solutions/alfi.test/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language/generator/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.dumpScope/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.generalToString/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.io/source_gen" />
     <delete dir="${project_home}/solutions/alfi.StandardModelLibrary/source_gen" />
     <delete dir="${project_home}/solutions/alfi.compitest/source_gen" />
     <delete dir="${project_home}/languages/alfi/sandbox/source_gen" />
@@ -2723,12 +2034,5 @@
     <delete dir="${project_home}/languages/alfi.toBaseLanguage/generator/source_gen" />
     <delete dir="${project_home}/languages/alfi.toCsBaseLanguage/source_gen" />
     <delete dir="${project_home}/languages/alfi.toCsBaseLanguage/generator/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.dumpScope/generator/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.generalToString/generator/source_gen" />
-    <delete dir="${project_home}/basic-lang/languages/basic.language.io/generator/source_gen" />
-    <delete dir="${project_home}/languages/basic.language.io.toAlfi/source_gen" />
-    <delete dir="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
-    <delete dir="${project_home}/languages/basic.language.toAlfi/source_gen" />
-    <delete dir="${project_home}/languages/basic.language.toAlfi/generator/source_gen" />
   </target>
 </project>

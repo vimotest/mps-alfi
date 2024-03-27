@@ -1452,7 +1452,7 @@
               <ref role="3cqZAo" node="6OepWIVzIKA" resolve="namespaceToTheLeft" />
             </node>
             <node concept="2qgKlT" id="6OepWIVzKij" role="2OqNvi">
-              <ref role="37wK5l" node="6OepWIVxmmj" resolve="getScope" />
+              <ref role="37wK5l" node="6OepWIVxmmj" resolve="getScopeWithMembers" />
               <node concept="13iPFW" id="6OepWIVJp_y" role="37wK5m" />
             </node>
           </node>
@@ -3164,7 +3164,7 @@
               <node concept="2OqwBi" id="6OepWIVHwfw" role="2Oq$k0">
                 <node concept="13iPFW" id="6OepWIVHvUb" role="2Oq$k0" />
                 <node concept="2qgKlT" id="6OepWIVHwKg" role="2OqNvi">
-                  <ref role="37wK5l" node="6OepWIVxlM$" resolve="getInScopeMembers" />
+                  <ref role="37wK5l" node="6OepWIVxlM$" resolve="getInScopeOwnedMembers" />
                 </node>
               </node>
               <node concept="3zZkjj" id="6OepWIVIOWk" role="2OqNvi">
@@ -4968,7 +4968,7 @@
                   <ref role="3cqZAo" node="1KdBIfWPGCz" resolve="pkg" />
                 </node>
                 <node concept="2qgKlT" id="1KdBIfWPIIS" role="2OqNvi">
-                  <ref role="37wK5l" node="6OepWIVxmmj" resolve="getScope" />
+                  <ref role="37wK5l" node="6OepWIVxmmj" resolve="getScopeWithMembers" />
                   <node concept="13iPFW" id="1KdBIfWPIVp" role="37wK5m" />
                 </node>
               </node>

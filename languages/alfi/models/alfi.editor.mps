@@ -1337,7 +1337,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6cBsaQxeqem" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="tyypeName" />
+        <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="typeName" />
       </node>
       <node concept="3F0ifn" id="6cBsaQxeqe$" role="3EZMnx">
         <property role="3F0ifm" value="[]" />
@@ -3175,7 +3175,7 @@
       </node>
       <node concept="3F0A7n" id="7bDXsfCibYV" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody" />
+        <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody_Keymap" />
         <node concept="3k4GqR" id="1KdBIfWlTVf" role="3F10Kt">
           <node concept="3k4GqP" id="1KdBIfWlTVg" role="3k4GqO">
             <node concept="3clFbS" id="1KdBIfWlTVh" role="2VODD2">
@@ -3194,9 +3194,9 @@
       <node concept="3EZMnI" id="1KdBIfXdUdc" role="3EZMnx">
         <node concept="3F0ifn" id="1KdBIfXdUri" role="3EZMnx">
           <property role="3F0ifm" value="&lt;no body&gt;" />
-          <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody" />
+          <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody_Keymap" />
           <ref role="1k5W1q" to="tpen:hinfsDb" resolve="EmptyCell" />
-          <ref role="1ERwB7" node="1KdBIfXg804" resolve="NamespaceMember_AddBody" />
+          <ref role="1ERwB7" node="1KdBIfXg804" resolve="NamespaceMember_AddBody_ActionMap" />
           <node concept="VPxyj" id="1KdBIfXdUrj" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -3840,9 +3840,9 @@
       <node concept="3EZMnI" id="1KdBIfXeD39" role="3EZMnx">
         <node concept="3F0ifn" id="1KdBIfXeD47" role="3EZMnx">
           <property role="3F0ifm" value="&lt;no body&gt;" />
-          <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody" />
+          <ref role="34QXea" node="5Jdbbz9A_fV" resolve="NamespaceMember_AddBody_Keymap" />
           <ref role="1k5W1q" to="tpen:hinfsDb" resolve="EmptyCell" />
-          <ref role="1ERwB7" node="1KdBIfXg804" resolve="NamespaceMember_AddBody" />
+          <ref role="1ERwB7" node="1KdBIfXg804" resolve="NamespaceMember_AddBody_ActionMap" />
           <node concept="VPxyj" id="1KdBIfXeD48" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

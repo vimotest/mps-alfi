@@ -568,7 +568,7 @@
                 <node concept="2OqwBi" id="2X39vz3fb82" role="2Oq$k0">
                   <node concept="2OqwBi" id="2X39vz3f61B" role="2Oq$k0">
                     <node concept="37vLTw" id="2X39vz3fg24" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2X39vz3fg20" resolve="node" />
+                      <ref role="3cqZAo" node="2X39vz3fg20" resolve="member" />
                     </node>
                     <node concept="3Tsc0h" id="2X39vz3f6jy" role="2OqNvi">
                       <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
@@ -666,16 +666,16 @@
       <property role="2bfB8j" value="true" />
       <node concept="QsSxf" id="4Vswoj0IlHh" role="Qtgdg">
         <property role="TrG5h" value="None" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="4Vswoj0Ikds" role="1B3o_S" />
       <node concept="QsSxf" id="4Vswoj0Iksi" role="Qtgdg">
         <property role="TrG5h" value="Optional" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="4Vswoj0IkyT" role="Qtgdg">
         <property role="TrG5h" value="List" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
     </node>
     <node concept="2tJIrI" id="4Vswoj0Il4z" role="jymVt" />
@@ -715,7 +715,7 @@
             <node concept="3cpWs6" id="4Vswoj0ImjL" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImrN" role="3cqZAk">
                 <ref role="Rm8GQ" node="4Vswoj0IlHh" resolve="None" />
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
               </node>
             </node>
           </node>
@@ -725,7 +725,7 @@
             <node concept="3cpWs6" id="4Vswoj0ImDc" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImQQ" role="3cqZAk">
                 <ref role="Rm8GQ" node="4Vswoj0Iksi" resolve="Optional" />
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
               </node>
             </node>
           </node>
@@ -746,13 +746,13 @@
         <node concept="3cpWs6" id="4Vswoj0In0J" role="3cqZAp">
           <node concept="Rm8GO" id="4Vswoj0Inet" role="3cqZAk">
             <ref role="Rm8GQ" node="4Vswoj0IkyT" resolve="List" />
-            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="4Vswoj0IlfS" role="1B3o_S" />
       <node concept="3uibUv" id="4Vswoj0IlmG" role="3clF45">
-        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="ParameterTypeWrapper" />
+        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
       </node>
       <node concept="37vLTG" id="4Vswoj0Ilvc" role="3clF46">
         <property role="TrG5h" value="parameter" />

@@ -2202,7 +2202,7 @@
             <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
             <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
             <node concept="1rXfSq" id="1KdBIfXz5cx" role="37wK5m">
-              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makeImport" />
+              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePrivatePackageImport" />
               <node concept="37vLTw" id="1KdBIfXz6cy" role="37wK5m">
                 <ref role="3cqZAo" node="1KdBIfXy2mr" resolve="model" />
               </node>
@@ -2220,7 +2220,7 @@
               </node>
             </node>
             <node concept="1rXfSq" id="1KdBIfXziAx" role="37wK5m">
-              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePackageImport" />
+              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePrivatePackageImport" />
               <node concept="37vLTw" id="1KdBIfXziNQ" role="37wK5m">
                 <ref role="3cqZAo" node="1KdBIfXy2mr" resolve="model" />
               </node>
@@ -2238,7 +2238,7 @@
               </node>
             </node>
             <node concept="1rXfSq" id="1KdBIfXzl4p" role="37wK5m">
-              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePackageImport" />
+              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePrivatePackageImport" />
               <node concept="37vLTw" id="1KdBIfXzl4q" role="37wK5m">
                 <ref role="3cqZAo" node="1KdBIfXy2mr" resolve="model" />
               </node>

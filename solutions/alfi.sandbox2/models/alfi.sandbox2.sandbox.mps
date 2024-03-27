@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" version="-1" />
     <engage id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" />
   </languages>
   <imports>
