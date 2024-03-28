@@ -1039,8 +1039,8 @@
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin path="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary" />
-      <plugin path="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
+      <plugin path="${artifacts.CsStdLibrary}/CsStdLibrary" />
+      <plugin path="${artifacts.LangDoc}/LangDoc" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -1507,7 +1507,7 @@
       <classpath>
         <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
       </classpath>
     </javac>
   </target>
@@ -1678,7 +1678,7 @@
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -1737,7 +1737,7 @@
         <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.jar" />
-        <fileset file="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
+        <fileset file="${artifacts.CsStdLibrary}/CsStdLibrary/languages/CsStdLibrary/CsStdLibrary.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -1961,8 +1961,8 @@
       <pathelement location="${artifacts.mps}/plugins/mps-core" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing" />
       <pathelement location="${build.tmp}/default/alfi.zip/alfi" />
-      <pathelement location="${build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip/CsStdLibrary" />
-      <pathelement location="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
+      <pathelement location="${artifacts.CsStdLibrary}/CsStdLibrary" />
+      <pathelement location="${artifacts.LangDoc}/LangDoc" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.tmp}/default/alfi.zip1/alfi/languages/alfi/alfi.test.jar" id="mps.tests.path" />
