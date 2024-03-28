@@ -1,4 +1,4 @@
-ext.mpsVersion = "2021.3.2"
+ext.mpsVersion = "2023.2"
 ext.languageName = "alfi"
 
 ext.alfVersion = "1.1.0k"
@@ -7,15 +7,14 @@ ext.alfVersion = "1.1.0k"
 // to find a plugin entry, search in https://plugins.jetbrains.com/ for the plugin name and obtain the ID from URL (e.g. 13242 for grammarcells)
 // if you need a specific version for a plugin, add it in []-brackets
 ext.mpsPlugins = [
-    "LangDoc[2021.3]": 12325,
-    "csbaselanguage[1.111]": 13402,
-    "csstdlibrary[1.11]": 13403
+    "LangDoc[2023.2]": 12325,
+    "csbaselanguage[2022.2]": 13402,
+    "csstdlibrary[2022.2]": 13403
 ]
 
 ext.customMpsPlugins = [
-  "de.itemis.mps.extensions": "https://projects.itemis.de/nexus/content/repositories/mbeddr/de/itemis/mps/extensions/2021.3.2450.28b2c76/extensions-2021.3.2450.28b2c76.zip",
-  "de.itemis.mps.grammarcells": "https://projects.itemis.de/nexus/service/local/repositories/mbeddr/content/io/github/jetbrains/mps-extensions/grammarcells/2021.3.2450.28b2c76/grammarcells-2021.3.2450.28b2c76.zip",
-  "TextGenGen": "https://github.com/Fumapps/textGenGen/releases/download/2021.3.2-beta3/TextGenGen.zip",
+    "de.itemis.mps.extensions": "https://artifacts.itemis.cloud/repository/maven-mps/de/itemis/mps/extensions/2023.2.2675.b35f4bc/extensions-2023.2.2675.b35f4bc.zip",
+    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2023.2-beta1/TextGenGen.zip"
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
