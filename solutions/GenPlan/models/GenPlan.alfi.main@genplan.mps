@@ -3,10 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
   <imports>
-    <import index="ckmt" ref="r:ffedea7e-6d1d-4894-b17a-a68bd5337214(GenPlan.alfi.toCsBaselanguage@genplan)" />
     <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toBaselanguage@genplan)" />
   </imports>
   <registry>
@@ -32,7 +31,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -50,9 +49,6 @@
     </node>
     <node concept="10T23i" id="3OZQpz3aWj" role="2VgMA7">
       <ref role="10T23l" to="tprf:3OZQpz3aSq" resolve="AlfiToBaselanguage" />
-    </node>
-    <node concept="10T23i" id="7oewXw4KG4j" role="2VgMA7">
-      <ref role="10T23l" to="ckmt:7oewXw4KG3l" resolve="AlfiToCsBaselanguage" />
     </node>
   </node>
 </model>

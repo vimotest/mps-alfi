@@ -7,9 +7,7 @@ ext.alfVersion = "1.1.0k"
 // to find a plugin entry, search in https://plugins.jetbrains.com/ for the plugin name and obtain the ID from URL (e.g. 13242 for grammarcells)
 // if you need a specific version for a plugin, add it in []-brackets
 ext.mpsPlugins = [
-    "LangDoc[2023.2]": 12325,
-    "csbaselanguage[2022.2]": 13402,
-    "csstdlibrary[2022.2]": 13403
+    "LangDoc[2023.2]": 12325
 ]
 
 ext.customMpsPlugins = [
@@ -18,7 +16,10 @@ ext.customMpsPlugins = [
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
+
 apply from: 'gradle/build-runtime-jars.gradle'
+apply from: 'gradle/install-alf.gradle'
+apply from: 'gradle/compitest.gradle'
 
 task prepareMps {
     group 'mps'
@@ -42,7 +43,7 @@ mpsAntGenerate.dependsOn packageStandardModelLibrary
 
 task mpsClean {
     group 'mps'
-    dependsOn 'mpsAntCleanSources', 'cleanStandardModelLibraryJar'
+    dependsOn 'mpsAntClean', 'mpsAntCleanSources', 'cleanStandardModelLibraryJar'
 }
 
 task mpsTest {
@@ -50,19 +51,15 @@ task mpsTest {
     dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
 }
 
-task startMpsAndOpenProject {
+task openProjectInMps {
     group 'mps'
-    dependsOn 'openProjectInMpsForCurrentOs'
+    dependsOn 'mpsOpenProjectInMpsForCurrentOs'
 }
 
 task buildAndOpenProjectInMps {
     group 'mps'
-    dependsOn mpsBuild, startMpsAndOpenProject
+    dependsOn mpsBuild, openProjectInMps
 }
-
-apply from: 'gradle/install-alf.gradle'
-
-apply from: 'gradle/compitest.gradle'
 
 task compiTest {
     dependsOn 'mpsBuild', 'compitestRunTests'

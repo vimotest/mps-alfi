@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="alfi.sandbox2" uuid="e96e47f4-adc2-4b0f-9360-f35f4d77e24e" moduleVersion="0" compileInMPS="true">
+<solution name="alfi.sandbox2" uuid="e96e47f4-adc2-4b0f-9360-f35f4d77e24e" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
     <facet type="generator" planModel="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
     <dependency reexport="false">76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)</dependency>

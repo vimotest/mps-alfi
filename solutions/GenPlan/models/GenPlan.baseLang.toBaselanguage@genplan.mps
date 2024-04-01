@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ffedea7e-6d1d-4894-b17a-a68bd5337214(GenPlan.alfi.toCsBaselanguage@genplan)">
+<model ref="r:e2488f9f-4f14-43a8-aef9-5b58c05fb112(GenPlan.baseLang.toBaselanguage@genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
   <imports />
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
-        <property id="1152961914448142318" name="kind" index="2Qf7GI" />
         <child id="1152961914448136208" name="language" index="2Qf6Ng" />
       </concept>
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
@@ -26,35 +25,25 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2VgMpV" id="7oewXw4KG3l">
-    <property role="TrG5h" value="AlfiToCsBaselanguage" />
-    <node concept="2VgMA2" id="7oewXw4KG3r" role="2VgMA7">
+  <node concept="2VgMpV" id="6pZ_RG0O$m3">
+    <property role="TrG5h" value="BasicLangToBaselanguage" />
+    <node concept="2VgMA2" id="1zZF6PW8yMp" role="2VgMA7">
       <property role="1s431M" value="true" />
-      <node concept="2Qf6Nf" id="7oewXw4KG3u" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7oewXw4KG3y" role="2Qf6Ng">
-          <property role="2V$B1T" value="f9e4466a-e836-4140-9aca-d30989df505d" />
-          <property role="2V$B1Q" value="alfi.toCsBaseLanguage" />
+      <node concept="2Qf6Nf" id="1zZF6PW8yMr" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1zZF6PW8yMv" role="2Qf6Ng">
+          <property role="2V$B1T" value="3efc97ff-fb97-4546-91b8-c87fbfedfd60" />
+          <property role="2V$B1Q" value="basic.language" />
         </node>
       </node>
-    </node>
-    <node concept="2VgMA2" id="7oewXw4KG3D" role="2VgMA7">
-      <property role="1s431M" value="true" />
-      <node concept="2Qf6Nf" id="7oewXw4KG3J" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7oewXw4KG3N" role="2Qf6Ng">
-          <property role="2V$B1T" value="d74e25c9-4d91-43b6-bad7-d18af7bf6674" />
-          <property role="2V$B1Q" value="CsBaseLanguage" />
-        </node>
-      </node>
-      <node concept="2Qf6Nf" id="7oewXw4KG3X" role="2Qf7GQ">
-        <property role="2Qf7GI" value="1009c2Af4wn/Extend" />
-        <node concept="2V$Bhx" id="7oewXw4KG43" role="2Qf6Ng">
-          <property role="2V$B1T" value="d74e25c9-4d91-43b6-bad7-d18af7bf6674" />
-          <property role="2V$B1Q" value="CsBaseLanguage" />
+      <node concept="2Qf6Nf" id="1zZF6PW8yMx" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1zZF6PW8yMB" role="2Qf6Ng">
+          <property role="2V$B1T" value="92de1c23-d913-4aa4-a196-a4ae01ec2e8b" />
+          <property role="2V$B1Q" value="basic.language.io" />
         </node>
       </node>
     </node>
