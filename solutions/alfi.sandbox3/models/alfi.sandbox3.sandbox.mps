@@ -63,7 +63,7 @@
       <concept id="3328952194368290224" name="alfi.structure.EndOfLineComment" flags="ng" index="PDIRi">
         <child id="520354255176588995" name="commentText" index="I4nmN" />
       </concept>
-      <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ng" index="PJ9RI">
+      <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ngI" index="PJ9RI">
         <child id="520354255175429050" name="documentation" index="I883a" />
       </concept>
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
@@ -177,10 +177,10 @@
                   <node concept="_uF8j" id="4BdRpMvy$FP" role="_jtWe">
                     <node concept="_vnHb" id="4BdRpMvy$FR" role="_uF8g">
                       <node concept="2RqM1Q" id="4BdRpMvy$FT" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q47T" />
+                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q47T" resolve="BooleanFunctions" />
                       </node>
                       <node concept="2RqM1Q" id="4BdRpMvy$Hg" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q48D" />
+                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
                       </node>
                     </node>
                     <node concept="_vku0" id="4BdRpMvy$FV" role="_uFfl">
@@ -210,7 +210,7 @@
               </node>
               <node concept="3xHE8C" id="4BdRpMvpO6C" role="327w9S">
                 <node concept="2RqM1Q" id="4BdRpMvpO6E" role="_vnH8">
-                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" />
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
                 </node>
               </node>
             </node>
@@ -220,14 +220,14 @@
                 <node concept="3122r3" id="4BdRpMvqs7_" role="315$Eb">
                   <node concept="_vnHb" id="4BdRpMvqs7B" role="3122r2">
                     <node concept="2RqM1Q" id="4BdRpMvqs7D" role="_vnH8">
-                      <ref role="2RqM1R" node="4BdRpMvpO6w" />
+                      <ref role="2RqM1R" node="4BdRpMvpO6w" resolve="a" />
                     </node>
                   </node>
                 </node>
                 <node concept="_uYbk" id="4BdRpMvqsAu" role="315$E5">
                   <node concept="_vnHb" id="4BdRpMvqsAw" role="_uYbl">
                     <node concept="2RqM1Q" id="4BdRpMvqsAy" role="_vnH8">
-                      <ref role="2RqM1R" node="4BdRpMvpO6w" />
+                      <ref role="2RqM1R" node="4BdRpMvpO6w" resolve="a" />
                     </node>
                   </node>
                 </node>
@@ -408,7 +408,7 @@
         <property role="TrG5h" value="__return__" />
         <node concept="3xHE8C" id="4BdRpMvf_de" role="3xMlr6">
           <node concept="2RqM1Q" id="4BdRpMvf_df" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfXw" />
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfXw" resolve="BitString" />
           </node>
         </node>
       </node>
@@ -449,7 +449,7 @@
         <property role="TrG5h" value="aaa" />
         <node concept="3xHE8C" id="4BdRpMvlG8Q" role="3xMlr6">
           <node concept="2RqM1Q" id="4BdRpMvlG8S" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfWq" />
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfWq" resolve="Real" />
           </node>
         </node>
       </node>

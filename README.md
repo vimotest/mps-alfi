@@ -31,4 +31,5 @@ After having understood the sandbox models you can create a new model by mimicki
 - All other dependencies will be installed by gradle
 - To start JetBrains MPS just run `./gradlew startMpsAndOpenProject`
   - If it is the first time or you cleaned your build folder, this will download and install MPS and all required plugins
+- Execute `./gradlew packageStandardModelLibrary` such that the StandardModelLibrary stubs are correctly integrated
 - For other available gradle tasks see the output of `./gradlew tasks`

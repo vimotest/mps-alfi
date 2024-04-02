@@ -25,59 +25,59 @@
   <node concept="3HHQsS" id="2X39vz2Xdki">
     <property role="3HHQsV" value="2X39vz2X4b2/java" />
     <node concept="3HHQsX" id="2X39vz2Xgl7" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfYm" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfYm" resolve="ReadLine" />
       <ref role="3HHQyS" to="zrzc:~BasicInputOutput.ReadLine()" resolve="ReadLine" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVA" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfY_" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
       <ref role="3HHQyS" to="zrzc:~BasicInputOutput.WriteLine(java.lang.String)" resolve="WriteLine" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVD" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVu" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
       <ref role="3HHQyS" to="wyt6:~Boolean" resolve="Boolean" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVH" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVB" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
       <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVM" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfWN" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfWN" resolve="Natural" />
       <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVS" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfWq" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfWq" resolve="Real" />
       <ref role="3HHQyS" to="wyt6:~Double" resolve="Double" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVZ" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVO" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfVO" resolve="String" />
       <ref role="3HHQyS" to="wyt6:~String" resolve="String" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fW7" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfW5" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfW5" resolve="UnlimitedNatural" />
       <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fWg" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:1KdBIfXrfXw" />
+      <ref role="3HHQsK" to="gkn4:1KdBIfXrfXw" resolve="BitString" />
       <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz3a_2f" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" />
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
       <ref role="3HHQyS" to="lodc:~BooleanFunctions.ToString(java.lang.Boolean)" resolve="ToString" />
     </node>
     <node concept="3HHQsX" id="2X39vz3a_2_" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" />
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
       <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
     </node>
     <node concept="3HHQsX" id="2X39vz3a_2L" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" />
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
       <ref role="3HHQyS" to="lodc:~RealFunctions.ToString(java.lang.Double)" resolve="ToString" />
     </node>
     <node concept="3HHQsX" id="2X39vz3a_2Y" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" />
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
       <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
     </node>
     <node concept="3HHQsX" id="2X39vz3a_3c" role="3HHZ2s">
-      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" />
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
       <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
     </node>
   </node>
