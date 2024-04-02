@@ -9,6 +9,7 @@
 artifacts
 build
 tmp
+/lib/
 
 solutions/alfi.StandardModelLibrary/libs/*
 
