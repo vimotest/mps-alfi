@@ -373,14 +373,11 @@
           <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$_yB" id="6ggGBpdrW2K" role="m$_yh">
-        <ref role="m$_yA" node="VYVB7HpxIb" resolve="GenPlan" />
-      </node>
       <node concept="m$f5U" id="6ggGBpdrW5H" role="m$_yh">
         <ref role="m$f5T" node="6ggGBpdrVk3" resolve="compitest" />
       </node>
-      <node concept="m$_yB" id="2jMgq8Q3asi" role="m$_yh">
-        <ref role="m$_yA" node="6ggGBpdrVrp" resolve="alfi.compitest" />
+      <node concept="m$_yB" id="6ggGBpdrW2K" role="m$_yh">
+        <ref role="m$_yA" node="VYVB7HpxIb" resolve="GenPlan" />
       </node>
       <node concept="m$_yC" id="6ggGBpdrW7d" role="m$_yJ">
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
@@ -601,6 +598,35 @@
         <node concept="1SiIV0" id="fcPg8hCArA" role="3bR37C">
           <node concept="3bR9La" id="fcPg8hCArB" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="38C0GeDwZ4S" role="1TViLv">
+          <property role="TrG5h" value="alfi.generator" />
+          <property role="3LESm3" value="0ba813eb-88cf-4e97-a8c0-918a532854cd" />
+          <node concept="1BupzO" id="38C0GeDwZ58" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="38C0GeDwZ59" role="1HemKq">
+              <node concept="398BVA" id="38C0GeDwZ4T" role="3LXTmr">
+                <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+                <node concept="2Ry0Ak" id="38C0GeDwZ4U" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="38C0GeDwZ4V" role="2Ry0An">
+                    <property role="2Ry0Am" value="alfi" />
+                    <node concept="2Ry0Ak" id="38C0GeDwZ4W" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="38C0GeDwZ4X" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="38C0GeDwZ5a" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -979,6 +1005,11 @@
             <node concept="3qWCbU" id="6ggGBpdrVy_" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38C0GeDwZ6C" role="3bR37C">
+          <node concept="3bR9La" id="38C0GeDwZ6D" role="1SiIV1">
+            <ref role="3bR37D" node="kgFCN7YrOX" resolve="alfi" />
           </node>
         </node>
       </node>
