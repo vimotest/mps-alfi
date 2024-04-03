@@ -309,6 +309,42 @@
       <zipfileset file="${basedir}/solutions/alfi.compitest/alfi.compitest.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.compitest-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.layout}/compitest/languages" />
+    <mkdir dir="${build.tmp}/default/alfi.compitest.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.compitest.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.compitest.jar1/META-INF/module.xml">
+      <module namespace="alfi.compitest" type="solution" uuid="fd33b61c-8f8d-4883-b99a-96987a1d2c16">
+        <dependencies>
+          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.compitest-src.jar" descriptor="alfi.compitest.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/compitest/languages/alfi.compitest.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.compitest" />
+      <fileset dir="${project_home}/solutions/alfi.compitest/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.compitest.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-alfi.compitest-models1">
+      <fileset dir="${project_home}/solutions/alfi.compitest/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/compitest/languages/alfi.compitest-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/solutions/alfi.compitest/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/alfi.compitest/alfi.compitest.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.compitest-models1" prefix="module/models" />
+    </jar>
     <copy todir="${build.layout}/compitest">
       <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
     </copy>

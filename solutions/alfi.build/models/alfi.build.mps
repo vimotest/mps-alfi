@@ -379,6 +379,9 @@
       <node concept="m$f5U" id="6ggGBpdrW5H" role="m$_yh">
         <ref role="m$f5T" node="6ggGBpdrVk3" resolve="compitest" />
       </node>
+      <node concept="m$_yB" id="2jMgq8Q3asi" role="m$_yh">
+        <ref role="m$_yA" node="6ggGBpdrVrp" resolve="alfi.compitest" />
+      </node>
       <node concept="m$_yC" id="6ggGBpdrW7d" role="m$_yJ">
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>

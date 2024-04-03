@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1ad14d33-6e32-4884-9c2f-2611975089c2(GenPlan.baseLang.main@genplan)">
+<model ref="r:1ad14d33-6e32-4884-9c2f-2611975089c2(GenPlan.basisc.lang.main@genplan)">
   <persistence version="9" />
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
   <imports>
-    <import index="ynmg" ref="r:545c48ee-2d6a-4db0-ae6f-dc4a5f857c0c(GenPlan.baseLang.toAlfi@genplan)" />
-    <import index="g58d" ref="r:e2488f9f-4f14-43a8-aef9-5b58c05fb112(GenPlan.baseLang.toBaselanguage@genplan)" />
+    <import index="ynmg" ref="r:545c48ee-2d6a-4db0-ae6f-dc4a5f857c0c(GenPlan.basisc.lang.toAlfi@genplan)" />
+    <import index="g58d" ref="r:e2488f9f-4f14-43a8-aef9-5b58c05fb112(GenPlan.basisc.lang.toBaselanguage@genplan)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">

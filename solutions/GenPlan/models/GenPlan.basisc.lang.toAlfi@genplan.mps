@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:545c48ee-2d6a-4db0-ae6f-dc4a5f857c0c(GenPlan.baseLang.toAlfi@genplan)">
+<model ref="r:545c48ee-2d6a-4db0-ae6f-dc4a5f857c0c(GenPlan.basisc.lang.toAlfi@genplan)">
   <persistence version="9" />
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
