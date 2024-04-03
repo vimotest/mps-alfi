@@ -9,7 +9,6 @@
     <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
     <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
-    <import index="am7k" ref="f:diff_diff_model_0#r:1542d280-73e5-4210-90ee-5aed0dc8ca9d(alfi.compitest@diff_model_0)" implicit="true" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1699,7 +1698,7 @@
                 <node concept="3122r3" id="2HakVwV1Ukx" role="315$Eb">
                   <node concept="_vnHb" id="2HakVwV1Uky" role="3122r2">
                     <node concept="2RqM1Q" id="2HakVwV1UnQ" role="_vnH8">
-                      <ref role="2RqM1R" to="am7k:2HakVwV1Ukp" resolve="a" />
+                      <ref role="2RqM1R" node="2HakVwV1Ukp" resolve="a" />
                     </node>
                   </node>
                 </node>
@@ -1708,7 +1707,7 @@
                   <node concept="_uYbk" id="2HakVwV1Uk_" role="31szGO">
                     <node concept="_vnHb" id="2HakVwV1UkA" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1Uo8" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Ukp" resolve="a" />
+                        <ref role="2RqM1R" node="2HakVwV1Ukp" resolve="a" />
                       </node>
                     </node>
                   </node>
@@ -1739,7 +1738,7 @@
                       <node concept="_uYbk" id="2HakVwV1UkN" role="_vku1">
                         <node concept="_vnHb" id="2HakVwV1UkO" role="_uYbl">
                           <node concept="2RqM1Q" id="2HakVwV1UpK" role="_vnH8">
-                            <ref role="2RqM1R" to="am7k:2HakVwV1Ukp" resolve="a" />
+                            <ref role="2RqM1R" node="2HakVwV1Ukp" resolve="a" />
                           </node>
                         </node>
                       </node>
@@ -1759,7 +1758,7 @@
                     <node concept="_uYbk" id="2HakVwV1UkW" role="31szGO">
                       <node concept="_vnHb" id="2HakVwV1UkX" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1Uq2" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1Ukp" resolve="a" />
+                          <ref role="2RqM1R" node="2HakVwV1Ukp" resolve="a" />
                         </node>
                       </node>
                     </node>
@@ -1801,7 +1800,7 @@
                     <node concept="_uYbk" id="2HakVwV1Uld" role="_vku1">
                       <node concept="_vnHb" id="2HakVwV1Ule" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1UrT" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1Ukp" resolve="a" />
+                          <ref role="2RqM1R" node="2HakVwV1Ukp" resolve="a" />
                         </node>
                       </node>
                     </node>
@@ -1849,7 +1848,7 @@
             <node concept="_uYbk" id="2HakVwV1Usg" role="31szGO">
               <node concept="_vnHb" id="2HakVwV1Ush" role="_uYbl">
                 <node concept="2RqM1Q" id="2HakVwV1U_t" role="_vnH8">
-                  <ref role="2RqM1R" to="am7k:2HakVwV1Usa" resolve="b" />
+                  <ref role="2RqM1R" node="2HakVwV1Usa" resolve="b" />
                 </node>
               </node>
             </node>
@@ -1863,7 +1862,7 @@
                 <node concept="3122r3" id="2HakVwV1Usn" role="315$Eb">
                   <node concept="_vnHb" id="2HakVwV1Uso" role="3122r2">
                     <node concept="2RqM1Q" id="2HakVwV1Ux5" role="_vnH8">
-                      <ref role="2RqM1R" to="am7k:2HakVwV1Usa" resolve="b" />
+                      <ref role="2RqM1R" node="2HakVwV1Usa" resolve="b" />
                     </node>
                   </node>
                 </node>
@@ -1872,7 +1871,7 @@
                   <node concept="_uYbk" id="2HakVwV1Usr" role="31szGO">
                     <node concept="_vnHb" id="2HakVwV1Uss" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1Uxn" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Us6" resolve="a" />
+                        <ref role="2RqM1R" node="2HakVwV1Us6" resolve="a" />
                       </node>
                     </node>
                   </node>
@@ -1887,7 +1886,7 @@
                 <node concept="3122r3" id="2HakVwV1Usx" role="315$Eb">
                   <node concept="_vnHb" id="2HakVwV1Usy" role="3122r2">
                     <node concept="2RqM1Q" id="2HakVwV1UxD" role="_vnH8">
-                      <ref role="2RqM1R" to="am7k:2HakVwV1Us6" resolve="a" />
+                      <ref role="2RqM1R" node="2HakVwV1Us6" resolve="a" />
                     </node>
                   </node>
                 </node>
@@ -1896,7 +1895,7 @@
                   <node concept="_uYbk" id="2HakVwV1Us_" role="31szGO">
                     <node concept="_vnHb" id="2HakVwV1UsA" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1UxV" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Us6" resolve="a" />
+                        <ref role="2RqM1R" node="2HakVwV1Us6" resolve="a" />
                       </node>
                     </node>
                   </node>
@@ -1927,7 +1926,7 @@
                       <node concept="_uYbk" id="2HakVwV1UsN" role="_vku1">
                         <node concept="_vnHb" id="2HakVwV1UsO" role="_uYbl">
                           <node concept="2RqM1Q" id="2HakVwV1U$4" role="_vnH8">
-                            <ref role="2RqM1R" to="am7k:2HakVwV1Us6" resolve="a" />
+                            <ref role="2RqM1R" node="2HakVwV1Us6" resolve="a" />
                           </node>
                         </node>
                       </node>
@@ -1957,7 +1956,7 @@
                       <node concept="_uYbk" id="2HakVwV1Ut0" role="_vku1">
                         <node concept="_vnHb" id="2HakVwV1Ut1" role="_uYbl">
                           <node concept="2RqM1Q" id="2HakVwV1U_b" role="_vnH8">
-                            <ref role="2RqM1R" to="am7k:2HakVwV1Usa" resolve="b" />
+                            <ref role="2RqM1R" node="2HakVwV1Usa" resolve="b" />
                           </node>
                         </node>
                       </node>
@@ -1995,7 +1994,7 @@
                     <node concept="_uYbk" id="2HakVwV1Utg" role="_vku1">
                       <node concept="_vnHb" id="2HakVwV1Uth" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1UB5" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1Us6" resolve="a" />
+                          <ref role="2RqM1R" node="2HakVwV1Us6" resolve="a" />
                         </node>
                       </node>
                     </node>
@@ -2782,7 +2781,7 @@
               <node concept="_uYbk" id="2HakVwV1Xq1" role="_vku1">
                 <node concept="_vnHb" id="2HakVwV1Xq2" role="_uYbl">
                   <node concept="2RqM1Q" id="2HakVwV1Xvh" role="_vnH8">
-                    <ref role="2RqM1R" to="am7k:2HakVwV1XpS" resolve="a" />
+                    <ref role="2RqM1R" node="2HakVwV1XpS" resolve="a" />
                   </node>
                 </node>
               </node>
@@ -2819,7 +2818,7 @@
                   <node concept="_uYbk" id="2HakVwV1Xqi" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1Xqj" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XC8" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Xq4" resolve="b" />
+                        <ref role="2RqM1R" node="2HakVwV1Xq4" resolve="b" />
                       </node>
                     </node>
                   </node>
@@ -2860,7 +2859,7 @@
                   <node concept="_uYbk" id="2HakVwV1Xqz" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1Xq$" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XCq" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Xql" resolve="c" />
+                        <ref role="2RqM1R" node="2HakVwV1Xql" resolve="c" />
                       </node>
                     </node>
                   </node>
@@ -2901,7 +2900,7 @@
                   <node concept="_uYbk" id="2HakVwV1XqO" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1XqP" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XCG" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1XqA" resolve="d" />
+                        <ref role="2RqM1R" node="2HakVwV1XqA" resolve="d" />
                       </node>
                     </node>
                   </node>
@@ -2942,7 +2941,7 @@
                   <node concept="_uYbk" id="2HakVwV1Xr5" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1Xr6" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XCY" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1XqR" resolve="e" />
+                        <ref role="2RqM1R" node="2HakVwV1XqR" resolve="e" />
                       </node>
                     </node>
                   </node>
@@ -2983,7 +2982,7 @@
                   <node concept="_uYbk" id="2HakVwV1Xrm" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1Xrn" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XDg" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Xr8" resolve="f" />
+                        <ref role="2RqM1R" node="2HakVwV1Xr8" resolve="f" />
                       </node>
                     </node>
                   </node>
@@ -3024,7 +3023,7 @@
                   <node concept="_uYbk" id="2HakVwV1XrB" role="_vku1">
                     <node concept="_vnHb" id="2HakVwV1XrC" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XDy" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Xrp" resolve="g" />
+                        <ref role="2RqM1R" node="2HakVwV1Xrp" resolve="g" />
                       </node>
                     </node>
                   </node>
@@ -3081,7 +3080,7 @@
                     <node concept="_uYbk" id="2HakVwV1XPZ" role="32BIco">
                       <node concept="_vnHb" id="2HakVwV1XQ0" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1XWA" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1XPK" resolve="b" />
+                          <ref role="2RqM1R" node="2HakVwV1XPK" resolve="b" />
                         </node>
                       </node>
                     </node>
@@ -3134,7 +3133,7 @@
                       <node concept="_uYbk" id="2HakVwV1XQp" role="32BIco">
                         <node concept="_vnHb" id="2HakVwV1XQq" role="_uYbl">
                           <node concept="2RqM1Q" id="2HakVwV1XYJ" role="_vnH8">
-                            <ref role="2RqM1R" to="am7k:2HakVwV1XQ7" resolve="i" />
+                            <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
                           </node>
                         </node>
                       </node>
@@ -3181,7 +3180,7 @@
                     <node concept="_uYbk" id="2HakVwV1XQG" role="32BIco">
                       <node concept="_vnHb" id="2HakVwV1XQH" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1XZQ" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1XQ7" resolve="i" />
+                          <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
                         </node>
                       </node>
                     </node>
@@ -3213,7 +3212,7 @@
                     <node concept="_uYbk" id="2HakVwV1XQU" role="32BIco">
                       <node concept="_vnHb" id="2HakVwV1XQV" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1Y08" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1XQ7" resolve="i" />
+                          <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
                         </node>
                       </node>
                     </node>
@@ -3249,7 +3248,7 @@
             <node concept="_uYbk" id="2HakVwV1Vtc" role="31szGO">
               <node concept="_vnHb" id="2HakVwV1Vtd" role="_uYbl">
                 <node concept="2RqM1Q" id="2HakVwV1Vvq" role="_vnH8">
-                  <ref role="2RqM1R" to="am7k:2HakVwV1Vt6" resolve="a" />
+                  <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
                 </node>
               </node>
             </node>
@@ -3263,7 +3262,7 @@
                 <node concept="3122r3" id="2HakVwV1Vtj" role="315$Eb">
                   <node concept="_vnHb" id="2HakVwV1Vtk" role="3122r2">
                     <node concept="2RqM1Q" id="2HakVwV1VvY" role="_vnH8">
-                      <ref role="2RqM1R" to="am7k:2HakVwV1Vt6" resolve="a" />
+                      <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
                     </node>
                   </node>
                 </node>
@@ -3272,7 +3271,7 @@
                   <node concept="_uYbk" id="2HakVwV1Vtn" role="31szGO">
                     <node concept="_vnHb" id="2HakVwV1Vto" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1VvG" role="_vnH8">
-                        <ref role="2RqM1R" to="am7k:2HakVwV1Vt6" resolve="a" />
+                        <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
                       </node>
                     </node>
                   </node>
@@ -3303,7 +3302,7 @@
                       <node concept="_uYbk" id="2HakVwV1Vt_" role="_vku1">
                         <node concept="_vnHb" id="2HakVwV1VtA" role="_uYbl">
                           <node concept="2RqM1Q" id="2HakVwV1Vya" role="_vnH8">
-                            <ref role="2RqM1R" to="am7k:2HakVwV1Vt6" resolve="a" />
+                            <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
                           </node>
                         </node>
                       </node>
@@ -3340,7 +3339,7 @@
                     <node concept="_uYbk" id="2HakVwV1VtO" role="_vku1">
                       <node concept="_vnHb" id="2HakVwV1VtP" role="_uYbl">
                         <node concept="2RqM1Q" id="2HakVwV1VzM" role="_vnH8">
-                          <ref role="2RqM1R" to="am7k:2HakVwV1Vt6" resolve="a" />
+                          <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
                         </node>
                       </node>
                     </node>
