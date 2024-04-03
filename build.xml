@@ -313,6 +313,9 @@
     <copy todir="${build.layout}/compitest">
       <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
     </copy>
+    <copy todir="${build.layout}/compitest">
+      <fileset dir="${project_home}/solutions/alfi.compitest/source_gen" />
+    </copy>
     <mkdir dir="${build.tmp}/default/alfi.zip" />
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi" />
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi/META-INF" />

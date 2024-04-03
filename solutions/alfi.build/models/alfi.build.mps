@@ -42,6 +42,9 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
+        <child id="2750015747481074432" name="path" index="2HvfZ0" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -260,6 +263,20 @@
                   <node concept="2Ry0Ak" id="6ggGBpdrWhF" role="2Ry0An">
                     <property role="2Ry0Am" value="StandardModelLibrary.jar" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="3uqm2wrbnua" role="39821P">
+          <node concept="398BVA" id="3uqm2wrbnu_" role="2HvfZ0">
+            <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+            <node concept="2Ry0Ak" id="3uqm2wrbnuU" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="3uqm2wrbnuZ" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.compitest" />
+                <node concept="2Ry0Ak" id="3uqm2wrbnv4" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
                 </node>
               </node>
             </node>
