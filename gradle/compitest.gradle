@@ -3,21 +3,16 @@
   Requires python 3.10 and python-poetry to be installed
  */
 
-def alfiRepoRoot = file(".")
-def compitestDir = file("scripts/compitest/")
-
 task compitestRunTests {
     group 'compitest'
     doLast {
-      exec {
-        workingDir compitestDir
-        commandLine 'poetry', 'install', '--without', 'dev'
-      }
-      exec {
-        workingDir compitestDir
-        environment COMPITEST_ALFI_REPO_ROOT: alfiRepoRoot
-        commandLine 'poetry', 'run', 'python', 'main.py'
-      }
+        def workingDir = file("$projectDir/scripts/alfCompareTest")
+        def scriptFile = file("$workingDir/CompareTestMain.groovy")
+
+        def binding = new Binding([workingDir: workingDir])
+        def shell = new GroovyShell(binding)
+        shell.getClassLoader().addURL(workingDir.toURI().toURL())
+        shell.evaluate(scriptFile)
     }
 }
 
