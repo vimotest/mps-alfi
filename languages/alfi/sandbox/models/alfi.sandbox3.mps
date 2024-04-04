@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8eb0ba57-877d-461a-bc2a-9b463c360fcb(alfi.sandbox3.sandbox)">
+<model ref="r:9912076b-99fd-4831-9f8b-49db2cc8bdb2(alfi.sandbox3)">
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />

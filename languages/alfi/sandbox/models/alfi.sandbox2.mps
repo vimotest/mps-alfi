@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ef996d47-ea11-491d-853e-b74cca7ff27c(alfi.sandbox2.sandbox)">
+<model ref="r:32110464-d693-4563-89ca-aa38b030e1e3(alfi.sandbox2)">
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
-    <use id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" version="-1" />
-    <engage id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" />
   </languages>
   <imports>
-    <import index="lodc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library.primitivebehaviors(alfi.StandardModelLibrary/)" />
-    <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
   </imports>
   <registry>
