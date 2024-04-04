@@ -325,9 +325,6 @@
           <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$f5U" id="kgFCN7YrPb" role="m$_yh">
-        <ref role="m$f5T" node="kgFCN7YrP5" resolve="alfi" />
-      </node>
       <node concept="m$_yC" id="kgFCN7YrPc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -344,6 +341,9 @@
         <node concept="3o6iSG" id="kgFCN7YrPg" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
+      </node>
+      <node concept="m$f5U" id="6mAYhV7BDom" role="m$_yh">
+        <ref role="m$f5T" node="kgFCN7YrP5" resolve="alfi" />
       </node>
     </node>
     <node concept="m$_wf" id="QrDUy_PgKk" role="3989C9">
@@ -443,93 +443,6 @@
     </node>
     <node concept="2G$12M" id="kgFCN7YrP5" role="3989C9">
       <property role="TrG5h" value="alfi" />
-      <node concept="1E1JtD" id="3ACy2tA8HzZ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="alfi.PrimitiveMapping" />
-        <property role="3LESm3" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" />
-        <node concept="55IIr" id="3ACy2tA8H$2" role="3LF7KH">
-          <node concept="2Ry0Ak" id="3ACy2tA8HAw" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="3ACy2tA8HB3" role="2Ry0An">
-              <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
-              <node concept="2Ry0Ak" id="3ACy2tA8HGK" role="2Ry0An">
-                <property role="2Ry0Am" value="alfi.PrimitiveMapping.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3ACy2tA8HK9" role="3bR37C">
-          <node concept="3bR9La" id="3ACy2tA8HKa" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3ACy2tA8HKb" role="3bR37C">
-          <node concept="3bR9La" id="3ACy2tA8HKc" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3ACy2tA8HKd" role="3bR37C">
-          <node concept="3bR9La" id="3ACy2tA8HKe" role="1SiIV1">
-            <ref role="3bR37D" node="kgFCN7YrOX" resolve="alfi" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="3ACy2tA8HKr" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="3ACy2tA8HKs" role="1HemKq">
-            <node concept="398BVA" id="3ACy2tA8HKf" role="3LXTmr">
-              <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
-              <node concept="2Ry0Ak" id="3ACy2tA8HKg" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="3ACy2tA8HKh" role="2Ry0An">
-                  <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
-                  <node concept="2Ry0Ak" id="3ACy2tA8HKi" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="3ACy2tA8HKt" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="3ACy2tA8HKu" role="1TViLv">
-          <property role="TrG5h" value="alfi.PrimitiveMapping.generator" />
-          <property role="3LESm3" value="8aa90596-4364-4058-87d8-8f38ed3edc13" />
-          <node concept="1BupzO" id="3ACy2tA8HKI" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="3ACy2tA8HKJ" role="1HemKq">
-              <node concept="398BVA" id="3ACy2tA8HKv" role="3LXTmr">
-                <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
-                <node concept="2Ry0Ak" id="3ACy2tA8HKw" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="3ACy2tA8HKx" role="2Ry0An">
-                    <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
-                    <node concept="2Ry0Ak" id="3ACy2tA8HKy" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="3ACy2tA8HKz" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="3ACy2tA8HKK" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4BdRpMvMquJ" role="3bR37C">
-          <node concept="3bR9La" id="4BdRpMvMquK" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtD" id="kgFCN7YrOX" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="alfi" />
@@ -644,6 +557,93 @@
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3ACy2tA8HzZ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.PrimitiveMapping" />
+        <property role="3LESm3" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" />
+        <node concept="55IIr" id="3ACy2tA8H$2" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3ACy2tA8HAw" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3ACy2tA8HB3" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
+              <node concept="2Ry0Ak" id="3ACy2tA8HGK" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.PrimitiveMapping.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ACy2tA8HK9" role="3bR37C">
+          <node concept="3bR9La" id="3ACy2tA8HKa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ACy2tA8HKb" role="3bR37C">
+          <node concept="3bR9La" id="3ACy2tA8HKc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ACy2tA8HKd" role="3bR37C">
+          <node concept="3bR9La" id="3ACy2tA8HKe" role="1SiIV1">
+            <ref role="3bR37D" node="kgFCN7YrOX" resolve="alfi" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3ACy2tA8HKr" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3ACy2tA8HKs" role="1HemKq">
+            <node concept="398BVA" id="3ACy2tA8HKf" role="3LXTmr">
+              <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+              <node concept="2Ry0Ak" id="3ACy2tA8HKg" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3ACy2tA8HKh" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
+                  <node concept="2Ry0Ak" id="3ACy2tA8HKi" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3ACy2tA8HKt" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3ACy2tA8HKu" role="1TViLv">
+          <property role="TrG5h" value="alfi.PrimitiveMapping.generator" />
+          <property role="3LESm3" value="8aa90596-4364-4058-87d8-8f38ed3edc13" />
+          <node concept="1BupzO" id="3ACy2tA8HKI" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3ACy2tA8HKJ" role="1HemKq">
+              <node concept="398BVA" id="3ACy2tA8HKv" role="3LXTmr">
+                <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+                <node concept="2Ry0Ak" id="3ACy2tA8HKw" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3ACy2tA8HKx" role="2Ry0An">
+                    <property role="2Ry0Am" value="alfi.PrimitiveMapping" />
+                    <node concept="2Ry0Ak" id="3ACy2tA8HKy" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="3ACy2tA8HKz" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3ACy2tA8HKK" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4BdRpMvMquJ" role="3bR37C">
+          <node concept="3bR9La" id="4BdRpMvMquK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
@@ -1027,6 +1027,11 @@
         <node concept="1SiIV0" id="38C0GeDwZ6C" role="3bR37C">
           <node concept="3bR9La" id="38C0GeDwZ6D" role="1SiIV1">
             <ref role="3bR37D" node="kgFCN7YrOX" resolve="alfi" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6mAYhV7AW5q" role="3bR37C">
+          <node concept="3bR9La" id="6mAYhV7AW5r" role="1SiIV1">
+            <ref role="3bR37D" node="6KJ02DGnBbz" resolve="alfi.toBaseLanguage" />
           </node>
         </node>
       </node>
