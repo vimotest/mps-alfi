@@ -106,6 +106,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
@@ -200,6 +201,7 @@
         <reference id="1081339532145" name="keyMap" index="34QXea" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -3199,6 +3201,9 @@
           </node>
           <node concept="Vb9p2" id="1KdBIfXdUrk" role="3F10Kt">
             <property role="Vbekb" value="g1_k_vY/BOLD" />
+          </node>
+          <node concept="2SqB2G" id="2yXj8DmewQl" role="2SqHTX">
+            <property role="TrG5h" value="ignoreTextGenGen" />
           </node>
         </node>
         <node concept="2iRfu4" id="1KdBIfXdUdh" role="2iSdaV" />
