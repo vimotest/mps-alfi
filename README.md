@@ -1,19 +1,23 @@
-# alfi
+# MPS ALFI
 
-Action Language for foundational UML as an Interdiate Language (in Jetbrains MPS)
+Action Language for foundational UML (ALF) as an Intermediate Language (in JetBrains MPS).
 
-This project is an implementation of the Action Language for foundational UML (ALF) in Jetbrains MPS.
+This project is an implementation of the Action Language for foundational UML (ALF) in JetBrains MPS.
 It contains the structure, editor, and TextGen definitions for a subset of the ALF Standard.
-Additionally, it contains generators to the Java baseLanguage as well as the C# baseLanguage.
-Furthermore, a generator from a version of [basic-lang](./basic-lang/) to alfi is provided as an example.
+Additionally, it contains generators to the following programming languages:
+
+- the Java BaseLanguage
 
 The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1)
 
 ## State of the project
 
-- This project is a research prototype and not ready for production use.
+This project is a research prototype and not yet ready for production use:
+
 - [implemented.md](documentation/implemented.md) describes what parts of the standard are implemented.
 - [knownProblems.md](documentation/knownProblems.md) describes what problems are known.
+
+This repository originates from a research project: https://github.com/neumantm/alfi
 
 ## Usage
 
@@ -26,10 +30,9 @@ After having understood the sandbox models you can create a new model by mimicki
 
 ## Development Environment
 
-- First init all submodules with `git submodule update --init --recursive`
 - To use this project, you need a recent java installation. It is used by the gradle wrapper.
-- All other dependencies will be installed by gradle
-- To start JetBrains MPS just run `./gradlew startMpsAndOpenProject`
+- All other dependencies will be installed by Gradle
+- To start JetBrains MPS, just run `./gradlew openProjectInMps`
   - If it is the first time or you cleaned your build folder, this will download and install MPS and all required plugins
 - Execute `./gradlew packageStandardModelLibrary` such that the StandardModelLibrary stubs are correctly integrated
 - For other available gradle tasks see the output of `./gradlew tasks`

@@ -31,7 +31,6 @@ This document describes all current known problems with alfi.
     - Set the value of the container at the end of the method and before every return statement (from the defined variable)
     - Do respective packing and unpacking around invocations
 - Not Implemented in generators: Feature Invocation, Super Invocation, Instance Creation, Assignment_FeatureLeftHandSide, PropertyAccess, and so on once we have classes and a type system
-  - [C# only] Super Constructor Invocation needs special care
 - Unbounded Values cannot be represented in other languages
   - -> Currently we throw an error if the generator encounters it in a place where it would need to be translated
 
