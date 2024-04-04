@@ -44,21 +44,7 @@ None
 
 ## TextGenGen (generating new TextGen from editor)
 
-Stuff to do manually after running TextGenGen:
+Right click on the `alfi` module:
 
-- In EndOfLineComment at `append \n ;` as the last statement
-- In Package Definition delete `append {<no body>} ;`
-  - This can be fixed by using fumapps newest version of TextGenGen and setting the cell id to some magic string
-- Add file extension to Unit: `alf`
-- Add file path to Unit:
-
-``` jetbrains.mps.devkeit.general-purpose
-list<String> names = new arraylist<String>;
-if (node.model.name.isNotEmpty) {
-  names.add(node.model.name);
-}
-if (node.getVirtualPackageName().isNotEmpty) {
-  names.add(node.getVirtualPackageName());
-}
-return String.join(".", names);
-```
+- execute `Generate TextGen (fum)` to regenerate TextGen
+- then, execute required postprocessings by the action `Postprocess ALFI TextGen`
