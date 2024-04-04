@@ -1,10 +1,11 @@
 import testplan.TestPlanParser
 import executors.TestExecutor
 import executors.AlfSourceFileUnzipper
+import org.gradle.api.GradleException
 
 def pwd = "."
 if (binding.variables.containsKey("workingDir")) {
-    pwd = workingDir
+    pwd = workingDir.toString().replace("\\", "/")
 }
 
 println("Working directory: $pwd")
@@ -85,4 +86,6 @@ testPlan.testSuites.each { testSuite ->
     }
 }
 
-System.exit(exitCode)
+if (exitCode != 0) {
+    throw new GradleException("Task failed with exit code: $exitCode")
+}

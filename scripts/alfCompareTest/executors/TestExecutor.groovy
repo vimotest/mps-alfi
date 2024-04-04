@@ -24,7 +24,7 @@ public static def executeTest(String workDir, String executor, String cmd, def t
     File exitCodePath = new File(workDir, exitCodeFile)
 
     stdinPath.withWriter('UTF-8') { writer ->
-        test.inputs.each { line ->
+        test.input.each { line ->
             writer.writeLine(line)
         }
     }

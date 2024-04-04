@@ -62,6 +62,8 @@ task buildAndOpenProjectInMps {
 }
 
 task compiTest {
+    group 'mps'
+    description 'Run the ALF-reference runtime comparison tests'
     dependsOn 'mpsBuild', 'compitestRunTests'
 }
 compitestRunTests.configure {

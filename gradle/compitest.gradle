@@ -5,6 +5,7 @@
 
 task compitestRunTests {
     group 'compitest'
+    description 'Run the ALF-reference runtime comparison tests'
     doLast {
         def workingDir = file("$projectDir/scripts/alfCompareTest")
         def scriptFile = file("$workingDir/CompareTestMain.groovy")
