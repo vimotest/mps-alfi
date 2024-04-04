@@ -105,6 +105,7 @@
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="45307784116571022" name="jetbrains.mps.lang.textGen.structure.FilenameFunction" flags="ig" index="29tfMY" />
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
@@ -118,6 +119,7 @@
       </concept>
       <concept id="1233670071145" name="jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration" flags="ig" index="WtQ9Q">
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
+        <child id="45307784116711884" name="filename" index="29tGrW" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
         <child id="7844911294523354450" name="filePath" index="1Knhgg" />
@@ -3048,6 +3050,18 @@
               <node concept="Xl_RD" id="7VlknGubeks" role="37wK5m">
                 <property role="Xl_RC" value="/" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29tfMY" id="5XCh6WgmDCE" role="29tGrW">
+      <node concept="3clFbS" id="5XCh6WgmDCF" role="2VODD2">
+        <node concept="3clFbF" id="5XCh6WgmUn9" role="3cqZAp">
+          <node concept="2OqwBi" id="5XCh6WgmUNb" role="3clFbG">
+            <node concept="117lpO" id="5XCh6WgmUn8" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5XCh6WgmUWE" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
