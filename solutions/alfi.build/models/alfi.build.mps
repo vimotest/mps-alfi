@@ -542,6 +542,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="9jZv7Qmss9" role="3bR37C">
+          <node concept="3bR9La" id="9jZv7Qmssa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="9jZv7Qmssb" role="3bR37C">
+          <node concept="3bR9La" id="9jZv7Qmssc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LbI" resolve="jetbrains.mps.lang.textGen" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3ACy2tA8HzZ" role="2G$12L">
         <property role="BnDLt" value="true" />
