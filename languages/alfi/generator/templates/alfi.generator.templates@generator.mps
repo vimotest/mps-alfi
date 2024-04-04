@@ -63,7 +63,7 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
-      <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu" />
+      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
       </concept>
@@ -231,7 +231,9 @@
   </node>
   <node concept="3mGtxK" id="38C0GeDsl4h">
     <property role="TrG5h" value="map_Unit" />
-    <node concept="PCHHu" id="38C0GeDsl4i" role="3mGtxP" />
+    <node concept="2qCqA3" id="6mAYhV7HvT4" role="3mGtxP">
+      <property role="TrG5h" value="Dummy" />
+    </node>
     <node concept="n94m4" id="38C0GeDsl4j" role="lGtFl">
       <ref role="n9lRv" to="28lk:6OepWIVJVYV" resolve="Unit" />
     </node>
