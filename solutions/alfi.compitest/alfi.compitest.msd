@@ -6,10 +6,10 @@
     </modelRoot>
   </models>
   <facets>
-    <facet compile="mps" classes="mps" ext="no" type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
-    <facet planModel="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" type="generator" />
+    <facet type="generator" planModel="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
   </facets>
   <dependencies>
     <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>

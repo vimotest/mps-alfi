@@ -8,8 +8,6 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
-    <import index="aqoz" ref="r:66fba810-b285-4d4c-a12e-ace82eebf017(jetbrains.mps.LangDoc.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -215,18 +213,6 @@
         <ref role="398BVh" node="kgFCN7YrOP" resolve="mps_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="VYVB7Hp3aa" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="398BVA" id="VYVB7Hp3ba" role="2JcizS">
-        <ref role="398BVh" node="VYVB7Hp2Y7" resolve="deps_home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="7oewXw4IxLW" role="1l3spa">
-      <ref role="1l3spb" to="aqoz:5ZQFUMN3sI6" resolve="LangDoc" />
-      <node concept="398BVA" id="7oewXw4IxWi" role="2JcizS">
-        <ref role="398BVh" node="VYVB7Hp2Y7" resolve="deps_home" />
-      </node>
-    </node>
     <node concept="1l3spV" id="kgFCN7YrPj" role="1l3spN">
       <node concept="m$_wl" id="QrDUy_Pwz2" role="39821P">
         <ref role="m_rDy" node="QrDUy_PgKk" resolve="alfiSandboxes" />
@@ -327,9 +313,6 @@
       </node>
       <node concept="m$_yC" id="kgFCN7YrPc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="m$_yC" id="7oewXw4IxX9" role="m$_yJ">
-        <ref role="m$_y1" to="aqoz:5ZQFUMN3sIt" resolve="jetbrains.mps.LangDoc" />
       </node>
       <node concept="3_J27D" id="kgFCN7YrPd" role="m_cZH">
         <node concept="3Mxwew" id="kgFCN7YrPe" role="3MwsjC">

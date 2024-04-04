@@ -1,18 +1,13 @@
-ext.mpsVersion = "2023.2"
+ext.mpsVersion = "2023.3"
 ext.languageName = "alfi"
 
 ext.alfVersion = "1.1.0k"
 
-// here add your required plugins
-// to find a plugin entry, search in https://plugins.jetbrains.com/ for the plugin name and obtain the ID from URL (e.g. 13242 for grammarcells)
-// if you need a specific version for a plugin, add it in []-brackets
 ext.mpsPlugins = [
-    "LangDoc[2023.2]": 12325
 ]
 
 ext.customMpsPlugins = [
-    "de.itemis.mps.extensions": "https://artifacts.itemis.cloud/repository/maven-mps/de/itemis/mps/extensions/2023.2.2675.b35f4bc/extensions-2023.2.2675.b35f4bc.zip",
-    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2023.2-beta1/TextGenGen.zip"
+    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2023.3-beta1/TextGenGen.zip"
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
@@ -26,16 +21,9 @@ task prepareMps {
     dependsOn 'buildOsSpecificBundle'
 }
 
-task patchBuildXml {
-    String contents = new File( 'build.xml' ).getText( 'UTF-8' )
-    contents = contents.replaceAll( '\\{build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip', '{artifacts.CsStdLibrary}' )
-    contents = contents.replaceAll( '\\{build.tmp}/deps/LangDoc/LangDoc.zip', '{artifacts.LangDoc}' )
-    new File( 'build.xml' ).write( contents, 'UTF-8' )
-}
-
 task mpsBuild {
     group 'mps'
-    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary', 'patchBuildXml'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary'
 }
 mpsAntBuild.dependsOn mpsAntGenerate
 mpsAntGenerate.dependsOn packageStandardModelLibrary
