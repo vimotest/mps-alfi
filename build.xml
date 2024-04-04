@@ -920,7 +920,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin path="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
+      <plugin path="${artifacts.LangDoc}/LangDoc" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -1752,7 +1752,7 @@
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
       <plugin id="jetbrains.mps.core" path="${artifacts.mps}/plugins/mps-core" />
       <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
-      <plugin id="jetbrains.mps.LangDoc" path="${build.tmp}/deps/LangDoc/LangDoc.zip/LangDoc" />
+      <plugin id="jetbrains.mps.LangDoc" path="${artifacts.LangDoc}/LangDoc" />
       <plugin id="alfi" path="${build.tmp}/default/alfi.zip/alfi" />
       <macro name="project_home" path="${project_home}" />
       

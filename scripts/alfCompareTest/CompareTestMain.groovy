@@ -13,7 +13,7 @@ println("Working directory: $pwd")
 def COMPITEST_ALFI_REPO_ROOT = "$pwd/../.."
 def COMPITEST_TESTCASE_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/artifacts/alfi/compitest"
 def COMPITEST_WORK_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/compitest"
-def COMPITEST_TEST_PLAN_FILE = "${COMPITEST_ALFI_REPO_ROOT}/compitest_testplan.json"
+def COMPITEST_TEST_PLAN_FILE = "${COMPITEST_ALFI_REPO_ROOT}/scripts/alfCompareTest/compitest_testplan.json"
 
 def repoRootAbsolute = new File(COMPITEST_ALFI_REPO_ROOT).canonicalPath
 println("Running Compare Tests in repo root: ${repoRootAbsolute}")

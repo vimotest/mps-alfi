@@ -12,8 +12,8 @@ The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spe
 ## State of the project
 
 - This project is a research prototype and not ready for production use.
-- [implemented.md](implemented.md) describes what parts of the standard are implemented.
-- [knownProblems.md](knownProblems.md) describes what problems are known.
+- [implemented.md](documentation/implemented.md) describes what parts of the standard are implemented.
+- [knownProblems.md](documentation/knownProblems.md) describes what problems are known.
 
 ## Usage
 
