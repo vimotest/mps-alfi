@@ -160,6 +160,7 @@
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1966870290088668520" name="jetbrains.mps.lang.smodel.structure.Enum_MembersOperation" flags="ng" index="2ViDtN" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -225,6 +226,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -1570,6 +1572,50 @@
                 <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="75cQW_truT8">
+    <property role="3GE5qa" value="units.features.operations" />
+    <property role="TrG5h" value="OperationDefinition_AddRedefinitionClause" />
+    <ref role="2ZfgGC" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    <node concept="2S6ZIM" id="75cQW_truT9" role="2ZfVej">
+      <node concept="3clFbS" id="75cQW_truTa" role="2VODD2">
+        <node concept="3clFbF" id="75cQW_trva9" role="3cqZAp">
+          <node concept="Xl_RD" id="75cQW_trva8" role="3clFbG">
+            <property role="Xl_RC" value="Add a Redefinition Clause" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="75cQW_truTb" role="2ZfgGD">
+      <node concept="3clFbS" id="75cQW_truTc" role="2VODD2">
+        <node concept="3clFbF" id="75cQW_trvIF" role="3cqZAp">
+          <node concept="2OqwBi" id="75cQW_tryRv" role="3clFbG">
+            <node concept="2OqwBi" id="75cQW_trvVB" role="2Oq$k0">
+              <node concept="2Sf5sV" id="75cQW_trvIE" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="75cQW_trwhx" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:75cQW_tqyNn" resolve="redefinitionClauses" />
+              </node>
+            </node>
+            <node concept="WFELt" id="75cQW_trCLk" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="75cQW_trDi6" role="2ZfVeh">
+      <node concept="3clFbS" id="75cQW_trDi7" role="2VODD2">
+        <node concept="3clFbF" id="75cQW_trDxR" role="3cqZAp">
+          <node concept="2OqwBi" id="75cQW_trERG" role="3clFbG">
+            <node concept="2OqwBi" id="75cQW_trDM7" role="2Oq$k0">
+              <node concept="2Sf5sV" id="75cQW_trDxQ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="75cQW_trDNx" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:75cQW_tqyNn" resolve="redefinitionClauses" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="75cQW_trFkT" role="2OqNvi" />
           </node>
         </node>
       </node>
