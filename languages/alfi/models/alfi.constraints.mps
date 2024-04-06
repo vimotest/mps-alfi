@@ -1060,5 +1060,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3m3bKNZeu5b">
+    <property role="3GE5qa" value="expressions.names" />
+    <ref role="1M2myG" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
+    <node concept="1N5Pfh" id="3m3bKNZeuzz" role="1Mr941">
+      <ref role="1N5Vy1" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
+      <node concept="1dDu$B" id="3m3bKNZeu$B" role="1N6uqs">
+        <ref role="1dDu$A" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+      </node>
+    </node>
+  </node>
 </model>
 

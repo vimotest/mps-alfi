@@ -333,10 +333,12 @@
     <property role="EcuMT" value="2674824929519835220" />
     <property role="3GE5qa" value="expressions.names" />
     <property role="TrG5h" value="NameBinding" />
-    <property role="34LRSv" value="name" />
     <ref role="1TJDcQ" node="2SMO68r_I0M" resolve="SyntaxElement" />
-    <node concept="PrWs8" id="2kuSLC0oTxl" role="PzmwI">
-      <ref role="PrY4T" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+    <node concept="1TJgyj" id="3m3bKNZGB$m" role="1TKVEi">
+      <property role="IQ2ns" value="3855977438835276054" />
+      <property role="20kJfa" value="nameRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kuSLC0oUio">
@@ -902,12 +904,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2kuSLC0oTxk" resolve="NameBinding" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6cBsaQxYZpm">
-    <property role="EcuMT" value="7144803224895878742" />
-    <property role="3GE5qa" value="expressions.primary.invocation" />
-    <property role="TrG5h" value="ThisFeatureReference" />
-    <ref role="1TJDcQ" node="6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+    <node concept="PrWs8" id="3m3bKNZEKCF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQy2Fnk">
     <property role="TrG5h" value="FeatureInvocationTarget" />
@@ -1698,6 +1697,9 @@
     <node concept="PrWs8" id="75cQW_toKX4" role="PzmwI">
       <ref role="PrY4T" node="75cQW_toIc6" resolve="IHasReturnParameter" />
     </node>
+    <node concept="PrWs8" id="3m3bKNZ_VGs" role="PzmwI">
+      <ref role="PrY4T" node="3m3bKNZ_Ved" resolve="IFeature" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H6tuG">
     <property role="EcuMT" value="3120704408893642668" />
@@ -1710,6 +1712,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="initializerExpression" />
       <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3m3bKNZ_VGw" role="PzmwI">
+      <ref role="PrY4T" node="3m3bKNZ_Ved" resolve="IFeature" />
     </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H6x$5">
@@ -1787,6 +1792,18 @@
     <node concept="PrWs8" id="1_2cgM8_ViI" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6cBsaQxYZpm">
+    <property role="EcuMT" value="7144803224895878742" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="TrG5h" value="ThisFeatureReference" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" node="6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+  </node>
+  <node concept="PlHQZ" id="3m3bKNZ_Ved">
+    <property role="EcuMT" value="3855977438833521549" />
+    <property role="3GE5qa" value="units.features" />
+    <property role="TrG5h" value="IFeature" />
   </node>
 </model>
 

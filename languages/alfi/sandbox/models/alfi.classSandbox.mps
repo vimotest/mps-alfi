@@ -24,11 +24,23 @@
       <concept id="1820071129312107522" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="2hPqOe">
         <property id="1820071129312120005" name="stereotype" index="2hPvR9" />
       </concept>
+      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
+      <concept id="2674824929518918217" name="alfi.structure.ThisExpression" flags="ng" index="_iR_j" />
+      <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
+        <child id="2674824929518763028" name="expression" index="_jtWe" />
+      </concept>
       <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
         <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
+      <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0" />
+      <concept id="2674824929519838360" name="alfi.structure.InvocationExpression" flags="ng" index="_vku2">
+        <child id="2674824929519882447" name="tuple" index="_uFfl" />
+      </concept>
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
+      </concept>
+      <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
+        <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
       <concept id="8164141882416860677" name="alfi.structure.ICanBeAbstract" flags="ngI" index="G55nc">
         <property id="3328952194368015168" name="isAbstract" index="PCHGy" />
@@ -43,15 +55,30 @@
         <property id="3328952194368015157" name="visibility" index="PCHHn" />
         <child id="2021446509797018758" name="stereotypeAnnotation" index="3wUx9_" />
       </concept>
+      <concept id="3328952194368015167" name="alfi.structure.ClassifierDefinition" flags="ng" index="PCHHt">
+        <child id="2021446509800184021" name="specializations" index="3x6$oQ" />
+      </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
       </concept>
+      <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      </concept>
+      <concept id="7144803224896997561" name="alfi.structure.SuperInvocationExpression" flags="ng" index="31aBwk">
+        <child id="7144803224896997562" name="target" index="31aBwn" />
       </concept>
       <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
         <child id="8875975376183143672" name="expression" index="2vFQ1F" />
       </concept>
+      <concept id="7144803224895280376" name="alfi.structure.FeatureReference" flags="ng" index="32Pqhl">
+        <child id="7144803224895067500" name="nameBinding" index="32Men1" />
+        <child id="7144803224895067498" name="expression" index="32Men7" />
+      </concept>
+      <concept id="7144803224895280375" name="alfi.structure.FeatureInvocationExpression" flags="ng" index="32Pqhq">
+        <child id="7144803224895489174" name="target" index="32OngV" />
+      </concept>
+      <concept id="7144803224895878742" name="alfi.structure.ThisFeatureReference" flags="ng" index="32R8rV" />
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
@@ -127,6 +154,117 @@
             <property role="2hPvR9" value="1_2cgM8Aire/Destroy" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="3m3bKNZdewA">
+    <node concept="2qCqA3" id="3m3bKNZdeYQ" role="3mGtxP">
+      <property role="TrG5h" value="InvocationDemoPackage" />
+      <node concept="6nSm2" id="3m3bKNZ_1Il" role="PCHHv">
+        <property role="TrG5h" value="Base" />
+        <node concept="6nSm6" id="3m3bKNZ_1J_" role="PCHHv">
+          <property role="TrG5h" value="hashCode" />
+          <node concept="PCHzy" id="3m3bKNZ_1JA" role="GbAUv">
+            <node concept="32G6VT" id="3m3bKNZ_1Kf" role="PCHzz">
+              <node concept="32T38h" id="3m3bKNZ_1Ki" role="2vFQ1F">
+                <property role="32T38g" value="42" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="3m3bKNZ_1JD" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="3m3bKNZ_1JF" role="3xMlr6">
+              <node concept="2RqM1Q" id="3m3bKNZ_1JG" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="3m3bKNZdeYY" role="PCHHv">
+        <property role="TrG5h" value="Animal" />
+        <property role="PCHGy" value="true" />
+        <node concept="6nSm6" id="3m3bKNZdeZ4" role="PCHHv">
+          <property role="TrG5h" value="move" />
+          <node concept="PCHzy" id="3m3bKNZdeZ5" role="GbAUv">
+            <node concept="_jtW9" id="3m3bKNZ_1F8" role="PCHzz">
+              <node concept="31aBwk" id="3m3bKNZ_1F4" role="_jtWe">
+                <node concept="_vku0" id="3m3bKNZ_1F6" role="_uFfl" />
+              </node>
+            </node>
+            <node concept="_jtW9" id="3m3bKNZ_1Dr" role="PCHzz">
+              <node concept="31aBwk" id="3m3bKNZ_1Dn" role="_jtWe">
+                <node concept="_vku0" id="3m3bKNZ_1Dp" role="_uFfl" />
+                <node concept="_vnHb" id="3m3bKNZ_1DQ" role="31aBwn">
+                  <node concept="2RqM1Q" id="3m3bKNZ_1DR" role="_vnH8">
+                    <ref role="2RqM1R" node="3m3bKNZdeZ4" resolve="move" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="PDbRn" id="3m3bKNZ_1G5" role="PCHzz" />
+            <node concept="_jtW9" id="3m3bKNZ_1Cy" role="PCHzz">
+              <node concept="32Pqhq" id="3m3bKNZ_1Cr" role="_jtWe">
+                <node concept="_vku0" id="3m3bKNZ_1Cw" role="_uFfl" />
+                <node concept="32R8rV" id="3m3bKNZ_1CX" role="32OngV" />
+              </node>
+            </node>
+            <node concept="_jtW9" id="33GfBy8QOHr" role="PCHzz">
+              <node concept="32Pqhq" id="33GfBy8QOHi" role="_jtWe">
+                <node concept="32Pqhl" id="33GfBy8QOHk" role="32OngV">
+                  <node concept="_iR_j" id="33GfBy8QOHM" role="32Men7" />
+                  <node concept="_vnHe" id="33GfBy8QOHn" role="32Men1">
+                    <ref role="3acloq" node="3m3bKNZ_1J_" resolve="hashCode" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="33GfBy8QOHp" role="_uFfl" />
+              </node>
+            </node>
+            <node concept="_jtW9" id="3m3bKNZrtnc" role="PCHzz">
+              <node concept="_iR_j" id="3m3bKNZrtna" role="_jtWe" />
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="3m3bKNZdf1M" role="PCHHv">
+          <property role="PCHHn" value="6OepWIVA92F/protected" />
+          <property role="TrG5h" value="getSpeed" />
+          <node concept="PCHzy" id="3m3bKNZdf1N" role="GbAUv">
+            <node concept="32G6VT" id="3m3bKNZdf4B" role="PCHzz">
+              <node concept="32T38h" id="3m3bKNZdf4E" role="2vFQ1F">
+                <property role="32T38g" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="3m3bKNZdf2n" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="3m3bKNZdf2p" role="3xMlr6">
+              <node concept="2RqM1Q" id="3m3bKNZdf2q" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6lMYc" id="3m3bKNZdeZc" role="PCHHv">
+          <property role="TrG5h" value="distance" />
+          <node concept="3xHE8C" id="3m3bKNZdeZj" role="3xMlr6">
+            <node concept="2RqM1Q" id="3m3bKNZdeZl" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+          <node concept="32T38h" id="3m3bKNZdf08" role="6k5i9">
+            <property role="32T38g" value="0" />
+          </node>
+        </node>
+        <node concept="_vnHb" id="3m3bKNZGBwT" role="3x6$oQ">
+          <node concept="2RqM1Q" id="3m3bKNZGBwU" role="_vnH8">
+            <ref role="2RqM1R" node="3m3bKNZ_1Il" resolve="Base" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="3m3bKNZdeYT" role="PCHHv">
+        <property role="TrG5h" value="Dog" />
       </node>
     </node>
   </node>
