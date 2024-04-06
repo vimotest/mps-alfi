@@ -77,6 +77,7 @@
         <child id="8329266386016685951" name="editorContext" index="2xHN3q" />
         <child id="8979250711607012232" name="cellSelector" index="3a7HXU" />
       </concept>
+      <concept id="8371900013785948369" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Parameter" flags="ig" index="2$S_p_" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
@@ -86,6 +87,10 @@
       </concept>
       <concept id="3473224453637651916" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform_PlaceInCellHolder" flags="ng" index="CtIbL">
         <property id="3473224453637651917" name="placeInCell" index="CtIbK" />
+      </concept>
+      <concept id="308059530142752797" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Parameterized" flags="ng" index="2F$Pav">
+        <child id="8371900013785948359" name="part" index="2$S_pN" />
+        <child id="8371900013785948365" name="parameterQuery" index="2$S_pT" />
       </concept>
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
@@ -3816,7 +3821,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1KdBIfWTSLL">
-    <property role="3GE5qa" value="units" />
+    <property role="3GE5qa" value="units.annotation" />
     <ref role="1XX52x" to="28lk:1KdBIfWTSLq" resolve="StereotypeAnnotation" />
     <node concept="3EZMnI" id="1KdBIfWTSLN" role="2wV5jI">
       <ref role="1k5W1q" to="tpen:hshU_KJ" resolve="Annotation" />
@@ -3826,8 +3831,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="1KdBIfWTSM0" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+      <node concept="3F1sOY" id="1_2cgM8_VhA" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
       </node>
       <node concept="2iRfu4" id="1KdBIfWTSLQ" role="2iSdaV" />
     </node>
@@ -5098,6 +5103,94 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1_2cgM8_ViC">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="1XX52x" to="28lk:1_2cgM8_Vi_" resolve="QualifiedNameStereotypeName" />
+    <node concept="3F1sOY" id="1_2cgM8_ViE" role="2wV5jI">
+      <ref role="1NtTu8" to="28lk:1_2cgM8_ViA" resolve="qualifiedName" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1_2cgM8_XBQ">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="1XX52x" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+    <node concept="3F0A7n" id="1_2cgM8_XBS" role="2wV5jI">
+      <ref role="1NtTu8" to="28lk:1_2cgM8_WN5" resolve="stereotype" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="1_2cgM8Adx$">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="aqKnT" to="28lk:1KdBIfWTSLq" resolve="StereotypeAnnotation" />
+    <node concept="22hDWj" id="1_2cgM8Adx_" role="22hAXT" />
+    <node concept="2VfDsV" id="1_2cgM8AdKm" role="3ft7WO" />
+  </node>
+  <node concept="22mcaB" id="1_2cgM8AdKs">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="aqKnT" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+    <node concept="22hDWj" id="1_2cgM8AdKt" role="22hAXT" />
+    <node concept="2F$Pav" id="1_2cgM8AdKv" role="3ft7WO">
+      <node concept="3eGOop" id="1_2cgM8AdU6" role="2$S_pN">
+        <node concept="ucgPf" id="1_2cgM8AdU8" role="3aKz83">
+          <node concept="3clFbS" id="1_2cgM8AdUa" role="2VODD2">
+            <node concept="3cpWs8" id="1_2cgM8AhcA" role="3cqZAp">
+              <node concept="3cpWsn" id="1_2cgM8AhcB" role="3cpWs9">
+                <property role="TrG5h" value="node" />
+                <node concept="3Tqbb2" id="1_2cgM8Ahce" role="1tU5fm">
+                  <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+                </node>
+                <node concept="2ShNRf" id="1_2cgM8AhcC" role="33vP2m">
+                  <node concept="3zrR0B" id="1_2cgM8AhcD" role="2ShVmc">
+                    <node concept="3Tqbb2" id="1_2cgM8AhcE" role="3zrR0E">
+                      <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1_2cgM8AhAO" role="3cqZAp">
+              <node concept="37vLTI" id="1_2cgM8AikG" role="3clFbG">
+                <node concept="2ZBlsa" id="1_2cgM8AioJ" role="37vLTx" />
+                <node concept="2OqwBi" id="1_2cgM8AhN8" role="37vLTJ">
+                  <node concept="37vLTw" id="1_2cgM8AhAM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1_2cgM8AhcB" resolve="node" />
+                  </node>
+                  <node concept="3TrcHB" id="1_2cgM8AhZ8" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:1_2cgM8_WN5" resolve="stereotype" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1_2cgM8Ag1h" role="3cqZAp">
+              <node concept="37vLTw" id="1_2cgM8AhcF" role="3clFbG">
+                <ref role="3cqZAo" node="1_2cgM8AhcB" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZThk1" id="1_2cgM8AdU3" role="2ZBHrp">
+        <ref role="2ZWj4r" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+      </node>
+      <node concept="2$S_p_" id="1_2cgM8AdWy" role="2$S_pT">
+        <node concept="3clFbS" id="1_2cgM8AdWz" role="2VODD2">
+          <node concept="3clFbF" id="1_2cgM8Ae8X" role="3cqZAp">
+            <node concept="2OqwBi" id="1_2cgM8AfiB" role="3clFbG">
+              <node concept="1XH99k" id="1_2cgM8Ae8W" role="2Oq$k0">
+                <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+              </node>
+              <node concept="2ViDtN" id="1_2cgM8AfU_" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1_2cgM8SPFv">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="1XX52x" to="28lk:1_2cgM8_ViH" resolve="CustomStereotypeName" />
+    <node concept="3F0A7n" id="1_2cgM8SQ8Q" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>

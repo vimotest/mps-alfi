@@ -21,6 +21,9 @@
       <concept id="3120704408893095334" name="alfi.structure.OperationDefinition" flags="ng" index="6nSm6">
         <child id="8164141882417526102" name="body" index="GbAUv" />
       </concept>
+      <concept id="1820071129312107522" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="2hPqOe">
+        <property id="1820071129312120005" name="stereotype" index="2hPvR9" />
+      </concept>
       <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
         <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
@@ -38,6 +41,7 @@
       </concept>
       <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
         <property id="3328952194368015157" name="visibility" index="PCHHn" />
+        <child id="2021446509797018758" name="stereotypeAnnotation" index="3wUx9_" />
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
@@ -53,6 +57,9 @@
       </concept>
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
+      </concept>
+      <concept id="2021446509797018714" name="alfi.structure.StereotypeAnnotation" flags="ng" index="3wUxaT">
+        <child id="1820071129312107538" name="stereotypeName" index="2hPqOu" />
       </concept>
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
@@ -100,6 +107,24 @@
             <node concept="2RqM1Q" id="75cQW_tvGnp" role="_vnH8">
               <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm6" id="1_2cgM8Y9gx" role="PCHHv">
+        <property role="TrG5h" value="ctor" />
+        <node concept="PCHzy" id="1_2cgM8Y9gy" role="GbAUv" />
+        <node concept="3wUxaT" id="1_2cgM8Zet2" role="3wUx9_">
+          <node concept="2hPqOe" id="1_2cgM8Zet4" role="2hPqOu">
+            <property role="2hPvR9" value="1_2cgM8Air9/Create" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm6" id="1_2cgM8Zev9" role="PCHHv">
+        <property role="TrG5h" value="dtor" />
+        <node concept="PCHzy" id="1_2cgM8Zeva" role="GbAUv" />
+        <node concept="3wUxaT" id="1_2cgM8Zexd" role="3wUx9_">
+          <node concept="2hPqOe" id="1_2cgM8Zexf" role="2hPqOu">
+            <property role="2hPvR9" value="1_2cgM8Aire/Destroy" />
           </node>
         </node>
       </node>

@@ -19,6 +19,7 @@
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
+    <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="mwat" ref="r:86c02d28-9bd7-4eb6-bfc1-57f556dae16e(alfi.PrimitiveMapping.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -283,21 +284,24 @@
                                 <node concept="1bVj0M" id="2X39vz2X_7d" role="23t8la">
                                   <node concept="3clFbS" id="2X39vz2X_7e" role="1bW5cS">
                                     <node concept="3clFbF" id="2X39vz2XAqj" role="3cqZAp">
-                                      <node concept="17R0WA" id="2X39vz2XCpn" role="3clFbG">
-                                        <node concept="2OqwBi" id="2X39vz2XDnL" role="3uHU7w">
-                                          <node concept="1XH99k" id="2X39vz2XCzh" role="2Oq$k0">
-                                            <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
-                                          </node>
-                                          <node concept="2ViDtV" id="2X39vz2XDPm" role="2OqNvi">
-                                            <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
-                                          </node>
-                                        </node>
-                                        <node concept="2OqwBi" id="2X39vz2XAIG" role="3uHU7B">
+                                      <node concept="2OqwBi" id="1_2cgM9gLO$" role="3clFbG">
+                                        <node concept="2OqwBi" id="2X39vz2XAIG" role="2Oq$k0">
                                           <node concept="37vLTw" id="2X39vz2XAqi" role="2Oq$k0">
                                             <ref role="3cqZAo" node="3widqAzUBSJ" resolve="it" />
                                           </node>
-                                          <node concept="3TrcHB" id="2X39vz2XBsu" role="2OqNvi">
-                                            <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                                          <node concept="3TrEf2" id="1_2cgM9gIZh" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                                          </node>
+                                        </node>
+                                        <node concept="2qgKlT" id="1_2cgM9gMqj" role="2OqNvi">
+                                          <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                                          <node concept="2OqwBi" id="2X39vz2XDnL" role="37wK5m">
+                                            <node concept="1XH99k" id="2X39vz2XCzh" role="2Oq$k0">
+                                              <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                                            </node>
+                                            <node concept="2ViDtV" id="2X39vz2XDPm" role="2OqNvi">
+                                              <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+                                            </node>
                                           </node>
                                         </node>
                                       </node>

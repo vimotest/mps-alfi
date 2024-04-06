@@ -1179,21 +1179,24 @@
                       <node concept="3clFbS" id="1KdBIfWVfVm" role="1bW5cS">
                         <node concept="3clFbF" id="1KdBIfWVhjR" role="3cqZAp">
                           <node concept="1Wc70l" id="1KdBIfWVuop" role="3clFbG">
-                            <node concept="17R0WA" id="1KdBIfWV_sR" role="3uHU7w">
-                              <node concept="2OqwBi" id="1KdBIfWVDvN" role="3uHU7w">
-                                <node concept="37vLTw" id="1KdBIfWVBX6" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
-                                </node>
-                                <node concept="3TrcHB" id="1KdBIfWVF3I" role="2OqNvi">
-                                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
-                                </node>
-                              </node>
-                              <node concept="2OqwBi" id="1KdBIfWVye9" role="3uHU7B">
+                            <node concept="2OqwBi" id="1_2cgM8FblW" role="3uHU7w">
+                              <node concept="2OqwBi" id="1KdBIfWVye9" role="2Oq$k0">
                                 <node concept="37vLTw" id="1KdBIfWVwMV" role="2Oq$k0">
                                   <ref role="3cqZAo" node="3widqAzUBTA" resolve="it" />
                                 </node>
-                                <node concept="3TrcHB" id="1KdBIfWVzNv" role="2OqNvi">
-                                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                                <node concept="3TrEf2" id="1_2cgM8FaMY" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="1_2cgM8Fb$k" role="2OqNvi">
+                                <ref role="37wK5l" to="bqjt:1_2cgM8FfZu" resolve="equalsStereotypeName" />
+                                <node concept="2OqwBi" id="1_2cgM8FcR4" role="37wK5m">
+                                  <node concept="37vLTw" id="1_2cgM8Fc3X" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                                  </node>
+                                  <node concept="3TrEf2" id="1_2cgM8Fd92" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1268,21 +1271,24 @@
                 </node>
               </node>
             </node>
-            <node concept="17R0WA" id="1KdBIfWVPxd" role="3clFbw">
-              <node concept="2OqwBi" id="1KdBIfWVOON" role="3uHU7B">
+            <node concept="2OqwBi" id="1_2cgM8FoJ8" role="3clFbw">
+              <node concept="2OqwBi" id="1KdBIfWVOON" role="2Oq$k0">
                 <node concept="37vLTw" id="1KdBIfWVOF6" role="2Oq$k0">
                   <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
                 </node>
-                <node concept="3TrcHB" id="1KdBIfWVPeB" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                <node concept="3TrEf2" id="1_2cgM8Fo$6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="1KdBIfWVQ9x" role="3uHU7w">
-                <node concept="1XH99k" id="1KdBIfWVPDa" role="2Oq$k0">
-                  <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
-                </node>
-                <node concept="2ViDtV" id="1KdBIfWVQmY" role="2OqNvi">
-                  <ref role="2ViDtZ" to="28lk:1KdBIfWTSLv" resolve="external" />
+              <node concept="2qgKlT" id="1_2cgM8Fp0d" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                <node concept="2OqwBi" id="1KdBIfWVQ9x" role="37wK5m">
+                  <node concept="1XH99k" id="1KdBIfWVPDa" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                  </node>
+                  <node concept="2ViDtV" id="1KdBIfWVQmY" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:1KdBIfWTSLv" resolve="external" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1402,21 +1408,24 @@
                 </node>
               </node>
             </node>
-            <node concept="17R0WA" id="1KdBIfWW7pV" role="3clFbw">
-              <node concept="2OqwBi" id="1KdBIfWW7pW" role="3uHU7B">
+            <node concept="2OqwBi" id="1_2cgM8FpDm" role="3clFbw">
+              <node concept="2OqwBi" id="1KdBIfWW7pW" role="2Oq$k0">
                 <node concept="37vLTw" id="1KdBIfWW7pX" role="2Oq$k0">
                   <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
                 </node>
-                <node concept="3TrcHB" id="1KdBIfWW7pY" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                <node concept="3TrEf2" id="1_2cgM8FpAF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="1KdBIfWW7pZ" role="3uHU7w">
-                <node concept="1XH99k" id="1KdBIfWW7q0" role="2Oq$k0">
-                  <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
-                </node>
-                <node concept="2ViDtV" id="1KdBIfWW7q1" role="2OqNvi">
-                  <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+              <node concept="2qgKlT" id="1_2cgM8FpKs" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                <node concept="2OqwBi" id="1KdBIfWW7pZ" role="37wK5m">
+                  <node concept="1XH99k" id="1KdBIfWW7q0" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                  </node>
+                  <node concept="2ViDtV" id="1KdBIfWW7q1" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1445,21 +1454,118 @@
                   </node>
                 </node>
               </node>
-              <node concept="17R0WA" id="1KdBIfWWcLA" role="3uHU7B">
-                <node concept="2OqwBi" id="1KdBIfWWcLB" role="3uHU7B">
+              <node concept="2OqwBi" id="1_2cgM8Fwhs" role="3uHU7B">
+                <node concept="2OqwBi" id="1KdBIfWWcLB" role="2Oq$k0">
                   <node concept="37vLTw" id="1KdBIfWWcLC" role="2Oq$k0">
                     <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
                   </node>
-                  <node concept="3TrcHB" id="1KdBIfWWcLD" role="2OqNvi">
-                    <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                  <node concept="3TrEf2" id="1_2cgM8Fuwb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="1KdBIfWWcLE" role="3uHU7w">
-                  <node concept="1XH99k" id="1KdBIfWWcLF" role="2Oq$k0">
-                    <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                <node concept="2qgKlT" id="1_2cgM8FyYh" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                  <node concept="2OqwBi" id="1KdBIfWWcLE" role="37wK5m">
+                    <node concept="1XH99k" id="1KdBIfWWcLF" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                    </node>
+                    <node concept="2ViDtV" id="1KdBIfWWcLG" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:1KdBIfWTSLy" resolve="ModelLibrary" />
+                    </node>
                   </node>
-                  <node concept="2ViDtV" id="1KdBIfWWcLG" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:1KdBIfWTSLy" resolve="ModelLibrary" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1_2cgM8FAvS" role="3cqZAp">
+            <node concept="3clFbS" id="1_2cgM8FAvT" role="3clFbx">
+              <node concept="2MkqsV" id="1_2cgM8FAvU" role="3cqZAp">
+                <node concept="Xl_RD" id="1_2cgM8FAvV" role="2MkJ7o">
+                  <property role="Xl_RC" value="The annotation @Create is only valid for operations" />
+                </node>
+                <node concept="37vLTw" id="1_2cgM8FAvW" role="1urrMF">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="1_2cgM8FAvX" role="3clFbw">
+              <node concept="3fqX7Q" id="1_2cgM8FAvY" role="3uHU7w">
+                <node concept="2OqwBi" id="1_2cgM8FAvZ" role="3fr31v">
+                  <node concept="1YBJjd" id="1_2cgM8FAw0" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="1mIQ4w" id="1_2cgM8FAw1" role="2OqNvi">
+                    <node concept="chp4Y" id="1_2cgM8FAw2" role="cj9EA">
+                      <ref role="cht4Q" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1_2cgM8FAw3" role="3uHU7B">
+                <node concept="2OqwBi" id="1_2cgM8FAw4" role="2Oq$k0">
+                  <node concept="37vLTw" id="1_2cgM8FAw5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                  </node>
+                  <node concept="3TrEf2" id="1_2cgM8FAw6" role="2OqNvi">
+                    <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1_2cgM8FAw7" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                  <node concept="2OqwBi" id="1_2cgM8FAw8" role="37wK5m">
+                    <node concept="1XH99k" id="1_2cgM8FAw9" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                    </node>
+                    <node concept="2ViDtV" id="1_2cgM8FEed" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:1_2cgM8Air9" resolve="Create" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1_2cgM8FHPS" role="3cqZAp">
+            <node concept="3clFbS" id="1_2cgM8FHPT" role="3clFbx">
+              <node concept="2MkqsV" id="1_2cgM8FHPU" role="3cqZAp">
+                <node concept="Xl_RD" id="1_2cgM8FHPV" role="2MkJ7o">
+                  <property role="Xl_RC" value="The annotation @Destroy is only valid for operations" />
+                </node>
+                <node concept="37vLTw" id="1_2cgM8FHPW" role="1urrMF">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="1_2cgM8FHPX" role="3clFbw">
+              <node concept="3fqX7Q" id="1_2cgM8FHPY" role="3uHU7w">
+                <node concept="2OqwBi" id="1_2cgM8FHPZ" role="3fr31v">
+                  <node concept="1YBJjd" id="1_2cgM8FHQ0" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="1mIQ4w" id="1_2cgM8FHQ1" role="2OqNvi">
+                    <node concept="chp4Y" id="1_2cgM8FHQ2" role="cj9EA">
+                      <ref role="cht4Q" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1_2cgM8FHQ3" role="3uHU7B">
+                <node concept="2OqwBi" id="1_2cgM8FHQ4" role="2Oq$k0">
+                  <node concept="37vLTw" id="1_2cgM8FHQ5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                  </node>
+                  <node concept="3TrEf2" id="1_2cgM8FHQ6" role="2OqNvi">
+                    <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1_2cgM8FHQ7" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                  <node concept="2OqwBi" id="1_2cgM8FHQ8" role="37wK5m">
+                    <node concept="1XH99k" id="1_2cgM8FHQ9" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                    </node>
+                    <node concept="2ViDtV" id="1_2cgM8FHQa" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:1_2cgM8Aire" resolve="Destroy" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1971,21 +2077,24 @@
                 <node concept="1bVj0M" id="1KdBIfX5RTA" role="23t8la">
                   <node concept="3clFbS" id="1KdBIfX5RTB" role="1bW5cS">
                     <node concept="3clFbF" id="1KdBIfX5RZA" role="3cqZAp">
-                      <node concept="17R0WA" id="1KdBIfX5T9Y" role="3clFbG">
-                        <node concept="2OqwBi" id="1KdBIfX5TUn" role="3uHU7w">
-                          <node concept="1XH99k" id="1KdBIfX5TiF" role="2Oq$k0">
-                            <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
-                          </node>
-                          <node concept="2ViDtV" id="1KdBIfX5UkU" role="2OqNvi">
-                            <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="1KdBIfX5Sdd" role="3uHU7B">
+                      <node concept="2OqwBi" id="1_2cgM8PrNz" role="3clFbG">
+                        <node concept="2OqwBi" id="1KdBIfX5Sdd" role="2Oq$k0">
                           <node concept="37vLTw" id="1KdBIfX5RZ_" role="2Oq$k0">
                             <ref role="3cqZAo" node="3widqAzUBTC" resolve="it" />
                           </node>
-                          <node concept="3TrcHB" id="1KdBIfX5SvK" role="2OqNvi">
-                            <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                          <node concept="3TrEf2" id="1_2cgM8PrzU" role="2OqNvi">
+                            <ref role="3Tt5mk" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="1_2cgM8Ps4p" role="2OqNvi">
+                          <ref role="37wK5l" to="bqjt:1_2cgM8DTuu" resolve="equalsPredefined" />
+                          <node concept="2OqwBi" id="1KdBIfX5TUn" role="37wK5m">
+                            <node concept="1XH99k" id="1KdBIfX5TiF" role="2Oq$k0">
+                              <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                            </node>
+                            <node concept="2ViDtV" id="1KdBIfX5UkU" role="2OqNvi">
+                              <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+                            </node>
                           </node>
                         </node>
                       </node>

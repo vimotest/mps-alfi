@@ -1422,14 +1422,16 @@
   </node>
   <node concept="1TIwiD" id="1KdBIfWTSLq">
     <property role="EcuMT" value="2021446509797018714" />
-    <property role="3GE5qa" value="units" />
+    <property role="3GE5qa" value="units.annotation" />
     <property role="TrG5h" value="StereotypeAnnotation" />
     <property role="34LRSv" value="@" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1KdBIfWTSLC" role="1TKVEl">
-      <property role="IQ2nx" value="2021446509797018728" />
-      <property role="TrG5h" value="stereotypeName" />
-      <ref role="AX2Wp" node="1KdBIfWTSLt" resolve="SupportedStereotypes" />
+    <node concept="1TJgyj" id="1_2cgM8_TKi" role="1TKVEi">
+      <property role="IQ2ns" value="1820071129312107538" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stereotypeName" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1_2cgM8_TK1" resolve="StereotypeName" />
     </node>
   </node>
   <node concept="25R3W" id="1KdBIfWTSLt">
@@ -1447,6 +1449,14 @@
     <node concept="25R33" id="1KdBIfWTSLy" role="25R1y">
       <property role="3tVfz5" value="2021446509797018722" />
       <property role="TrG5h" value="ModelLibrary" />
+    </node>
+    <node concept="25R33" id="1_2cgM8Air9" role="25R1y">
+      <property role="3tVfz5" value="1820071129312208585" />
+      <property role="TrG5h" value="Create" />
+    </node>
+    <node concept="25R33" id="1_2cgM8Aire" role="25R1y">
+      <property role="3tVfz5" value="1820071129312208590" />
+      <property role="TrG5h" value="Destroy" />
     </node>
   </node>
   <node concept="1TIwiD" id="1KdBIfX5Okr">
@@ -1733,6 +1743,49 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="returnParameter" />
       <ref role="20lvS9" node="1KdBIfXOvM_" resolve="FormalParameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_2cgM8_TK1">
+    <property role="EcuMT" value="1820071129312107521" />
+    <property role="3GE5qa" value="units.annotation" />
+    <property role="TrG5h" value="StereotypeName" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="1_2cgM8_TK2">
+    <property role="EcuMT" value="1820071129312107522" />
+    <property role="3GE5qa" value="units.annotation" />
+    <property role="TrG5h" value="PredefinedStereotypeName" />
+    <property role="34LRSv" value="predefined stereotype" />
+    <ref role="1TJDcQ" node="1_2cgM8_TK1" resolve="StereotypeName" />
+    <node concept="1TJgyi" id="1_2cgM8_WN5" role="1TKVEl">
+      <property role="IQ2nx" value="1820071129312120005" />
+      <property role="TrG5h" value="stereotype" />
+      <ref role="AX2Wp" node="1KdBIfWTSLt" resolve="SupportedStereotypes" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_2cgM8_Vi_">
+    <property role="EcuMT" value="1820071129312113829" />
+    <property role="3GE5qa" value="units.annotation" />
+    <property role="TrG5h" value="QualifiedNameStereotypeName" />
+    <property role="34LRSv" value="qualified stereotype" />
+    <ref role="1TJDcQ" node="1_2cgM8_TK1" resolve="StereotypeName" />
+    <node concept="1TJgyj" id="1_2cgM8_ViA" role="1TKVEi">
+      <property role="IQ2ns" value="1820071129312113830" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="qualifiedName" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_2cgM8_ViH">
+    <property role="EcuMT" value="1820071129312113837" />
+    <property role="3GE5qa" value="units.annotation" />
+    <property role="TrG5h" value="CustomStereotypeName" />
+    <property role="34LRSv" value="custom stereotype" />
+    <ref role="1TJDcQ" node="1_2cgM8_TK1" resolve="StereotypeName" />
+    <node concept="PrWs8" id="1_2cgM8_ViI" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
