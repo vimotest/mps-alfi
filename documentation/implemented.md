@@ -107,7 +107,7 @@ Limitations are listed as subpoints of the chapters.
   - [x] 10.4.1 Overview
     - not template parameters
     - no editor for abstract
-  - [ ] 10.4.2 Classes
+  - [x] 10.4.2 Classes
   - [ ] 10.4.3 Active Classes
   - [x] 10.4.4 Data Types
     - only primitive datatypes
@@ -119,6 +119,15 @@ Limitations are listed as subpoints of the chapters.
     - parameters cannot have comments or stereotypes
     - parameters cannot have both the nonunique and ordered flags simultaneously (use the equivalent sequence flag)
 - [ ] 10.5 Features
+  - [ ] 10.5.1 Overview
+  - [x] 10.5.2 Properties
+  - [x] 10.5.3 Operations
+    - [x] 10.5.3.1 General Operations
+    - [x] 10.5.3.2 Constructors
+      - not support calling default constructors (`ClassName()`)
+    - [x] 10.5.3.3 Destructors
+      - not support calling default destructors (`super.destroy()`)
+  - [ ] 10.5.4 Receptions
 
 ## Standard Model Library (11)
 
