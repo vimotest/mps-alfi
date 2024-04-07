@@ -304,6 +304,7 @@
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <property id="7898029224680692134" name="description" index="2n97ot" />
         <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
+        <reference id="1200917515464" name="labelDeclaration" index="2sgKRv" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
@@ -542,6 +543,11 @@
       <ref role="2rTdP9" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
       <ref role="2rZz_L" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="2rT7sh" id="1o9RtatX4iz" role="2rTMjI">
+      <property role="TrG5h" value="classDefinitionMapping" />
+      <ref role="2rTdP9" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+      <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
+    </node>
     <node concept="3lhOvk" id="7T9E0ztt0Rr" role="3lj3bC">
       <ref role="3lhOvi" node="7T9E0ztsTj8" resolve="Activity" />
       <ref role="30HIoZ" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
@@ -563,6 +569,7 @@
     <node concept="3lhOvk" id="1o9RtatSapa" role="3lj3bC">
       <ref role="30HIoZ" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
       <ref role="3lhOvi" node="1o9RtatSdZZ" resolve="map_ClassDefinition" />
+      <ref role="2sgKRv" node="1o9RtatX4iz" resolve="classDefinitionMapping" />
       <node concept="30G5F_" id="1o9RtatSVZ6" role="30HLyM">
         <node concept="3clFbS" id="1o9RtatSVZ7" role="2VODD2">
           <node concept="3clFbF" id="1o9RtatSVZ8" role="3cqZAp">
@@ -1145,6 +1152,31 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="1o9RtatZiEX" role="3acgRq">
+      <ref role="30HIoZ" to="28lk:6cBsaQy4_LI" resolve="InstanceCreationExpression" />
+      <node concept="gft3U" id="1o9RtatZpUS" role="1lVwrX">
+        <node concept="2ShNRf" id="1o9RtatZpUY" role="gfFT$">
+          <node concept="1pGfFk" id="1o9RtatZr6P" role="2ShVmc">
+            <property role="373rjd" value="true" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <node concept="29HgVG" id="1o9RtatZO16" role="lGtFl">
+              <node concept="3NFfHV" id="1o9RtatZO17" role="3NFExx">
+                <node concept="3clFbS" id="1o9RtatZO18" role="2VODD2">
+                  <node concept="3clFbF" id="1o9RtatZO1e" role="3cqZAp">
+                    <node concept="2OqwBi" id="1o9RtatZO19" role="3clFbG">
+                      <node concept="3TrEf2" id="1o9RtatZO1c" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQy4_LJ" resolve="constructor" />
+                      </node>
+                      <node concept="30H73N" id="1o9RtatZO1d" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="4TIfAhWnlYL" role="3acgRq">
       <ref role="30HIoZ" to="28lk:6cBsaQxChVf" resolve="InferredTypeLoopVariableDefinition" />
       <node concept="gft3U" id="4TIfAhWnmaL" role="1lVwrX">
@@ -1281,7 +1313,8 @@
       </node>
     </node>
     <node concept="3aamgX" id="2X39vz3eWp0" role="3acgRq">
-      <ref role="30HIoZ" to="28lk:1KdBIfXINNb" resolve="QualifiedTypeName" />
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
       <node concept="gft3U" id="2X39vz3eZcv" role="1lVwrX">
         <node concept="3uibUv" id="2X39vz3eZc_" role="gfFT$">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
@@ -7326,6 +7359,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2ZBi8u" id="1o9RtatXgCE" role="lGtFl">
+      <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
     </node>
   </node>
 </model>
