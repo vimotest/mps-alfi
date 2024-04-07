@@ -1464,6 +1464,9 @@
     <property role="TrG5h" value="DataTypeDefinition" />
     <property role="34LRSv" value="datatype" />
     <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
+    <node concept="PrWs8" id="3pX5J2Sf5Yz" role="PzmwI">
+      <ref role="PrY4T" node="3pX5J2Sf3Wu" resolve="ITypeDefinition" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1KdBIfXINz6">
     <property role="EcuMT" value="2021446509810890950" />
@@ -1671,6 +1674,9 @@
     <property role="TrG5h" value="ClassDefinition" />
     <property role="34LRSv" value="class" />
     <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
+    <node concept="PrWs8" id="3pX5J2Sf59W" role="PzmwI">
+      <ref role="PrY4T" node="3pX5J2Sf3Wu" resolve="ITypeDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
     <property role="EcuMT" value="3120704408893095334" />
@@ -1804,6 +1810,14 @@
     <property role="EcuMT" value="3855977438833521549" />
     <property role="3GE5qa" value="units.features" />
     <property role="TrG5h" value="IFeature" />
+  </node>
+  <node concept="PlHQZ" id="3pX5J2Sf3Wu">
+    <property role="EcuMT" value="3926319673275858718" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="ITypeDefinition" />
+    <node concept="PrWs8" id="3pX5J2Sf4qM" role="PrDN$">
+      <ref role="PrY4T" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+    </node>
   </node>
 </model>
 

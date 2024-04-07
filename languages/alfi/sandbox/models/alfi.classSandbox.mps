@@ -239,7 +239,7 @@
                 <node concept="32Pqhl" id="3_DBZqK7BFX" role="32PqmZ">
                   <node concept="_iR_j" id="3_DBZqK7BFm" role="32Men7" />
                   <node concept="_vnHe" id="3_DBZqK7Cuy" role="32Men1">
-                    <ref role="3acloq" to=":3_DBZqKg_O9" />
+                    <ref role="3acloq" node="3m3bKNZdf1M" resolve="getSpeed" />
                   </node>
                 </node>
               </node>
@@ -253,7 +253,7 @@
                 <node concept="32Pqhl" id="3_DBZqK7w3S" role="32PqmZ">
                   <node concept="_iR_j" id="3_DBZqK7w3r" role="32Men7" />
                   <node concept="_vnHe" id="3_DBZqK7wvr" role="32Men1">
-                    <ref role="3acloq" to=":3_DBZqKgBpS" />
+                    <ref role="3acloq" node="3m3bKNZdeZc" resolve="distance" />
                   </node>
                 </node>
               </node>
