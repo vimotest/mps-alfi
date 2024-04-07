@@ -29,6 +29,7 @@
       <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
         <child id="2674824929518763028" name="expression" index="_jtWe" />
       </concept>
+      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
       <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
         <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
@@ -70,6 +71,9 @@
       </concept>
       <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
         <child id="8875975376183143672" name="expression" index="2vFQ1F" />
+      </concept>
+      <concept id="7144803224895060397" name="alfi.structure.PropertyAccessExpression" flags="ng" index="32M0$0">
+        <child id="7144803224895280402" name="featureReference" index="32PqmZ" />
       </concept>
       <concept id="7144803224895280376" name="alfi.structure.FeatureReference" flags="ng" index="32Pqhl">
         <child id="7144803224895067500" name="nameBinding" index="32Men1" />
@@ -181,6 +185,15 @@
             </node>
           </node>
         </node>
+        <node concept="6lMYc" id="3_DBZqK7xYQ" role="PCHHv">
+          <property role="TrG5h" value="baseVar" />
+          <node concept="3xHE8C" id="3_DBZqK7zpP" role="3xMlr6">
+            <node concept="2RqM1Q" id="3_DBZqK7zpR" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            </node>
+          </node>
+          <node concept="_jtWu" id="3_DBZqK7$Qh" role="6k5i9" />
+        </node>
       </node>
       <node concept="6nSm2" id="3m3bKNZdeYY" role="PCHHv">
         <property role="TrG5h" value="Animal" />
@@ -221,8 +234,39 @@
                 <node concept="_vku0" id="33GfBy8QOHp" role="_uFfl" />
               </node>
             </node>
+            <node concept="_jtW9" id="3_DBZqK7BFo" role="PCHzz">
+              <node concept="32M0$0" id="3_DBZqK7BFW" role="_jtWe">
+                <node concept="32Pqhl" id="3_DBZqK7BFX" role="32PqmZ">
+                  <node concept="_iR_j" id="3_DBZqK7BFm" role="32Men7" />
+                  <node concept="_vnHe" id="3_DBZqK7Cuy" role="32Men1">
+                    <ref role="3acloq" to=":3_DBZqKg_O9" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="_jtW9" id="3m3bKNZrtnc" role="PCHzz">
               <node concept="_iR_j" id="3m3bKNZrtna" role="_jtWe" />
+            </node>
+            <node concept="PDbRn" id="3_DBZqK7vIS" role="PCHzz" />
+            <node concept="_jtW9" id="3_DBZqK7w3t" role="PCHzz">
+              <node concept="32M0$0" id="3_DBZqK7w3R" role="_jtWe">
+                <node concept="32Pqhl" id="3_DBZqK7w3S" role="32PqmZ">
+                  <node concept="_iR_j" id="3_DBZqK7w3r" role="32Men7" />
+                  <node concept="_vnHe" id="3_DBZqK7wvr" role="32Men1">
+                    <ref role="3acloq" to=":3_DBZqKgBpS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_jtW9" id="3_DBZqK7_MX" role="PCHzz">
+              <node concept="32M0$0" id="3_DBZqK7_Ns" role="_jtWe">
+                <node concept="32Pqhl" id="3_DBZqK7_Nt" role="32PqmZ">
+                  <node concept="_iR_j" id="3_DBZqK7_MV" role="32Men7" />
+                  <node concept="_vnHe" id="3_DBZqK7ApG" role="32Men1">
+                    <ref role="3acloq" node="3_DBZqK7xYQ" resolve="baseVar" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
