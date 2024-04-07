@@ -2892,5 +2892,36 @@
       <ref role="1YaFvo" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
     </node>
   </node>
+  <node concept="1YbPZF" id="46wqe1xwfeM">
+    <property role="TrG5h" value="typeof_LocalNameDeclarationStatement" />
+    <property role="3GE5qa" value="statements" />
+    <node concept="3clFbS" id="46wqe1xwfeN" role="18ibNy">
+      <node concept="1Z5TYs" id="46wqe1xwfGF" role="3cqZAp">
+        <node concept="mw_s8" id="46wqe1xwfGZ" role="1ZfhKB">
+          <node concept="1Z2H0r" id="46wqe1xwfGV" role="mwGJk">
+            <node concept="2OqwBi" id="46wqe1xwfT0" role="1Z2MuG">
+              <node concept="1YBJjd" id="46wqe1xwfHg" role="2Oq$k0">
+                <ref role="1YBMHb" node="46wqe1xwfeP" resolve="localNameDeclarationStatement" />
+              </node>
+              <node concept="3TrEf2" id="46wqe1xwgaP" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" resolve="typeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="46wqe1xwfGI" role="1ZfhK$">
+          <node concept="1Z2H0r" id="46wqe1xwfft" role="mwGJk">
+            <node concept="1YBJjd" id="46wqe1xwfhn" role="1Z2MuG">
+              <ref role="1YBMHb" node="46wqe1xwfeP" resolve="localNameDeclarationStatement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="46wqe1xwfeP" role="1YuTPh">
+      <property role="TrG5h" value="localNameDeclarationStatement" />
+      <ref role="1YaFvo" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    </node>
+  </node>
 </model>
 

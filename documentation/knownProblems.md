@@ -5,11 +5,6 @@ This document describes all current known problems with alfi.
 ## General
 
 - Assignment Expressions for names that are not yet defined before (declaration by assignment)
-- Scoping for super invocation expression
-  - -> Need classes for this
-- The NameBinding used in the FeatureReference should be turned into a MPS reference to a Namespace Member or something
-  - -> Need classes for this
-  - -> Probably also need a typesystem for that, to evaluate which type the expression on the left has
 
 ## Generators
 
