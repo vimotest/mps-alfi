@@ -33,9 +33,18 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="3120704408893642668" name="alfi.structure.AttributeDefinition" flags="ng" index="6lMYc">
+        <child id="3120704408893959337" name="initializerExpression" index="6k5i9" />
+      </concept>
+      <concept id="3120704408893095330" name="alfi.structure.ClassDefinition" flags="ng" index="6nSm2" />
+      <concept id="3120704408893095334" name="alfi.structure.OperationDefinition" flags="ng" index="6nSm6">
+        <child id="8164141882417526102" name="body" index="GbAUv" />
+      </concept>
+      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
+      <concept id="2674824929518918217" name="alfi.structure.ThisExpression" flags="ng" index="_iR_j" />
       <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
         <child id="2674824929518763028" name="expression" index="_jtWe" />
       </concept>
@@ -57,6 +66,9 @@
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
+      <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
+        <reference id="3855977438835276054" name="nameRef" index="3acloq" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -65,6 +77,9 @@
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
+      </concept>
+      <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
+        <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
       </concept>
       <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="3328952194368290224" name="alfi.structure.EndOfLineComment" flags="ng" index="PDIRi">
@@ -79,6 +94,12 @@
       </concept>
       <concept id="7144803224899245678" name="alfi.structure.Assignment_NameLeftHandSide" flags="ng" index="3122r3">
         <child id="7144803224899245679" name="target" index="3122r2" />
+      </concept>
+      <concept id="7144803224899245663" name="alfi.structure.Assignment_FeatureLeftHandSide" flags="ng" index="3122rM">
+        <child id="7144803224899245664" name="feature" index="3122rd" />
+      </concept>
+      <concept id="7144803224897346670" name="alfi.structure.InstanceCreationExpression" flags="ng" index="31diN3">
+        <child id="7144803224897346671" name="constructor" index="31diN2" />
       </concept>
       <concept id="7144803224902473762" name="alfi.structure.ConditionalLogicalExpression" flags="ng" index="31hYyf">
         <property id="7144803224902473763" name="operator" index="31hYye" />
@@ -147,6 +168,16 @@
         <child id="7144803224888882716" name="body" index="32H$qL" />
         <child id="7144803224888882714" name="condition" index="32H$qR" />
       </concept>
+      <concept id="7144803224895060397" name="alfi.structure.PropertyAccessExpression" flags="ng" index="32M0$0">
+        <child id="7144803224895280402" name="featureReference" index="32PqmZ" />
+      </concept>
+      <concept id="7144803224895280376" name="alfi.structure.FeatureReference" flags="ng" index="32Pqhl">
+        <child id="7144803224895067500" name="nameBinding" index="32Men1" />
+        <child id="7144803224895067498" name="expression" index="32Men7" />
+      </concept>
+      <concept id="7144803224895280375" name="alfi.structure.FeatureInvocationExpression" flags="ng" index="32Pqhq">
+        <child id="7144803224895489174" name="target" index="32OngV" />
+      </concept>
       <concept id="7144803224892466214" name="alfi.structure.OctalLiteralExpression" flags="ng" index="32S9ib">
         <property id="7144803224894582230" name="valueText" index="32NPPV" />
       </concept>
@@ -163,6 +194,9 @@
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
       </concept>
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
+      <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
+        <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
     </language>
   </registry>
   <node concept="3mGtxK" id="2HakVwV1Vt0">
@@ -3348,6 +3382,163 @@
                     <property role="31hYye" value="6cBsaQyo9wv/ConditionalOr" />
                     <node concept="_jtWu" id="2HakVwV1VRC" role="31szGO" />
                     <node concept="_jtWu" id="2HakVwV1VRD" role="31szGQ" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="46wqe1xgFgX">
+    <node concept="2qCqA3" id="46wqe1xgFgZ" role="3mGtxP">
+      <property role="TrG5h" value="cars" />
+      <node concept="6nSm2" id="46wqe1xgFh2" role="PCHHv">
+        <property role="TrG5h" value="Car" />
+        <node concept="6nSm6" id="46wqe1xgFhe" role="PCHHv">
+          <property role="TrG5h" value="drive" />
+          <node concept="PCHzy" id="46wqe1xgFhf" role="GbAUv">
+            <node concept="_jtW9" id="46wqe1xgFjT" role="PCHzz">
+              <node concept="3122gz" id="46wqe1xgFjJ" role="_jtWe">
+                <node concept="31szHT" id="46wqe1xgKKV" role="315$E5">
+                  <property role="31szH2" value="6cBsaQylkJ$/PlusOperator" />
+                  <node concept="32M0$0" id="46wqe1xgKLa" role="31szGO">
+                    <node concept="32Pqhl" id="46wqe1xgKLb" role="32PqmZ">
+                      <node concept="_iR_j" id="46wqe1xgKL4" role="32Men7" />
+                      <node concept="_vnHe" id="46wqe1xgKLp" role="32Men1">
+                        <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="32T38h" id="46wqe1xgKL$" role="31szGQ">
+                    <property role="32T38g" value="1" />
+                  </node>
+                </node>
+                <node concept="3122rM" id="46wqe1xweBg" role="315$Eb">
+                  <node concept="32Pqhl" id="46wqe1xweBi" role="3122rd">
+                    <node concept="_vnHe" id="46wqe1xweBl" role="32Men1">
+                      <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                    </node>
+                    <node concept="_iR_j" id="46wqe1xweBn" role="32Men7" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6lMYc" id="46wqe1xgFhu" role="PCHHv">
+          <property role="TrG5h" value="distance" />
+          <node concept="3xHE8C" id="46wqe1xgFhS" role="3xMlr6">
+            <node concept="2RqM1Q" id="46wqe1xgFhU" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+          <node concept="32T38h" id="46wqe1xgFji" role="6k5i9">
+            <property role="32T38g" value="0" />
+          </node>
+        </node>
+        <node concept="6lMYc" id="46wqe1xmSlR" role="PCHHv">
+          <property role="TrG5h" value="thisDistance" />
+          <node concept="3xHE8C" id="46wqe1xmSlS" role="3xMlr6">
+            <node concept="2RqM1Q" id="46wqe1xmSlT" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+          <node concept="32T38h" id="46wqe1xmSlU" role="6k5i9">
+            <property role="32T38g" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="46wqe1xweCm">
+    <node concept="PCHHj" id="46wqe1xweCo" role="3mGtxP">
+      <property role="TrG5h" value="CarsTest" />
+      <node concept="PCHzy" id="46wqe1xweCv" role="PCHGa">
+        <node concept="327OUb" id="46wqe1xweMM" role="PCHzz">
+          <property role="TrG5h" value="car" />
+          <node concept="3xHE8C" id="46wqe1xweNu" role="327w9S">
+            <node concept="2RqM1Q" id="46wqe1xweNw" role="_vnH8">
+              <ref role="2RqM1R" node="46wqe1xgFgZ" resolve="cars" />
+            </node>
+            <node concept="2RqM1Q" id="46wqe1xweOo" role="_vnH8">
+              <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+            </node>
+          </node>
+          <node concept="31diN3" id="46wqe1xweRu" role="327w9Y">
+            <node concept="_vnHb" id="46wqe1xweRv" role="31diN2">
+              <node concept="2RqM1Q" id="46wqe1xweRw" role="_vnH8">
+                <ref role="2RqM1R" node="46wqe1xgFgZ" resolve="cars" />
+              </node>
+              <node concept="2RqM1Q" id="46wqe1xweRx" role="_vnH8">
+                <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+              </node>
+            </node>
+            <node concept="_vku0" id="46wqe1xweRy" role="_uFfl" />
+          </node>
+        </node>
+        <node concept="_jtW9" id="46wqe1xweYM" role="PCHzz">
+          <node concept="_uF8j" id="46wqe1xweYE" role="_jtWe">
+            <node concept="_vnHb" id="46wqe1xweYG" role="_uF8g">
+              <node concept="2RqM1Q" id="46wqe1xweYI" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="46wqe1xweYK" role="_uFfl">
+              <node concept="32M0$0" id="46wqe1xwf1K" role="_vku1">
+                <node concept="32Pqhl" id="46wqe1xwf1L" role="32PqmZ">
+                  <node concept="_uYbk" id="46wqe1xwf1U" role="32Men7">
+                    <node concept="_vnHb" id="46wqe1xwf1W" role="_uYbl">
+                      <node concept="2RqM1Q" id="46wqe1xwf1Y" role="_vnH8">
+                        <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="_vnHe" id="46wqe1xwf1N" role="32Men1">
+                    <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="46wqe1xLoGa" role="PCHzz">
+          <node concept="32Pqhq" id="46wqe1xLoG1" role="_jtWe">
+            <node concept="32Pqhl" id="46wqe1xLoG3" role="32OngV">
+              <node concept="_uYbk" id="46wqe1xLoHM" role="32Men7">
+                <node concept="_vnHb" id="46wqe1xLoHO" role="_uYbl">
+                  <node concept="2RqM1Q" id="46wqe1xLoHQ" role="_vnH8">
+                    <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_vnHe" id="46wqe1xLoG6" role="32Men1">
+                <ref role="3acloq" node="46wqe1xgFhe" resolve="drive" />
+              </node>
+            </node>
+            <node concept="_vku0" id="46wqe1xLoG8" role="_uFfl" />
+          </node>
+        </node>
+        <node concept="_jtW9" id="46wqe1xLoIn" role="PCHzz">
+          <node concept="_uF8j" id="46wqe1xLoIo" role="_jtWe">
+            <node concept="_vnHb" id="46wqe1xLoIp" role="_uF8g">
+              <node concept="2RqM1Q" id="46wqe1xLoIq" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="46wqe1xLoIr" role="_uFfl">
+              <node concept="32M0$0" id="46wqe1xLoIs" role="_vku1">
+                <node concept="32Pqhl" id="46wqe1xLoIt" role="32PqmZ">
+                  <node concept="_uYbk" id="46wqe1xLoIu" role="32Men7">
+                    <node concept="_vnHb" id="46wqe1xLoIv" role="_uYbl">
+                      <node concept="2RqM1Q" id="46wqe1xLoIw" role="_vnH8">
+                        <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="_vnHe" id="46wqe1xLoIx" role="32Men1">
+                    <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
                   </node>
                 </node>
               </node>
