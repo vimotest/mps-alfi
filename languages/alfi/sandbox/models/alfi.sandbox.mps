@@ -41,15 +41,15 @@
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
+      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
+        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
       <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
         <property id="3328952194368015157" name="visibility" index="PCHHn" />
         <property id="3328952194368015160" name="isStub" index="PCHHq" />
-      </concept>
-      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
-        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
@@ -104,6 +104,7 @@
   <node concept="3mGtxK" id="7GHN9f$BVVJ">
     <node concept="PCHHj" id="7GHN9f$BVVL" role="3mGtxP">
       <property role="TrG5h" value="Test1" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="7GHN9f$BVW0" role="PCHGa">
         <node concept="327OUb" id="3LigvclYu5B" role="PCHzz">
           <property role="TrG5h" value="a" />
@@ -196,6 +197,7 @@
   <node concept="3mGtxK" id="7GHN9f$BVWv">
     <node concept="2qCqA3" id="7GHN9f$BVWx" role="3mGtxP">
       <property role="TrG5h" value="Test2" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="7GHN9f$BVW$" role="PCHHv">
         <property role="TrG5h" value="Test2a" />
         <property role="PCHHq" value="true" />
@@ -310,6 +312,7 @@
     <property role="3GE5qa" value="Test2" />
     <node concept="2qCqA3" id="7GHN9f$BVWI" role="3mGtxP">
       <property role="TrG5h" value="Test2a" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$BVWL" role="PCHHv">
         <property role="TrG5h" value="Test2a1" />
       </node>
@@ -335,6 +338,7 @@
     <property role="3GE5qa" value="Test2.Test2a" />
     <node concept="PCHHj" id="7GHN9f$BVWN" role="3mGtxP">
       <property role="TrG5h" value="Test2a1" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="7GHN9f$BVWO" role="PCHGa">
         <node concept="327OUb" id="7GHN9f$MwVq" role="PCHzz">
           <property role="TrG5h" value="Test1" />
@@ -375,6 +379,7 @@
     <property role="3GE5qa" value="Test2.Test2a" />
     <node concept="2qCqA3" id="7GHN9f_96R_" role="3mGtxP">
       <property role="TrG5h" value="foo" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
     <node concept="3mGtyY" id="7GHN9f_96RE" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f_96RB" role="$kHGj">
@@ -390,6 +395,7 @@
   <node concept="3mGtxK" id="7GHN9f_xd8e">
     <node concept="2qCqA3" id="7GHN9f_xd8g" role="3mGtxP">
       <property role="TrG5h" value="Foo" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="2X39vz3bZzr" role="PCHHv">
         <property role="TrG5h" value="Foo1" />
         <property role="PCHHq" value="true" />
@@ -419,6 +425,7 @@
     <property role="3GE5qa" value="Foo" />
     <node concept="2qCqA3" id="2X39vz3bZzt" role="3mGtxP">
       <property role="TrG5h" value="Foo1" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="2X39vz3bZzy" role="PCHHv">
         <property role="TrG5h" value="Foo1a" />
       </node>
@@ -435,6 +442,7 @@
     <property role="3GE5qa" value="Foo.Foo1" />
     <node concept="PCHHj" id="2X39vz3bZz$" role="3mGtxP">
       <property role="TrG5h" value="Foo1a" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="2X39vz3bZz_" role="PCHGa" />
     </node>
     <node concept="3mGtyY" id="2X39vz3bZzE" role="3mGtxR">

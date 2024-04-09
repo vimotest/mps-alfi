@@ -27,6 +27,7 @@
       </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy" />
       <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
+        <property id="3328952194368015157" name="visibility" index="PCHHn" />
         <property id="3328952194368015160" name="isStub" index="PCHHq" />
         <child id="2021446509797018758" name="stereotypeAnnotation" index="3wUx9_" />
       </concept>
@@ -65,6 +66,7 @@
   <node concept="3mGtxK" id="1KdBIfXrfUx">
     <node concept="2qCqA3" id="1KdBIfXrfUD" role="3mGtxP">
       <property role="TrG5h" value="Alf" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="3wUxaT" id="1KdBIfXrfUG" role="3wUx9_">
         <node concept="2hPqOe" id="1_2cgM8Cc4y" role="2hPqOu">
           <property role="2hPvR9" value="1KdBIfWTSLy/ModelLibrary" />
@@ -80,6 +82,7 @@
     <property role="3GE5qa" value="Alf" />
     <node concept="2qCqA3" id="1KdBIfXrfUK" role="3mGtxP">
       <property role="TrG5h" value="Library" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="1KdBIfXrfUQ" role="PCHHv">
         <property role="TrG5h" value="PrimitiveTypes" />
         <property role="PCHHq" value="true" />
@@ -105,6 +108,7 @@
     <property role="3GE5qa" value="Alf.Library" />
     <node concept="2qCqA3" id="1KdBIfXrfV9" role="3mGtxP">
       <property role="TrG5h" value="PrimitiveTypes" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="3x6HJS" id="1KdBIfXrfVu" role="PCHHv">
         <property role="TrG5h" value="Boolean" />
         <node concept="3wUxaT" id="1KdBIfXrfVx" role="3wUx9_">
@@ -187,6 +191,7 @@
     <property role="3GE5qa" value="Alf.Library" />
     <node concept="2qCqA3" id="1KdBIfXrfVg" role="3mGtxP">
       <property role="TrG5h" value="PrimitiveBehaviors" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="7GHN9f$Q45F" role="PCHHv">
         <property role="TrG5h" value="BooleanFunctions" />
         <property role="PCHHq" value="true" />
@@ -223,6 +228,7 @@
     <property role="3GE5qa" value="Alf.Library" />
     <node concept="2qCqA3" id="1KdBIfXrfVn" role="3mGtxP">
       <property role="TrG5h" value="BasicInputOutput" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="1KdBIfXrfYm" role="PCHHv">
         <property role="TrG5h" value="ReadLine" />
         <node concept="3wUxaT" id="1KdBIfXrfYr" role="3wUx9_">
@@ -279,8 +285,22 @@
   </node>
   <node concept="3mGtxK" id="7GHN9f$Q47V">
     <property role="3GE5qa" value="Alf.Library.PrimitiveBehaviors" />
+    <node concept="3mGtyY" id="7GHN9f$Q480" role="3mGtxR">
+      <node concept="_vnHb" id="7GHN9f$Q47W" role="$kHGj">
+        <node concept="2RqM1Q" id="7GHN9f$Q47X" role="_vnH8">
+          <ref role="2RqM1R" node="1KdBIfXrfUD" resolve="Alf" />
+        </node>
+        <node concept="2RqM1Q" id="7GHN9f$Q47Y" role="_vnH8">
+          <ref role="2RqM1R" node="1KdBIfXrfUK" resolve="Library" />
+        </node>
+        <node concept="2RqM1Q" id="7GHN9f$Q47Z" role="_vnH8">
+          <ref role="2RqM1R" node="1KdBIfXrfVg" resolve="PrimitiveBehaviors" />
+        </node>
+      </node>
+    </node>
     <node concept="2qCqA3" id="7GHN9f$Q47T" role="3mGtxP">
       <property role="TrG5h" value="BooleanFunctions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$Q48D" role="PCHHv">
         <property role="TrG5h" value="ToString" />
         <node concept="3xR696" id="7GHN9f$Q48G" role="PCHHv">
@@ -315,24 +335,12 @@
         </node>
       </node>
     </node>
-    <node concept="3mGtyY" id="7GHN9f$Q480" role="3mGtxR">
-      <node concept="_vnHb" id="7GHN9f$Q47W" role="$kHGj">
-        <node concept="2RqM1Q" id="7GHN9f$Q47X" role="_vnH8">
-          <ref role="2RqM1R" node="1KdBIfXrfUD" resolve="Alf" />
-        </node>
-        <node concept="2RqM1Q" id="7GHN9f$Q47Y" role="_vnH8">
-          <ref role="2RqM1R" node="1KdBIfXrfUK" resolve="Library" />
-        </node>
-        <node concept="2RqM1Q" id="7GHN9f$Q47Z" role="_vnH8">
-          <ref role="2RqM1R" node="1KdBIfXrfVg" resolve="PrimitiveBehaviors" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f$Q483">
     <property role="3GE5qa" value="Alf.Library.PrimitiveBehaviors" />
     <node concept="2qCqA3" id="7GHN9f$Q481" role="3mGtxP">
       <property role="TrG5h" value="IntegerFunctions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$Q4ae" role="PCHHv">
         <property role="TrG5h" value="ToString" />
         <node concept="3xR696" id="7GHN9f$Q4af" role="PCHHv">
@@ -385,6 +393,7 @@
     <property role="3GE5qa" value="Alf.Library.PrimitiveBehaviors" />
     <node concept="2qCqA3" id="7GHN9f$Q489" role="3mGtxP">
       <property role="TrG5h" value="RealFunctions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$Q4a$" role="PCHHv">
         <property role="TrG5h" value="ToString" />
         <node concept="3xR696" id="7GHN9f$Q4a_" role="PCHHv">
@@ -437,6 +446,7 @@
     <property role="3GE5qa" value="Alf.Library.PrimitiveBehaviors" />
     <node concept="2qCqA3" id="7GHN9f$Q48p" role="3mGtxP">
       <property role="TrG5h" value="UnlimitedNaturalFunctions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$Q49y" role="PCHHv">
         <property role="TrG5h" value="ToString" />
         <node concept="3xR696" id="7GHN9f$Q49z" role="PCHHv">
@@ -489,6 +499,7 @@
     <property role="3GE5qa" value="Alf.Library.PrimitiveBehaviors" />
     <node concept="2qCqA3" id="7GHN9f$Q48x" role="3mGtxP">
       <property role="TrG5h" value="BitStringFunctions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$Q49c" role="PCHHv">
         <property role="TrG5h" value="ToString" />
         <node concept="3xR696" id="7GHN9f$Q49d" role="PCHHv">
