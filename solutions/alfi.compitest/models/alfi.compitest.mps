@@ -192,6 +192,10 @@
       </concept>
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
+        <child id="2021446509794681919" name="imports" index="3wNBFs" />
+      </concept>
+      <concept id="2021446509794411996" name="alfi.structure.ImportDeclaration" flags="ng" index="3wG_GZ">
+        <child id="2021446509794422890" name="referent" index="3wGAU9" />
       </concept>
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
@@ -3394,6 +3398,7 @@
   <node concept="3mGtxK" id="46wqe1xgFgX">
     <node concept="2qCqA3" id="46wqe1xgFgZ" role="3mGtxP">
       <property role="TrG5h" value="cars" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="6nSm2" id="46wqe1xgFh2" role="PCHHv">
         <property role="TrG5h" value="Car" />
         <node concept="6nSm6" id="46wqe1xgFhe" role="PCHHv">
@@ -3455,6 +3460,7 @@
   <node concept="3mGtxK" id="46wqe1xweCm">
     <node concept="PCHHj" id="46wqe1xweCo" role="3mGtxP">
       <property role="TrG5h" value="CarsTest" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="46wqe1xweCv" role="PCHGa">
         <node concept="327OUb" id="46wqe1xweMM" role="PCHzz">
           <property role="TrG5h" value="car" />
@@ -3568,6 +3574,16 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3wG_GZ" id="7tDI0mOvOBz" role="3wNBFs">
+      <node concept="_vnHb" id="7tDI0mOvOB$" role="3wGAU9">
+        <node concept="2RqM1Q" id="7tDI0mOvOB_" role="_vnH8">
+          <ref role="2RqM1R" node="46wqe1xgFgZ" resolve="cars" />
+        </node>
+        <node concept="2RqM1Q" id="7tDI0mOvOD$" role="_vnH8">
+          <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
         </node>
       </node>
     </node>
