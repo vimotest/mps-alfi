@@ -683,6 +683,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5k6WBrrtHw7" role="3bR37C">
+          <node concept="3bR9La" id="5k6WBrrtHw8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5k6WBrrtHw9" role="3bR37C">
+          <node concept="3bR9La" id="5k6WBrrtHwa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="kyG04cVZep" role="2G$12L">
         <property role="BnDLt" value="true" />
