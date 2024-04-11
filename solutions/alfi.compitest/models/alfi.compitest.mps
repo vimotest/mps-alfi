@@ -69,6 +69,12 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
+      <concept id="8164141882416860677" name="alfi.structure.ICanBeAbstract" flags="ngI" index="G55nc">
+        <property id="3328952194368015168" name="isAbstract" index="PCHGy" />
+      </concept>
+      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
+        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -77,6 +83,9 @@
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
+      </concept>
+      <concept id="3328952194368015167" name="alfi.structure.ClassifierDefinition" flags="ng" index="PCHHt">
+        <child id="2021446509800184021" name="specializations" index="3x6$oQ" />
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
@@ -97,6 +106,9 @@
       </concept>
       <concept id="7144803224899245663" name="alfi.structure.Assignment_FeatureLeftHandSide" flags="ng" index="3122rM">
         <child id="7144803224899245664" name="feature" index="3122rd" />
+      </concept>
+      <concept id="7144803224896997561" name="alfi.structure.SuperInvocationExpression" flags="ng" index="31aBwk">
+        <child id="7144803224896997562" name="target" index="31aBwn" />
       </concept>
       <concept id="7144803224897346670" name="alfi.structure.InstanceCreationExpression" flags="ng" index="31diN3">
         <child id="7144803224897346671" name="constructor" index="31diN2" />
@@ -163,6 +175,9 @@
         <child id="7144803224888718676" name="body" index="32EsnT" />
         <child id="7144803224888718674" name="condition" index="32EsnZ" />
       </concept>
+      <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
+        <child id="8875975376183143672" name="expression" index="2vFQ1F" />
+      </concept>
       <concept id="7144803224889115542" name="alfi.structure.BreakStatement" flags="ng" index="32GVcV" />
       <concept id="7144803224888882713" name="alfi.structure.DoStatement" flags="ng" index="32H$qO">
         <child id="7144803224888882716" name="body" index="32H$qL" />
@@ -200,6 +215,9 @@
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
+      <concept id="2021446509812382885" name="alfi.structure.FormalParameter" flags="ng" index="3xR696">
+        <property id="2021446509812382886" name="direction" index="3xR695" />
       </concept>
     </language>
   </registry>
@@ -3399,59 +3417,140 @@
     <node concept="2qCqA3" id="46wqe1xgFgZ" role="3mGtxP">
       <property role="TrG5h" value="cars" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <node concept="6nSm2" id="46wqe1xgFh2" role="PCHHv">
-        <property role="TrG5h" value="Car" />
-        <node concept="6nSm6" id="46wqe1xgFhe" role="PCHHv">
+      <node concept="6nSm2" id="5k6WBrra26B" role="PCHHv">
+        <property role="TrG5h" value="Vehicle" />
+        <property role="PCHGy" value="true" />
+        <node concept="6nSm6" id="5k6WBrra27E" role="PCHHv">
           <property role="TrG5h" value="drive" />
-          <node concept="PCHzy" id="46wqe1xgFhf" role="GbAUv">
-            <node concept="_jtW9" id="46wqe1xgFjT" role="PCHzz">
-              <node concept="3122gz" id="46wqe1xgFjJ" role="_jtWe">
-                <node concept="31szHT" id="46wqe1xgKKV" role="315$E5">
+          <node concept="PCHzy" id="5k6WBrra27S" role="GbAUv">
+            <node concept="_jtW9" id="5k6WBrra28f" role="PCHzz">
+              <node concept="3122gz" id="5k6WBrra28g" role="_jtWe">
+                <node concept="31szHT" id="5k6WBrra28h" role="315$E5">
                   <property role="31szH2" value="6cBsaQylkJ$/PlusOperator" />
-                  <node concept="32M0$0" id="46wqe1xgKLa" role="31szGO">
-                    <node concept="32Pqhl" id="46wqe1xgKLb" role="32PqmZ">
-                      <node concept="_iR_j" id="46wqe1xgKL4" role="32Men7" />
-                      <node concept="_vnHe" id="46wqe1xgKLp" role="32Men1">
-                        <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                  <node concept="32M0$0" id="5k6WBrra28i" role="31szGO">
+                    <node concept="32Pqhl" id="5k6WBrra28j" role="32PqmZ">
+                      <node concept="_iR_j" id="5k6WBrra28k" role="32Men7" />
+                      <node concept="_vnHe" id="5k6WBrra28l" role="32Men1">
+                        <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
                       </node>
                     </node>
                   </node>
-                  <node concept="32T38h" id="46wqe1xgKL$" role="31szGQ">
+                  <node concept="32T38h" id="5k6WBrra28m" role="31szGQ">
                     <property role="32T38g" value="1" />
                   </node>
                 </node>
-                <node concept="3122rM" id="46wqe1xweBg" role="315$Eb">
-                  <node concept="32Pqhl" id="46wqe1xweBi" role="3122rd">
-                    <node concept="_vnHe" id="46wqe1xweBl" role="32Men1">
-                      <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                <node concept="3122rM" id="5k6WBrra28n" role="315$Eb">
+                  <node concept="32Pqhl" id="5k6WBrra28o" role="3122rd">
+                    <node concept="_vnHe" id="5k6WBrra28p" role="32Men1">
+                      <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
                     </node>
-                    <node concept="_iR_j" id="46wqe1xweBn" role="32Men7" />
+                    <node concept="_iR_j" id="5k6WBrra28q" role="32Men7" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="6lMYc" id="46wqe1xgFhu" role="PCHHv">
+        <node concept="6nSm6" id="5k6WBrra2g9" role="PCHHv">
+          <property role="TrG5h" value="getSpeed" />
+          <property role="PCHHn" value="6OepWIVA92F/protected" />
+          <node concept="PCHzy" id="5k6WBrra2ga" role="GbAUv">
+            <node concept="32G6VT" id="5k6WBrra2hc" role="PCHzz">
+              <node concept="32T38h" id="5k6WBrra2hf" role="2vFQ1F">
+                <property role="32T38g" value="5" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="5k6WBrrinn_" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="5k6WBrrinnG" role="3xMlr6">
+              <node concept="2RqM1Q" id="5k6WBrrinnH" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="5k6WBrra2wi" role="PCHHv">
+          <property role="PCHHn" value="6OepWIVA92F/protected" />
+          <property role="TrG5h" value="defaultStartEngine" />
+          <node concept="PCHzy" id="5k6WBrra2wj" role="GbAUv">
+            <node concept="_jtW9" id="5k6WBrra2xs" role="PCHzz">
+              <node concept="_uF8j" id="5k6WBrra2xt" role="_jtWe">
+                <node concept="_vnHb" id="5k6WBrra2xu" role="_uF8g">
+                  <node concept="2RqM1Q" id="5k6WBrra2xv" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5k6WBrra2xw" role="_uFfl">
+                  <node concept="_iklQ" id="5k6WBrra2xx" role="_vku1">
+                    <property role="_iklR" value="Vehicle engine started" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="5k6WBrra2ij" role="PCHHv">
+          <property role="TrG5h" value="startEngine" />
+          <property role="PCHGy" value="true" />
+        </node>
+        <node concept="6lMYc" id="5k6WBrra2aD" role="PCHHv">
           <property role="TrG5h" value="distance" />
-          <node concept="3xHE8C" id="46wqe1xgFhS" role="3xMlr6">
-            <node concept="2RqM1Q" id="46wqe1xgFhU" role="_vnH8">
+          <node concept="3xHE8C" id="5k6WBrra2aE" role="3xMlr6">
+            <node concept="2RqM1Q" id="5k6WBrra2aF" role="_vnH8">
               <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
-          <node concept="32T38h" id="46wqe1xgFji" role="6k5i9">
+          <node concept="32T38h" id="5k6WBrra2aG" role="6k5i9">
             <property role="32T38g" value="0" />
           </node>
         </node>
-        <node concept="6lMYc" id="46wqe1xmSlR" role="PCHHv">
-          <property role="TrG5h" value="thisDistance" />
-          <node concept="3xHE8C" id="46wqe1xmSlS" role="3xMlr6">
-            <node concept="2RqM1Q" id="46wqe1xmSlT" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+      </node>
+      <node concept="6nSm2" id="46wqe1xgFh2" role="PCHHv">
+        <property role="TrG5h" value="Car" />
+        <node concept="6nSm6" id="46wqe1xgFhe" role="PCHHv">
+          <property role="TrG5h" value="getSpeed" />
+          <node concept="PCHzy" id="46wqe1xgFhf" role="GbAUv">
+            <node concept="32G6VT" id="5k6WBrra2v7" role="PCHzz">
+              <node concept="32T38h" id="5k6WBrra2vd" role="2vFQ1F">
+                <property role="32T38g" value="10" />
+              </node>
             </node>
           </node>
-          <node concept="32T38h" id="46wqe1xmSlU" role="6k5i9">
-            <property role="32T38g" value="0" />
+        </node>
+        <node concept="6nSm6" id="5k6WBrra2k2" role="PCHHv">
+          <property role="TrG5h" value="startEngine" />
+          <node concept="PCHzy" id="5k6WBrra2kD" role="GbAUv">
+            <node concept="_jtW9" id="5k6WBrra2pb" role="PCHzz">
+              <node concept="_uF8j" id="5k6WBrra2pc" role="_jtWe">
+                <node concept="_vnHb" id="5k6WBrra2pd" role="_uF8g">
+                  <node concept="2RqM1Q" id="5k6WBrra2pe" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5k6WBrra2pf" role="_uFfl">
+                  <node concept="_iklQ" id="5k6WBrra2ux" role="_vku1">
+                    <property role="_iklR" value="Car engine started" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_jtW9" id="5k6WBrra2z2" role="PCHzz">
+              <node concept="31aBwk" id="5k6WBrra2yY" role="_jtWe">
+                <node concept="_vku0" id="5k6WBrra2z0" role="_uFfl" />
+                <node concept="_vnHb" id="5k6WBrra2zt" role="31aBwn">
+                  <node concept="2RqM1Q" id="5k6WBrra2zu" role="_vnH8">
+                    <ref role="2RqM1R" node="5k6WBrra2g9" resolve="getSpeed" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_vnHb" id="5k6WBrra2cC" role="3x6$oQ">
+          <node concept="2RqM1Q" id="5k6WBrra2cD" role="_vnH8">
+            <ref role="2RqM1R" node="5k6WBrra26B" resolve="Vehicle" />
           </node>
         </node>
       </node>
@@ -3484,6 +3583,23 @@
             <node concept="_vku0" id="46wqe1xweRy" role="_uFfl" />
           </node>
         </node>
+        <node concept="_jtW9" id="46wqe1xLoGa" role="PCHzz">
+          <node concept="32Pqhq" id="46wqe1xLoG1" role="_jtWe">
+            <node concept="32Pqhl" id="46wqe1xLoG3" role="32OngV">
+              <node concept="_uYbk" id="46wqe1xLoHM" role="32Men7">
+                <node concept="_vnHb" id="46wqe1xLoHO" role="_uYbl">
+                  <node concept="2RqM1Q" id="46wqe1xLoHQ" role="_vnH8">
+                    <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_vnHe" id="46wqe1xLoG6" role="32Men1">
+                <ref role="3acloq" node="5k6WBrra2k2" resolve="startEngine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="46wqe1xLoG8" role="_uFfl" />
+          </node>
+        </node>
         <node concept="_jtW9" id="7tDI0mOnzIx" role="PCHzz">
           <node concept="_uF8j" id="7tDI0mOnzIy" role="_jtWe">
             <node concept="_vnHb" id="7tDI0mOnzIz" role="_uF8g">
@@ -3512,7 +3628,7 @@
                         </node>
                       </node>
                       <node concept="_vnHe" id="7tDI0mOnzNI" role="32Men1">
-                        <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                        <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
                       </node>
                     </node>
                   </node>
@@ -3521,21 +3637,39 @@
             </node>
           </node>
         </node>
-        <node concept="_jtW9" id="46wqe1xLoGa" role="PCHzz">
-          <node concept="32Pqhq" id="46wqe1xLoG1" role="_jtWe">
-            <node concept="32Pqhl" id="46wqe1xLoG3" role="32OngV">
-              <node concept="_uYbk" id="46wqe1xLoHM" role="32Men7">
-                <node concept="_vnHb" id="46wqe1xLoHO" role="_uYbl">
-                  <node concept="2RqM1Q" id="46wqe1xLoHQ" role="_vnH8">
-                    <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+        <node concept="327OUb" id="5k6WBrra2DK" role="PCHzz">
+          <property role="TrG5h" value="vehicle" />
+          <node concept="3xHE8C" id="5k6WBrra2DL" role="327w9S">
+            <node concept="2RqM1Q" id="5k6WBrra2DM" role="_vnH8">
+              <ref role="2RqM1R" node="46wqe1xgFgZ" resolve="cars" />
+            </node>
+            <node concept="2RqM1Q" id="5k6WBrra2DN" role="_vnH8">
+              <ref role="2RqM1R" node="5k6WBrra26B" resolve="Vehicle" />
+            </node>
+          </node>
+          <node concept="_uYbk" id="5k6WBrra2Oz" role="327w9Y">
+            <node concept="_vnHb" id="5k6WBrra2O_" role="_uYbl">
+              <node concept="2RqM1Q" id="5k6WBrra2OB" role="_vnH8">
+                <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5k6WBrra3Kn" role="PCHzz">
+          <node concept="32Pqhq" id="5k6WBrra3Ko" role="_jtWe">
+            <node concept="32Pqhl" id="5k6WBrra3Kp" role="32OngV">
+              <node concept="_uYbk" id="5k6WBrra3Kq" role="32Men7">
+                <node concept="_vnHb" id="5k6WBrra3Kr" role="_uYbl">
+                  <node concept="2RqM1Q" id="5k6WBrra3Ks" role="_vnH8">
+                    <ref role="2RqM1R" node="5k6WBrra2DK" resolve="vehicle" />
                   </node>
                 </node>
               </node>
-              <node concept="_vnHe" id="46wqe1xLoG6" role="32Men1">
-                <ref role="3acloq" node="46wqe1xgFhe" resolve="drive" />
+              <node concept="_vnHe" id="5k6WBrra3Kt" role="32Men1">
+                <ref role="3acloq" node="5k6WBrra27E" resolve="drive" />
               </node>
             </node>
-            <node concept="_vku0" id="46wqe1xLoG8" role="_uFfl" />
+            <node concept="_vku0" id="5k6WBrra3Ku" role="_uFfl" />
           </node>
         </node>
         <node concept="_jtW9" id="46wqe1xLoIn" role="PCHzz">
@@ -3561,12 +3695,103 @@
                       <node concept="_uYbk" id="7tDI0mOnzSe" role="32Men7">
                         <node concept="_vnHb" id="7tDI0mOnzSf" role="_uYbl">
                           <node concept="2RqM1Q" id="7tDI0mOnzSg" role="_vnH8">
-                            <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                            <ref role="2RqM1R" node="5k6WBrra2DK" resolve="vehicle" />
                           </node>
                         </node>
                       </node>
                       <node concept="_vnHe" id="7tDI0mOnzSh" role="32Men1">
-                        <ref role="3acloq" node="46wqe1xgFhu" resolve="distance" />
+                        <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5k6WBrra3uP" role="PCHzz">
+          <node concept="_uF8j" id="5k6WBrra3uQ" role="_jtWe">
+            <node concept="_vnHb" id="5k6WBrra3uR" role="_uF8g">
+              <node concept="2RqM1Q" id="5k6WBrra3uS" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5k6WBrra3uT" role="_uFfl">
+              <node concept="_uF8j" id="5k6WBrra3uU" role="_vku1">
+                <node concept="_vnHb" id="5k6WBrra3uV" role="_uF8g">
+                  <node concept="2RqM1Q" id="5k6WBrra3uW" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="5k6WBrra3uX" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5k6WBrra3uY" role="_uFfl">
+                  <node concept="32M0$0" id="5k6WBrra3uZ" role="_vku1">
+                    <node concept="32Pqhl" id="5k6WBrra3v0" role="32PqmZ">
+                      <node concept="_uYbk" id="5k6WBrra3v1" role="32Men7">
+                        <node concept="_vnHb" id="5k6WBrra3v2" role="_uYbl">
+                          <node concept="2RqM1Q" id="5k6WBrra3v3" role="_vnH8">
+                            <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="5k6WBrra3v4" role="32Men1">
+                        <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5k6WBrra33Q" role="PCHzz">
+          <node concept="32Pqhq" id="5k6WBrra33R" role="_jtWe">
+            <node concept="32Pqhl" id="5k6WBrra33S" role="32OngV">
+              <node concept="_uYbk" id="5k6WBrra33T" role="32Men7">
+                <node concept="_vnHb" id="5k6WBrra33U" role="_uYbl">
+                  <node concept="2RqM1Q" id="5k6WBrra33V" role="_vnH8">
+                    <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_vnHe" id="5k6WBrra33W" role="32Men1">
+                <ref role="3acloq" node="5k6WBrra27E" resolve="drive" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5k6WBrra33X" role="_uFfl" />
+          </node>
+        </node>
+        <node concept="_jtW9" id="5k6WBrra3e4" role="PCHzz">
+          <node concept="_uF8j" id="5k6WBrra3e5" role="_jtWe">
+            <node concept="_vnHb" id="5k6WBrra3e6" role="_uF8g">
+              <node concept="2RqM1Q" id="5k6WBrra3e7" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5k6WBrra3e8" role="_uFfl">
+              <node concept="_uF8j" id="5k6WBrra3e9" role="_vku1">
+                <node concept="_vnHb" id="5k6WBrra3ea" role="_uF8g">
+                  <node concept="2RqM1Q" id="5k6WBrra3eb" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="5k6WBrra3ec" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5k6WBrra3ed" role="_uFfl">
+                  <node concept="32M0$0" id="5k6WBrra3ee" role="_vku1">
+                    <node concept="32Pqhl" id="5k6WBrra3ef" role="32PqmZ">
+                      <node concept="_uYbk" id="5k6WBrra3eg" role="32Men7">
+                        <node concept="_vnHb" id="5k6WBrra3eh" role="_uYbl">
+                          <node concept="2RqM1Q" id="5k6WBrra3ei" role="_vnH8">
+                            <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="5k6WBrra3ej" role="32Men1">
+                        <ref role="3acloq" node="5k6WBrra2aD" resolve="distance" />
                       </node>
                     </node>
                   </node>

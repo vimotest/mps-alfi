@@ -267,6 +267,12 @@
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
@@ -4904,8 +4910,31 @@
       <node concept="PMmxH" id="75cQW_tq$oW" role="3EZMnx">
         <ref role="PMmxG" node="75cQW_tqzbO" resolve="OperationDefinition_RedefinitionClause" />
       </node>
-      <node concept="3F1sOY" id="75cQW_toHm6" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:75cQW_toFlm" />
+      <node concept="1QoScp" id="5k6WBrrnpnb" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="5k6WBrrnpne" role="3e4ffs">
+          <node concept="3clFbS" id="5k6WBrrnpng" role="2VODD2">
+            <node concept="3clFbF" id="5k6WBrrnpAQ" role="3cqZAp">
+              <node concept="3fqX7Q" id="5k6WBrrnpAO" role="3clFbG">
+                <node concept="2OqwBi" id="5k6WBrrnqvz" role="3fr31v">
+                  <node concept="pncrf" id="5k6WBrrnpOK" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5k6WBrrnqT4" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:2SMO68r$0H0" resolve="isAbstract" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="5k6WBrrnqTX" role="1QoVPY">
+          <property role="3F0ifm" value=";" />
+          <node concept="11L4FC" id="5k6WBrroge0" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="75cQW_toHm6" role="1QoS34">
+          <ref role="1NtTu8" to="28lk:75cQW_toFlm" />
+        </node>
       </node>
       <node concept="l2Vlx" id="2HeY20H6tSU" role="2iSdaV" />
     </node>
