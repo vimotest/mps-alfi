@@ -32,6 +32,7 @@
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
+        <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -67,11 +68,13 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -107,6 +110,16 @@
       </concept>
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
+    </language>
+    <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
+      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+        <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+      <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
+      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
+        <child id="1205770614681" name="actualArgument" index="2XxRq1" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -164,10 +177,16 @@
   <node concept="1lH9Xt" id="5k6WBrrr$tH">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="SandboxModelCheckerTests" />
-    <node concept="1LZb2c" id="5k6WBrrr$tO" role="1SL9yI">
-      <property role="TrG5h" value="ensureCompiTestsHaveNoWarningsAndErrors" />
-      <node concept="3cqZAl" id="5k6WBrrr$tP" role="3clF45" />
-      <node concept="3clFbS" id="5k6WBrrr$tT" role="3clF47">
+    <node concept="2XrIbr" id="5k6WBrru5y$" role="1qtyYc">
+      <property role="TrG5h" value="checkModule" />
+      <node concept="37vLTG" id="5k6WBrru7aa" role="3clF46">
+        <property role="TrG5h" value="moduleRef" />
+        <node concept="3uibUv" id="5k6WBrru7R9" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5k6WBrru7a7" role="3clF45" />
+      <node concept="3clFbS" id="5k6WBrru5yA" role="3clF47">
         <node concept="3SKdUt" id="1qpEqOW7qgW" role="3cqZAp">
           <node concept="1PaTwC" id="1qpEqOW7qgX" role="1aUNEU">
             <node concept="3oM_SD" id="1qpEqOW7r5Z" role="1PaTwD">
@@ -318,7 +337,7 @@
             </node>
             <node concept="2ShNRf" id="1qpEqOW5_W4" role="33vP2m">
               <node concept="1pGfFk" id="5k6WBrrs67k" role="2ShVmc">
-                <ref role="37wK5l" to="k2t0:~ModelCheckerBuilder$ItemsToCheck.&lt;init&gt;()" resolve="ModelCheckerBuilder.ItemsToCheck" />
+                <ref role="37wK5l" to="k2t0:~ModelCheckerBuilder$ItemsToCheck.&lt;init&gt;()" resolve="ItemsToCheck" />
               </node>
             </node>
           </node>
@@ -330,12 +349,6 @@
               <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
             </node>
             <node concept="2OqwBi" id="1qpEqOW5Hlq" role="33vP2m">
-              <node concept="37shsh" id="1qpEqOW5Hlr" role="2Oq$k0">
-                <node concept="1dCxOk" id="5k6WBrrssLd" role="37shsm">
-                  <property role="1XweGW" value="fd33b61c-8f8d-4883-b99a-96987a1d2c16" />
-                  <property role="1XxBO9" value="alfi.compitest" />
-                </node>
-              </node>
               <node concept="liA8E" id="1qpEqOW5Hlt" role="2OqNvi">
                 <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="2OqwBi" id="1qpEqOW5Hlu" role="37wK5m">
@@ -344,6 +357,9 @@
                     <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
+              </node>
+              <node concept="37vLTw" id="5k6WBrrua$p" role="2Oq$k0">
+                <ref role="3cqZAo" node="5k6WBrru7aa" resolve="moduleRef" />
               </node>
             </node>
           </node>
@@ -451,6 +467,86 @@
             </node>
             <node concept="liA8E" id="1qpEqOW5XBr" role="2OqNvi">
               <ref role="37wK5l" to="18ew:~CollectConsumer.getResult()" resolve="getResult" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5k6WBrrr$tO" role="1SL9yI">
+      <property role="TrG5h" value="ensureCompiTestHasNoWarningsAndErrors" />
+      <node concept="3cqZAl" id="5k6WBrrr$tP" role="3clF45" />
+      <node concept="3clFbS" id="5k6WBrrr$tT" role="3clF47">
+        <node concept="3clFbF" id="5k6WBrru9jY" role="3cqZAp">
+          <node concept="2OqwBi" id="5k6WBrru9jS" role="3clFbG">
+            <node concept="2WthIp" id="5k6WBrru9jV" role="2Oq$k0" />
+            <node concept="2XshWL" id="5k6WBrru9jX" role="2OqNvi">
+              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModule" />
+              <node concept="37shsh" id="5k6WBrru9lh" role="2XxRq1">
+                <node concept="1dCxOk" id="5k6WBrru9li" role="37shsm">
+                  <property role="1XweGW" value="fd33b61c-8f8d-4883-b99a-96987a1d2c16" />
+                  <property role="1XxBO9" value="alfi.compitest" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5k6WBrrudKL" role="1SL9yI">
+      <property role="TrG5h" value="ensureSandboxHasNoWarningsAndErrors" />
+      <node concept="3cqZAl" id="5k6WBrrudKM" role="3clF45" />
+      <node concept="3clFbS" id="5k6WBrrudKN" role="3clF47">
+        <node concept="3clFbF" id="5k6WBrrudKO" role="3cqZAp">
+          <node concept="2OqwBi" id="5k6WBrrudKP" role="3clFbG">
+            <node concept="2WthIp" id="5k6WBrrudKQ" role="2Oq$k0" />
+            <node concept="2XshWL" id="5k6WBrrudKR" role="2OqNvi">
+              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModule" />
+              <node concept="37shsh" id="5k6WBrrudKS" role="2XxRq1">
+                <node concept="1dCxOk" id="5k6WBrruf_I" role="37shsm">
+                  <property role="1XweGW" value="883d45ce-b0f1-43ed-b175-dd48dfaab05b" />
+                  <property role="1XxBO9" value="alfi.sandbox" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5k6WBrruf_X" role="1SL9yI">
+      <property role="TrG5h" value="ensureStandardModelLibraryHasNoWarningsAndErrors" />
+      <node concept="3cqZAl" id="5k6WBrruf_Y" role="3clF45" />
+      <node concept="3clFbS" id="5k6WBrruf_Z" role="3clF47">
+        <node concept="3clFbF" id="5k6WBrrufA0" role="3cqZAp">
+          <node concept="2OqwBi" id="5k6WBrrufA1" role="3clFbG">
+            <node concept="2WthIp" id="5k6WBrrufA2" role="2Oq$k0" />
+            <node concept="2XshWL" id="5k6WBrrufA3" role="2OqNvi">
+              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModule" />
+              <node concept="37shsh" id="5k6WBrrufA4" role="2XxRq1">
+                <node concept="1dCxOk" id="5k6WBrruij5" role="37shsm">
+                  <property role="1XweGW" value="e9b40a72-6930-481d-bdce-a0a866bf715e" />
+                  <property role="1XxBO9" value="alfi.StandardModelLibrary" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5k6WBrrugY2" role="1SL9yI">
+      <property role="TrG5h" value="ensurePrimitiveMappingSandboxHasNoWarningsAndErrors" />
+      <node concept="3cqZAl" id="5k6WBrrugY3" role="3clF45" />
+      <node concept="3clFbS" id="5k6WBrrugY4" role="3clF47">
+        <node concept="3clFbF" id="5k6WBrrugY5" role="3cqZAp">
+          <node concept="2OqwBi" id="5k6WBrrugY6" role="3clFbG">
+            <node concept="2WthIp" id="5k6WBrrugY7" role="2Oq$k0" />
+            <node concept="2XshWL" id="5k6WBrrugY8" role="2OqNvi">
+              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModule" />
+              <node concept="37shsh" id="5k6WBrrugY9" role="2XxRq1">
+                <node concept="1dCxOk" id="5k6WBrruiiQ" role="37shsm">
+                  <property role="1XweGW" value="d99c3c3c-00ca-4627-a6c7-be2b17cccf62" />
+                  <property role="1XxBO9" value="alfi.PrimitiveMapping.sandbox" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
