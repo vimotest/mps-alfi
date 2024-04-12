@@ -31,7 +31,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -704,7 +703,9 @@
           <node concept="3clFbJ" id="1KdBIfXRYQZ" role="3cqZAp">
             <node concept="3clFbS" id="1KdBIfXRYR1" role="3clFbx">
               <node concept="3cpWs6" id="1KdBIfXRZYa" role="3cqZAp">
-                <node concept="10Nm6u" id="1KdBIfXS1IC" role="3cqZAk" />
+                <node concept="Xl_RD" id="2SV$eY7xLi0" role="3cqZAk">
+                  <property role="Xl_RC" value="1" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="1KdBIfXRZDB" role="3clFbw">
