@@ -7,7 +7,7 @@ ext.mpsPlugins = [
 ]
 
 ext.customMpsPlugins = [
-    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2023.3-beta1/TextGenGen.zip"
+    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2023.3-beta2/TextGenGen.zip"
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
