@@ -40,6 +40,7 @@
       <concept id="3120704408893095334" name="alfi.structure.OperationDefinition" flags="ng" index="6nSm6">
         <child id="8164141882417526102" name="body" index="GbAUv" />
       </concept>
+      <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt" />
       <concept id="1820071129312113837" name="alfi.structure.CustomStereotypeName" flags="ng" index="2hPomx" />
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
@@ -3478,6 +3479,7 @@
             </node>
           </node>
         </node>
+        <node concept="8qQDt" id="31Th1WS5zTk" role="PCHHv" />
         <node concept="6nSm6" id="5k6WBrra2g9" role="PCHHv">
           <property role="TrG5h" value="getSpeed" />
           <property role="PCHHn" value="6OepWIVA92F/protected" />
@@ -3518,6 +3520,7 @@
             </node>
           </node>
         </node>
+        <node concept="8qQDt" id="31Th1WS5zUX" role="PCHHv" />
         <node concept="6nSm6" id="5k6WBrra2ij" role="PCHHv">
           <property role="TrG5h" value="startEngine" />
           <property role="PCHGy" value="true" />
