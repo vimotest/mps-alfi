@@ -3425,15 +3425,17 @@
       <node concept="6nSm2" id="2SV$eY85rA2" role="PCHHv">
         <property role="TrG5h" value="IHasColor" />
         <property role="PCHGy" value="true" />
-        <node concept="6lMYc" id="2SV$eY85rEe" role="PCHHv">
-          <property role="TrG5h" value="color" />
-          <node concept="3xHE8C" id="2SV$eY85rF_" role="3xMlr6">
-            <node concept="2RqM1Q" id="2SV$eY85rFB" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+        <node concept="6nSm6" id="7lsupuWlDMf" role="PCHHv">
+          <property role="TrG5h" value="getColor" />
+          <property role="PCHGy" value="true" />
+          <node concept="3xR696" id="7lsupuWlDME" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="7lsupuWlDMI" role="3xMlr6">
+              <node concept="2RqM1Q" id="7lsupuWlDMJ" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
             </node>
-          </node>
-          <node concept="_iklQ" id="2SV$eY85rHJ" role="6k5i9">
-            <property role="_iklR" value="Black" />
           </node>
         </node>
         <node concept="3wUxaT" id="2SV$eY85rLA" role="3wUx9_">
@@ -3578,6 +3580,25 @@
                     <ref role="2RqM1R" node="5k6WBrra2g9" resolve="getSpeed" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="7lsupuWlDPn" role="PCHHv">
+          <property role="TrG5h" value="getColor" />
+          <node concept="PCHzy" id="7lsupuWlDPo" role="GbAUv">
+            <node concept="32G6VT" id="7lsupuWlDS9" role="PCHzz">
+              <node concept="_iklQ" id="7lsupuWlDSc" role="2vFQ1F">
+                <property role="_iklR" value="Black" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="7lsupuWlDRo" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="7lsupuWlDRs" role="3xMlr6">
+              <node concept="2RqM1Q" id="7lsupuWlDRt" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
               </node>
             </node>
           </node>
@@ -3847,31 +3868,20 @@
               </node>
             </node>
             <node concept="_vku0" id="2SV$eY85xpj" role="_uFfl">
-              <node concept="_uF8j" id="2SV$eY85xpk" role="_vku1">
-                <node concept="_vnHb" id="2SV$eY85xpl" role="_uF8g">
-                  <node concept="2RqM1Q" id="2SV$eY85xpm" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
-                  </node>
-                  <node concept="2RqM1Q" id="2SV$eY85xpn" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
-                  </node>
-                </node>
-                <node concept="_vku0" id="2SV$eY85xpo" role="_uFfl">
-                  <node concept="32M0$0" id="2SV$eY85xpp" role="_vku1">
-                    <node concept="32Pqhl" id="2SV$eY85xpq" role="32PqmZ">
-                      <node concept="_uYbk" id="2SV$eY85xpr" role="32Men7">
-                        <node concept="_vnHb" id="2SV$eY85xps" role="_uYbl">
-                          <node concept="2RqM1Q" id="2SV$eY85xpt" role="_vnH8">
-                            <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="_vnHe" id="2SV$eY85xpu" role="32Men1">
-                        <ref role="3acloq" node="2SV$eY85rEe" resolve="color" />
+              <node concept="32Pqhq" id="7lsupuWlE1R" role="_vku1">
+                <node concept="32Pqhl" id="7lsupuWlE1S" role="32OngV">
+                  <node concept="_uYbk" id="7lsupuWlE23" role="32Men7">
+                    <node concept="_vnHb" id="7lsupuWlE25" role="_uYbl">
+                      <node concept="2RqM1Q" id="7lsupuWlE27" role="_vnH8">
+                        <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
                       </node>
                     </node>
                   </node>
+                  <node concept="_vnHe" id="7lsupuWlE1U" role="32Men1">
+                    <ref role="3acloq" node="7lsupuWlDPn" resolve="getColor" />
+                  </node>
                 </node>
+                <node concept="_vku0" id="7lsupuWlE1V" role="_uFfl" />
               </node>
             </node>
           </node>
