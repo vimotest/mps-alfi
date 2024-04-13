@@ -44,4 +44,20 @@ if ! $modelDirWasFixed ;then
   finalArgs="-m $modelDir $finalArgs"
 fi
 
-java -jar "dist/alf.jar" $finalArgs
+output=$(java -jar "dist/alf.jar" $finalArgs 2>&1)
+exit_code=$?
+
+# if exit_code is not 0, then there was an error
+if [ $exit_code -ne 0 ]; then
+  echo "The ALF program encountered an error."
+  exit 1
+fi
+
+# Check the output for known error messages
+if [[ $output == *"Syntax Error"* ]]; then
+  echo "The ALF program encountered syntax errors."
+  exit 1
+fi
+
+# by default, yield output
+echo "$output"

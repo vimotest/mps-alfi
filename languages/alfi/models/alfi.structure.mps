@@ -926,6 +926,9 @@
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
     </node>
+    <node concept="PrWs8" id="5k6WBrrb05K" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQy4_LI">
     <property role="EcuMT" value="7144803224897346670" />

@@ -44,6 +44,9 @@
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
+      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
+        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      </concept>
       <concept id="520354255175379373" name="alfi.structure.DocumentedElementCommentContent" flags="ng" index="IbWbt">
         <child id="520354255175379374" name="documentationLines" index="IbWbu" />
       </concept>
@@ -53,8 +56,8 @@
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
-      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
-        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
+        <property id="3328952194368015157" name="visibility" index="PCHHn" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
@@ -131,6 +134,7 @@
   <node concept="3mGtxK" id="4BdRpMvf65f">
     <node concept="PCHHj" id="4BdRpMvf69Y" role="3mGtxP">
       <property role="TrG5h" value="TestA" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="4BdRpMvf6o8" role="PCHGa">
         <node concept="PDIRi" id="4BdRpMvgAwA" role="PCHzz">
           <node concept="1PaTwC" id="4BdRpMvgAwB" role="I4nmN">
@@ -403,6 +407,7 @@
   <node concept="3mGtxK" id="4BdRpMvf$yE">
     <node concept="PCHHj" id="4BdRpMvf$Bp" role="3mGtxP">
       <property role="TrG5h" value="TestB" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="4BdRpMvf$Pz" role="PCHGa">
         <node concept="PDbRn" id="4BdRpMvf$Ui" role="PCHzz" />
       </node>
@@ -420,6 +425,7 @@
   <node concept="3mGtxK" id="4BdRpMvlFGk">
     <node concept="PCHHj" id="4BdRpMvlFGm" role="3mGtxP">
       <property role="TrG5h" value="TestC" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="4BdRpMvlG8B" role="PCHGa">
         <node concept="PDIRi" id="4BdRpMvlG8F" role="PCHzz">
           <node concept="1PaTwC" id="4BdRpMvlG8G" role="I4nmN">
