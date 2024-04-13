@@ -129,6 +129,7 @@
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -346,6 +347,9 @@
       <concept id="3541437991299094512" name="jetbrains.mps.lang.generator.structure.LabelMacroInputQuery" flags="ig" index="38ki3A" />
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
+      </concept>
+      <concept id="1133037731736" name="jetbrains.mps.lang.generator.structure.MapSrcListMacro" flags="ln" index="3ejVUv">
+        <child id="1168291362368" name="sourceNodesQuery" index="3_Rtg" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
@@ -7698,6 +7702,54 @@
                 <ref role="3TsBF5" to="28lk:2SMO68r$0H0" resolve="isAbstract" />
               </node>
               <node concept="30H73N" id="2SV$eY7wOf4" role="2Oq$k0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="2SV$eY84fg5" role="EKbjA">
+      <ref role="3uigEE" to="wyt6:~Cloneable" resolve="Cloneable" />
+      <node concept="1W57fq" id="2SV$eY84fJy" role="lGtFl">
+        <node concept="3IZrLx" id="2SV$eY84fJ_" role="3IZSJc">
+          <node concept="3clFbS" id="2SV$eY84fJA" role="2VODD2">
+            <node concept="3clFbF" id="2SV$eY84fNB" role="3cqZAp">
+              <node concept="2OqwBi" id="2SV$eY84p1I" role="3clFbG">
+                <node concept="2YIFZM" id="2SV$eY84fRy" role="2Oq$k0">
+                  <ref role="37wK5l" to="nlwv:46wqe1xNYr1" resolve="determineImplementClasses" />
+                  <ref role="1Pybhc" to="nlwv:46wqe1xNYo8" resolve="SpecializationHelper" />
+                  <node concept="30H73N" id="2SV$eY84fRz" role="37wK5m" />
+                </node>
+                <node concept="3GX2aA" id="2SV$eY84sjM" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3ejVUv" id="2SV$eY84tt_" role="lGtFl">
+        <node concept="3JmXsc" id="2SV$eY84ttA" role="3_Rtg">
+          <node concept="3clFbS" id="2SV$eY84ttB" role="2VODD2">
+            <node concept="3clFbF" id="2SV$eY84twN" role="3cqZAp">
+              <node concept="2YIFZM" id="2SV$eY84upJ" role="3clFbG">
+                <ref role="37wK5l" to="nlwv:46wqe1xNYr1" resolve="determineImplementClasses" />
+                <ref role="1Pybhc" to="nlwv:46wqe1xNYo8" resolve="SpecializationHelper" />
+                <node concept="30H73N" id="2SV$eY84upK" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZhdrF" id="2SV$eY84uVH" role="lGtFl">
+        <property role="2qtEX8" value="classifier" />
+        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+        <node concept="3$xsQk" id="2SV$eY84uVI" role="3$ytzL">
+          <node concept="3clFbS" id="2SV$eY84uVJ" role="2VODD2">
+            <node concept="3clFbF" id="2SV$eY84vQg" role="3cqZAp">
+              <node concept="2OqwBi" id="2SV$eY84wln" role="3clFbG">
+                <node concept="30H73N" id="2SV$eY84vQf" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2SV$eY84xCJ" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
