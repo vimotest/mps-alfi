@@ -1783,7 +1783,7 @@
     <property role="3GE5qa" value="units.annotation" />
     <property role="TrG5h" value="StereotypeName" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1_2cgM8_TK2">
     <property role="EcuMT" value="1820071129312107522" />

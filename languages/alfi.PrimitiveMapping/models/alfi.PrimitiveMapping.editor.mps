@@ -83,7 +83,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2X39vz2X4Pa">
-    <ref role="1XX52x" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
+    <ref role="1XX52x" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
     <node concept="3EZMnI" id="2X39vz2X4Pc" role="2wV5jI">
       <node concept="3F0ifn" id="2X39vz2X4Pm" role="3EZMnx">
         <property role="3F0ifm" value="map" />
@@ -200,7 +200,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="6sZBH0sephL" role="3EZMnx">
-          <ref role="1NtTu8" to="sk9k:6sZBH0semtX" />
+          <ref role="1NtTu8" to="sk9k:6sZBH0semtX" resolve="groups" />
           <node concept="l2Vlx" id="6sZBH0sephM" role="2czzBx" />
           <node concept="pj6Ft" id="6sZBH0sephN" role="3F10Kt">
             <property role="VOm3f" value="true" />

@@ -899,7 +899,7 @@
                   <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
                 </node>
                 <node concept="3Cnw8n" id="7tDI0mOB1Wc" role="1urrFz">
-                  <ref role="QpYPw" node="7tDI0mOB1W9" resolve="fix_" />
+                  <ref role="QpYPw" node="7tDI0mOB1W9" resolve="fix_clearVisibility" />
                 </node>
               </node>
             </node>
@@ -993,7 +993,7 @@
                       <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
                     </node>
                     <node concept="3Cnw8n" id="31Th1WS1yRh" role="1urrFz">
-                      <ref role="QpYPw" node="31Th1WS1yRe" resolve="fix_" />
+                      <ref role="QpYPw" node="31Th1WS1yRe" resolve="fix_CreateStubForSubunit" />
                       <node concept="3CnSsL" id="31Th1WS2PeW" role="3Coj4f">
                         <ref role="QkamJ" node="31Th1WS1HuZ" resolve="targetNamespace" />
                         <node concept="2OqwBi" id="31Th1WS2Pfc" role="3CoRuB">
@@ -2414,7 +2414,7 @@
         <node concept="mw_s8" id="33GfBy8RYax" role="1ZfhK$">
           <node concept="1Z2H0r" id="33GfBy8RXxw" role="mwGJk">
             <node concept="1YBJjd" id="33GfBy8RXzq" role="1Z2MuG">
-              <ref role="1YBMHb" node="33GfBy8RX2T" resolve="featureInvocationTarget" />
+              <ref role="1YBMHb" node="33GfBy8RX2T" resolve="featureReference" />
             </node>
           </node>
         </node>
@@ -2863,7 +2863,7 @@
                 <ref role="1YBMHb" node="DcKpEDwx0B" resolve="activityDefinition" />
               </node>
               <node concept="3TrEf2" id="3pX5J2SeXZZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:3Ud70gdRyip" />
+                <ref role="3Tt5mk" to="28lk:3Ud70gdRyip" resolve="returnParameter" />
               </node>
             </node>
           </node>

@@ -66,7 +66,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="mappings" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
+      <ref role="20lvS9" node="2X39vz2X4b5" resolve="MappingRule" />
     </node>
   </node>
   <node concept="25R3W" id="2X39vz2X4b1">
@@ -100,7 +100,7 @@
     <property role="TrG5h" value="PrimitiveMappingDefinition" />
     <property role="34LRSv" value="PMD" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6sZBH0semtV" role="1TKVEl">
       <property role="IQ2nx" value="7439839726103259003" />
       <property role="TrG5h" value="targetLanguage" />

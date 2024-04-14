@@ -323,7 +323,7 @@
               <node concept="l9hG8" id="2yXj8DmbAyR" role="lcghm">
                 <node concept="2OqwBi" id="2yXj8DmbAyS" role="lb14g">
                   <node concept="2qgKlT" id="2yXj8DmbAyT" role="2OqNvi">
-                    <ref role="37wK5l" to="vdrq:2iG$EWuTXv2" />
+                    <ref role="37wK5l" to="vdrq:2iG$EWuTXv2" resolve="representAsText" />
                   </node>
                   <node concept="2OqwBi" id="2yXj8DmbAyU" role="2Oq$k0">
                     <node concept="117lpO" id="2yXj8DmbAyQ" role="2Oq$k0" />
@@ -3230,13 +3230,13 @@
             <property role="TrG5h" value="names" />
             <node concept="_YKpA" id="2yXj8Dmlzb0" role="1tU5fm">
               <node concept="3uibUv" id="2yXj8Dmlzb1" role="_ZDj9">
-                <ref role="3uigEE" to="wyt6:~String" />
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
               </node>
             </node>
             <node concept="2ShNRf" id="2yXj8Dmlzb2" role="33vP2m">
               <node concept="Tc6Ow" id="2yXj8Dmlzb3" role="2ShVmc">
                 <node concept="3uibUv" id="2yXj8Dmlzb4" role="HW$YZ">
-                  <ref role="3uigEE" to="wyt6:~String" />
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                 </node>
               </node>
             </node>
@@ -3283,7 +3283,7 @@
                   <node concept="2OqwBi" id="2yXj8Dmlzbt" role="25WWJ7">
                     <node concept="117lpO" id="2yXj8Dmlzbu" role="2Oq$k0" />
                     <node concept="2qgKlT" id="2yXj8Dmlzbv" role="2OqNvi">
-                      <ref role="37wK5l" to="bqjt:4jcHaHwHH_T" />
+                      <ref role="37wK5l" to="bqjt:4jcHaHwHH_T" resolve="getVirtualPackageName" />
                     </node>
                   </node>
                 </node>
@@ -3294,7 +3294,7 @@
             <node concept="2OqwBi" id="2yXj8Dmlzbx" role="2Oq$k0">
               <node concept="117lpO" id="2yXj8Dmlzby" role="2Oq$k0" />
               <node concept="2qgKlT" id="2yXj8Dmlzbz" role="2OqNvi">
-                <ref role="37wK5l" to="bqjt:4jcHaHwHH_T" />
+                <ref role="37wK5l" to="bqjt:4jcHaHwHH_T" resolve="getVirtualPackageName" />
               </node>
             </node>
             <node concept="17RvpY" id="2yXj8Dmlzb$" role="2OqNvi" />
@@ -3303,8 +3303,8 @@
         <node concept="3cpWs6" id="2yXj8Dmlzb_" role="3cqZAp">
           <node concept="2OqwBi" id="2yXj8DmlzbA" role="3cqZAk">
             <node concept="2YIFZM" id="2yXj8DmlzbB" role="2Oq$k0">
-              <ref role="1Pybhc" to="wyt6:~String" />
-              <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" resolve="join" />
               <node concept="Xl_RD" id="2yXj8DmlzbC" role="37wK5m">
                 <property role="Xl_RC" value="/" />
               </node>
@@ -3313,7 +3313,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2yXj8DmlzbE" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" />
+              <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
               <node concept="Xl_RD" id="2yXj8DmlzbF" role="37wK5m">
                 <property role="Xl_RC" value="." />
               </node>
@@ -3331,7 +3331,7 @@
           <node concept="2OqwBi" id="2yXj8DmlzbK" role="3clFbG">
             <node concept="117lpO" id="2yXj8DmlzbL" role="2Oq$k0" />
             <node concept="3TrcHB" id="2yXj8DmlzbM" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" />
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>

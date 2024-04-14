@@ -437,7 +437,7 @@
           <node concept="2OqwBi" id="2X39vz3fvfq" role="3clFbG">
             <node concept="2tJFMh" id="2X39vz3ftV$" role="2Oq$k0">
               <node concept="ZC_QK" id="2X39vz3ftY0" role="2tJFKM">
-                <ref role="2aWVGs" to="hpoj:6sZBH0sf5mZ" />
+                <ref role="2aWVGs" to="hpoj:6sZBH0sf5mZ" resolve="PMD for java" />
               </node>
             </node>
             <node concept="Vyspw" id="2X39vz3fvp7" role="2OqNvi">
@@ -705,7 +705,7 @@
               </node>
               <node concept="2OqwBi" id="4Vswoj0IlPM" role="3uHU7B">
                 <node concept="37vLTw" id="4Vswoj0IlPN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="parameter" />
+                  <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="typedElement" />
                 </node>
                 <node concept="3TrcHB" id="4Vswoj0IlPO" role="2OqNvi">
                   <ref role="3TsBF5" to="28lk:1KdBIfXLcwD" resolve="upperBound" />
@@ -715,7 +715,7 @@
             <node concept="17R0WA" id="4Vswoj0IlPP" role="3uHU7B">
               <node concept="2OqwBi" id="4Vswoj0IlPQ" role="3uHU7B">
                 <node concept="37vLTw" id="4Vswoj0IlPR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="parameter" />
+                  <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="typedElement" />
                 </node>
                 <node concept="3TrcHB" id="4Vswoj0IlPS" role="2OqNvi">
                   <ref role="3TsBF5" to="28lk:1KdBIfXLcwB" resolve="lowerBound" />
@@ -730,7 +730,7 @@
             <node concept="3cpWs6" id="4Vswoj0ImjL" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImrN" role="3cqZAk">
                 <ref role="Rm8GQ" node="4Vswoj0IlHh" resolve="None" />
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
               </node>
             </node>
           </node>
@@ -740,7 +740,7 @@
             <node concept="3cpWs6" id="4Vswoj0ImDc" role="3cqZAp">
               <node concept="Rm8GO" id="4Vswoj0ImQQ" role="3cqZAk">
                 <ref role="Rm8GQ" node="4Vswoj0Iksi" resolve="Optional" />
-                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
+                <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
               </node>
             </node>
           </node>
@@ -750,7 +750,7 @@
             </node>
             <node concept="2OqwBi" id="4Vswoj0IlQi" role="3uHU7B">
               <node concept="37vLTw" id="4Vswoj0IlQj" role="2Oq$k0">
-                <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="parameter" />
+                <ref role="3cqZAo" node="4Vswoj0Ilvc" resolve="typedElement" />
               </node>
               <node concept="3TrcHB" id="4Vswoj0IlQk" role="2OqNvi">
                 <ref role="3TsBF5" to="28lk:1KdBIfXLcwD" resolve="upperBound" />
@@ -761,13 +761,13 @@
         <node concept="3cpWs6" id="4Vswoj0In0J" role="3cqZAp">
           <node concept="Rm8GO" id="4Vswoj0Inet" role="3cqZAk">
             <ref role="Rm8GQ" node="4Vswoj0IkyT" resolve="List" />
-            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
+            <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="4Vswoj0IlfS" role="1B3o_S" />
       <node concept="3uibUv" id="4Vswoj0IlmG" role="3clF45">
-        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
+        <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
       </node>
       <node concept="37vLTG" id="4Vswoj0Ilvc" role="3clF46">
         <property role="TrG5h" value="typedElement" />

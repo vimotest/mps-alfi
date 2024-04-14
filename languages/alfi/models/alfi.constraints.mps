@@ -1063,7 +1063,7 @@
           <node concept="17R0WA" id="75cQW_tsFUN" role="3clFbw">
             <node concept="359W_D" id="75cQW_tsFUO" role="3uHU7w">
               <ref role="359W_E" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
-              <ref role="359W_F" to="28lk:2SMO68r$0GX" />
+              <ref role="359W_F" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
             </node>
             <node concept="2DA6wF" id="75cQW_tsFUP" role="3uHU7B" />
           </node>
@@ -1146,7 +1146,7 @@
           <node concept="17QLQc" id="2SV$eY8tDMp" role="3clFbG">
             <node concept="359W_D" id="2SV$eY8tG2w" role="3uHU7w">
               <ref role="359W_E" to="28lk:2SMO68r$0GW" resolve="NamespaceDefinition" />
-              <ref role="359W_F" to="28lk:2SMO68r$0GX" />
+              <ref role="359W_F" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
             </node>
             <node concept="2DA6wF" id="2SV$eY8tBDo" role="3uHU7B" />
           </node>

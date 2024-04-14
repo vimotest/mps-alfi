@@ -166,7 +166,7 @@
   </registry>
   <node concept="2S6QgY" id="6sZBH0sbmRS">
     <property role="TrG5h" value="AddAllSiblingsInSameNamespace" />
-    <ref role="2ZfgGC" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
+    <ref role="2ZfgGC" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
     <node concept="2BZ0e9" id="6sZBH0sc1cJ" role="1S$sla">
       <property role="TrG5h" value="missingSiblings" />
       <node concept="3Tm6S6" id="6sZBH0sc1cK" role="1B3o_S" />
@@ -253,7 +253,7 @@
                     <node concept="3cpWsn" id="6sZBH0scdy9" role="3cpWs9">
                       <property role="TrG5h" value="newMapping" />
                       <node concept="3Tqbb2" id="6sZBH0scdxr" role="1tU5fm">
-                        <ref role="ehGHo" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
+                        <ref role="ehGHo" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
                       </node>
                       <node concept="2OqwBi" id="6sZBH0scdya" role="33vP2m">
                         <node concept="2OqwBi" id="6sZBH0scdyb" role="2Oq$k0">
@@ -316,7 +316,7 @@
         <node concept="3clFbF" id="6sZBH0sbL_3" role="3cqZAp">
           <node concept="2OqwBi" id="6sZBH0sbN9n" role="3clFbG">
             <node concept="37vLTw" id="6sZBH0sbL_1" role="2Oq$k0">
-              <ref role="3cqZAo" node="6sZBH0sbLjt" resolve="lookupSet" />
+              <ref role="3cqZAo" node="6sZBH0sbLjt" resolve="usedAsMappingSet" />
             </node>
             <node concept="X8dFx" id="6sZBH0sbPU2" role="2OqNvi">
               <node concept="2OqwBi" id="6sZBH0sbPU9" role="25WWJ7">
@@ -327,7 +327,7 @@
                   </node>
                   <node concept="v3k3i" id="6sZBH0sbPUe" role="2OqNvi">
                     <node concept="chp4Y" id="6sZBH0sbPUf" role="v3oSu">
-                      <ref role="cht4Q" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
+                      <ref role="cht4Q" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
                     </node>
                   </node>
                 </node>
@@ -340,7 +340,7 @@
                             <ref role="3cqZAo" node="6sZBH0sbPUn" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="6sZBH0sbPUm" role="2OqNvi">
-                            <ref role="3Tt5mk" to="sk9k:2X39vz2X4b8" />
+                            <ref role="3Tt5mk" to="sk9k:2X39vz2X4b8" resolve="from" />
                           </node>
                         </node>
                       </node>

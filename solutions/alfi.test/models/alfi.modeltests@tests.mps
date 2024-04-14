@@ -356,7 +356,7 @@
             <node concept="3uibUv" id="1qpEqOW5$xE" role="1tU5fm">
               <ref role="3uigEE" to="k2t0:~IAbstractChecker" resolve="IAbstractChecker" />
               <node concept="3uibUv" id="1qpEqOW5$xJ" role="11_B2D">
-                <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ItemsToCheck" />
+                <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ModelCheckerBuilder.ItemsToCheck" />
               </node>
               <node concept="3uibUv" id="1qpEqOW5$xK" role="11_B2D">
                 <ref role="3uigEE" to="d6hs:~IssueKindReportItem" resolve="IssueKindReportItem" />
@@ -446,11 +446,11 @@
           <node concept="3cpWsn" id="1qpEqOW5_W3" role="3cpWs9">
             <property role="TrG5h" value="itemsToCheck" />
             <node concept="3uibUv" id="1qpEqOW5_Se" role="1tU5fm">
-              <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ItemsToCheck" />
+              <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ModelCheckerBuilder.ItemsToCheck" />
             </node>
             <node concept="2ShNRf" id="1qpEqOW5_W4" role="33vP2m">
               <node concept="1pGfFk" id="5k6WBrrs67k" role="2ShVmc">
-                <ref role="37wK5l" to="k2t0:~ModelCheckerBuilder$ItemsToCheck.&lt;init&gt;()" resolve="ItemsToCheck" />
+                <ref role="37wK5l" to="k2t0:~ModelCheckerBuilder$ItemsToCheck.&lt;init&gt;()" resolve="ModelCheckerBuilder.ItemsToCheck" />
               </node>
             </node>
           </node>
@@ -472,7 +472,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="5k6WBrrua$p" role="2Oq$k0">
-                <ref role="3cqZAo" node="5k6WBrru7aa" resolve="moduleRef" />
+                <ref role="3cqZAo" node="5k6WBrru7aa" resolve="modelRef" />
               </node>
             </node>
           </node>
@@ -489,7 +489,7 @@
             </node>
             <node concept="TSZUe" id="1qpEqOW5CEC" role="2OqNvi">
               <node concept="37vLTw" id="1qpEqOW5Hlx" role="25WWJ7">
-                <ref role="3cqZAo" node="1qpEqOW5Hlp" resolve="sandboxModule" />
+                <ref role="3cqZAo" node="1qpEqOW5Hlp" resolve="model" />
               </node>
             </node>
           </node>
@@ -778,7 +778,7 @@
           <node concept="2OqwBi" id="5k6WBrrufA1" role="3clFbG">
             <node concept="2WthIp" id="5k6WBrrufA2" role="2Oq$k0" />
             <node concept="2XshWL" id="5k6WBrrufA3" role="2OqNvi">
-              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModule" />
+              <ref role="2WH_rO" node="5k6WBrru5y$" resolve="checkModel" />
               <node concept="1Xw6AR" id="2SV$eY87Lbp" role="2XxRq1">
                 <node concept="1dCxOl" id="2SV$eY87LcN" role="1XwpL7">
                   <property role="1XweGQ" value="r:fae4a196-11c4-4868-9ebd-1379c8e56907" />

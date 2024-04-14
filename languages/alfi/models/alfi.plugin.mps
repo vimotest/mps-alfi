@@ -530,15 +530,15 @@
                     <ref role="3cqZAo" node="2yXj8DmdF61" resolve="endOfLineCommentTextGen" />
                   </node>
                   <node concept="3TrEf2" id="2yXj8Dmel7j" role="2OqNvi">
-                    <ref role="3Tt5mk" to="2omo:hX1c4lS" />
+                    <ref role="3Tt5mk" to="2omo:hX1c4lS" resolve="textGenBlock" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="2yXj8Dmemrw" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                  <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="2yXj8DmenHY" role="2OqNvi">
-                <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
               </node>
             </node>
             <node concept="TSZUe" id="2yXj8Dmeu$W" role="2OqNvi">
@@ -657,7 +657,7 @@
                 <ref role="3cqZAo" node="2yXj8DmgpSZ" resolve="unitTextGen" />
               </node>
               <node concept="3TrEf2" id="2yXj8Dmgt5G" role="2OqNvi">
-                <ref role="3Tt5mk" to="2omo:6VAHsmHnR9T" />
+                <ref role="3Tt5mk" to="2omo:6VAHsmHnR9T" resolve="extension" />
               </node>
             </node>
           </node>
@@ -786,7 +786,7 @@
                 <ref role="3cqZAo" node="2yXj8DmgpSZ" resolve="unitTextGen" />
               </node>
               <node concept="3TrEf2" id="2yXj8DmgwIi" role="2OqNvi">
-                <ref role="3Tt5mk" to="2omo:6NuIk8swUPi" />
+                <ref role="3Tt5mk" to="2omo:6NuIk8swUPi" resolve="filePath" />
               </node>
             </node>
           </node>
@@ -825,7 +825,7 @@
                 <ref role="3cqZAo" node="2yXj8DmgpSZ" resolve="unitTextGen" />
               </node>
               <node concept="3TrEf2" id="2yXj8Dmlg85" role="2OqNvi">
-                <ref role="3Tt5mk" to="2omo:2wXN29Pz7c" />
+                <ref role="3Tt5mk" to="2omo:2wXN29Pz7c" resolve="filename" />
               </node>
             </node>
           </node>
