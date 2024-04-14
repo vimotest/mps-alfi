@@ -1312,6 +1312,9 @@
     <property role="TrG5h" value="PackageDefinition" />
     <property role="34LRSv" value="package" />
     <ref role="1TJDcQ" node="2SMO68r$0GW" resolve="NamespaceDefinition" />
+    <node concept="PrWs8" id="2SV$eY8gJoJ" role="PzmwI">
+      <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7qCenb1KL$4">
     <property role="EcuMT" value="8550147057602730244" />
@@ -1680,6 +1683,9 @@
     <node concept="PrWs8" id="3pX5J2Sf59W" role="PzmwI">
       <ref role="PrY4T" node="3pX5J2Sf3Wu" resolve="ITypeDefinition" />
     </node>
+    <node concept="PrWs8" id="2SV$eY8gJmZ" role="PzmwI">
+      <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
     <property role="EcuMT" value="3120704408893095334" />
@@ -1828,6 +1834,11 @@
     <property role="TrG5h" value="EmptyLineNamespaceMember" />
     <property role="34LRSv" value="empty line" />
     <ref role="1TJDcQ" node="2SMO68r$0GM" resolve="NamespaceMember" />
+  </node>
+  <node concept="PlHQZ" id="2SV$eY8gJiu">
+    <property role="EcuMT" value="3331415707828286622" />
+    <property role="3GE5qa" value="units.util" />
+    <property role="TrG5h" value="ICanHaveEmptyLineNamespaceMember" />
   </node>
 </model>
 

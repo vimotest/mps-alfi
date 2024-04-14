@@ -350,6 +350,23 @@
             </node>
           </node>
           <node concept="3clFbS" id="7bDXsfCi9hm" role="3clFbx">
+            <node concept="3clFbJ" id="2SV$eY8hG$T" role="3cqZAp">
+              <node concept="3clFbS" id="2SV$eY8hG$U" role="3clFbx">
+                <node concept="3cpWs6" id="2SV$eY8hG$V" role="3cqZAp">
+                  <node concept="3clFbT" id="2SV$eY8hHsp" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2SV$eY8hG$X" role="3clFbw">
+                <node concept="2DD5aU" id="2SV$eY8hJhK" role="2Oq$k0" />
+                <node concept="3O6GUB" id="2SV$eY8hJtY" role="2OqNvi">
+                  <node concept="chp4Y" id="2SV$eY8hJx0" role="3QVz_e">
+                    <ref role="cht4Q" to="28lk:31Th1WS4yT2" resolve="EmptyLineNamespaceMember" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="7GHN9f$VUrE" role="3cqZAp">
               <node concept="3clFbS" id="7GHN9f$VUrG" role="3clFbx">
                 <node concept="3cpWs6" id="7GHN9f$VVaB" role="3cqZAp">
@@ -1112,7 +1129,7 @@
             <node concept="nLn13" id="31Th1WS82ow" role="2Oq$k0" />
             <node concept="1mIQ4w" id="31Th1WS82SC" role="2OqNvi">
               <node concept="chp4Y" id="31Th1WS82Vc" role="cj9EA">
-                <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+                <ref role="cht4Q" to="28lk:2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
               </node>
             </node>
           </node>
