@@ -56,6 +56,7 @@ fi
 # Check the output for known error messages
 if [[ $output == *"Syntax Error"* ]]; then
   echo "The ALF program encountered syntax errors."
+  echo "$output"
   exit 1
 fi
 
