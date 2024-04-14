@@ -155,9 +155,6 @@
         <child id="7144803224883955094" name="finalClause" index="32onkV" />
         <child id="7144803224883864292" name="nonFinalClauses" index="32oX99" />
       </concept>
-      <concept id="7144803224889925327" name="alfi.structure.InferredTypeLoopVariableDefinition" flags="ng" index="32xATy">
-        <child id="7144803224889925328" name="expression" index="32xATX" />
-      </concept>
       <concept id="7144803224889925323" name="alfi.structure.ForStatement" flags="ng" index="32xATA">
         <child id="7144803224890013772" name="variableDefinitions" index="32xgzx" />
         <child id="7144803224890013774" name="body" index="32xgzz" />
@@ -165,6 +162,10 @@
       <concept id="7144803224889925378" name="alfi.structure.RangeLoopVariableDefinition" flags="ng" index="32xAYJ">
         <child id="7144803224889925380" name="expression2" index="32xAYD" />
         <child id="7144803224889925379" name="expression1" index="32xAYI" />
+      </concept>
+      <concept id="7144803224889925462" name="alfi.structure.TypedLoopVariableDefinition" flags="ng" index="32xAZV">
+        <child id="7144803224889925466" name="typeName" index="32xAZR" />
+        <child id="7144803224889925463" name="expression" index="32xAZU" />
       </concept>
       <concept id="7144803224891645265" name="alfi.structure.NumericUnaryExpression_Plus" flags="ng" index="32B2RW" />
       <concept id="7144803224891645264" name="alfi.structure.BitStringUnaryExpression" flags="ng" index="32B2RX" />
@@ -4032,37 +4033,42 @@
           </node>
         </node>
         <node concept="PDbRn" id="6sZBH0s13VX" role="PCHzz" />
-        <node concept="32xATA" id="6sZBH0s13Xd" role="PCHzz">
-          <node concept="32xATy" id="6sZBH0s13Xf" role="32xgzx">
+        <node concept="32xATA" id="US4hClMTA5" role="PCHzz">
+          <node concept="32xAZV" id="US4hClMTE8" role="32xgzx">
             <property role="TrG5h" value="name" />
-            <node concept="32M0$0" id="6sZBH0s141f" role="32xATX">
-              <node concept="32Pqhl" id="6sZBH0s141g" role="32PqmZ">
-                <node concept="_uYbk" id="6sZBH0s141h" role="32Men7">
-                  <node concept="_vnHb" id="6sZBH0s141i" role="_uYbl">
-                    <node concept="2RqM1Q" id="6sZBH0s141j" role="_vnH8">
+            <node concept="3xHE8C" id="US4hClMTGe" role="32xAZR">
+              <node concept="2RqM1Q" id="US4hClMTGc" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+            </node>
+            <node concept="32M0$0" id="US4hClMTA7" role="32xAZU">
+              <node concept="32Pqhl" id="US4hClMTA8" role="32PqmZ">
+                <node concept="_uYbk" id="US4hClMTA9" role="32Men7">
+                  <node concept="_vnHb" id="US4hClMTAa" role="_uYbl">
+                    <node concept="2RqM1Q" id="US4hClMTAb" role="_vnH8">
                       <ref role="2RqM1R" node="6sZBH0rRdFP" resolve="sequenceHolder" />
                     </node>
                   </node>
                 </node>
-                <node concept="_vnHe" id="6sZBH0s141k" role="32Men1">
+                <node concept="_vnHe" id="US4hClMTAc" role="32Men1">
                   <ref role="3acloq" node="6sZBH0rRdDF" resolve="names" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="PCHzy" id="6sZBH0s13Xj" role="32xgzz">
-            <node concept="_jtW9" id="6sZBH0s1467" role="PCHzz">
-              <node concept="_uF8j" id="6sZBH0s145Z" role="_jtWe">
-                <node concept="_vnHb" id="6sZBH0s1461" role="_uF8g">
-                  <node concept="2RqM1Q" id="6sZBH0s1463" role="_vnH8">
+          <node concept="PCHzy" id="US4hClMTAd" role="32xgzz">
+            <node concept="_jtW9" id="US4hClMTAe" role="PCHzz">
+              <node concept="_uF8j" id="US4hClMTAf" role="_jtWe">
+                <node concept="_vnHb" id="US4hClMTAg" role="_uF8g">
+                  <node concept="2RqM1Q" id="US4hClMTAh" role="_vnH8">
                     <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
                   </node>
                 </node>
-                <node concept="_vku0" id="6sZBH0s1465" role="_uFfl">
-                  <node concept="_uYbk" id="6sZBH0s146O" role="_vku1">
-                    <node concept="_vnHb" id="6sZBH0s146P" role="_uYbl">
-                      <node concept="2RqM1Q" id="6sZBH0s146Q" role="_vnH8">
-                        <ref role="2RqM1R" node="6sZBH0s13Xf" resolve="name" />
+                <node concept="_vku0" id="US4hClMTAi" role="_uFfl">
+                  <node concept="_uYbk" id="US4hClMTAj" role="_vku1">
+                    <node concept="_vnHb" id="US4hClMTAk" role="_uYbl">
+                      <node concept="2RqM1Q" id="US4hClMTAl" role="_vnH8">
+                        <ref role="2RqM1R" node="US4hClMTE8" resolve="name" />
                       </node>
                     </node>
                   </node>
@@ -4130,9 +4136,14 @@
         </node>
         <node concept="PDbRn" id="6sZBH0s18rQ" role="PCHzz" />
         <node concept="32xATA" id="6sZBH0s18np" role="PCHzz">
-          <node concept="32xATy" id="6sZBH0s18nq" role="32xgzx">
+          <node concept="32xAZV" id="US4hClMUCP" role="32xgzx">
             <property role="TrG5h" value="name" />
-            <node concept="32M0$0" id="6sZBH0s18nr" role="32xATX">
+            <node concept="3xHE8C" id="US4hClMUGK" role="32xAZR">
+              <node concept="2RqM1Q" id="US4hClMUGI" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+            </node>
+            <node concept="32M0$0" id="6sZBH0s18nr" role="32xAZU">
               <node concept="32Pqhl" id="6sZBH0s18ns" role="32PqmZ">
                 <node concept="_uYbk" id="6sZBH0s18nt" role="32Men7">
                   <node concept="_vnHb" id="6sZBH0s18nu" role="_uYbl">
@@ -4159,7 +4170,7 @@
                   <node concept="_uYbk" id="6sZBH0s18nB" role="_vku1">
                     <node concept="_vnHb" id="6sZBH0s18nC" role="_uYbl">
                       <node concept="2RqM1Q" id="6sZBH0s18nD" role="_vnH8">
-                        <ref role="2RqM1R" node="6sZBH0s18nq" resolve="name" />
+                        <ref role="2RqM1R" node="US4hClMUCP" resolve="name" />
                       </node>
                     </node>
                   </node>

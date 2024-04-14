@@ -3181,5 +3181,69 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="US4hClK22Z">
+    <property role="TrG5h" value="typeof_RangeLoopVariableDefinition" />
+    <property role="3GE5qa" value="statements.for" />
+    <node concept="3clFbS" id="US4hClK230" role="18ibNy">
+      <node concept="1Z5TYs" id="US4hClK2vg" role="3cqZAp">
+        <node concept="mw_s8" id="US4hClK2vj" role="1ZfhK$">
+          <node concept="1Z2H0r" id="US4hClK23H" role="mwGJk">
+            <node concept="1YBJjd" id="US4hClK25B" role="1Z2MuG">
+              <ref role="1YBMHb" node="US4hClK232" resolve="rangeLoopVariableDefinition" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="US4hClLaX6" role="1ZfhKB">
+          <node concept="2YIFZM" id="US4hClLaX_" role="mwGJk">
+            <ref role="37wK5l" to="bqjt:US4hClKbdx" resolve="getTypeForPrimitive" />
+            <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
+            <node concept="1YBJjd" id="US4hClLbJ9" role="37wK5m">
+              <ref role="1YBMHb" node="US4hClK232" resolve="rangeLoopVariableDefinition" />
+            </node>
+            <node concept="Xl_RD" id="US4hClLaY0" role="37wK5m">
+              <property role="Xl_RC" value="Integer" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="US4hClK232" role="1YuTPh">
+      <property role="TrG5h" value="rangeLoopVariableDefinition" />
+      <ref role="1YaFvo" to="28lk:6cBsaQxChW2" resolve="RangeLoopVariableDefinition" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="US4hClM7yh">
+    <property role="TrG5h" value="typeof_TypedLoopVariableDefinition" />
+    <property role="3GE5qa" value="statements.for" />
+    <node concept="3clFbS" id="US4hClM7yi" role="18ibNy">
+      <node concept="1Z5TYs" id="US4hClM7Yz" role="3cqZAp">
+        <node concept="mw_s8" id="US4hClM7YA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="US4hClM7z0" role="mwGJk">
+            <node concept="1YBJjd" id="US4hClM7$U" role="1Z2MuG">
+              <ref role="1YBMHb" node="US4hClM7yk" resolve="typedLoopVariableDefinition" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="US4hClMhxd" role="1ZfhKB">
+          <node concept="2YIFZM" id="US4hClMhxM" role="mwGJk">
+            <ref role="37wK5l" to="bqjt:US4hClMbyw" resolve="toTypeDefinition" />
+            <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
+            <node concept="2OqwBi" id="US4hClMhJ5" role="37wK5m">
+              <node concept="1YBJjd" id="US4hClMhyf" role="2Oq$k0">
+                <ref role="1YBMHb" node="US4hClM7yk" resolve="typedLoopVariableDefinition" />
+              </node>
+              <node concept="3TrEf2" id="US4hClMhZv" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQxChXq" resolve="typeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="US4hClM7yk" role="1YuTPh">
+      <property role="TrG5h" value="typedLoopVariableDefinition" />
+      <ref role="1YaFvo" to="28lk:6cBsaQxChXm" resolve="TypedLoopVariableDefinition" />
+    </node>
+  </node>
 </model>
 

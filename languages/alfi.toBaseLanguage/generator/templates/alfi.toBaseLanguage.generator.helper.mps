@@ -675,9 +675,9 @@
     <node concept="3Tm1VV" id="2X39vz3eZiW" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4Vswoj0HRh$">
-    <property role="TrG5h" value="FormalParameterTypeTranslator" />
+    <property role="TrG5h" value="TypedElementDefinitionTranslator" />
     <node concept="Qs71p" id="4Vswoj0Ikdr" role="jymVt">
-      <property role="TrG5h" value="ParameterTypeWrapper" />
+      <property role="TrG5h" value="TypeWrapper" />
       <property role="2bfB8j" value="true" />
       <node concept="QsSxf" id="4Vswoj0IlHh" role="Qtgdg">
         <property role="TrG5h" value="None" />
@@ -695,7 +695,7 @@
     </node>
     <node concept="2tJIrI" id="4Vswoj0Il4z" role="jymVt" />
     <node concept="2YIFZL" id="4Vswoj0Ilpw" role="jymVt">
-      <property role="TrG5h" value="getParameterTypeWrapper" />
+      <property role="TrG5h" value="getTypeWrapper" />
       <node concept="3clFbS" id="4Vswoj0Ilpz" role="3clF47">
         <node concept="3clFbJ" id="4Vswoj0IlPI" role="3cqZAp">
           <node concept="1Wc70l" id="4Vswoj0IlPJ" role="3clFbw">
@@ -770,9 +770,9 @@
         <ref role="3uigEE" node="4Vswoj0Ikdr" resolve="FormalParameterTypeTranslator.ParameterTypeWrapper" />
       </node>
       <node concept="37vLTG" id="4Vswoj0Ilvc" role="3clF46">
-        <property role="TrG5h" value="parameter" />
+        <property role="TrG5h" value="typedElement" />
         <node concept="3Tqbb2" id="4Vswoj0Ilvb" role="1tU5fm">
-          <ref role="ehGHo" to="28lk:1KdBIfXOvM_" resolve="FormalParameter" />
+          <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
         </node>
       </node>
     </node>
