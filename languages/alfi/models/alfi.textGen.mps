@@ -349,6 +349,77 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6sZBH0s1zg_">
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <ref role="WuzLi" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
+    <node concept="11bSqf" id="6sZBH0s1zgA" role="11c4hB">
+      <node concept="3clFbS" id="6sZBH0s1zgB" role="2VODD2">
+        <node concept="3SKdUt" id="6sZBH0s1zgE" role="3cqZAp">
+          <node concept="1PaTwC" id="6sZBH0s1zgG" role="1aUNEU">
+            <node concept="3oM_SD" id="6sZBH0s1zgH" role="1PaTwD">
+              <property role="3oM_SC" value="Editor component follows &gt;&gt;&gt;" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6sZBH0s1zgQ" role="3cqZAp">
+          <node concept="l9hG8" id="6sZBH0s1zgO" role="lcghm">
+            <node concept="2OqwBi" id="6sZBH0s1zgP" role="lb14g">
+              <node concept="117lpO" id="6sZBH0s1zgN" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6sZBH0s1zgK" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6sZBH0rPpQG" resolve="primary" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6sZBH0s1zha" role="lcghm">
+            <property role="lacIc" value="-&gt;" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6sZBH0s1zhF" role="3cqZAp">
+          <node concept="2OqwBi" id="6sZBH0s1zhA" role="3clFbw">
+            <node concept="2OqwBi" id="6sZBH0s1zhB" role="2Oq$k0">
+              <node concept="117lpO" id="6sZBH0s1zh_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6sZBH0s1zhC" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" resolve="operation" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6sZBH0s1zhD" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="6sZBH0s1zhZ" role="3clFbx">
+            <node concept="lc7rE" id="6sZBH0s1zhE" role="3cqZAp">
+              <node concept="l9hG8" id="6sZBH0s1zhz" role="lcghm">
+                <node concept="2OqwBi" id="6sZBH0s1zh$" role="lb14g">
+                  <node concept="117lpO" id="6sZBH0s1zhy" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6sZBH0s1zhv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" resolve="operation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6sZBH0s1zi2" role="3cqZAp">
+          <node concept="1PaTwC" id="6sZBH0s1zi4" role="1aUNEU">
+            <node concept="3oM_SD" id="6sZBH0s1zi5" role="1PaTwD">
+              <property role="3oM_SC" value="&lt;&lt;&lt; Editor component ends" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6sZBH0s1zi9" role="3cqZAp">
+          <node concept="la8eA" id="6sZBH0s1zi8" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="6sZBH0s1zif" role="lcghm">
+            <node concept="2OqwBi" id="6sZBH0s1zig" role="lb14g">
+              <node concept="117lpO" id="6sZBH0s1zie" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6sZBH0s1zib" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:2kuSLC0p53f" resolve="tuple" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="WtQ9Q" id="2X39vz2WbL3">
     <ref role="WuzLi" to="28lk:2SMO68r_Hx$" resolve="DocumentedElement" />
     <node concept="11bSqf" id="2X39vz2WbL4" role="11c4hB">

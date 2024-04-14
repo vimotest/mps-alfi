@@ -2313,6 +2313,51 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="6sZBH0rWpGV" role="jymVt">
+      <property role="TrG5h" value="getVirtualImportsForCollectionFunctions" />
+      <node concept="3clFbS" id="6sZBH0rWpGW" role="3clF47">
+        <node concept="3clFbF" id="6sZBH0rWpGX" role="3cqZAp">
+          <node concept="2YIFZM" id="6sZBH0rWpGY" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+            <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+            <node concept="1rXfSq" id="6sZBH0rWpGZ" role="37wK5m">
+              <ref role="37wK5l" node="1KdBIfXz0oW" resolve="makePrivatePackageImport" />
+              <node concept="37vLTw" id="6sZBH0rWpH0" role="37wK5m">
+                <ref role="3cqZAo" node="6sZBH0rWpHk" resolve="model" />
+              </node>
+              <node concept="37vLTw" id="6sZBH0rWpH1" role="37wK5m">
+                <ref role="3cqZAo" node="6sZBH0rWpHm" resolve="unit" />
+              </node>
+              <node concept="Xl_RD" id="6sZBH0rWpH2" role="37wK5m">
+                <property role="Xl_RC" value="Alf" />
+              </node>
+              <node concept="Xl_RD" id="6sZBH0rWpH3" role="37wK5m">
+                <property role="Xl_RC" value="Library" />
+              </node>
+              <node concept="Xl_RD" id="6sZBH0rWpH4" role="37wK5m">
+                <property role="Xl_RC" value="CollectionFunctions" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="6sZBH0rWpHh" role="3clF45">
+        <node concept="3Tqbb2" id="6sZBH0rWpHi" role="A3Ik2">
+          <ref role="ehGHo" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6sZBH0rWpHj" role="1B3o_S" />
+      <node concept="37vLTG" id="6sZBH0rWpHk" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="6sZBH0rWpHl" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6sZBH0rWpHm" role="3clF46">
+        <property role="TrG5h" value="unit" />
+        <node concept="3Tqbb2" id="6sZBH0rWpHn" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:6OepWIVJVYV" resolve="Unit" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3Ud70gdqwX9" role="jymVt" />
     <node concept="3Tm1VV" id="4jcHaHwEO19" role="1B3o_S" />
   </node>

@@ -44,6 +44,9 @@
         },
         {
           "name": "CarsTest"
+        },
+        {
+          "name": "Sequences::SequenceTest"
         }
       ]
     }

@@ -335,6 +335,9 @@
     <node concept="PrWs8" id="6OepWIVoPpF" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="6sZBH0rPqmM" role="PzmwI">
+      <ref role="PrY4T" node="6sZBH0rPq57" resolve="ExtendOrExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2kuSLC0oTxk">
     <property role="EcuMT" value="2674824929519835220" />
@@ -862,6 +865,9 @@
     <property role="TrG5h" value="PrimaryExpression" />
     <property role="3GE5qa" value="expressions.primary" />
     <property role="EcuMT" value="7144803224895060382" />
+    <node concept="PrWs8" id="6sZBH0rPqmP" role="PrDN$">
+      <ref role="PrY4T" node="6sZBH0rPq57" resolve="ExtendOrExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQxVRAH">
     <property role="EcuMT" value="7144803224895060397" />
@@ -1858,6 +1864,35 @@
     <property role="3GE5qa" value="units.classifiers.templates" />
     <property role="TrG5h" value="ClassifierTemplateParameter" />
     <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
+  </node>
+  <node concept="1TIwiD" id="6sZBH0rPpO$">
+    <property role="EcuMT" value="7439839726096719140" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="TrG5h" value="SequenceOperationExpression" />
+    <property role="34LRSv" value="SequenceOperationExpression" />
+    <ref role="1TJDcQ" node="2kuSLC0oUio" resolve="InvocationExpression" />
+    <node concept="1TJgyj" id="6sZBH0rPpQG" role="1TKVEi">
+      <property role="IQ2ns" value="7439839726096719276" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="primary" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6sZBH0rPq57" resolve="ExtendOrExpression" />
+    </node>
+    <node concept="1TJgyj" id="6sZBH0rPpOA" role="1TKVEi">
+      <property role="IQ2ns" value="7439839726096719142" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operation" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
+    </node>
+    <node concept="PrWs8" id="6sZBH0rWnBr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6sZBH0rPq57">
+    <property role="TrG5h" value="ExtendOrExpression" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="R4oN_" value="The target of a sequence operation, reduction or expansion expression, which may be either a primary expression or a class \nname denoting the class extent." />
+    <property role="EcuMT" value="7439839726096719270" />
   </node>
 </model>
 
