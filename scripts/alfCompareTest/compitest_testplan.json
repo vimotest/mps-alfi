@@ -46,7 +46,7 @@
           "name": "CarsTest"
         },
         {
-          "name": "Sequences::SequenceTest"
+          "name": "SequencesTest"
         }
       ]
     }
