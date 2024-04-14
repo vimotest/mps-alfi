@@ -14,6 +14,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="mwat" ref="r:86c02d28-9bd7-4eb6-bfc1-57f556dae16e(alfi.PrimitiveMapping.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -436,7 +437,7 @@
           <node concept="2OqwBi" id="2X39vz3fvfq" role="3clFbG">
             <node concept="2tJFMh" id="2X39vz3ftV$" role="2Oq$k0">
               <node concept="ZC_QK" id="2X39vz3ftY0" role="2tJFKM">
-                <ref role="2aWVGs" to="hpoj:2X39vz2Xdki" resolve="PMD for java" />
+                <ref role="2aWVGs" to="hpoj:6sZBH0sf5mZ" />
               </node>
             </node>
             <node concept="Vyspw" id="2X39vz3fvp7" role="2OqNvi">
@@ -456,7 +457,7 @@
       </node>
       <node concept="3Tm6S6" id="2X39vz3fgu7" role="1B3o_S" />
       <node concept="3Tqbb2" id="2X39vz3fgvQ" role="3clF45">
-        <ref role="ehGHo" to="sk9k:2X39vz2X4b0" resolve="PrimitiveMappingDefinition" />
+        <ref role="ehGHo" to="sk9k:6sZBH0semtU" resolve="PrimitiveMappingDefinition" />
       </node>
       <node concept="37vLTG" id="2X39vz3fgye" role="3clF46">
         <property role="TrG5h" value="mdl" />
@@ -479,8 +480,8 @@
                     <node concept="I4A8Y" id="2X39vz3fwsL" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="2X39vz3fwRx" role="2OqNvi">
-                  <ref role="3TtcxE" to="sk9k:2X39vz2Xdl$" resolve="mappings" />
+                <node concept="2qgKlT" id="6sZBH0sg16v" role="2OqNvi">
+                  <ref role="37wK5l" to="mwat:6sZBH0sfYXh" resolve="getAllMappings" />
                 </node>
               </node>
               <node concept="1z4cxt" id="2X39vz3fF2_" role="2OqNvi">

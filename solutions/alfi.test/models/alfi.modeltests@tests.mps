@@ -792,26 +792,6 @@
         </node>
       </node>
     </node>
-    <node concept="1LZb2c" id="5k6WBrrugY2" role="1SL9yI">
-      <property role="TrG5h" value="ensurePrimitiveMappingSandboxHasNoWarningsAndErrors" />
-      <node concept="3cqZAl" id="5k6WBrrugY3" role="3clF45" />
-      <node concept="3clFbS" id="5k6WBrrugY4" role="3clF47">
-        <node concept="3clFbF" id="5k6WBrrugY5" role="3cqZAp">
-          <node concept="2OqwBi" id="5k6WBrrugY6" role="3clFbG">
-            <node concept="2WthIp" id="5k6WBrrugY7" role="2Oq$k0" />
-            <node concept="2XshWL" id="5k6WBrrugY8" role="2OqNvi">
-              <ref role="2WH_rO" node="2SV$eY87ums" resolve="checkModule" />
-              <node concept="37shsh" id="5k6WBrrugY9" role="2XxRq1">
-                <node concept="1dCxOk" id="5k6WBrruiiQ" role="37shsm">
-                  <property role="1XweGW" value="d99c3c3c-00ca-4627-a6c7-be2b17cccf62" />
-                  <property role="1XxBO9" value="alfi.PrimitiveMapping.sandbox" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 

@@ -17,10 +17,10 @@
     <import index="2a3x" ref="r:ee4c6c10-19cb-4752-bb73-df21149306ce(alfi.util)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
-    <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="mwat" ref="r:86c02d28-9bd7-4eb6-bfc1-57f556dae16e(alfi.PrimitiveMapping.behavior)" implicit="true" />
+    <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -137,31 +137,8 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="1M2fIO" id="2X39vz2X7u2">
-    <ref role="1M2myG" to="sk9k:2X39vz2X4b0" resolve="PrimitiveMappingDefinition" />
-    <node concept="EnEH3" id="2X39vz2X7u3" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="Eqf_E" id="2X39vz2X7uH" role="EtsB7">
-        <node concept="3clFbS" id="2X39vz2X7uI" role="2VODD2">
-          <node concept="3clFbF" id="2X39vz2X8rd" role="3cqZAp">
-            <node concept="3cpWs3" id="2X39vz2X8PY" role="3clFbG">
-              <node concept="2OqwBi" id="2X39vz2X9c$" role="3uHU7w">
-                <node concept="EsrRn" id="2X39vz2X8US" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2X39vz2X9nC" role="2OqNvi">
-                  <ref role="3TsBF5" to="sk9k:2X39vz2X4b3" resolve="targetLanguage" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="2X39vz2X8rc" role="3uHU7B">
-                <property role="Xl_RC" value="PMD for " />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="2X39vz2XnmA">
-    <ref role="1M2myG" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
+    <ref role="1M2myG" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
     <node concept="1N5Pfh" id="2X39vz2XnmB" role="1Mr941">
       <ref role="1N5Vy1" to="sk9k:2X39vz2X4b8" resolve="from" />
       <node concept="3dgokm" id="2X39vz2Xnpb" role="1N6uqs">
@@ -197,14 +174,14 @@
                                       <node concept="2Xjw5R" id="2X39vz36hFb" role="2OqNvi">
                                         <node concept="1xMEDy" id="2X39vz36hFd" role="1xVPHs">
                                           <node concept="chp4Y" id="2X39vz36hRi" role="ri$Ld">
-                                            <ref role="cht4Q" to="sk9k:2X39vz2X4b0" resolve="PrimitiveMappingDefinition" />
+                                            <ref role="cht4Q" to="sk9k:6sZBH0semtU" resolve="PrimitiveMappingDefinition" />
                                           </node>
                                         </node>
                                         <node concept="1xIGOp" id="2X39vz36ie6" role="1xVPHs" />
                                       </node>
                                     </node>
-                                    <node concept="3Tsc0h" id="2X39vz36j7x" role="2OqNvi">
-                                      <ref role="3TtcxE" to="sk9k:2X39vz2Xdl$" resolve="mappings" />
+                                    <node concept="2qgKlT" id="6sZBH0sgbED" role="2OqNvi">
+                                      <ref role="37wK5l" to="mwat:6sZBH0sfYXh" resolve="getAllMappings" />
                                     </node>
                                   </node>
                                   <node concept="3zZkjj" id="2X39vz36Hab" role="2OqNvi">
@@ -342,7 +319,7 @@
                 <node concept="2Xjw5R" id="2X39vz36aix" role="2OqNvi">
                   <node concept="1xMEDy" id="2X39vz36aiz" role="1xVPHs">
                     <node concept="chp4Y" id="2X39vz36amw" role="ri$Ld">
-                      <ref role="cht4Q" to="sk9k:2X39vz2X4b0" resolve="PrimitiveMappingDefinition" />
+                      <ref role="cht4Q" to="sk9k:6sZBH0semtU" resolve="PrimitiveMappingDefinition" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="2X39vz36iAf" role="1xVPHs" />
@@ -350,6 +327,29 @@
               </node>
               <node concept="2qgKlT" id="2X39vz36aKO" role="2OqNvi">
                 <ref role="37wK5l" to="mwat:2X39vz35Z7a" resolve="getTargetScope" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6sZBH0sepvw">
+    <ref role="1M2myG" to="sk9k:6sZBH0semtU" resolve="PrimitiveMappingDefinition" />
+    <node concept="EnEH3" id="2X39vz2X7u3" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="2X39vz2X7uH" role="EtsB7">
+        <node concept="3clFbS" id="2X39vz2X7uI" role="2VODD2">
+          <node concept="3clFbF" id="2X39vz2X8rd" role="3cqZAp">
+            <node concept="3cpWs3" id="2X39vz2X8PY" role="3clFbG">
+              <node concept="2OqwBi" id="2X39vz2X9c$" role="3uHU7w">
+                <node concept="EsrRn" id="2X39vz2X8US" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2X39vz2X9nC" role="2OqNvi">
+                  <ref role="3TsBF5" to="sk9k:6sZBH0semtV" resolve="targetLanguage" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2X39vz2X8rc" role="3uHU7B">
+                <property role="Xl_RC" value="PMD for " />
               </node>
             </node>
           </node>

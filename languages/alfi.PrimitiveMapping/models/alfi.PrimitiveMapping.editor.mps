@@ -10,6 +10,7 @@
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -82,7 +83,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2X39vz2X4Pa">
-    <ref role="1XX52x" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
+    <ref role="1XX52x" to="sk9k:2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
     <node concept="3EZMnI" id="2X39vz2X4Pc" role="2wV5jI">
       <node concept="3F0ifn" id="2X39vz2X4Pm" role="3EZMnx">
         <property role="3F0ifm" value="map" />
@@ -132,31 +133,19 @@
     </node>
   </node>
   <node concept="24kQdi" id="2X39vz2X7tM">
-    <ref role="1XX52x" to="sk9k:2X39vz2X4b0" resolve="PrimitiveMappingDefinition" />
+    <ref role="1XX52x" to="sk9k:2X39vz2X4b0" resolve="MappingGroup" />
     <node concept="3EZMnI" id="2X39vz2X7tO" role="2wV5jI">
       <node concept="PMmxH" id="2X39vz2Xdkj" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
+      <node concept="3F0A7n" id="6sZBH0sb0ol" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
       <node concept="3EZMnI" id="2X39vz2Xhyk" role="3EZMnx">
         <node concept="l2Vlx" id="2X39vz2Xhyl" role="2iSdaV" />
-        <node concept="3F0ifn" id="2X39vz2XdkC" role="3EZMnx">
-          <property role="3F0ifm" value="for" />
-          <node concept="pVoyu" id="2X39vz2XdkK" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="2X39vz2XdkP" role="3EZMnx">
-          <ref role="1NtTu8" to="sk9k:2X39vz2X4b3" resolve="targetLanguage" />
-        </node>
         <node concept="3F0ifn" id="2X39vz2Xdlh" role="3EZMnx">
           <property role="3F0ifm" value="" />
           <node concept="pVoyu" id="2X39vz2Xdlp" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="2X39vz2Xdm8" role="3EZMnx">
-          <property role="3F0ifm" value="Mappings:" />
-          <node concept="pVoyu" id="2X39vz2Xdmm" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -169,9 +158,6 @@
           <node concept="pVoyu" id="2X39vz2XdlS" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="lj46D" id="2X39vz2Xdmo" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="pVoyu" id="2X39vz2XhzF" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -180,7 +166,60 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6sZBH0sfg5M" role="3EZMnx" />
       <node concept="l2Vlx" id="2X39vz2X7tR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6sZBH0sephz">
+    <ref role="1XX52x" to="sk9k:6sZBH0semtU" resolve="PrimitiveMappingDefinition" />
+    <node concept="3EZMnI" id="6sZBH0seph_" role="2wV5jI">
+      <node concept="PMmxH" id="6sZBH0sephA" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3EZMnI" id="6sZBH0sephC" role="3EZMnx">
+        <node concept="l2Vlx" id="6sZBH0sephD" role="2iSdaV" />
+        <node concept="3F0ifn" id="6sZBH0sephE" role="3EZMnx">
+          <property role="3F0ifm" value="for" />
+          <node concept="pVoyu" id="6sZBH0sephF" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="6sZBH0sephG" role="3EZMnx">
+          <ref role="1NtTu8" to="sk9k:6sZBH0semtV" resolve="targetLanguage" />
+        </node>
+        <node concept="3F0ifn" id="6sZBH0sephH" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="pVoyu" id="6sZBH0sephI" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6sZBH0sephJ" role="3EZMnx">
+          <property role="3F0ifm" value="Mappings:" />
+          <node concept="pVoyu" id="6sZBH0sephK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="6sZBH0sephL" role="3EZMnx">
+          <ref role="1NtTu8" to="sk9k:6sZBH0semtX" />
+          <node concept="l2Vlx" id="6sZBH0sephM" role="2czzBx" />
+          <node concept="pj6Ft" id="6sZBH0sephN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pVoyu" id="6sZBH0sephO" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="6sZBH0sephP" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="6sZBH0sephQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6sZBH0sephR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6sZBH0sephS" role="2iSdaV" />
     </node>
   </node>
 </model>

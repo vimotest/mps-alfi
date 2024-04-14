@@ -383,11 +383,6 @@
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -6143,17 +6138,6 @@
         </node>
         <node concept="27VH4U" id="6sZBH0rS76j" role="2jiSrf">
           <node concept="3clFbS" id="6sZBH0rS76k" role="2VODD2">
-            <node concept="2xdQw9" id="6sZBH0rUD3S" role="3cqZAp">
-              <node concept="3cpWs3" id="6sZBH0rVwZu" role="9lYJi">
-                <node concept="Xl_RD" id="6sZBH0rUD3U" role="3uHU7B">
-                  <property role="Xl_RC" value="## type=" />
-                </node>
-                <node concept="2OqwBi" id="6sZBH0rVwZA" role="3uHU7w">
-                  <node concept="7Obwk" id="6sZBH0rVwZB" role="2Oq$k0" />
-                  <node concept="3JvlWi" id="6sZBH0rVwZC" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
             <node concept="Jncv_" id="6sZBH0rS97N" role="3cqZAp">
               <ref role="JncvD" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
               <node concept="3clFbS" id="6sZBH0rS97P" role="Jncv$">

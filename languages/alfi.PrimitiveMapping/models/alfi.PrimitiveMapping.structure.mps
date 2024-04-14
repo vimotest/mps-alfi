@@ -54,15 +54,10 @@
   </registry>
   <node concept="1TIwiD" id="2X39vz2X4b0">
     <property role="EcuMT" value="3405607493575131840" />
-    <property role="TrG5h" value="PrimitiveMappingDefinition" />
+    <property role="TrG5h" value="MappingGroup" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="PMD" />
+    <property role="34LRSv" value="group" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2X39vz2X4b3" role="1TKVEl">
-      <property role="IQ2nx" value="3405607493575131843" />
-      <property role="TrG5h" value="targetLanguage" />
-      <ref role="AX2Wp" node="2X39vz2X4b1" resolve="Language" />
-    </node>
     <node concept="PrWs8" id="2X39vz2X7tY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -71,7 +66,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="mappings" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2X39vz2X4b5" resolve="MappingRule" />
+      <ref role="20lvS9" node="2X39vz2X4b5" resolve="PrimitiveMappingDefinition" />
     </node>
   </node>
   <node concept="25R3W" id="2X39vz2X4b1">
@@ -98,6 +93,28 @@
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6sZBH0semtU">
+    <property role="EcuMT" value="7439839726103259002" />
+    <property role="TrG5h" value="PrimitiveMappingDefinition" />
+    <property role="34LRSv" value="PMD" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="6sZBH0semtV" role="1TKVEl">
+      <property role="IQ2nx" value="7439839726103259003" />
+      <property role="TrG5h" value="targetLanguage" />
+      <ref role="AX2Wp" node="2X39vz2X4b1" resolve="Language" />
+    </node>
+    <node concept="1TJgyj" id="6sZBH0semtX" role="1TKVEi">
+      <property role="IQ2ns" value="7439839726103259005" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="groups" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2X39vz2X4b0" resolve="MappingGroup" />
+    </node>
+    <node concept="PrWs8" id="6sZBH0ser7T" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
