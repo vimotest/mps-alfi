@@ -171,6 +171,13 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="units.classifiers" />
     <ref role="1TJDcQ" node="2SMO68r$0GW" resolve="NamespaceDefinition" />
+    <node concept="1TJgyj" id="2SV$eY8tIcl" role="1TKVEi">
+      <property role="IQ2ns" value="3331415707831690005" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="templateParameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2SV$eY8tB1O" resolve="ClassifierTemplateParameter" />
+    </node>
     <node concept="1TJgyj" id="1KdBIfX5Xzl" role="1TKVEi">
       <property role="IQ2ns" value="2021446509800184021" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1834,11 +1841,23 @@
     <property role="TrG5h" value="EmptyLineNamespaceMember" />
     <property role="34LRSv" value="empty line" />
     <ref role="1TJDcQ" node="2SMO68r$0GM" resolve="NamespaceMember" />
+    <node concept="1TJgyj" id="2SV$eY8_q3Y" role="1TKVEi">
+      <property role="IQ2ns" value="3331415707833704702" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="comment" />
+      <ref role="20lvS9" node="2SMO68r_3QK" resolve="EndOfLineComment" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2SV$eY8gJiu">
     <property role="EcuMT" value="3331415707828286622" />
     <property role="3GE5qa" value="units.util" />
     <property role="TrG5h" value="ICanHaveEmptyLineNamespaceMember" />
+  </node>
+  <node concept="1TIwiD" id="2SV$eY8tB1O">
+    <property role="EcuMT" value="3331415707831660660" />
+    <property role="3GE5qa" value="units.classifiers.templates" />
+    <property role="TrG5h" value="ClassifierTemplateParameter" />
+    <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
   </node>
 </model>
 

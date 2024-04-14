@@ -1137,5 +1137,22 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2SV$eY8tB1P">
+    <property role="3GE5qa" value="units.classifiers.templates" />
+    <ref role="1M2myG" to="28lk:2SV$eY8tB1O" resolve="ClassifierTemplateParameter" />
+    <node concept="9S07l" id="2SV$eY8tBfp" role="9Vyp8">
+      <node concept="3clFbS" id="2SV$eY8tBfq" role="2VODD2">
+        <node concept="3clFbF" id="2SV$eY8tBDp" role="3cqZAp">
+          <node concept="17QLQc" id="2SV$eY8tDMp" role="3clFbG">
+            <node concept="359W_D" id="2SV$eY8tG2w" role="3uHU7w">
+              <ref role="359W_E" to="28lk:2SMO68r$0GW" resolve="NamespaceDefinition" />
+              <ref role="359W_F" to="28lk:2SMO68r$0GX" />
+            </node>
+            <node concept="2DA6wF" id="2SV$eY8tBDo" role="3uHU7B" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
