@@ -5,6 +5,10 @@ This document describes all current known problems with alfi.
 ## General
 
 - Assignment Expressions for names that are not yet defined before (declaration by assignment)
+- SequenceOperations are only partially supported, especially those which yield sequences again
+- SequenceOperatios: ClassExtend is not supported
+- TemplateBinding in NameBinding not supported yet
+- 
 
 ## Generators
 
@@ -25,7 +29,6 @@ This document describes all current known problems with alfi.
     - Define the variable in the beginning of the method (optionally initialize it)
     - Set the value of the container at the end of the method and before every return statement (from the defined variable)
     - Do respective packing and unpacking around invocations
-- Not Implemented in generators: Feature Invocation, Super Invocation, Instance Creation, Assignment_FeatureLeftHandSide, PropertyAccess, and so on once we have classes and a type system
 - Unbounded Values cannot be represented in other languages
   - -> Currently we throw an error if the generator encounters it in a place where it would need to be translated
 
