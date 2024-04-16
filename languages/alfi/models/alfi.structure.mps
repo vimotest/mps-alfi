@@ -1520,6 +1520,7 @@
     <property role="EcuMT" value="2021446509811517476" />
     <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
     <property role="TrG5h" value="TypedElementDefinition" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="2SMO68r$0GM" resolve="NamespaceMember" />
     <node concept="1TJgyj" id="1KdBIfXLcw_" role="1TKVEi">
       <property role="IQ2ns" value="2021446509811517477" />
@@ -1893,6 +1894,13 @@
     <property role="3GE5qa" value="expressions.primary.invocation" />
     <property role="R4oN_" value="The target of a sequence operation, reduction or expansion expression, which may be either a primary expression or a class \nname denoting the class extent." />
     <property role="EcuMT" value="7439839726096719270" />
+  </node>
+  <node concept="1TIwiD" id="4D6i1lAC2_1">
+    <property role="EcuMT" value="5352044463929698625" />
+    <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
+    <property role="TrG5h" value="AdHocTypedElementDefinition" />
+    <property role="R4oN_" value="This concept is only for type system purposes (see AlfTypeHelper)" />
+    <ref role="1TJDcQ" node="1KdBIfXLcw$" resolve="TypedElementDefinition" />
   </node>
 </model>
 
