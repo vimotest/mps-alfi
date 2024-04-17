@@ -2763,16 +2763,9 @@
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="6V5L28uZVen" role="1ZfhKB">
-          <node concept="1Z2H0r" id="6V5L28uZVeo" role="mwGJk">
-            <node concept="2OqwBi" id="6V5L28uZVrd" role="1Z2MuG">
-              <node concept="1YBJjd" id="6V5L28uZVep" role="2Oq$k0">
-                <ref role="1YBMHb" node="6V5L28uZTpI" resolve="typedElementDefinition" />
-              </node>
-              <node concept="3TrEf2" id="6V5L28uZVFx" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
-              </node>
-            </node>
+        <node concept="mw_s8" id="6b3L3S$z5Ti" role="1ZfhKB">
+          <node concept="1YBJjd" id="6b3L3S$z5Tg" role="mwGJk">
+            <ref role="1YBMHb" node="6V5L28uZTpI" resolve="typedElementDefinition" />
           </node>
         </node>
       </node>
