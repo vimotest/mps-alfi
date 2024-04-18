@@ -5793,6 +5793,56 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="74z8RZk0BTj" role="13h7CS">
+      <property role="TrG5h" value="getTypeNameTarget" />
+      <node concept="3Tm1VV" id="74z8RZk0BTk" role="1B3o_S" />
+      <node concept="3Tqbb2" id="74z8RZk0BZI" role="3clF45">
+        <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+      </node>
+      <node concept="3clFbS" id="74z8RZk0BTm" role="3clF47">
+        <node concept="Jncv_" id="74z8RZk0DJY" role="3cqZAp">
+          <ref role="JncvD" to="28lk:1KdBIfXINNb" resolve="QualifiedTypeName" />
+          <node concept="2OqwBi" id="74z8RZk0DOb" role="JncvB">
+            <node concept="13iPFW" id="74z8RZk0DKR" role="2Oq$k0" />
+            <node concept="3TrEf2" id="74z8RZk0DPC" role="2OqNvi">
+              <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="74z8RZk0DK2" role="Jncv$">
+            <node concept="3cpWs6" id="74z8RZk0EEf" role="3cqZAp">
+              <node concept="2OqwBi" id="74z8RZk0Eae" role="3cqZAk">
+                <node concept="Jnkvi" id="74z8RZk0DVz" role="2Oq$k0">
+                  <ref role="1M0zk5" node="74z8RZk0DK4" resolve="typeName" />
+                </node>
+                <node concept="2qgKlT" id="74z8RZk0Ev2" role="2OqNvi">
+                  <ref role="37wK5l" node="4jcHaHwBVih" resolve="getTarget" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="74z8RZk0DK4" role="JncvA">
+            <property role="TrG5h" value="typeName" />
+            <node concept="2jxLKc" id="74z8RZk0DK5" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="1gVbGN" id="74z8RZk0Fud" role="3cqZAp">
+          <node concept="2OqwBi" id="74z8RZk0Gbw" role="1gVkn0">
+            <node concept="2OqwBi" id="74z8RZk0FJz" role="2Oq$k0">
+              <node concept="13iPFW" id="74z8RZk0Fv$" role="2Oq$k0" />
+              <node concept="3TrEf2" id="74z8RZk0G0V" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="74z8RZk0Gnr" role="2OqNvi">
+              <ref role="3TsBF5" to="28lk:1KdBIfXINz7" resolve="isAny" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="74z8RZk0DTr" role="3cqZAp">
+          <node concept="13iPFW" id="74z8RZk0EFu" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="1KdBIfXQcOz" role="13h7CW">
       <node concept="3clFbS" id="1KdBIfXQcO$" role="2VODD2" />
     </node>
@@ -6710,7 +6760,7 @@
         <node concept="3clFbJ" id="46wqe1xGTbg" role="3cqZAp">
           <node concept="3clFbS" id="46wqe1xGTbh" role="3clFbx">
             <node concept="Jncv_" id="46wqe1xGTbi" role="3cqZAp">
-              <ref role="JncvD" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+              <ref role="JncvD" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
               <node concept="3clFbS" id="46wqe1xGTbj" role="Jncv$">
                 <node concept="Jncv_" id="46wqe1xGTbk" role="3cqZAp">
                   <ref role="JncvD" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
@@ -6718,8 +6768,8 @@
                     <node concept="Jnkvi" id="46wqe1xGTbm" role="2Oq$k0">
                       <ref role="1M0zk5" node="46wqe1xGTb_" resolve="nameReference" />
                     </node>
-                    <node concept="3TrEf2" id="46wqe1xGTbn" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
+                    <node concept="2qgKlT" id="74z8RZk02NP" role="2OqNvi">
+                      <ref role="37wK5l" node="74z8RZk0BTj" resolve="getTypeNameTarget" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="46wqe1xGTbo" role="Jncv$">
@@ -6758,7 +6808,7 @@
                 </node>
               </node>
               <node concept="JncvC" id="46wqe1xGTb_" role="JncvA">
-                <property role="TrG5h" value="nameReference" />
+                <property role="TrG5h" value="type" />
                 <node concept="2jxLKc" id="46wqe1xGTbA" role="1tU5fm" />
               </node>
               <node concept="2OqwBi" id="46wqe1xGTbB" role="JncvB">
