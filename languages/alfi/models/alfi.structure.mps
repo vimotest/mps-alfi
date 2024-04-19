@@ -1903,5 +1903,12 @@
     <property role="R4oN_" value="This concept is only for type system purposes (see AlfTypeHelper)" />
     <ref role="1TJDcQ" node="1KdBIfXLcw$" resolve="TypedElementDefinition" />
   </node>
+  <node concept="1TIwiD" id="74z8RZk6PrV">
+    <property role="EcuMT" value="8152398782397110011" />
+    <property role="3GE5qa" value="expressions.primary.literal" />
+    <property role="TrG5h" value="NullExpression" />
+    <property role="34LRSv" value="null" />
+    <ref role="1TJDcQ" node="2kuSLC0kNK3" resolve="LiteralExpression" />
+  </node>
 </model>
 
