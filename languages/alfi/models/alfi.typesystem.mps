@@ -222,7 +222,6 @@
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
-      <concept id="1174665551739" name="jetbrains.mps.lang.typesystem.structure.TypeVarDeclaration" flags="ng" index="1ZxtTE" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
@@ -3264,9 +3263,6 @@
     <property role="TrG5h" value="typeof_SequenceOperationExpression" />
     <property role="3GE5qa" value="expressions.primary.invocation" />
     <node concept="3clFbS" id="4CF2Tg3KzIx" role="18ibNy">
-      <node concept="1ZxtTE" id="4CF2Tg3LvI1" role="3cqZAp">
-        <property role="TrG5h" value="T" />
-      </node>
       <node concept="3SKdUt" id="4CF2Tg3KInV" role="3cqZAp">
         <node concept="1PaTwC" id="4CF2Tg3KInW" role="1aUNEU">
           <node concept="3oM_SD" id="4CF2Tg3KIoH" role="1PaTwD">
@@ -3421,16 +3417,11 @@
                             </node>
                           </node>
                           <node concept="mw_s8" id="4CF2Tg3KOaa" role="1ZfhKB">
-                            <node concept="2YIFZM" id="4CF2Tg3KOaP" role="mwGJk">
-                              <ref role="37wK5l" to="bqjt:US4hClMbyw" resolve="toTypeDefinition" />
+                            <node concept="2YIFZM" id="2SUSvesnZKE" role="mwGJk">
+                              <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="toStandardMultiplicity" />
                               <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
-                              <node concept="2OqwBi" id="4CF2Tg3KOdT" role="37wK5m">
-                                <node concept="37vLTw" id="4CF2Tg3KOb6" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4CF2Tg3KNw8" resolve="type" />
-                                </node>
-                                <node concept="3TrEf2" id="4CF2Tg3KOf1" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
-                                </node>
+                              <node concept="37vLTw" id="2SUSvesnZKG" role="37wK5m">
+                                <ref role="3cqZAo" node="4CF2Tg3KNw8" resolve="type" />
                               </node>
                             </node>
                           </node>
@@ -3507,6 +3498,70 @@
     <node concept="1YaCAy" id="4CF2Tg3KzIz" role="1YuTPh">
       <property role="TrG5h" value="sequenceOperation" />
       <ref role="1YaFvo" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2SUSvesnHmT">
+    <property role="TrG5h" value="typeof_NullCoalescingExpression" />
+    <property role="3GE5qa" value="expressions.binary" />
+    <node concept="3clFbS" id="2SUSvesnHmU" role="18ibNy">
+      <node concept="nvevp" id="2SUSvesnIQb" role="3cqZAp">
+        <property role="2Z_7o9" value="true" />
+        <node concept="3clFbS" id="2SUSvesnIQc" role="nvhr_">
+          <node concept="3cpWs8" id="2SUSvesnIQd" role="3cqZAp">
+            <node concept="3cpWsn" id="2SUSvesnIQe" role="3cpWs9">
+              <property role="TrG5h" value="type" />
+              <node concept="3Tqbb2" id="2SUSvesnIQf" role="1tU5fm">
+                <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+              </node>
+              <node concept="1PxgMI" id="2SUSvesnIQg" role="33vP2m">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="2SUSvesnIQh" role="3oSUPX">
+                  <ref role="cht4Q" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+                </node>
+                <node concept="2X3wrD" id="2SUSvesnIQi" role="1m5AlR">
+                  <ref role="2X3Bk0" node="2SUSvesnIQs" resolve="primaryType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Z5TYs" id="2SUSvesnIQj" role="3cqZAp">
+            <node concept="mw_s8" id="2SUSvesnIQk" role="1ZfhK$">
+              <node concept="1Z2H0r" id="2SUSvesnIQl" role="mwGJk">
+                <node concept="1YBJjd" id="2SUSvesnIQm" role="1Z2MuG">
+                  <ref role="1YBMHb" node="2SUSvesnHmW" resolve="nullCoalescingExpression" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="2SUSvesnIQn" role="1ZfhKB">
+              <node concept="2YIFZM" id="2SUSvesnZTD" role="mwGJk">
+                <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="toStandardMultiplicity" />
+                <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
+                <node concept="37vLTw" id="2SUSvesnZTF" role="37wK5m">
+                  <ref role="3cqZAo" node="2SUSvesnIQe" resolve="type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="2SUSvesnIQs" role="2X0Ygz">
+          <property role="TrG5h" value="leftType" />
+          <node concept="2jxLKc" id="2SUSvesnIQt" role="1tU5fm" />
+        </node>
+        <node concept="1Z2H0r" id="2SUSvesnIQu" role="nvjzm">
+          <node concept="2OqwBi" id="2SUSvesnOA4" role="1Z2MuG">
+            <node concept="1YBJjd" id="2SUSvesnOA5" role="2Oq$k0">
+              <ref role="1YBMHb" node="2SUSvesnHmW" resolve="nullCoalescingExpression" />
+            </node>
+            <node concept="3TrEf2" id="2SUSvesnOA6" role="2OqNvi">
+              <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2SUSvesnHmW" role="1YuTPh">
+      <property role="TrG5h" value="nullCoalescingExpression" />
+      <ref role="1YaFvo" to="28lk:2SUSvesnB$R" resolve="NullCoalescingExpression" />
     </node>
   </node>
 </model>

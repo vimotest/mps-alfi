@@ -78,6 +78,7 @@
       <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
         <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
       </concept>
+      <concept id="3331223310810642743" name="alfi.structure.NullCoalescingExpression" flags="ng" index="2Mp9z4" />
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -4350,47 +4351,52 @@
               </node>
             </node>
             <node concept="_vku0" id="4CF2Tg3G5sy" role="_uFfl">
-              <node concept="1WUwfO" id="4CF2Tg3QrEa" role="_vku1">
-                <node concept="_vnHb" id="4CF2Tg3QrEq" role="1WUwfQ">
-                  <node concept="2RqM1Q" id="4CF2Tg3QrED" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
-                  </node>
+              <node concept="2Mp9z4" id="2SUSvesq7zy" role="_vku1">
+                <node concept="_iklQ" id="2SUSvesq7TM" role="31szGQ">
+                  <property role="_iklR" value="null" />
                 </node>
-                <node concept="_vku0" id="4CF2Tg3QrES" role="_uFfl">
-                  <node concept="32T38h" id="4CF2Tg3QrQ2" role="_vku1">
-                    <property role="32T38g" value="1" />
+                <node concept="1WUwfO" id="2SUSvesq7zE" role="31szGO">
+                  <node concept="_vnHb" id="2SUSvesq7zF" role="1WUwfQ">
+                    <node concept="2RqM1Q" id="2SUSvesq7zG" role="_vnH8">
+                      <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
+                    </node>
                   </node>
-                </node>
-                <node concept="32M0$0" id="4CF2Tg3QrxI" role="1WUwdW">
-                  <node concept="32Pqhl" id="4CF2Tg3QrxJ" role="32PqmZ">
-                    <node concept="1WUwfO" id="4CF2Tg3G6Oo" role="32Men7">
-                      <node concept="_vnHb" id="4CF2Tg3G6Ow" role="1WUwfQ">
-                        <node concept="2RqM1Q" id="4CF2Tg3G6OB" role="_vnH8">
-                          <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
+                  <node concept="_vku0" id="2SUSvesq7zH" role="_uFfl">
+                    <node concept="32T38h" id="2SUSvesq7zI" role="_vku1">
+                      <property role="32T38g" value="1" />
+                    </node>
+                  </node>
+                  <node concept="32M0$0" id="2SUSvesq7zJ" role="1WUwdW">
+                    <node concept="32Pqhl" id="2SUSvesq7zK" role="32PqmZ">
+                      <node concept="1WUwfO" id="2SUSvesq7zL" role="32Men7">
+                        <node concept="_vnHb" id="2SUSvesq7zM" role="1WUwfQ">
+                          <node concept="2RqM1Q" id="2SUSvesq7zN" role="_vnH8">
+                            <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="_vku0" id="4CF2Tg3G6OI" role="_uFfl">
-                        <node concept="32T38h" id="4CF2Tg3G6Z3" role="_vku1">
-                          <property role="32T38g" value="1" />
+                        <node concept="_vku0" id="2SUSvesq7zO" role="_uFfl">
+                          <node concept="32T38h" id="2SUSvesq7zP" role="_vku1">
+                            <property role="32T38g" value="1" />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="32M0$0" id="4CF2Tg3G6FO" role="1WUwdW">
-                        <node concept="32Pqhl" id="4CF2Tg3G6FP" role="32PqmZ">
-                          <node concept="_uYbk" id="4CF2Tg3G6Dv" role="32Men7">
-                            <node concept="_vnHb" id="4CF2Tg3G6Dw" role="_uYbl">
-                              <node concept="2RqM1Q" id="4CF2Tg3G6Dx" role="_vnH8">
-                                <ref role="2RqM1R" node="US4hCmlYXp" resolve="sequenceHolder" />
+                        <node concept="32M0$0" id="2SUSvesq7zQ" role="1WUwdW">
+                          <node concept="32Pqhl" id="2SUSvesq7zR" role="32PqmZ">
+                            <node concept="_uYbk" id="2SUSvesq7zS" role="32Men7">
+                              <node concept="_vnHb" id="2SUSvesq7zT" role="_uYbl">
+                                <node concept="2RqM1Q" id="2SUSvesq7zU" role="_vnH8">
+                                  <ref role="2RqM1R" node="US4hCmlYXp" resolve="sequenceHolder" />
+                                </node>
                               </node>
                             </node>
-                          </node>
-                          <node concept="_vnHe" id="4CF2Tg3G6Nc" role="32Men1">
-                            <ref role="3acloq" node="4CF2Tg3G1Je" resolve="rows" />
+                            <node concept="_vnHe" id="2SUSvesq7zV" role="32Men1">
+                              <ref role="3acloq" node="4CF2Tg3G1Je" resolve="rows" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="_vnHe" id="4CF2Tg3QrDn" role="32Men1">
-                      <ref role="3acloq" node="4CF2Tg3G3zC" resolve="values" />
+                      <node concept="_vnHe" id="2SUSvesq7zW" role="32Men1">
+                        <ref role="3acloq" node="4CF2Tg3G3zC" resolve="values" />
+                      </node>
                     </node>
                   </node>
                 </node>

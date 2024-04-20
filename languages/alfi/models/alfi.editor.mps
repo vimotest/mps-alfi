@@ -3089,8 +3089,8 @@
     <property role="TrG5h" value="BinaryExpression_Operator_EC" />
     <property role="3GE5qa" value="expressions.binary" />
     <ref role="1XX52x" to="28lk:6cBsaQylkIo" resolve="BinaryExpression" />
-    <node concept="3F0ifn" id="6cBsaQylkJe" role="2wV5jI">
-      <property role="3F0ifm" value="" />
+    <node concept="PMmxH" id="2SUSvesnHmR" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="PKFIW" id="6cBsaQylkJS">

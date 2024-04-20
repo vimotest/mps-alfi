@@ -155,6 +155,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -7471,6 +7472,34 @@
         <property role="TrG5h" value="typeName" />
         <node concept="3Tqbb2" id="US4hClMb$P" role="1tU5fm">
           <ref role="ehGHo" to="28lk:1KdBIfXINz6" resolve="TypeName" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2SUSvesnX4m" role="jymVt">
+      <property role="TrG5h" value="toStandardMultiplicity" />
+      <node concept="3clFbS" id="2SUSvesnX4n" role="3clF47">
+        <node concept="3cpWs6" id="2SUSvesnZsA" role="3cqZAp">
+          <node concept="1rXfSq" id="2SUSvesnZzz" role="3cqZAk">
+            <ref role="37wK5l" node="US4hClMbyw" resolve="toTypeDefinition" />
+            <node concept="2OqwBi" id="2SUSvesnZAY" role="37wK5m">
+              <node concept="37vLTw" id="2SUSvesnZAZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2SUSvesnX4E" resolve="type" />
+              </node>
+              <node concept="3TrEf2" id="2SUSvesnZB0" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2SUSvesnX4C" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2SUSvesnX4D" role="3clF45">
+        <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+      </node>
+      <node concept="37vLTG" id="2SUSvesnX4E" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="2SUSvesnX4F" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
         </node>
       </node>
     </node>

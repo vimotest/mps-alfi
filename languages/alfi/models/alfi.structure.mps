@@ -1910,5 +1910,12 @@
     <property role="34LRSv" value="null" />
     <ref role="1TJDcQ" node="2kuSLC0kNK3" resolve="LiteralExpression" />
   </node>
+  <node concept="1TIwiD" id="2SUSvesnB$R">
+    <property role="EcuMT" value="3331223310810642743" />
+    <property role="3GE5qa" value="expressions.binary" />
+    <property role="TrG5h" value="NullCoalescingExpression" />
+    <property role="34LRSv" value="??" />
+    <ref role="1TJDcQ" node="6cBsaQylkIo" resolve="BinaryExpression" />
+  </node>
 </model>
 
