@@ -1512,6 +1512,16 @@
       <property role="TrG5h" value="ForStatementTest" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="2HakVwV1UU5" role="PCHGa">
+        <node concept="PDIRi" id="74z8RZkrPLg" role="PCHzz">
+          <node concept="1PaTwC" id="74z8RZkrPLh" role="I4nmN">
+            <node concept="3oM_SD" id="74z8RZkrPLi" role="1PaTwD">
+              <property role="3oM_SC" value="print" />
+            </node>
+            <node concept="3oM_SD" id="74z8RZkrPMG" role="1PaTwD">
+              <property role="3oM_SC" value="5,6,7,8,9" />
+            </node>
+          </node>
+        </node>
         <node concept="32xATA" id="2HakVwV1UU6" role="PCHzz">
           <node concept="32xAYJ" id="2HakVwV1UU7" role="32xgzx">
             <property role="TrG5h" value="i" />
