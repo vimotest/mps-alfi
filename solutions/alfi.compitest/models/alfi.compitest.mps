@@ -43,6 +43,9 @@
       <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt" />
       <concept id="6254876434755085380" name="alfi.structure.SequenceFlag" flags="ng" index="hh2MY" />
       <concept id="1820071129312113837" name="alfi.structure.CustomStereotypeName" flags="ng" index="2hPomx" />
+      <concept id="1820071129312107522" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="2hPqOe">
+        <property id="1820071129312120005" name="stereotype" index="2hPvR9" />
+      </concept>
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
@@ -4407,7 +4410,9 @@
                 <ref role="2RqM1R" node="4CF2Tg3G33J" resolve="SeqRow" />
               </node>
             </node>
-            <node concept="_vku0" id="4CF2Tg3G469" role="_uFfl" />
+            <node concept="_vku0" id="4CF2Tg3G469" role="_uFfl">
+              <node concept="_jtWu" id="2jVOGaCX0X0" role="_vku1" />
+            </node>
           </node>
           <node concept="3xHE8C" id="4CF2Tg3G4ow" role="327w9S">
             <node concept="2RqM1Q" id="4CF2Tg3G4ou" role="_vnH8">
@@ -4720,6 +4725,45 @@
     <node concept="6nSm2" id="4CF2Tg3G33J" role="3mGtxP">
       <property role="TrG5h" value="SeqRow" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
+      <node concept="6nSm6" id="2jVOGaCWDpj" role="PCHHv">
+        <property role="TrG5h" value="SeqRow" />
+        <node concept="3xR696" id="2jVOGaCWVU5" role="PCHHv">
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <property role="TrG5h" value="marked" />
+          <node concept="3xHE8C" id="2jVOGaCWVWB" role="3xMlr6">
+            <node concept="2RqM1Q" id="2jVOGaCWVWA" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            </node>
+          </node>
+        </node>
+        <node concept="PCHzy" id="2jVOGaCWDpk" role="GbAUv">
+          <node concept="_jtW9" id="2jVOGaCWDrB" role="PCHzz">
+            <node concept="3122gz" id="2jVOGaCWDtv" role="_jtWe">
+              <node concept="3122rM" id="2jVOGaCWDtS" role="315$Eb">
+                <node concept="32Pqhl" id="2jVOGaCWDrG" role="3122rd">
+                  <node concept="_iR_j" id="2jVOGaCWDr_" role="32Men7" />
+                  <node concept="_vnHe" id="2jVOGaCWDs8" role="32Men1">
+                    <ref role="3acloq" node="3XRuvKmqqzQ" resolve="marked" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_uYbk" id="2jVOGaCWW26" role="315$E5">
+                <node concept="_vnHb" id="2jVOGaCWW28" role="_uYbl">
+                  <node concept="2RqM1Q" id="2jVOGaCWW2a" role="_vnH8">
+                    <ref role="2RqM1R" node="2jVOGaCWVU5" resolve="marked" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3wUxaT" id="2jVOGaCWDwN" role="3wUx9_">
+          <node concept="2hPqOe" id="2jVOGaCWDwP" role="2hPqOu">
+            <property role="2hPvR9" value="1_2cgM8Air9/Create" />
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="2jVOGaCWDqo" role="PCHHv" />
       <node concept="6lMYc" id="4CF2Tg3G3zC" role="PCHHv">
         <property role="TrG5h" value="values" />
         <node concept="3xHE8C" id="4CF2Tg3G3zD" role="3xMlr6">
@@ -4739,7 +4783,6 @@
             <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
           </node>
         </node>
-        <node concept="_jtWu" id="3XRuvKmqqAe" role="6k5i9" />
       </node>
     </node>
     <node concept="3mGtyY" id="4CF2Tg3G33N" role="3mGtxR">
