@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping" version="0" />
+    <use id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" version="0" />
     <engage id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toBaseLanguage" />
     <engage id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping" />
   </languages>
@@ -11,6 +13,7 @@
     <import index="hsxa" ref="r:4c138178-7acc-4278-9b8a-f54e3af48fe0(testing)" />
     <import index="lodc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library.primitivebehaviors(alfi.StandardModelLibrary/)" />
     <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
+    <import index="u132" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:junit.framework(JUnit/)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -91,7 +94,7 @@
     </node>
     <node concept="6nSm2" id="37zNn5L0WdC" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="MyTests" />
+      <property role="TrG5h" value="MyTestSuite" />
       <node concept="3wUxaT" id="37zNn5L0Wej" role="3wUx9_">
         <node concept="113yj2" id="37zNn5L0WeY" role="2hPqOu">
           <ref role="113tg7" to="hsxa:37zNn5KYY1p" resolve="TestSuite" />
@@ -204,7 +207,7 @@
   <node concept="3mGtxK" id="37zNn5Lj3nT">
     <node concept="PCHHj" id="37zNn5Lj3oz" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="MySingleTest" />
+      <property role="TrG5h" value="MySingleTestCase" />
       <node concept="PCHzy" id="37zNn5Lj3p_" role="PCHGa">
         <node concept="_jtW9" id="37zNn5Lj3_5" role="PCHzz">
           <node concept="_uF8j" id="37zNn5Lj3_6" role="_jtWe">
