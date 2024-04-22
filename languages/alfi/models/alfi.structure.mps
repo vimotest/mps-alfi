@@ -1722,6 +1722,9 @@
     <node concept="PrWs8" id="2SV$eY8gJmZ" role="PzmwI">
       <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
     </node>
+    <node concept="PrWs8" id="37zNn5Ly4H0" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
     <property role="EcuMT" value="3120704408893095334" />

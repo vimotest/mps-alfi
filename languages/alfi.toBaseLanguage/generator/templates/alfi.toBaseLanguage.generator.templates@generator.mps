@@ -22,6 +22,7 @@
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="hsxa" ref="r:4c138178-7acc-4278-9b8a-f54e3af48fe0(testing)" />
     <import index="yqm7" ref="63b449db-0918-4a4a-a891-2c430ab133e4/java:org.junit.jupiter.api(org.junit.junit5/)" />
+    <import index="cvlm" ref="49808fad-9d41-4b96-83fa-9231640f6b2b/java:org.junit.runner(JUnit/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
@@ -265,6 +266,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -8860,6 +8864,34 @@
               </node>
             </node>
           </node>
+          <node concept="2tJIrI" id="37zNn5LxC6y" role="jymVt" />
+          <node concept="2YIFZL" id="37zNn5LxCcV" role="jymVt">
+            <property role="TrG5h" value="main" />
+            <node concept="37vLTG" id="37zNn5LxCcW" role="3clF46">
+              <property role="TrG5h" value="args" />
+              <node concept="10Q1$e" id="37zNn5LxCcX" role="1tU5fm">
+                <node concept="17QB3L" id="37zNn5LxCcY" role="10Q1$1" />
+              </node>
+            </node>
+            <node concept="3cqZAl" id="37zNn5LxCcZ" role="3clF45" />
+            <node concept="3Tm1VV" id="37zNn5LxCd0" role="1B3o_S" />
+            <node concept="3clFbS" id="37zNn5LxCd1" role="3clF47">
+              <node concept="3clFbF" id="37zNn5LxGou" role="3cqZAp">
+                <node concept="2YIFZM" id="37zNn5LxGpr" role="3clFbG">
+                  <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...)" resolve="main" />
+                  <ref role="1Pybhc" to="cvlm:~JUnitCore" resolve="JUnitCore" />
+                  <node concept="2OqwBi" id="37zNn5LxNXq" role="37wK5m">
+                    <node concept="3VsKOn" id="37zNn5LxMIW" role="2Oq$k0">
+                      <ref role="3VsUkX" node="37zNn5LldR_" resolve="map_ActivityDefinition_toTest" />
+                    </node>
+                    <node concept="liA8E" id="37zNn5LxPbW" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3Tm1VV" id="37zNn5LldRA" role="1B3o_S" />
           <node concept="17Uvod" id="37zNn5Llev_" role="lGtFl">
             <property role="2qtEX9" value="name" />
@@ -8925,6 +8957,33 @@
                         <ref role="3TtcxE" to="28lk:2SMO68r$0GX" />
                       </node>
                       <node concept="30H73N" id="37zNn5LlmOV" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZL" id="37zNn5LxPma" role="jymVt">
+            <property role="TrG5h" value="main" />
+            <node concept="37vLTG" id="37zNn5LxPmb" role="3clF46">
+              <property role="TrG5h" value="args" />
+              <node concept="10Q1$e" id="37zNn5LxPmc" role="1tU5fm">
+                <node concept="17QB3L" id="37zNn5LxPmd" role="10Q1$1" />
+              </node>
+            </node>
+            <node concept="3cqZAl" id="37zNn5LxPme" role="3clF45" />
+            <node concept="3Tm1VV" id="37zNn5LxPmf" role="1B3o_S" />
+            <node concept="3clFbS" id="37zNn5LxPmg" role="3clF47">
+              <node concept="3clFbF" id="37zNn5LxPmh" role="3cqZAp">
+                <node concept="2YIFZM" id="37zNn5LxPmi" role="3clFbG">
+                  <ref role="37wK5l" to="cvlm:~JUnitCore.main(java.lang.String...)" resolve="main" />
+                  <ref role="1Pybhc" to="cvlm:~JUnitCore" resolve="JUnitCore" />
+                  <node concept="2OqwBi" id="37zNn5LxPmj" role="37wK5m">
+                    <node concept="3VsKOn" id="37zNn5LxPmk" role="2Oq$k0">
+                      <ref role="3VsUkX" node="37zNn5LldPI" resolve="map_ClassDefinition_toTest" />
+                    </node>
+                    <node concept="liA8E" id="37zNn5LxPml" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>

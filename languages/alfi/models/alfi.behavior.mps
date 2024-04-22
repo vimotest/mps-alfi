@@ -23,6 +23,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
+    <import index="nlf1" ref="r:7f489494-339f-481c-be61-2af4deb51551(jetbrains.mps.execution.util.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -7099,6 +7100,22 @@
     </node>
     <node concept="13hLZK" id="6V5L28v3FpO" role="13h7CW">
       <node concept="3clFbS" id="6V5L28v3FpP" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="37zNn5Ly58M" role="13h7CS">
+      <property role="TrG5h" value="isNodeRunnable" />
+      <ref role="13i0hy" to="nlf1:431DWIovi3C" resolve="isNodeRunnable" />
+      <node concept="3Tm1VV" id="37zNn5Ly58N" role="1B3o_S" />
+      <node concept="3clFbS" id="37zNn5Ly58U" role="3clF47">
+        <node concept="3cpWs6" id="37zNn5Ly5xU" role="3cqZAp">
+          <node concept="BsUDl" id="37zNn5Ly5zD" role="3cqZAk">
+            <ref role="37wK5l" node="1o9RtatNMEN" resolve="containsStereotype" />
+            <node concept="Xl_RD" id="37zNn5Ly5$9" role="37wK5m">
+              <property role="Xl_RC" value="TestSuite" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="37zNn5Ly58V" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3pX5J2Sf4qO">
