@@ -210,6 +210,23 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="37zNn5LMY95" role="1l3spd">
+      <property role="TrG5h" value="platform_lib" />
+      <node concept="55IIr" id="37zNn5LMY96" role="398pKh">
+        <node concept="2Ry0Ak" id="37zNn5LMY97" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="37zNn5LMY98" role="2Ry0An">
+            <property role="2Ry0Am" value="mps-bundle" />
+            <node concept="2Ry0Ak" id="37zNn5LMYcN" role="2Ry0An">
+              <property role="2Ry0Am" value="mps" />
+              <node concept="2Ry0Ak" id="37zNn5LMYdP" role="2Ry0An">
+                <property role="2Ry0Am" value="lib" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="kgFCN7YrOQ" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="kgFCN7YrOR" role="2JcizS">
@@ -233,6 +250,14 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="37zNn5LNbRw" role="39821P">
+          <node concept="398BVA" id="37zNn5LNbTK" role="28jJRO">
+            <ref role="398BVh" node="37zNn5LMY95" resolve="platform_lib" />
+            <node concept="2Ry0Ak" id="37zNn5LNbV4" role="iGT6I">
+              <property role="2Ry0Am" value="idea_rt.jar" />
             </node>
           </node>
         </node>
@@ -317,6 +342,9 @@
       <node concept="m$_yC" id="kgFCN7YrPc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="37zNn5LNu4c" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+      </node>
       <node concept="3_J27D" id="kgFCN7YrPd" role="m_cZH">
         <node concept="3Mxwew" id="kgFCN7YrPe" role="3MwsjC">
           <property role="3MwjfP" value="alfi" />
@@ -358,6 +386,9 @@
       <node concept="m$_yC" id="QrDUy_PgVv" role="m$_yJ">
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>
+      <node concept="m$_yC" id="37zNn5LNu25" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+      </node>
     </node>
     <node concept="m$_wf" id="6ggGBpdrVDP" role="3989C9">
       <property role="m$_wk" value="compitest" />
@@ -384,6 +415,9 @@
       </node>
       <node concept="m$_yC" id="6ggGBpdrW7d" role="m$_yJ">
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
+      </node>
+      <node concept="m$_yC" id="37zNn5LNtYH" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
       </node>
     </node>
     <node concept="2G$12M" id="VYVB7HpxB$" role="3989C9">
@@ -769,6 +803,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="37zNn5LMXs4" role="3bR37C">
+          <node concept="3bR9La" id="37zNn5LMXs5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6KJ02DGnBbz" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -888,6 +927,21 @@
               <ref role="3bR37D" node="3ACy2tA8HzZ" resolve="alfi.PrimitiveMapping" />
             </node>
           </node>
+          <node concept="1SiIV0" id="37zNn5LMXsH" role="3bR37C">
+            <node concept="3bR9La" id="37zNn5LMXsI" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="37zNn5LMXsJ" role="3bR37C">
+            <node concept="3bR9La" id="37zNn5LMXsK" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="37zNn5LMXsL" role="3bR37C">
+            <node concept="3bR9La" id="37zNn5LMXsM" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -939,6 +993,26 @@
         <node concept="1SiIV0" id="3ACy2tA8HqS" role="3bR37C">
           <node concept="3bR9La" id="3ACy2tA8HqT" role="1SiIV1">
             <ref role="3bR37D" node="kyG04cVZep" resolve="alfi.StandardModelLibrary" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="37zNn5LMXt2" role="3bR37C">
+          <node concept="3bR9La" id="37zNn5LMXt3" role="1SiIV1">
+            <ref role="3bR37D" node="kgFCN7YrOX" resolve="alfi" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="37zNn5LMXt4" role="3bR37C">
+          <node concept="3bR9La" id="37zNn5LMXt5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="37zNn5LMYh4" role="3bR37C">
+          <node concept="1BurEX" id="37zNn5LMYh5" role="1SiIV1">
+            <node concept="398BVA" id="37zNn5LMYh2" role="1BurEY">
+              <ref role="398BVh" node="37zNn5LMY95" resolve="platform_lib" />
+              <node concept="2Ry0Ak" id="37zNn5LMYh3" role="iGT6I">
+                <property role="2Ry0Am" value="idea_rt.jar" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
