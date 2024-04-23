@@ -1015,6 +1015,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="37zNn5LTUqe" role="3bR37C">
+          <node concept="3bR9La" id="37zNn5LTUqf" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="6ggGBpdrVk3" role="3989C9">
