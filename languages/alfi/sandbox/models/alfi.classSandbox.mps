@@ -21,7 +21,7 @@
       <concept id="3120704408893095334" name="alfi.structure.OperationDefinition" flags="ng" index="6nSm6">
         <child id="8164141882417526102" name="body" index="GbAUv" />
       </concept>
-      <concept id="1820071129312107522" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="2hPqOe">
+      <concept id="1820071129312107522" name="alfi.structure.AlfSupportedStereotypeName" flags="ng" index="2hPqOe">
         <property id="1820071129312120005" name="stereotype" index="2hPvR9" />
       </concept>
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />

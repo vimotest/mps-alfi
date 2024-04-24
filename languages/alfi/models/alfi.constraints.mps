@@ -251,7 +251,7 @@
           <node concept="17R0WA" id="74z8RZkrAI_" role="3clFbw">
             <node concept="359W_D" id="74z8RZkrAKB" role="3uHU7w">
               <ref role="359W_E" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              <ref role="359W_F" to="tpck:4uZwTti3__2" />
+              <ref role="359W_F" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
             <node concept="2DA6wF" id="74z8RZkr_4j" role="3uHU7B" />
           </node>
@@ -1181,7 +1181,7 @@
     <property role="3GE5qa" value="units.annotation.predefined" />
     <ref role="1M2myG" to="28lk:37zNn5KVuAN" resolve="PredefinedStereotypeName" />
     <node concept="1N5Pfh" id="37zNn5KV_0h" role="1Mr941">
-      <ref role="1N5Vy1" to="28lk:37zNn5KVx_Q" />
+      <ref role="1N5Vy1" to="28lk:37zNn5KVx_Q" resolve="ref" />
       <node concept="3dgokm" id="37zNn5KV_3l" role="1N6uqs">
         <node concept="3clFbS" id="37zNn5KV_3m" role="2VODD2">
           <node concept="3clFbF" id="37zNn5L16zb" role="3cqZAp">

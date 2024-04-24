@@ -343,7 +343,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="37zNn5LNu4c" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
       <node concept="3_J27D" id="kgFCN7YrPd" role="m_cZH">
         <node concept="3Mxwew" id="kgFCN7YrPe" role="3MwsjC">
@@ -387,7 +387,7 @@
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>
       <node concept="m$_yC" id="37zNn5LNu25" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="m$_wf" id="6ggGBpdrVDP" role="3989C9">
@@ -417,7 +417,7 @@
         <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>
       <node concept="m$_yC" id="37zNn5LNtYH" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="2G$12M" id="VYVB7HpxB$" role="3989C9">

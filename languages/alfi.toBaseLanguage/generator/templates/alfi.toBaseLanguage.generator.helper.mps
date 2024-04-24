@@ -1193,7 +1193,7 @@
                   <node concept="2pJPED" id="US4hCmqfL0" role="2pJPEn">
                     <ref role="2pJxaS" to="28lk:6cBsaQylkJk" resolve="ArithmeticExpression" />
                     <node concept="2pIpSj" id="US4hCmqfL1" role="2pJxcM">
-                      <ref role="2pIpSl" to="28lk:6cBsaQylkIp" />
+                      <ref role="2pIpSl" to="28lk:6cBsaQylkIp" resolve="operand1" />
                       <node concept="36biLy" id="US4hCmqfL2" role="28nt2d">
                         <node concept="1y4W85" id="US4hCmqfL3" role="36biLW">
                           <node concept="3cmrfG" id="US4hCmqfL4" role="1y58nS">
@@ -1219,7 +1219,7 @@
                       </node>
                     </node>
                     <node concept="2pIpSj" id="US4hCmqjng" role="2pJxcM">
-                      <ref role="2pIpSl" to="28lk:6cBsaQylkIr" />
+                      <ref role="2pIpSl" to="28lk:6cBsaQylkIr" resolve="operand2" />
                       <node concept="2pJPED" id="US4hCmqtAM" role="28nt2d">
                         <ref role="2pJxaS" to="28lk:6cBsaQxKOaW" resolve="DecimalLiteralExpression" />
                         <node concept="2pJxcG" id="US4hCmqE74" role="2pJxcM">

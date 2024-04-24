@@ -6329,7 +6329,7 @@
                       <ref role="3cqZAo" node="4CF2Tg3NJDM" resolve="propertyAccess" />
                     </node>
                     <node concept="3TrEf2" id="4CF2Tg3NJDX" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:6cBsaQxWHki" />
+                      <ref role="3Tt5mk" to="28lk:6cBsaQxWHki" resolve="featureReference" />
                     </node>
                   </node>
                   <node concept="zfrQC" id="4CF2Tg3NJDY" role="2OqNvi">
@@ -6346,7 +6346,7 @@
                     <ref role="3cqZAo" node="4CF2Tg3NJDS" resolve="featureReference" />
                   </node>
                   <node concept="3TrEf2" id="4CF2Tg3NJE4" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" />
+                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" resolve="expression" />
                   </node>
                 </node>
               </node>

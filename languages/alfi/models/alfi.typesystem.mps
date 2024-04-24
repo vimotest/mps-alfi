@@ -2972,7 +2972,7 @@
               <ref role="1YBMHb" node="DcKpEDwGeS" resolve="classDefinition" />
             </node>
             <node concept="2qgKlT" id="3pX5J2Sf5Nx" role="2OqNvi">
-              <ref role="37wK5l" to="bqjt:3pX5J2Sf4Ti" resolve="makeNameReference" />
+              <ref role="37wK5l" to="bqjt:3pX5J2Sf4Ti" resolve="makeAdHocTypeDefinition" />
             </node>
           </node>
         </node>
@@ -3001,7 +3001,7 @@
               <ref role="1YBMHb" node="DcKpEDwGIg" resolve="dataTypeDefinition" />
             </node>
             <node concept="2qgKlT" id="3pX5J2Sf9Tl" role="2OqNvi">
-              <ref role="37wK5l" to="bqjt:3pX5J2Sf4Ti" resolve="makeNameReference" />
+              <ref role="37wK5l" to="bqjt:3pX5J2Sf4Ti" resolve="makeAdHocTypeDefinition" />
             </node>
           </node>
         </node>
@@ -3404,7 +3404,7 @@
                       <ref role="1M0zk5" node="4CF2Tg3KANU" resolve="hasReturnParameter" />
                     </node>
                     <node concept="3TrEf2" id="4CF2Tg3KIdR" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:3Ud70gdRyip" />
+                      <ref role="3Tt5mk" to="28lk:3Ud70gdRyip" resolve="returnParameter" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="4CF2Tg3KIdS" role="2OqNvi">
@@ -3484,7 +3484,7 @@
                           <ref role="1YBMHb" node="4CF2Tg3KzIz" resolve="sequenceOperation" />
                         </node>
                         <node concept="3TrEf2" id="4CF2Tg3X7fS" role="2OqNvi">
-                          <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" />
+                          <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" resolve="operation" />
                         </node>
                       </node>
                     </node>
@@ -3511,7 +3511,7 @@
               <ref role="1YBMHb" node="4CF2Tg3KzIz" resolve="sequenceOperation" />
             </node>
             <node concept="3TrEf2" id="4CF2Tg3KAOL" role="2OqNvi">
-              <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" />
+              <ref role="3Tt5mk" to="28lk:6sZBH0rPpOA" resolve="operation" />
             </node>
           </node>
           <node concept="2qgKlT" id="4CF2Tg3KAOM" role="2OqNvi">
@@ -3544,7 +3544,7 @@
                   <ref role="cht4Q" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
                 </node>
                 <node concept="2X3wrD" id="2SUSvesnIQi" role="1m5AlR">
-                  <ref role="2X3Bk0" node="2SUSvesnIQs" resolve="primaryType" />
+                  <ref role="2X3Bk0" node="2SUSvesnIQs" resolve="leftType" />
                 </node>
               </node>
             </node>
@@ -3578,7 +3578,7 @@
               <ref role="1YBMHb" node="2SUSvesnHmW" resolve="nullCoalescingExpression" />
             </node>
             <node concept="3TrEf2" id="2SUSvesnOA6" role="2OqNvi">
-              <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" />
+              <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" resolve="operand1" />
             </node>
           </node>
         </node>
@@ -3629,7 +3629,7 @@
             </node>
             <node concept="3Cnw8n" id="74z8RZkn7Fr" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="74z8RZkn7Fo" resolve="fix_" />
+              <ref role="QpYPw" node="74z8RZkn7Fo" resolve="fix_convertPropertyAccessToInvocationExpression" />
             </node>
           </node>
         </node>
@@ -3667,7 +3667,7 @@
             </node>
             <node concept="2OqwBi" id="74z8RZkn9_w" role="33vP2m">
               <node concept="37vLTw" id="74z8RZkn9_x" role="2Oq$k0">
-                <ref role="3cqZAo" node="74z8RZkn8Bi" resolve="node" />
+                <ref role="3cqZAo" node="74z8RZkn8Bi" resolve="propertyAccess" />
               </node>
               <node concept="2DeJnW" id="74z8RZkn9_y" role="2OqNvi">
                 <ref role="1_rbq0" to="28lk:6cBsaQxWHjR" resolve="FeatureInvocationExpression" />
@@ -3679,7 +3679,7 @@
           <node concept="37vLTI" id="74z8RZknatL" role="3clFbG">
             <node concept="2OqwBi" id="74z8RZknaHU" role="37vLTx">
               <node concept="37vLTw" id="74z8RZknawJ" role="2Oq$k0">
-                <ref role="3cqZAo" node="74z8RZkn8Bi" resolve="node" />
+                <ref role="3cqZAo" node="74z8RZkn8Bi" resolve="propertyAccess" />
               </node>
               <node concept="3TrEf2" id="74z8RZknaYj" role="2OqNvi">
                 <ref role="3Tt5mk" to="28lk:6cBsaQxWHki" resolve="featureReference" />

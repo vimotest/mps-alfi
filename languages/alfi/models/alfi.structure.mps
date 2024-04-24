@@ -1964,7 +1964,7 @@
     <property role="TrG5h" value="PredefinedStereotypes" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="predefined stereotypes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="37zNn5KXXuj" role="1TKVEi">
       <property role="IQ2ns" value="3594942814682077075" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1995,7 +1995,7 @@
     <property role="3GE5qa" value="units.annotation.predefined" />
     <property role="TrG5h" value="PredefinedStereoTypeDefinition" />
     <property role="34LRSv" value="predefined stereotype" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="37zNn5KVxyi" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
