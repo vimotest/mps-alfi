@@ -298,6 +298,27 @@
         </node>
         <node concept="pUk6x" id="6ggGBpdrWg7" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="7hCFpLRlCqz" role="39821P">
+        <ref role="m_rDy" node="kgFCN7YrP6" />
+        <node concept="28jJK3" id="7hCFpLRlCq$" role="39821P">
+          <node concept="398BVA" id="7hCFpLRlCq_" role="28jJRO">
+            <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+            <node concept="2Ry0Ak" id="7hCFpLRlCqA" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7hCFpLRlCqB" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.StandardModelLibrary" />
+                <node concept="2Ry0Ak" id="7hCFpLRlCqC" role="2Ry0An">
+                  <property role="2Ry0Am" value="libs" />
+                  <node concept="2Ry0Ak" id="7hCFpLRlCqD" role="2Ry0An">
+                    <property role="2Ry0Am" value="StandardModelLibrary.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pUk6x" id="7hCFpLRlCqE" role="pUk7w" />
+      </node>
       <node concept="3981dG" id="kgFCN7YrPk" role="39821P">
         <node concept="3_J27D" id="kgFCN7YrPl" role="Nbhlr">
           <node concept="3Mxwew" id="kgFCN7YrPm" role="3MwsjC">
