@@ -151,6 +151,11 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -186,6 +191,7 @@
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
+      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
@@ -1917,6 +1923,54 @@
               </node>
             </node>
           </node>
+          <node concept="3K4zz7" id="37zNn5L1PiJ" role="1gVpfI">
+            <node concept="2OqwBi" id="37zNn5L1Sb2" role="3K4Cdx">
+              <node concept="37vLTw" id="37zNn5L1R4X" role="2Oq$k0">
+                <ref role="3cqZAo" node="1KdBIfXz17v" resolve="target" />
+              </node>
+              <node concept="3x8VRR" id="37zNn5L1T7b" role="2OqNvi" />
+            </node>
+            <node concept="3cpWs3" id="37zNn5L2iOR" role="3K4GZi">
+              <node concept="Xl_RD" id="37zNn5L2jI5" role="3uHU7w">
+                <property role="Xl_RC" value="'?" />
+              </node>
+              <node concept="3cpWs3" id="37zNn5L27U1" role="3uHU7B">
+                <node concept="Xl_RD" id="37zNn5L1U09" role="3uHU7B">
+                  <property role="Xl_RC" value="makeNameReference: target==null, did you import alfStandardModelLibrary in model '" />
+                </node>
+                <node concept="2OqwBi" id="37zNn5L2e1e" role="3uHU7w">
+                  <node concept="37vLTw" id="37zNn5L2cVX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="37zNn5L2auv" resolve="model" />
+                  </node>
+                  <node concept="LkI2h" id="37zNn5L2eY1" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs3" id="37zNn5L1qEW" role="3K4E3e">
+              <node concept="2OqwBi" id="37zNn5L1sJs" role="3uHU7w">
+                <node concept="37vLTw" id="37zNn5L1rLO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1KdBIfXz17v" resolve="target" />
+                </node>
+                <node concept="2Iv5rx" id="37zNn5L1tFg" role="2OqNvi" />
+              </node>
+              <node concept="3cpWs3" id="37zNn5L1lyF" role="3uHU7B">
+                <node concept="3cpWs3" id="37zNn5L1gUr" role="3uHU7B">
+                  <node concept="Xl_RD" id="37zNn5L1cOA" role="3uHU7B">
+                    <property role="Xl_RC" value="cannot make NameReference for target: " />
+                  </node>
+                  <node concept="2OqwBi" id="37zNn5L1i_J" role="3uHU7w">
+                    <node concept="37vLTw" id="37zNn5L1hKN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1KdBIfXz17v" resolve="target" />
+                    </node>
+                    <node concept="2yIwOk" id="37zNn5L1jRe" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="37zNn5L1lzV" role="3uHU7w">
+                  <property role="Xl_RC" value="," />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3cpWs8" id="1KdBIfXz17d" role="3cqZAp">
           <node concept="3cpWsn" id="1KdBIfXz17e" role="3cpWs9">
@@ -2003,6 +2057,10 @@
       <node concept="37vLTG" id="1KdBIfXz17v" role="3clF46">
         <property role="TrG5h" value="target" />
         <node concept="3Tqbb2" id="1KdBIfXz17w" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="37zNn5L2auv" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="37zNn5L2bg6" role="1tU5fm" />
       </node>
       <node concept="3Tm6S6" id="1KdBIfXz17t" role="1B3o_S" />
     </node>
@@ -2198,6 +2256,9 @@
                     </node>
                   </node>
                 </node>
+                <node concept="37vLTw" id="37zNn5L2mrQ" role="37wK5m">
+                  <ref role="3cqZAo" node="US4hClKwNC" resolve="model" />
+                </node>
               </node>
             </node>
           </node>
@@ -2251,6 +2312,9 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                    <node concept="37vLTw" id="37zNn5L2oEs" role="37wK5m">
+                      <ref role="3cqZAo" node="US4hClKwNC" resolve="model" />
                     </node>
                   </node>
                 </node>

@@ -8,8 +8,26 @@
   <imports>
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+      </concept>
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
@@ -42,6 +60,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -115,6 +134,9 @@
     </node>
     <node concept="PrWs8" id="75cQW_toIem" role="PzmwI">
       <ref role="PrY4T" node="75cQW_toIc6" resolve="IHasReturnParameter" />
+    </node>
+    <node concept="PrWs8" id="2diuyV99D8K" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0GM">
@@ -1700,6 +1722,9 @@
     <node concept="PrWs8" id="2SV$eY8gJmZ" role="PzmwI">
       <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
     </node>
+    <node concept="PrWs8" id="37zNn5Ly4H0" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
     <property role="EcuMT" value="3120704408893095334" />
@@ -1789,8 +1814,8 @@
   <node concept="1TIwiD" id="1_2cgM8_TK2">
     <property role="EcuMT" value="1820071129312107522" />
     <property role="3GE5qa" value="units.annotation" />
-    <property role="TrG5h" value="PredefinedStereotypeName" />
-    <property role="34LRSv" value="predefined stereotype" />
+    <property role="TrG5h" value="AlfSupportedStereotypeName" />
+    <property role="34LRSv" value="ALF supported stereotype" />
     <ref role="1TJDcQ" node="1_2cgM8_TK1" resolve="StereotypeName" />
     <node concept="1TJgyi" id="1_2cgM8_WN5" role="1TKVEl">
       <property role="IQ2nx" value="1820071129312120005" />
@@ -1916,6 +1941,64 @@
     <property role="TrG5h" value="NullCoalescingExpression" />
     <property role="34LRSv" value="??" />
     <ref role="1TJDcQ" node="6cBsaQylkIo" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="37zNn5KVuAN">
+    <property role="EcuMT" value="3594942814681426355" />
+    <property role="3GE5qa" value="units.annotation.predefined" />
+    <property role="TrG5h" value="PredefinedStereotypeName" />
+    <property role="34LRSv" value="predefined stereotype" />
+    <ref role="1TJDcQ" node="1_2cgM8_TK1" resolve="StereotypeName" />
+    <node concept="1TJgyj" id="37zNn5KVx_Q" role="1TKVEi">
+      <property role="IQ2ns" value="3594942814681438582" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+    </node>
+    <node concept="PrWs8" id="37zNn5KVxwB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="37zNn5KVuI3">
+    <property role="EcuMT" value="3594942814681426819" />
+    <property role="3GE5qa" value="units.annotation" />
+    <property role="TrG5h" value="PredefinedStereotypes" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="predefined stereotypes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="37zNn5KXXuj" role="1TKVEi">
+      <property role="IQ2ns" value="3594942814682077075" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="definitions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+    </node>
+    <node concept="1irR5M" id="37zNn5KYTVh" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9n" id="37zNn5KYTVz" role="1irR9h">
+        <node concept="3PKj8D" id="37zNn5KYTVP" role="3PKjn_">
+          <property role="3PKj8l" value="F0F0F0" />
+        </node>
+      </node>
+      <node concept="1irPie" id="37zNn5KYTXq" role="1irR9h">
+        <property role="1irPi9" value="S" />
+        <node concept="3PKj8D" id="37zNn5KYTXW" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+    </node>
+    <node concept="PrWs8" id="37zNn5KZZ2y" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="37zNn5KVxwQ">
+    <property role="EcuMT" value="3594942814681438262" />
+    <property role="3GE5qa" value="units.annotation.predefined" />
+    <property role="TrG5h" value="PredefinedStereoTypeDefinition" />
+    <property role="34LRSv" value="predefined stereotype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="37zNn5KVxyi" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

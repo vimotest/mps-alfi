@@ -4019,7 +4019,7 @@
               </node>
               <node concept="1mIQ4w" id="2CGYajyx1yC" role="2OqNvi">
                 <node concept="chp4Y" id="2CGYajyx1_w" role="cj9EA">
-                  <ref role="cht4Q" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+                  <ref role="cht4Q" to="28lk:1_2cgM8_TK2" resolve="AlfSupportedStereotypeName" />
                 </node>
               </node>
             </node>
@@ -5391,7 +5391,7 @@
   </node>
   <node concept="24kQdi" id="1_2cgM8_XBQ">
     <property role="3GE5qa" value="units.annotation" />
-    <ref role="1XX52x" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+    <ref role="1XX52x" to="28lk:1_2cgM8_TK2" resolve="AlfSupportedStereotypeName" />
     <node concept="3F0A7n" id="1_2cgM8_XBS" role="2wV5jI">
       <ref role="1NtTu8" to="28lk:1_2cgM8_WN5" resolve="stereotype" />
     </node>
@@ -5404,7 +5404,7 @@
   </node>
   <node concept="22mcaB" id="1_2cgM8AdKs">
     <property role="3GE5qa" value="units.annotation" />
-    <ref role="aqKnT" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+    <ref role="aqKnT" to="28lk:1_2cgM8_TK2" resolve="AlfSupportedStereotypeName" />
     <node concept="22hDWj" id="1_2cgM8AdKt" role="22hAXT" />
     <node concept="2F$Pav" id="1_2cgM8AdKv" role="3ft7WO">
       <node concept="3eGOop" id="1_2cgM8AdU6" role="2$S_pN">
@@ -5414,12 +5414,12 @@
               <node concept="3cpWsn" id="1_2cgM8AhcB" role="3cpWs9">
                 <property role="TrG5h" value="node" />
                 <node concept="3Tqbb2" id="1_2cgM8Ahce" role="1tU5fm">
-                  <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+                  <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="AlfSupportedStereotypeName" />
                 </node>
                 <node concept="2ShNRf" id="1_2cgM8AhcC" role="33vP2m">
                   <node concept="3zrR0B" id="1_2cgM8AhcD" role="2ShVmc">
                     <node concept="3Tqbb2" id="1_2cgM8AhcE" role="3zrR0E">
-                      <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="PredefinedStereotypeName" />
+                      <ref role="ehGHo" to="28lk:1_2cgM8_TK2" resolve="AlfSupportedStereotypeName" />
                     </node>
                   </node>
                 </node>
@@ -6489,6 +6489,79 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="37zNn5KVxyV">
+    <property role="3GE5qa" value="units.annotation.predefined" />
+    <ref role="1XX52x" to="28lk:37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+    <node concept="3EZMnI" id="37zNn5KVxzn" role="2wV5jI">
+      <node concept="3F0ifn" id="37zNn5KVxzV" role="3EZMnx">
+        <property role="3F0ifm" value="predefined" />
+      </node>
+      <node concept="3F0ifn" id="37zNn5KVx$e" role="3EZMnx">
+        <property role="3F0ifm" value="stereotype:" />
+      </node>
+      <node concept="3F0A7n" id="37zNn5KVx$X" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="37zNn5KVxzq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="37zNn5KVxAv">
+    <property role="3GE5qa" value="units.annotation.predefined" />
+    <ref role="1XX52x" to="28lk:37zNn5KVuAN" resolve="PredefinedStereotypeName" />
+    <node concept="3EZMnI" id="37zNn5KVxAV" role="2wV5jI">
+      <node concept="3F0ifn" id="37zNn5KVxB2" role="3EZMnx">
+        <property role="3F0ifm" value="→" />
+        <node concept="2SqB2G" id="37zNn5KVxCm" role="2SqHTX">
+          <property role="TrG5h" value="ignoreTextGenGen" />
+        </node>
+        <node concept="Vb9p2" id="37zNn5Lb0h4" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="37zNn5Lb0hz" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="11LMrY" id="37zNn5LcOrz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="37zNn5KVxBl" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:37zNn5KVx_Q" resolve="ref" />
+        <node concept="1sVBvm" id="37zNn5KVxBn" role="1sWHZn">
+          <node concept="3F0A7n" id="37zNn5KVxBG" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="37zNn5KVxAY" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="37zNn5KXXvm">
+    <property role="3GE5qa" value="units.annotation" />
+    <ref role="1XX52x" to="28lk:37zNn5KVuI3" resolve="PredefinedStereotypes" />
+    <node concept="3EZMnI" id="37zNn5KXXv_" role="2wV5jI">
+      <node concept="3F0ifn" id="37zNn5KXXvT" role="3EZMnx">
+        <property role="3F0ifm" value="predefined stereotypes" />
+      </node>
+      <node concept="3F0A7n" id="37zNn5KZZ3j" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F2HdR" id="37zNn5KXXx0" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:37zNn5KXXuj" resolve="definitions" />
+        <node concept="l2Vlx" id="37zNn5KXXx2" role="2czzBx" />
+        <node concept="pVoyu" id="37zNn5KXXxj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="37zNn5KXXxl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="37zNn5KYY2t" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="37zNn5KXXvC" role="2iSdaV" />
     </node>
   </node>
 </model>
