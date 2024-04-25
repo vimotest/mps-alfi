@@ -18,7 +18,7 @@ def COMPITEST_TEST_PLAN_FILE = "${COMPITEST_ALFI_REPO_ROOT}/scripts/alfCompareTe
 def repoRootAbsolute = new File(COMPITEST_ALFI_REPO_ROOT).canonicalPath
 println("Running Compare Tests in repo root: ${repoRootAbsolute}")
 
-def standardModelLibrary = "${COMPITEST_TESTCASE_DIR}/StandardModelLibrary.jar"
+def standardModelLibrary = "${COMPITEST_TESTCASE_DIR}/StandardModelLibraryStubs.jar"
 def testSuiteJar = "${COMPITEST_TESTCASE_DIR}/languages/compitest/alfi.compitest.jar"
 def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/languages/compitest/alfi.compitest-src.jar"
 

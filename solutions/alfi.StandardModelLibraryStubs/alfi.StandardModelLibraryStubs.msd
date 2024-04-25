@@ -2,13 +2,13 @@
 <solution name="alfi.StandardModelLibraryStubs" uuid="f13dd4ca-a567-47d7-98bc-31b72d168722" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}/libs" type="java_classes">
-      <sourceRoot location="StandardModelLibrary.jar" />
+      <sourceRoot location="StandardModelLibraryStubs.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/libs/StandardModelLibrary.jar" />
+      <library location="${module}/libs/StandardModelLibraryStubs.jar" />
     </facet>
   </facets>
   <languageVersions>

@@ -20,7 +20,7 @@ task packageStandardModelLibrary(type: Jar) {
   dependsOn buildStandardModelLibrary
 
   destinationDirectory = standardModelLibraryDir
-  archiveBaseName = 'StandardModelLibrary'
+  archiveBaseName = 'StandardModelLibraryStubs'
   from(classesDir) {
     include '**/*'
   }
