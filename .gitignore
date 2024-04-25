@@ -11,7 +11,7 @@ build
 tmp
 /lib/
 
-solutions/alfi.StandardModelLibrary/libs/*
+solutions/alfi.StandardModelLibraryStubs/libs/*
 
 # -----------------------------------------------------------
 # MPS
