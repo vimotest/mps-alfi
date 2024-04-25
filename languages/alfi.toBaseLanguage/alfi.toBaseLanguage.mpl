@@ -66,6 +66,7 @@
         <module reference="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" version="0" />
         <module reference="fd81061f-ee73-4a11-aa70-827158c40c00(alfi.StandardModelLibrary)" version="0" />
         <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
+        <module reference="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" version="0" />
         <module reference="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" version="0" />
         <module reference="9bc6954f-a86d-4773-a31d-c1a868afe8da(alfi.toBaseLanguage.generator)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />

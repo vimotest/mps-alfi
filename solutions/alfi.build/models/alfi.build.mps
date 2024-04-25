@@ -326,7 +326,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="7hCFpLRHEma" role="39821P">
-          <ref role="m_rDy" node="kgFCN7YrP6" />
+          <ref role="m_rDy" node="kgFCN7YrP6" resolve="alfi" />
           <node concept="28jJK3" id="7hCFpLRLiDL" role="39821P">
             <node concept="398BVA" id="7hCFpLRP1Kf" role="28jJRO">
               <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
@@ -367,7 +367,7 @@
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
       <node concept="m$_yC" id="7hCFpLRLkOG" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" />
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="3_J27D" id="kgFCN7YrPd" role="m_cZH">
         <node concept="3Mxwew" id="kgFCN7YrPe" role="3MwsjC">
@@ -381,7 +381,7 @@
         </node>
       </node>
       <node concept="m$f5U" id="6mAYhV7BDom" role="m$_yh">
-        <ref role="m$f5T" node="kgFCN7YrP5" resolve="alfi" />
+        <ref role="m$f5T" node="kgFCN7YrP5" resolve="alfi-modules" />
       </node>
     </node>
     <node concept="m$_wf" id="QrDUy_PgKk" role="3989C9">
@@ -438,7 +438,7 @@
         <ref role="m$_yA" node="VYVB7HpxIb" resolve="GenPlan" />
       </node>
       <node concept="m$_yC" id="6ggGBpdrW7d" role="m$_yJ">
-        <ref role="m$_y1" node="kgFCN7YrP6" />
+        <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>
       <node concept="m$_yC" id="37zNn5LNtYH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />

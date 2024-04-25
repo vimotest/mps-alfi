@@ -40,6 +40,7 @@
     <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
     <module reference="fd81061f-ee73-4a11-aa70-827158c40c00(alfi.StandardModelLibrary)" version="0" />
     <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
+    <module reference="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" version="0" />
     <module reference="883d45ce-b0f1-43ed-b175-dd48dfaab05b(alfi.sandbox)" version="0" />
     <module reference="e96e47f4-adc2-4b0f-9360-f35f4d77e24e(alfi.sandbox2)" version="0" />
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
