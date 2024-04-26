@@ -326,6 +326,9 @@
         <node concept="L2wRC" id="5tK9548e0ri" role="39821P">
           <ref role="L2wRA" node="5tK9548cS2Q" resolve="alfi.sandbox" />
         </node>
+        <node concept="L2wRC" id="5tK9548$ivh" role="39821P">
+          <ref role="L2wRA" node="5tK9548cS4k" resolve="alfi.compitest" />
+        </node>
         <node concept="28jJK3" id="5tK9548e4tM" role="39821P">
           <node concept="398BVA" id="5tK9548e4u1" role="28jJRO">
             <ref role="398BVh" node="5tK9548cRhf" resolve="platform_lib" />
