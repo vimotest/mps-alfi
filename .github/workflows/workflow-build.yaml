@@ -49,13 +49,13 @@ jobs:
         with:
           name: build-artifacts
           path: |
-            build/artifacts/${{ env.PROJECT_NAME }}/${{ env.LANGUAGE_NAME }}.zip
+            build/artifacts/${{ env.PROJECT_NAME }}-build/${{ env.LANGUAGE_NAME }}.zip
 
       - name: Upload artifacts for compitest
         uses: actions/upload-artifact@v3
         with:
           name: artifactsForCompitest
-          path: build/artifacts/${{ env.PROJECT_NAME }}/compitest/
+          path: build/artifacts/${{ env.PROJECT_NAME }}-build
           retention-days: 1
 
   compitest:
@@ -77,7 +77,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifactsForCompitest
-          path: build/artifacts/${{ env.PROJECT_NAME }}/compitest/
+          path: build/artifacts/${{ env.PROJECT_NAME }}-build
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests
