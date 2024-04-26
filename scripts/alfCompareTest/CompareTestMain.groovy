@@ -11,16 +11,16 @@ if (binding.variables.containsKey("workingDir")) {
 println("Working directory: $pwd")
 
 def COMPITEST_ALFI_REPO_ROOT = "$pwd/../.."
-def COMPITEST_TESTCASE_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/artifacts/alfi/compitest"
+def COMPITEST_TESTCASE_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/artifacts/alfi"
 def COMPITEST_WORK_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/compitest"
 def COMPITEST_TEST_PLAN_FILE = "${COMPITEST_ALFI_REPO_ROOT}/scripts/alfCompareTest/compitest_testplan.json"
 
 def repoRootAbsolute = new File(COMPITEST_ALFI_REPO_ROOT).canonicalPath
 println("Running Compare Tests in repo root: ${repoRootAbsolute}")
 
-def standardModelLibrary = "${COMPITEST_TESTCASE_DIR}/StandardModelLibraryStubs.jar"
-def testSuiteJar = "${COMPITEST_TESTCASE_DIR}/languages/compitest/alfi.compitest.jar"
-def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/languages/compitest/alfi.compitest-src.jar"
+def standardModelLibrary = "${COMPITEST_TESTCASE_DIR}/lib/StandardModelLibraryStubs.jar"
+def testSuiteJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest.jar"
+def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest-src.jar"
 
 def executorToCmd = [
         "AlfiJava": ["java", "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
