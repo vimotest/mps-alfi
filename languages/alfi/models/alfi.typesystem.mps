@@ -3795,5 +3795,47 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="5tK9548DEgi">
+    <property role="TrG5h" value="check_NameExpression" />
+    <property role="3GE5qa" value="expressions.primary" />
+    <node concept="3clFbS" id="5tK9548DEgj" role="18ibNy">
+      <node concept="3clFbJ" id="5tK9548DEiw" role="3cqZAp">
+        <node concept="2OqwBi" id="5tK9548DF_f" role="3clFbw">
+          <node concept="2OqwBi" id="5tK9548DF4E" role="2Oq$k0">
+            <node concept="2OqwBi" id="5tK9548DELL" role="2Oq$k0">
+              <node concept="1YBJjd" id="5tK9548DEiJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="5tK9548DEgl" resolve="nameExpression" />
+              </node>
+              <node concept="3TrEf2" id="5tK9548DEPY" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:2kuSLC0pg7f" resolve="name" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5tK9548DFl9" role="2OqNvi">
+              <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="5tK9548DFLn" role="2OqNvi">
+            <node concept="chp4Y" id="5tK9548DFO4" role="cj9EA">
+              <ref role="cht4Q" to="28lk:3m3bKNZ_Ved" resolve="IFeature" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5tK9548DEiy" role="3clFbx">
+          <node concept="2MkqsV" id="5tK9548DHXu" role="3cqZAp">
+            <node concept="Xl_RD" id="5tK9548DHXH" role="2MkJ7o">
+              <property role="Xl_RC" value="Features must be referenced through feature references (consider using 'this' or an instance variable)" />
+            </node>
+            <node concept="1YBJjd" id="5tK9548DI00" role="1urrMF">
+              <ref role="1YBMHb" node="5tK9548DEgl" resolve="nameExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5tK9548DEgl" role="1YuTPh">
+      <property role="TrG5h" value="nameExpression" />
+      <ref role="1YaFvo" to="28lk:2kuSLC0pg7e" resolve="NameExpression" />
+    </node>
+  </node>
 </model>
 

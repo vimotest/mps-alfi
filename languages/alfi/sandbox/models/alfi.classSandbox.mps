@@ -30,9 +30,6 @@
         <child id="2674824929518763028" name="expression" index="_jtWe" />
       </concept>
       <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
-      <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
-        <child id="2674824929519927759" name="name" index="_uYbl" />
-      </concept>
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0" />
       <concept id="2674824929519838360" name="alfi.structure.InvocationExpression" flags="ng" index="_vku2">
         <child id="2674824929519882447" name="tuple" index="_uFfl" />
@@ -120,17 +117,6 @@
       <node concept="6nSm6" id="75cQW_tv6F0" role="PCHHv">
         <property role="TrG5h" value="foo" />
         <property role="PCHGy" value="true" />
-        <node concept="PCHzy" id="75cQW_tv6Fo" role="GbAUv">
-          <node concept="32G6VT" id="75cQW_tvGnU" role="PCHzz">
-            <node concept="_uYbk" id="75cQW_tvGnX" role="2vFQ1F">
-              <node concept="_vnHb" id="75cQW_tvGnY" role="_uYbl">
-                <node concept="2RqM1Q" id="75cQW_tvGnZ" role="_vnH8">
-                  <ref role="2RqM1R" node="2HeY20H8A_j" resolve="myInteger" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3xR696" id="75cQW_tvGnm" role="NkNyt">
           <property role="3xR695" value="3Ud70gdvRyt/return" />
           <property role="TrG5h" value="__return__" />
