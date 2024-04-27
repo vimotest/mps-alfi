@@ -4051,7 +4051,7 @@
           <ref role="1NtTu8" to="28lk:1_2cgM8_TKi" resolve="stereotypeName" />
         </node>
         <node concept="3F0ifn" id="2CGYajyx68y" role="3EZMnx">
-          <property role="3F0ifm" value="(not generated to ALF)" />
+          <property role="3F0ifm" value="(annotation is not generated to ALF)" />
           <node concept="VechU" id="2CGYajyx68E" role="3F10Kt">
             <property role="Vb096" value="fLJRk5_/gray" />
           </node>
