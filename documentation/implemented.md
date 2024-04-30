@@ -46,7 +46,9 @@ Limitations are listed as subpoints of the chapters.
   - [ ] 8.3.14 Class Extent Expressions
   - [ ] 8.3.15 Sequence Construction Expressions
   - [ ] 8.3.16 Sequence Access Expressions
-  - [ ] 8.3.17 Sequence Operation Expressions
+  - [x] 8.3.17 Sequence Operation Expressions
+    - no support for T[*] return operations (union, etc.)
+    - no Java mapping for operations: excludes, count, notEmpty, excludesAll, removeOne, replace, replaceOne
   - [ ] 8.3.18 Sequence Reduction Expressions
   - [ ] 8.3.19 Sequence Expansion Expressions
   - [ ] 8.3.20 select and reject Expressions
@@ -70,7 +72,7 @@ Limitations are listed as subpoints of the chapters.
   - [x] 8.6.6 Equality Expressions
   - [x] 8.6.7 Logical Expressions
   - [x] 8.6.8 Conditional Expressions
-  - [ ] 8.6.9 Null-Coalescing Expressions
+  - [x] 8.6.9 Null-Coalescing Expressions
 - [ ] 8.7 Conditional-Test Expressions
 - [x] 8.8 Assignment Expressions
   - Not indexed left hand side
