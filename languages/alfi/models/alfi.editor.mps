@@ -30,7 +30,9 @@
         <child id="414384289274416996" name="parts" index="3ft7WO" />
       </concept>
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
@@ -3860,6 +3862,15 @@
         <ref role="1NtTu8" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
       </node>
       <node concept="2iRkQZ" id="6OepWIVJVZd" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="1YdqyHmJFdt" role="6VMZX">
+      <node concept="l2Vlx" id="1YdqyHmJFdu" role="2iSdaV" />
+      <node concept="3F0ifn" id="1YdqyHmJFdz" role="3EZMnx">
+        <property role="3F0ifm" value="virtual package:" />
+      </node>
+      <node concept="3F0A7n" id="1YdqyHmJFdD" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:hnGE5uv" resolve="virtualPackage" />
+      </node>
     </node>
   </node>
   <node concept="325Ffw" id="5Jdbbz9A_fV">
