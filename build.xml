@@ -601,6 +601,7 @@
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
         </uses>
+        <library jar="../../../tests/idea_rt.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -1205,6 +1206,7 @@
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
         </uses>
+        <library jar="../../../../tests/idea_rt.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -1760,6 +1762,7 @@
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -1846,6 +1849,7 @@
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -2024,6 +2028,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="opentest4j-1.2.0.jar" />
@@ -2085,8 +2090,8 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${platform_lib}/idea_rt.jar" />
+        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -2163,6 +2168,7 @@
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />

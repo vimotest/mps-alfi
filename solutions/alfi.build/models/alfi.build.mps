@@ -777,6 +777,16 @@
             <ref role="3bR37D" node="5tK9548cRyB" resolve="alfi.StandardModelLibraryStubs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="pZehJpPKMY" role="3bR37C">
+          <node concept="1BurEX" id="pZehJpPKMZ" role="1SiIV1">
+            <node concept="398BVA" id="pZehJpPKMW" role="1BurEY">
+              <ref role="398BVh" node="5tK9548cRhf" resolve="platform_lib" />
+              <node concept="2Ry0Ak" id="pZehJpPKMX" role="iGT6I">
+                <property role="2Ry0Am" value="idea_rt.jar" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5tK9548cRyB" role="2G$12L">
         <property role="BnDLt" value="true" />
