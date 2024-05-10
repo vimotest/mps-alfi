@@ -253,7 +253,9 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -749,6 +751,7 @@
     <property role="3GE5qa" value="statements" />
     <ref role="1XX52x" to="28lk:2SMO68r$0y0" resolve="Block" />
     <node concept="3EZMnI" id="2SMO68rAHe0" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="2SMO68rAHe1" role="3EZMnx">
         <property role="3F0ifm" value="{" />
         <ref role="1k5W1q" to="tpen:hXb$RYA" resolve="LeftBracket" />
@@ -800,6 +803,12 @@
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
       </node>
       <node concept="l2Vlx" id="2SMO68rAHep" role="2iSdaV" />
+      <node concept="3F0ifn" id="4DE6ZndBM1D" role="AHCbl">
+        <property role="3F0ifm" value="{ ... }" />
+        <node concept="VechU" id="4DE6ZndBM5b" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="2SMO68rAHpD">
@@ -4852,6 +4861,7 @@
         </node>
       </node>
       <node concept="3EZMnI" id="2HeY20H4pzE" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
         <ref role="1ERwB7" node="1KdBIfXacCT" resolve="NamespaceMember_DeleteBody" />
         <node concept="3F0ifn" id="2HeY20H4pzF" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -4906,6 +4916,12 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="4DE6ZndBKDQ" role="AHCbl">
+          <property role="3F0ifm" value="{ ... }" />
+          <node concept="VechU" id="4DE6ZndBKWI" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
         </node>
       </node>
