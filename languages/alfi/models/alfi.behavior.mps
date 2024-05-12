@@ -383,6 +383,9 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
+      <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
+        <child id="1235573187520" name="singletonValue" index="2HTEbv" />
+      </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
@@ -2949,12 +2952,21 @@
       </node>
       <node concept="3clFbS" id="6OepWIVxlMB" role="3clF47">
         <node concept="3cpWs6" id="1KdBIfWG_HA" role="3cqZAp">
-          <node concept="BsUDl" id="1KdBIfWGAlf" role="3cqZAk">
-            <ref role="37wK5l" node="1KdBIfWGy2v" resolve="resolveStubs" />
-            <node concept="2OqwBi" id="1KdBIfWGBjz" role="37wK5m">
-              <node concept="13iPFW" id="1KdBIfWGALl" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1KdBIfWGB_t" role="2OqNvi">
-                <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+          <node concept="2OqwBi" id="6KCmRAYghHu" role="3cqZAk">
+            <node concept="BsUDl" id="1KdBIfWGAlf" role="2Oq$k0">
+              <ref role="37wK5l" node="1KdBIfWGy2v" resolve="resolveStubs" />
+              <node concept="2OqwBi" id="1KdBIfWGBjz" role="37wK5m">
+                <node concept="13iPFW" id="1KdBIfWGALl" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="1KdBIfWGB_t" role="2OqNvi">
+                  <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+                </node>
+              </node>
+            </node>
+            <node concept="4Tj9Z" id="6KCmRAYgjt2" role="2OqNvi">
+              <node concept="2ShNRf" id="6KCmRAYgkns" role="576Qk">
+                <node concept="2HTt$P" id="6KCmRAYgmnT" role="2ShVmc">
+                  <node concept="13iPFW" id="6KCmRAYgmMF" role="2HTEbv" />
+                </node>
               </node>
             </node>
           </node>
