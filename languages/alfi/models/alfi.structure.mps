@@ -792,7 +792,7 @@
     <property role="EcuMT" value="7144803224892466214" />
     <property role="3GE5qa" value="expressions.primary.literal" />
     <property role="TrG5h" value="OctalLiteralExpression" />
-    <property role="34LRSv" value="0" />
+    <property role="34LRSv" value="0o" />
     <property role="R4oN_" value="octal literal" />
     <ref role="1TJDcQ" node="6cBsaQxKO4O" resolve="NaturalLiteralExpression" />
     <node concept="1TJgyi" id="6cBsaQxU2Rm" role="1TKVEl">
