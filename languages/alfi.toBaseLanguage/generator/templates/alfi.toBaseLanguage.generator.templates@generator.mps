@@ -571,6 +571,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
@@ -2428,6 +2432,10 @@
             <node concept="3Tm1VV" id="7T9E0zttZun" role="1B3o_S" />
             <node concept="3clFbS" id="7T9E0zttZuo" role="3clF47">
               <node concept="3cpWs8" id="7T9E0zttZvD" role="3cqZAp">
+                <node concept="15s5l7" id="2jdGeWiZ5QE" role="lGtFl">
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
+                  <property role="huDt6" value="Warning: Unused variable" />
+                </node>
                 <node concept="3cpWsn" id="7T9E0zttZvG" role="3cpWs9">
                   <property role="TrG5h" value="foo" />
                   <node concept="3uibUv" id="7T9E0zt$lRx" role="1tU5fm">
@@ -2448,8 +2456,9 @@
                         </node>
                       </node>
                       <node concept="gft3U" id="7T9E0zt$qfc" role="UU_$l">
-                        <node concept="_YKpA" id="7T9E0zt$qmV" role="gfFT$">
-                          <node concept="3uibUv" id="2X39vz3gu$3" role="_ZDj9">
+                        <node concept="3uibUv" id="2jdGeWiXZPD" role="gfFT$">
+                          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                          <node concept="3uibUv" id="2X39vz3gu$3" role="11_B2D">
                             <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
                             <node concept="29HgVG" id="2X39vz3gu$4" role="lGtFl">
                               <node concept="3NFfHV" id="2X39vz3gu$5" role="3NFExx">
@@ -2458,7 +2467,7 @@
                                     <node concept="2OqwBi" id="2X39vz3gu$8" role="3clFbG">
                                       <node concept="30H73N" id="2X39vz3gu$9" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="2X39vz3gu$a" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" resolve="typeName" />
+                                        <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" />
                                       </node>
                                     </node>
                                   </node>
