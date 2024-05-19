@@ -733,6 +733,88 @@
         <node concept="1iwH7U" id="1z1MMtqsOxE" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2YIFZL" id="6cNPD9oBS2n" role="jymVt">
+      <property role="TrG5h" value="setUseCppOptionalForGeneration" />
+      <node concept="3clFbS" id="6cNPD9oBS2o" role="3clF47">
+        <node concept="3clFbF" id="6cNPD9oBS2p" role="3cqZAp">
+          <node concept="37vLTI" id="6cNPD9oBS2q" role="3clFbG">
+            <node concept="3clFbT" id="6cNPD9oBS2r" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="6cNPD9oBS2s" role="37vLTJ">
+              <node concept="37vLTw" id="6cNPD9oBS2t" role="2Oq$k0">
+                <ref role="3cqZAo" node="6cNPD9oBS2y" resolve="genContext" />
+              </node>
+              <node concept="2fSANN" id="6cNPD9oBS2u" role="2OqNvi">
+                <node concept="Xl_RD" id="6cNPD9oBS2v" role="2fWi3N">
+                  <property role="Xl_RC" value="useCppOptionals" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cNPD9oBS2w" role="1B3o_S" />
+      <node concept="3cqZAl" id="6cNPD9oBS2x" role="3clF45" />
+      <node concept="37vLTG" id="6cNPD9oBS2y" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="6cNPD9oBS2z" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6cNPD9oBS2$" role="3clF46">
+        <property role="TrG5h" value="useJavaOptional" />
+        <node concept="10P_77" id="6cNPD9oBS2_" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6cNPD9oBS21" role="jymVt">
+      <property role="TrG5h" value="getUseCppOptionalForGeneration" />
+      <node concept="3clFbS" id="6cNPD9oBS22" role="3clF47">
+        <node concept="3cpWs8" id="6cNPD9oBS23" role="3cqZAp">
+          <node concept="3cpWsn" id="6cNPD9oBS24" role="3cpWs9">
+            <property role="TrG5h" value="value" />
+            <node concept="3uibUv" id="6cNPD9oBS25" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+            </node>
+            <node concept="0kSF2" id="6cNPD9oBS26" role="33vP2m">
+              <node concept="3uibUv" id="6cNPD9oBS27" role="0kSFW">
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+              </node>
+              <node concept="2OqwBi" id="6cNPD9oBS28" role="0kSFX">
+                <node concept="37vLTw" id="6cNPD9oBS29" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6cNPD9oBS2l" resolve="genContext" />
+                </node>
+                <node concept="2fSANN" id="6cNPD9oBS2a" role="2OqNvi">
+                  <node concept="Xl_RD" id="6cNPD9oBS2b" role="2fWi3N">
+                    <property role="Xl_RC" value="useCppOptionals" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cNPD9oBS2c" role="3cqZAp">
+          <node concept="3K4zz7" id="6cNPD9oBS2d" role="3clFbG">
+            <node concept="37vLTw" id="6cNPD9oBS2e" role="3K4E3e">
+              <ref role="3cqZAo" node="6cNPD9oBS24" resolve="value" />
+            </node>
+            <node concept="3clFbT" id="6cNPD9oBS2f" role="3K4GZi">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="3y3z36" id="6cNPD9oBS2g" role="3K4Cdx">
+              <node concept="10Nm6u" id="6cNPD9oBS2h" role="3uHU7w" />
+              <node concept="37vLTw" id="6cNPD9oBS2i" role="3uHU7B">
+                <ref role="3cqZAo" node="6cNPD9oBS24" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cNPD9oBS2j" role="1B3o_S" />
+      <node concept="10P_77" id="6cNPD9oBS2k" role="3clF45" />
+      <node concept="37vLTG" id="6cNPD9oBS2l" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="6cNPD9oBS2m" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4Vswoj0HRh_" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4CF2Tg3Yzty">

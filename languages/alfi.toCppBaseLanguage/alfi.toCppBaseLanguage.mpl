@@ -29,6 +29,7 @@
         <dependency reexport="false">bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)</dependency>
         <dependency reexport="false">caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)</dependency>
         <dependency reexport="false">1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)</dependency>
+        <dependency reexport="false">b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" version="0" />
@@ -52,6 +53,7 @@
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" version="0" />
+        <module reference="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
