@@ -20,6 +20,17 @@ This project is a research prototype and not yet ready for production use:
 
 This repository originates from a research project: https://github.com/neumantm/alfi
 
+## Examples
+
+We modeled two examplary DSLs which use ALFI as an intermediate langauge:
+https://github.com/vimotest/mps-alfi-samples.
+
+**Hamster Simulator DSL**: This example showcases how a simple DSL for a mini-programming-world can be mapped to ALFI.
+Typically, such mini-programming-worlds have inherent support of behavioral aspects.
+
+**Simple Software Component DSL**: This example demonstrates how a simple structural architecture DSL can be mapped to ALFI.
+It also supports adding ALFI directly on the DSL-level to provide simple behavioral implementations of component interfaces.
+
 ## Usage
 
 To be able to use the project you currently need to setup the development environment and start JetBrains MPS with it.
