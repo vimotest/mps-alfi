@@ -8,7 +8,8 @@ Additionally, it contains generators to the following programming languages:
 
 - the Java BaseLanguage
 
-The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1)
+The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1).
+The ALF standard reference implementation is available on GitHub: https://github.com/ModelDriven/Alf-Reference-Implementation
 
 ## State of the project
 

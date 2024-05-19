@@ -114,7 +114,7 @@ Limitations are listed as subpoints of the chapters.
   - [x] 10.4.4 Data Types
     - only primitive datatypes
   - [ ] 10.4.5 Associations
-  - [ ] 10.4.6 Enumerations
+  - [x] 10.4.6 Enumerations
   - [ ] 10.4.7 Signals
   - [x] 10.4.8 Activities
     - not template parameters

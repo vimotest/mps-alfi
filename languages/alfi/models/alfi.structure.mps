@@ -2000,5 +2000,22 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3_puicMj8j7">
+    <property role="EcuMT" value="4132467325163832519" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="EnumerationDefinition" />
+    <property role="34LRSv" value="enum" />
+    <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
+    <node concept="PrWs8" id="3_puicM$rWS" role="PzmwI">
+      <ref role="PrY4T" node="3pX5J2Sf3Wu" resolve="ITypeDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_puicMjdEb">
+    <property role="EcuMT" value="4132467325163854475" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="EnumerationLiteralName" />
+    <property role="34LRSv" value="enum literal" />
+    <ref role="1TJDcQ" node="2SMO68r$0GM" resolve="NamespaceMember" />
+  </node>
 </model>
 

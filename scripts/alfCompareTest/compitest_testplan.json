@@ -47,6 +47,9 @@
         },
         {
           "name": "SequencesTest"
+        },
+        {
+          "name": "EnumTest"
         }
       ]
     }

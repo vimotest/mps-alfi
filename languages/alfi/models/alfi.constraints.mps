@@ -1225,5 +1225,58 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3_puicMjdH7">
+    <property role="3GE5qa" value="units.classifiers" />
+    <ref role="1M2myG" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
+    <node concept="EnEH3" id="3_puicMkHal" role="1MhHOB">
+      <ref role="EomxK" to="28lk:2SMO68r$0GP" resolve="visibility" />
+      <node concept="Eqf_E" id="3_puicMkHc1" role="EtsB7">
+        <node concept="3clFbS" id="3_puicMkHc2" role="2VODD2">
+          <node concept="3clFbF" id="3_puicMkHfR" role="3cqZAp">
+            <node concept="2OqwBi" id="3_puicMkIqo" role="3clFbG">
+              <node concept="1XH99k" id="3_puicMkHfQ" role="2Oq$k0">
+                <ref role="1XH99l" to="28lk:6OepWIVA92D" resolve="Visibility" />
+              </node>
+              <node concept="2ViDtV" id="3_puicMkIXh" role="2OqNvi">
+                <ref role="2ViDtZ" to="28lk:6OepWIVA92E" resolve="public" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="3_puicMjdHV" role="9Vyp8">
+      <node concept="3clFbS" id="3_puicMjdHW" role="2VODD2">
+        <node concept="3clFbF" id="3_puicMjefj" role="3cqZAp">
+          <node concept="2OqwBi" id="3_puicMjesd" role="3clFbG">
+            <node concept="nLn13" id="3_puicMjefi" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3_puicMjeYE" role="2OqNvi">
+              <node concept="chp4Y" id="3_puicMjf1t" role="cj9EA">
+                <ref role="cht4Q" to="28lk:3_puicMj8j7" resolve="EnumerationDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3_puicMjfmc">
+    <property role="3GE5qa" value="units.classifiers" />
+    <ref role="1M2myG" to="28lk:3_puicMj8j7" resolve="EnumerationDefinition" />
+    <node concept="9SLcT" id="3_puicMjfmJ" role="9SGkU">
+      <node concept="3clFbS" id="3_puicMjfmK" role="2VODD2">
+        <node concept="3clFbF" id="3_puicMjf_4" role="3cqZAp">
+          <node concept="2OqwBi" id="3_puicMjgks" role="3clFbG">
+            <node concept="2DD5aU" id="3_puicMjf_3" role="2Oq$k0" />
+            <node concept="2Zo12i" id="3_puicMjh0H" role="2OqNvi">
+              <node concept="chp4Y" id="3_puicMjh8Z" role="2Zo12j">
+                <ref role="cht4Q" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

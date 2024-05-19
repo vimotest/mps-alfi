@@ -41,6 +41,8 @@
         <child id="8164141882417526102" name="body" index="GbAUv" />
       </concept>
       <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt" />
+      <concept id="4132467325163854475" name="alfi.structure.EnumerationLiteralName" flags="ng" index="b5qeC" />
+      <concept id="4132467325163832519" name="alfi.structure.EnumerationDefinition" flags="ng" index="b5vR$" />
       <concept id="6254876434755085380" name="alfi.structure.SequenceFlag" flags="ng" index="hh2MY" />
       <concept id="1820071129312113837" name="alfi.structure.CustomStereotypeName" flags="ng" index="2hPomx" />
       <concept id="1820071129312107522" name="alfi.structure.AlfSupportedStereotypeName" flags="ng" index="2hPqOe">
@@ -4978,6 +4980,194 @@
       <node concept="_vnHb" id="4CF2Tg3G33L" role="$kHGj">
         <node concept="2RqM1Q" id="4CF2Tg3G33M" role="_vnH8">
           <ref role="2RqM1R" node="6sZBH0rRdy8" resolve="Sequences" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="3_puicMkyMc">
+    <node concept="b5vR$" id="3_puicMkyN1" role="3mGtxP">
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="TrG5h" value="EnumTrafficLightColor" />
+      <node concept="b5qeC" id="3_puicMkyOr" role="PCHHv">
+        <property role="TrG5h" value="RED" />
+      </node>
+      <node concept="b5qeC" id="3_puicMogCS" role="PCHHv">
+        <property role="TrG5h" value="YELLOW" />
+      </node>
+      <node concept="b5qeC" id="3_puicMogDt" role="PCHHv">
+        <property role="TrG5h" value="GREEN" />
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="3_puicMogFD">
+    <node concept="PCHHj" id="3_puicMogFE" role="3mGtxP">
+      <property role="TrG5h" value="EnumTest" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <node concept="PCHzy" id="3_puicMogFF" role="PCHGa">
+        <node concept="327OUb" id="3_puicMogFG" role="PCHzz">
+          <property role="TrG5h" value="enumValue" />
+          <node concept="3xHE8C" id="3_puicMoit9" role="327w9S">
+            <node concept="2RqM1Q" id="3_puicMoit7" role="_vnH8">
+              <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+            </node>
+          </node>
+          <node concept="_uYbk" id="3_puicMoiXC" role="327w9Y">
+            <node concept="_vnHb" id="3_puicMoiXE" role="_uYbl">
+              <node concept="2RqM1Q" id="3_puicMoiXG" role="_vnH8">
+                <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+              </node>
+              <node concept="2RqM1Q" id="3_puicMoj6m" role="_vnH8">
+                <ref role="2RqM1R" node="3_puicMogDt" resolve="GREEN" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="3_puicMojCj" role="PCHzz" />
+        <node concept="32prLx" id="3_puicMojHn" role="PCHzz">
+          <node concept="32pbwo" id="3_puicMojHp" role="32oX99">
+            <node concept="32prLw" id="3_puicMojHr" role="32pbwr">
+              <node concept="PCHzy" id="3_puicMojHv" role="32prLT">
+                <node concept="_jtW9" id="3_puicMojRF" role="PCHzz">
+                  <node concept="_uF8j" id="3_puicMojRG" role="_jtWe">
+                    <node concept="_vnHb" id="3_puicMojRH" role="_uF8g">
+                      <node concept="2RqM1Q" id="3_puicMojRI" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3_puicMojRJ" role="_uFfl">
+                      <node concept="_iklQ" id="3_puicMok41" role="_vku1">
+                        <property role="_iklR" value="GREEN!" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="31uMWx" id="3_puicMojKH" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="3_puicMojLo" role="31szGO">
+                  <node concept="_vnHb" id="3_puicMojLq" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMojLs" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMogFG" resolve="enumValue" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="3_puicMojMr" role="31szGQ">
+                  <node concept="_vnHb" id="3_puicMojMt" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMojMv" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="2RqM1Q" id="3_puicMojNY" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMogDt" resolve="GREEN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="3_puicMok64" role="PCHzz">
+          <node concept="3122gz" id="3_puicMok5U" role="_jtWe">
+            <node concept="3122r3" id="3_puicMok5W" role="315$Eb">
+              <node concept="_vnHb" id="3_puicMok5Y" role="3122r2">
+                <node concept="2RqM1Q" id="3_puicMok60" role="_vnH8">
+                  <ref role="2RqM1R" node="3_puicMogFG" resolve="enumValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="_uYbk" id="3_puicMokbd" role="315$E5">
+              <node concept="_vnHb" id="3_puicMokbe" role="_uYbl">
+                <node concept="2RqM1Q" id="3_puicMokbf" role="_vnH8">
+                  <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                </node>
+                <node concept="2RqM1Q" id="3_puicMokbg" role="_vnH8">
+                  <ref role="2RqM1R" node="3_puicMkyOr" resolve="RED" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="3_puicMokfO" role="PCHzz" />
+        <node concept="32prLx" id="3_puicMokhD" role="PCHzz">
+          <node concept="32pbwo" id="3_puicMokhE" role="32oX99">
+            <node concept="32prLw" id="3_puicMokhF" role="32pbwr">
+              <node concept="PCHzy" id="3_puicMokhG" role="32prLT">
+                <node concept="_jtW9" id="3_puicMokhH" role="PCHzz">
+                  <node concept="_uF8j" id="3_puicMokhI" role="_jtWe">
+                    <node concept="_vnHb" id="3_puicMokhJ" role="_uF8g">
+                      <node concept="2RqM1Q" id="3_puicMokhK" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3_puicMokhL" role="_uFfl">
+                      <node concept="_iklQ" id="3_puicMokhM" role="_vku1">
+                        <property role="_iklR" value="GREEN!" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="31uMWx" id="3_puicMokhN" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="3_puicMokhO" role="31szGO">
+                  <node concept="_vnHb" id="3_puicMokhP" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMokhQ" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMogFG" resolve="enumValue" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="3_puicMokhR" role="31szGQ">
+                  <node concept="_vnHb" id="3_puicMokhS" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMokhT" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="2RqM1Q" id="3_puicMokhU" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMogDt" resolve="GREEN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32pbwo" id="3_puicMokGR" role="32oX99">
+            <node concept="32prLw" id="3_puicMokGS" role="32pbwr">
+              <node concept="PCHzy" id="3_puicMokGU" role="32prLT">
+                <node concept="_jtW9" id="3_puicMokty" role="PCHzz">
+                  <node concept="_uF8j" id="3_puicMoktz" role="_jtWe">
+                    <node concept="_vnHb" id="3_puicMokt$" role="_uF8g">
+                      <node concept="2RqM1Q" id="3_puicMokt_" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3_puicMoktA" role="_uFfl">
+                      <node concept="_iklQ" id="3_puicMoktB" role="_vku1">
+                        <property role="_iklR" value="RED!" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="31uMWx" id="3_puicMokIK" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="3_puicMokIL" role="31szGO">
+                  <node concept="_vnHb" id="3_puicMokIM" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMokIN" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMogFG" resolve="enumValue" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="3_puicMokIO" role="31szGQ">
+                  <node concept="_vnHb" id="3_puicMokIP" role="_uYbl">
+                    <node concept="2RqM1Q" id="3_puicMokIQ" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="2RqM1Q" id="3_puicMokIR" role="_vnH8">
+                      <ref role="2RqM1R" node="3_puicMkyOr" resolve="RED" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
