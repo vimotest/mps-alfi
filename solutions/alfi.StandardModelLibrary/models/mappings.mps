@@ -248,5 +248,210 @@
       </node>
     </node>
   </node>
+  <node concept="1V1JAE" id="72umVLUQmP2">
+    <property role="1V1JAF" value="72umVLUQr5s/cpp" />
+    <node concept="3HHQsS" id="72umVLUQmP3" role="1V1JAH">
+      <property role="TrG5h" value="PrimitiveTypes" />
+      <node concept="3HHQsX" id="72umVLUQmP4" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+        <ref role="3HHQyS" to="wyt6:~Boolean" resolve="Boolean" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP5" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+        <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP6" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfWN" resolve="Natural" />
+        <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP7" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfWq" resolve="Real" />
+        <ref role="3HHQyS" to="wyt6:~Double" resolve="Double" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP8" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfVO" resolve="String" />
+        <ref role="3HHQyS" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP9" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfW5" resolve="UnlimitedNatural" />
+        <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPa" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfXw" resolve="BitString" />
+        <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="3HHQsS" id="72umVLUQmPb" role="1V1JAH">
+      <property role="TrG5h" value="Behaviors" />
+      <node concept="3HHQsX" id="72umVLUQmPc" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfYm" resolve="ReadLine" />
+        <ref role="3HHQyS" to="zrzc:~BasicInputOutput.ReadLine()" resolve="ReadLine" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPd" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+        <ref role="3HHQyS" to="zrzc:~BasicInputOutput.WriteLine(java.lang.String)" resolve="WriteLine" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPe" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
+        <ref role="3HHQyS" to="lodc:~BooleanFunctions.ToString(java.lang.Boolean)" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPf" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPg" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
+        <ref role="3HHQyS" to="lodc:~RealFunctions.ToString(java.lang.Double)" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPh" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
+        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPi" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
+        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+      </node>
+    </node>
+    <node concept="3HHQsS" id="72umVLUQmPj" role="1V1JAH">
+      <property role="TrG5h" value="CollectionFunctions" />
+      <node concept="3HHQsX" id="72umVLUQmPk" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$yfx" resolve="add" />
+        <ref role="3HHQyS" to="33ny:~Collection.add(java.lang.Object)" resolve="add" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPl" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CUnh" resolve="addAll" />
+        <ref role="3HHQyS" to="33ny:~Collection.addAll(java.util.Collection)" resolve="addAll" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPm" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8tAF4" resolve="size" />
+        <ref role="3HHQyS" to="33ny:~Collection.size()" resolve="size" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPn" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8zGdb" resolve="includes" />
+        <ref role="3HHQyS" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPo" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPp" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8zGjh" resolve="excludes" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPq" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPr" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8zGkJ" resolve="count" />
+        </node>
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPs" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8zGnR" resolve="isEmpty" />
+        <ref role="3HHQyS" to="33ny:~Collection.isEmpty()" resolve="isEmpty" />
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPt" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPu" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8zGs0" resolve="notEmpty" />
+        </node>
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPv" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$xxb" resolve="includesAll" />
+        <ref role="3HHQyS" to="33ny:~Collection.containsAll(java.util.Collection)" resolve="containsAll" />
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPw" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPx" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8$xG2" resolve="excludesAll" />
+        </node>
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPy" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$xJn" resolve="equals" />
+        <ref role="3HHQyS" to="33ny:~Collection.equals(java.lang.Object)" resolve="equals" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPz" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8zGv4" resolve="at" />
+        <ref role="3HHQyS" to="33ny:~List.get(int)" resolve="get" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP$" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$xX$" resolve="indexOf" />
+        <ref role="3HHQyS" to="33ny:~List.indexOf(java.lang.Object)" resolve="indexOf" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmP_" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$y2_" resolve="first" />
+        <ref role="3HHQyS" to="33ny:~LinkedList.getFirst()" resolve="getFirst" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPA" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8$y8m" resolve="last" />
+        <ref role="3HHQyS" to="33ny:~LinkedList.getLast()" resolve="getLast" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPB" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CUvz" resolve="addAt" />
+        <ref role="3HHQyS" to="33ny:~List.add(int,java.lang.Object)" resolve="add" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPC" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CUWR" resolve="addAllAt" />
+        <ref role="3HHQyS" to="33ny:~List.addAll(int,java.util.Collection)" resolve="addAll" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPD" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CV47" resolve="remove" />
+        <ref role="3HHQyS" to="33ny:~Collection.remove(java.lang.Object)" resolve="remove" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPE" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CVle" resolve="removeAll" />
+        <ref role="3HHQyS" to="33ny:~Collection.removeAll(java.util.Collection)" resolve="removeAll" />
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPF" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPG" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8CVTv" resolve="removeOne" />
+        </node>
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPH" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CWhd" resolve="removeAt" />
+        <ref role="3HHQyS" to="33ny:~List.remove(int)" resolve="remove" />
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPI" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPJ" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8CWA9" resolve="replace" />
+          <ref role="3HHQyS" to="33ny:~List.set(int,java.lang.Object)" resolve="set" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="72umVLUQmPK" role="lGtFl">
+        <property role="3V$3am" value="mappings" />
+        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
+        <node concept="3HHQsX" id="72umVLUQmPL" role="8Wnug">
+          <ref role="3HHQsK" to="gkn4:2SV$eY8CWLE" resolve="replaceOne" />
+        </node>
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPM" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CX0M" resolve="replaceAt" />
+        <ref role="3HHQyS" to="33ny:~List.set(int,java.lang.Object)" resolve="set" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPN" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CU5r" resolve="clear" />
+        <ref role="3HHQyS" to="33ny:~Collection.clear()" resolve="clear" />
+      </node>
+    </node>
+    <node concept="3HHQsS" id="72umVLUQmPO" role="1V1JAH">
+      <property role="TrG5h" value="Testing" />
+      <node concept="3HHQsX" id="72umVLUQmPP" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+        <ref role="3HHQyS" to="yqm7:~Assertions.assertEquals(java.lang.Object,java.lang.Object)" resolve="assertEquals" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPQ" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
+        <ref role="3HHQyS" to="yqm7:~Assertions.assertTrue(boolean)" resolve="assertTrue" />
+      </node>
+      <node concept="3HHQsX" id="72umVLUQmPR" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
+        <ref role="3HHQyS" to="yqm7:~Assertions.assertFalse(boolean)" resolve="assertFalse" />
+      </node>
+    </node>
+  </node>
 </model>
 

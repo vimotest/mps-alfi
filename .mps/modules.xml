@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi.primitives" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" folder="alfi.generation" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/sandbox/alfi.sandbox.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/GenPlan/GenPlan.msd" folder="build" />
