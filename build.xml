@@ -6,11 +6,12 @@
   <property name="build.tmp" location="${build.dir}/tmp/alfi-build" />
   <property name="build.layout" location="${build.dir}/artifacts/alfi-build" />
   <property name="mps_home" location="${basedir}/build/mps-bundle/mps" />
+  <property name="dependencies_home" location="${basedir}/build/mps-bundle/dependencies" />
   <property name="project_home" location="" />
   <property name="mps.macro.project_home" location="${project_home}" />
   <property name="platform_lib" location="${mps_home}/lib" />
   <property name="artifacts.mps" location="${mps_home}" />
-  <property name="artifacts.CppBaseLanguage" location="${mps_home}/dependencies" />
+  <property name="artifacts.CppBaseLanguage" location="${dependencies_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -447,9 +448,9 @@
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
-          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
@@ -492,9 +493,9 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
-          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" kind="cl" />
         </dependencies>
@@ -1227,9 +1228,9 @@
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
-          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
@@ -1272,9 +1273,9 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
-          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" kind="cl" />
         </dependencies>
@@ -1934,6 +1935,7 @@
         <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
+      <macro name="dependencies_home" path="${dependencies_home}" />
       <macro name="project_home" path="${project_home}" />
       <macro name="mps.macro.project_home" path="${mps.macro.project_home}" />
       <macro name="platform_lib" path="${platform_lib}" />
@@ -2249,7 +2251,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toCppBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+  <target name="java.compile.alfi.toCppBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
     <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2286,7 +2288,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
-        <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
@@ -2307,6 +2308,7 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
@@ -2317,7 +2319,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toCppBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toCppBaseLanguage, fetchDependencies">
+  <target name="java.compile.alfi.toCppBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toCppBaseLanguage, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" />
     <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2354,7 +2356,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
-        <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
@@ -2376,6 +2377,7 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />

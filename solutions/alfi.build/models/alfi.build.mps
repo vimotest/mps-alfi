@@ -183,6 +183,20 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="OD4q9CUuk9" role="1l3spd">
+      <property role="TrG5h" value="dependencies_home" />
+      <node concept="55IIr" id="249Z$ScP_Ni" role="398pKh">
+        <node concept="2Ry0Ak" id="249Z$ScP_Nl" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="249Z$ScP_No" role="2Ry0An">
+            <property role="2Ry0Am" value="mps-bundle" />
+            <node concept="2Ry0Ak" id="249Z$ScP_Nr" role="2Ry0An">
+              <property role="2Ry0Am" value="dependencies" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
       <property role="TrG5h" value="project_home" />
     </node>
@@ -343,11 +357,8 @@
     </node>
     <node concept="2sgV4H" id="2SeqMAc5W1u" role="1l3spa">
       <ref role="1l3spb" to="gwjr:4h_5oU0U7hs" resolve="CppBaseLanguage" />
-      <node concept="398BVA" id="2SeqMAc5W1S" role="2JcizS">
-        <ref role="398BVh" node="5tK9548cRh7" resolve="mps_home" />
-        <node concept="2Ry0Ak" id="2SeqMAc5W25" role="iGT6I">
-          <property role="2Ry0Am" value="dependencies" />
-        </node>
+      <node concept="398BVA" id="45Y_ixHsjdl" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
       </node>
     </node>
     <node concept="m$_wf" id="5tK9548cRhB" role="3989C9">
@@ -685,11 +696,6 @@
         <node concept="1yeLz9" id="2SeqMAc5VN9" role="1TViLv">
           <property role="TrG5h" value="alfi.toCppBaseLanguage.generator" />
           <property role="3LESm3" value="9a40c2be-1bc9-4644-a51b-6e7037b4c888" />
-          <node concept="1SiIV0" id="2SeqMAc5VNa" role="3bR37C">
-            <node concept="3bR9La" id="2SeqMAc5VNb" role="1SiIV1">
-              <ref role="3bR37D" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="2SeqMAc5VNc" role="3bR37C">
             <node concept="3bR9La" id="2SeqMAc5VNd" role="1SiIV1">
               <ref role="3bR37D" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
@@ -732,6 +738,11 @@
           <node concept="1SiIV0" id="2SeqMAc5WpJ" role="3bR37C">
             <node concept="3bR9La" id="2SeqMAc5WpK" role="1SiIV1">
               <ref role="3bR37D" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="45Y_ixHnKCo" role="3bR37C">
+            <node concept="3bR9La" id="45Y_ixHnKCp" role="1SiIV1">
+              <ref role="3bR37D" to="gwjr:3SvoVjum9y6" resolve="CppStdLib" />
             </node>
           </node>
         </node>
