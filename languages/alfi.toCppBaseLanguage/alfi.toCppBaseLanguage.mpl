@@ -30,6 +30,7 @@
         <dependency reexport="false">caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)</dependency>
         <dependency reexport="false">1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)</dependency>
         <dependency reexport="false">b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)</dependency>
+        <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" version="0" />
@@ -67,6 +68,7 @@
         <module reference="9a40c2be-1bc9-4644-a51b-6e7037b4c888(alfi.toCppBaseLanguage.generator)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
