@@ -8,7 +8,6 @@ This document describes all current known problems with alfi.
 - SequenceOperations are only partially supported, especially those which yield sequences again
 - SequenceOperatios: ClassExtend is not supported
 - TemplateBinding in NameBinding not supported yet
-- 
 
 ## Generators
 

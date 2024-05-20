@@ -48,3 +48,30 @@ After having understood the sandbox models you can create a new model by mimicki
   - If it is the first time or you cleaned your build folder, this will download and install MPS and all required plugins
 - Execute `./gradlew packageStandardModelLibrary` such that the StandardModelLibrary stubs are correctly integrated
 - For other available gradle tasks see the output of `./gradlew tasks`
+
+# Benefits
+
+**Reduced Redundancy**:
+Writing DSL-specific transformation logic only once significantly reduces redundancy and effort compared to writing separate transformations for each target GPL. This also simplifies maintenance, as changes in DSL-specific logic only need to be made in one place.
+
+**Consistency and Reliability**:
+Using ALF as a standardized intermediate language ensures consistency and reliability in transformations. It also supports automated testing and validation of transformations, improving the overall reliability of the generated code.
+
+**Flexibility and Extensibility**:
+ALFI supports generating code for multiple target GPLs from a single intermediate model, enhancing the flexibility of the development process. It also supports composition and reuse of ALFI components across different DSLs, promoting modularity and extensibility.
+
+**Separation of Concerns**:
+ALFI decouples DSL-specific logic from target GPL-specific logic, allowing for cleaner and more modular transformation definitions. It also enables intermediate verification and validation steps (e.g., using ALF’s execution environment), ensuring correctness before final code generation.
+
+**Improved Abstraction**:
+ALFI provides a higher level of abstraction for defining transformations, which can simplify complex transformation logic and make it more understandable.
+
+**Industry-Relevant Tool Support**:
+Leveraging the industry-strength capabilities of JetBrains MPS, including its projectional editor and robust language workbench features, ALFI ensures a reliable and efficient development environment. Additionally, using ALF’s StandardModelLibrary provides a rich set of primitives and behaviors that can be mapped to various target languages.
+
+**Execution Directly in MPS**:
+Since MPS is built on a Java runtime and supports executing Java BaseLanguage classes directly inside the workbench, we can leverage the ALF to Java transformation to execute DSL models when a suitable ALFI transformation exists. For example, when we transform a DSL concept into an ALFI activity, we can mark it as a node directly executable inside MPS.
+
+**ALF-based Runtime Libraries for DSLs**:
+When transforming models of a DSL to ALFI language, developers can define a DSL-specific library that supports the transformation process. For example, using ALFI, an MPS runtime model supports specifying ALF base classes or utility helpers, which the generated ALF elements can rely on.
+
