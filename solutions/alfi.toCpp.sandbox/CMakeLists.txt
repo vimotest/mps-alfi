@@ -8,10 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(source_gen)
 include_directories(../alfi.StandardModelLibrary/source_gen/wrappers/cppWrappers)
 
-set(SOURCES
-        source_gen/alfi/toCpp/sandbox/ActivityHello.cpp
-        source_gen/alfi/toCpp/sandbox/ActivityHelloWorld.cpp
-)
-
-add_executable(alfi.toCpp.sandbox.ActivityHello ${SOURCES} source_gen/alfi/toCpp/sandbox/ActivityHello_main.cpp)
-add_executable(alfi.toCpp.sandbox.ActivityHelloWorld ${SOURCES} source_gen/alfi/toCpp/sandbox/ActivityHelloWorld_main.cpp)
+include(${CMAKE_SOURCE_DIR}/source_gen/alfi/toCpp/sandbox/alfi.toCpp.sandbox.cmake)

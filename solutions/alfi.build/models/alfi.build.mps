@@ -760,6 +760,11 @@
             <ref role="1E1Vl2" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1pkjUZ7o8G" role="3bR37C">
+          <node concept="3bR9La" id="1pkjUZ7o8H" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2SeqMAc5VSa" role="2G$12L">
         <property role="BnDLt" value="true" />
