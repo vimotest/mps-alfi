@@ -1944,6 +1944,7 @@
       <chunk>
         <module file="${basedir}/solutions/alfi.compitest/alfi.compitest.msd" />
         <module file="${basedir}/languages/alfi/sandbox/alfi.sandbox.msd" />
+        <module file="${basedir}/solutions/alfi.toCpp.sandbox/alfi.toCpp.sandbox.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
