@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
+    <import index="fmya" ref="r:27a31951-2d45-4457-8073-f28d9c4b2a79(wrappers.cppWrappers)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
