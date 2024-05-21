@@ -396,6 +396,9 @@
       <node concept="m$_yC" id="5tK9548cRkb" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" />
       </node>
+      <node concept="m$_yC" id="1pkjUYu4$U" role="m$_yJ">
+        <ref role="m$_y1" to="gwjr:4h_5oU0U7hQ" />
+      </node>
     </node>
     <node concept="2G$12M" id="5tK9548cRhY" role="3989C9">
       <property role="TrG5h" value="alfi-modules" />
@@ -745,6 +748,11 @@
               <ref role="3bR37D" to="gwjr:3SvoVjum9y6" resolve="CppStdLib" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1pkjUYtEX7" role="3bR37C">
+            <node concept="3bR9La" id="1pkjUYtEX8" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2SeqMAc5WpH" role="3bR37C">
           <node concept="Rbm2T" id="2SeqMAc5WpI" role="1SiIV1">
@@ -903,6 +911,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1pkjUYtEXi" role="3bR37C">
+          <node concept="3bR9La" id="1pkjUYtEXj" role="1SiIV1">
+            <ref role="3bR37D" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5tK9548cRt6" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -965,6 +978,11 @@
                 <property role="2Ry0Am" value="idea_rt.jar" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1pkjUYtEXt" role="3bR37C">
+          <node concept="3bR9La" id="1pkjUYtEXu" role="1SiIV1">
+            <ref role="3bR37D" to="gwjr:3SvoVjum9y6" resolve="CppStdLib" />
           </node>
         </node>
       </node>
