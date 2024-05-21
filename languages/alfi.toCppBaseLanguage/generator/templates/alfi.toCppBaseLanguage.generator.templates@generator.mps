@@ -257,6 +257,9 @@
         <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+        <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
@@ -4921,10 +4924,12 @@
                     </node>
                     <node concept="3UdiBG" id="1pkjUYgzk4" role="3UdiBL">
                       <node concept="3UdiBH" id="1pkjUYgzXV" role="3UdiBE">
-                        <node concept="3Uf2Ky" id="1pkjUYgzXW" role="3UdiBb" />
-                        <node concept="2b32R4" id="1pkjUYgzXX" role="lGtFl">
-                          <node concept="3JmXsc" id="1pkjUYgzXY" role="2P8S$">
-                            <node concept="3clFbS" id="1pkjUYgzXZ" role="2VODD2">
+                        <node concept="3Uf2Ky" id="1pkjUYgzXW" role="3UdiBb">
+                          <node concept="29HgVG" id="1pkjUYqsc5" role="lGtFl" />
+                        </node>
+                        <node concept="1WS0z7" id="1pkjUYqric" role="lGtFl">
+                          <node concept="3JmXsc" id="1pkjUYqrid" role="3Jn$fo">
+                            <node concept="3clFbS" id="1pkjUYqrie" role="2VODD2">
                               <node concept="3clFbF" id="1pkjUYgzY0" role="3cqZAp">
                                 <node concept="2OqwBi" id="1pkjUYgzY1" role="3clFbG">
                                   <node concept="2OqwBi" id="1pkjUYgzY2" role="2Oq$k0">
