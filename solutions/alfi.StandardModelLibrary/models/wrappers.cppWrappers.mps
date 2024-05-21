@@ -55,9 +55,13 @@
         <property id="4928369069049559005" name="includeName" index="36Rq9j" />
         <reference id="4101240549093288778" name="targetFile" index="3FMaf6" />
       </concept>
+      <concept id="8440901166851846438" name="CppBaseLanguage.structure.Inline" flags="ng" index="37hAJ5" />
       <concept id="3129541975290303051" name="CppBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
       <concept id="6209812394075305792" name="CppBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
+      </concept>
+      <concept id="6209812394072707160" name="CppBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
+        <child id="6209812394072707161" name="modifiers" index="3SE3Wx" />
       </concept>
       <concept id="6843536562190981623" name="CppBaseLanguage.structure.StringLiteral" flags="ng" index="3UcVB9">
         <property id="3129541975290891879" name="value" index="1pzheZ" />
@@ -108,7 +112,12 @@
   <node concept="tnfB3" id="7loaBmQt8F3">
     <property role="TrG5h" value="BooleanFunctions.hpp" />
     <property role="3GE5qa" value="alf.library.primitivebehaviors" />
-    <node concept="1ux1E" id="7loaBmQt8F4" role="31LgYG" />
+    <node concept="1ux1E" id="7loaBmQt8F4" role="31LgYG">
+      <node concept="31LgYL" id="1pkjUYra75" role="1ux1F">
+        <property role="36Rq9j" value="string" />
+        <ref role="3FMaf6" to="w5zs:7loaBmQtdHt" resolve="string" />
+      </node>
+    </node>
     <node concept="31LijL" id="7loaBmQt8F6" role="31LlDr">
       <property role="TrG5h" value="alf::library::primitivebehaviors::BooleanFunctions" />
       <node concept="ot6fp" id="7loaBmQt8F9" role="31LkaE">
@@ -139,6 +148,7 @@
         <node concept="3UfwP1" id="7loaBmQt8Fj" role="3Sw9wT">
           <node concept="3UfNVn" id="7loaBmQt8Fo" role="3UfBpY" />
         </node>
+        <node concept="37hAJ5" id="1pkjUYrZ2l" role="3SE3Wx" />
       </node>
     </node>
   </node>
@@ -162,13 +172,21 @@
         <node concept="1ux1M" id="7loaBmQtu7T" role="ot6f3">
           <node concept="2Yz168" id="7loaBmQM7V_" role="1ux1N">
             <node concept="3UfRsk" id="7loaBmQM7VK" role="2Yz169">
-              <node concept="3UcWq5" id="7loaBmQM7VZ" role="3Ufby4">
-                <ref role="zF7P4" node="7loaBmQtu85" resolve="value" />
-              </node>
               <node concept="3UcWq5" id="7loaBmQM7VT" role="3Ufby2">
                 <ref role="zF7P4" to="w5zs:7loaBmQHaoG" resolve="cout" />
                 <node concept="1VUwCF" id="7loaBmQPHB6" role="33$5l_">
                   <ref role="2aT8gA" to="w5zs:7loaBmQtu8J" resolve="std" />
+                </node>
+              </node>
+              <node concept="3UfRsk" id="1pkjUYrZ2o" role="3Ufby4">
+                <node concept="1VUwCF" id="1pkjUYrZ7p" role="3Ufby4">
+                  <ref role="2aT8gA" to="w5zs:1pkjUYrZ3i" resolve="endl" />
+                  <node concept="1VUwCF" id="1pkjUYsxfe" role="36M2fM">
+                    <ref role="2aT8gA" to="w5zs:7loaBmQHand" resolve="std" />
+                  </node>
+                </node>
+                <node concept="3UcWq5" id="1pkjUYrZ2v" role="3Ufby2">
+                  <ref role="zF7P4" node="7loaBmQtu85" resolve="value" />
                 </node>
               </node>
             </node>
@@ -183,6 +201,7 @@
           </node>
         </node>
         <node concept="1pH0Yj" id="7loaBmQtu82" role="3Sw9wT" />
+        <node concept="37hAJ5" id="1pkjUYrZ2b" role="3SE3Wx" />
       </node>
       <node concept="ot6fp" id="7loaBmQRTS3" role="31LkaE">
         <property role="TrG5h" value="ReadLine" />
@@ -209,6 +228,9 @@
                 <node concept="3UdiBH" id="7loaBmQRTXD" role="3UdiBE">
                   <node concept="3UcWq5" id="7loaBmQRTXH" role="3UdiBb">
                     <ref role="zF7P4" to="w5zs:7loaBmQHaoz" resolve="cin" />
+                    <node concept="1VUwCF" id="1pkjUYra71" role="33$5l_">
+                      <ref role="2aT8gA" to="w5zs:7loaBmQtu8J" resolve="std" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3UdiBH" id="7loaBmQRTXK" role="3UdiBE">
@@ -229,6 +251,7 @@
         <node concept="3UfwP1" id="7loaBmQRTSD" role="3Sw9wT">
           <node concept="3UfNVn" id="7loaBmQRTSI" role="3UfBpY" />
         </node>
+        <node concept="37hAJ5" id="1pkjUYrZ2g" role="3SE3Wx" />
       </node>
     </node>
   </node>
