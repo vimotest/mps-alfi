@@ -4007,5 +4007,36 @@
       <ref role="1YaFvo" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3Edw2szzEH7">
+    <property role="TrG5h" value="typeof_CastExpression" />
+    <property role="3GE5qa" value="expressions.unary" />
+    <node concept="3clFbS" id="3Edw2szzEH8" role="18ibNy">
+      <node concept="1Z5TYs" id="3Edw2szzERk" role="3cqZAp">
+        <node concept="mw_s8" id="3Edw2szzERC" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3Edw2szzER$" role="mwGJk">
+            <node concept="2OqwBi" id="3Edw2szzF1s" role="1Z2MuG">
+              <node concept="1YBJjd" id="3Edw2szzERT" role="2Oq$k0">
+                <ref role="1YBMHb" node="3Edw2szzEHa" resolve="castExpression" />
+              </node>
+              <node concept="3TrEf2" id="3Edw2szzGV8" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQxIPPk" resolve="typeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3Edw2szzERn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3Edw2szzEHZ" role="mwGJk">
+            <node concept="1YBJjd" id="3Edw2szzEIf" role="1Z2MuG">
+              <ref role="1YBMHb" node="3Edw2szzEHa" resolve="castExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3Edw2szzEHa" role="1YuTPh">
+      <property role="TrG5h" value="castExpression" />
+      <ref role="1YaFvo" to="28lk:6cBsaQxIPPj" resolve="CastExpression" />
+    </node>
+  </node>
 </model>
 
