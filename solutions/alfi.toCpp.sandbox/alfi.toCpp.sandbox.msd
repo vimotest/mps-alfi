@@ -10,6 +10,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+    <dependency reexport="false">b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
@@ -18,6 +19,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
     <module reference="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" version="0" />
