@@ -413,6 +413,21 @@
       <concept id="4928369069049559945" name="CppBaseLanguage.structure.QuotedIncludeDirective" flags="ng" index="36RqS7" />
       <concept id="7575174424947043369" name="CppBaseLanguage.structure.EnumMemberDeclaration" flags="ng" index="1fHW4C" />
       <concept id="3129541975290303051" name="CppBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
+      <concept id="3129541975290390536" name="CppBaseLanguage.structure.XorAssignExpression" flags="ng" index="1pHvng" />
+      <concept id="3129541975290390537" name="CppBaseLanguage.structure.LeftShiftAssignExpression" flags="ng" index="1pHvnh" />
+      <concept id="3129541975290390538" name="CppBaseLanguage.structure.RightShiftAssignExpression" flags="ng" index="1pHvni" />
+      <concept id="3129541975290390528" name="CppBaseLanguage.structure.AssignExpression" flags="ng" index="1pHvno" />
+      <concept id="3129541975290390529" name="CppBaseLanguage.structure.PlusAssignExpression" flags="ng" index="1pHvnp" />
+      <concept id="3129541975290390530" name="CppBaseLanguage.structure.MinusAssignExpression" flags="ng" index="1pHvnq" />
+      <concept id="3129541975290390531" name="CppBaseLanguage.structure.MultiplyAssignExpression" flags="ng" index="1pHvnr" />
+      <concept id="3129541975290390532" name="CppBaseLanguage.structure.DivideAssignExpression" flags="ng" index="1pHvns" />
+      <concept id="3129541975290390533" name="CppBaseLanguage.structure.ModuloAssignExpression" flags="ng" index="1pHvnt" />
+      <concept id="3129541975290390534" name="CppBaseLanguage.structure.AndAssignExpression" flags="ng" index="1pHvnu" />
+      <concept id="3129541975290390535" name="CppBaseLanguage.structure.OrAssignExpression" flags="ng" index="1pHvnv" />
+      <concept id="3129541975290390490" name="CppBaseLanguage.structure.AssignmentExpression" flags="ng" index="1pHvC2">
+        <child id="3129541975290390493" name="leftSide" index="1pHvC5" />
+        <child id="3129541975290390495" name="rightSide" index="1pHvC7" />
+      </concept>
       <concept id="6209812394075305792" name="CppBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
@@ -501,6 +516,7 @@
       <concept id="6843536562190726755" name="CppBaseLanguage.structure.UnaryExpressionWithOperator" flags="ng" index="3UfTpt">
         <child id="6843536562190726760" name="expression" index="3UfTpm" />
       </concept>
+      <concept id="6843536562190726752" name="CppBaseLanguage.structure.UnaryExpression" flags="ng" index="3UfTpu" />
       <concept id="6531566641162929002" name="CppBaseLanguage.structure.MemberReference" flags="ng" index="1VUwCF">
         <reference id="7783118190387115239" name="memberDeclaration" index="2aT8gA" />
         <child id="4659752524404942793" name="parent" index="36M2fM" />
@@ -3543,6 +3559,804 @@
   <node concept="jVnub" id="45Y_ixHsUvk">
     <property role="TrG5h" value="switch_AssignmentExpressions" />
     <property role="3GE5qa" value="expressions" />
+    <node concept="3aamgX" id="5KQf2y8e3z7" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e3zq" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e3zr" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e3zs" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e3zt" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e3zu" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e3zv" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e3zw" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e3zx" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e3zy" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e3zz" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e3z$" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTbM" resolve="SimpleAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e4zq" role="1lVwrX">
+        <node concept="1pHvno" id="3Edw2szzY3z" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzY3$" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzY3E" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzY3F" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzY3G" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzY3M" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzY3H" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzY3K" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzY3L" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzY3_" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzY8M" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzY8N" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzY8O" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzY8U" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzY8P" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzY8S" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzY8T" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e4Oc" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e4Od" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e4Oe" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e4Of" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e4Og" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e4Oh" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e4Oi" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e4Oj" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e4Ok" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e4Ol" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e4Om" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e4On" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTbN" resolve="PlusCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e4Oo" role="1lVwrX">
+        <node concept="1pHvnp" id="3Edw2szzYa8" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYa9" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYaf" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYag" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYah" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYan" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYai" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYal" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYam" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYaa" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYfn" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYfo" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYfp" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYfv" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYfq" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYft" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYfu" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e5dt" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e5du" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e5dv" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e5dw" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e5dx" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e5dy" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e5dz" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e5d$" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e5d_" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e5dA" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e5dB" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e5dC" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTbQ" resolve="MinusCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e5dD" role="1lVwrX">
+        <node concept="1pHvnq" id="3Edw2szzYgH" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYgI" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYgO" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYgP" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYgQ" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYgW" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYgR" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYgU" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYgV" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYgJ" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYhV" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYhW" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYhX" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYi3" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYhY" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYi1" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYi2" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e5t7" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e5t8" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e5t9" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e5ta" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e5tb" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e5tc" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e5td" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e5te" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e5tf" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e5tg" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e5th" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e5ti" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTbU" resolve="MultiplicationCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e5tj" role="1lVwrX">
+        <node concept="1pHvnr" id="3Edw2szzYjc" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYjd" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYjj" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYjk" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYjl" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYjr" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYjm" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYjp" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYjq" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYje" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYkq" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYkr" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYks" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYky" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYkt" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYkw" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYkx" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e5KE" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e5KF" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e5KG" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e5KH" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e5KI" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e5KJ" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e5KK" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e5KL" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e5KM" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e5KN" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e5KO" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e5KP" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTbZ" resolve="ModuloCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e5KQ" role="1lVwrX">
+        <node concept="1pHvnt" id="3Edw2szzYlw" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYlx" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYlB" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYlC" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYlD" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYlJ" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYlE" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYlH" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYlI" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYly" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYmI" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYmJ" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYmK" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYmQ" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYmL" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYmO" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYmP" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e62v" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e62w" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e62x" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e62y" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e62z" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e62$" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e62_" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e62A" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e62B" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e62C" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e62D" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e62E" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTc5" resolve="DivisionCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e62F" role="1lVwrX">
+        <node concept="1pHvns" id="3Edw2szzYnO" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYnP" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYnV" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYnW" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYnX" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYo3" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYnY" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYo1" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYo2" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYnQ" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYt3" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYt4" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYt5" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYtb" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYt6" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYt9" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYta" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e6cc" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e6cd" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e6ce" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e6cf" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e6cg" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e6ch" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e6ci" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e6cj" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e6ck" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e6cl" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e6cm" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e6cn" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcc" resolve="AndCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e6co" role="1lVwrX">
+        <node concept="1pHvnu" id="3Edw2szzYup" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYuq" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYuw" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYux" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYuy" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYuC" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYuz" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYuA" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYuB" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYur" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYvB" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYvC" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYvD" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYvJ" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYvE" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYvH" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYvI" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e6od" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e6oe" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e6of" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e6og" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e6oh" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e6oi" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e6oj" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e6ok" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e6ol" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e6om" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e6on" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e6oo" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTck" resolve="OrCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e6op" role="1lVwrX">
+        <node concept="1pHvnv" id="3Edw2szzYwN" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYwO" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYwU" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYwV" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYwW" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYx2" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYwX" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYx0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYx1" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYwP" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYy1" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYy2" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYy3" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYy9" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYy4" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYy7" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYy8" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e6_2" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e6_3" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e6_4" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e6_5" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e6_6" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e6_7" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e6_8" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e6_9" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e6_a" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e6_b" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e6_c" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e6_d" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTct" resolve="XorCompoundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e6_e" role="1lVwrX">
+        <node concept="1pHvng" id="3Edw2szzYzi" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYzj" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYzF" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYzG" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYzH" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYzN" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYzI" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYzL" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYzM" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYzk" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYG8" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYG9" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYGa" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYGg" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYGb" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYGe" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYGf" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e6Mp" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e6Mq" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e6Mr" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e6Ms" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e6Mt" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e6Mu" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e6Mv" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e6Mw" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e6Mx" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e6My" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e6Mz" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e6M$" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcB" resolve="LeftShiftCompundAssigment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e6M_" role="1lVwrX">
+        <node concept="1pHvnh" id="3Edw2szzYzo" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYzp" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYCN" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYCO" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYCP" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYCV" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYCQ" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYCT" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYCU" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYzq" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYHv" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYHw" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYHx" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYHB" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYHy" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYH_" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYHA" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e79y" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e79z" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e79$" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e79_" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e79A" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e79B" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e79C" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e79D" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e79E" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e79F" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e79G" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e79H" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcM" resolve="SignedRightShiftCompundAssigment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e79I" role="1lVwrX">
+        <node concept="1pHvni" id="3Edw2szzYzu" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYzv" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYDU" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYDV" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYDW" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYE2" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYDX" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYE0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYE1" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="3Edw2szzYzw" role="1pHvC7">
+            <node concept="29HgVG" id="3Edw2szzYIA" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYIB" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYIC" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYII" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYID" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYIG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYIH" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5KQf2y8e7De" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQybPie" resolve="AssignmentExpression" />
+      <node concept="30G5F_" id="5KQf2y8e7Df" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8e7Dg" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8e7Dh" role="3cqZAp">
+            <node concept="2OqwBi" id="5KQf2y8e7Di" role="3clFbG">
+              <node concept="2OqwBi" id="5KQf2y8e7Dj" role="2Oq$k0">
+                <node concept="30H73N" id="5KQf2y8e7Dk" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5KQf2y8e7Dl" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQyclFk" resolve="operator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5KQf2y8e7Dm" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5KQf2y8e7Dn" role="37wK5m">
+                  <node concept="1XH99k" id="5KQf2y8e7Do" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
+                  </node>
+                  <node concept="2ViDtV" id="5KQf2y8e7Dp" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcY" resolve="UnsingedRightShiftCompundAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="5KQf2y8e7Dq" role="1lVwrX">
+        <node concept="1pHvno" id="3Edw2szzYz$" role="gfFT$">
+          <node concept="3UfTpu" id="3Edw2szzYz_" role="1pHvC5">
+            <node concept="29HgVG" id="3Edw2szzYF1" role="lGtFl">
+              <node concept="3NFfHV" id="3Edw2szzYF2" role="3NFExx">
+                <node concept="3clFbS" id="3Edw2szzYF3" role="2VODD2">
+                  <node concept="3clFbF" id="3Edw2szzYF9" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Edw2szzYF4" role="3clFbG">
+                      <node concept="3TrEf2" id="3Edw2szzYF7" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                      </node>
+                      <node concept="30H73N" id="3Edw2szzYF8" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3UffAn" id="3Edw2szzYJG" role="1pHvC7">
+            <node concept="3UfwP1" id="3Edw2szzYJI" role="36mrdf">
+              <node concept="3UfM66" id="3Edw2szzYKy" role="3UfBpY" />
+            </node>
+            <node concept="3UffAn" id="3Edw2szzYK_" role="36mrdc">
+              <node concept="3UfwP1" id="3Edw2szzYKB" role="36mrdf">
+                <node concept="3UfM67" id="3Edw2szzYKK" role="3UfBpY" />
+              </node>
+              <node concept="3UfRsl" id="3Edw2szzYKN" role="36mrdc">
+                <node concept="3UcVBg" id="3Edw2szzYKY" role="3Ufby4">
+                  <property role="1pzoAX" value="1" />
+                  <node concept="29HgVG" id="3Edw2szzYL1" role="lGtFl">
+                    <node concept="3NFfHV" id="3Edw2szzYL2" role="3NFExx">
+                      <node concept="3clFbS" id="3Edw2szzYL3" role="2VODD2">
+                        <node concept="3clFbF" id="3Edw2szzYL9" role="3cqZAp">
+                          <node concept="2OqwBi" id="3Edw2szzYL4" role="3clFbG">
+                            <node concept="3TrEf2" id="3Edw2szzYL7" role="2OqNvi">
+                              <ref role="3Tt5mk" to="28lk:6cBsaQycjCC" resolve="rightHandSide" />
+                            </node>
+                            <node concept="30H73N" id="3Edw2szzYL8" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3UcVBg" id="3Edw2szzYKW" role="3Ufby2">
+                  <property role="1pzoAX" value="1" />
+                  <node concept="29HgVG" id="3Edw2szzYM8" role="lGtFl">
+                    <node concept="3NFfHV" id="3Edw2szzYM9" role="3NFExx">
+                      <node concept="3clFbS" id="3Edw2szzYMa" role="2VODD2">
+                        <node concept="3clFbF" id="3Edw2szzYMg" role="3cqZAp">
+                          <node concept="2OqwBi" id="3Edw2szzYMb" role="3clFbG">
+                            <node concept="3TrEf2" id="3Edw2szzYMe" role="2OqNvi">
+                              <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
+                            </node>
+                            <node concept="30H73N" id="3Edw2szzYMf" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="jVnub" id="45Y_ixHtaW$">
     <property role="TrG5h" value="switch_BinaryExpressions" />
