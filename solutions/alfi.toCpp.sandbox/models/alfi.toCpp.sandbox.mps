@@ -22,6 +22,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
@@ -57,15 +65,31 @@
         <child id="3328952194368015208" name="body" index="PCHGa" />
       </concept>
       <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
+      <concept id="3328952194368290224" name="alfi.structure.EndOfLineComment" flags="ng" index="PDIRi">
+        <child id="520354255176588995" name="commentText" index="I4nmN" />
+      </concept>
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      </concept>
+      <concept id="7144803224899245198" name="alfi.structure.AssignmentExpression" flags="ng" index="3122gz">
+        <child id="7144803224899369512" name="rightHandSide" index="315$E5" />
+        <child id="7144803224899369510" name="leftHandSide" index="315$Eb" />
+      </concept>
+      <concept id="7144803224899245678" name="alfi.structure.Assignment_NameLeftHandSide" flags="ng" index="3122r3">
+        <child id="7144803224899245679" name="target" index="3122r2" />
       </concept>
       <concept id="7144803224901733272" name="alfi.structure.BinaryExpression" flags="ng" index="31szGP">
         <child id="7144803224901733273" name="operand1" index="31szGO" />
         <child id="7144803224901733275" name="operand2" index="31szGQ" />
       </concept>
+      <concept id="7144803224901733332" name="alfi.structure.ArithmeticExpression" flags="ng" index="31szHT">
+        <property id="7144803224901733359" name="operator" index="31szH2" />
+      </concept>
       <concept id="7144803224902197132" name="alfi.structure.EqualityExpression" flags="ng" index="31uMWx">
         <property id="7144803224902197133" name="operator" index="31uMWw" />
+      </concept>
+      <concept id="7144803224902061774" name="alfi.structure.RelationalExpression" flags="ng" index="31vjTz">
+        <property id="7144803224902061775" name="operator" index="31vjTy" />
       </concept>
       <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
         <child id="7144803224883131093" name="typeName" index="327w9S" />
@@ -81,6 +105,20 @@
       <concept id="7144803224883743948" name="alfi.structure.IfStatement" flags="ng" index="32prLx">
         <child id="7144803224883955094" name="finalClause" index="32onkV" />
         <child id="7144803224883864292" name="nonFinalClauses" index="32oX99" />
+      </concept>
+      <concept id="7144803224891645265" name="alfi.structure.NumericUnaryExpression_Plus" flags="ng" index="32B2RW" />
+      <concept id="7144803224891645264" name="alfi.structure.BitStringUnaryExpression" flags="ng" index="32B2RX" />
+      <concept id="7144803224891645267" name="alfi.structure.CastExpression" flags="ng" index="32B2RY">
+        <child id="7144803224891645268" name="typeName" index="32B2RT" />
+      </concept>
+      <concept id="7144803224891645266" name="alfi.structure.NumericUnaryExpression_Minus" flags="ng" index="32B2RZ" />
+      <concept id="7144803224891557445" name="alfi.structure.BooleanUnaryExpression" flags="ng" index="32BnrC" />
+      <concept id="7144803224891528095" name="alfi.structure.UnaryExpression" flags="ng" index="32BIcM">
+        <child id="7144803224891528117" name="operand" index="32BIco" />
+      </concept>
+      <concept id="7144803224888718671" name="alfi.structure.WhileStatement" flags="ng" index="32Esny">
+        <child id="7144803224888718676" name="body" index="32EsnT" />
+        <child id="7144803224888718674" name="condition" index="32EsnZ" />
       </concept>
       <concept id="7144803224892466214" name="alfi.structure.OctalLiteralExpression" flags="ng" index="32S9ib">
         <property id="7144803224894582230" name="valueText" index="32NPPV" />
@@ -1053,6 +1091,323 @@
                     <node concept="_vnHb" id="2HakVwV1XrC" role="_uYbl">
                       <node concept="2RqM1Q" id="2HakVwV1XDy" role="_vnH8">
                         <ref role="2RqM1R" node="2HakVwV1Xrp" resolve="g" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="2HakVwV1XPA">
+    <node concept="PCHHj" id="2HakVwV1XPE" role="3mGtxP">
+      <property role="TrG5h" value="UnaryExpressionsTest" />
+      <property role="3GE5qa" value="expressions" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <node concept="PCHzy" id="2HakVwV1XPF" role="PCHGa">
+        <node concept="PDIRi" id="2HakVwV1XPG" role="PCHzz">
+          <node concept="1PaTwC" id="2HakVwV1XPH" role="I4nmN">
+            <node concept="3oM_SD" id="2HakVwV1XPI" role="1PaTwD">
+              <property role="3oM_SC" value="Boolean" />
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="2HakVwV1XPJ" role="PCHzz" />
+        <node concept="327OUb" id="2HakVwV1XPK" role="PCHzz">
+          <property role="TrG5h" value="b" />
+          <node concept="_jtWu" id="2HakVwV1XPL" role="327w9Y" />
+          <node concept="3xHE8C" id="2HakVwV22ag" role="327w9S">
+            <node concept="2RqM1Q" id="2HakVwV22ai" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="2HakVwV1XPO" role="PCHzz">
+          <node concept="_uF8j" id="2HakVwV1XPP" role="_jtWe">
+            <node concept="_vnHb" id="2HakVwV1XPQ" role="_uF8g">
+              <node concept="2RqM1Q" id="2HakVwV1XTy" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="2HakVwV1XPS" role="_uFfl">
+              <node concept="_uF8j" id="2HakVwV1XPT" role="_vku1">
+                <node concept="_vnHb" id="2HakVwV1XPU" role="_uF8g">
+                  <node concept="2RqM1Q" id="2HakVwV1XT0" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q47T" resolve="BooleanFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="2HakVwV1XW4" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="2HakVwV1XPX" role="_uFfl">
+                  <node concept="32BnrC" id="2HakVwV1XPY" role="_vku1">
+                    <node concept="_uYbk" id="2HakVwV1XPZ" role="32BIco">
+                      <node concept="_vnHb" id="2HakVwV1XQ0" role="_uYbl">
+                        <node concept="2RqM1Q" id="2HakVwV1XWA" role="_vnH8">
+                          <ref role="2RqM1R" node="2HakVwV1XPK" resolve="b" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="2HakVwV1XQ2" role="PCHzz" />
+        <node concept="PDIRi" id="2HakVwV1XQ3" role="PCHzz">
+          <node concept="1PaTwC" id="2HakVwV1XQ4" role="I4nmN">
+            <node concept="3oM_SD" id="2HakVwV1XQ5" role="1PaTwD">
+              <property role="3oM_SC" value="BitString" />
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="2HakVwV1XQ6" role="PCHzz" />
+        <node concept="327OUb" id="2HakVwV1XQ7" role="PCHzz">
+          <property role="TrG5h" value="i" />
+          <node concept="32T38h" id="2HakVwV1XQa" role="327w9Y">
+            <property role="32T38g" value="123" />
+          </node>
+          <node concept="3xHE8C" id="2HakVwV22b5" role="327w9S">
+            <node concept="2RqM1Q" id="2HakVwV22b7" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="2HakVwV1XQb" role="PCHzz">
+          <node concept="_uF8j" id="2HakVwV1XQc" role="_jtWe">
+            <node concept="_vnHb" id="2HakVwV1XQd" role="_uF8g">
+              <node concept="2RqM1Q" id="2HakVwV1XU3" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="2HakVwV1XQf" role="_uFfl">
+              <node concept="_uF8j" id="2HakVwV1XQg" role="_vku1">
+                <node concept="_vnHb" id="2HakVwV1XQh" role="_uF8g">
+                  <node concept="2RqM1Q" id="2HakVwV1XXp" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="2HakVwV1XXG" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="2HakVwV1XQk" role="_uFfl">
+                  <node concept="32B2RY" id="2HakVwV1XQl" role="_vku1">
+                    <node concept="32B2RX" id="2HakVwV1XQo" role="32BIco">
+                      <node concept="_uYbk" id="2HakVwV1XQp" role="32BIco">
+                        <node concept="_vnHb" id="2HakVwV1XQq" role="_uYbl">
+                          <node concept="2RqM1Q" id="2HakVwV1XYJ" role="_vnH8">
+                            <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3xHE8C" id="2HakVwV22c9" role="32B2RT">
+                      <node concept="2RqM1Q" id="2HakVwV22cb" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="2HakVwV1XQs" role="PCHzz" />
+        <node concept="PDIRi" id="2HakVwV1XQt" role="PCHzz">
+          <node concept="1PaTwC" id="2HakVwV1XQu" role="I4nmN">
+            <node concept="3oM_SD" id="2HakVwV1XQv" role="1PaTwD">
+              <property role="3oM_SC" value="Numeric" />
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="2HakVwV1XQw" role="PCHzz" />
+        <node concept="_jtW9" id="2HakVwV1XQx" role="PCHzz">
+          <node concept="_uF8j" id="2HakVwV1XQy" role="_jtWe">
+            <node concept="_vnHb" id="2HakVwV1XQz" role="_uF8g">
+              <node concept="2RqM1Q" id="2HakVwV1XU$" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="2HakVwV1XQ_" role="_uFfl">
+              <node concept="_uF8j" id="2HakVwV1XQA" role="_vku1">
+                <node concept="_vnHb" id="2HakVwV1XQB" role="_uF8g">
+                  <node concept="2RqM1Q" id="2HakVwV1XZ1" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="2HakVwV1XZk" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="2HakVwV1XQE" role="_uFfl">
+                  <node concept="32B2RW" id="2HakVwV1XQF" role="_vku1">
+                    <node concept="_uYbk" id="2HakVwV1XQG" role="32BIco">
+                      <node concept="_vnHb" id="2HakVwV1XQH" role="_uYbl">
+                        <node concept="2RqM1Q" id="2HakVwV1XZQ" role="_vnH8">
+                          <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="2HakVwV1XQJ" role="PCHzz">
+          <node concept="_uF8j" id="2HakVwV1XQK" role="_jtWe">
+            <node concept="_vnHb" id="2HakVwV1XQL" role="_uF8g">
+              <node concept="2RqM1Q" id="2HakVwV1XV5" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="2HakVwV1XQN" role="_uFfl">
+              <node concept="_uF8j" id="2HakVwV1XQO" role="_vku1">
+                <node concept="_vnHb" id="2HakVwV1XQP" role="_uF8g">
+                  <node concept="2RqM1Q" id="2HakVwV1Y0q" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                  </node>
+                  <node concept="2RqM1Q" id="2HakVwV1Y0H" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="2HakVwV1XQS" role="_uFfl">
+                  <node concept="32B2RZ" id="2HakVwV1XQT" role="_vku1">
+                    <node concept="_uYbk" id="2HakVwV1XQU" role="32BIco">
+                      <node concept="_vnHb" id="2HakVwV1XQV" role="_uYbl">
+                        <node concept="2RqM1Q" id="2HakVwV1Y08" role="_vnH8">
+                          <ref role="2RqM1R" node="2HakVwV1XQ7" resolve="i" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="2HakVwV1Vt0">
+    <node concept="PCHHj" id="2HakVwV1Vt4" role="3mGtxP">
+      <property role="3GE5qa" value="statements" />
+      <property role="TrG5h" value="WhileStatementTest" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <node concept="PCHzy" id="2HakVwV1Vt5" role="PCHGa">
+        <node concept="327OUb" id="2HakVwV1Vt6" role="PCHzz">
+          <property role="TrG5h" value="a" />
+          <node concept="32T38h" id="2HakVwV1Vt7" role="327w9Y">
+            <property role="32T38g" value="0" />
+          </node>
+          <node concept="3xHE8C" id="2HakVwV22eo" role="327w9S">
+            <node concept="2RqM1Q" id="2HakVwV22eq" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+        </node>
+        <node concept="32Esny" id="2HakVwV1Vta" role="PCHzz">
+          <node concept="31vjTz" id="2HakVwV1Vtb" role="32EsnZ">
+            <property role="31vjTy" value="6cBsaQymy$r/LessThan" />
+            <node concept="_uYbk" id="2HakVwV1Vtc" role="31szGO">
+              <node concept="_vnHb" id="2HakVwV1Vtd" role="_uYbl">
+                <node concept="2RqM1Q" id="2HakVwV1Vvq" role="_vnH8">
+                  <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
+                </node>
+              </node>
+            </node>
+            <node concept="32T38h" id="2HakVwV1Vtf" role="31szGQ">
+              <property role="32T38g" value="10" />
+            </node>
+          </node>
+          <node concept="PCHzy" id="2HakVwV1Vtg" role="32EsnT">
+            <node concept="_jtW9" id="2HakVwV1Vth" role="PCHzz">
+              <node concept="3122gz" id="2HakVwV1Vti" role="_jtWe">
+                <node concept="3122r3" id="2HakVwV1Vtj" role="315$Eb">
+                  <node concept="_vnHb" id="2HakVwV1Vtk" role="3122r2">
+                    <node concept="2RqM1Q" id="2HakVwV1VvY" role="_vnH8">
+                      <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="31szHT" id="2HakVwV1Vtm" role="315$E5">
+                  <property role="31szH2" value="6cBsaQylkJ$/PlusOperator" />
+                  <node concept="_uYbk" id="2HakVwV1Vtn" role="31szGO">
+                    <node concept="_vnHb" id="2HakVwV1Vto" role="_uYbl">
+                      <node concept="2RqM1Q" id="2HakVwV1VvG" role="_vnH8">
+                        <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="32T38h" id="2HakVwV1Vtq" role="31szGQ">
+                    <property role="32T38g" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_jtW9" id="2HakVwV1Vtr" role="PCHzz">
+              <node concept="_uF8j" id="2HakVwV1Vts" role="_jtWe">
+                <node concept="_vnHb" id="2HakVwV1Vtt" role="_uF8g">
+                  <node concept="2RqM1Q" id="2HakVwV1Vwg" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="2HakVwV1Vtv" role="_uFfl">
+                  <node concept="_uF8j" id="2HakVwV1Vtw" role="_vku1">
+                    <node concept="_vnHb" id="2HakVwV1Vtx" role="_uF8g">
+                      <node concept="2RqM1Q" id="2HakVwV1Vxl" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                      </node>
+                      <node concept="2RqM1Q" id="2HakVwV1VxC" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="2HakVwV1Vt$" role="_uFfl">
+                      <node concept="_uYbk" id="2HakVwV1Vt_" role="_vku1">
+                        <node concept="_vnHb" id="2HakVwV1VtA" role="_uYbl">
+                          <node concept="2RqM1Q" id="2HakVwV1Vya" role="_vnH8">
+                            <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="2HakVwV1VtC" role="PCHzz">
+          <node concept="_uF8j" id="2HakVwV1VtD" role="_jtWe">
+            <node concept="_vnHb" id="2HakVwV1VtE" role="_uF8g">
+              <node concept="2RqM1Q" id="2HakVwV1Vys" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="2HakVwV1VtG" role="_uFfl">
+              <node concept="31szHT" id="2HakVwV1VtH" role="_vku1">
+                <property role="31szH2" value="6cBsaQylkJ$/PlusOperator" />
+                <node concept="_iklQ" id="2HakVwV1VtI" role="31szGO">
+                  <property role="_iklR" value="End: " />
+                </node>
+                <node concept="_uF8j" id="2HakVwV1VtJ" role="31szGQ">
+                  <node concept="_vnHb" id="2HakVwV1VtK" role="_uF8g">
+                    <node concept="2RqM1Q" id="2HakVwV1VyX" role="_vnH8">
+                      <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                    </node>
+                    <node concept="2RqM1Q" id="2HakVwV1Vzg" role="_vnH8">
+                      <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                    </node>
+                  </node>
+                  <node concept="_vku0" id="2HakVwV1VtN" role="_uFfl">
+                    <node concept="_uYbk" id="2HakVwV1VtO" role="_vku1">
+                      <node concept="_vnHb" id="2HakVwV1VtP" role="_uYbl">
+                        <node concept="2RqM1Q" id="2HakVwV1VzM" role="_vnH8">
+                          <ref role="2RqM1R" node="2HakVwV1Vt6" resolve="a" />
+                        </node>
                       </node>
                     </node>
                   </node>
