@@ -754,6 +754,16 @@
               <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3Edw2s$MUft" role="3bR37C">
+            <node concept="3bR9La" id="3Edw2s$MUfu" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3Edw2s$MUfv" role="3bR37C">
+            <node concept="3bR9La" id="3Edw2s$MUfw" role="1SiIV1">
+              <ref role="3bR37D" node="2SeqMAc5VJ2" resolve="alfi.toCppBaseLanguage" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2SeqMAc5WpH" role="3bR37C">
           <node concept="Rbm2T" id="2SeqMAc5WpI" role="1SiIV1">
