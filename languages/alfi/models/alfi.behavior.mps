@@ -8139,5 +8139,34 @@
       <node concept="10P_77" id="3_puicMkGoh" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3Edw2s$tSYB">
+    <property role="3GE5qa" value="units.features" />
+    <ref role="13h7C2" to="28lk:3m3bKNZ_Ved" resolve="IFeature" />
+    <node concept="13i0hz" id="3Edw2s$tSYU" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getParentClassifier" />
+      <node concept="3Tm1VV" id="3Edw2s$tSYV" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3Edw2s$tSZi" role="3clF45">
+        <ref role="ehGHo" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
+      </node>
+      <node concept="3clFbS" id="3Edw2s$tSYX" role="3clF47">
+        <node concept="3clFbF" id="3Edw2s$tT16" role="3cqZAp">
+          <node concept="1PxgMI" id="3Edw2s$tTC$" role="3clFbG">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="3Edw2s$tTDs" role="3oSUPX">
+              <ref role="cht4Q" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
+            </node>
+            <node concept="2OqwBi" id="3Edw2s$tTcf" role="1m5AlR">
+              <node concept="13iPFW" id="3Edw2s$tT15" role="2Oq$k0" />
+              <node concept="1mfA1w" id="3Edw2s$tTls" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3Edw2s$tSYC" role="13h7CW">
+      <node concept="3clFbS" id="3Edw2s$tSYD" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
