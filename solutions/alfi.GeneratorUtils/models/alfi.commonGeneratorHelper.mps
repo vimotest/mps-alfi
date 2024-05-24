@@ -892,25 +892,13 @@
           </node>
         </node>
         <node concept="3clFbF" id="45Y_ixHtwMR" role="3cqZAp">
-          <node concept="22lmx$" id="45Y_ixHtz3s" role="3clFbG">
-            <node concept="2OqwBi" id="45Y_ixHtxmn" role="3uHU7B">
-              <node concept="37vLTw" id="45Y_ixHtwVZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="45Y_ixHtwVR" resolve="qualifiedType" />
-              </node>
-              <node concept="1mIQ4w" id="45Y_ixHtxzW" role="2OqNvi">
-                <node concept="chp4Y" id="45Y_ixHtxDi" role="cj9EA">
-                  <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
-                </node>
-              </node>
+          <node concept="2OqwBi" id="45Y_ixHtxmn" role="3clFbG">
+            <node concept="37vLTw" id="45Y_ixHtwVZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="45Y_ixHtwVR" resolve="qualifiedType" />
             </node>
-            <node concept="2OqwBi" id="45Y_ixHtz79" role="3uHU7w">
-              <node concept="37vLTw" id="45Y_ixHtz7a" role="2Oq$k0">
-                <ref role="3cqZAo" node="45Y_ixHtwVR" resolve="qualifiedType" />
-              </node>
-              <node concept="1mIQ4w" id="45Y_ixHtz7b" role="2OqNvi">
-                <node concept="chp4Y" id="45Y_ixHtzeK" role="cj9EA">
-                  <ref role="cht4Q" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
-                </node>
+            <node concept="1mIQ4w" id="45Y_ixHtxzW" role="2OqNvi">
+              <node concept="chp4Y" id="45Y_ixHtxDi" role="cj9EA">
+                <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
               </node>
             </node>
           </node>
