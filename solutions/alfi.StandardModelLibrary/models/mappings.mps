@@ -402,13 +402,9 @@
           <ref role="3HHQyS" to="33ny:~List.addAll(int,java.util.Collection)" resolve="addAll" />
         </node>
       </node>
-      <node concept="1X3_iC" id="7loaBmQX32R" role="lGtFl">
-        <property role="3V$3am" value="mappings" />
-        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
-        <node concept="3HHQsX" id="72umVLUQmPD" role="8Wnug">
-          <ref role="3HHQsK" to="gkn4:2SV$eY8CV47" resolve="remove" />
-          <ref role="3HHQyS" to="33ny:~Collection.remove(java.lang.Object)" resolve="remove" />
-        </node>
+      <node concept="3HHQsX" id="72umVLUQmPD" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CV47" resolve="remove" />
+        <ref role="3HHQyS" to="fmya:3Edw2s$OiPU" resolve="remove" />
       </node>
       <node concept="1X3_iC" id="7loaBmQX32S" role="lGtFl">
         <property role="3V$3am" value="mappings" />
@@ -425,13 +421,9 @@
           <ref role="3HHQsK" to="gkn4:2SV$eY8CVTv" resolve="removeOne" />
         </node>
       </node>
-      <node concept="1X3_iC" id="7loaBmQX37D" role="lGtFl">
-        <property role="3V$3am" value="mappings" />
-        <property role="3V$3ak" value="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3/3405607493575131840/3405607493575169380" />
-        <node concept="3HHQsX" id="72umVLUQmPH" role="8Wnug">
-          <ref role="3HHQsK" to="gkn4:2SV$eY8CWhd" resolve="removeAt" />
-          <ref role="3HHQyS" to="33ny:~List.remove(int)" resolve="remove" />
-        </node>
+      <node concept="3HHQsX" id="72umVLUQmPH" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:2SV$eY8CWhd" resolve="removeAt" />
+        <ref role="3HHQyS" to="fmya:3Edw2s$OiQF" resolve="removeAt" />
       </node>
       <node concept="1X3_iC" id="72umVLUQmPI" role="lGtFl">
         <property role="3V$3am" value="mappings" />
