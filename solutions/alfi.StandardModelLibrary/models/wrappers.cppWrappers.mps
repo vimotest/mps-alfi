@@ -26,6 +26,7 @@
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="396685855640368748" name="CppBaseLanguage.structure.CppHeaderSourceFile" flags="ng" index="tnfB3" />
+      <concept id="4219169331527627159" name="CppBaseLanguage.structure.SizeType" flags="ng" index="uob6K" />
       <concept id="7769220957754731518" name="CppBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM" />
       <concept id="2439281069887047993" name="CppBaseLanguage.structure.NotGenericParameterTypeReference" flags="ng" index="2Gatwc">
         <reference id="2439281069887050838" name="referencedType" index="2Gaslz" />
@@ -70,10 +71,6 @@
       <concept id="4928369069022556213" name="CppBaseLanguage.structure.ReferenceTypeReference" flags="ng" index="35uqmV">
         <child id="4928369069035431665" name="type" index="35x3dZ" />
       </concept>
-      <concept id="4928369069041428160" name="CppBaseLanguage.structure.CastOperation" flags="ng" index="36mrde">
-        <child id="4928369069041428162" name="expression" index="36mrdc" />
-        <child id="4928369069041428161" name="targetTypeExpression" index="36mrdf" />
-      </concept>
       <concept id="4928369069049559004" name="CppBaseLanguage.structure.IncludeDirective" flags="ng" index="36Rq9i">
         <property id="4928369069049559005" name="includeName" index="36Rq9j" />
         <reference id="4101240549093288778" name="targetFile" index="3FMaf6" />
@@ -96,9 +93,6 @@
       <concept id="6843536562190981623" name="CppBaseLanguage.structure.StringLiteral" flags="ng" index="3UcVB9">
         <property id="3129541975290891879" name="value" index="1pzheZ" />
       </concept>
-      <concept id="6843536562190981614" name="CppBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
-        <property id="3129541975290926181" name="value" index="1pzoAX" />
-      </concept>
       <concept id="6843536562191001275" name="CppBaseLanguage.structure.VariableReference" flags="ng" index="3UcWq5">
         <reference id="7769220957754731528" name="variableDeclaration" index="zF7P4" />
         <child id="8455554985454239504" name="parent" index="33$5l_" />
@@ -118,20 +112,16 @@
         <child id="6843536562190617634" name="ifTrue" index="3Uf2Ks" />
         <child id="6843536562190617632" name="condition" index="3Uf2Ku" />
       </concept>
-      <concept id="6843536562190656627" name="CppBaseLanguage.structure.AndExpression" flags="ng" index="3Uf8hd" />
       <concept id="6843536562190653623" name="CppBaseLanguage.structure.BinaryOperation" flags="ng" index="3Ufby9">
         <child id="6843536562190653628" name="leftExpression" index="3Ufby2" />
         <child id="6843536562190653626" name="rightExpression" index="3Ufby4" />
       </concept>
-      <concept id="6843536562190670248" name="CppBaseLanguage.structure.GreaterThanOrEqualToExpression" flags="ng" index="3UffAm" />
-      <concept id="6843536562190670249" name="CppBaseLanguage.structure.StaticCastExpression" flags="ng" index="3UffAn" />
       <concept id="6843536562190670245" name="CppBaseLanguage.structure.LessThanExpression" flags="ng" index="3UffAr" />
       <concept id="6843536562190757247" name="CppBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
         <child id="7804400563165459583" name="typeModifier" index="o6Ny9" />
         <child id="6843536562190767680" name="nonArrayType" index="3UfBpY" />
       </concept>
       <concept id="6843536562190694844" name="CppBaseLanguage.structure.BoolType" flags="ng" index="3UfLA2" />
-      <concept id="6843536562190680504" name="CppBaseLanguage.structure.IntType" flags="ng" index="3UfM66" />
       <concept id="6843536562190687977" name="CppBaseLanguage.structure.StringType" flags="ng" index="3UfNVn" />
       <concept id="6843536562190710072" name="CppBaseLanguage.structure.PlusExpression" flags="ng" index="3UfPk6" />
       <concept id="6843536562190702378" name="CppBaseLanguage.structure.BitwiseLeftShiftExpression" flags="ng" index="3UfRsk" />
@@ -307,6 +297,10 @@
         <property role="36Rq9j" value="algorithm" />
         <ref role="3FMaf6" to="sta3:3Edw2s$OiRs" resolve="algorithm" />
       </node>
+      <node concept="31LgYL" id="3Edw2s$ViWY" role="1ux1F">
+        <property role="36Rq9j" value="optional" />
+        <ref role="3FMaf6" to="sta3:5wP$QAQ5gr9" resolve="optional" />
+      </node>
     </node>
     <node concept="31LijL" id="3Edw2s$OiPS" role="31LlDr">
       <property role="TrG5h" value="alf::library::primitivebehaviors::CollectionFunctions" />
@@ -462,35 +456,20 @@
                 </node>
               </node>
             </node>
-            <node concept="3UffAm" id="3Edw2s$OCRv" role="2YyY03">
-              <node concept="3UcWq5" id="3Edw2s$OCRw" role="3Ufby2">
+            <node concept="3UffAr" id="3Edw2s$OCRS" role="2YyY03">
+              <node concept="3UcWq5" id="3Edw2s$OCRT" role="3Ufby2">
                 <ref role="zF7P4" node="3Edw2s$OiQP" resolve="index" />
               </node>
-              <node concept="3Uf8hd" id="3Edw2s$OCRD" role="3Ufby4">
-                <node concept="3UcVBg" id="3Edw2s$OCRE" role="3Ufby2">
-                  <property role="1pzoAX" value="0" />
-                </node>
-                <node concept="3UffAr" id="3Edw2s$OCRS" role="3Ufby4">
-                  <node concept="3UcWq5" id="3Edw2s$OCRT" role="3Ufby2">
-                    <ref role="zF7P4" node="3Edw2s$OiQP" resolve="index" />
+              <node concept="3UdiBM" id="3Edw2s$OCSr" role="3Ufby4">
+                <node concept="3Uc_2w" id="3Edw2s$OCSC" role="3UdiBN">
+                  <node concept="3UcWq5" id="3Edw2s$OCS$" role="3Uc_2x">
+                    <ref role="zF7P4" node="3Edw2s$OiQJ" resolve="collection" />
                   </node>
-                  <node concept="3UffAn" id="3Edw2s$OCS0" role="3Ufby4">
-                    <node concept="3UfwP1" id="3Edw2s$OCS2" role="36mrdf">
-                      <node concept="3UfM66" id="3Edw2s$OCSb" role="3UfBpY" />
-                    </node>
-                    <node concept="3UdiBM" id="3Edw2s$OCSr" role="36mrdc">
-                      <node concept="3Uc_2w" id="3Edw2s$OCSC" role="3UdiBN">
-                        <node concept="3UcWq5" id="3Edw2s$OCS$" role="3Uc_2x">
-                          <ref role="zF7P4" node="3Edw2s$OiQJ" resolve="collection" />
-                        </node>
-                        <node concept="1VUwCF" id="3Edw2s$OCSD" role="3Uc_2v">
-                          <ref role="2aT8gA" to="sta3:7loaBmQX2WF" resolve="size" />
-                        </node>
-                      </node>
-                      <node concept="3UdiBG" id="3Edw2s$OCSv" role="3UdiBL" />
-                    </node>
+                  <node concept="1VUwCF" id="3Edw2s$OCSD" role="3Uc_2v">
+                    <ref role="2aT8gA" to="sta3:7loaBmQX2WF" resolve="size" />
                   </node>
                 </node>
+                <node concept="3UdiBG" id="3Edw2s$OCSv" role="3UdiBL" />
               </node>
             </node>
           </node>
@@ -519,13 +498,109 @@
           <node concept="31KZC3" id="3Edw2s$OiQP" role="1ux1J">
             <property role="TrG5h" value="index" />
             <node concept="3UfwP1" id="3Edw2s$OiQQ" role="3z8Npe">
-              <node concept="3UfM66" id="3Edw2s$OiRo" role="3UfBpY" />
+              <node concept="uob6K" id="3Edw2s_2Wba" role="3UfBpY" />
             </node>
           </node>
         </node>
         <node concept="1pH0Yj" id="3Edw2s$OiQS" role="3Sw9wT" />
         <node concept="31Lcgi" id="3Edw2s$OiQT" role="1Fzgr7">
           <property role="TrG5h" value="T" />
+        </node>
+      </node>
+      <node concept="ot6fp" id="3Edw2s$ViTV" role="31LkaE">
+        <property role="TrG5h" value="at" />
+        <node concept="1ux1M" id="3Edw2s$ViTW" role="ot6f3">
+          <node concept="2YyY02" id="3Edw2s$ViTX" role="1ux1N">
+            <node concept="1ux1M" id="3Edw2s$ViTY" role="2YyY01">
+              <node concept="2YuCjO" id="3Edw2s$ViYm" role="1ux1N">
+                <node concept="3UdiBM" id="3Edw2s$ViYx" role="2YuCjP">
+                  <node concept="3Uc_2w" id="3Edw2s$ViYy" role="3UdiBN">
+                    <node concept="3UcWq5" id="3Edw2s$ViYz" role="3Uc_2x">
+                      <ref role="zF7P4" node="3Edw2s$ViUs" resolve="collection" />
+                    </node>
+                    <node concept="1VUwCF" id="3Edw2s$ViY$" role="3Uc_2v">
+                      <ref role="2aT8gA" to="sta3:7loaBmQX2Xz" resolve="at" />
+                    </node>
+                  </node>
+                  <node concept="3UdiBG" id="3Edw2s$ViY_" role="3UdiBL">
+                    <node concept="3UdiBH" id="3Edw2s$ViYA" role="3UdiBE">
+                      <node concept="3UcWq5" id="3Edw2s$ViYB" role="3UdiBb">
+                        <ref role="zF7P4" node="3Edw2s$ViU$" resolve="index" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3UffAr" id="3Edw2s$ViUh" role="2YyY03">
+              <node concept="3UcWq5" id="3Edw2s$ViUi" role="3Ufby2">
+                <ref role="zF7P4" node="3Edw2s$ViU$" resolve="index" />
+              </node>
+              <node concept="3UdiBM" id="3Edw2s$ViUm" role="3Ufby4">
+                <node concept="3Uc_2w" id="3Edw2s$ViUn" role="3UdiBN">
+                  <node concept="3UcWq5" id="3Edw2s$ViUo" role="3Uc_2x">
+                    <ref role="zF7P4" node="3Edw2s$ViUs" resolve="collection" />
+                  </node>
+                  <node concept="1VUwCF" id="3Edw2s$ViUp" role="3Uc_2v">
+                    <ref role="2aT8gA" to="sta3:7loaBmQX2WF" resolve="size" />
+                  </node>
+                </node>
+                <node concept="3UdiBG" id="3Edw2s$ViUq" role="3UdiBL" />
+              </node>
+            </node>
+          </node>
+          <node concept="2YuCjO" id="3Edw2s$ViZl" role="1ux1N">
+            <node concept="3UcWq5" id="3Edw2s_2WbA" role="2YuCjP">
+              <ref role="zF7P4" to="sta3:3Edw2s$Vj6h" resolve="nullopt" />
+              <node concept="1VUwCF" id="3Edw2s_2WbC" role="33$5l_">
+                <ref role="2aT8gA" to="sta3:5wP$QAQ5gra" resolve="std" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1ux1I" id="3Edw2s$ViUr" role="1fIg$P">
+          <node concept="31KZC3" id="3Edw2s$ViUs" role="1ux1J">
+            <property role="TrG5h" value="collection" />
+            <node concept="3UfwP1" id="3Edw2s$ViUt" role="3z8Npe">
+              <node concept="35uqmV" id="3Edw2s$ViUu" role="3UfBpY">
+                <node concept="3UfwP1" id="3Edw2s$ViUv" role="35x3dZ">
+                  <node concept="2Gatwc" id="3Edw2s$ViUw" role="3UfBpY">
+                    <ref role="2Gaslz" to="sta3:4h_5oU1Kna2" resolve="vector" />
+                    <node concept="2Gatwc" id="3Edw2s$ViUx" role="2GaslH">
+                      <ref role="2Gaslz" to="sta3:5wP$QAQ5gqW" resolve="std" />
+                    </node>
+                    <node concept="3UfwP1" id="3Edw2s$ViUy" role="2GavS0">
+                      <node concept="2N$mWS" id="3Edw2s$ViUz" role="3UfBpY">
+                        <property role="2N$mWW" value="T" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="31KZC3" id="3Edw2s$ViU$" role="1ux1J">
+            <property role="TrG5h" value="index" />
+            <node concept="3UfwP1" id="3Edw2s$ViU_" role="3z8Npe">
+              <node concept="uob6K" id="3Edw2s_2Wb7" role="3UfBpY" />
+            </node>
+          </node>
+        </node>
+        <node concept="31Lcgi" id="3Edw2s$ViUC" role="1Fzgr7">
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="3UfwP1" id="3Edw2s$ViWT" role="3Sw9wT">
+          <node concept="2Gatwc" id="3Edw2s$ViX2" role="3UfBpY">
+            <ref role="2Gaslz" to="sta3:5wP$QAQ5grb" resolve="optional" />
+            <node concept="2Gatwc" id="3Edw2s$ViX4" role="2GaslH">
+              <ref role="2Gaslz" to="sta3:5wP$QAQ5gra" resolve="std" />
+            </node>
+            <node concept="3UfwP1" id="3Edw2s$ViX8" role="2GavS0">
+              <node concept="2N$mWS" id="3Edw2s$ViXa" role="3UfBpY">
+                <property role="2N$mWW" value="T" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
