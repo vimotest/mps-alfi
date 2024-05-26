@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3bcb921c-ead2-4d1e-83ec-8845a47b58e8(alfi.toBaseLanguage.generator.helper)">
+<model ref="r:3bcb921c-ead2-4d1e-83ec-8845a47b58e8(alfi.toJavaBaseLanguage.generator.helper)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />

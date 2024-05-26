@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toBaselanguage@genplan)">
+<model ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toJavaBaseLanguage@genplan)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -33,13 +33,13 @@
     </language>
   </registry>
   <node concept="2VgMpV" id="3OZQpz3aSq">
-    <property role="TrG5h" value="AlfiToBaselanguage" />
+    <property role="TrG5h" value="AlfiToJavaBaselanguage" />
     <node concept="2VgMA2" id="3OZQpz3aSs" role="2VgMA7">
       <property role="1s431M" value="true" />
       <node concept="2Qf6Nf" id="3OZQpz3aSv" role="2Qf7GQ">
         <node concept="2V$Bhx" id="3OZQpz3aSz" role="2Qf6Ng">
           <property role="2V$B1T" value="d0e1230a-72e3-4b6b-88f2-98d924f7de11" />
-          <property role="2V$B1Q" value="alfi.toBaseLanguage" />
+          <property role="2V$B1Q" value="alfi.toJavaBaseLanguage" />
         </node>
       </node>
     </node>

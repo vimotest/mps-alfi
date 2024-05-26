@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5d3de372-2586-4c11-b61b-012062e6c6b8(alfi.toBaseLanguage.behavior)">
+<model ref="r:5d3de372-2586-4c11-b61b-012062e6c6b8(alfi.toJavaBaseLanguage.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />

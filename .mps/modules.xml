@@ -3,8 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi.primitives" />
-      <modulePath path="$PROJECT_DIR$/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" folder="alfi.generation" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi.toJavaBaseLanguage/alfi.toJavaBaseLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/sandbox/alfi.sandbox.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/GenPlan/GenPlan.msd" folder="build" />
@@ -14,7 +14,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/alfi.build/alfi.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.compitest/alfi.compitest.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.test/alfi.test.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/solutions/alfi.toCpp.sandbox/alfi.toCpp.sandbox.msd" folder="tests" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">

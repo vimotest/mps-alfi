@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0ca9ad42-814b-4940-8a11-8fcd4c5fd5b8(alfi.toBaseLanguage.generator.templates@generator)">
+<model ref="r:0ca9ad42-814b-4940-8a11-8fcd4c5fd5b8(alfi.toJavaBaseLanguage.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -10,11 +10,11 @@
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="qyxn" ref="r:8ed378e0-18f0-466f-a4d1-530e62855bda(alfi.toBaseLanguage.structure)" />
+    <import index="qyxn" ref="r:8ed378e0-18f0-466f-a4d1-530e62855bda(alfi.toJavaBaseLanguage.structure)" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="nlwv" ref="r:3bcb921c-ead2-4d1e-83ec-8845a47b58e8(alfi.toBaseLanguage.generator.helper)" />
+    <import index="nlwv" ref="r:3bcb921c-ead2-4d1e-83ec-8845a47b58e8(alfi.toJavaBaseLanguage.generator.helper)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
