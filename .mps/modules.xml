@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi.primitives" />
+      <modulePath path="$PROJECT_DIR$/languages/alfi.simplifyAlfiLanguage/alfi.simplifyAlfiLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toJavaBaseLanguage/alfi.toJavaBaseLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi/alfi.mpl" folder="alfi" />

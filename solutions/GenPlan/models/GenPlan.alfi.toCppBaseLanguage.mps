@@ -34,6 +34,12 @@
     <property role="TrG5h" value="AlfiToCppBaselanguage" />
     <node concept="2VgMA2" id="3OZQpz3aSs" role="2VgMA7">
       <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="by5CupmlIC" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="by5CupmlIX" role="2Qf6Ng">
+          <property role="2V$B1T" value="ded42a5f-0d92-4cc2-b9ff-116aae7175a9" />
+          <property role="2V$B1Q" value="alfi.simplifyAlfiLanguage" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="3OZQpz3aSv" role="2Qf7GQ">
         <node concept="2V$Bhx" id="64vLWnJGj9F" role="2Qf6Ng">
           <property role="2V$B1T" value="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf" />
