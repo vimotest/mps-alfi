@@ -3301,6 +3301,40 @@
         </node>
         <node concept="9aQIb" id="6CIUUG_tf_U" role="9aQIa">
           <node concept="3clFbS" id="6CIUUG_tf_V" role="9aQI4">
+            <node concept="3SKdUt" id="64vLWnIAjTl" role="3cqZAp">
+              <node concept="1PaTwC" id="64vLWnIAjTm" role="1aUNEU">
+                <node concept="3oM_SD" id="64vLWnIAjT$" role="1PaTwD">
+                  <property role="3oM_SC" value="avoid" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAjTA" role="1PaTwD">
+                  <property role="3oM_SC" value="using" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAjTE" role="1PaTwD">
+                  <property role="3oM_SC" value="LocalNameDeclarationStatement.typeName," />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1q" role="1PaTwD">
+                  <property role="3oM_SC" value="since" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1v" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1_" role="1PaTwD">
+                  <property role="3oM_SC" value="does" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1G" role="1PaTwD">
+                  <property role="3oM_SC" value="not" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1O" role="1PaTwD">
+                  <property role="3oM_SC" value="carry" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk1X" role="1PaTwD">
+                  <property role="3oM_SC" value="optionality" />
+                </node>
+                <node concept="3oM_SD" id="64vLWnIAk27" role="1PaTwD">
+                  <property role="3oM_SC" value="information" />
+                </node>
+              </node>
+            </node>
             <node concept="1Z5TYs" id="46wqe1xwfGF" role="3cqZAp">
               <node concept="mw_s8" id="46wqe1xwfGI" role="1ZfhK$">
                 <node concept="1Z2H0r" id="46wqe1xwfft" role="mwGJk">
@@ -3309,16 +3343,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="mw_s8" id="64vLWnItGi$" role="1ZfhKB">
-                <node concept="2YIFZM" id="64vLWnItIe5" role="mwGJk">
-                  <ref role="37wK5l" to="bqjt:US4hClMbyw" resolve="toTypeDefinition" />
-                  <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
-                  <node concept="2OqwBi" id="64vLWnItIe6" role="37wK5m">
+              <node concept="mw_s8" id="64vLWnIA9VL" role="1ZfhKB">
+                <node concept="1Z2H0r" id="64vLWnIA9VH" role="mwGJk">
+                  <node concept="2OqwBi" id="64vLWnItIe6" role="1Z2MuG">
                     <node concept="1YBJjd" id="64vLWnItIe7" role="2Oq$k0">
                       <ref role="1YBMHb" node="46wqe1xwfeP" resolve="localNameDeclarationStatement" />
                     </node>
-                    <node concept="3TrEf2" id="64vLWnItIe8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" resolve="typeName" />
+                    <node concept="3TrEf2" id="64vLWnIA9PX" role="2OqNvi">
+                      <ref role="3Tt5mk" to="28lk:6cBsaQxenbj" />
                     </node>
                   </node>
                 </node>

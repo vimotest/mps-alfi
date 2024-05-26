@@ -11,27 +11,15 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
-      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -71,25 +59,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1pkjUYvjYy" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="64vLWnIjkZb">
-    <ref role="1XX52x" to="7bpi:64vLWnIi9w8" resolve="InferredOptionalTypeName" />
-    <node concept="3EZMnI" id="64vLWnIjkZj" role="2wV5jI">
-      <node concept="3F0ifn" id="64vLWnIjkZl" role="3EZMnx">
-        <property role="3F0ifm" value="@inferred optional" />
-        <node concept="VSNWy" id="64vLWnIjZlR" role="3F10Kt">
-          <property role="1lJzqX" value="8" />
-        </node>
-        <node concept="Vb9p2" id="64vLWnIjZlW" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-        <node concept="VechU" id="64vLWnIjZm4" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
-        </node>
-      </node>
-      <node concept="2SsqMj" id="64vLWnIjkZt" role="3EZMnx" />
-      <node concept="2iRfu4" id="64vLWnIjZlP" role="2iSdaV" />
     </node>
   </node>
 </model>
