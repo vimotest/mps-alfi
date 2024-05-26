@@ -6537,17 +6537,11 @@
               <node concept="3ejVUv" id="3Edw2s$Pvhs" role="lGtFl">
                 <node concept="3JmXsc" id="3Edw2s$Pvht" role="3_Rtg">
                   <node concept="3clFbS" id="3Edw2s$Pvhu" role="2VODD2">
-                    <node concept="3clFbF" id="3Edw2s$Pvhv" role="3cqZAp">
-                      <node concept="2OqwBi" id="3Edw2s$Pvhw" role="3clFbG">
-                        <node concept="2OqwBi" id="3Edw2s$Pvhx" role="2Oq$k0">
-                          <node concept="30H73N" id="3Edw2s$Pvhy" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="3Edw2s$Pvhz" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:2kuSLC0p53f" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="3Edw2s$Pvh$" role="2OqNvi">
-                          <ref role="37wK5l" to="bqjt:5hkZeVaJ1ko" resolve="getOrderedExpressions" />
-                        </node>
+                    <node concept="3clFbF" id="64vLWnJDI$a" role="3cqZAp">
+                      <node concept="2YIFZM" id="64vLWnJDI$b" role="3clFbG">
+                        <ref role="37wK5l" to="stu:4CF2Tg3Y$0K" resolve="transformIndexArgumentIfRequired" />
+                        <ref role="1Pybhc" to="stu:4CF2Tg3Yzty" resolve="SequenceOperationArgumentHelper" />
+                        <node concept="30H73N" id="64vLWnJDI$c" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -6849,17 +6843,11 @@
               <node concept="3ejVUv" id="3Edw2s$OI0K" role="lGtFl">
                 <node concept="3JmXsc" id="3Edw2s$OI0L" role="3_Rtg">
                   <node concept="3clFbS" id="3Edw2s$OI0M" role="2VODD2">
-                    <node concept="3clFbF" id="3Edw2s$OI0N" role="3cqZAp">
-                      <node concept="2OqwBi" id="3Edw2s$OI0O" role="3clFbG">
-                        <node concept="2OqwBi" id="3Edw2s$OI0P" role="2Oq$k0">
-                          <node concept="30H73N" id="3Edw2s$OI0Q" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="3Edw2s$OI0R" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:2kuSLC0p53f" resolve="tuple" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="3Edw2s$OI0S" role="2OqNvi">
-                          <ref role="37wK5l" to="bqjt:5hkZeVaJ1ko" resolve="getOrderedExpressions" />
-                        </node>
+                    <node concept="3clFbF" id="64vLWnJElEQ" role="3cqZAp">
+                      <node concept="2YIFZM" id="64vLWnJElER" role="3clFbG">
+                        <ref role="37wK5l" to="stu:4CF2Tg3Y$0K" resolve="transformIndexArgumentIfRequired" />
+                        <ref role="1Pybhc" to="stu:4CF2Tg3Yzty" resolve="SequenceOperationArgumentHelper" />
+                        <node concept="30H73N" id="64vLWnJElES" role="37wK5m" />
                       </node>
                     </node>
                   </node>
