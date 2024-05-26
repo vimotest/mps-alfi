@@ -775,6 +775,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="by5Cuptvrb" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.simplifyAlfiLanguage" />
+        <property role="3LESm3" value="ded42a5f-0d92-4cc2-b9ff-116aae7175a9" />
+        <node concept="55IIr" id="by5Cuptvre" role="3LF7KH">
+          <node concept="2Ry0Ak" id="by5Cuptvvm" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="by5CuptvAE" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.simplifyAlfiLanguage" />
+              <node concept="2Ry0Ak" id="by5CuptvBg" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.simplifyAlfiLanguage.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="by5CuptvC9" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="by5CuptvCa" role="1HemKq">
+            <node concept="55IIr" id="by5CuptvC5" role="3LXTmr">
+              <node concept="2Ry0Ak" id="by5CuptvC6" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="by5CuptvC7" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.simplifyAlfiLanguage" />
+                  <node concept="2Ry0Ak" id="by5CuptvC8" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="by5CuptvCb" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="by5CuptvCc" role="1TViLv">
+          <property role="TrG5h" value="alfi.simplifyAlfiLanguage.generator" />
+          <property role="3LESm3" value="1d968d4c-a354-4aec-8ae4-a9b57a3ce020" />
+          <node concept="1SiIV0" id="by5CuptvCd" role="3bR37C">
+            <node concept="3bR9La" id="by5CuptvCe" role="1SiIV1">
+              <ref role="3bR37D" node="2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="by5CuptvCf" role="3bR37C">
+            <node concept="3bR9La" id="by5CuptvCg" role="1SiIV1">
+              <ref role="3bR37D" node="5tK9548cRi8" resolve="alfi" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="by5CuptvCm" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="by5CuptvCn" role="1HemKq">
+              <node concept="55IIr" id="by5CuptvCh" role="3LXTmr">
+                <node concept="2Ry0Ak" id="by5CuptvCi" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="by5CuptvCj" role="2Ry0An">
+                    <property role="2Ry0Am" value="alfi.simplifyAlfiLanguage" />
+                    <node concept="2Ry0Ak" id="by5CuptvCk" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="by5CuptvCl" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="by5CuptvCo" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="2SeqMAc5VSa" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="alfi.GeneratorUtils" />
