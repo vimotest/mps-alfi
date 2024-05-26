@@ -1889,8 +1889,8 @@
                 <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypeWrapper" />
               </node>
               <node concept="2YIFZM" id="2SeqMAbZeSK" role="3uHU7B">
-                <ref role="37wK5l" to="stu:4Vswoj0Ilpw" resolve="getTypeWrapper" />
-                <ref role="1Pybhc" to="stu:4Vswoj0HRh$" resolve="TypedElementDefinitionTranslator" />
+                <ref role="37wK5l" to="ow8f:4Vswoj0Ilpw" resolve="getTypeWrapper" />
+                <ref role="1Pybhc" to="ow8f:64vLWnIudnU" resolve="CppTypedElementDefinitionTranslator" />
                 <node concept="30H73N" id="4Vswoj0IpwF" role="37wK5m" />
               </node>
             </node>
@@ -1932,8 +1932,8 @@
           <node concept="3clFbF" id="3_T7UirugeE" role="3cqZAp">
             <node concept="17R0WA" id="3_T7UirugeI" role="3clFbG">
               <node concept="2YIFZM" id="3_T7UirugeJ" role="3uHU7B">
-                <ref role="37wK5l" to="stu:4Vswoj0Ilpw" resolve="getTypeWrapper" />
-                <ref role="1Pybhc" to="stu:4Vswoj0HRh$" resolve="TypedElementDefinitionTranslator" />
+                <ref role="37wK5l" to="ow8f:4Vswoj0Ilpw" resolve="getTypeWrapper" />
+                <ref role="1Pybhc" to="ow8f:64vLWnIudnU" resolve="CppTypedElementDefinitionTranslator" />
                 <node concept="30H73N" id="3_T7UirugeK" role="37wK5m" />
               </node>
               <node concept="Rm8GO" id="3_T7UirugeL" role="3uHU7w">
@@ -1983,8 +1983,8 @@
                 <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
               </node>
               <node concept="2YIFZM" id="3_T7UirtLpw" role="3uHU7B">
-                <ref role="37wK5l" to="stu:4Vswoj0Ilpw" resolve="getTypeWrapper" />
-                <ref role="1Pybhc" to="stu:4Vswoj0HRh$" resolve="TypedElementDefinitionTranslator" />
+                <ref role="37wK5l" to="ow8f:4Vswoj0Ilpw" resolve="getTypeWrapper" />
+                <ref role="1Pybhc" to="ow8f:64vLWnIudnU" resolve="CppTypedElementDefinitionTranslator" />
                 <node concept="30H73N" id="3_T7UirtLpx" role="37wK5m" />
               </node>
             </node>
@@ -8934,10 +8934,24 @@
                 <ref role="v9R2y" node="3Edw2s$fZYh" resolve="switch_TypeName" />
                 <node concept="3NFfHV" id="64vLWnIpo5o" role="1sPUBK">
                   <node concept="3clFbS" id="64vLWnIpo5p" role="2VODD2">
+                    <node concept="3cpWs8" id="64vLWnIvA7X" role="3cqZAp">
+                      <node concept="3cpWsn" id="64vLWnIvA7Y" role="3cpWs9">
+                        <property role="TrG5h" value="copy" />
+                        <node concept="3Tqbb2" id="64vLWnIvA4Q" role="1tU5fm">
+                          <ref role="ehGHo" to="28lk:1KdBIfXINNb" resolve="QualifiedTypeName" />
+                        </node>
+                        <node concept="2OqwBi" id="64vLWnIvA7Z" role="33vP2m">
+                          <node concept="30H73N" id="64vLWnIvA80" role="2Oq$k0" />
+                          <node concept="1$rogu" id="64vLWnIvA81" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="64vLWnIofAd" role="3cqZAp">
                       <node concept="2OqwBi" id="64vLWnIogoC" role="3clFbG">
                         <node concept="2OqwBi" id="64vLWnIofPC" role="2Oq$k0">
-                          <node concept="30H73N" id="64vLWnIofAc" role="2Oq$k0" />
+                          <node concept="37vLTw" id="64vLWnIvAxJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="64vLWnIvA7Y" resolve="copy" />
+                          </node>
                           <node concept="3CFZ6_" id="64vLWnIog9i" role="2OqNvi">
                             <node concept="3CFYIy" id="64vLWnIogcS" role="3CFYIz">
                               <ref role="3CFYIx" to="7bpi:64vLWnIi9w8" resolve="InferredOptionalTypeName" />
@@ -8948,7 +8962,9 @@
                       </node>
                     </node>
                     <node concept="3clFbF" id="64vLWnIofkv" role="3cqZAp">
-                      <node concept="30H73N" id="64vLWnIofku" role="3clFbG" />
+                      <node concept="37vLTw" id="64vLWnIvA_y" role="3clFbG">
+                        <ref role="3cqZAo" node="64vLWnIvA7Y" resolve="copy" />
+                      </node>
                     </node>
                   </node>
                 </node>
