@@ -899,6 +899,9 @@
     <node concept="PrWs8" id="6cBsaQxVRAI" role="PzmwI">
       <ref role="PrY4T" node="6cBsaQxVRAv" resolve="PrimaryExpression" />
     </node>
+    <node concept="PrWs8" id="64vLWnJkeaG" role="PzmwI">
+      <ref role="PrY4T" node="64vLWnJke9d" resolve="IHasFeatureInvocationTarget" />
+    </node>
     <node concept="1TJgyj" id="6cBsaQxWHki" role="1TKVEi">
       <property role="IQ2ns" value="7144803224895280402" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -918,6 +921,9 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+    </node>
+    <node concept="PrWs8" id="64vLWnJkeOz" role="PzmwI">
+      <ref role="PrY4T" node="64vLWnJke9d" resolve="IHasFeatureInvocationTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQxWHjS">
@@ -2016,6 +2022,11 @@
     <property role="TrG5h" value="EnumerationLiteralName" />
     <property role="34LRSv" value="enum literal" />
     <ref role="1TJDcQ" node="2SMO68r$0GM" resolve="NamespaceMember" />
+  </node>
+  <node concept="PlHQZ" id="64vLWnJke9d">
+    <property role="EcuMT" value="6998531998894580301" />
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="TrG5h" value="IHasFeatureInvocationTarget" />
   </node>
 </model>
 

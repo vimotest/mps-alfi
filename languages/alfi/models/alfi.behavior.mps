@@ -1296,6 +1296,24 @@
       </node>
       <node concept="10P_77" id="5hkZeVaJ$ic" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="64vLWnJkeWT" role="13h7CS">
+      <property role="TrG5h" value="getFeatureInvocationTarget" />
+      <ref role="13i0hy" node="64vLWnJke9x" resolve="getFeatureInvocationTarget" />
+      <node concept="3Tm1VV" id="64vLWnJkeWU" role="1B3o_S" />
+      <node concept="3clFbS" id="64vLWnJkeWX" role="3clF47">
+        <node concept="3clFbF" id="64vLWnJkeYd" role="3cqZAp">
+          <node concept="2OqwBi" id="64vLWnJkfeU" role="3clFbG">
+            <node concept="13iPFW" id="64vLWnJkeYc" role="2Oq$k0" />
+            <node concept="3TrEf2" id="64vLWnJkfyc" role="2OqNvi">
+              <ref role="3Tt5mk" to="28lk:6cBsaQxXwim" resolve="target" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="64vLWnJkeWY" role="3clF45">
+        <ref role="ehGHo" to="28lk:6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5hkZeVaJ_Ba">
     <property role="3GE5qa" value="expressions.primary.invocation" />
@@ -8338,6 +8356,48 @@
     </node>
     <node concept="13hLZK" id="3Edw2s$tSYC" role="13h7CW">
       <node concept="3clFbS" id="3Edw2s$tSYD" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="64vLWnJke9e">
+    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <ref role="13h7C2" to="28lk:64vLWnJke9d" resolve="IHasFeatureInvocationTarget" />
+    <node concept="13i0hz" id="64vLWnJke9x" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getFeatureInvocationTarget" />
+      <node concept="3Tm1VV" id="64vLWnJke9y" role="1B3o_S" />
+      <node concept="3Tqbb2" id="64vLWnJke9T" role="3clF45">
+        <ref role="ehGHo" to="28lk:6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+      </node>
+      <node concept="3clFbS" id="64vLWnJke9$" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="64vLWnJke9f" role="13h7CW">
+      <node concept="3clFbS" id="64vLWnJke9g" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="64vLWnJkeaJ">
+    <property role="3GE5qa" value="expressions.primary" />
+    <ref role="13h7C2" to="28lk:6cBsaQxVRAH" resolve="PropertyAccessExpression" />
+    <node concept="13hLZK" id="64vLWnJkeaK" role="13h7CW">
+      <node concept="3clFbS" id="64vLWnJkeaL" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="64vLWnJkeb2" role="13h7CS">
+      <property role="TrG5h" value="getFeatureInvocationTarget" />
+      <ref role="13i0hy" node="64vLWnJke9x" resolve="getFeatureInvocationTarget" />
+      <node concept="3Tm1VV" id="64vLWnJkeb3" role="1B3o_S" />
+      <node concept="3clFbS" id="64vLWnJkeb6" role="3clF47">
+        <node concept="3clFbF" id="64vLWnJkebt" role="3cqZAp">
+          <node concept="2OqwBi" id="64vLWnJkerg" role="3clFbG">
+            <node concept="13iPFW" id="64vLWnJkebs" role="2Oq$k0" />
+            <node concept="3TrEf2" id="64vLWnJkeGV" role="2OqNvi">
+              <ref role="3Tt5mk" to="28lk:6cBsaQxWHki" resolve="featureReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="64vLWnJkeb7" role="3clF45">
+        <ref role="ehGHo" to="28lk:6cBsaQy2Fnk" resolve="FeatureInvocationTarget" />
+      </node>
     </node>
   </node>
 </model>

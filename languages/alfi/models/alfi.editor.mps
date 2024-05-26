@@ -872,6 +872,9 @@
     <node concept="PMmxH" id="2SMO68rATtM" role="2wV5jI">
       <ref role="PMmxG" node="2SMO68rAHpD" resolve="DocumentedElement_EC" />
     </node>
+    <node concept="PMmxH" id="64vLWnJifTd" role="6VMZX">
+      <ref role="PMmxG" node="64vLWnJifT8" resolve="DocumentedElement_Inspector" />
+    </node>
   </node>
   <node concept="24kQdi" id="2SMO68rAZtd">
     <property role="3GE5qa" value="statements" />
@@ -6748,6 +6751,28 @@
     </node>
     <node concept="1PE4EZ" id="3_puicMmhVd" role="1PM95z">
       <ref role="1PE7su" node="6OepWIVAjmt" resolve="NamespaceMember_Content_EC" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="64vLWnJifT8">
+    <property role="TrG5h" value="DocumentedElement_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:2SMO68r_Hx$" resolve="DocumentedElement" />
+    <node concept="3F0ifn" id="64vLWnJifTa" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="64vLWnJifTf">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="LocalNameDeclarationStatement_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    <node concept="3EZMnI" id="64vLWnJig9$" role="2wV5jI">
+      <node concept="3F0ifn" id="64vLWnJig9F" role="3EZMnx">
+        <property role="3F0ifm" value="hasMultiplicity:" />
+      </node>
+      <node concept="3F0A7n" id="64vLWnJig9L" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+      </node>
+      <node concept="2iRfu4" id="64vLWnJig9B" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="64vLWnJifTh" role="1PM95z">
+      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector" />
     </node>
   </node>
 </model>
