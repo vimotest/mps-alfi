@@ -40,7 +40,7 @@
   <node concept="2VgMpV" id="5hkZeVaMzHS">
     <property role="TrG5h" value="AlfiMain" />
     <node concept="10T23i" id="38C0GeDj4rI" role="2VgMA7">
-      <ref role="10T23l" to="tprf:3OZQpz3aSq" resolve="AlfiToJavaBaseLanguage" />
+      <ref role="10T23l" to="tprf:3OZQpz3aSq" resolve="AlfiToJavaBaselanguage" />
     </node>
     <node concept="10T23i" id="64vLWnJGj9K" role="2VgMA7">
       <ref role="10T23l" to="4snh:3OZQpz3aSq" resolve="AlfiToCppBaselanguage" />

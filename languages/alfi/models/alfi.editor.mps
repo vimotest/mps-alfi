@@ -873,7 +873,7 @@
       <ref role="PMmxG" node="2SMO68rAHpD" resolve="DocumentedElement_EC" />
     </node>
     <node concept="PMmxH" id="64vLWnJifTd" role="6VMZX">
-      <ref role="PMmxG" node="64vLWnJifT8" resolve="DocumentedElement_Inspector" />
+      <ref role="PMmxG" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
     </node>
   </node>
   <node concept="24kQdi" id="2SMO68rAZtd">
@@ -6266,7 +6266,7 @@
       </node>
       <node concept="mvV$s" id="6CIUUG_u13X" role="1Qtc8A">
         <node concept="A1WHu" id="6CIUUG_u13Y" role="A14EM">
-          <ref role="A1WHt" node="6sZBH0rS6Jg" />
+          <ref role="A1WHt" node="6sZBH0rS6Jg" resolve="ExtendOrExpression_Transform_toSequenceOperation" />
         </node>
       </node>
       <node concept="3cWJ9i" id="12iQbAnEcBp" role="1Qtc8$">
@@ -6636,7 +6636,7 @@
           </node>
         </node>
         <node concept="A1WHu" id="3_puicMjhBb" role="3vIgyS">
-          <ref role="A1WHt" node="2SV$eY8tJxo" />
+          <ref role="A1WHt" node="2SV$eY8tJxo" resolve="ClassifierDefinition_AddTemplateParameter_right" />
         </node>
       </node>
       <node concept="PMmxH" id="3_puicMjiYe" role="3EZMnx">
@@ -6658,7 +6658,7 @@
             <property role="TrG5h" value="ignoreTextGenGen" />
           </node>
           <node concept="A1WHu" id="3_puicMjjeD" role="3vIgyS">
-            <ref role="A1WHt" node="1KdBIfXlpzc" />
+            <ref role="A1WHt" node="1KdBIfXlpzc" resolve="ClassifierDefinition_AddSpecializationLeft" />
           </node>
         </node>
         <node concept="2iRfu4" id="3_puicMjjeE" role="2iSdaV" />
@@ -6682,12 +6682,12 @@
           <property role="3F0ifm" value="{" />
           <ref role="1k5W1q" to="tpen:hXb$RYA" resolve="LeftBracket" />
           <node concept="A1WHu" id="3_puicMjjeN" role="3vIgyS">
-            <ref role="A1WHt" node="1KdBIfXlpzc" />
+            <ref role="A1WHt" node="1KdBIfXlpzc" resolve="ClassifierDefinition_AddSpecializationLeft" />
           </node>
         </node>
         <node concept="3F2HdR" id="3_puicMjjeO" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="28lk:2SMO68r$0GX" />
+          <ref role="1NtTu8" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
           <node concept="l2Vlx" id="3_puicMjjeP" role="2czzBx" />
           <node concept="pVoyu" id="3_puicMjjeQ" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -6772,7 +6772,7 @@
       <node concept="2iRfu4" id="64vLWnJig9B" role="2iSdaV" />
     </node>
     <node concept="1PE4EZ" id="64vLWnJifTh" role="1PM95z">
-      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector" />
+      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
     </node>
   </node>
 </model>

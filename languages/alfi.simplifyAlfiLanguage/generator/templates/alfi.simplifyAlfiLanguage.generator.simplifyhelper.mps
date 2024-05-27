@@ -206,7 +206,7 @@
                   <ref role="3cqZAo" node="3Edw2s_nRoS" resolve="typeDefinition" />
                 </node>
                 <node concept="3TrEf2" id="3Edw2s_nRC3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" />
+                  <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
                 </node>
               </node>
               <node concept="3YRAZt" id="3Edw2s_nRC4" role="2OqNvi" />
@@ -375,7 +375,7 @@
                         <ref role="3cqZAo" node="64vLWnJkirt" resolve="featureReference" />
                       </node>
                       <node concept="3TrEf2" id="64vLWnJkpcO" role="2OqNvi">
-                        <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" />
+                        <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" resolve="expression" />
                       </node>
                     </node>
                   </node>
@@ -414,7 +414,7 @@
             </node>
             <node concept="Rm8GO" id="64vLWnIyUgW" role="3uHU7w">
               <ref role="Rm8GQ" to="stu:4Vswoj0Iksi" resolve="Optional" />
-              <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypeWrapper" />
+              <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
             </node>
           </node>
         </node>

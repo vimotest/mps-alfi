@@ -634,7 +634,7 @@
       <ref role="1puQsG" node="4Vswoj0Qxyj" resolve="setVirtualPackages" />
     </node>
     <node concept="1puMqW" id="5tK9549fS8k" role="1pvy6N">
-      <ref role="1puQsG" node="5tK9549fUv0" resolve="script" />
+      <ref role="1puQsG" node="5tK9549fUv0" resolve="dropOnlyToAlfNodes" />
     </node>
     <node concept="aNPBN" id="2ZIXoeaQKAp" role="aQYdv">
       <ref role="aOQi4" to="28lk:6OepWIVJVYV" resolve="Unit" />
@@ -1526,7 +1526,7 @@
                     </node>
                     <node concept="2YIFZM" id="2X39vz3g3R7" role="33vP2m">
                       <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
-                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                       <node concept="30H73N" id="2X39vz3g3R8" role="37wK5m" />
                       <node concept="2ShNRf" id="2X39vz3g3R9" role="37wK5m">
                         <node concept="YeOm9" id="2X39vz3g3Ra" role="2ShVmc">
@@ -1680,7 +1680,7 @@
                               <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                             </node>
                             <node concept="2YIFZM" id="4Vswoj0xqUO" role="33vP2m">
-                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                               <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
                               <node concept="2OqwBi" id="4Vswoj0xs61" role="37wK5m">
                                 <node concept="30H73N" id="4Vswoj0xqUP" role="2Oq$k0" />
@@ -1937,7 +1937,7 @@
           <property role="TrG5h" value="EnumFoo" />
           <node concept="QsSxf" id="3_puicMq6FK" role="Qtgdg">
             <property role="TrG5h" value="A" />
-            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <node concept="17Uvod" id="3_puicMq7y1" role="lGtFl">
               <property role="2qtEX9" value="name" />
               <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -2508,7 +2508,7 @@
                                     <node concept="2OqwBi" id="2X39vz3gu$8" role="3clFbG">
                                       <node concept="30H73N" id="2X39vz3gu$9" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="2X39vz3gu$a" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" />
+                                        <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" resolve="typeName" />
                                       </node>
                                     </node>
                                   </node>
@@ -3543,11 +3543,11 @@
                             </node>
                             <node concept="2YIFZM" id="3_puicMqM4H" role="33vP2m">
                               <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
-                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                               <node concept="2OqwBi" id="3_puicMqM4I" role="37wK5m">
                                 <node concept="30H73N" id="3_puicMqM4J" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="3_puicMqM4K" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="28lk:2kuSLC0pg7f" />
+                                  <ref role="3Tt5mk" to="28lk:2kuSLC0pg7f" resolve="name" />
                                 </node>
                               </node>
                               <node concept="2ShNRf" id="3_puicMqM4L" role="37wK5m">
@@ -3682,7 +3682,7 @@
                               <node concept="1iwH70" id="3_puicMroHh" role="2OqNvi">
                                 <ref role="1iwH77" node="2X39vz3fRRw" resolve="namedNode" />
                                 <node concept="37vLTw" id="3_puicMrr2L" role="1iwH7V">
-                                  <ref role="3cqZAo" node="3_puicMrr2B" resolve="node" />
+                                  <ref role="3cqZAo" node="3_puicMrr2B" resolve="enumDefinition" />
                                 </node>
                               </node>
                             </node>
@@ -3798,7 +3798,7 @@
                             </node>
                             <node concept="2YIFZM" id="3_puicMqHWc" role="33vP2m">
                               <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
-                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                              <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                               <node concept="2OqwBi" id="3_puicMqHWd" role="37wK5m">
                                 <node concept="30H73N" id="3_puicMqHWe" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="3_puicMqHWf" role="2OqNvi">
@@ -4086,7 +4086,7 @@
                     </node>
                     <node concept="2YIFZM" id="7X0jqo9zOv1" role="33vP2m">
                       <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
-                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                       <node concept="2OqwBi" id="7X0jqo9zOv2" role="37wK5m">
                         <node concept="30H73N" id="7X0jqo9zOv3" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7X0jqo9zOv4" role="2OqNvi">
@@ -4193,7 +4193,7 @@
                       <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                     </node>
                     <node concept="2YIFZM" id="7X0jqo9zYVP" role="33vP2m">
-                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                      <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                       <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
                       <node concept="2OqwBi" id="7X0jqo9zYVQ" role="37wK5m">
                         <node concept="30H73N" id="7X0jqo9zYVR" role="2Oq$k0" />
@@ -4854,7 +4854,7 @@
                               </node>
                               <node concept="2YIFZM" id="6sZBH0sa78n" role="33vP2m">
                                 <ref role="37wK5l" to="nlwv:2X39vz3eZSe" resolve="getTargetNode" />
-                                <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="QualifiedNameTargetResolver" />
+                                <ref role="1Pybhc" to="nlwv:2X39vz3eZiV" resolve="JavaQualifiedNameTargetResolver" />
                                 <node concept="2OqwBi" id="6sZBH0sa9f9" role="37wK5m">
                                   <node concept="30H73N" id="6sZBH0sa78p" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="6sZBH0sa9px" role="2OqNvi">
@@ -10229,7 +10229,7 @@
     <property role="TrG5h" value="Enum" />
     <node concept="QsSxf" id="3_puicMpSBx" role="Qtgdg">
       <property role="TrG5h" value="A" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="2b32R4" id="3_puicMpYzM" role="lGtFl">
         <node concept="3JmXsc" id="3_puicMpYzP" role="2P8S$">
           <node concept="3clFbS" id="3_puicMpYzQ" role="2VODD2">
@@ -10259,7 +10259,7 @@
                 <node concept="3clFbF" id="3_puicMpWgU" role="3cqZAp">
                   <node concept="2OqwBi" id="3_puicMpWgV" role="3clFbG">
                     <node concept="3TrEf2" id="3_puicMpWgW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                     <node concept="30H73N" id="3_puicMpWgX" role="2Oq$k0" />
                   </node>

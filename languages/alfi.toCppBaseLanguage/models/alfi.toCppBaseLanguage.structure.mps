@@ -42,7 +42,7 @@
     <property role="TrG5h" value="CMakeFile" />
     <property role="34LRSv" value="cmake" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1pkjUYvjYd" role="1TKVEi">
       <property role="IQ2ns" value="25140602852949901" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

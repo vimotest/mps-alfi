@@ -261,7 +261,7 @@
         </node>
       </node>
       <node concept="m$_wl" id="5tK9548dnsR" role="39821P">
-        <ref role="m_rDy" node="5tK9548cRhB" />
+        <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
         <node concept="pUk6x" id="5tK9548dnt9" role="pUk7w" />
         <node concept="398223" id="5tK9548fqrp" role="39821P">
           <node concept="28jJK3" id="5tK9548dntj" role="39821P">
@@ -294,7 +294,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="5tK9548dnuq" role="39821P">
-          <ref role="m_rDy" node="5tK9548cRhB" />
+          <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
           <node concept="398223" id="5tK9548eJss" role="39821P">
             <node concept="3_J27D" id="5tK9548eJsu" role="Nbhlr">
               <node concept="3Mxwew" id="5tK9548eJsJ" role="3MwsjC">
@@ -391,13 +391,13 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="5tK9548cRke" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
       <node concept="m$_yC" id="5tK9548cRkb" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" />
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="m$_yC" id="1pkjUYu4$U" role="m$_yJ">
-        <ref role="m$_y1" to="gwjr:4h_5oU0U7hQ" />
+        <ref role="m$_y1" to="gwjr:4h_5oU0U7hQ" resolve="CppBaseLanguage" />
       </node>
     </node>
     <node concept="2G$12M" id="5tK9548cRhY" role="3989C9">
