@@ -414,6 +414,7 @@
       </concept>
       <concept id="1945218857512919011" name="CppBaseLanguage.structure.IStatementExpression" flags="ngI" index="2Yz17t" />
       <concept id="1945218857512325908" name="CppBaseLanguage.structure.EmptyBlock" flags="ng" index="2Y_LOE" />
+      <concept id="1945218857511602457" name="CppBaseLanguage.structure.IVariableInitializer" flags="ngI" index="2YC0sB" />
       <concept id="1945218857511602452" name="CppBaseLanguage.structure.VariableDeclarationWithInitialization" flags="ng" index="2YC0sE">
         <child id="1945218857511602455" name="identifier" index="2YC0sD" />
         <child id="1945218857511676509" name="variableInitializer" index="2YCihz" />
@@ -426,7 +427,9 @@
         <child id="7232527154588443415" name="body" index="31KRCR" />
       </concept>
       <concept id="7232527154588443414" name="CppBaseLanguage.structure.Statement" flags="ng" index="31KRCQ" />
-      <concept id="7232527154588443306" name="CppBaseLanguage.structure.FieldDeclaration" flags="ng" index="31KRIa" />
+      <concept id="7232527154588443306" name="CppBaseLanguage.structure.FieldDeclaration" flags="ng" index="31KRIa">
+        <child id="7926189075210902908" name="variableInitializer" index="1Ru6u4" />
+      </concept>
       <concept id="7232527154588476195" name="CppBaseLanguage.structure.FormalParameter" flags="ng" index="31KZC3">
         <child id="5564055780414736654" name="type" index="3z8Npe" />
       </concept>
@@ -8351,6 +8354,22 @@
                     <node concept="30H73N" id="3Edw2szUh7p" role="2Oq$k0" />
                     <node concept="3TrcHB" id="3Edw2szUhVp" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YC0sB" id="1CWniaW0_2e" role="1Ru6u4">
+            <node concept="29HgVG" id="1CWniaW0_36" role="lGtFl">
+              <node concept="3NFfHV" id="1CWniaW0_38" role="3NFExx">
+                <node concept="3clFbS" id="1CWniaW0_39" role="2VODD2">
+                  <node concept="3clFbF" id="1CWniaW0_3e" role="3cqZAp">
+                    <node concept="2OqwBi" id="1CWniaW0_la" role="3clFbG">
+                      <node concept="30H73N" id="1CWniaW0_3d" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1CWniaW0_G3" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:2HeY20H7EMD" resolve="initializerExpression" />
+                      </node>
                     </node>
                   </node>
                 </node>
