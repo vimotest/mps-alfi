@@ -54,6 +54,8 @@ jobs:
         env:
           PROJECT_CPP_DIR: solutions/alfi.compitest
           BUILD_DIR: solutions/alfi.compitest/build
+      - name: Copy compitest C++ Binaries
+        run: sh ./gradlew compitestCopyCppBinaries
 
       # Archive Artifacts
       - name: Archive artifacts
@@ -90,6 +92,8 @@ jobs:
         with:
           name: artifactsForCompitest
           path: build/artifacts/${{ env.PROJECT_NAME }}-build
+      - name: Grant execute permission for cpp binaries
+        run: chmod +x build/artifacts/${{ env.PROJECT_NAME }}-build/tests/compitest-cpp-binaries/*
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests
