@@ -24,7 +24,8 @@ def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest-src.jar"
 
 def executorToCmd = [
         "AlfiJava": ["java", "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
-        "AlfiAlf": ["bash", "${COMPITEST_ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" ")
+        "AlfiAlf": ["bash", "${COMPITEST_ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" "),
+        "AlfiCpp": ["alfi.compitest.%TESTCASE%"].join(" ")
 ]
 
 AlfSourceFileUnzipper.unzipAlfFiles(testSuiteSrcJar, "$COMPITEST_WORK_DIR/src")

@@ -1,8 +1,6 @@
 /*
   Gradle tasks to run the compitest scripts
-  Requires python 3.10 and python-poetry to be installed
  */
-
 task compitestRunTests {
     group 'compitest'
     description 'Run the ALF-reference runtime comparison tests'
