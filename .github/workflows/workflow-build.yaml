@@ -64,11 +64,11 @@ jobs:
         with:
           cmake-version: '3.17.x'
 
-      - name: Build C++ Files
+      - name: Build compitest C++ Files
         run: cmake -S $PROJECT_CPP_DIR -B $BUILD_DIR && cmake --build $BUILD_DIR
         env:
-          PROJECT_CPP_DIR: solutions/alfi.toCpp.sandbox
-          BUILD_DIR: solutions/alfi.toCpp.sandbox/build
+          PROJECT_CPP_DIR: solutions/alfi.compitest
+          BUILD_DIR: solutions/alfi.compitest/build
 
   compitest:
     runs-on: ubuntu-latest
