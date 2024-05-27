@@ -343,6 +343,7 @@
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
       <concept id="3766354144462009184" name="CppBaseLanguage.structure.Virtual" flags="ng" index="2qJFh3" />
+      <concept id="3766354144462108595" name="CppBaseLanguage.structure.Override" flags="ng" index="2qJN2g" />
       <concept id="7769220957754731518" name="CppBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM" />
       <concept id="5059844704662416138" name="CppBaseLanguage.structure.MultiLineCommentLine" flags="ng" index="AcOrT">
         <property id="5059844704662416139" name="value" index="AcOrS" />
@@ -8180,6 +8181,38 @@
           </node>
           <node concept="2ZBi8u" id="3Edw2szV0ul" role="lGtFl">
             <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
+          </node>
+          <node concept="2qJN2g" id="1CWniaVUdsq" role="3SE3Wx">
+            <node concept="1W57fq" id="1CWniaVUdyQ" role="lGtFl">
+              <node concept="3IZrLx" id="1CWniaVUdyR" role="3IZSJc">
+                <node concept="3clFbS" id="1CWniaVUdyS" role="2VODD2">
+                  <node concept="3clFbF" id="1CWniaVUdzo" role="3cqZAp">
+                    <node concept="2YIFZM" id="1CWniaVUdLN" role="3clFbG">
+                      <ref role="37wK5l" to="stu:1CWniaVTizW" resolve="isRedefinedOperation" />
+                      <ref role="1Pybhc" to="stu:46wqe1xNYo8" resolve="SpecializationHelper" />
+                      <node concept="30H73N" id="1CWniaVUdMI" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2qJFh3" id="1CWniaVVugA" role="3SE3Wx">
+            <node concept="1W57fq" id="1CWniaVWurP" role="lGtFl">
+              <node concept="3IZrLx" id="1CWniaVWurQ" role="3IZSJc">
+                <node concept="3clFbS" id="1CWniaVWurR" role="2VODD2">
+                  <node concept="3clFbF" id="1CWniaVWusq" role="3cqZAp">
+                    <node concept="3fqX7Q" id="1CWniaVWuso" role="3clFbG">
+                      <node concept="2YIFZM" id="1CWniaVWutd" role="3fr31v">
+                        <ref role="37wK5l" to="stu:1CWniaVTizW" resolve="isRedefinedOperation" />
+                        <ref role="1Pybhc" to="stu:46wqe1xNYo8" resolve="SpecializationHelper" />
+                        <node concept="30H73N" id="1CWniaVWute" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
