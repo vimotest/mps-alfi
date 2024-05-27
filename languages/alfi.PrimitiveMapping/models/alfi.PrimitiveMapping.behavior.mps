@@ -243,7 +243,7 @@
                   <node concept="3clFbH" id="7loaBmQX2aU" role="3cqZAp" />
                   <node concept="3clFbF" id="7loaBmQWUa2" role="3cqZAp">
                     <node concept="37vLTw" id="7loaBmQX1Bc" role="3clFbG">
-                      <ref role="3cqZAo" node="7loaBmQX1B4" resolve="forNamedElements" />
+                      <ref role="3cqZAo" node="7loaBmQX1B4" resolve="referencableMembers" />
                     </node>
                   </node>
                 </node>
