@@ -11217,9 +11217,6 @@
           <node concept="1XyjRH" id="1CWniaWjrzC" role="3U7fkm">
             <node concept="2Gatwc" id="1CWniaWjrzD" role="1XyizX">
               <ref role="2Gaslz" node="1CWniaWjrzv" resolve="Class" />
-              <node concept="2Gatwc" id="1CWniaWjrzE" role="2GaslH">
-                <ref role="2Gaslz" node="1CWniaWjrzu" resolve="_NamespaceClassDefinition" />
-              </node>
               <node concept="1ZhdrF" id="1CWniaWjrzF" role="lGtFl">
                 <property role="2qtEX8" value="referencedType" />
                 <property role="P3scX" value="caee2629-07dd-4ee1-aceb-6d1e4dce0f12/2439281069887047993/2439281069887050838" />
