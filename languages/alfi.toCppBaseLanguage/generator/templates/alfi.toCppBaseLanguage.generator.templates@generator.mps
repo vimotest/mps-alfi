@@ -510,6 +510,9 @@
         <child id="3129541975290390493" name="leftSide" index="1pHvC5" />
         <child id="3129541975290390495" name="rightSide" index="1pHvC7" />
       </concept>
+      <concept id="8130609394078689092" name="CppBaseLanguage.structure.TypeReferenceMacroParameter" flags="ng" index="3PlxPI">
+        <child id="8130609394078692234" name="nonArrayType" index="3PlwAw" />
+      </concept>
       <concept id="8130609394078682810" name="CppBaseLanguage.structure.TextMacroParameter" flags="ng" index="3Plzig">
         <property id="8130609394078685929" name="text" index="3Ply33" />
       </concept>
@@ -1228,6 +1231,9 @@
       <ref role="2rZz_L" to="yjel:6vAOG1ABnEK" resolve="ConstructorDeclaration" />
       <ref role="2rTdP9" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
+    <node concept="1puMqW" id="1CWniaWh_G4" role="1pvy6N">
+      <ref role="1puQsG" node="5tK9549fUv0" resolve="dropOnlyToAlfNodes" />
+    </node>
     <node concept="1puMqW" id="2SeqMAbXEah" role="1pvy6N">
       <ref role="1puQsG" node="2SeqMAbXakz" resolve="removeEmptyRootNamespaces" />
     </node>
@@ -1239,9 +1245,6 @@
     </node>
     <node concept="1puMqW" id="1pkjUYwZD4" role="1pvy6N">
       <ref role="1puQsG" node="1pkjUYvScE" resolve="generateCMakeFile" />
-    </node>
-    <node concept="1puMqW" id="1CWniaWh_G4" role="1pvy6N">
-      <ref role="1puQsG" node="5tK9549fUv0" resolve="dropOnlyToAlfNodes" />
     </node>
   </node>
   <node concept="1pmfR0" id="2SeqMAbXakz">
@@ -10033,6 +10036,7 @@
                   <ref role="2Gaslz" to="eipx:45spXZsA8pR" resolve="testing" />
                 </node>
               </node>
+              <node concept="2qAx6t" id="RZKkt77nWY" role="3SE3Wx" />
             </node>
             <node concept="17Uvod" id="38oQBiSrtX3" role="lGtFl">
               <property role="2qtEX9" value="name" />
@@ -10076,6 +10080,11 @@
                 </node>
               </node>
             </node>
+            <node concept="3PlxPI" id="RZKkt77ovA" role="3PlxO7">
+              <node concept="2Gatwc" id="RZKkt77o$v" role="3PlwAw">
+                <ref role="2Gaslz" node="38oQBiSrtWZ" resolve="_TestCase_ClassDefinition" />
+              </node>
+            </node>
             <node concept="3Plzig" id="38oQBiSsJFV" role="3PlxO7">
               <property role="3Ply33" value="TestCase" />
               <node concept="17Uvod" id="38oQBiSsJFW" role="lGtFl">
@@ -10098,7 +10107,7 @@
           </node>
           <node concept="1ux1E" id="38oQBiSrYAF" role="31LgYG">
             <node concept="31LgYL" id="38oQBiSsD5G" role="1ux1F">
-              <property role="36Rq9j" value="gtest.h" />
+              <property role="36Rq9j" value="gtest/gtest.h" />
               <ref role="3FMaf6" to="eipx:45spXZsA8pO" resolve="gtest.h" />
             </node>
           </node>
@@ -10260,6 +10269,7 @@
                   <ref role="2Gaslz" to="eipx:45spXZsA8pR" resolve="testing" />
                 </node>
               </node>
+              <node concept="2qAx6t" id="RZKkt77nX5" role="3SE3Wx" />
             </node>
             <node concept="17Uvod" id="38oQBiSpDI5" role="lGtFl">
               <property role="2qtEX9" value="name" />
@@ -10306,6 +10316,11 @@
                 </node>
               </node>
             </node>
+            <node concept="3PlxPI" id="RZKkt77oPN" role="3PlxO7">
+              <node concept="2Gatwc" id="RZKkt77oYs" role="3PlwAw">
+                <ref role="2Gaslz" node="38oQBiSp_B8" resolve="_TestSuite_ClassDefinition" />
+              </node>
+            </node>
             <node concept="3Plzig" id="RZKkt6HS$2" role="3PlxO7">
               <property role="3Ply33" value="TestCase" />
               <node concept="17Uvod" id="RZKkt6HS$3" role="lGtFl">
@@ -10349,7 +10364,7 @@
           </node>
           <node concept="1ux1E" id="38oQBiSspoL" role="31LgYG">
             <node concept="31LgYL" id="38oQBiSsA1E" role="1ux1F">
-              <property role="36Rq9j" value="gtest.h" />
+              <property role="36Rq9j" value="gtest/gtest.h" />
               <ref role="3FMaf6" to="eipx:45spXZsA8pO" resolve="gtest.h" />
             </node>
           </node>
