@@ -5008,6 +5008,68 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="RZKkt6XUDr" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
+      <node concept="gft3U" id="RZKkt6XUDs" role="1lVwrX">
+        <node concept="3UfTp0" id="RZKkt6ZAwQ" role="gfFT$">
+          <node concept="3UdiBM" id="RZKkt6XXGm" role="3UfTpm">
+            <node concept="3Uc_2w" id="RZKkt6XXGn" role="3UdiBN">
+              <node concept="3Uc1vy" id="RZKkt6XXGo" role="3Uc_2x">
+                <node concept="29HgVG" id="RZKkt6XXGp" role="lGtFl">
+                  <node concept="3NFfHV" id="RZKkt6XXGq" role="3NFExx">
+                    <node concept="3clFbS" id="RZKkt6XXGr" role="2VODD2">
+                      <node concept="3clFbF" id="RZKkt6XXGs" role="3cqZAp">
+                        <node concept="2YIFZM" id="RZKkt6XXGt" role="3clFbG">
+                          <ref role="37wK5l" to="ow8f:RZKkt6XOdX" resolve="getOperandCheckedForNull" />
+                          <ref role="1Pybhc" to="ow8f:45Y_ixHti5k" resolve="CppTypeHelper" />
+                          <node concept="30H73N" id="RZKkt6XXGu" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1VUwCF" id="RZKkt6XXGv" role="3Uc_2v">
+                <ref role="2aT8gA" to="sta3:6KOXYtgl5KW" resolve="has_value" />
+              </node>
+            </node>
+            <node concept="3UdiBG" id="RZKkt6XXGw" role="3UdiBL" />
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="RZKkt6XUDD" role="30HLyM">
+        <node concept="3clFbS" id="RZKkt6XUDE" role="2VODD2">
+          <node concept="3clFbF" id="RZKkt6XUDF" role="3cqZAp">
+            <node concept="1Wc70l" id="RZKkt6XUDG" role="3clFbG">
+              <node concept="2YIFZM" id="RZKkt6YU1D" role="3uHU7w">
+                <ref role="37wK5l" to="ow8f:RZKkt6XM6B" resolve="checksOptionalForNull" />
+                <ref role="1Pybhc" to="ow8f:45Y_ixHti5k" resolve="CppTypeHelper" />
+                <node concept="30H73N" id="RZKkt6YU1E" role="37wK5m" />
+              </node>
+              <node concept="2OqwBi" id="RZKkt6XUDJ" role="3uHU7B">
+                <node concept="2OqwBi" id="RZKkt6XUDK" role="2Oq$k0">
+                  <node concept="30H73N" id="RZKkt6XUDL" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="RZKkt6XUDM" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:6cBsaQyn5Yd" resolve="operator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="RZKkt6XUDN" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="2OqwBi" id="RZKkt6XUDO" role="37wK5m">
+                    <node concept="1XH99k" id="RZKkt6XUDP" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:6cBsaQyn5Y7" resolve="EqualityOperator" />
+                    </node>
+                    <node concept="2ViDtV" id="RZKkt6XUDQ" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:6cBsaQyn5Y8" resolve="EqualTo" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="5KQf2y8dOjD" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
       <node concept="gft3U" id="5KQf2y8dOjE" role="1lVwrX">
@@ -5075,33 +5137,54 @@
     <node concept="3aamgX" id="5KQf2y8dRjM" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
       <node concept="gft3U" id="5KQf2y8dRjN" role="1lVwrX">
-        <node concept="3UfeGG" id="45Y_ixHupAP" role="gfFT$">
-          <node concept="3Uf2Ky" id="45Y_ixHupAQ" role="3Ufby4">
-            <node concept="29HgVG" id="45Y_ixHupC3" role="lGtFl">
-              <node concept="3NFfHV" id="45Y_ixHupC4" role="3NFExx">
-                <node concept="3clFbS" id="45Y_ixHupC5" role="2VODD2">
-                  <node concept="3clFbF" id="45Y_ixHupCb" role="3cqZAp">
-                    <node concept="2OqwBi" id="45Y_ixHupC6" role="3clFbG">
-                      <node concept="3TrEf2" id="45Y_ixHupC9" role="2OqNvi">
-                        <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" resolve="operand2" />
+        <node concept="3UdiBM" id="RZKkt6ZA_m" role="gfFT$">
+          <node concept="3Uc_2w" id="RZKkt6ZA_n" role="3UdiBN">
+            <node concept="3Uc1vy" id="RZKkt6ZA_o" role="3Uc_2x">
+              <node concept="29HgVG" id="RZKkt6ZA_p" role="lGtFl">
+                <node concept="3NFfHV" id="RZKkt6ZA_q" role="3NFExx">
+                  <node concept="3clFbS" id="RZKkt6ZA_r" role="2VODD2">
+                    <node concept="3clFbF" id="RZKkt6ZA_s" role="3cqZAp">
+                      <node concept="2YIFZM" id="RZKkt6ZA_t" role="3clFbG">
+                        <ref role="37wK5l" to="ow8f:RZKkt6XOdX" resolve="getOperandCheckedForNull" />
+                        <ref role="1Pybhc" to="ow8f:45Y_ixHti5k" resolve="CppTypeHelper" />
+                        <node concept="30H73N" id="RZKkt6ZA_u" role="37wK5m" />
                       </node>
-                      <node concept="30H73N" id="45Y_ixHupCa" role="2Oq$k0" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="1VUwCF" id="RZKkt6ZA_v" role="3Uc_2v">
+              <ref role="2aT8gA" to="sta3:6KOXYtgl5KW" resolve="has_value" />
+            </node>
           </node>
-          <node concept="3Uf2Ky" id="45Y_ixHupAR" role="3Ufby2">
-            <node concept="29HgVG" id="45Y_ixHupAW" role="lGtFl">
-              <node concept="3NFfHV" id="45Y_ixHupAX" role="3NFExx">
-                <node concept="3clFbS" id="45Y_ixHupAY" role="2VODD2">
-                  <node concept="3clFbF" id="45Y_ixHupB4" role="3cqZAp">
-                    <node concept="2OqwBi" id="45Y_ixHupAZ" role="3clFbG">
-                      <node concept="3TrEf2" id="45Y_ixHupB2" role="2OqNvi">
-                        <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" resolve="operand1" />
-                      </node>
-                      <node concept="30H73N" id="45Y_ixHupB3" role="2Oq$k0" />
+          <node concept="3UdiBG" id="RZKkt6ZA_w" role="3UdiBL" />
+        </node>
+      </node>
+      <node concept="30G5F_" id="5KQf2y8dRk5" role="30HLyM">
+        <node concept="3clFbS" id="5KQf2y8dRk6" role="2VODD2">
+          <node concept="3clFbF" id="5KQf2y8dRk7" role="3cqZAp">
+            <node concept="1Wc70l" id="RZKkt6XIIl" role="3clFbG">
+              <node concept="2YIFZM" id="RZKkt6XN_Q" role="3uHU7w">
+                <ref role="37wK5l" to="ow8f:RZKkt6XM6B" resolve="checksForNull" />
+                <ref role="1Pybhc" to="ow8f:45Y_ixHti5k" resolve="CppTypeHelper" />
+                <node concept="30H73N" id="RZKkt6XN_S" role="37wK5m" />
+              </node>
+              <node concept="2OqwBi" id="5KQf2y8dRk8" role="3uHU7B">
+                <node concept="2OqwBi" id="5KQf2y8dRk9" role="2Oq$k0">
+                  <node concept="30H73N" id="5KQf2y8dRka" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5KQf2y8dRkb" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:6cBsaQyn5Yd" resolve="operator" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5KQf2y8dRkc" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="2OqwBi" id="5KQf2y8dRkd" role="37wK5m">
+                    <node concept="1XH99k" id="5KQf2y8dRke" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:6cBsaQyn5Y7" resolve="EqualityOperator" />
+                    </node>
+                    <node concept="2ViDtV" id="5KQf2y8dRkf" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:6cBsaQyn5Y9" resolve="NotEqualTo" />
                     </node>
                   </node>
                 </node>
@@ -5110,23 +5193,62 @@
           </node>
         </node>
       </node>
-      <node concept="30G5F_" id="5KQf2y8dRk5" role="30HLyM">
-        <node concept="3clFbS" id="5KQf2y8dRk6" role="2VODD2">
-          <node concept="3clFbF" id="5KQf2y8dRk7" role="3cqZAp">
-            <node concept="2OqwBi" id="5KQf2y8dRk8" role="3clFbG">
-              <node concept="2OqwBi" id="5KQf2y8dRk9" role="2Oq$k0">
-                <node concept="30H73N" id="5KQf2y8dRka" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5KQf2y8dRkb" role="2OqNvi">
+    </node>
+    <node concept="3aamgX" id="RZKkt6XEhE" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
+      <node concept="gft3U" id="RZKkt6XEhF" role="1lVwrX">
+        <node concept="3UfeGG" id="RZKkt6XEhG" role="gfFT$">
+          <node concept="3Uf2Ky" id="RZKkt6XEhH" role="3Ufby4">
+            <node concept="29HgVG" id="RZKkt6XEhI" role="lGtFl">
+              <node concept="3NFfHV" id="RZKkt6XEhJ" role="3NFExx">
+                <node concept="3clFbS" id="RZKkt6XEhK" role="2VODD2">
+                  <node concept="3clFbF" id="RZKkt6XEhL" role="3cqZAp">
+                    <node concept="2OqwBi" id="RZKkt6XEhM" role="3clFbG">
+                      <node concept="3TrEf2" id="RZKkt6XEhN" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" resolve="operand2" />
+                      </node>
+                      <node concept="30H73N" id="RZKkt6XEhO" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="RZKkt6XEhP" role="3Ufby2">
+            <node concept="29HgVG" id="RZKkt6XEhQ" role="lGtFl">
+              <node concept="3NFfHV" id="RZKkt6XEhR" role="3NFExx">
+                <node concept="3clFbS" id="RZKkt6XEhS" role="2VODD2">
+                  <node concept="3clFbF" id="RZKkt6XEhT" role="3cqZAp">
+                    <node concept="2OqwBi" id="RZKkt6XEhU" role="3clFbG">
+                      <node concept="3TrEf2" id="RZKkt6XEhV" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" resolve="operand1" />
+                      </node>
+                      <node concept="30H73N" id="RZKkt6XEhW" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="RZKkt6XEhX" role="30HLyM">
+        <node concept="3clFbS" id="RZKkt6XEhY" role="2VODD2">
+          <node concept="3clFbF" id="RZKkt6XEhZ" role="3cqZAp">
+            <node concept="2OqwBi" id="RZKkt6XEi0" role="3clFbG">
+              <node concept="2OqwBi" id="RZKkt6XEi1" role="2Oq$k0">
+                <node concept="30H73N" id="RZKkt6XEi2" role="2Oq$k0" />
+                <node concept="3TrcHB" id="RZKkt6XEi3" role="2OqNvi">
                   <ref role="3TsBF5" to="28lk:6cBsaQyn5Yd" resolve="operator" />
                 </node>
               </node>
-              <node concept="liA8E" id="5KQf2y8dRkc" role="2OqNvi">
+              <node concept="liA8E" id="RZKkt6XEi4" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                <node concept="2OqwBi" id="5KQf2y8dRkd" role="37wK5m">
-                  <node concept="1XH99k" id="5KQf2y8dRke" role="2Oq$k0">
+                <node concept="2OqwBi" id="RZKkt6XEi5" role="37wK5m">
+                  <node concept="1XH99k" id="RZKkt6XEi6" role="2Oq$k0">
                     <ref role="1XH99l" to="28lk:6cBsaQyn5Y7" resolve="EqualityOperator" />
                   </node>
-                  <node concept="2ViDtV" id="5KQf2y8dRkf" role="2OqNvi">
+                  <node concept="2ViDtV" id="RZKkt6XEi7" role="2OqNvi">
                     <ref role="2ViDtZ" to="28lk:6cBsaQyn5Y9" resolve="NotEqualTo" />
                   </node>
                 </node>
