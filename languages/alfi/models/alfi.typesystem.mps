@@ -4291,5 +4291,98 @@
       <ref role="1YaFvo" to="28lk:6cBsaQxIPPj" resolve="CastExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="RZKkt7csuE">
+    <property role="TrG5h" value="typeof_Assignment_FeatureLeftHandSide" />
+    <property role="3GE5qa" value="expressions.assignment" />
+    <node concept="3clFbS" id="RZKkt7csuF" role="18ibNy">
+      <node concept="1Z5TYs" id="RZKkt7csVb" role="3cqZAp">
+        <node concept="mw_s8" id="RZKkt7csVB" role="1ZfhKB">
+          <node concept="1Z2H0r" id="RZKkt7csVz" role="mwGJk">
+            <node concept="2OqwBi" id="RZKkt7ct4c" role="1Z2MuG">
+              <node concept="1YBJjd" id="RZKkt7csVV" role="2Oq$k0">
+                <ref role="1YBMHb" node="RZKkt7csuH" resolve="assignment_FeatureLeftHandSide" />
+              </node>
+              <node concept="3TrEf2" id="RZKkt7ctf_" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQybPpw" resolve="feature" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="RZKkt7csVe" role="1ZfhK$">
+          <node concept="1Z2H0r" id="RZKkt7csvz" role="mwGJk">
+            <node concept="1YBJjd" id="RZKkt7csxw" role="1Z2MuG">
+              <ref role="1YBMHb" node="RZKkt7csuH" resolve="assignment_FeatureLeftHandSide" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="RZKkt7csuH" role="1YuTPh">
+      <property role="TrG5h" value="assignment_FeatureLeftHandSide" />
+      <ref role="1YaFvo" to="28lk:6cBsaQybPpv" resolve="Assignment_FeatureLeftHandSide" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="RZKkt7ctiK">
+    <property role="TrG5h" value="typeof_Assignment_NameLeftHandSide" />
+    <property role="3GE5qa" value="expressions.assignment" />
+    <node concept="3clFbS" id="RZKkt7ctiL" role="18ibNy">
+      <node concept="1Z5TYs" id="RZKkt7ctiR" role="3cqZAp">
+        <node concept="mw_s8" id="RZKkt7ctiS" role="1ZfhKB">
+          <node concept="1Z2H0r" id="RZKkt7ctiT" role="mwGJk">
+            <node concept="2OqwBi" id="RZKkt7ctiU" role="1Z2MuG">
+              <node concept="1YBJjd" id="RZKkt7ctiV" role="2Oq$k0">
+                <ref role="1YBMHb" node="RZKkt7ctiN" resolve="assignment_NameLeftHandSide" />
+              </node>
+              <node concept="3TrEf2" id="RZKkt7ctA$" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQybPpJ" resolve="target" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="RZKkt7ctiX" role="1ZfhK$">
+          <node concept="1Z2H0r" id="RZKkt7ctiY" role="mwGJk">
+            <node concept="1YBJjd" id="RZKkt7ctiZ" role="1Z2MuG">
+              <ref role="1YBMHb" node="RZKkt7ctiN" resolve="assignment_NameLeftHandSide" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="RZKkt7ctiN" role="1YuTPh">
+      <property role="TrG5h" value="assignment_NameLeftHandSide" />
+      <ref role="1YaFvo" to="28lk:6cBsaQybPpI" resolve="Assignment_NameLeftHandSide" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="RZKkt7ctHG">
+    <property role="TrG5h" value="typeof_Assignment_ParenthesizedLeftHandSide" />
+    <property role="3GE5qa" value="expressions.assignment" />
+    <node concept="3clFbS" id="RZKkt7ctHH" role="18ibNy">
+      <node concept="1Z5TYs" id="RZKkt7ctHN" role="3cqZAp">
+        <node concept="mw_s8" id="RZKkt7ctHO" role="1ZfhKB">
+          <node concept="1Z2H0r" id="RZKkt7ctHP" role="mwGJk">
+            <node concept="2OqwBi" id="RZKkt7ctHQ" role="1Z2MuG">
+              <node concept="1YBJjd" id="RZKkt7ctHR" role="2Oq$k0">
+                <ref role="1YBMHb" node="RZKkt7ctHJ" resolve="assignment_ParenthesizedLeftHandSide" />
+              </node>
+              <node concept="3TrEf2" id="RZKkt7cu1w" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6cBsaQycCZ0" resolve="inner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="RZKkt7ctHT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="RZKkt7ctHU" role="mwGJk">
+            <node concept="1YBJjd" id="RZKkt7ctHV" role="1Z2MuG">
+              <ref role="1YBMHb" node="RZKkt7ctHJ" resolve="assignment_ParenthesizedLeftHandSide" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="RZKkt7ctHJ" role="1YuTPh">
+      <property role="TrG5h" value="assignment_ParenthesizedLeftHandSide" />
+      <ref role="1YaFvo" to="28lk:6cBsaQycCYZ" resolve="Assignment_ParenthesizedLeftHandSide" />
+    </node>
+  </node>
 </model>
 
