@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="alfi.compitest" uuid="fd33b61c-8f8d-4883-b99a-96987a1d2c16" moduleVersion="1">
+<solution name="alfi.compitest" uuid="fd33b61c-8f8d-4883-b99a-96987a1d2c16" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
