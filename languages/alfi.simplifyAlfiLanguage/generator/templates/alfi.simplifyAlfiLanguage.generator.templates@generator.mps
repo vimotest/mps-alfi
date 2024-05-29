@@ -4,6 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -178,6 +179,9 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu">
+        <property id="2674824929518763013" name="value" index="_jtWv" />
+      </concept>
       <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
         <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
@@ -189,6 +193,13 @@
       </concept>
       <concept id="3328952194368290204" name="alfi.structure.EmptyStatement" flags="ng" index="PDIRY" />
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q" />
+      <concept id="7144803224901733272" name="alfi.structure.BinaryExpression" flags="ng" index="31szGP">
+        <child id="7144803224901733273" name="operand1" index="31szGO" />
+        <child id="7144803224901733275" name="operand2" index="31szGQ" />
+      </concept>
+      <concept id="7144803224902197132" name="alfi.structure.EqualityExpression" flags="ng" index="31uMWx">
+        <property id="7144803224902197133" name="operator" index="31uMWw" />
+      </concept>
       <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
         <child id="7144803224883131093" name="typeName" index="327w9S" />
         <child id="7144803224883131091" name="expression" index="327w9Y" />
@@ -506,6 +517,46 @@
                   <node concept="30H73N" id="64vLWnJ2Hum" role="2fWi3N" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="59QkE2cTjZe" role="3acgRq">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+      <node concept="gft3U" id="59QkE2cTwiK" role="1lVwrX">
+        <node concept="31uMWx" id="59QkE2cTwxD" role="gfFT$">
+          <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+          <node concept="_uYbk" id="59QkE2cTw_L" role="31szGO">
+            <node concept="_vnHb" id="59QkE2cTw_N" role="_uYbl">
+              <node concept="2RqM1Q" id="59QkE2cTwA1" role="_vnH8" />
+            </node>
+            <node concept="29HgVG" id="59QkE2cZFbg" role="lGtFl">
+              <node concept="3NFfHV" id="59QkE2cZFbz" role="3NFExx">
+                <node concept="3clFbS" id="59QkE2cZFb$" role="2VODD2">
+                  <node concept="3clFbF" id="59QkE2cZFbD" role="3cqZAp">
+                    <node concept="2OqwBi" id="59QkE2cZFnY" role="3clFbG">
+                      <node concept="30H73N" id="59QkE2cZFbC" role="2Oq$k0" />
+                      <node concept="1$rogu" id="59QkE2cZF_f" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="_jtWu" id="59QkE2cTwyF" role="31szGQ">
+            <property role="_jtWv" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="59QkE2cTkTq" role="30HLyM">
+        <node concept="3clFbS" id="59QkE2cTkTr" role="2VODD2">
+          <node concept="3clFbF" id="59QkE2cTsTD" role="3cqZAp">
+            <node concept="2YIFZM" id="59QkE2cTsUX" role="3clFbG">
+              <ref role="37wK5l" to="mbf3:59QkE2cTqfs" resolve="isImplicitOptionalBooleanExpression" />
+              <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSequenceSimplificationHelper" />
+              <node concept="30H73N" id="59QkE2cTsXH" role="37wK5m" />
             </node>
           </node>
         </node>
