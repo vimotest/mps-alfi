@@ -24,7 +24,8 @@ def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest-src.jar"
 
 def executorToCmd = [
         "AlfiJava": ["java", "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
-        "AlfiAlf": ["bash", "${COMPITEST_ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" ")
+        "AlfiAlf": ["bash", "${COMPITEST_ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" "),
+        "AlfiCpp": ["${COMPITEST_TESTCASE_DIR}/tests/compitest-cpp-binaries/alfi.compitest.Activity%TESTCASE%"].join(" ")
 ]
 
 AlfSourceFileUnzipper.unzipAlfFiles(testSuiteSrcJar, "$COMPITEST_WORK_DIR/src")
@@ -38,7 +39,7 @@ def exitCode = 0
 
 testPlan.testSuites.each { testSuite ->
     testSuite.executors.each { executor ->
-        println("Running test suite ${testSuite.name} with executor ${executor}")
+        println("## Running test suite ${testSuite.name} with executor ${executor}")
 
         testSuite.tests.each { test ->
             def cmd = executorToCmd[executor]

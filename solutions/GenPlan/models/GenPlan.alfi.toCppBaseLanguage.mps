@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)">
+<model ref="r:0374a2a3-2e83-460e-8228-7bd146963871(GenPlan.alfi.toCppBaseLanguage)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
-  <imports>
-    <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(GenPlan.alfi.toJavaBaseLanguage@genplan)" />
-    <import index="4snh" ref="r:0374a2a3-2e83-460e-8228-7bd146963871(GenPlan.alfi.toCppBaseLanguage)" />
-  </imports>
+  <imports />
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
@@ -20,9 +16,6 @@
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
         <property id="2209292798354050154" name="individualStepPerGenerator" index="1s431M" />
         <child id="1152961914448142326" name="entries" index="2Qf7GQ" />
-      </concept>
-      <concept id="3167863533095527371" name="jetbrains.mps.lang.generator.plan.structure.Fork" flags="ng" index="10T23i">
-        <reference id="3167863533095527372" name="plan" index="10T23l" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -37,20 +30,20 @@
       </concept>
     </language>
   </registry>
-  <node concept="2VgMpV" id="5hkZeVaMzHS">
-    <property role="TrG5h" value="AlfiMain" />
-    <node concept="10T23i" id="38C0GeDj4rI" role="2VgMA7">
-      <ref role="10T23l" to="tprf:3OZQpz3aSq" resolve="AlfiToJavaBaselanguage" />
-    </node>
-    <node concept="10T23i" id="64vLWnJGj9K" role="2VgMA7">
-      <ref role="10T23l" to="4snh:3OZQpz3aSq" resolve="AlfiToCppBaselanguage" />
-    </node>
-    <node concept="2VgMA2" id="5XCh6Wgn9ve" role="2VgMA7">
+  <node concept="2VgMpV" id="3OZQpz3aSq">
+    <property role="TrG5h" value="AlfiToCppBaselanguage" />
+    <node concept="2VgMA2" id="3OZQpz3aSs" role="2VgMA7">
       <property role="1s431M" value="true" />
-      <node concept="2Qf6Nf" id="5XCh6Wgn9vi" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="5XCh6Wgn9vm" role="2Qf6Ng">
-          <property role="2V$B1T" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" />
-          <property role="2V$B1Q" value="alfi" />
+      <node concept="2Qf6Nf" id="by5CupmlIC" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="by5CupmlIX" role="2Qf6Ng">
+          <property role="2V$B1T" value="ded42a5f-0d92-4cc2-b9ff-116aae7175a9" />
+          <property role="2V$B1Q" value="alfi.simplifyAlfiLanguage" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="3OZQpz3aSv" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="64vLWnJGj9F" role="2Qf6Ng">
+          <property role="2V$B1T" value="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf" />
+          <property role="2V$B1Q" value="alfi.toCppBaseLanguage" />
         </node>
       </node>
     </node>

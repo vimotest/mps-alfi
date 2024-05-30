@@ -6,10 +6,12 @@
   <property name="build.tmp" location="${build.dir}/tmp/alfi-build" />
   <property name="build.layout" location="${build.dir}/artifacts/alfi-build" />
   <property name="mps_home" location="${basedir}/build/mps-bundle/mps" />
+  <property name="dependencies_home" location="${basedir}/build/mps-bundle/dependencies" />
   <property name="project_home" location="" />
   <property name="mps.macro.project_home" location="${project_home}" />
-  <property name="platform_lib" location="${basedir}/build/mps-bundle/mps/lib" />
+  <property name="platform_lib" location="${mps_home}/lib" />
   <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.CppBaseLanguage" location="${dependencies_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -56,6 +58,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>CppBaseLanguage</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -74,6 +77,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>CppBaseLanguage</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -264,10 +268,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi-generator-templates" prefix="module/generator/templates" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage.jar" />
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.toBaseLanguage.jar/META-INF/module.xml">
-      <module namespace="alfi.toBaseLanguage" type="language" uuid="d0e1230a-72e3-4b6b-88f2-98d924f7de11">
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toJavaBaseLanguage.jar/META-INF/module.xml">
+      <module namespace="alfi.toJavaBaseLanguage" type="language" uuid="d0e1230a-72e3-4b6b-88f2-98d924f7de11">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -292,6 +296,7 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
           <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
@@ -346,18 +351,18 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="alfi.toBaseLanguage-src.jar" descriptor="alfi.toBaseLanguage.mpl" />
+        <sources jar="alfi.toJavaBaseLanguage-src.jar" descriptor="alfi.toJavaBaseLanguage.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toBaseLanguage.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.toBaseLanguage" />
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/alfi.toBaseLanguage.jar" />
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar" />
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.toBaseLanguage-generator.jar/META-INF/module.xml">
-      <module namespace="alfi.toBaseLanguage.generator" type="generator" uuid="9bc6954f-a86d-4773-a31d-c1a868afe8da">
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar/META-INF/module.xml">
+      <module namespace="alfi.toJavaBaseLanguage.generator" type="generator" uuid="9bc6954f-a86d-4773-a31d-c1a868afe8da">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -374,9 +379,10 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
           <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
-          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" kind="cl" />
+          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
@@ -402,36 +408,338 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="alfi.toBaseLanguage-src.jar" descriptor="alfi.toBaseLanguage.mpl" />
+        <sources jar="alfi.toJavaBaseLanguage-src.jar" descriptor="alfi.toJavaBaseLanguage.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toBaseLanguage-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.toBaseLanguage.generator" />
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar" />
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-models">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-models">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-generator-templates">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-generator-templates">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toBaseLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen">
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/source_gen">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-models" prefix="module/models" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-generator-templates" prefix="module/generator/templates" />
+      <zipfileset file="${basedir}/languages/alfi.toJavaBaseLanguage/alfi.toJavaBaseLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-generator-templates" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toCppBaseLanguage.jar/META-INF/module.xml">
+      <module namespace="alfi.toCppBaseLanguage" type="language" uuid="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.toCppBaseLanguage-src.jar" descriptor="alfi.toCppBaseLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toCppBaseLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar/META-INF/module.xml">
+      <module namespace="alfi.toCppBaseLanguage.generator" type="generator" uuid="9a40c2be-1bc9-4644-a51b-6e7037b4c888">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:e745d4a0-ccf7-4cb3-8db8-0f77222a00bf:alfi.toCppBaseLanguage" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.toCppBaseLanguage-src.jar" descriptor="alfi.toCppBaseLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toCppBaseLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-models">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-generator-templates">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.toCppBaseLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-generator-templates" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar/META-INF/module.xml">
+      <module namespace="alfi.simplifyAlfiLanguage" type="language" uuid="ded42a5f-0d92-4cc2-b9ff-116aae7175a9">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.simplifyAlfiLanguage-src.jar" descriptor="alfi.simplifyAlfiLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage" />
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar/META-INF/module.xml">
+      <module namespace="alfi.simplifyAlfiLanguage.generator" type="generator" uuid="1d968d4c-a354-4aec-8ae4-a9b57a3ce020">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="ded42a5f-0d92-4cc2-b9ff-116aae7175a9(alfi.simplifyAlfiLanguage)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.simplifyAlfiLanguage-src.jar" descriptor="alfi.simplifyAlfiLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-models">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-generator-templates">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/alfi.simplifyAlfiLanguage/alfi.simplifyAlfiLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-generator-templates" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.GeneratorUtils.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.GeneratorUtils.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.GeneratorUtils.jar/META-INF/module.xml">
+      <module namespace="alfi.GeneratorUtils" type="solution" uuid="1d1d297f-1148-4f73-96d6-f1b7f59d96f1">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.GeneratorUtils-src.jar" descriptor="alfi.GeneratorUtils.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.GeneratorUtils.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.GeneratorUtils" />
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.GeneratorUtils.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-alfi.GeneratorUtils-models">
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.GeneratorUtils-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/alfi.GeneratorUtils/alfi.GeneratorUtils.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.GeneratorUtils-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/alfi.PrimitiveMapping.jar" />
     <mkdir dir="${build.tmp}/default/alfi.PrimitiveMapping.jar/META-INF" />
@@ -459,6 +767,7 @@
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
@@ -593,11 +902,13 @@
     <echoxml file="${build.tmp}/default/alfi.StandardModelLibrary.jar/META-INF/module.xml">
       <module namespace="alfi.StandardModelLibrary" type="solution" uuid="e9b40a72-6930-481d-bdce-a0a866bf715e">
         <dependencies>
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="cl" />
         </dependencies>
         <uses>
+          <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
         </uses>
@@ -661,6 +972,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>CppBaseLanguage</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -679,6 +991,7 @@
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>CppBaseLanguage</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -869,10 +1182,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi-models1" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi-generator-templates1" prefix="module/generator/templates" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage.jar1" />
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage.jar1/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.toBaseLanguage.jar1/META-INF/module.xml">
-      <module namespace="alfi.toBaseLanguage" type="language" uuid="d0e1230a-72e3-4b6b-88f2-98d924f7de11">
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toJavaBaseLanguage.jar1/META-INF/module.xml">
+      <module namespace="alfi.toJavaBaseLanguage" type="language" uuid="d0e1230a-72e3-4b6b-88f2-98d924f7de11">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -897,6 +1210,7 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
           <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
@@ -951,18 +1265,18 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="alfi.toBaseLanguage-src.jar" descriptor="alfi.toBaseLanguage.mpl" />
+        <sources jar="alfi.toJavaBaseLanguage-src.jar" descriptor="alfi.toJavaBaseLanguage.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toBaseLanguage.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.toBaseLanguage" />
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/alfi.toBaseLanguage.jar1" />
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toJavaBaseLanguage.jar1" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar1" />
-    <mkdir dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar1/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.toBaseLanguage-generator.jar1/META-INF/module.xml">
-      <module namespace="alfi.toBaseLanguage.generator" type="generator" uuid="9bc6954f-a86d-4773-a31d-c1a868afe8da">
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar1/META-INF/module.xml">
+      <module namespace="alfi.toJavaBaseLanguage.generator" type="generator" uuid="9bc6954f-a86d-4773-a31d-c1a868afe8da">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -979,9 +1293,10 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
           <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
-          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" kind="cl" />
+          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
@@ -1007,36 +1322,338 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="alfi.toBaseLanguage-src.jar" descriptor="alfi.toBaseLanguage.mpl" />
+        <sources jar="alfi.toJavaBaseLanguage-src.jar" descriptor="alfi.toJavaBaseLanguage.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toBaseLanguage-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.toBaseLanguage.generator" />
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/alfi.toBaseLanguage-generator.jar1" />
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toJavaBaseLanguage-generator.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-models1">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-models1">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-generator-templates1">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-generator-templates1">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toBaseLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen">
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toJavaBaseLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/source_gen">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-models1" prefix="module/models" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toBaseLanguage-generator-templates1" prefix="module/generator/templates" />
+      <zipfileset file="${basedir}/languages/alfi.toJavaBaseLanguage/alfi.toJavaBaseLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toJavaBaseLanguage-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toCppBaseLanguage.jar1/META-INF/module.xml">
+      <module namespace="alfi.toCppBaseLanguage" type="language" uuid="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.toCppBaseLanguage-src.jar" descriptor="alfi.toCppBaseLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toCppBaseLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toCppBaseLanguage.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar1/META-INF/module.xml">
+      <module namespace="alfi.toCppBaseLanguage.generator" type="generator" uuid="9a40c2be-1bc9-4644-a51b-6e7037b4c888">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:e745d4a0-ccf7-4cb3-8db8-0f77222a00bf:alfi.toCppBaseLanguage" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.toCppBaseLanguage-src.jar" descriptor="alfi.toCppBaseLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toCppBaseLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.toCppBaseLanguage-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-models1">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-generator-templates1">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.toCppBaseLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.toCppBaseLanguage-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar1/META-INF/module.xml">
+      <module namespace="alfi.simplifyAlfiLanguage" type="language" uuid="ded42a5f-0d92-4cc2-b9ff-116aae7175a9">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.simplifyAlfiLanguage-src.jar" descriptor="alfi.simplifyAlfiLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage" />
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.simplifyAlfiLanguage.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar1/META-INF/module.xml">
+      <module namespace="alfi.simplifyAlfiLanguage.generator" type="generator" uuid="1d968d4c-a354-4aec-8ae4-a9b57a3ce020">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" kind="cl" />
+          <module ref="ded42a5f-0d92-4cc2-b9ff-116aae7175a9(alfi.simplifyAlfiLanguage)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.simplifyAlfiLanguage-src.jar" descriptor="alfi.simplifyAlfiLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage.generator" />
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.simplifyAlfiLanguage-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-models1">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-generator-templates1">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.simplifyAlfiLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/alfi.simplifyAlfiLanguage/alfi.simplifyAlfiLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi.simplifyAlfiLanguage-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/alfi.GeneratorUtils.jar1" />
+    <mkdir dir="${build.tmp}/default/alfi.GeneratorUtils.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.GeneratorUtils.jar1/META-INF/module.xml">
+      <module namespace="alfi.GeneratorUtils" type="solution" uuid="1d1d297f-1148-4f73-96d6-f1b7f59d96f1">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="alfi.GeneratorUtils-src.jar" descriptor="alfi.GeneratorUtils.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.GeneratorUtils.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/alfi.GeneratorUtils" />
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/alfi.GeneratorUtils.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-alfi.GeneratorUtils-models1">
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.GeneratorUtils-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/alfi.GeneratorUtils/alfi.GeneratorUtils.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.GeneratorUtils-models1" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/alfi.PrimitiveMapping.jar1" />
     <mkdir dir="${build.tmp}/default/alfi.PrimitiveMapping.jar1/META-INF" />
@@ -1064,6 +1681,7 @@
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
@@ -1198,11 +1816,13 @@
     <echoxml file="${build.tmp}/default/alfi.StandardModelLibrary.jar1/META-INF/module.xml">
       <module namespace="alfi.StandardModelLibrary" type="solution" uuid="e9b40a72-6930-481d-bdce-a0a866bf715e">
         <dependencies>
+          <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="cl" />
         </dependencies>
         <uses>
+          <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
         </uses>
@@ -1324,7 +1944,7 @@
         <uses>
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
-          <language id="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toBaseLanguage" />
+          <language id="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
         </uses>
         <library jar="idea_rt.jar" />
@@ -1362,12 +1982,12 @@
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
-          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" kind="cl" />
+          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
-          <language id="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toBaseLanguage" />
+          <language id="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" />
         </uses>
         <classpath>
           <entry path="." />
@@ -1412,7 +2032,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.toBaseLanguage, java.compile.alfi.toBaseLanguage.generator, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.sandbox, java.compile.alfi.compitest, java.compile.alfi.test, java.compile.alfi.build, java.compile.GenPlan" />
+  <target name="compileJava" depends="java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.toJavaBaseLanguage, java.compile.alfi.toJavaBaseLanguage.generator, java.compile.alfi.toCppBaseLanguage, java.compile.alfi.toCppBaseLanguage.generator, java.compile.alfi.simplifyAlfiLanguage, java.compile.alfi.simplifyAlfiLanguage.generator, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.sandbox, java.compile.alfi.compitest, java.compile.alfi.test, java.compile.alfi.build, java.compile.GenPlan" />
   
   <target name="processResources" />
   
@@ -1426,6 +2046,7 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.CppBaseLanguage}/CppBaseLanguage" id="CppBaseLanguage" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
@@ -1455,6 +2076,7 @@
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.rules.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.rulesAndMessages.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.structure.jar" />
+      <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.textgen.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.typesystem.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.general-purpose.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.language-descriptor.jar" />
@@ -1567,8 +2189,11 @@
         <module file="${basedir}/solutions/alfi.test/alfi.test.msd" />
       </chunk>
       <chunk>
+        <module file="${basedir}/solutions/alfi.GeneratorUtils/alfi.GeneratorUtils.msd" />
         <module file="${basedir}/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" />
-        <module file="${basedir}/languages/alfi.toBaseLanguage/alfi.toBaseLanguage.mpl" />
+        <module file="${basedir}/languages/alfi.simplifyAlfiLanguage/alfi.simplifyAlfiLanguage.mpl" />
+        <module file="${basedir}/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" />
+        <module file="${basedir}/languages/alfi.toJavaBaseLanguage/alfi.toJavaBaseLanguage.mpl" />
       </chunk>
       <chunk>
         <module file="${basedir}/solutions/alfi.compitest/alfi.compitest.msd" />
@@ -1580,6 +2205,7 @@
         <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
+      <macro name="dependencies_home" path="${dependencies_home}" />
       <macro name="project_home" path="${project_home}" />
       <macro name="mps.macro.project_home" path="${mps.macro.project_home}" />
       <macro name="platform_lib" path="${platform_lib}" />
@@ -1723,13 +2349,13 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toBaseLanguage" depends="java.compile.alfi, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
-    <mkdir dir="${basedir}/languages/alfi.toBaseLanguage/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/alfi.toBaseLanguage" />
-    <javac destdir="${build.tmp}/java/out/alfi.toBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.alfi.toJavaBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
+    <javac destdir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/alfi.toBaseLanguage/source_gen" />
+        <path location="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -1759,6 +2385,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
@@ -1804,18 +2431,18 @@
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
       </classpath>
     </javac>
-    <copy todir="${build.tmp}/java/out/alfi.toBaseLanguage">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/source_gen" excludes="**/*.java" />
+    <copy todir="${build.tmp}/java/out/alfi.toJavaBaseLanguage">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toBaseLanguage, fetchDependencies">
-    <mkdir dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/alfi.toBaseLanguage.generator" />
-    <javac destdir="${build.tmp}/java/out/alfi.toBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.alfi.toJavaBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" />
+    <javac destdir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" />
+        <path location="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -1845,10 +2472,11 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-        <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <pathelement path="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
         <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
@@ -1888,8 +2516,338 @@
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
       </classpath>
     </javac>
-    <copy todir="${build.tmp}/java/out/alfi.toBaseLanguage.generator">
-      <fileset dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" excludes="**/*.java" />
+    <copy todir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator">
+      <fileset dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.alfi.toCppBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
+    <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
+        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/alfi.toCppBaseLanguage">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.alfi.toCppBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toCppBaseLanguage, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" />
+    <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <pathelement path="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
+        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator">
+      <fileset dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.alfi.simplifyAlfiLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage" />
+    <javac destdir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.alfi.simplifyAlfiLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.simplifyAlfiLanguage, fetchDependencies">
+    <mkdir dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage.generator" />
+    <javac destdir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
+        <pathelement path="${build.tmp}/java/out/alfi.simplifyAlfiLanguage" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/alfi.simplifyAlfiLanguage.generator">
+      <fileset dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.alfi.GeneratorUtils" depends="java.compile.alfi, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+    <mkdir dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/alfi.GeneratorUtils" />
+    <javac destdir="${build.tmp}/java/out/alfi.GeneratorUtils" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/alfi.GeneratorUtils/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <fileset file="${platform_lib}/idea_rt.jar" />
+        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/alfi.GeneratorUtils">
+      <fileset dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -1944,6 +2902,7 @@
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -2030,6 +2989,7 @@
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="opentest4j-1.2.0.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
@@ -2128,7 +3088,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.compitest" depends="java.compile.GenPlan, java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toBaseLanguage, fetchDependencies">
+  <target name="java.compile.alfi.compitest" depends="java.compile.GenPlan, java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
     <mkdir dir="${basedir}/solutions/alfi.compitest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.compitest" />
     <javac destdir="${build.tmp}/java/out/alfi.compitest" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2167,7 +3127,7 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-        <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <pathelement path="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
         <fileset file="${platform_lib}/idea_rt.jar" />
         <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -2286,6 +3246,7 @@
         <path location="${basedir}/solutions/alfi.build/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.build.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="opentest4j-1.2.0.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
@@ -2472,6 +3433,7 @@
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       
+      <plugin id="CppBaseLanguage" path="${artifacts.CppBaseLanguage}/CppBaseLanguage" />
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
       <plugin id="jetbrains.mps.core" path="${artifacts.mps}/plugins/mps-core" />
       <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
@@ -2500,11 +3462,16 @@
     <delete dir="${basedir}/languages/alfi.PrimitiveMapping/generator/source_gen" />
     <delete dir="${basedir}/solutions/alfi.build/source_gen" />
     <delete dir="${basedir}/solutions/alfi.test/source_gen" />
+    <delete dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" />
     <delete dir="${basedir}/solutions/alfi.StandardModelLibrary/source_gen" />
     <delete dir="${basedir}/languages/alfi/generator/source_gen" />
-    <delete dir="${basedir}/languages/alfi.toBaseLanguage/source_gen" />
-    <delete dir="${basedir}/languages/alfi.toBaseLanguage/generator/source_gen" />
+    <delete dir="${basedir}/languages/alfi.simplifyAlfiLanguage/source_gen" />
+    <delete dir="${basedir}/languages/alfi.simplifyAlfiLanguage/generator/source_gen" />
+    <delete dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" />
+    <delete dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" />
+    <delete dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" />
     <delete dir="${basedir}/solutions/alfi.compitest/source_gen" />
     <delete dir="${basedir}/languages/alfi/sandbox/source_gen" />
+    <delete dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" />
   </target>
 </project>

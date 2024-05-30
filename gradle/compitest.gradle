@@ -1,11 +1,10 @@
 /*
   Gradle tasks to run the compitest scripts
-  Requires python 3.10 and python-poetry to be installed
  */
-
 task compitestRunTests {
     group 'compitest'
     description 'Run the ALF-reference runtime comparison tests'
+    dependsOn 'compitestCopyCppBinaries'
     doLast {
         def workingDir = file("$projectDir/scripts/alfCompareTest")
         def scriptFile = file("$workingDir/CompareTestMain.groovy")
@@ -20,4 +19,16 @@ task compitestRunTests {
 task compitestClean(type: Delete) {
   group 'compitest'
   delete file("build/compitest")
+}
+
+task compitestCopyCppBinaries(type: Copy) {
+    group 'compitest'
+    description 'Copies the built C++ binaries for comparison tests'
+
+    def sourceDir = file("$projectDir/solutions/alfi.compitest/build")
+    def targetDir = file("$buildDir/artifacts/alfi-build/tests/compitest-cpp-binaries")
+
+    from sourceDir
+    include("*alfi.compitest.Activity*")
+    into targetDir
 }

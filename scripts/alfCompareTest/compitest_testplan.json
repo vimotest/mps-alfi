@@ -6,7 +6,8 @@
       "name": "alfi.compitest",
       "executors": [
         "AlfiJava",
-        "AlfiAlf"
+        "AlfiAlf",
+        "AlfiCpp"
       ],
       "tests": [
         {

@@ -43,6 +43,20 @@ jobs:
       - name: Tear down xvfb
         run: killall Xvfb
 
+      # Build C++ code
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v1.5
+        with:
+          cmake-version: '3.17.x'
+
+      - name: Build compitest C++ Files
+        run: cmake -S $PROJECT_CPP_DIR -B $BUILD_DIR && cmake --build $BUILD_DIR
+        env:
+          PROJECT_CPP_DIR: solutions/alfi.compitest
+          BUILD_DIR: solutions/alfi.compitest/build
+      - name: Copy compitest C++ Binaries
+        run: sh ./gradlew compitestCopyCppBinaries
+
       # Archive Artifacts
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
@@ -78,6 +92,8 @@ jobs:
         with:
           name: artifactsForCompitest
           path: build/artifacts/${{ env.PROJECT_NAME }}-build
+      - name: Grant execute permission for cpp binaries
+        run: chmod +x build/artifacts/${{ env.PROJECT_NAME }}-build/tests/compitest-cpp-binaries/*
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests

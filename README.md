@@ -6,7 +6,8 @@ This project is an implementation of the Action Language for foundational UML (A
 It contains the structure, editor, and TextGen definitions for a subset of the ALF Standard.
 Additionally, it contains generators to the following programming languages:
 
-- the Java BaseLanguage
+- Java BaseLanguage (MPS official)
+- simple C++ BaseLanguage (https://github.com/Fumapps/CppBaseLanguage)
 
 The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1).
 The ALF standard reference implementation is available on GitHub: https://github.com/ModelDriven/Alf-Reference-Implementation
