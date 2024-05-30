@@ -1,5 +1,7 @@
 # MPS ALFI
 
+[![Integration Build](https://github.com/vimotest/mps-alfi/actions/workflows/github-actions-integration.yaml/badge.svg)](https://github.com/vimotest/mps-alfi/actions/workflows/github-actions-integration.yaml)
+
 Action Language for foundational UML (ALF) as an Intermediate Language (in JetBrains MPS).
 
 This project is an implementation of the Action Language for foundational UML (ALF) in JetBrains MPS.
@@ -20,6 +22,10 @@ This project is a research prototype and not yet ready for production use:
 - [knownProblems.md](documentation/knownProblems.md) describes what problems are known.
 
 This repository originates from a research project: https://github.com/neumantm/alfi
+
+## Documentation
+
+A more detailed documentation can be found in [documentation/alfiDocumentation.md](documentation/alfiDocumentation.md).
 
 ## Examples
 
