@@ -8,6 +8,7 @@ This document describes all current known problems with alfi.
 - SequenceOperations are only partially supported, especially those which yield sequences again
 - SequenceOperatios: ClassExtend is not supported
 - TemplateBinding in NameBinding not supported yet
+- virtual packages are not correctly transformed to Java/C++ ([#9](https://github.com/vimotest/mps-alfi/issues/9))
 
 ## Generators
 
@@ -33,7 +34,7 @@ This document describes all current known problems with alfi.
 
 ## Textgen
 
-- The Whitespace is not perfect in many places
+- The Whitespace is not perfect in many places ([#3](https://github.com/vimotest/mps-alfi/issues/3))
 
 ## Editor
 
