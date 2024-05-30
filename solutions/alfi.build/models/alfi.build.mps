@@ -34,9 +34,6 @@
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
         <child id="9126048691955220762" name="path" index="28jJRO" />
       </concept>
-      <concept id="9126048691954557131" name="jetbrains.mps.build.structure.BuildLayout_Comment" flags="ng" index="28u9K_">
-        <property id="9126048691954700811" name="text" index="28hIV_" />
-      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -217,75 +214,9 @@
     </node>
     <node concept="55IIr" id="5tK9548cmXz" role="auvoZ" />
     <node concept="1l3spV" id="5tK9548cmX$" role="1l3spN">
-      <node concept="28u9K_" id="5tK9548yNW8" role="39821P">
-        <property role="28hIV_" value="for some reasons, other ANT scripts using alfi-build will look up StandardModelLibraryStubs.jar" />
-      </node>
-      <node concept="28u9K_" id="5tK9548z8lK" role="39821P">
-        <property role="28hIV_" value="from the build/mps-bundle start, so we have to restructure the expected dependencies folder" />
-      </node>
-      <node concept="398223" id="5tK9548xRxL" role="39821P">
-        <node concept="398223" id="5tK9548yNQE" role="39821P">
-          <node concept="398223" id="5tK9548yNTc" role="39821P">
-            <node concept="3_J27D" id="5tK9548yNTe" role="Nbhlr">
-              <node concept="3Mxwew" id="5tK9548yNTE" role="3MwsjC">
-                <property role="3MwjfP" value="lib" />
-              </node>
-            </node>
-            <node concept="28jJK3" id="5tK9548xRxO" role="39821P">
-              <node concept="55IIr" id="5tK9548xRxP" role="28jJRO">
-                <node concept="2Ry0Ak" id="5tK9548xRxQ" role="iGT6I">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="5tK9548xRxR" role="2Ry0An">
-                    <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs" />
-                    <node concept="2Ry0Ak" id="5tK9548xRxS" role="2Ry0An">
-                      <property role="2Ry0Am" value="libs" />
-                      <node concept="2Ry0Ak" id="5tK9548zDwk" role="2Ry0An">
-                        <property role="2Ry0Am" value="StandardModelLibraryStubs.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3_J27D" id="5tK9548yNQG" role="Nbhlr">
-            <node concept="3Mxwew" id="5tK9548yNR8" role="3MwsjC">
-              <property role="3MwjfP" value="alfi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3_J27D" id="5tK9548xRxM" role="Nbhlr">
-          <node concept="3Mxwew" id="5tK9548xRxN" role="3MwsjC">
-            <property role="3MwjfP" value="dependencies" />
-          </node>
-        </node>
-      </node>
       <node concept="m$_wl" id="5tK9548dnsR" role="39821P">
         <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
         <node concept="pUk6x" id="5tK9548dnt9" role="pUk7w" />
-        <node concept="398223" id="5tK9548fqrp" role="39821P">
-          <node concept="28jJK3" id="5tK9548dntj" role="39821P">
-            <node concept="55IIr" id="5tK9548dntk" role="28jJRO">
-              <node concept="2Ry0Ak" id="5tK9548dntx" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5tK9548dntA" role="2Ry0An">
-                  <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs" />
-                  <node concept="2Ry0Ak" id="5tK9548dntF" role="2Ry0An">
-                    <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="5tK9548zDyf" role="2Ry0An">
-                      <property role="2Ry0Am" value="StandardModelLibraryStubs.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3_J27D" id="5tK9548fqrr" role="Nbhlr">
-            <node concept="3Mxwew" id="5tK9548fqrG" role="3MwsjC">
-              <property role="3MwjfP" value="lib" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3981dG" id="5tK9548dnu3" role="39821P">
         <node concept="3_J27D" id="5tK9548dnu5" role="Nbhlr">
@@ -295,29 +226,6 @@
         </node>
         <node concept="m$_wl" id="5tK9548dnuq" role="39821P">
           <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
-          <node concept="398223" id="5tK9548eJss" role="39821P">
-            <node concept="3_J27D" id="5tK9548eJsu" role="Nbhlr">
-              <node concept="3Mxwew" id="5tK9548eJsJ" role="3MwsjC">
-                <property role="3MwjfP" value="lib" />
-              </node>
-            </node>
-            <node concept="28jJK3" id="5tK9548dnuQ" role="39821P">
-              <node concept="55IIr" id="5tK9548dnuR" role="28jJRO">
-                <node concept="2Ry0Ak" id="5tK9548dnuS" role="iGT6I">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="5tK9548dnuT" role="2Ry0An">
-                    <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs" />
-                    <node concept="2Ry0Ak" id="5tK9548dnuU" role="2Ry0An">
-                      <property role="2Ry0Am" value="libs" />
-                      <node concept="2Ry0Ak" id="5tK9548n7WF" role="2Ry0An">
-                        <property role="2Ry0Am" value="StandardModelLibraryStubs.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="pUk6x" id="5tK9548dnuG" role="pUk7w" />
         </node>
       </node>
@@ -1054,12 +962,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5tK9548cRAA" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cRAB" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="5tK9548cRyB" resolve="alfi.StandardModelLibraryStubs" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="pZehJpPKMY" role="3bR37C">
           <node concept="1BurEX" id="pZehJpPKMZ" role="1SiIV1">
             <node concept="398BVA" id="pZehJpPKMW" role="1BurEY">
@@ -1073,40 +975,6 @@
         <node concept="1SiIV0" id="1pkjUYtEXt" role="3bR37C">
           <node concept="3bR9La" id="1pkjUYtEXu" role="1SiIV1">
             <ref role="3bR37D" to="gwjr:3SvoVjum9y6" resolve="CppStdLib" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="5tK9548cRyB" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="alfi.StandardModelLibraryStubs" />
-        <property role="3LESm3" value="f13dd4ca-a567-47d7-98bc-31b72d168722" />
-        <node concept="55IIr" id="5tK9548cRyE" role="3LF7KH">
-          <node concept="2Ry0Ak" id="5tK9548cR$P" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="5tK9548cR$U" role="2Ry0An">
-              <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs" />
-              <node concept="2Ry0Ak" id="5tK9548cR$Z" role="2Ry0An">
-                <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5tK9548zD$f" role="3bR37C">
-          <node concept="1BurEX" id="5tK9548zD$g" role="1SiIV1">
-            <node concept="55IIr" id="5tK9548zD$a" role="1BurEY">
-              <node concept="2Ry0Ak" id="5tK9548zD$b" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5tK9548zD$c" role="2Ry0An">
-                  <property role="2Ry0Am" value="alfi.StandardModelLibraryStubs" />
-                  <node concept="2Ry0Ak" id="5tK9548zD$d" role="2Ry0An">
-                    <property role="2Ry0Am" value="libs" />
-                    <node concept="2Ry0Ak" id="5tK9548zD$e" role="2Ry0An">
-                      <property role="2Ry0Am" value="StandardModelLibraryStubs.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -1199,11 +1067,6 @@
                 <property role="2Ry0Am" value="alfi.compitest.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5tK9548cSaO" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cSaP" role="1SiIV1">
-            <ref role="3bR37D" node="5tK9548cRyB" resolve="alfi.StandardModelLibraryStubs" />
           </node>
         </node>
         <node concept="1SiIV0" id="5tK9548cSaQ" role="3bR37C">

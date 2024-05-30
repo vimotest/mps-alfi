@@ -12,8 +12,6 @@
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
     <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
-    <import index="lodc" ref="f13dd4ca-a567-47d7-98bc-31b72d168722/java:alf.library.primitivebehaviors(alfi.StandardModelLibraryStubs/)" />
-    <import index="zrzc" ref="f13dd4ca-a567-47d7-98bc-31b72d168722/java:alf.library(alfi.StandardModelLibraryStubs/)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">

@@ -13,7 +13,6 @@ ext.customMpsPlugins = [
 
 apply from: 'gradle/init-gradle-scripts.gradle'
 
-apply from: 'gradle/build-runtime-jars.gradle'
 apply from: 'gradle/install-alf.gradle'
 apply from: 'gradle/compitest.gradle'
 
@@ -24,15 +23,13 @@ task prepareMps {
 
 task mpsBuild {
     group 'mps'
-    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
 }
 mpsAntBuild.dependsOn mpsAntGenerate
-mpsAntGenerate.dependsOn packageStandardModelLibrary
-
 
 task mpsClean {
     group 'mps'
-    dependsOn 'mpsAntClean', 'mpsAntCleanSources', 'cleanStandardModelLibraryJar'
+    dependsOn 'mpsAntClean', 'mpsAntCleanSources'
 }
 
 task mpsTest {

@@ -3,6 +3,8 @@ import executors.TestExecutor
 import executors.AlfSourceFileUnzipper
 import org.gradle.api.GradleException
 
+import java.nio.file.Paths
+
 def pwd = "."
 if (binding.variables.containsKey("workingDir")) {
     pwd = workingDir.toString().replace("\\", "/")
@@ -10,22 +12,22 @@ if (binding.variables.containsKey("workingDir")) {
 
 println("Working directory: $pwd")
 
-def COMPITEST_ALFI_REPO_ROOT = "$pwd/../.."
-def COMPITEST_TESTCASE_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/artifacts/alfi-build"
-def COMPITEST_WORK_DIR = "${COMPITEST_ALFI_REPO_ROOT}/build/compitest"
-def COMPITEST_TEST_PLAN_FILE = "${COMPITEST_ALFI_REPO_ROOT}/scripts/alfCompareTest/compitest_testplan.json"
+def ALFI_REPO_ROOT = Paths.get("$pwd/../..").toAbsolutePath().normalize().toString().replace("\\", "/")
+def ARTIFACTS_ALFI_DIR = "${ALFI_REPO_ROOT}/build/artifacts/alfi-build"
+def COMPITEST_WORK_DIR = "${ALFI_REPO_ROOT}/build/compitest"
+def COMPITEST_TEST_PLAN_FILE = "${ALFI_REPO_ROOT}/scripts/alfCompareTest/compitest_testplan.json"
 
-def repoRootAbsolute = new File(COMPITEST_ALFI_REPO_ROOT).canonicalPath
+def repoRootAbsolute = new File(ALFI_REPO_ROOT).canonicalPath
 println("Running Compare Tests in repo root: ${repoRootAbsolute}")
 
-def standardModelLibrary = "${COMPITEST_TESTCASE_DIR}/alfi/lib/StandardModelLibraryStubs.jar"
-def testSuiteJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest.jar"
-def testSuiteSrcJar = "${COMPITEST_TESTCASE_DIR}/tests/alfi.compitest-src.jar"
+def standardModelLibrary = "${ARTIFACTS_ALFI_DIR}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar"
+def testSuiteJar = "${ARTIFACTS_ALFI_DIR}/tests/alfi.compitest.jar"
+def testSuiteSrcJar = "${ARTIFACTS_ALFI_DIR}/tests/alfi.compitest-src.jar"
 
 def executorToCmd = [
         "AlfiJava": ["java", "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
-        "AlfiAlf": ["bash", "${COMPITEST_ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" "),
-        "AlfiCpp": ["${COMPITEST_TESTCASE_DIR}/tests/compitest-cpp-binaries/alfi.compitest.Activity%TESTCASE%"].join(" ")
+        "AlfiAlf": ["bash", "${ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" "),
+        "AlfiCpp": ["${ARTIFACTS_ALFI_DIR}/tests/compitest-cpp-binaries/alfi.compitest.Activity%TESTCASE%"].join(" ")
 ]
 
 AlfSourceFileUnzipper.unzipAlfFiles(testSuiteSrcJar, "$COMPITEST_WORK_DIR/src")

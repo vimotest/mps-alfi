@@ -68,7 +68,6 @@
         <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
         <module reference="1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)" version="0" />
         <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
-        <module reference="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" version="0" />
         <module reference="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" version="0" />
         <module reference="9a40c2be-1bc9-4644-a51b-6e7037b4c888(alfi.toCppBaseLanguage.generator)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />

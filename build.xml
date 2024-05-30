@@ -42,12 +42,6 @@
   <generator-settings id="m2m-defaults" strictMode="true" parallelThreads="8" inplaceTransform="false" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}/dependencies" />
-    <mkdir dir="${build.layout}/dependencies/alfi" />
-    <mkdir dir="${build.layout}/dependencies/alfi/lib" />
-    <copy todir="${build.layout}/dependencies/alfi/lib">
-      <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
-    </copy>
     <mkdir dir="${build.layout}/alfi" />
     <mkdir dir="${build.layout}/alfi/META-INF" />
     <echoxml file="${build.layout}/alfi/META-INF/plugin.xml">
@@ -902,15 +896,18 @@
     <echoxml file="${build.tmp}/default/alfi.StandardModelLibrary.jar/META-INF/module.xml">
       <module namespace="alfi.StandardModelLibrary" type="solution" uuid="e9b40a72-6930-481d-bdce-a0a866bf715e">
         <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
-          <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
         </uses>
         <library jar="../../../tests/idea_rt.jar" />
         <classpath>
@@ -937,30 +934,6 @@
       <zipfileset file="${basedir}/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.StandardModelLibrary-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar" />
-    <mkdir dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar/META-INF/module.xml">
-      <module namespace="alfi.StandardModelLibraryStubs" type="solution" uuid="f13dd4ca-a567-47d7-98bc-31b72d168722">
-        <dependencies />
-        <uses />
-        <library jar="../../../dependencies/alfi/lib/StandardModelLibraryStubs.jar" />
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="alfi.StandardModelLibraryStubs-src.jar" descriptor="alfi.StandardModelLibraryStubs.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.StandardModelLibraryStubs.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-      <fileset dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar" />
-    </jar>
-    <jar destfile="${build.layout}/alfi/languages/alfi-modules/alfi.StandardModelLibraryStubs-src.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/alfi.StandardModelLibraryStubs.msd" prefix="module" />
-    </jar>
-    <mkdir dir="${build.layout}/alfi/lib" />
-    <copy todir="${build.layout}/alfi/lib">
-      <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
-    </copy>
     <mkdir dir="${build.tmp}/default/alfi.zip" />
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi" />
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi/META-INF" />
@@ -1816,15 +1789,18 @@
     <echoxml file="${build.tmp}/default/alfi.StandardModelLibrary.jar1/META-INF/module.xml">
       <module namespace="alfi.StandardModelLibrary" type="solution" uuid="e9b40a72-6930-481d-bdce-a0a866bf715e">
         <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)" kind="cl" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
-          <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
           <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
         </uses>
         <library jar="../../../../tests/idea_rt.jar" />
         <classpath>
@@ -1851,28 +1827,7 @@
       <zipfileset file="${basedir}/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.StandardModelLibrary-models1" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar1" />
-    <mkdir dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar1/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar1/META-INF/module.xml">
-      <module namespace="alfi.StandardModelLibraryStubs" type="solution" uuid="f13dd4ca-a567-47d7-98bc-31b72d168722">
-        <dependencies />
-        <uses />
-        <library jar="../../../../dependencies/alfi/lib/StandardModelLibraryStubs.jar" />
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="alfi.StandardModelLibraryStubs-src.jar" descriptor="alfi.StandardModelLibraryStubs.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.StandardModelLibraryStubs.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-      <fileset dir="${build.tmp}/default/alfi.StandardModelLibraryStubs.jar1" />
-    </jar>
-    <jar destfile="${build.tmp}/default/alfi.zip/alfi/languages/alfi-modules/alfi.StandardModelLibraryStubs-src.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/alfi.StandardModelLibraryStubs.msd" prefix="module" />
-    </jar>
     <zip destfile="${build.layout}/alfi.zip">
-      <zipfileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" prefix="alfi/lib" />
       <fileset dir="${build.tmp}/default/alfi.zip" />
     </zip>
     <mkdir dir="${build.layout}/tests" />
@@ -1981,7 +1936,6 @@
           <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)" kind="cl" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
-          <module ref="f13dd4ca-a567-47d7-98bc-31b72d168722(alfi.StandardModelLibraryStubs)" kind="cl" />
           <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)" kind="cl" />
         </dependencies>
         <uses>
@@ -2032,7 +1986,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.toJavaBaseLanguage, java.compile.alfi.toJavaBaseLanguage.generator, java.compile.alfi.toCppBaseLanguage, java.compile.alfi.toCppBaseLanguage.generator, java.compile.alfi.simplifyAlfiLanguage, java.compile.alfi.simplifyAlfiLanguage.generator, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.sandbox, java.compile.alfi.compitest, java.compile.alfi.test, java.compile.alfi.build, java.compile.GenPlan" />
+  <target name="compileJava" depends="java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.toJavaBaseLanguage, java.compile.alfi.toJavaBaseLanguage.generator, java.compile.alfi.toCppBaseLanguage, java.compile.alfi.toCppBaseLanguage.generator, java.compile.alfi.simplifyAlfiLanguage, java.compile.alfi.simplifyAlfiLanguage.generator, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.PrimitiveMapping.generator, java.compile.alfi.StandardModelLibrary, java.compile.alfi.sandbox, java.compile.alfi.compitest, java.compile.alfi.test, java.compile.alfi.build, java.compile.GenPlan" />
   
   <target name="processResources" />
   
@@ -2184,7 +2138,6 @@
         <module file="${basedir}/solutions/GenPlan/GenPlan.msd" />
         <module file="${basedir}/languages/alfi/alfi.mpl" />
         <module file="${basedir}/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" />
-        <module file="${basedir}/solutions/alfi.StandardModelLibraryStubs/alfi.StandardModelLibraryStubs.msd" />
         <module file="${basedir}/solutions/alfi.build/alfi.build.msd" />
         <module file="${basedir}/solutions/alfi.test/alfi.test.msd" />
       </chunk>
@@ -2349,7 +2302,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toJavaBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+  <target name="java.compile.alfi.toJavaBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toJavaBaseLanguage/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
     <javac destdir="${build.tmp}/java/out/alfi.toJavaBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2388,9 +2341,7 @@
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -2436,7 +2387,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toJavaBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
+  <target name="java.compile.alfi.toJavaBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toJavaBaseLanguage/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" />
     <javac destdir="${build.tmp}/java/out/alfi.toJavaBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2475,10 +2426,8 @@
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -2521,7 +2470,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toCppBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+  <target name="java.compile.alfi.toCppBaseLanguage" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
     <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2559,9 +2508,7 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -2590,7 +2537,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.toCppBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toCppBaseLanguage, fetchDependencies">
+  <target name="java.compile.alfi.toCppBaseLanguage.generator" depends="java.compile.alfi, java.compile.alfi.GeneratorUtils, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toCppBaseLanguage, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi.toCppBaseLanguage/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" />
     <javac destdir="${build.tmp}/java/out/alfi.toCppBaseLanguage.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2628,10 +2575,8 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.GeneratorUtils" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toCppBaseLanguage" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -2785,7 +2730,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.GeneratorUtils" depends="java.compile.alfi, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+  <target name="java.compile.alfi.GeneratorUtils" depends="java.compile.alfi, java.compile.alfi.PrimitiveMapping, java.compile.alfi.StandardModelLibrary, fetchDependencies">
     <mkdir dir="${basedir}/solutions/alfi.GeneratorUtils/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.GeneratorUtils" />
     <javac destdir="${build.tmp}/java/out/alfi.GeneratorUtils" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2823,9 +2768,7 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.PrimitiveMapping" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -2977,7 +2920,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.StandardModelLibrary" depends="java.compile.alfi.StandardModelLibraryStubs">
+  <target name="java.compile.alfi.StandardModelLibrary" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/alfi.StandardModelLibrary/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.StandardModelLibrary" />
     <javac destdir="${build.tmp}/java/out/alfi.StandardModelLibrary" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2986,9 +2929,8 @@
         <path location="${basedir}/solutions/alfi.StandardModelLibrary/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppStdLib.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-testing/languages/junit5/lib" includes="opentest4j-1.2.0.jar" />
@@ -3008,11 +2950,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.StandardModelLibraryStubs">
-    <mkdir dir="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
-  </target>
-  
-  <target name="java.compile.alfi.sandbox" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, fetchDependencies">
+  <target name="java.compile.alfi.sandbox" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, fetchDependencies">
     <mkdir dir="${basedir}/languages/alfi/sandbox/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.sandbox" />
     <javac destdir="${build.tmp}/java/out/alfi.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -3049,9 +2987,7 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -3088,7 +3024,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.alfi.compitest" depends="java.compile.GenPlan, java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.StandardModelLibraryStubs, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
+  <target name="java.compile.alfi.compitest" depends="java.compile.GenPlan, java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toJavaBaseLanguage, fetchDependencies">
     <mkdir dir="${basedir}/solutions/alfi.compitest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.compitest" />
     <javac destdir="${build.tmp}/java/out/alfi.compitest" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -3126,10 +3062,8 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibraryStubs" />
         <pathelement path="${build.tmp}/java/out/alfi.toJavaBaseLanguage" />
         <fileset file="${platform_lib}/idea_rt.jar" />
-        <fileset file="${basedir}/solutions/alfi.StandardModelLibraryStubs/libs/StandardModelLibraryStubs.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />

@@ -10,12 +10,11 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hsxa" ref="r:4c138178-7acc-4278-9b8a-f54e3af48fe0(testing)" />
     <import index="yqm7" ref="63b449db-0918-4a4a-a891-2c430ab133e4/java:org.junit.jupiter.api(org.junit.junit5/)" />
-    <import index="lodc" ref="f13dd4ca-a567-47d7-98bc-31b72d168722/java:alf.library.primitivebehaviors(alfi.StandardModelLibraryStubs/)" />
-    <import index="zrzc" ref="f13dd4ca-a567-47d7-98bc-31b72d168722/java:alf.library(alfi.StandardModelLibraryStubs/)" />
     <import index="fmya" ref="r:27a31951-2d45-4457-8073-f28d9c4b2a79(wrappers.cppWrappers)" />
     <import index="w5zs" ref="r:436249a2-b063-430c-bb49-4e00ce88eef6(CppStdLib.functions)" />
     <import index="sta3" ref="r:0f7d3034-07e3-4074-946c-3d35273fd44e(CppStdLib.containers)" />
     <import index="eipx" ref="r:1deed0c1-6cfe-409d-ab5c-6ed9f22e37c0(CppStdLib.testing)" />
+    <import index="erwg" ref="r:2d4627cd-619d-43a9-8ed3-4b164bbd09b2(wrappers.javaWrappers)" />
   </imports>
   <registry>
     <language id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping">
@@ -84,31 +83,31 @@
       <property role="TrG5h" value="Behaviors" />
       <node concept="3HHQsX" id="2X39vz2Xgl7" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:1KdBIfXrfYm" resolve="ReadLine" />
-        <ref role="3HHQyS" to="zrzc:~BasicInputOutput.ReadLine()" resolve="ReadLine" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFJ6J" resolve="ReadLine" />
       </node>
       <node concept="3HHQsX" id="2X39vz36fVA" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
-        <ref role="3HHQyS" to="zrzc:~BasicInputOutput.WriteLine(java.lang.String)" resolve="WriteLine" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFJ6P" resolve="WriteLine" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2f" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
-        <ref role="3HHQyS" to="lodc:~BooleanFunctions.ToString(java.lang.Boolean)" resolve="ToString" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFMiJ" resolve="ToString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2_" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
-        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2L" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
-        <ref role="3HHQyS" to="lodc:~RealFunctions.ToString(java.lang.Double)" resolve="ToString" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFMuj" resolve="ToString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2Y" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
-        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_3c" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
-        <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
       </node>
     </node>
     <node concept="3HHQsS" id="6sZBH0sfPZB" role="1V1JAH">
