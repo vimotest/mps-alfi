@@ -1,6 +1,6 @@
 # What is already implemented
 
-This document describes what parts of the alf standard are already implemented.
+This document describes what parts of the alf standard (extended conformance level) are already implemented.
 Limitations are listed as subpoints of the chapters.
 
 ## Lexical Structure (7)

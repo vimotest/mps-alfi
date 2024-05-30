@@ -15,7 +15,7 @@ This document describes all current known problems with alfi.
   - Makes division operator behave differently
   - -> Easier to solve with a working typesystem
 - ALF Multiplicities need to be considered
-  - Translate to Optional / List
+  - Translate to List
   - -> Easier to solve with a working typesystem
 - In contrast to most other languages, Alf has no support/concept for overwriting/hiding (sub-)scopes inside a Statement List
   - See also https://github.com/ModelDriven/Alf-Reference-Implementation/issues/103

@@ -73,6 +73,12 @@ ALFI decouples DSL-specific logic from target GPL-specific logic, allowing for c
 **Improved Abstraction**:
 ALFI provides a higher level of abstraction for defining transformations, which can simplify complex transformation logic and make it more understandable.
 
+**Easier Transformation into Complex GPLs**:
+Here is a refined version of the provided paragraph:
+
+**Easier Transformation into Complex GPLs**:
+ALFI is an action language that supports straightforward modeling of structures and behaviors. When transforming into complex languages like C++, DSL engineers do not need to manage the complexity of header/source file separation or handle optional chaining expressions, as `ALFI to C++` encapsulates these complexities.
+
 **Industry-Relevant Tool Support**:
 Leveraging the industry-strength capabilities of JetBrains MPS, including its projectional editor and robust language workbench features, ALFI ensures a reliable and efficient development environment. Additionally, using ALF’s StandardModelLibrary provides a rich set of primitives and behaviors that can be mapped to various target languages.
 
