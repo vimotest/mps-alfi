@@ -4,6 +4,8 @@
 
 Action Language for foundational UML (ALF) as an Intermediate Language (in JetBrains MPS).
 
+![ALFI Process](documentation/figures/mps_alf_process.png)
+
 This project is an implementation of the Action Language for foundational UML (ALF) in JetBrains MPS.
 It contains the structure, editor, and TextGen definitions for a subset of the ALF Standard.
 Additionally, it contains generators to the following programming languages:
