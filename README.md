@@ -2,6 +2,8 @@
 
 [![Integration Build](https://github.com/vimotest/mps-alfi/actions/workflows/github-actions-integration.yaml/badge.svg)](https://github.com/vimotest/mps-alfi/actions/workflows/github-actions-integration.yaml)
 
+[![DOI](https://zenodo.org/badge/778691072.svg)](https://zenodo.org/doi/10.5281/zenodo.11401858)
+
 Action Language for foundational UML (ALF) as an Intermediate Language (in JetBrains MPS).
 
 ![ALFI Process](documentation/figures/mps_alf_process.png)
