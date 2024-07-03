@@ -1997,5 +1997,40 @@
     </node>
     <node concept="3Tm1VV" id="2X39vz3eZiW" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="6dpAtW5ZRDd">
+    <property role="TrG5h" value="AlfNamespaceHelper" />
+    <node concept="2YIFZL" id="6dpAtW5ZREn" role="jymVt">
+      <property role="TrG5h" value="determineVirtualPackageForAlfElement" />
+      <node concept="3clFbS" id="6dpAtW5ZREq" role="3clF47">
+        <node concept="3clFbF" id="6dpAtW5ZRHQ" role="3cqZAp">
+          <node concept="2OqwBi" id="6dpAtW5ZSrr" role="3clFbG">
+            <node concept="2OqwBi" id="6dpAtW5ZRVM" role="2Oq$k0">
+              <node concept="37vLTw" id="6dpAtW5ZRHP" role="2Oq$k0">
+                <ref role="3cqZAo" node="6dpAtW5ZRFF" resolve="node" />
+              </node>
+              <node concept="2qgKlT" id="6dpAtW5ZS8l" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:604l4jmkpN6" resolve="getContainingNamespace" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6dpAtW601rK" role="2OqNvi">
+              <ref role="37wK5l" to="bqjt:4jcHaHwHKY0" resolve="getFqNameWithSeperator" />
+              <node concept="Xl_RD" id="6dpAtW601Jv" role="37wK5m">
+                <property role="Xl_RC" value="." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6dpAtW5ZRDP" role="1B3o_S" />
+      <node concept="17QB3L" id="6dpAtW5ZREc" role="3clF45" />
+      <node concept="37vLTG" id="6dpAtW5ZRFF" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="6dpAtW5ZRFE" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6dpAtW5ZRDe" role="1B3o_S" />
+  </node>
 </model>
 
