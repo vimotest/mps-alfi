@@ -7392,6 +7392,21 @@
         </node>
       </node>
     </node>
+    <node concept="17Uvod" id="6dpAtW5Ws6R" role="lGtFl">
+      <property role="2qtEX9" value="virtualPackage" />
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+      <node concept="3zFVjK" id="6dpAtW5Ws6U" role="3zH0cK">
+        <node concept="3clFbS" id="6dpAtW5Ws6V" role="2VODD2">
+          <node concept="3clFbF" id="6dpAtW60dR6" role="3cqZAp">
+            <node concept="2YIFZM" id="6dpAtW60dR7" role="3clFbG">
+              <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+              <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+              <node concept="30H73N" id="6dpAtW60dR8" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1pmfR0" id="1pkjUYvScE">
     <property role="3GE5qa" value="scripts" />
@@ -9224,42 +9239,66 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbF" id="3_T7UiroHlD" role="3cqZAp">
-                              <node concept="37vLTI" id="3_T7UiroHlE" role="3clFbG">
-                                <node concept="2OqwBi" id="3_T7UiroHlF" role="37vLTx">
-                                  <node concept="37vLTw" id="3_T7UiroHlG" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3_T7UiroHlS" resolve="it" />
-                                  </node>
-                                  <node concept="3TrcHB" id="3_T7UiroHlH" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                                <node concept="2OqwBi" id="3_T7UiroHlI" role="37vLTJ">
-                                  <node concept="37vLTw" id="3_T7UiroHlJ" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3_T7UiroHl8" resolve="newInclude" />
-                                  </node>
-                                  <node concept="3TrcHB" id="3_T7UiroHlK" role="2OqNvi">
-                                    <ref role="3TsBF5" to="yjel:4h_5oU2Ibvt" resolve="includeName" />
+                            <node concept="3clFbJ" id="7QS9AamGR0R" role="3cqZAp">
+                              <node concept="3clFbS" id="7QS9AamGR0T" role="3clFbx">
+                                <node concept="3clFbF" id="3_T7UiroHlD" role="3cqZAp">
+                                  <node concept="37vLTI" id="3_T7UiroHlE" role="3clFbG">
+                                    <node concept="2OqwBi" id="3_T7UiroHlI" role="37vLTJ">
+                                      <node concept="37vLTw" id="3_T7UiroHlJ" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3_T7UiroHl8" resolve="newInclude" />
+                                      </node>
+                                      <node concept="3TrcHB" id="3_T7UiroHlK" role="2OqNvi">
+                                        <ref role="3TsBF5" to="yjel:4h_5oU2Ibvt" resolve="includeName" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="7QS9AamH6jC" role="37vLTx">
+                                      <node concept="37vLTw" id="7QS9AamH5aq" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3_T7UiroHlS" resolve="it" />
+                                      </node>
+                                      <node concept="3TrcHB" id="7QS9AamH8W_" role="2OqNvi">
+                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
-                            </node>
-                            <node concept="3SKdUt" id="3_T7UiroHlL" role="3cqZAp">
-                              <node concept="1PaTwC" id="3_T7UiroHlM" role="1aUNEU">
-                                <node concept="3oM_SD" id="3_T7UiroHlN" role="1PaTwD">
-                                  <property role="3oM_SC" value="TODO:" />
+                              <node concept="17R0WA" id="7QS9AamGXeL" role="3clFbw">
+                                <node concept="2YIFZM" id="7QS9AamGYrZ" role="3uHU7w">
+                                  <ref role="37wK5l" to="ow8f:7QS9AamGLdy" resolve="getDirectoryPath" />
+                                  <ref role="1Pybhc" to="ow8f:3Edw2s$JmR2" resolve="CMakeGeneratorHelper" />
+                                  <node concept="37vLTw" id="7QS9AamGZAn" role="37wK5m">
+                                    <ref role="3cqZAo" node="3_T7UiroHlS" resolve="it" />
+                                  </node>
                                 </node>
-                                <node concept="3oM_SD" id="3_T7UiroHlO" role="1PaTwD">
-                                  <property role="3oM_SC" value="add" />
+                                <node concept="2YIFZM" id="7QS9AamGRYu" role="3uHU7B">
+                                  <ref role="37wK5l" to="ow8f:7QS9AamGLdy" resolve="getDirectoryPath" />
+                                  <ref role="1Pybhc" to="ow8f:3Edw2s$JmR2" resolve="CMakeGeneratorHelper" />
+                                  <node concept="37vLTw" id="7QS9AamGSGq" role="37wK5m">
+                                    <ref role="3cqZAo" node="3_T7UiroHlV" resolve="file" />
+                                  </node>
                                 </node>
-                                <node concept="3oM_SD" id="3_T7UiroHlP" role="1PaTwD">
-                                  <property role="3oM_SC" value="missing" />
-                                </node>
-                                <node concept="3oM_SD" id="3_T7UiroHlQ" role="1PaTwD">
-                                  <property role="3oM_SC" value="parent" />
-                                </node>
-                                <node concept="3oM_SD" id="3_T7UiroHlR" role="1PaTwD">
-                                  <property role="3oM_SC" value="directories" />
+                              </node>
+                              <node concept="9aQIb" id="7QS9AamH11S" role="9aQIa">
+                                <node concept="3clFbS" id="7QS9AamH11T" role="9aQI4">
+                                  <node concept="3clFbF" id="7QS9AamH2gr" role="3cqZAp">
+                                    <node concept="37vLTI" id="7QS9AamH2gs" role="3clFbG">
+                                      <node concept="2OqwBi" id="7QS9AamH2gt" role="37vLTJ">
+                                        <node concept="37vLTw" id="7QS9AamH2gu" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3_T7UiroHl8" resolve="newInclude" />
+                                        </node>
+                                        <node concept="3TrcHB" id="7QS9AamH2gv" role="2OqNvi">
+                                          <ref role="3TsBF5" to="yjel:4h_5oU2Ibvt" resolve="includeName" />
+                                        </node>
+                                      </node>
+                                      <node concept="2YIFZM" id="7QS9AamH2gw" role="37vLTx">
+                                        <ref role="37wK5l" to="ow8f:7QS9AamEAVl" resolve="getFilePath" />
+                                        <ref role="1Pybhc" to="ow8f:3Edw2s$JmR2" resolve="CMakeGeneratorHelper" />
+                                        <node concept="37vLTw" id="7QS9AamH2gx" role="37wK5m">
+                                          <ref role="3cqZAo" node="3_T7UiroHlS" resolve="it" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -10407,6 +10446,21 @@
               </node>
             </node>
           </node>
+          <node concept="17Uvod" id="6dpAtW5Wvdo" role="lGtFl">
+            <property role="2qtEX9" value="virtualPackage" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+            <node concept="3zFVjK" id="6dpAtW5Wvdr" role="3zH0cK">
+              <node concept="3clFbS" id="6dpAtW5Wvds" role="2VODD2">
+                <node concept="3clFbF" id="6dpAtW60kYy" role="3cqZAp">
+                  <node concept="2YIFZM" id="6dpAtW60kYz" role="3clFbG">
+                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="6dpAtW60kY$" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -10658,6 +10712,21 @@
                     <ref role="37wK5l" to="ow8f:4gRCGxdCrxN" resolve="toCppSourceFileName" />
                     <ref role="1Pybhc" to="ow8f:2SeqMAbWIsl" resolve="CppNamingHelper" />
                     <node concept="30H73N" id="RZKkt6FVzA" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="6dpAtW5WvkG" role="lGtFl">
+            <property role="2qtEX9" value="virtualPackage" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+            <node concept="3zFVjK" id="6dpAtW5WvkJ" role="3zH0cK">
+              <node concept="3clFbS" id="6dpAtW5WvkK" role="2VODD2">
+                <node concept="3clFbF" id="6dpAtW60kEO" role="3cqZAp">
+                  <node concept="2YIFZM" id="6dpAtW60kEP" role="3clFbG">
+                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="6dpAtW60kEQ" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -11145,6 +11214,21 @@
           </node>
         </node>
       </node>
+      <node concept="17Uvod" id="6dpAtW5WkGS" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6dpAtW5WkGT" role="3zH0cK">
+          <node concept="3clFbS" id="6dpAtW5WkGU" role="2VODD2">
+            <node concept="3clFbF" id="6dpAtW602Is" role="3cqZAp">
+              <node concept="2YIFZM" id="6dpAtW602Jl" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6dpAtW602Le" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="1CWniaWjaOv">
@@ -11472,6 +11556,21 @@
             </node>
             <node concept="3clFbF" id="38oQBiSyT0b" role="3cqZAp">
               <node concept="30H73N" id="38oQBiSyT0c" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17Uvod" id="6dpAtW5Wq69" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6dpAtW5Wq6a" role="3zH0cK">
+          <node concept="3clFbS" id="6dpAtW5Wq6b" role="2VODD2">
+            <node concept="3clFbF" id="6dpAtW60d4Z" role="3cqZAp">
+              <node concept="2YIFZM" id="6dpAtW60d50" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6dpAtW60d51" role="37wK5m" />
+              </node>
             </node>
           </node>
         </node>
@@ -11871,6 +11970,21 @@
         </node>
       </node>
       <node concept="raruj" id="1CWniaWjyrL" role="lGtFl" />
+      <node concept="17Uvod" id="6dpAtW5Wi9Z" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6dpAtW5Wia2" role="3zH0cK">
+          <node concept="3clFbS" id="6dpAtW5Wia3" role="2VODD2">
+            <node concept="3clFbF" id="6dpAtW60fPa" role="3cqZAp">
+              <node concept="2YIFZM" id="6dpAtW60fPb" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6dpAtW60fPc" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="1CWniaWjpSf">
@@ -11992,6 +12106,21 @@
         </node>
       </node>
       <node concept="raruj" id="1CWniaWjC3p" role="lGtFl" />
+      <node concept="17Uvod" id="6dpAtW5Wjfp" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6dpAtW5Wjfs" role="3zH0cK">
+          <node concept="3clFbS" id="6dpAtW5Wjft" role="2VODD2">
+            <node concept="3clFbF" id="6dpAtW60gQf" role="3cqZAp">
+              <node concept="2YIFZM" id="6dpAtW60gQg" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6dpAtW60gQh" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="1CWniaWjDTV">
@@ -12094,6 +12223,21 @@
         </node>
       </node>
       <node concept="raruj" id="1CWniaWjGCs" role="lGtFl" />
+      <node concept="17Uvod" id="6dpAtW5WsTY" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6dpAtW5WsU1" role="3zH0cK">
+          <node concept="3clFbS" id="6dpAtW5WsU2" role="2VODD2">
+            <node concept="3clFbF" id="6dpAtW60i8M" role="3cqZAp">
+              <node concept="2YIFZM" id="6dpAtW60i8N" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6dpAtW60i8O" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
