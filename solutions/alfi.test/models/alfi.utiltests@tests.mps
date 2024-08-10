@@ -9,11 +9,6 @@
     <import index="2a3x" ref="r:ee4c6c10-19cb-4752-bb73-df21149306ce(alfi.util)" />
   </imports>
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -618,9 +613,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="5aNVTO$KcE2">
-    <property role="2XOHcw" value="${project_home}" />
   </node>
   <node concept="3s_ewN" id="2SMO68rzE9k">
     <property role="3s_ewP" value="TestAlfCommentTextValidation" />

@@ -2579,7 +2579,7 @@
                         <node concept="1Z5TYs" id="57cKp9M5N9g" role="3cqZAp">
                           <node concept="mw_s8" id="57cKp9M5N9x" role="1ZfhKB">
                             <node concept="2YIFZM" id="57cKp9M5SDH" role="mwGJk">
-                              <ref role="37wK5l" to="bqjt:57cKp9M5O3t" resolve="toOptionalMultiplicity" />
+                              <ref role="37wK5l" to="bqjt:57cKp9M5O3t" resolve="copyToOptionalMultiplicity" />
                               <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
                               <node concept="37vLTw" id="57cKp9M5TC_" role="37wK5m">
                                 <ref role="3cqZAo" node="57cKp9M5TAN" resolve="rhsType" />
@@ -3638,7 +3638,7 @@
         </node>
         <node concept="mw_s8" id="US4hClMhxd" role="1ZfhKB">
           <node concept="2YIFZM" id="US4hClMhxM" role="mwGJk">
-            <ref role="37wK5l" to="bqjt:US4hClMbyw" resolve="toTypeDefinition" />
+            <ref role="37wK5l" to="bqjt:US4hClMbyw" resolve="wrapTypeDefinition" />
             <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
             <node concept="2OqwBi" id="US4hClMhJ5" role="37wK5m">
               <node concept="1YBJjd" id="US4hClMhyf" role="2Oq$k0">
@@ -3895,7 +3895,7 @@
                           </node>
                           <node concept="mw_s8" id="3Edw2s_6MWs" role="1ZfhKB">
                             <node concept="2YIFZM" id="3Edw2s_6MWt" role="mwGJk">
-                              <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="toStandardMultiplicity" />
+                              <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="copyToStandardMultiplicity" />
                               <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
                               <node concept="37vLTw" id="3Edw2s_6MWu" role="37wK5m">
                                 <ref role="3cqZAo" node="4CF2Tg3KNw8" resolve="type" />
@@ -4011,7 +4011,7 @@
             </node>
             <node concept="mw_s8" id="2SUSvesnIQn" role="1ZfhKB">
               <node concept="2YIFZM" id="2SUSvesnZTD" role="mwGJk">
-                <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="toStandardMultiplicity" />
+                <ref role="37wK5l" to="bqjt:2SUSvesnX4m" resolve="copyToStandardMultiplicity" />
                 <ref role="1Pybhc" to="bqjt:US4hClKaXB" resolve="AlfTypeHelper" />
                 <node concept="37vLTw" id="2SUSvesnZTF" role="37wK5m">
                   <ref role="3cqZAo" node="2SUSvesnIQe" resolve="type" />
