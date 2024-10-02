@@ -18,6 +18,13 @@ Additionally, it contains generators to the following programming languages:
 The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1).
 The ALF standard reference implementation is available on GitHub: https://github.com/ModelDriven/Alf-Reference-Implementation
 
+## Version Support
+
+| ALFI Version | MPS Version |
+|--------------|-------------|
+| 1.0.3        | 2024.1      |
+| 1.0.0-1.0.2  | 2023.3      |
+
 ## State of the project
 
 This project is a research prototype and not yet ready for production use:
