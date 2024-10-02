@@ -43,23 +43,6 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}/alfi" />
-    <mkdir dir="${build.layout}/alfi/META-INF" />
-    <echoxml file="${build.layout}/alfi/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>alfi</id>
-        <name>alfi</name>
-        <version>1.0.3</version>
-        <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.testing</depends>
-        <depends>jetbrains.mps.build</depends>
-        <depends>CppBaseLanguage</depends>
-        <depends>com.intellij.modules.platform</depends>
-
-        <extensions defaultExtensionNs="com.intellij">
-          <mps.LanguageLibrary dir="/languages" />
-        </extensions>
-      </idea-plugin>
-    </echoxml>
     <mkdir dir="${build.layout}/alfi/lib" />
     <mkdir dir="${build.tmp}/default/alfi.jar" />
     <mkdir dir="${build.tmp}/default/alfi.jar/META-INF" />
@@ -932,23 +915,6 @@
     </jar>
     <mkdir dir="${build.tmp}/default/alfi.zip" />
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi" />
-    <mkdir dir="${build.tmp}/default/alfi.zip/alfi/META-INF" />
-    <echoxml file="${build.tmp}/default/alfi.zip/alfi/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>alfi</id>
-        <name>alfi</name>
-        <version>1.0.3</version>
-        <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.testing</depends>
-        <depends>jetbrains.mps.build</depends>
-        <depends>CppBaseLanguage</depends>
-        <depends>com.intellij.modules.platform</depends>
-
-        <extensions defaultExtensionNs="com.intellij">
-          <mps.LanguageLibrary dir="/languages" />
-        </extensions>
-      </idea-plugin>
-    </echoxml>
     <mkdir dir="${build.tmp}/default/alfi.zip/alfi/lib" />
     <mkdir dir="${build.tmp}/default/alfi.jar2" />
     <mkdir dir="${build.tmp}/default/alfi.jar2/META-INF" />
@@ -3113,7 +3079,7 @@
     <path location="${build.layout}/tests/alfi.test.jar" id="mps.tests.path" />
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />
@@ -3125,7 +3091,7 @@
         <arg value="-Djna.boot.library.path=${build.jna.library.path}" />
       </jvmargs>
       
-
+      
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       
