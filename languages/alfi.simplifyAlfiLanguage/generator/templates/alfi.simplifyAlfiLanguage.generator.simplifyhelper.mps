@@ -417,7 +417,7 @@
               </node>
               <node concept="1Wc70l" id="64vLWnJkowU" role="3clFbw">
                 <node concept="1rXfSq" id="64vLWnJkoD9" role="3uHU7w">
-                  <ref role="37wK5l" node="RZKkt6VttW" resolve="yieldsOptional" />
+                  <ref role="37wK5l" node="RZKkt6VttW" resolve="yieldsOptionalValue" />
                   <node concept="1PxgMI" id="64vLWnJkpDh" role="37wK5m">
                     <property role="1BlNFB" value="true" />
                     <node concept="chp4Y" id="64vLWnJkpLW" role="3oSUPX">
@@ -462,7 +462,7 @@
                 </node>
               </node>
               <node concept="1rXfSq" id="RZKkt6VFcb" role="3clFbw">
-                <ref role="37wK5l" node="RZKkt6VIEe" resolve="yieldsOptional" />
+                <ref role="37wK5l" node="RZKkt6VIEe" resolve="yieldsOptionalReturnType" />
                 <node concept="2OqwBi" id="RZKkt6VH7Q" role="37wK5m">
                   <node concept="Jnkvi" id="RZKkt6VGO8" role="2Oq$k0">
                     <ref role="1M0zk5" node="RZKkt6VFck" resolve="sequenceOperationExpression" />
@@ -599,7 +599,7 @@
                 <node concept="2OqwBi" id="RZKkt6VIEn" role="1m5AlR">
                   <node concept="3JvlWi" id="RZKkt6VIEo" role="2OqNvi" />
                   <node concept="37vLTw" id="RZKkt6VIEp" role="2Oq$k0">
-                    <ref role="3cqZAo" node="RZKkt6VIEf" resolve="expression" />
+                    <ref role="3cqZAo" node="RZKkt6VIEf" resolve="qualifiedName" />
                   </node>
                 </node>
               </node>
@@ -637,7 +637,7 @@
             </node>
             <node concept="Rm8GO" id="RZKkt7co36" role="3uHU7w">
               <ref role="Rm8GQ" to="stu:4Vswoj0Iksi" resolve="Optional" />
-              <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypeWrapper" />
+              <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
             </node>
           </node>
         </node>

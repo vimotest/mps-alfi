@@ -1113,7 +1113,7 @@
                   <ref role="3cqZAo" node="RZKkt6XOed" resolve="expression" />
                 </node>
                 <node concept="3TrEf2" id="RZKkt6XOe4" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" />
+                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" resolve="operand1" />
                 </node>
               </node>
             </node>
@@ -1123,7 +1123,7 @@
                   <ref role="3cqZAo" node="RZKkt6XOed" resolve="expression" />
                 </node>
                 <node concept="3TrEf2" id="RZKkt6XOe8" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" />
+                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" resolve="operand2" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="RZKkt6XOe9" role="2OqNvi">
@@ -1169,7 +1169,7 @@
                   <ref role="3cqZAo" node="RZKkt6XOed" resolve="expression" />
                 </node>
                 <node concept="3TrEf2" id="RZKkt6XQoK" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" />
+                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIr" resolve="operand2" />
                 </node>
               </node>
             </node>
@@ -1179,7 +1179,7 @@
                   <ref role="3cqZAo" node="RZKkt6XOed" resolve="expression" />
                 </node>
                 <node concept="3TrEf2" id="RZKkt6XQoO" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" />
+                  <ref role="3Tt5mk" to="28lk:6cBsaQylkIp" resolve="operand1" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="RZKkt6XQoP" role="2OqNvi">
@@ -1272,7 +1272,7 @@
                         </node>
                         <node concept="Rm8GO" id="RZKkt7o5DD" role="3uHU7w">
                           <ref role="Rm8GQ" to="stu:4Vswoj0IlHh" resolve="None" />
-                          <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypeWrapper" />
+                          <ref role="1Px2BO" to="stu:4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
                         </node>
                       </node>
                     </node>

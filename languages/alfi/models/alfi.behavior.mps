@@ -8070,7 +8070,7 @@
               <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
             </node>
             <node concept="1rXfSq" id="RZKkt7x96X" role="33vP2m">
-              <ref role="37wK5l" node="US4hClMbyw" resolve="toTypeDefinition" />
+              <ref role="37wK5l" node="US4hClMbyw" resolve="wrapTypeDefinition" />
               <node concept="37vLTw" id="RZKkt7x9mD" role="37wK5m">
                 <ref role="3cqZAo" node="RZKkt7x92z" resolve="typeName" />
               </node>
@@ -8083,7 +8083,7 @@
               <node concept="2pJPED" id="RZKkt7x974" role="2pJPEn">
                 <ref role="2pJxaS" to="28lk:1KdBIfXLj3I" resolve="TwosidedMultiplicityRange" />
                 <node concept="2pIpSj" id="RZKkt7x975" role="2pJxcM">
-                  <ref role="2pIpSl" to="28lk:1KdBIfXLsZQ" />
+                  <ref role="2pIpSl" to="28lk:1KdBIfXLsZQ" resolve="lowerBound" />
                   <node concept="2pJPED" id="RZKkt7x976" role="28nt2d">
                     <ref role="2pJxaS" to="28lk:6cBsaQxKOaW" resolve="DecimalLiteralExpression" />
                     <node concept="2pJxcG" id="RZKkt7x977" role="2pJxcM">
@@ -8097,7 +8097,7 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="RZKkt7x97a" role="2pJxcM">
-                  <ref role="2pIpSl" to="28lk:1KdBIfXLsZV" />
+                  <ref role="2pIpSl" to="28lk:1KdBIfXLsZV" resolve="upperBound" />
                   <node concept="2pJPED" id="RZKkt7x97b" role="28nt2d">
                     <ref role="2pJxaS" to="28lk:6cBsaQxKOaW" resolve="DecimalLiteralExpression" />
                     <node concept="2pJxcG" id="RZKkt7x97c" role="2pJxcM">
@@ -8117,7 +8117,7 @@
                 <ref role="3cqZAo" node="RZKkt7x96V" resolve="result" />
               </node>
               <node concept="3TrEf2" id="RZKkt7x97h" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:1KdBIfXMcwv" />
+                <ref role="3Tt5mk" to="28lk:1KdBIfXMcwv" resolve="_multiplicityRange" />
               </node>
             </node>
           </node>
@@ -8143,7 +8143,7 @@
               <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
             </node>
             <node concept="1rXfSq" id="RZKkt7xcA3" role="33vP2m">
-              <ref role="37wK5l" node="US4hClMbyw" resolve="toTypeDefinition" />
+              <ref role="37wK5l" node="US4hClMbyw" resolve="wrapTypeDefinition" />
               <node concept="37vLTw" id="RZKkt7xcA4" role="37wK5m">
                 <ref role="3cqZAo" node="RZKkt7xbXL" resolve="typeName" />
               </node>
@@ -8156,7 +8156,7 @@
               <node concept="2pJPED" id="6CIUUG_tjzx" role="2pJPEn">
                 <ref role="2pJxaS" to="28lk:1KdBIfXLfR5" resolve="OnesidedMultiplicityRange" />
                 <node concept="2pIpSj" id="6CIUUG_tjCp" role="2pJxcM">
-                  <ref role="2pIpSl" to="28lk:1KdBIfXLgdf" />
+                  <ref role="2pIpSl" to="28lk:1KdBIfXLgdf" resolve="upperBound" />
                   <node concept="2pJPED" id="6CIUUG_tlb4" role="28nt2d">
                     <ref role="2pJxaS" to="28lk:6cBsaQxSYjy" resolve="UnboundedValueLiteralExpression" />
                   </node>
@@ -8168,7 +8168,7 @@
                 <ref role="3cqZAo" node="RZKkt7xcA1" resolve="result" />
               </node>
               <node concept="3TrEf2" id="6CIUUG_ti1t" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:1KdBIfXMcwv" />
+                <ref role="3Tt5mk" to="28lk:1KdBIfXMcwv" resolve="_multiplicityRange" />
               </node>
             </node>
           </node>
@@ -8195,7 +8195,7 @@
       <node concept="3clFbS" id="2SUSvesnX4n" role="3clF47">
         <node concept="3cpWs6" id="2SUSvesnZsA" role="3cqZAp">
           <node concept="1rXfSq" id="2SUSvesnZzz" role="3cqZAk">
-            <ref role="37wK5l" node="US4hClMbyw" resolve="toTypeDefinition" />
+            <ref role="37wK5l" node="US4hClMbyw" resolve="wrapTypeDefinition" />
             <node concept="2OqwBi" id="2SUSvesnZAY" role="37wK5m">
               <node concept="37vLTw" id="2SUSvesnZAZ" role="2Oq$k0">
                 <ref role="3cqZAo" node="2SUSvesnX4E" resolve="type" />
@@ -8284,7 +8284,7 @@
               <ref role="ehGHo" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
             </node>
             <node concept="1rXfSq" id="3Edw2s_6Oye" role="33vP2m">
-              <ref role="37wK5l" node="US4hClMbyw" resolve="toTypeDefinition" />
+              <ref role="37wK5l" node="US4hClMbyw" resolve="wrapTypeDefinition" />
               <node concept="2OqwBi" id="3Edw2s_6Oyf" role="37wK5m">
                 <node concept="37vLTw" id="3Edw2s_6Oyg" role="2Oq$k0">
                   <ref role="3cqZAo" node="3Edw2s_7zff" resolve="replacyByType" />

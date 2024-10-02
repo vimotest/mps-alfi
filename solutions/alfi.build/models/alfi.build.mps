@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
   <imports>
@@ -196,12 +196,6 @@
     </node>
     <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
       <property role="TrG5h" value="project_home" />
-    </node>
-    <node concept="398rNT" id="5tK9548cRhd" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.project_home" />
-      <node concept="398BVA" id="5tK9548cRhe" role="398pKh">
-        <ref role="398BVh" node="5tK9548cRhc" resolve="project_home" />
-      </node>
     </node>
     <node concept="398rNT" id="5tK9548cRhf" role="1l3spd">
       <property role="TrG5h" value="platform_lib" />
