@@ -31,9 +31,6 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
-      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
-        <child id="9126048691955220762" name="path" index="28jJRO" />
-      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -137,9 +134,6 @@
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
-      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
-        <child id="4278635856200826394" name="path" index="1BurEY" />
-      </concept>
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
@@ -237,14 +231,6 @@
         </node>
         <node concept="L2wRC" id="5tK9548$ivh" role="39821P">
           <ref role="L2wRA" node="5tK9548cS4k" resolve="alfi.compitest" />
-        </node>
-        <node concept="28jJK3" id="5tK9548e4tM" role="39821P">
-          <node concept="398BVA" id="5tK9548e4u1" role="28jJRO">
-            <ref role="398BVh" node="5tK9548cRhf" resolve="platform_lib" />
-            <node concept="2Ry0Ak" id="5tK9548e4ue" role="iGT6I">
-              <property role="2Ry0Am" value="idea_rt.jar" />
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -480,16 +466,6 @@
             </node>
             <node concept="3qWCbU" id="5tK9548cRvP" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="pZehJpPKMY" role="3bR37C">
-          <node concept="1BurEX" id="pZehJpPKMZ" role="1SiIV1">
-            <node concept="398BVA" id="pZehJpPKMW" role="1BurEY">
-              <ref role="398BVh" node="5tK9548cRhf" resolve="platform_lib" />
-              <node concept="2Ry0Ak" id="pZehJpPKMX" role="iGT6I">
-                <property role="2Ry0Am" value="idea_rt.jar" />
-              </node>
             </node>
           </node>
         </node>
@@ -1051,11 +1027,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5tK9548cS6M" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cS6N" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5tK9548cS6O" role="3bR37C">
           <node concept="3bR9La" id="5tK9548cS6P" role="1SiIV1">
             <ref role="3bR37D" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
@@ -1064,21 +1035,6 @@
         <node concept="1SiIV0" id="5tK9548cS6Q" role="3bR37C">
           <node concept="3bR9La" id="5tK9548cS6R" role="1SiIV1">
             <ref role="3bR37D" node="5tK9548cRi8" resolve="alfi" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5tK9548cS6S" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cS6T" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5tK9548cS6W" role="3bR37C">
-          <node concept="1BurEX" id="5tK9548cS6X" role="1SiIV1">
-            <node concept="398BVA" id="5tK9548cS6U" role="1BurEY">
-              <ref role="398BVh" node="5tK9548cRhf" resolve="platform_lib" />
-              <node concept="2Ry0Ak" id="5tK9548cS6V" role="iGT6I">
-                <property role="2Ry0Am" value="idea_rt.jar" />
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1BupzO" id="5tK9548cS73" role="3bR31x">
