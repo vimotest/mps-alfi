@@ -100,6 +100,20 @@
       <node concept="6nSm6" id="37zNn5L1anu" role="PCHHv">
         <property role="TrG5h" value="myTest" />
         <node concept="PCHzy" id="37zNn5L1anv" role="GbAUv">
+          <node concept="_jtW9" id="7yVyfjTvwMR" role="PCHzz">
+            <node concept="_uF8j" id="7yVyfjTvwMS" role="_jtWe">
+              <node concept="_vnHb" id="7yVyfjTvwMT" role="_uF8g">
+                <node concept="2RqM1Q" id="7yVyfjTvwMU" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                </node>
+              </node>
+              <node concept="_vku0" id="7yVyfjTvwMV" role="_uFfl">
+                <node concept="_iklQ" id="7yVyfjTvwMW" role="_vku1">
+                  <property role="_iklR" value="myTest" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="_jtW9" id="37zNn5L2xlh" role="PCHzz">
             <node concept="_uF8j" id="37zNn5L2xl9" role="_jtWe">
               <node concept="_vnHb" id="37zNn5L2xlb" role="_uF8g">
@@ -206,6 +220,20 @@
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <property role="TrG5h" value="MySingleTestCase" />
       <node concept="PCHzy" id="37zNn5Lj3p_" role="PCHGa">
+        <node concept="_jtW9" id="7yVyfjTvwSe" role="PCHzz">
+          <node concept="_uF8j" id="7yVyfjTvwSf" role="_jtWe">
+            <node concept="_vnHb" id="7yVyfjTvwSg" role="_uF8g">
+              <node concept="2RqM1Q" id="7yVyfjTvwSh" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="7yVyfjTvwSi" role="_uFfl">
+              <node concept="_iklQ" id="7yVyfjTvwSj" role="_vku1">
+                <property role="_iklR" value="my single test" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="_jtW9" id="37zNn5Lj3_5" role="PCHzz">
           <node concept="_uF8j" id="37zNn5Lj3_6" role="_jtWe">
             <node concept="_vnHb" id="37zNn5Lj3_7" role="_uF8g">
