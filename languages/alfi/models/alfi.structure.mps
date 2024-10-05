@@ -1738,6 +1738,9 @@
     <node concept="PrWs8" id="2SV$eY8gJmZ" role="PzmwI">
       <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
     </node>
+    <node concept="PrWs8" id="7yVyfjSdfN8" role="PzmwI">
+      <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
     <property role="EcuMT" value="3120704408893095334" />
@@ -1766,6 +1769,9 @@
     </node>
     <node concept="PrWs8" id="3m3bKNZ_VGs" role="PzmwI">
       <ref role="PrY4T" node="3m3bKNZ_Ved" resolve="IFeature" />
+    </node>
+    <node concept="PrWs8" id="7yVyfjSdNNL" role="PzmwI">
+      <ref role="PrY4T" to="tpe3:hGBgSCX" resolve="ITestMethod" />
     </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H6tuG">
