@@ -9,7 +9,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hsxa" ref="r:4c138178-7acc-4278-9b8a-f54e3af48fe0(testing)" />
-    <import index="yqm7" ref="63b449db-0918-4a4a-a891-2c430ab133e4/java:org.junit.jupiter.api(org.junit.junit5/)" />
     <import index="fmya" ref="r:27a31951-2d45-4457-8073-f28d9c4b2a79(wrappers.cppWrappers)" />
     <import index="w5zs" ref="r:436249a2-b063-430c-bb49-4e00ce88eef6(CppStdLib.functions)" />
     <import index="sta3" ref="r:0f7d3034-07e3-4074-946c-3d35273fd44e(CppStdLib.containers)" />
@@ -237,18 +236,6 @@
     </node>
     <node concept="3HHQsS" id="37zNn5LnuFZ" role="1V1JAH">
       <property role="TrG5h" value="Testing" />
-      <node concept="3HHQsX" id="37zNn5LnuHq" role="3HHZ2s">
-        <ref role="3HHQsK" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
-        <ref role="3HHQyS" to="yqm7:~Assertions.assertEquals(java.lang.Object,java.lang.Object)" resolve="assertEquals" />
-      </node>
-      <node concept="3HHQsX" id="37zNn5Lny$7" role="3HHZ2s">
-        <ref role="3HHQsK" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
-        <ref role="3HHQyS" to="yqm7:~Assertions.assertTrue(boolean)" resolve="assertTrue" />
-      </node>
-      <node concept="3HHQsX" id="37zNn5LnAIT" role="3HHZ2s">
-        <ref role="3HHQsK" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
-        <ref role="3HHQyS" to="yqm7:~Assertions.assertFalse(boolean)" resolve="assertFalse" />
-      </node>
     </node>
   </node>
   <node concept="1V1JAE" id="72umVLUQmP2">
