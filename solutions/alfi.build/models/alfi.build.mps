@@ -448,11 +448,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5tK9548cRvH" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cRvI" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ULLXZL0gZG" resolve="org.junit.junit5" />
-          </node>
-        </node>
         <node concept="1BupzO" id="5tK9548cRvN" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -878,6 +873,11 @@
               <ref role="3bR37D" node="2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7z3b8JROJkJ" role="3bR37C">
+            <node concept="3bR9La" id="7z3b8JROJkK" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="5tK9548cR_e" role="1E1XAP">
           <ref role="1E0d5P" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
@@ -1059,11 +1059,6 @@
             <node concept="3qWCbU" id="5tK9548cS75" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1YkfrxEen7L" role="3bR37C">
-          <node concept="3bR9La" id="1YkfrxEen7M" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
       </node>
