@@ -22,7 +22,7 @@ The ALF standard reference implementation is available on GitHub: https://github
 
 | ALFI Version | MPS Version |
 |--------------|-------------|
-| 1.0.3        | 2024.1      |
+| 1.0.3-1.0.4  | 2024.1      |
 | 1.0.0-1.0.2  | 2023.3      |
 
 ## State of the project
