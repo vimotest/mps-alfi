@@ -11,7 +11,7 @@
   </languages>
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
-    <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(GenPlan.alfi.main@genplan)" />
+    <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(alfi.genplan.alfi.main@genplan)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
