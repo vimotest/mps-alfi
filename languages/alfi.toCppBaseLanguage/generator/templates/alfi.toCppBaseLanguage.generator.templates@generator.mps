@@ -10186,18 +10186,20 @@
                 <node concept="3$xsQk" id="38oQBiSpVHw" role="3$ytzL">
                   <node concept="3clFbS" id="38oQBiSpVHx" role="2VODD2">
                     <node concept="3clFbF" id="38oQBiSpWLr" role="3cqZAp">
-                      <node concept="2OqwBi" id="38oQBiSpWZj" role="3clFbG">
-                        <node concept="1iwH7S" id="38oQBiSpWLq" role="2Oq$k0" />
-                        <node concept="1iwH70" id="38oQBiSpX7B" role="2OqNvi">
-                          <ref role="1iwH77" node="4gRCGxdC5cs" resolve="classDeclaration" />
-                          <node concept="1PxgMI" id="38oQBiSpYCh" role="1iwH7V">
-                            <property role="1BlNFB" value="true" />
-                            <node concept="chp4Y" id="38oQBiSpYMP" role="3oSUPX">
-                              <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
-                            </node>
-                            <node concept="2OqwBi" id="38oQBiSpXF3" role="1m5AlR">
-                              <node concept="30H73N" id="38oQBiSpXiA" role="2Oq$k0" />
-                              <node concept="1mfA1w" id="38oQBiSpY8t" role="2OqNvi" />
+                      <node concept="1PxgMI" id="vQPOvycoz3" role="3clFbG">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="vQPOvycoC1" role="3oSUPX">
+                          <ref role="cht4Q" to="yjel:1HkqSaCLg9k" resolve="IReferencableTypeDeclaration" />
+                        </node>
+                        <node concept="2OqwBi" id="38oQBiSpWZj" role="1m5AlR">
+                          <node concept="1iwH7S" id="38oQBiSpWLq" role="2Oq$k0" />
+                          <node concept="1iwH70" id="38oQBiSpX7B" role="2OqNvi">
+                            <ref role="1iwH77" node="2X39vz3fRRw" resolve="namedNode" />
+                            <node concept="2OqwBi" id="vQPOvycpHk" role="1iwH7V">
+                              <node concept="30H73N" id="vQPOvycpHl" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="vQPOvycpHm" role="2OqNvi">
+                                <ref role="37wK5l" to="bqjt:3Edw2s$tSYU" resolve="getParentClassifier" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -10270,18 +10272,20 @@
                 <node concept="3$xsQk" id="38oQBiSqaNf" role="3$ytzL">
                   <node concept="3clFbS" id="38oQBiSqaNg" role="2VODD2">
                     <node concept="3clFbF" id="38oQBiSqaNh" role="3cqZAp">
-                      <node concept="2OqwBi" id="38oQBiSqaNi" role="3clFbG">
-                        <node concept="1iwH7S" id="38oQBiSqaNj" role="2Oq$k0" />
-                        <node concept="1iwH70" id="38oQBiSqaNk" role="2OqNvi">
-                          <ref role="1iwH77" node="4gRCGxdC5cs" resolve="classDeclaration" />
-                          <node concept="1PxgMI" id="38oQBiSqaNl" role="1iwH7V">
-                            <property role="1BlNFB" value="true" />
-                            <node concept="chp4Y" id="38oQBiSqaNm" role="3oSUPX">
-                              <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
-                            </node>
-                            <node concept="2OqwBi" id="38oQBiSqaNn" role="1m5AlR">
+                      <node concept="1PxgMI" id="vQPOvycp6G" role="3clFbG">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="vQPOvycpbE" role="3oSUPX">
+                          <ref role="cht4Q" to="yjel:1HkqSaCLg9k" resolve="IReferencableTypeDeclaration" />
+                        </node>
+                        <node concept="2OqwBi" id="38oQBiSqaNi" role="1m5AlR">
+                          <node concept="1iwH7S" id="38oQBiSqaNj" role="2Oq$k0" />
+                          <node concept="1iwH70" id="38oQBiSqaNk" role="2OqNvi">
+                            <ref role="1iwH77" node="2X39vz3fRRw" resolve="namedNode" />
+                            <node concept="2OqwBi" id="38oQBiSqaNn" role="1iwH7V">
                               <node concept="30H73N" id="38oQBiSqaNo" role="2Oq$k0" />
-                              <node concept="1mfA1w" id="38oQBiSqaNp" role="2OqNvi" />
+                              <node concept="2qgKlT" id="vQPOvycpyv" role="2OqNvi">
+                                <ref role="37wK5l" to="bqjt:3Edw2s$tSYU" resolve="getParentClassifier" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -10494,7 +10498,7 @@
             <property role="TrG5h" value="_TestSuite_ClassDefinition" />
             <node concept="2DNGrd" id="3yUKab21hrp" role="31Leeq">
               <node concept="31KRCM" id="3yUKab21hrq" role="2DNGrf">
-                <property role="TrG5h" value="_public" />
+                <property role="TrG5h" value="member" />
                 <node concept="1ux1I" id="3yUKab21hrr" role="1fIg$P" />
                 <node concept="1pH0Yj" id="3yUKab21hrs" role="3Sw9wT" />
                 <node concept="2Y_LOE" id="3yUKab21hrt" role="31KRCR" />
@@ -10812,7 +10816,7 @@
               </node>
             </node>
             <node concept="2ZBi8u" id="38oQBiSsJi1" role="lGtFl">
-              <ref role="2rW$FS" node="4gRCGxdC5cs" resolve="classDeclaration" />
+              <ref role="2rW$FS" node="2X39vz3fRRw" resolve="namedNode" />
             </node>
           </node>
           <node concept="3PEl0f" id="RZKkt6HSzQ" role="31LlDr">
