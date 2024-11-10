@@ -830,7 +830,7 @@
             </node>
             <node concept="2tJFMh" id="7yVyfjSukBK" role="3uHU7w">
               <node concept="ZC_QK" id="7yVyfjSulG8" role="2tJFKM">
-                <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" />
+                <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" resolve="Testing" />
                 <node concept="ZC_QK" id="7yVyfjSumoz" role="2aWVGa">
                   <ref role="2aWVGs" to="hsxa:37zNn5KVo9F" resolve="Testing" />
                 </node>
@@ -894,7 +894,7 @@
                 <ref role="3cqZAo" node="7yVyfjSuCgF" resolve="invocationNode" />
               </node>
               <node concept="3TrEf2" id="7yVyfjSuD0A" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:2kuSLC0p54a" />
+                <ref role="3Tt5mk" to="28lk:2kuSLC0p54a" resolve="target" />
               </node>
             </node>
             <node concept="2qgKlT" id="7yVyfjSuD0B" role="2OqNvi">

@@ -361,7 +361,7 @@
               <node concept="_uYbk" id="7z3b8JROzT4" role="_vku1">
                 <node concept="_vnHb" id="7z3b8JROzT5" role="_uYbl">
                   <node concept="2RqM1Q" id="7z3b8JROzT6" role="_vnH8">
-                    <ref role="2RqM1R" node="7z3b8JROzSV" resolve="x" />
+                    <ref role="2RqM1R" node="7z3b8JROzSV" resolve="valueInt" />
                   </node>
                 </node>
               </node>
@@ -526,7 +526,7 @@
               <node concept="_uYbk" id="7z3b8JRO_lQ" role="_vku1">
                 <node concept="_vnHb" id="7z3b8JRO_lR" role="_uYbl">
                   <node concept="2RqM1Q" id="7z3b8JRO_lS" role="_vnH8">
-                    <ref role="2RqM1R" node="7z3b8JRO_lU" resolve="valueNatural" />
+                    <ref role="2RqM1R" node="7z3b8JRO_lU" resolve="valueUnlimitedNatural" />
                   </node>
                 </node>
               </node>

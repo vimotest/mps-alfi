@@ -702,7 +702,7 @@
         </node>
         <node concept="1SiIV0" id="2SeqMAc5VXK" role="3bR37C">
           <node concept="3bR9La" id="2SeqMAc5VXL" role="1SiIV1">
-            <ref role="3bR37D" node="5tK9548cRmP" />
+            <ref role="3bR37D" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
           </node>
         </node>
         <node concept="1SiIV0" id="2SeqMAc5VXM" role="3bR37C">
@@ -1084,7 +1084,7 @@
         </node>
         <node concept="1SiIV0" id="5tK9548cSaS" role="3bR37C">
           <node concept="3bR9La" id="5tK9548cSaT" role="1SiIV1">
-            <ref role="3bR37D" node="5tK9548cRTP" resolve="GenPlan" />
+            <ref role="3bR37D" node="5tK9548cRTP" resolve="alfi.genplan" />
           </node>
         </node>
         <node concept="1SiIV0" id="5tK9548cSaU" role="3bR37C">
