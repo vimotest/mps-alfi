@@ -36,6 +36,12 @@
     <property role="TrG5h" value="AlfiToJavaBaselanguage" />
     <node concept="2VgMA2" id="3OZQpz3aSs" role="2VgMA7">
       <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="GirOujsQ75" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="GirOujsQ77" role="2Qf6Ng">
+          <property role="2V$B1T" value="ded42a5f-0d92-4cc2-b9ff-116aae7175a9" />
+          <property role="2V$B1Q" value="alfi.simplifyAlfiLanguage" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="3OZQpz3aSv" role="2Qf7GQ">
         <node concept="2V$Bhx" id="3OZQpz3aSz" role="2Qf6Ng">
           <property role="2V$B1T" value="d0e1230a-72e3-4b6b-88f2-98d924f7de11" />
