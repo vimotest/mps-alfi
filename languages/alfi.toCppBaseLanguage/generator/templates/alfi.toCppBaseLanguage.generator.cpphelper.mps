@@ -1051,6 +1051,34 @@
       <node concept="3Tm1VV" id="57cKp9M3YCj" role="1B3o_S" />
       <node concept="10P_77" id="57cKp9M3YCk" role="3clF45" />
     </node>
+    <node concept="2YIFZL" id="4UyjSpyaxHc" role="jymVt">
+      <property role="TrG5h" value="isInFeatureInvocation" />
+      <node concept="3clFbS" id="4UyjSpyaxHf" role="3clF47">
+        <node concept="3clFbF" id="4UyjSpyay9Q" role="3cqZAp">
+          <node concept="2OqwBi" id="4UyjSpya_jV" role="3clFbG">
+            <node concept="2OqwBi" id="4UyjSpyayno" role="2Oq$k0">
+              <node concept="37vLTw" id="4UyjSpyay9P" role="2Oq$k0">
+                <ref role="3cqZAo" node="4UyjSpyaxY4" resolve="featureReference" />
+              </node>
+              <node concept="1mfA1w" id="4UyjSpya$dE" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="4UyjSpydygn" role="2OqNvi">
+              <node concept="chp4Y" id="4UyjSpydygo" role="cj9EA">
+                <ref role="cht4Q" to="28lk:6cBsaQxWHjR" resolve="FeatureInvocationExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4UyjSpyaxBL" role="1B3o_S" />
+      <node concept="10P_77" id="4UyjSpyaxFk" role="3clF45" />
+      <node concept="37vLTG" id="4UyjSpyaxY4" role="3clF46">
+        <property role="TrG5h" value="featureReference" />
+        <node concept="3Tqbb2" id="4UyjSpyaxY3" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:6cBsaQxWHjS" resolve="FeatureReference" />
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="RZKkt6XM6B" role="jymVt">
       <property role="TrG5h" value="checksOptionalForNull" />
       <node concept="3clFbS" id="RZKkt6XM6E" role="3clF47">
