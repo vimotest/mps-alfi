@@ -1489,6 +1489,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1_2cgM8_TK1" resolve="StereotypeName" />
     </node>
+    <node concept="1TJgyj" id="5jkMFwwq2lZ" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486415095167" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="taggedValues" />
+      <ref role="20lvS9" node="5jkMFwwfPkA" resolve="TaggedValueList" />
+    </node>
   </node>
   <node concept="25R3W" id="1KdBIfWTSLt">
     <property role="3F6X1D" value="2021446509797018717" />
@@ -1971,7 +1977,7 @@
       <property role="IQ2ns" value="3594942814681438582" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereotypeDefinition" />
     </node>
     <node concept="PrWs8" id="37zNn5KVxwB" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1989,7 +1995,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="definitions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+      <ref role="20lvS9" node="37zNn5KVxwQ" resolve="PredefinedStereotypeDefinition" />
     </node>
     <node concept="1irR5M" id="37zNn5KYTVh" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -2012,7 +2018,7 @@
   <node concept="1TIwiD" id="37zNn5KVxwQ">
     <property role="EcuMT" value="3594942814681438262" />
     <property role="3GE5qa" value="units.annotation.predefined" />
-    <property role="TrG5h" value="PredefinedStereoTypeDefinition" />
+    <property role="TrG5h" value="PredefinedStereotypeDefinition" />
     <property role="34LRSv" value="predefined stereotype" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="37zNn5KVxyi" role="PzmwI">
@@ -2040,6 +2046,37 @@
     <property role="EcuMT" value="6998531998894580301" />
     <property role="3GE5qa" value="expressions.primary.invocation" />
     <property role="TrG5h" value="IHasFeatureInvocationTarget" />
+  </node>
+  <node concept="1TIwiD" id="5jkMFwwfPkA">
+    <property role="EcuMT" value="6112733486412420390" />
+    <property role="3GE5qa" value="units.annotation.taggedvalues" />
+    <property role="TrG5h" value="TaggedValueList" />
+    <property role="34LRSv" value="tagged values" />
+    <ref role="1TJDcQ" node="2SMO68r_I0M" resolve="SyntaxElement" />
+    <node concept="1TJgyj" id="5jkMFwwfPkC" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486412420392" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5jkMFwwfPkB" resolve="TaggedValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jkMFwwfPkB">
+    <property role="EcuMT" value="6112733486412420391" />
+    <property role="3GE5qa" value="units.annotation.taggedvalues" />
+    <property role="TrG5h" value="TaggedValue" />
+    <property role="34LRSv" value="tagged value" />
+    <ref role="1TJDcQ" node="2SMO68r_I0M" resolve="SyntaxElement" />
+    <node concept="PrWs8" id="5jkMFwwq5bF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5jkMFwwq5bK" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486415106800" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0kNK3" resolve="LiteralExpression" />
+    </node>
   </node>
 </model>
 

@@ -1195,7 +1195,7 @@
                 </node>
                 <node concept="1j9C0f" id="37zNn5L16Ek" role="2OqNvi">
                   <node concept="chp4Y" id="37zNn5L16El" role="3MHPCF">
-                    <ref role="cht4Q" to="28lk:37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+                    <ref role="cht4Q" to="28lk:37zNn5KVxwQ" resolve="PredefinedStereotypeDefinition" />
                   </node>
                 </node>
               </node>
