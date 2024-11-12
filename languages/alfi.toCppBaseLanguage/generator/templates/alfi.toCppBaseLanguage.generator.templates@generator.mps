@@ -7399,8 +7399,8 @@
         <node concept="3clFbS" id="6dpAtW5Ws6V" role="2VODD2">
           <node concept="3clFbF" id="6dpAtW60dR6" role="3cqZAp">
             <node concept="2YIFZM" id="6dpAtW60dR7" role="3clFbG">
-              <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-              <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+              <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+              <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
               <node concept="30H73N" id="6dpAtW60dR8" role="37wK5m" />
             </node>
           </node>
@@ -10518,8 +10518,8 @@
               <node concept="3clFbS" id="6dpAtW5Wvds" role="2VODD2">
                 <node concept="3clFbF" id="6dpAtW60kYy" role="3cqZAp">
                   <node concept="2YIFZM" id="6dpAtW60kYz" role="3clFbG">
-                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                     <node concept="30H73N" id="6dpAtW60kY$" role="37wK5m" />
                   </node>
                 </node>
@@ -11162,8 +11162,8 @@
               <node concept="3clFbS" id="6dpAtW5WvkK" role="2VODD2">
                 <node concept="3clFbF" id="6dpAtW60kEO" role="3cqZAp">
                   <node concept="2YIFZM" id="6dpAtW60kEP" role="3clFbG">
-                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                     <node concept="30H73N" id="6dpAtW60kEQ" role="37wK5m" />
                   </node>
                 </node>
@@ -11658,10 +11658,10 @@
         <node concept="3zFVjK" id="6dpAtW5WkGT" role="3zH0cK">
           <node concept="3clFbS" id="6dpAtW5WkGU" role="2VODD2">
             <node concept="3clFbF" id="6dpAtW602Is" role="3cqZAp">
-              <node concept="2YIFZM" id="6dpAtW602Jl" role="3clFbG">
-                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
-                <node concept="30H73N" id="6dpAtW602Le" role="37wK5m" />
+              <node concept="2YIFZM" id="5jkMFwx9iMf" role="3clFbG">
+                <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <node concept="30H73N" id="5jkMFwx9iMg" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -12005,8 +12005,8 @@
           <node concept="3clFbS" id="6dpAtW5Wq6b" role="2VODD2">
             <node concept="3clFbF" id="6dpAtW60d4Z" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60d50" role="3clFbG">
-                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                 <node concept="30H73N" id="6dpAtW60d51" role="37wK5m" />
               </node>
             </node>
@@ -12415,8 +12415,8 @@
           <node concept="3clFbS" id="6dpAtW5Wia3" role="2VODD2">
             <node concept="3clFbF" id="6dpAtW60fPa" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60fPb" role="3clFbG">
-                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                 <node concept="30H73N" id="6dpAtW60fPc" role="37wK5m" />
               </node>
             </node>
@@ -12551,8 +12551,8 @@
           <node concept="3clFbS" id="6dpAtW5Wjft" role="2VODD2">
             <node concept="3clFbF" id="6dpAtW60gQf" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60gQg" role="3clFbG">
-                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                 <node concept="30H73N" id="6dpAtW60gQh" role="37wK5m" />
               </node>
             </node>
@@ -12668,8 +12668,8 @@
           <node concept="3clFbS" id="6dpAtW5WsU2" role="2VODD2">
             <node concept="3clFbF" id="6dpAtW60i8M" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60i8N" role="3clFbG">
-                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
                 <node concept="30H73N" id="6dpAtW60i8O" role="37wK5m" />
               </node>
             </node>
