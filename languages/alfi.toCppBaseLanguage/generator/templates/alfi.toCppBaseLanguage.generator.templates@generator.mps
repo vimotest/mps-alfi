@@ -30,7 +30,6 @@
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="puek" ref="r:03a797f3-b1c3-43e1-9876-f0bc46d94082(CppBaseLanguage.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -7246,6 +7245,28 @@
     <property role="3GE5qa" value="scripts" />
     <node concept="1pplIY" id="1pkjUYlt4k" role="1pqMTA">
       <node concept="3clFbS" id="1pkjUYlt4l" role="2VODD2">
+        <node concept="3SKdUt" id="5jkMFw$MiUX" role="3cqZAp">
+          <node concept="1PaTwC" id="5jkMFw$MiUY" role="1aUNEU">
+            <node concept="3oM_SD" id="5jkMFw$Mj4I" role="1PaTwD">
+              <property role="3oM_SC" value="patch" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFw$Mj4Z" role="1PaTwD">
+              <property role="3oM_SC" value="CppBaseLanguage" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFw$Mj5L" role="1PaTwD">
+              <property role="3oM_SC" value="autocompleteParent()" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFw$Mj62" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFw$Mj63" role="1PaTwD">
+              <property role="3oM_SC" value="avoid" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFw$Mj6l" role="1PaTwD">
+              <property role="3oM_SC" value="TemporaryCppCompleteParentTypesHelper" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1pkjUYlzV6" role="3cqZAp">
           <node concept="2OqwBi" id="1pkjUYlBMj" role="3clFbG">
             <node concept="2OqwBi" id="1pkjUYlt4r" role="2Oq$k0">
@@ -7259,14 +7280,25 @@
             <node concept="2es0OD" id="1pkjUYlEk0" role="2OqNvi">
               <node concept="1bVj0M" id="1pkjUYlEk2" role="23t8la">
                 <node concept="3clFbS" id="1pkjUYlEk3" role="1bW5cS">
-                  <node concept="3clFbF" id="1pkjUYlEnM" role="3cqZAp">
-                    <node concept="2OqwBi" id="1pkjUYlEAh" role="3clFbG">
-                      <node concept="37vLTw" id="1pkjUYlEnL" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1pkjUYlEk4" resolve="it" />
+                  <node concept="Jncv_" id="5jkMFw$Me_Y" role="3cqZAp">
+                    <ref role="JncvD" to="yjel:27q4jmdWW$T" resolve="NotGenericParameterTypeReference" />
+                    <node concept="37vLTw" id="5jkMFw$MeCQ" role="JncvB">
+                      <ref role="3cqZAo" node="1pkjUYlEk4" resolve="it" />
+                    </node>
+                    <node concept="3clFbS" id="5jkMFw$MeA2" role="Jncv$">
+                      <node concept="3clFbF" id="1pkjUYlEnM" role="3cqZAp">
+                        <node concept="2YIFZM" id="5jkMFw$Me5A" role="3clFbG">
+                          <ref role="37wK5l" to="ow8f:5jkMFw$M6NN" resolve="autocompleteParentForNotGenericTypeReference" />
+                          <ref role="1Pybhc" to="ow8f:5jkMFw$M6Mi" resolve="TemporaryCppCompleteParentTypesHelper" />
+                          <node concept="Jnkvi" id="5jkMFw$Mf00" role="37wK5m">
+                            <ref role="1M0zk5" node="5jkMFw$MeA4" resolve="notGeneric" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="2qgKlT" id="1pkjUYlF1a" role="2OqNvi">
-                        <ref role="37wK5l" to="puek:27q4jmdX9uD" resolve="autoCompleteParentTypes" />
-                      </node>
+                    </node>
+                    <node concept="JncvC" id="5jkMFw$MeA4" role="JncvA">
+                      <property role="TrG5h" value="notGeneric" />
+                      <node concept="2jxLKc" id="5jkMFw$MeA5" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -7376,12 +7408,11 @@
               <node concept="1bVj0M" id="1pkjUYlWNR" role="23t8la">
                 <node concept="3clFbS" id="1pkjUYlWNS" role="1bW5cS">
                   <node concept="3clFbF" id="1pkjUYlWNT" role="3cqZAp">
-                    <node concept="2OqwBi" id="1pkjUYlWNU" role="3clFbG">
-                      <node concept="37vLTw" id="1pkjUYlWNV" role="2Oq$k0">
+                    <node concept="2YIFZM" id="5jkMFw$MdGT" role="3clFbG">
+                      <ref role="37wK5l" to="ow8f:5jkMFw$M8jO" resolve="autocompleteParentForMemberReference" />
+                      <ref role="1Pybhc" to="ow8f:5jkMFw$M6Mi" resolve="TemporaryCppCompleteParentTypesHelper" />
+                      <node concept="37vLTw" id="5jkMFw$MdO6" role="37wK5m">
                         <ref role="3cqZAo" node="1pkjUYlWNX" resolve="it" />
-                      </node>
-                      <node concept="2qgKlT" id="1pkjUYlWNW" role="2OqNvi">
-                        <ref role="37wK5l" to="puek:42EL3I6oFRa" resolve="autoCompleteParent" />
                       </node>
                     </node>
                   </node>
