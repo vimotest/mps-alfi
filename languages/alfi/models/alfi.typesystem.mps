@@ -4732,5 +4732,58 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="5jkMFw$VHxU">
+    <property role="TrG5h" value="check_AttributeDefinition" />
+    <property role="3GE5qa" value="units.features.attributes" />
+    <node concept="3clFbS" id="5jkMFw$VHxV" role="18ibNy">
+      <node concept="3clFbJ" id="5jkMFw$VH$A" role="3cqZAp">
+        <node concept="1Wc70l" id="5jkMFw$VJvu" role="3clFbw">
+          <node concept="2OqwBi" id="5jkMFw$VQDf" role="3uHU7w">
+            <node concept="2OqwBi" id="5jkMFw$VQ4a" role="2Oq$k0">
+              <node concept="1YBJjd" id="5jkMFw$VPM5" role="2Oq$k0">
+                <ref role="1YBMHb" node="5jkMFw$VHxX" resolve="attributeDefinition" />
+              </node>
+              <node concept="3TrEf2" id="5jkMFw$VQtS" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:2HeY20H7EMD" resolve="initializerExpression" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5jkMFw$W$Of" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="5jkMFw$VIgZ" role="3uHU7B">
+            <node concept="2OqwBi" id="5jkMFw$VHNz" role="2Oq$k0">
+              <node concept="1YBJjd" id="5jkMFw$VH$J" role="2Oq$k0">
+                <ref role="1YBMHb" node="5jkMFw$VHxX" resolve="attributeDefinition" />
+              </node>
+              <node concept="1mfA1w" id="5jkMFw$VI8i" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="5jkMFw$VIp0" role="2OqNvi">
+              <node concept="chp4Y" id="5jkMFw$VIr5" role="cj9EA">
+                <ref role="cht4Q" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5jkMFw$VH$C" role="3clFbx">
+          <node concept="a7r0C" id="5jkMFw$VQY$" role="3cqZAp">
+            <node concept="Xl_RD" id="5jkMFw$VQYH" role="a7wSD">
+              <property role="Xl_RC" value="AttributeDefinition initialization expression is not supported in ALF" />
+            </node>
+            <node concept="2OqwBi" id="5jkMFw$VRbQ" role="1urrMF">
+              <node concept="1YBJjd" id="5jkMFw$VQZr" role="2Oq$k0">
+                <ref role="1YBMHb" node="5jkMFw$VHxX" resolve="attributeDefinition" />
+              </node>
+              <node concept="3TrEf2" id="5jkMFw$VSm7" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:2HeY20H7EMD" resolve="initializerExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5jkMFw$VHxX" role="1YuTPh">
+      <property role="TrG5h" value="attributeDefinition" />
+      <ref role="1YaFvo" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+    </node>
+  </node>
 </model>
 
