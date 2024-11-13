@@ -236,6 +236,7 @@
       <concept id="2021446509797018714" name="alfi.structure.StereotypeAnnotation" flags="ng" index="3wUxaT">
         <child id="1820071129312107538" name="stereotypeName" index="2hPqOu" />
       </concept>
+      <concept id="2021446509800146203" name="alfi.structure.DataTypeDefinition" flags="ng" index="3x6HJS" />
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811544302" name="alfi.structure.TwosidedMultiplicityRange" flags="ng" index="3xMaSd">
         <child id="2021446509811585014" name="lowerBound" index="3xM54l" />
@@ -3724,6 +3725,152 @@
             <property role="_iklR" value="Black" />
           </node>
         </node>
+        <node concept="8qQDt" id="5jkMFwxG85J" role="PCHHv" />
+        <node concept="6nSm2" id="5jkMFwxG8aU" role="PCHHv">
+          <property role="TrG5h" value="Wheel" />
+          <node concept="6lMYc" id="5jkMFwxG8gv" role="PCHHv">
+            <property role="TrG5h" value="size" />
+            <node concept="3xHE8C" id="5jkMFwxG8h9" role="3xMlr6">
+              <node concept="2RqM1Q" id="5jkMFwxG8h7" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              </node>
+            </node>
+            <node concept="32T38h" id="5jkMFwzumzq" role="6k5i9">
+              <property role="32T38g" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="6lMYc" id="5jkMFwxG8J9" role="PCHHv">
+          <property role="TrG5h" value="wheels" />
+          <node concept="3xHE8C" id="5jkMFwxG8Pe" role="3xMlr6">
+            <node concept="2RqM1Q" id="5jkMFwxG8Pc" role="_vnH8">
+              <ref role="2RqM1R" node="5jkMFwxG8aU" resolve="Wheel" />
+            </node>
+          </node>
+          <node concept="3xMmcA" id="5jkMFwxG8PW" role="3xLlrW">
+            <node concept="32L9hf" id="5jkMFwxG8Qv" role="3xM9QG" />
+          </node>
+        </node>
+        <node concept="6nSm6" id="5jkMFwxG8y1" role="PCHHv">
+          <property role="TrG5h" value="addWheel" />
+          <node concept="3xR696" id="5jkMFwxG8Bu" role="PCHHv">
+            <property role="3xR695" value="1KdBIfXPktw/in" />
+            <property role="TrG5h" value="wheel" />
+            <node concept="3xHE8C" id="5jkMFwxG8CM" role="3xMlr6">
+              <node concept="2RqM1Q" id="5jkMFwxG8CL" role="_vnH8">
+                <ref role="2RqM1R" node="5jkMFwxG8aU" resolve="Wheel" />
+              </node>
+            </node>
+          </node>
+          <node concept="PCHzy" id="5jkMFwxG8y2" role="GbAUv">
+            <node concept="_jtW9" id="5jkMFwzulU0" role="PCHzz">
+              <node concept="_uF8j" id="5jkMFwzulU1" role="_jtWe">
+                <node concept="_vnHb" id="5jkMFwzulU2" role="_uF8g">
+                  <node concept="2RqM1Q" id="5jkMFwzulU3" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5jkMFwzulU4" role="_uFfl">
+                  <node concept="31szHT" id="5jkMFwzumrS" role="_vku1">
+                    <property role="31szH2" value="6cBsaQylkJ$/PlusOperator" />
+                    <node concept="_uF8j" id="5jkMFw$lO5Z" role="31szGQ">
+                      <node concept="_vnHb" id="5jkMFw$lO5T" role="_uF8g">
+                        <node concept="2RqM1Q" id="5jkMFw$lO5X" role="_vnH8">
+                          <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                        </node>
+                        <node concept="2RqM1Q" id="5jkMFw$lO5Y" role="_vnH8">
+                          <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                        </node>
+                      </node>
+                      <node concept="_vku0" id="5jkMFw$lO60" role="_uFfl">
+                        <node concept="32M0$0" id="5jkMFw$lO61" role="_vku1">
+                          <node concept="32Pqhl" id="5jkMFw$lO62" role="32PqmZ">
+                            <node concept="_uYbk" id="5jkMFw$lO63" role="32Men7">
+                              <node concept="_vnHb" id="5jkMFw$lO64" role="_uYbl">
+                                <node concept="2RqM1Q" id="5jkMFw$lO65" role="_vnH8">
+                                  <ref role="2RqM1R" node="5jkMFwxG8Bu" resolve="wheel" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="_vnHe" id="5jkMFw$lO66" role="32Men1">
+                              <ref role="3acloq" node="5jkMFwxG8gv" resolve="size" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="_iklQ" id="5jkMFwzumr4" role="31szGO">
+                      <property role="_iklR" value="Adding wheel: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_jtW9" id="5jkMFwxG8QP" role="PCHzz">
+              <node concept="1WUwfO" id="5jkMFwxG8XR" role="_jtWe">
+                <node concept="_vnHb" id="5jkMFwxG8XX" role="1WUwfQ">
+                  <node concept="2RqM1Q" id="5jkMFwxG8Y2" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:2SV$eY8$yfx" resolve="add" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="5jkMFwxG8Y7" role="_uFfl">
+                  <node concept="_uYbk" id="5jkMFwxG99l" role="_vku1">
+                    <node concept="_vnHb" id="5jkMFwxG99m" role="_uYbl">
+                      <node concept="2RqM1Q" id="5jkMFwxG99n" role="_vnH8">
+                        <ref role="2RqM1R" node="5jkMFwxG8Bu" resolve="wheel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="32M0$0" id="5jkMFwxG8R1" role="1WUwdW">
+                  <node concept="32Pqhl" id="5jkMFwxG8R2" role="32PqmZ">
+                    <node concept="_iR_j" id="5jkMFwxG8QN" role="32Men7" />
+                    <node concept="_vnHe" id="5jkMFwxG8Ub" role="32Men1">
+                      <ref role="3acloq" node="5jkMFwxG8J9" resolve="wheels" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8qQDt" id="5jkMFwxGbFT" role="PCHHv" />
+        <node concept="b5vR$" id="5jkMFwyygyB" role="PCHHv">
+          <property role="TrG5h" value="ModelKind" />
+          <node concept="b5qeC" id="5jkMFwyygF1" role="PCHHv">
+            <property role="TrG5h" value="PKW" />
+          </node>
+          <node concept="b5qeC" id="5jkMFwyyhZt" role="PCHHv">
+            <property role="TrG5h" value="Limousine" />
+          </node>
+        </node>
+        <node concept="3x6HJS" id="5jkMFwxGbNe" role="PCHHv">
+          <property role="TrG5h" value="Model" />
+          <node concept="6lMYc" id="5jkMFwxPm4z" role="PCHHv">
+            <property role="TrG5h" value="Name" />
+            <node concept="3xHE8C" id="5jkMFwxPm7h" role="3xMlr6">
+              <node concept="2RqM1Q" id="5jkMFwxPm7f" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+            </node>
+          </node>
+          <node concept="6lMYc" id="5jkMFwyyi1E" role="PCHHv">
+            <property role="TrG5h" value="Kind" />
+            <node concept="3xHE8C" id="5jkMFwyyi3h" role="3xMlr6">
+              <node concept="2RqM1Q" id="5jkMFwyyi3f" role="_vnH8">
+                <ref role="2RqM1R" node="5jkMFwyygyB" resolve="ModelKind" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6lMYc" id="5jkMFwxRn0J" role="PCHHv">
+          <property role="TrG5h" value="model" />
+          <node concept="3xHE8C" id="5jkMFwxRn8J" role="3xMlr6">
+            <node concept="2RqM1Q" id="5jkMFwxRn8H" role="_vnH8">
+              <ref role="2RqM1R" node="5jkMFwxGbNe" resolve="Model" />
+            </node>
+          </node>
+        </node>
         <node concept="_vnHb" id="5k6WBrra2cC" role="3x6$oQ">
           <node concept="2RqM1Q" id="5k6WBrra2cD" role="_vnH8">
             <ref role="2RqM1R" node="5k6WBrra26B" resolve="Vehicle" />
@@ -4050,6 +4197,248 @@
                   </node>
                 </node>
                 <node concept="_vku0" id="7lsupuWlE1V" role="_uFfl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="5jkMFwxG9Na" role="PCHzz" />
+        <node concept="PDIRi" id="5jkMFwxRnUt" role="PCHzz">
+          <node concept="1PaTwC" id="5jkMFwxRnUu" role="I4nmN">
+            <node concept="3oM_SD" id="5jkMFwxRnUv" role="1PaTwD">
+              <property role="3oM_SC" value="nested" />
+            </node>
+            <node concept="3oM_SD" id="5jkMFwxRnYJ" role="1PaTwD">
+              <property role="3oM_SC" value="classifiers" />
+            </node>
+          </node>
+        </node>
+        <node concept="327OUb" id="5jkMFwxRoYl" role="PCHzz">
+          <property role="TrG5h" value="model" />
+          <node concept="31diN3" id="5jkMFwxRpLf" role="327w9Y">
+            <node concept="_vnHb" id="5jkMFwxRpLh" role="31diN2">
+              <node concept="2RqM1Q" id="5jkMFwxRpLj" role="_vnH8">
+                <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+              </node>
+              <node concept="2RqM1Q" id="5jkMFwxRpMQ" role="_vnH8">
+                <ref role="2RqM1R" node="5jkMFwxGbNe" resolve="Model" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5jkMFwxRpLl" role="_uFfl" />
+          </node>
+          <node concept="3xHE8C" id="5jkMFwxRp3v" role="327w9S">
+            <node concept="2RqM1Q" id="5jkMFwxRp3t" role="_vnH8">
+              <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+            </node>
+            <node concept="2RqM1Q" id="5jkMFwxRp4n" role="_vnH8">
+              <ref role="2RqM1R" node="5jkMFwxGbNe" resolve="Model" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5jkMFwxRqBl" role="PCHzz">
+          <node concept="3122gz" id="5jkMFwy67Qb" role="_jtWe">
+            <node concept="3122rM" id="5jkMFwy67QI" role="315$Eb">
+              <node concept="32Pqhl" id="5jkMFwxRqBg" role="3122rd">
+                <node concept="_uYbk" id="5jkMFwxRqG8" role="32Men7">
+                  <node concept="_vnHb" id="5jkMFwxRqGa" role="_uYbl">
+                    <node concept="2RqM1Q" id="5jkMFwxRqGc" role="_vnH8">
+                      <ref role="2RqM1R" node="5jkMFwxRoYl" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vnHe" id="5jkMFwxRqBj" role="32Men1">
+                  <ref role="3acloq" node="5jkMFwxPm4z" resolve="Name" />
+                </node>
+              </node>
+            </node>
+            <node concept="_iklQ" id="5jkMFwy68ge" role="315$E5">
+              <property role="_iklR" value="My Model" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5jkMFwzv34d" role="PCHzz">
+          <node concept="3122gz" id="5jkMFwzv34e" role="_jtWe">
+            <node concept="3122rM" id="5jkMFwzv34f" role="315$Eb">
+              <node concept="32Pqhl" id="5jkMFwzv34g" role="3122rd">
+                <node concept="_uYbk" id="5jkMFwzv34h" role="32Men7">
+                  <node concept="_vnHb" id="5jkMFwzv34i" role="_uYbl">
+                    <node concept="2RqM1Q" id="5jkMFwzv34j" role="_vnH8">
+                      <ref role="2RqM1R" node="5jkMFwxRoYl" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vnHe" id="5jkMFwzv34k" role="32Men1">
+                  <ref role="3acloq" node="5jkMFwyyi1E" resolve="Kind" />
+                </node>
+              </node>
+            </node>
+            <node concept="_uYbk" id="5jkMFwzv3Bi" role="315$E5">
+              <node concept="_vnHb" id="5jkMFwzv3Bk" role="_uYbl">
+                <node concept="2RqM1Q" id="5jkMFwzv3Bm" role="_vnH8">
+                  <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+                </node>
+                <node concept="2RqM1Q" id="5jkMFwzv3Co" role="_vnH8">
+                  <ref role="2RqM1R" node="5jkMFwyygyB" resolve="ModelKind" />
+                </node>
+                <node concept="2RqM1Q" id="5jkMFwzv4zq" role="_vnH8">
+                  <ref role="2RqM1R" node="5jkMFwyyhZt" resolve="Limousine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5jkMFwxRo38" role="PCHzz">
+          <node concept="3122gz" id="5jkMFwxRov7" role="_jtWe">
+            <node concept="3122rM" id="5jkMFwxRovE" role="315$Eb">
+              <node concept="32Pqhl" id="5jkMFwxRo33" role="3122rd">
+                <node concept="_uYbk" id="5jkMFwxRo7K" role="32Men7">
+                  <node concept="_vnHb" id="5jkMFwxRo7M" role="_uYbl">
+                    <node concept="2RqM1Q" id="5jkMFwxRo7O" role="_vnH8">
+                      <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vnHe" id="5jkMFwxRo36" role="32Men1">
+                  <ref role="3acloq" node="5jkMFwxRn0J" resolve="model" />
+                </node>
+              </node>
+            </node>
+            <node concept="_uYbk" id="5jkMFwxRpNW" role="315$E5">
+              <node concept="_vnHb" id="5jkMFwxRpNX" role="_uYbl">
+                <node concept="2RqM1Q" id="5jkMFwxRpNY" role="_vnH8">
+                  <ref role="2RqM1R" node="5jkMFwxRoYl" resolve="model" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5jkMFwzuhSz" role="PCHzz">
+          <node concept="_uF8j" id="5jkMFwzuhS$" role="_jtWe">
+            <node concept="_vnHb" id="5jkMFwzuhS_" role="_uF8g">
+              <node concept="2RqM1Q" id="5jkMFwzuhSA" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5jkMFwzuhSB" role="_uFfl">
+              <node concept="32M0$0" id="5jkMFwzukyG" role="_vku1">
+                <node concept="32Pqhl" id="5jkMFwzukyH" role="32PqmZ">
+                  <node concept="32M0$0" id="5jkMFwzujIa" role="32Men7">
+                    <node concept="32Pqhl" id="5jkMFwzujIb" role="32PqmZ">
+                      <node concept="_uYbk" id="5jkMFwzuitk" role="32Men7">
+                        <node concept="_vnHb" id="5jkMFwzuitm" role="_uYbl">
+                          <node concept="2RqM1Q" id="5jkMFwzuito" role="_vnH8">
+                            <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="5jkMFwzuk8i" role="32Men1">
+                        <ref role="3acloq" node="5jkMFwxRn0J" resolve="model" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="_vnHe" id="5jkMFwzukXh" role="32Men1">
+                    <ref role="3acloq" node="5jkMFwxPm4z" resolve="Name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="32prLx" id="5jkMFwzv5Kr" role="PCHzz">
+          <node concept="32pbwo" id="5jkMFwzv5Kt" role="32oX99">
+            <node concept="32prLw" id="5jkMFwzv5Kv" role="32pbwr">
+              <node concept="31uMWx" id="5jkMFwzv5PJ" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="32M0$0" id="5jkMFwzv5QV" role="31szGO">
+                  <node concept="32Pqhl" id="5jkMFwzv5QW" role="32PqmZ">
+                    <node concept="_uYbk" id="5jkMFwzv5PP" role="32Men7">
+                      <node concept="_vnHb" id="5jkMFwzv5PR" role="_uYbl">
+                        <node concept="2RqM1Q" id="5jkMFwzv5PT" role="_vnH8">
+                          <ref role="2RqM1R" node="5jkMFwxRoYl" resolve="model" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="_vnHe" id="5jkMFwzv6mb" role="32Men1">
+                      <ref role="3acloq" node="5jkMFwyyi1E" resolve="Kind" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="5jkMFwzv6PG" role="31szGQ">
+                  <node concept="_vnHb" id="5jkMFwzv6PH" role="_uYbl">
+                    <node concept="2RqM1Q" id="5jkMFwzv6PI" role="_vnH8">
+                      <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+                    </node>
+                    <node concept="2RqM1Q" id="5jkMFwzv6PJ" role="_vnH8">
+                      <ref role="2RqM1R" node="5jkMFwyygyB" resolve="ModelKind" />
+                    </node>
+                    <node concept="2RqM1Q" id="5jkMFwzv6PK" role="_vnH8">
+                      <ref role="2RqM1R" node="5jkMFwyyhZt" resolve="Limousine" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="5jkMFwzv5Kz" role="32prLT">
+                <node concept="_jtW9" id="5jkMFwzv6R2" role="PCHzz">
+                  <node concept="_uF8j" id="5jkMFwzv6R3" role="_jtWe">
+                    <node concept="_vnHb" id="5jkMFwzv6R4" role="_uF8g">
+                      <node concept="2RqM1Q" id="5jkMFwzv6R5" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="5jkMFwzv6R6" role="_uFfl">
+                      <node concept="_iklQ" id="5jkMFwzv7V1" role="_vku1">
+                        <property role="_iklR" value="Limousine" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="5jkMFwzuhNQ" role="PCHzz" />
+        <node concept="327OUb" id="5jkMFwxG9QW" role="PCHzz">
+          <property role="TrG5h" value="wheel" />
+          <node concept="31diN3" id="5jkMFwxGav$" role="327w9Y">
+            <node concept="_vnHb" id="5jkMFwxGavA" role="31diN2">
+              <node concept="2RqM1Q" id="5jkMFwxGavC" role="_vnH8">
+                <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+              </node>
+              <node concept="2RqM1Q" id="5jkMFwxGaxl" role="_vnH8">
+                <ref role="2RqM1R" node="5jkMFwxG8aU" resolve="Wheel" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5jkMFwxGavE" role="_uFfl" />
+          </node>
+          <node concept="3xHE8C" id="5jkMFwxG9VC" role="327w9S">
+            <node concept="2RqM1Q" id="5jkMFwxG9VA" role="_vnH8">
+              <ref role="2RqM1R" node="46wqe1xgFh2" resolve="Car" />
+            </node>
+            <node concept="2RqM1Q" id="5jkMFwxG9Ww" role="_vnH8">
+              <ref role="2RqM1R" node="5jkMFwxG8aU" resolve="Wheel" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="5jkMFwxGbcX" role="PCHzz">
+          <node concept="32Pqhq" id="5jkMFwxGbcO" role="_jtWe">
+            <node concept="32Pqhl" id="5jkMFwxGbcQ" role="32OngV">
+              <node concept="_uYbk" id="5jkMFwxGbhi" role="32Men7">
+                <node concept="_vnHb" id="5jkMFwxGbhk" role="_uYbl">
+                  <node concept="2RqM1Q" id="5jkMFwxGbhm" role="_vnH8">
+                    <ref role="2RqM1R" node="46wqe1xweMM" resolve="car" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_vnHe" id="5jkMFwxGbcT" role="32Men1">
+                <ref role="3acloq" node="5jkMFwxG8y1" resolve="addWheel" />
+              </node>
+            </node>
+            <node concept="_vku0" id="5jkMFwxGbcV" role="_uFfl">
+              <node concept="_uYbk" id="5jkMFwxGbAN" role="_vku1">
+                <node concept="_vnHb" id="5jkMFwxGbAO" role="_uYbl">
+                  <node concept="2RqM1Q" id="5jkMFwxGbAP" role="_vnH8">
+                    <ref role="2RqM1R" node="5jkMFwxG9QW" resolve="wheel" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

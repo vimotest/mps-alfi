@@ -1005,7 +1005,14 @@
           </node>
           <node concept="3clFbS" id="7GHN9f$WPRm" role="3clFbx">
             <node concept="3cpWs6" id="7GHN9f$WQxa" role="3cqZAp">
-              <node concept="3clFbT" id="7GHN9f$WQxq" role="3cqZAk" />
+              <node concept="2OqwBi" id="5jkMFwxGq8P" role="3cqZAk">
+                <node concept="2DD5aU" id="5jkMFwxGmAM" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5jkMFwxGqOK" role="2OqNvi">
+                  <node concept="chp4Y" id="5jkMFwxGr9r" role="2Zo12j">
+                    <ref role="cht4Q" to="28lk:2HeY20H6x$5" resolve="PropertyDefinition" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1027,7 +1034,7 @@
             <node concept="nLn13" id="2HeY20H5Cas" role="2Oq$k0" />
             <node concept="1mIQ4w" id="2HeY20H5Cv4" role="2OqNvi">
               <node concept="chp4Y" id="2HeY20H5CxA" role="cj9EA">
-                <ref role="cht4Q" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+                <ref role="cht4Q" to="28lk:5jkMFwxRsM2" resolve="IClassLikeClassifierDefinition" />
               </node>
             </node>
           </node>

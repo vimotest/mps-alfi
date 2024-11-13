@@ -1530,6 +1530,12 @@
     <node concept="PrWs8" id="3pX5J2Sf5Yz" role="PzmwI">
       <ref role="PrY4T" node="3pX5J2Sf3Wu" resolve="ITypeDefinition" />
     </node>
+    <node concept="PrWs8" id="5jkMFwxGc$5" role="PzmwI">
+      <ref role="PrY4T" node="2SV$eY8gJiu" resolve="ICanHaveEmptyLineNamespaceMember" />
+    </node>
+    <node concept="PrWs8" id="5jkMFwxRsM5" role="PzmwI">
+      <ref role="PrY4T" node="5jkMFwxRsM2" resolve="IClassLikeClassifierDefinition" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1KdBIfXINz6">
     <property role="EcuMT" value="2021446509810890950" />
@@ -1746,6 +1752,9 @@
     </node>
     <node concept="PrWs8" id="7yVyfjSdfN8" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
+    </node>
+    <node concept="PrWs8" id="5jkMFwxRsM3" role="PzmwI">
+      <ref role="PrY4T" node="5jkMFwxRsM2" resolve="IClassLikeClassifierDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="2HeY20H4nQA">
@@ -2077,6 +2086,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2kuSLC0kNK3" resolve="LiteralExpression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5jkMFwxRsM2">
+    <property role="EcuMT" value="6112733486439582850" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="IClassLikeClassifierDefinition" />
   </node>
 </model>
 
