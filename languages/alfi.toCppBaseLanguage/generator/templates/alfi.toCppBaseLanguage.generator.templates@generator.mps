@@ -355,6 +355,9 @@
       </concept>
       <concept id="3766354144462009184" name="CppBaseLanguage.structure.Virtual" flags="ng" index="2qJFh3" />
       <concept id="3766354144462108595" name="CppBaseLanguage.structure.Override" flags="ng" index="2qJN2g" />
+      <concept id="4807411231623374622" name="CppBaseLanguage.structure.ArrayInitializerExpression" flags="ng" index="s_jKl">
+        <child id="4807411231623375185" name="arrayInitializer" index="s_j9q" />
+      </concept>
       <concept id="7769220957754731518" name="CppBaseLanguage.structure.VariableDeclaration" flags="ng" index="zF7EM" />
       <concept id="5059844704662416138" name="CppBaseLanguage.structure.MultiLineCommentLine" flags="ng" index="AcOrT">
         <property id="5059844704662416139" name="value" index="AcOrS" />
@@ -13662,18 +13665,20 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="28lk:5jkMFwCzbk1" resolve="SequenceExpressionList" />
       <node concept="gft3U" id="5jkMFwE8aIT" role="1lVwrX">
-        <node concept="3Uc4mD" id="5jkMFwE8bl2" role="gfFT$">
-          <node concept="3UcVBg" id="5jkMFwE8bl4" role="3Uc4mA">
-            <property role="1pzoAX" value="1" />
-            <node concept="2b32R4" id="5jkMFwE8bl6" role="lGtFl">
-              <node concept="3JmXsc" id="5jkMFwE8bl9" role="2P8S$">
-                <node concept="3clFbS" id="5jkMFwE8bla" role="2VODD2">
-                  <node concept="3clFbF" id="5jkMFwE8blg" role="3cqZAp">
-                    <node concept="2OqwBi" id="5jkMFwE8blb" role="3clFbG">
-                      <node concept="3Tsc0h" id="5jkMFwE8ble" role="2OqNvi">
-                        <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" resolve="expression" />
+        <node concept="s_jKl" id="2N4oO4qhtfU" role="gfFT$">
+          <node concept="3Uc4mD" id="5jkMFwE8bl2" role="s_j9q">
+            <node concept="3UcVBg" id="5jkMFwE8bl4" role="3Uc4mA">
+              <property role="1pzoAX" value="1" />
+              <node concept="2b32R4" id="5jkMFwE8bl6" role="lGtFl">
+                <node concept="3JmXsc" id="5jkMFwE8bl9" role="2P8S$">
+                  <node concept="3clFbS" id="5jkMFwE8bla" role="2VODD2">
+                    <node concept="3clFbF" id="5jkMFwE8blg" role="3cqZAp">
+                      <node concept="2OqwBi" id="5jkMFwE8blb" role="3clFbG">
+                        <node concept="3Tsc0h" id="5jkMFwE8ble" role="2OqNvi">
+                          <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" />
+                        </node>
+                        <node concept="30H73N" id="5jkMFwE8blf" role="2Oq$k0" />
                       </node>
-                      <node concept="30H73N" id="5jkMFwE8blf" role="2Oq$k0" />
                     </node>
                   </node>
                 </node>
