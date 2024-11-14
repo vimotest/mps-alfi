@@ -44,7 +44,8 @@ Limitations are listed as subpoints of the chapters.
   - [x] 8.3.12 Instance Creation Expressions
   - [ ] 8.3.13 Link Operation Expressions
   - [ ] 8.3.14 Class Extent Expressions
-  - [ ] 8.3.15 Sequence Construction Expressions
+  - [x] 8.3.15 Sequence Construction Expressions
+    - no support for SequenceRange
   - [ ] 8.3.16 Sequence Access Expressions
   - [x] 8.3.17 Sequence Operation Expressions
     - no support for T[*] return operations (union, etc.)
