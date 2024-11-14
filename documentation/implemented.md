@@ -112,7 +112,7 @@ Limitations are listed as subpoints of the chapters.
   - [x] 10.4.2 Classes
   - [ ] 10.4.3 Active Classes
   - [x] 10.4.4 Data Types
-    - only primitive datatypes
+    - no constructor named arguments
   - [ ] 10.4.5 Associations
   - [x] 10.4.6 Enumerations
   - [ ] 10.4.7 Signals
