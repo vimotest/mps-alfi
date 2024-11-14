@@ -219,6 +219,7 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
+        <property id="2791683072064593257" name="packageName" index="2HnT6v" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -9131,6 +9132,7 @@
       <node concept="gft3U" id="37zNn5LlaN7" role="1lVwrX">
         <node concept="3s_ewN" id="1YkfrxE4ILx" role="gfFT$">
           <property role="3s_ewP" value="map_ActivityDefinition_toTest" />
+          <property role="2HnT6v" value="f" />
           <node concept="3Tm1VV" id="1YkfrxE4ILy" role="1B3o_S" />
           <node concept="3s_gsd" id="1YkfrxE4ILz" role="3s_ewO">
             <node concept="3s$Bmu" id="1YkfrxE4Kvi" role="3s_gse">
@@ -9187,6 +9189,36 @@
                       </node>
                       <node concept="30H73N" id="37zNn5LlfeT" role="2Oq$k0" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="2N4oO4r2u2z" role="lGtFl">
+            <property role="2qtEX9" value="virtualPackage" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+            <node concept="3zFVjK" id="2N4oO4r2u2$" role="3zH0cK">
+              <node concept="3clFbS" id="2N4oO4r2u2_" role="2VODD2">
+                <node concept="3cpWs6" id="2N4oO4r2AI9" role="3cqZAp">
+                  <node concept="2YIFZM" id="2N4oO4r328S" role="3cqZAk">
+                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="2N4oO4r328T" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="2N4oO4r2ush" role="lGtFl">
+            <property role="2qtEX9" value="packageName" />
+            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/2791683072064593257" />
+            <node concept="3zFVjK" id="2N4oO4r2usi" role="3zH0cK">
+              <node concept="3clFbS" id="2N4oO4r2usj" role="2VODD2">
+                <node concept="3cpWs6" id="2N4oO4r2FFl" role="3cqZAp">
+                  <node concept="2YIFZM" id="2N4oO4r2Zfr" role="3cqZAk">
+                    <ref role="37wK5l" to="stu:76cVYJf0FBE" resolve="determineModelExtendedPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="2N4oO4r2Zfs" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -9474,6 +9506,36 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="2N4oO4r2JtT" role="lGtFl">
+            <property role="2qtEX9" value="packageName" />
+            <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/2791683072064593257" />
+            <node concept="3zFVjK" id="2N4oO4r2JtU" role="3zH0cK">
+              <node concept="3clFbS" id="2N4oO4r2JtV" role="2VODD2">
+                <node concept="3cpWs6" id="2N4oO4r2Mvf" role="3cqZAp">
+                  <node concept="2YIFZM" id="2N4oO4r2VTS" role="3cqZAk">
+                    <ref role="37wK5l" to="stu:76cVYJf0FBE" resolve="determineModelExtendedPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="2N4oO4r2VTT" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="2N4oO4r2PRG" role="lGtFl">
+            <property role="2qtEX9" value="virtualPackage" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+            <node concept="3zFVjK" id="2N4oO4r2PRH" role="3zH0cK">
+              <node concept="3clFbS" id="2N4oO4r2PRI" role="2VODD2">
+                <node concept="3cpWs6" id="2N4oO4r2T52" role="3cqZAp">
+                  <node concept="2YIFZM" id="2N4oO4r2T53" role="3cqZAk">
+                    <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                    <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                    <node concept="30H73N" id="2N4oO4r2T54" role="37wK5m" />
                   </node>
                 </node>
               </node>
