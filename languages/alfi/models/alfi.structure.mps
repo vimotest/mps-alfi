@@ -38,6 +38,7 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -79,6 +80,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -469,10 +471,14 @@
     <node concept="PrWs8" id="6cBsaQxenbo" role="PzmwI">
       <ref role="PrY4T" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
     </node>
+    <node concept="PrWs8" id="5jkMFwCz86_" role="PzmwI">
+      <ref role="PrY4T" node="5jkMFwCz7PH" resolve="IHasMultiplicity" />
+    </node>
     <node concept="1TJgyi" id="6cBsaQxenbq" role="1TKVEl">
       <property role="IQ2nx" value="7144803224883131098" />
-      <property role="TrG5h" value="hasMultiplicity" />
+      <property role="TrG5h" value="old_hasMultiplicity" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="5jkMFwCNCvr" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQxgGNc">
@@ -1927,7 +1933,7 @@
   </node>
   <node concept="1TIwiD" id="6sZBH0rPpO$">
     <property role="EcuMT" value="7439839726096719140" />
-    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <property role="TrG5h" value="SequenceOperationExpression" />
     <property role="34LRSv" value="SequenceOperationExpression" />
     <ref role="1TJDcQ" node="2kuSLC0oUio" resolve="InvocationExpression" />
@@ -2091,6 +2097,62 @@
     <property role="EcuMT" value="6112733486439582850" />
     <property role="3GE5qa" value="units.classifiers" />
     <property role="TrG5h" value="IClassLikeClassifierDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5jkMFwCz6_T">
+    <property role="EcuMT" value="6112733486551689593" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <property role="TrG5h" value="SequenceConstructionExpression" />
+    <property role="34LRSv" value="SequenceConstructionExpression" />
+    <ref role="1TJDcQ" node="2kuSLC0kNK2" resolve="Expression" />
+    <node concept="PrWs8" id="5jkMFwCz6_W" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5jkMFwCz9_Z" role="PzmwI">
+      <ref role="PrY4T" node="5jkMFwCz7PH" resolve="IHasMultiplicity" />
+    </node>
+    <node concept="1TJgyj" id="5jkMFwCz6_Z" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486551689599" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="typeName" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
+    </node>
+    <node concept="1TJgyj" id="5jkMFwCzbkr" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486551708955" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="elements" />
+      <ref role="20lvS9" node="5jkMFwCzbjU" resolve="SequenceElements" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5jkMFwCz7PH">
+    <property role="EcuMT" value="6112733486551694701" />
+    <property role="3GE5qa" value="expressions.names" />
+    <property role="TrG5h" value="IHasMultiplicity" />
+    <node concept="1TJgyi" id="5jkMFwCNBVd" role="1TKVEl">
+      <property role="IQ2nx" value="7144803224883131098" />
+      <property role="TrG5h" value="hasMultiplicity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jkMFwCzbjU">
+    <property role="EcuMT" value="6112733486551708922" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <property role="TrG5h" value="SequenceElements" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2SMO68r_I0M" resolve="SyntaxElement" />
+  </node>
+  <node concept="1TIwiD" id="5jkMFwCzbk1">
+    <property role="EcuMT" value="6112733486551708929" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <property role="TrG5h" value="SequenceExpressionList" />
+    <property role="34LRSv" value="sequence expression list" />
+    <ref role="1TJDcQ" node="5jkMFwCzbjU" resolve="SequenceElements" />
+    <node concept="1TJgyj" id="5jkMFwCzbk3" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486551708931" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
   </node>
 </model>
 

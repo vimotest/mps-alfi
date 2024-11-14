@@ -263,12 +263,12 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="MakeCollection" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    <ref role="2ZfgGC" to="28lk:5jkMFwCz7PH" resolve="IHasMultiplicity" />
     <node concept="2S6ZIM" id="6cBsaQxgr0v" role="2ZfVej">
       <node concept="3clFbS" id="6cBsaQxgr0w" role="2VODD2">
         <node concept="3clFbF" id="6cBsaQxgr5A" role="3cqZAp">
           <node concept="Xl_RD" id="6cBsaQxgr5_" role="3clFbG">
-            <property role="Xl_RC" value="Convert this variable to a collection of the current type" />
+            <property role="Xl_RC" value="Convert to a Collection of the Current Type" />
           </node>
         </node>
       </node>
@@ -283,7 +283,7 @@
             <node concept="2OqwBi" id="6cBsaQxgs5e" role="37vLTJ">
               <node concept="2Sf5sV" id="6cBsaQxgs4Z" role="2Oq$k0" />
               <node concept="3TrcHB" id="6cBsaQxgsnD" role="2OqNvi">
-                <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
               </node>
             </node>
           </node>
@@ -297,7 +297,7 @@
             <node concept="2OqwBi" id="6cBsaQxgrB2" role="3fr31v">
               <node concept="2Sf5sV" id="6cBsaQxgrmc" role="2Oq$k0" />
               <node concept="3TrcHB" id="6cBsaQxgs1O" role="2OqNvi">
-                <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
               </node>
             </node>
           </node>
@@ -309,12 +309,12 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="MakeSingle" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    <ref role="2ZfgGC" to="28lk:5jkMFwCz7PH" resolve="IHasMultiplicity" />
     <node concept="2S6ZIM" id="6cBsaQxgsMH" role="2ZfVej">
       <node concept="3clFbS" id="6cBsaQxgsMI" role="2VODD2">
         <node concept="3clFbF" id="6cBsaQxgsRG" role="3cqZAp">
           <node concept="Xl_RD" id="6cBsaQxgsRF" role="3clFbG">
-            <property role="Xl_RC" value="Convert this variable to a single element variable of the type of the current collection" />
+            <property role="Xl_RC" value="Convert to a Single Element of the Current Type" />
           </node>
         </node>
       </node>
@@ -327,7 +327,7 @@
             <node concept="2OqwBi" id="6cBsaQxgu3G" role="37vLTJ">
               <node concept="2Sf5sV" id="6cBsaQxgu3v" role="2Oq$k0" />
               <node concept="3TrcHB" id="6cBsaQxgulw" role="2OqNvi">
-                <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
               </node>
             </node>
           </node>
@@ -340,7 +340,7 @@
           <node concept="2OqwBi" id="6cBsaQxgtDd" role="3clFbG">
             <node concept="2Sf5sV" id="6cBsaQxgtor" role="2Oq$k0" />
             <node concept="3TrcHB" id="6cBsaQxgtVY" role="2OqNvi">
-              <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+              <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
             </node>
           </node>
         </node>

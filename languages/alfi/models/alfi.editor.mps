@@ -1390,7 +1390,7 @@
   </node>
   <node concept="PKFIW" id="2kuSLC0p53o">
     <property role="3GE5qa" value="expressions.primary.invocation" />
-    <property role="TrG5h" value="InvoationExpression_InvocationTarget_EC" />
+    <property role="TrG5h" value="InvocationExpression_InvocationTarget_EC" />
     <ref role="1XX52x" to="28lk:2kuSLC0oUio" resolve="InvocationExpression" />
     <node concept="3F0ifn" id="2kuSLC0p53q" role="2wV5jI">
       <property role="3F0ifm" value="" />
@@ -1465,24 +1465,8 @@
       <node concept="3F1sOY" id="6cBsaQxeqem" role="3EZMnx">
         <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="typeName" />
       </node>
-      <node concept="3F0ifn" id="6cBsaQxeqe$" role="3EZMnx">
-        <property role="3F0ifm" value="[]" />
-        <ref role="1ERwB7" node="6cBsaQxg0iJ" resolve="LocalNameDeclarationStatement_RemoveCollection_ActionMap" />
-        <node concept="pkWqt" id="6cBsaQxeqeG" role="pqm2j">
-          <node concept="3clFbS" id="6cBsaQxeqeH" role="2VODD2">
-            <node concept="3clFbF" id="6cBsaQxerL_" role="3cqZAp">
-              <node concept="2OqwBi" id="6cBsaQxesNj" role="3clFbG">
-                <node concept="pncrf" id="6cBsaQxerL$" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6cBsaQxet9Z" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="11L4FC" id="6cBsaQxgwij" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="PMmxH" id="5jkMFwCza7$" role="3EZMnx">
+        <ref role="PMmxG" node="5jkMFwCz8RJ" resolve="IHasMultiplicity_EC" />
       </node>
       <node concept="3F0ifn" id="6cBsaQxetl8" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -1498,8 +1482,8 @@
   </node>
   <node concept="1h_SRR" id="6cBsaQxg0iJ">
     <property role="3GE5qa" value="statements" />
-    <property role="TrG5h" value="LocalNameDeclarationStatement_RemoveCollection_ActionMap" />
-    <ref role="1h_SK9" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    <property role="TrG5h" value="IHasMultiplicity_RemoveCollection_ActionMap" />
+    <ref role="1h_SK9" to="28lk:5jkMFwCz7PH" resolve="IHasMultiplicity" />
     <node concept="1hA7zw" id="6cBsaQxg0iK" role="1h_SK8">
       <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <property role="1hHO97" value="Remove Collection" />
@@ -1511,7 +1495,7 @@
               <node concept="2OqwBi" id="6cBsaQxg0wd" role="37vLTJ">
                 <node concept="0IXxy" id="6cBsaQxg0ji" role="2Oq$k0" />
                 <node concept="3TrcHB" id="6cBsaQxg0Lu" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+                  <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
                 </node>
               </node>
             </node>
@@ -1524,7 +1508,7 @@
             <node concept="2OqwBi" id="6cBsaQxg1mS" role="3clFbG">
               <node concept="0IXxy" id="6cBsaQxg1gw" role="2Oq$k0" />
               <node concept="3TrcHB" id="6cBsaQxg1pO" role="2OqNvi">
-                <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
               </node>
             </node>
           </node>
@@ -6218,7 +6202,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="6sZBH0rPpOC">
-    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <property role="TrG5h" value="SequenceOperationExpression_InvocationTarget_EC" />
     <ref role="1XX52x" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
     <node concept="3EZMnI" id="6sZBH0rPpOE" role="2wV5jI">
@@ -6902,14 +6886,29 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="LocalNameDeclarationStatement_Inspector_EC" />
     <ref role="1XX52x" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
-    <node concept="3EZMnI" id="64vLWnJig9$" role="2wV5jI">
-      <node concept="3F0ifn" id="64vLWnJig9F" role="3EZMnx">
-        <property role="3F0ifm" value="hasMultiplicity:" />
+    <node concept="3EZMnI" id="5jkMFwCNCvs" role="2wV5jI">
+      <node concept="2iRfu4" id="5jkMFwCNCvt" role="2iSdaV" />
+      <node concept="PMmxH" id="5jkMFwCz9mo" role="3EZMnx">
+        <ref role="PMmxG" node="5jkMFwCz9mi" resolve="IHasMultiplicity_Inspector_EC" />
       </node>
-      <node concept="3F0A7n" id="64vLWnJig9L" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+      <node concept="3F0A7n" id="5jkMFwCNCvv" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6cBsaQxenbq" resolve="old_hasMultiplicity" />
+        <node concept="pkWqt" id="5jkMFwCNCvx" role="pqm2j">
+          <node concept="3clFbS" id="5jkMFwCNCvy" role="2VODD2">
+            <node concept="3clFbF" id="5jkMFwCNCS_" role="3cqZAp">
+              <node concept="2OqwBi" id="5jkMFwCNDmu" role="3clFbG">
+                <node concept="pncrf" id="5jkMFwCNCS$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5jkMFwCNDEd" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="old_hasMultiplicity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VechU" id="5jkMFwD6HYs" role="3F10Kt">
+          <property role="Vb096" value="fLwANPn/red" />
+        </node>
       </node>
-      <node concept="2iRfu4" id="64vLWnJig9B" role="2iSdaV" />
     </node>
     <node concept="1PE4EZ" id="64vLWnJifTh" role="1PM95z">
       <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
@@ -7037,6 +7036,85 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5jkMFwCz8RJ">
+    <property role="3GE5qa" value="expressions.names" />
+    <property role="TrG5h" value="IHasMultiplicity_EC" />
+    <ref role="1XX52x" to="28lk:5jkMFwCz7PH" resolve="IHasMultiplicity" />
+    <node concept="3F0ifn" id="5jkMFwCz8RM" role="2wV5jI">
+      <property role="3F0ifm" value="[]" />
+      <ref role="1ERwB7" node="6cBsaQxg0iJ" resolve="LocalNameDeclarationStatement_RemoveCollection_ActionMap" />
+      <node concept="pkWqt" id="5jkMFwCz8RN" role="pqm2j">
+        <node concept="3clFbS" id="5jkMFwCz8RO" role="2VODD2">
+          <node concept="3clFbF" id="5jkMFwCz8RP" role="3cqZAp">
+            <node concept="2OqwBi" id="5jkMFwCz8RQ" role="3clFbG">
+              <node concept="pncrf" id="5jkMFwCz8RR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5jkMFwD6Ewa" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11L4FC" id="5jkMFwCz8RT" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5jkMFwCz9mi">
+    <property role="3GE5qa" value="expressions.names" />
+    <property role="TrG5h" value="IHasMultiplicity_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:5jkMFwCz7PH" resolve="IHasMultiplicity" />
+    <node concept="3EZMnI" id="5jkMFwCz9mk" role="2wV5jI">
+      <node concept="3F0ifn" id="5jkMFwCz9ml" role="3EZMnx">
+        <property role="3F0ifm" value="hasMultiplicity:" />
+      </node>
+      <node concept="3F0A7n" id="5jkMFwCz9mm" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
+      </node>
+      <node concept="2iRfu4" id="5jkMFwCz9mn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5jkMFwCzbk6">
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <ref role="1XX52x" to="28lk:5jkMFwCzbk1" resolve="SequenceExpressionList" />
+    <node concept="3EZMnI" id="5jkMFwCzbk8" role="2wV5jI">
+      <node concept="3F0ifn" id="5jkMFwCzbkc" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="5jkMFwCzbkf" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="28lk:5jkMFwCzbk3" resolve="expression" />
+        <node concept="2iRfu4" id="5jkMFwCzbkh" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="5jkMFwCzbkj" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRfu4" id="5jkMFwCzbkb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5jkMFwDG2cf">
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <ref role="1XX52x" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
+    <node concept="3EZMnI" id="5jkMFwDG2ch" role="2wV5jI">
+      <node concept="3F0ifn" id="5jkMFwDG2ci" role="3EZMnx">
+        <property role="3F0ifm" value="new" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="3F1sOY" id="5jkMFwDG2cj" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:5jkMFwCz6_Z" />
+      </node>
+      <node concept="PMmxH" id="5jkMFwDG2ck" role="3EZMnx">
+        <ref role="PMmxG" node="5jkMFwCz8RJ" resolve="IHasMultiplicity_EC" />
+      </node>
+      <node concept="3F1sOY" id="5jkMFwDG2cl" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:5jkMFwCzbkr" />
+      </node>
+      <node concept="2iRfu4" id="5jkMFwDG2cm" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="5jkMFwDG2cn" role="6VMZX">
+      <ref role="PMmxG" node="5jkMFwCz9mi" resolve="IHasMultiplicity_Inspector_EC" />
     </node>
   </node>
 </model>

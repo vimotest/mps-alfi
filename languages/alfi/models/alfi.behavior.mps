@@ -8348,7 +8348,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6sZBH0rPpQJ">
-    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <ref role="13h7C2" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
     <node concept="13hLZK" id="6sZBH0rPpQK" role="13h7CW">
       <node concept="3clFbS" id="6sZBH0rPpQL" role="2VODD2" />
@@ -9480,6 +9480,27 @@
     </node>
     <node concept="13hLZK" id="5jkMFwxRyF1" role="13h7CW">
       <node concept="3clFbS" id="5jkMFwxRyF2" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5jkMFwE3Mpm">
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <ref role="13h7C2" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
+    <node concept="13hLZK" id="5jkMFwE3Mpn" role="13h7CW">
+      <node concept="3clFbS" id="5jkMFwE3Mpo" role="2VODD2">
+        <node concept="3clFbF" id="5jkMFwE3MpE" role="3cqZAp">
+          <node concept="37vLTI" id="5jkMFwE3PlI" role="3clFbG">
+            <node concept="3clFbT" id="5jkMFwE3Pm3" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5jkMFwE3MAc" role="37vLTJ">
+              <node concept="13iPFW" id="5jkMFwE3MpD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5jkMFwE3MQa" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

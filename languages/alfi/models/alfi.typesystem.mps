@@ -3338,7 +3338,7 @@
             <ref role="1YBMHb" node="46wqe1xwfeP" resolve="localNameDeclarationStatement" />
           </node>
           <node concept="3TrcHB" id="6CIUUG_tfww" role="2OqNvi">
-            <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="hasMultiplicity" />
+            <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
           </node>
         </node>
         <node concept="9aQIb" id="6CIUUG_tf_U" role="9aQIa">
@@ -3707,7 +3707,7 @@
   </node>
   <node concept="1YbPZF" id="4CF2Tg3KzIw">
     <property role="TrG5h" value="typeof_SequenceOperationExpression" />
-    <property role="3GE5qa" value="expressions.primary.invocation" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <node concept="3clFbS" id="4CF2Tg3KzIx" role="18ibNy">
       <node concept="3SKdUt" id="4CF2Tg3KInV" role="3cqZAp">
         <node concept="1PaTwC" id="4CF2Tg3KInW" role="1aUNEU">
