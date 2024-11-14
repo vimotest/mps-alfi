@@ -26,6 +26,9 @@
     <node concept="113tl7" id="5jkMFwxj7Js" role="1151Fy">
       <property role="TrG5h" value="CustomCppFolderPath" />
     </node>
+    <node concept="113tl7" id="2N4oO4quNXy" role="1151Fy">
+      <property role="TrG5h" value="CustomCppFileNameWithoutExtension" />
+    </node>
   </node>
 </model>
 

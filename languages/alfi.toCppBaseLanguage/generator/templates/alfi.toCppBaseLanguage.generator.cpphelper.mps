@@ -865,16 +865,40 @@
         </node>
       </node>
       <node concept="3clFbS" id="4gRCGxdCrmS" role="3clF47">
+        <node concept="3cpWs8" id="2N4oO4quRNv" role="3cqZAp">
+          <node concept="3cpWsn" id="2N4oO4quRNw" role="3cpWs9">
+            <property role="TrG5h" value="fileNameWithoutExtension" />
+            <node concept="17QB3L" id="2N4oO4quRwY" role="1tU5fm" />
+            <node concept="2YIFZM" id="2N4oO4quRNx" role="33vP2m">
+              <ref role="37wK5l" to="stu:5jkMFwxjJsZ" resolve="getStringValueStereotypeValue" />
+              <ref role="1Pybhc" to="stu:5jkMFwxjca7" resolve="GenerationStereotypeHelper" />
+              <node concept="37vLTw" id="2N4oO4quRNy" role="37wK5m">
+                <ref role="3cqZAo" node="4gRCGxdCrrU" resolve="node" />
+              </node>
+              <node concept="2tJFMh" id="2N4oO4quRNz" role="37wK5m">
+                <node concept="ZC_QK" id="2N4oO4quRN$" role="2tJFKM">
+                  <ref role="2aWVGs" to="davt:5jkMFwx341q" resolve="CppAnnotations" />
+                  <node concept="ZC_QK" id="2N4oO4quRN_" role="2aWVGa">
+                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1rXfSq" id="2N4oO4quRNA" role="37wK5m">
+                <ref role="37wK5l" node="4gRCGxdCrCJ" resolve="toCppBaseFileName" />
+                <node concept="37vLTw" id="2N4oO4quRNB" role="37wK5m">
+                  <ref role="3cqZAo" node="4gRCGxdCrrU" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4gRCGxdC_Q4" role="3cqZAp">
           <node concept="3cpWs3" id="4gRCGxdCAbi" role="3clFbG">
             <node concept="Xl_RD" id="4gRCGxdCAbJ" role="3uHU7w">
               <property role="Xl_RC" value=".h" />
             </node>
-            <node concept="1rXfSq" id="4gRCGxdC_Q3" role="3uHU7B">
-              <ref role="37wK5l" node="4gRCGxdCrCJ" resolve="toCppBaseFileName" />
-              <node concept="37vLTw" id="4gRCGxdC_T$" role="37wK5m">
-                <ref role="3cqZAo" node="4gRCGxdCrrU" resolve="node" />
-              </node>
+            <node concept="37vLTw" id="2N4oO4quSBf" role="3uHU7B">
+              <ref role="3cqZAo" node="2N4oO4quRNw" resolve="fileNameWithoutExtension" />
             </node>
           </node>
         </node>
@@ -891,16 +915,40 @@
         </node>
       </node>
       <node concept="3clFbS" id="4gRCGxdCrxQ" role="3clF47">
+        <node concept="3cpWs8" id="2N4oO4quTFB" role="3cqZAp">
+          <node concept="3cpWsn" id="2N4oO4quTFC" role="3cpWs9">
+            <property role="TrG5h" value="fileNameWithoutExtension" />
+            <node concept="17QB3L" id="2N4oO4quTFD" role="1tU5fm" />
+            <node concept="2YIFZM" id="2N4oO4quTFE" role="33vP2m">
+              <ref role="37wK5l" to="stu:5jkMFwxjJsZ" resolve="getStringValueStereotypeValue" />
+              <ref role="1Pybhc" to="stu:5jkMFwxjca7" resolve="GenerationStereotypeHelper" />
+              <node concept="37vLTw" id="2N4oO4quTFF" role="37wK5m">
+                <ref role="3cqZAo" node="4gRCGxdCrxO" resolve="node" />
+              </node>
+              <node concept="2tJFMh" id="2N4oO4quTFG" role="37wK5m">
+                <node concept="ZC_QK" id="2N4oO4quTFH" role="2tJFKM">
+                  <ref role="2aWVGs" to="davt:5jkMFwx341q" resolve="CppAnnotations" />
+                  <node concept="ZC_QK" id="2N4oO4quTFI" role="2aWVGa">
+                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1rXfSq" id="2N4oO4quTFJ" role="37wK5m">
+                <ref role="37wK5l" node="4gRCGxdCrCJ" resolve="toCppBaseFileName" />
+                <node concept="37vLTw" id="2N4oO4quTFK" role="37wK5m">
+                  <ref role="3cqZAo" node="4gRCGxdCrxO" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4gRCGxdCAf_" role="3cqZAp">
           <node concept="3cpWs3" id="4gRCGxdCAfA" role="3clFbG">
             <node concept="Xl_RD" id="4gRCGxdCAfB" role="3uHU7w">
               <property role="Xl_RC" value=".cpp" />
             </node>
-            <node concept="1rXfSq" id="4gRCGxdCAfC" role="3uHU7B">
-              <ref role="37wK5l" node="4gRCGxdCrCJ" resolve="toCppBaseFileName" />
-              <node concept="37vLTw" id="4gRCGxdCAfD" role="37wK5m">
-                <ref role="3cqZAo" node="4gRCGxdCrxO" resolve="node" />
-              </node>
+            <node concept="37vLTw" id="2N4oO4quTKn" role="3uHU7B">
+              <ref role="3cqZAo" node="2N4oO4quTFC" resolve="fileNameWithoutExtension" />
             </node>
           </node>
         </node>
