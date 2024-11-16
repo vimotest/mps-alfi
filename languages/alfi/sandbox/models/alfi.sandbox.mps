@@ -5,7 +5,6 @@
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
   </languages>
   <imports>
-    <import index="zjt0" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/i:f040404(alfi.StandardModelLibrary/alfi.StandardModelLibrary@descriptor)" />
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
   </imports>
   <registry>
@@ -103,7 +102,7 @@
   </registry>
   <node concept="3mGtxK" id="7GHN9f$BVVJ">
     <node concept="PCHHj" id="7GHN9f$BVVL" role="3mGtxP">
-      <property role="TrG5h" value="Test1" />
+      <property role="TrG5h" value="TestVariablesArithmeticAndReturn" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="7GHN9f$BVW0" role="PCHGa">
         <node concept="327OUb" id="3LigvclYu5B" role="PCHzz">
@@ -196,7 +195,7 @@
   </node>
   <node concept="3mGtxK" id="7GHN9f$BVWv">
     <node concept="2qCqA3" id="7GHN9f$BVWx" role="3mGtxP">
-      <property role="TrG5h" value="Test2" />
+      <property role="TrG5h" value="TestVariableAndWriteLine" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="7GHN9f$BVW$" role="PCHHv">
         <property role="TrG5h" value="Test2a" />
@@ -309,20 +308,20 @@
     </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f$BVWA">
-    <property role="3GE5qa" value="Test2" />
+    <property role="3GE5qa" value="TestVariableAndWriteLine" />
     <node concept="2qCqA3" id="7GHN9f$BVWI" role="3mGtxP">
       <property role="TrG5h" value="Test2a" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="7GHN9f$BVWL" role="PCHHv">
-        <property role="TrG5h" value="Test2a1" />
+        <property role="TrG5h" value="Test2NestedActivity" />
       </node>
       <node concept="PCHHj" id="7GHN9f$OR1y" role="PCHHv">
-        <property role="TrG5h" value="ASDASDSA" />
+        <property role="TrG5h" value="Test2Activity" />
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <node concept="PCHzy" id="7GHN9f$OR1A" role="PCHGa" />
       </node>
       <node concept="2qCqA3" id="7GHN9f_8j2B" role="PCHHv">
-        <property role="TrG5h" value="foo" />
+        <property role="TrG5h" value="Test2aNestedPackage" />
         <property role="PCHHq" value="true" />
       </node>
     </node>
@@ -335,9 +334,9 @@
     </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f$BVWP">
-    <property role="3GE5qa" value="Test2.Test2a" />
+    <property role="3GE5qa" value="TestVariableAndWriteLine.Test2a" />
     <node concept="PCHHj" id="7GHN9f$BVWN" role="3mGtxP">
-      <property role="TrG5h" value="Test2a1" />
+      <property role="TrG5h" value="Test2NestedActivity" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="7GHN9f$BVWO" role="PCHGa">
         <node concept="327OUb" id="7GHN9f$MwVq" role="PCHzz">
@@ -376,9 +375,9 @@
     </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f_96RA">
-    <property role="3GE5qa" value="Test2.Test2a" />
+    <property role="3GE5qa" value="TestVariableAndWriteLine.Test2a" />
     <node concept="2qCqA3" id="7GHN9f_96R_" role="3mGtxP">
-      <property role="TrG5h" value="foo" />
+      <property role="TrG5h" value="Test2aNestedPackage" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
     <node concept="3mGtyY" id="7GHN9f_96RE" role="3mGtxR">
@@ -394,7 +393,7 @@
   </node>
   <node concept="3mGtxK" id="7GHN9f_xd8e">
     <node concept="2qCqA3" id="7GHN9f_xd8g" role="3mGtxP">
-      <property role="TrG5h" value="Foo" />
+      <property role="TrG5h" value="NestedPackageActivity" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="2qCqA3" id="2X39vz3bZzr" role="PCHHv">
         <property role="TrG5h" value="Foo1" />
@@ -403,7 +402,7 @@
       <node concept="2qCqA3" id="2X39vz3bZzX" role="PCHHv">
         <property role="TrG5h" value="Foo2" />
         <node concept="PCHHj" id="2X39vz3bZ$1" role="PCHHv">
-          <property role="TrG5h" value="Foo2a" />
+          <property role="TrG5h" value="Foo2Activity" />
           <node concept="PCHzy" id="2X39vz3bZFu" role="PCHGa">
             <node concept="327OUb" id="7X0jqo9zmXS" role="PCHzz">
               <property role="TrG5h" value="a" />
@@ -422,12 +421,12 @@
     </node>
   </node>
   <node concept="3mGtxK" id="2X39vz3bZzu">
-    <property role="3GE5qa" value="Foo" />
+    <property role="3GE5qa" value="NestedPackageActivity" />
     <node concept="2qCqA3" id="2X39vz3bZzt" role="3mGtxP">
       <property role="TrG5h" value="Foo1" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHHj" id="2X39vz3bZzy" role="PCHHv">
-        <property role="TrG5h" value="Foo1a" />
+        <property role="TrG5h" value="Foo1Activity" />
       </node>
     </node>
     <node concept="3mGtyY" id="2X39vz3bZzx" role="3mGtxR">
@@ -439,9 +438,9 @@
     </node>
   </node>
   <node concept="3mGtxK" id="2X39vz3bZzA">
-    <property role="3GE5qa" value="Foo.Foo1" />
+    <property role="3GE5qa" value="NestedPackageActivity.Foo1" />
     <node concept="PCHHj" id="2X39vz3bZz$" role="3mGtxP">
-      <property role="TrG5h" value="Foo1a" />
+      <property role="TrG5h" value="Foo1Activity" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="PCHzy" id="2X39vz3bZz_" role="PCHGa" />
     </node>
