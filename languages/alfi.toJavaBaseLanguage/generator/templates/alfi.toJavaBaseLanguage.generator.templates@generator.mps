@@ -1592,29 +1592,13 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="5jkMFwE7wDF" role="3acgRq">
-      <ref role="30HIoZ" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
-      <node concept="gft3U" id="5jkMFwE7$LF" role="1lVwrX">
-        <node concept="2YIFZM" id="5jkMFwE7$LI" role="gfFT$">
-          <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
-          <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
-          <node concept="3cmrfG" id="5jkMFwE7$LJ" role="37wK5m">
-            <property role="3cmrfH" value="1" />
-            <node concept="1sPUBX" id="5jkMFwE7Mx0" role="lGtFl">
-              <ref role="v9R2y" node="5jkMFwE7Jbt" resolve="switch_SequenceElements" />
-              <node concept="3NFfHV" id="5jkMFwE7OE6" role="1sPUBK">
-                <node concept="3clFbS" id="5jkMFwE7OE7" role="2VODD2">
-                  <node concept="3clFbF" id="5jkMFwE7OL4" role="3cqZAp">
-                    <node concept="2OqwBi" id="5jkMFwE7PL4" role="3clFbG">
-                      <node concept="30H73N" id="5jkMFwE7OL3" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="5jkMFwE7Q9V" role="2OqNvi">
-                        <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" resolve="elements" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+    <node concept="3aamgX" id="6LCMmpRnvZl" role="3acgRq">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+      <node concept="gft3U" id="6LCMmpRnACS" role="1lVwrX">
+        <node concept="2VYdi" id="6LCMmpRnACT" role="gfFT$">
+          <node concept="1sPUBX" id="6LCMmpRnACU" role="lGtFl">
+            <ref role="v9R2y" node="6LCMmpRnsk6" resolve="switch_OtherExpressions" />
           </node>
         </node>
       </node>
@@ -12448,6 +12432,114 @@
       </node>
     </node>
     <node concept="j$LIH" id="5jkMFwE7X9T" role="jxRDz" />
+  </node>
+  <node concept="jVnub" id="6LCMmpRnsk6">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="switch_OtherExpressions" />
+    <node concept="3aamgX" id="6LCMmpRkvFa" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6LCMmpRdR$2" resolve="SequenceAccessExpression" />
+      <node concept="gft3U" id="6LCMmpRkAH6" role="1lVwrX">
+        <node concept="15s5l7" id="6LCMmpRxIlM" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  get(int):@List.E (baseMethodDeclaration) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643899]&quot;;" />
+          <property role="huDt6" value="The reference  get(int):@List.E (baseMethodDeclaration) is out of search scope" />
+        </node>
+        <node concept="15s5l7" id="6LCMmpRtai0" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of GetElementOperation)' cannot be child of node '(instance of DotExpression)'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)/2879969100346192021]&quot;;" />
+          <property role="huDt6" value="Node '(instance of GetElementOperation)' cannot be child of node '(instance of DotExpression)'" />
+        </node>
+        <node concept="15s5l7" id="6LCMmpRtaab" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: not available here&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c8959032b(jetbrains.mps.baseLanguage.collections.typesystem)/4998595809122235508]&quot;;" />
+          <property role="huDt6" value="Error: not available here" />
+        </node>
+        <node concept="2OqwBi" id="6LCMmpRx1Fg" role="gfFT$">
+          <node concept="liA8E" id="6LCMmpRx1Fk" role="2OqNvi">
+            <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+            <node concept="3cpWsd" id="6LCMmpRxI6y" role="37wK5m">
+              <node concept="33vP2n" id="6LCMmpRxI6z" role="3uHU7B">
+                <node concept="29HgVG" id="6LCMmpRxI6$" role="lGtFl">
+                  <node concept="3NFfHV" id="6LCMmpRxI6_" role="3NFExx">
+                    <node concept="3clFbS" id="6LCMmpRxI6A" role="2VODD2">
+                      <node concept="3clFbF" id="6LCMmpRxI6B" role="3cqZAp">
+                        <node concept="2OqwBi" id="6LCMmpRxI6C" role="3clFbG">
+                          <node concept="3TrEf2" id="6LCMmpRxI6D" role="2OqNvi">
+                            <ref role="3Tt5mk" to="28lk:6LCMmpRdR$4" />
+                          </node>
+                          <node concept="30H73N" id="6LCMmpRxI6E" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cmrfG" id="6LCMmpRxI6F" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="33vP2n" id="6LCMmpRxHA0" role="2Oq$k0">
+            <node concept="29HgVG" id="6LCMmpRxHA1" role="lGtFl">
+              <node concept="3NFfHV" id="6LCMmpRxHA2" role="3NFExx">
+                <node concept="3clFbS" id="6LCMmpRxHA3" role="2VODD2">
+                  <node concept="3clFbF" id="6LCMmpRxHA4" role="3cqZAp">
+                    <node concept="2OqwBi" id="6LCMmpRxHA5" role="3clFbG">
+                      <node concept="3TrEf2" id="6LCMmpRxHA6" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" />
+                      </node>
+                      <node concept="30H73N" id="6LCMmpRxHA7" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="6LCMmpRxFgc" role="30HLyM">
+        <node concept="3clFbS" id="6LCMmpRxFgd" role="2VODD2">
+          <node concept="3clFbF" id="6LCMmpRxF_V" role="3cqZAp">
+            <node concept="2OqwBi" id="6LCMmpRxG0c" role="3clFbG">
+              <node concept="30H73N" id="6LCMmpRxF_U" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6LCMmpRxGB1" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:6LCMmpRdR$x" resolve="unsafe" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5jkMFwE7wDF" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
+      <node concept="gft3U" id="5jkMFwE7$LF" role="1lVwrX">
+        <node concept="2YIFZM" id="5jkMFwE7$LI" role="gfFT$">
+          <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+          <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+          <node concept="3cmrfG" id="5jkMFwE7$LJ" role="37wK5m">
+            <property role="3cmrfH" value="1" />
+            <node concept="1sPUBX" id="5jkMFwE7Mx0" role="lGtFl">
+              <ref role="v9R2y" node="5jkMFwE7Jbt" resolve="switch_SequenceElements" />
+              <node concept="3NFfHV" id="5jkMFwE7OE6" role="1sPUBK">
+                <node concept="3clFbS" id="5jkMFwE7OE7" role="2VODD2">
+                  <node concept="3clFbF" id="5jkMFwE7OL4" role="3cqZAp">
+                    <node concept="2OqwBi" id="5jkMFwE7PL4" role="3clFbG">
+                      <node concept="30H73N" id="5jkMFwE7OL3" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="5jkMFwE7Q9V" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="j$LIH" id="6LCMmpRnIKU" role="jxRDz">
+      <node concept="1lLz0L" id="6LCMmpRnK6Y" role="1lHHLF">
+        <property role="1lLB17" value="Other Expression Type not supported" />
+        <property role="1lMjX7" value="h1lM37o/error" />
+      </node>
+    </node>
   </node>
 </model>
 

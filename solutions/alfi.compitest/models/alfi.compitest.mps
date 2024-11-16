@@ -47,6 +47,11 @@
         <property id="1820071129312120005" name="stereotype" index="2hPvR9" />
       </concept>
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
+      <concept id="7811714995598096642" name="alfi.structure.SequenceAccessExpression" flags="ng" index="rnV1$">
+        <property id="7811714995598096673" name="unsafe" index="rnV17" />
+        <child id="7811714995598096644" name="index" index="rnV1y" />
+        <child id="7811714995598096643" name="primary" index="rnV1_" />
+      </concept>
       <concept id="8152398782397110011" name="alfi.structure.NullExpression" flags="ng" index="2_e7m4" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
@@ -6062,6 +6067,131 @@
                     <node concept="_vnHb" id="5jkMFwE748m" role="_uYbl">
                       <node concept="2RqM1Q" id="5jkMFwE748n" role="_vnH8">
                         <ref role="2RqM1R" node="5jkMFwEhd9Q" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="6LCMmpRg4kd" role="PCHzz" />
+        <node concept="PDIRi" id="6LCMmpRg4k8" role="PCHzz">
+          <node concept="1PaTwC" id="6LCMmpRg4k9" role="I4nmN">
+            <node concept="3oM_SD" id="6LCMmpRg4ka" role="1PaTwD">
+              <property role="3oM_SC" value="sequence" />
+            </node>
+            <node concept="3oM_SD" id="6LCMmpRg4kb" role="1PaTwD">
+              <property role="3oM_SC" value="access" />
+            </node>
+            <node concept="3oM_SD" id="6LCMmpRg4kc" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="6LCMmpRjZOJ" role="PCHzz">
+          <node concept="_uF8j" id="6LCMmpRjZOK" role="_jtWe">
+            <node concept="_vnHb" id="6LCMmpRjZOL" role="_uF8g">
+              <node concept="2RqM1Q" id="6LCMmpRjZOM" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="6LCMmpRjZON" role="_uFfl">
+              <node concept="2Mp9z4" id="6LCMmpRk86x" role="_vku1">
+                <node concept="_iklQ" id="6LCMmpRk9h8" role="31szGQ">
+                  <property role="_iklR" value="null" />
+                </node>
+                <node concept="rnV1$" id="6LCMmpRk2TK" role="31szGO">
+                  <node concept="32T38h" id="6LCMmpRk45g" role="rnV1y">
+                    <property role="32T38g" value="1" />
+                  </node>
+                  <node concept="32M0$0" id="6LCMmpRk1Gh" role="rnV1_">
+                    <node concept="32Pqhl" id="6LCMmpRk1Gi" role="32PqmZ">
+                      <node concept="_uYbk" id="6LCMmpRk1Gj" role="32Men7">
+                        <node concept="_vnHb" id="6LCMmpRk1Gk" role="_uYbl">
+                          <node concept="2RqM1Q" id="6LCMmpRk1Gl" role="_vnH8">
+                            <ref role="2RqM1R" node="US4hCmlYXp" resolve="sequenceHolder" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="6LCMmpRk1Gm" role="32Men1">
+                        <ref role="3acloq" node="6sZBH0rRdDF" resolve="names" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="_jtW9" id="6LCMmpRk9hZ" role="PCHzz">
+          <node concept="_uF8j" id="6LCMmpRk9i0" role="_jtWe">
+            <node concept="_vnHb" id="6LCMmpRk9i1" role="_uF8g">
+              <node concept="2RqM1Q" id="6LCMmpRk9i2" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="6LCMmpRk9i3" role="_uFfl">
+              <node concept="rnV1$" id="6LCMmpRk9CQ" role="_vku1">
+                <property role="rnV17" value="true" />
+                <node concept="32T38h" id="6LCMmpRk9CR" role="rnV1y">
+                  <property role="32T38g" value="1" />
+                </node>
+                <node concept="32M0$0" id="6LCMmpRk9CS" role="rnV1_">
+                  <node concept="32Pqhl" id="6LCMmpRk9CT" role="32PqmZ">
+                    <node concept="_uYbk" id="6LCMmpRk9CU" role="32Men7">
+                      <node concept="_vnHb" id="6LCMmpRk9CV" role="_uYbl">
+                        <node concept="2RqM1Q" id="6LCMmpRk9CW" role="_vnH8">
+                          <ref role="2RqM1R" node="US4hCmlYXp" resolve="sequenceHolder" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="_vnHe" id="6LCMmpRk9CX" role="32Men1">
+                      <ref role="3acloq" node="6sZBH0rRdDF" resolve="names" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="6LCMmpRg6C5" role="PCHzz" />
+        <node concept="32xATA" id="6LCMmpRg4jB" role="PCHzz">
+          <node concept="32xAZV" id="6LCMmpRg4jC" role="32xgzx">
+            <property role="TrG5h" value="name" />
+            <node concept="3xHE8C" id="6LCMmpRg4jD" role="32xAZR">
+              <node concept="2RqM1Q" id="6LCMmpRg4jE" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+            </node>
+            <node concept="32M0$0" id="6LCMmpRg4jF" role="32xAZU">
+              <node concept="32Pqhl" id="6LCMmpRg4jG" role="32PqmZ">
+                <node concept="_uYbk" id="6LCMmpRg4jH" role="32Men7">
+                  <node concept="_vnHb" id="6LCMmpRg4jI" role="_uYbl">
+                    <node concept="2RqM1Q" id="6LCMmpRg4jJ" role="_vnH8">
+                      <ref role="2RqM1R" node="US4hCmlYXp" resolve="sequenceHolder" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vnHe" id="6LCMmpRg4jK" role="32Men1">
+                  <ref role="3acloq" node="6sZBH0rRdDF" resolve="names" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="PCHzy" id="6LCMmpRg4jL" role="32xgzz">
+            <node concept="_jtW9" id="6LCMmpRg4jM" role="PCHzz">
+              <node concept="_uF8j" id="6LCMmpRg4jN" role="_jtWe">
+                <node concept="_vnHb" id="6LCMmpRg4jO" role="_uF8g">
+                  <node concept="2RqM1Q" id="6LCMmpRg4jP" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="6LCMmpRg4jQ" role="_uFfl">
+                  <node concept="_uYbk" id="6LCMmpRg4jR" role="_vku1">
+                    <node concept="_vnHb" id="6LCMmpRg4jS" role="_uYbl">
+                      <node concept="2RqM1Q" id="6LCMmpRg4jT" role="_vnH8">
+                        <ref role="2RqM1R" node="6LCMmpRg4jC" resolve="name" />
                       </node>
                     </node>
                   </node>

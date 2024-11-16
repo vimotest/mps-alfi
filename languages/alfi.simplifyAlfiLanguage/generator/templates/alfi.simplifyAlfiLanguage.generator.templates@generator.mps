@@ -11,6 +11,7 @@
     <import index="6o53" ref="r:a9a7262f-9506-41f8-bbc8-6365fd410705(alfi.simplifyAlfiLanguage.structure)" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="mbf3" ref="r:42be11ef-100b-431f-9034-ec577ee301e8(alfi.simplifyAlfiLanguage.generator.simplifyhelper)" />
+    <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -66,6 +67,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -167,6 +171,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -195,6 +202,12 @@
       <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
         <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
+      <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
+        <child id="2674824929519838363" name="expression" index="_vku1" />
+      </concept>
+      <concept id="2674824929519838360" name="alfi.structure.InvocationExpression" flags="ng" index="_vku2">
+        <child id="2674824929519882447" name="tuple" index="_uFfl" />
+      </concept>
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
@@ -203,7 +216,9 @@
       </concept>
       <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="3328952194368290204" name="alfi.structure.EmptyStatement" flags="ng" index="PDIRY" />
-      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q" />
+      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
+        <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      </concept>
       <concept id="7144803224901733272" name="alfi.structure.BinaryExpression" flags="ng" index="31szGP">
         <child id="7144803224901733273" name="operand1" index="31szGO" />
         <child id="7144803224901733275" name="operand2" index="31szGQ" />
@@ -229,6 +244,11 @@
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
       <concept id="2021446509810892642" name="alfi.structure.AnyTypeName" flags="ng" index="3xHE61" />
+      <concept id="7439839726096719270" name="alfi.structure.ExtendOrExpression" flags="ngI" index="1WUwdQ" />
+      <concept id="7439839726096719140" name="alfi.structure.SequenceOperationExpression" flags="ng" index="1WUwfO">
+        <child id="7439839726096719276" name="primary" index="1WUwdW" />
+        <child id="7439839726096719142" name="operation" index="1WUwfQ" />
+      </concept>
     </language>
   </registry>
   <node concept="bUwia" id="by5Cupla2t">
@@ -739,6 +759,67 @@
           <node concept="3clFbH" id="GirOuj3EYe" role="3cqZAp" />
           <node concept="3clFbF" id="GirOuj3KOe" role="3cqZAp">
             <node concept="3clFbT" id="GirOuj3KOd" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="6LCMmpRwr3t" role="3acgRq">
+      <ref role="30HIoZ" to="28lk:6LCMmpRdR$2" resolve="SequenceAccessExpression" />
+      <node concept="gft3U" id="6LCMmpRws6_" role="1lVwrX">
+        <node concept="1WUwfO" id="RZKkt7eiu7" role="gfFT$">
+          <node concept="_vnHb" id="RZKkt7eiu8" role="1WUwfQ">
+            <node concept="2RqM1Q" id="RZKkt7eiu9" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
+            </node>
+          </node>
+          <node concept="_vku0" id="RZKkt7eiua" role="_uFfl">
+            <node concept="32T38h" id="RZKkt7eiub" role="_vku1">
+              <property role="32T38g" value="1" />
+              <node concept="29HgVG" id="6LCMmpRwwFc" role="lGtFl">
+                <node concept="3NFfHV" id="6LCMmpRwwFd" role="3NFExx">
+                  <node concept="3clFbS" id="6LCMmpRwwFe" role="2VODD2">
+                    <node concept="3clFbF" id="6LCMmpRwwFk" role="3cqZAp">
+                      <node concept="2OqwBi" id="6LCMmpRwwFf" role="3clFbG">
+                        <node concept="3TrEf2" id="6LCMmpRwwFi" role="2OqNvi">
+                          <ref role="3Tt5mk" to="28lk:6LCMmpRdR$4" resolve="index" />
+                        </node>
+                        <node concept="30H73N" id="6LCMmpRwwFj" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1WUwdQ" id="6LCMmpRwwEY" role="1WUwdW">
+            <node concept="29HgVG" id="6LCMmpRwwKc" role="lGtFl">
+              <node concept="3NFfHV" id="6LCMmpRwwKd" role="3NFExx">
+                <node concept="3clFbS" id="6LCMmpRwwKe" role="2VODD2">
+                  <node concept="3clFbF" id="6LCMmpRwwKk" role="3cqZAp">
+                    <node concept="2OqwBi" id="6LCMmpRwwKf" role="3clFbG">
+                      <node concept="3TrEf2" id="6LCMmpRwwKi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" resolve="primary" />
+                      </node>
+                      <node concept="30H73N" id="6LCMmpRwwKj" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="6LCMmpRwOrt" role="30HLyM">
+        <node concept="3clFbS" id="6LCMmpRwOru" role="2VODD2">
+          <node concept="3clFbF" id="6LCMmpRwOIn" role="3cqZAp">
+            <node concept="3fqX7Q" id="6LCMmpRwPMx" role="3clFbG">
+              <node concept="2OqwBi" id="6LCMmpRwPMz" role="3fr31v">
+                <node concept="30H73N" id="6LCMmpRwPM$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6LCMmpRwPM_" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6LCMmpRdR$x" resolve="unsafe" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

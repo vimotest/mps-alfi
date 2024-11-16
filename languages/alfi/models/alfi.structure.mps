@@ -39,6 +39,9 @@
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -2152,6 +2155,35 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6LCMmpRdR$2">
+    <property role="EcuMT" value="7811714995598096642" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <property role="TrG5h" value="SequenceAccessExpression" />
+    <property role="34LRSv" value="SequenceOperationExpression" />
+    <ref role="1TJDcQ" node="2kuSLC0kNK2" resolve="Expression" />
+    <node concept="1TJgyj" id="6LCMmpRdR$3" role="1TKVEi">
+      <property role="IQ2ns" value="7811714995598096643" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="primary" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6cBsaQxVRAv" resolve="PrimaryExpression" />
+    </node>
+    <node concept="1TJgyj" id="6LCMmpRdR$4" role="1TKVEi">
+      <property role="IQ2ns" value="7811714995598096644" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="index" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="6LCMmpRdR$x" role="1TKVEl">
+      <property role="IQ2nx" value="7811714995598096673" />
+      <property role="TrG5h" value="unsafe" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6LCMmpRdR$y" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which forces to yield not [0..1], but [1]" />
+      </node>
     </node>
   </node>
 </model>
