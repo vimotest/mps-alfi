@@ -336,7 +336,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="4gPvMOHUZ0C" role="3uHU7B">
-              <ref role="3cqZAo" node="4gPvMOHUZ0w" resolve="isNotNull" />
+              <ref role="3cqZAo" node="4gPvMOHUZ0w" resolve="isChained" />
             </node>
           </node>
         </node>
@@ -595,7 +595,7 @@
                     <ref role="3cqZAo" node="GirOuj3$E$" resolve="featureReference" />
                   </node>
                   <node concept="3TrEf2" id="GirOuj3$EP" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" />
+                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" resolve="expression" />
                   </node>
                 </node>
               </node>
@@ -842,7 +842,7 @@
                   <ref role="3cqZAo" node="GirOuj3cEg" resolve="featureInvocationExpression" />
                 </node>
                 <node concept="3TrEf2" id="GirOuj3Drp" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6cBsaQxXwim" />
+                  <ref role="3Tt5mk" to="28lk:6cBsaQxXwim" resolve="target" />
                 </node>
               </node>
             </node>

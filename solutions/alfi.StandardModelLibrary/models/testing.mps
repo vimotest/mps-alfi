@@ -78,7 +78,7 @@
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
-      <concept id="3594942814681438262" name="alfi.structure.PredefinedStereoTypeDefinition" flags="ng" index="113tl7" />
+      <concept id="3594942814681438262" name="alfi.structure.PredefinedStereotypeDefinition" flags="ng" index="113tl7" />
       <concept id="3594942814681426819" name="alfi.structure.PredefinedStereotypes" flags="ng" index="113yrM">
         <child id="3594942814682077075" name="definitions" index="1151Fy" />
       </concept>

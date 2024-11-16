@@ -7687,7 +7687,7 @@
           <node concept="3clFbF" id="6dpAtW60dR6" role="3cqZAp">
             <node concept="2YIFZM" id="6dpAtW60dR7" role="3clFbG">
               <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-              <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+              <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
               <node concept="30H73N" id="6dpAtW60dR8" role="37wK5m" />
             </node>
           </node>
@@ -10290,7 +10290,7 @@
                   <node concept="2OqwBi" id="5jkMFwzKJ7C" role="2Oq$k0">
                     <node concept="30H73N" id="5jkMFwzKJ7D" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5jkMFwzKJ7E" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" />
+                      <ref role="3Tt5mk" to="28lk:6cBsaQxVTlE" resolve="expression" />
                     </node>
                   </node>
                   <node concept="3JvlWi" id="5jkMFwzKJ7F" role="2OqNvi" />
@@ -11165,7 +11165,7 @@
                 <node concept="3clFbF" id="6dpAtW60kYy" role="3cqZAp">
                   <node concept="2YIFZM" id="6dpAtW60kYz" role="3clFbG">
                     <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                     <node concept="30H73N" id="6dpAtW60kY$" role="37wK5m" />
                   </node>
                 </node>
@@ -11668,7 +11668,7 @@
                           <node concept="2OqwBi" id="5ZcB1GfA2Vm" role="3clFbG">
                             <node concept="2OqwBi" id="5ZcB1GfA2Vn" role="2Oq$k0">
                               <node concept="1mL9RQ" id="5ZcB1GfA2Vo" role="2Oq$k0">
-                                <ref role="1mL9RD" node="5ZcB1GfA2Vu" resolve="setupOperation" />
+                                <ref role="1mL9RD" node="5ZcB1GfA2Vu" resolve="tearDownOperation" />
                               </node>
                               <node concept="3TrEf2" id="5ZcB1GfA2Vp" role="2OqNvi">
                                 <ref role="3Tt5mk" to="28lk:75cQW_toFlm" resolve="body" />
@@ -11746,7 +11746,7 @@
                     <node concept="3clFbF" id="5ZcB1GfA2VS" role="3cqZAp">
                       <node concept="2OqwBi" id="5ZcB1GfA2VT" role="3clFbG">
                         <node concept="1mL9RQ" id="5ZcB1GfA2VU" role="2Oq$k0">
-                          <ref role="1mL9RD" node="5ZcB1GfA2Vu" resolve="setupOperation" />
+                          <ref role="1mL9RD" node="5ZcB1GfA2Vu" resolve="tearDownOperation" />
                         </node>
                         <node concept="3x8VRR" id="5ZcB1GfA2VV" role="2OqNvi" />
                       </node>
@@ -12021,7 +12021,7 @@
                 <node concept="3clFbF" id="6dpAtW60kEO" role="3cqZAp">
                   <node concept="2YIFZM" id="6dpAtW60kEP" role="3clFbG">
                     <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                    <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                     <node concept="30H73N" id="6dpAtW60kEQ" role="37wK5m" />
                   </node>
                 </node>
@@ -12518,7 +12518,7 @@
             <node concept="3clFbF" id="6dpAtW602Is" role="3cqZAp">
               <node concept="2YIFZM" id="5jkMFwx9iMf" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="5jkMFwx9iMg" role="37wK5m" />
               </node>
             </node>
@@ -12864,7 +12864,7 @@
             <node concept="3clFbF" id="6dpAtW60d4Z" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60d50" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="6dpAtW60d51" role="37wK5m" />
               </node>
             </node>
@@ -12927,7 +12927,7 @@
             <node concept="3clFbF" id="6dpAtW60fPa" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60fPb" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="6dpAtW60fPc" role="37wK5m" />
               </node>
             </node>
@@ -13088,7 +13088,7 @@
             <node concept="3clFbF" id="6dpAtW60gQf" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60gQg" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="6dpAtW60gQh" role="37wK5m" />
               </node>
             </node>
@@ -13151,7 +13151,7 @@
             <node concept="3clFbF" id="6dpAtW60i8M" role="3cqZAp">
               <node concept="2YIFZM" id="6dpAtW60i8N" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="6dpAtW60i8O" role="37wK5m" />
               </node>
             </node>
@@ -13175,7 +13175,7 @@
                 <node concept="3clFbF" id="5jkMFwySqtq" role="3cqZAp">
                   <node concept="2OqwBi" id="5jkMFwySqtr" role="3clFbG">
                     <node concept="3TrEf2" id="5jkMFwySqts" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                     <node concept="30H73N" id="5jkMFwySqtt" role="2Oq$k0" />
                   </node>
@@ -13193,7 +13193,7 @@
                   <node concept="2OqwBi" id="5jkMFwySqt$" role="2Oq$k0">
                     <node concept="30H73N" id="5jkMFwySqt_" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5jkMFwySqtA" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="5jkMFwySqtB" role="2OqNvi" />
@@ -13214,7 +13214,7 @@
                   <node concept="2OqwBi" id="5jkMFwyQRm5" role="3clFbG">
                     <node concept="30H73N" id="5jkMFwyQRm6" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="5jkMFwyQRm7" role="2OqNvi">
-                      <ref role="3TtcxE" to="28lk:2SMO68r$0GX" />
+                      <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
                     </node>
                   </node>
                 </node>
@@ -13259,7 +13259,7 @@
                 <node concept="3clFbF" id="5jkMFwySrZC" role="3cqZAp">
                   <node concept="2OqwBi" id="5jkMFwySrZD" role="3clFbG">
                     <node concept="3TrEf2" id="5jkMFwySrZE" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                     <node concept="30H73N" id="5jkMFwySrZF" role="2Oq$k0" />
                   </node>
@@ -13277,7 +13277,7 @@
                   <node concept="2OqwBi" id="5jkMFwySrZM" role="2Oq$k0">
                     <node concept="30H73N" id="5jkMFwySrZN" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5jkMFwySrZO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="5jkMFwySrZP" role="2OqNvi" />
@@ -13340,7 +13340,7 @@
                     <node concept="2OqwBi" id="5jkMFwyR1C3" role="2Oq$k0">
                       <node concept="30H73N" id="5jkMFwyR1C4" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="5jkMFwyR1C5" role="2OqNvi">
-                        <ref role="3TtcxE" to="28lk:1KdBIfX5Xzl" />
+                        <ref role="3TtcxE" to="28lk:1KdBIfX5Xzl" resolve="specializations" />
                       </node>
                     </node>
                     <node concept="3$u5V9" id="5jkMFwyR1C6" role="2OqNvi">
@@ -13402,7 +13402,7 @@
                       <node concept="2OqwBi" id="5jkMFwyR1Cx" role="2Oq$k0">
                         <node concept="30H73N" id="5jkMFwyR1Cy" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="5jkMFwyR1Cz" role="2OqNvi">
-                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" />
+                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="5jkMFwyR1C$" role="2OqNvi">
@@ -13504,7 +13504,7 @@
                       <node concept="2OqwBi" id="5jkMFwyR1Dg" role="2Oq$k0">
                         <node concept="30H73N" id="5jkMFwyR1Dh" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="5jkMFwyR1Di" role="2OqNvi">
-                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" />
+                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="5jkMFwyR1Dj" role="2OqNvi">
@@ -13586,7 +13586,7 @@
                       <node concept="2OqwBi" id="5jkMFwyR1DR" role="2Oq$k0">
                         <node concept="30H73N" id="5jkMFwyR1DS" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="5jkMFwyR1DT" role="2OqNvi">
-                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" />
+                          <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="5jkMFwyR1DU" role="2OqNvi">
@@ -13700,7 +13700,7 @@
             <node concept="3clFbF" id="5jkMFwyRfjB" role="3cqZAp">
               <node concept="2YIFZM" id="5jkMFwyRfjC" role="3clFbG">
                 <ref role="37wK5l" to="ow8f:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
-                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppNamespaceHelper" />
+                <ref role="1Pybhc" to="ow8f:5jkMFwx36th" resolve="CppVirtualPackageHelper" />
                 <node concept="30H73N" id="5jkMFwyRfjD" role="37wK5m" />
               </node>
             </node>
@@ -13724,7 +13724,7 @@
                 <node concept="3clFbF" id="5jkMFwyShWX" role="3cqZAp">
                   <node concept="2OqwBi" id="5jkMFwyShWY" role="3clFbG">
                     <node concept="3TrEf2" id="5jkMFwyShWZ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" />
+                      <ref role="3Tt5mk" to="28lk:sSER0D62IU" resolve="documentation" />
                     </node>
                     <node concept="30H73N" id="5jkMFwyShX0" role="2Oq$k0" />
                   </node>
@@ -13877,7 +13877,7 @@
                     <node concept="3clFbF" id="5jkMFwE8blg" role="3cqZAp">
                       <node concept="2OqwBi" id="5jkMFwE8blb" role="3clFbG">
                         <node concept="3Tsc0h" id="5jkMFwE8ble" role="2OqNvi">
-                          <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" />
+                          <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" resolve="expression" />
                         </node>
                         <node concept="30H73N" id="5jkMFwE8blf" role="2Oq$k0" />
                       </node>
@@ -13906,7 +13906,7 @@
                     <node concept="3clFbF" id="6LCMmpRkLxV" role="3cqZAp">
                       <node concept="2OqwBi" id="6LCMmpRkLxQ" role="3clFbG">
                         <node concept="3TrEf2" id="6LCMmpRkLxT" role="2OqNvi">
-                          <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" />
+                          <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" resolve="primary" />
                         </node>
                         <node concept="30H73N" id="6LCMmpRkLxU" role="2Oq$k0" />
                       </node>
@@ -13929,7 +13929,7 @@
                       <node concept="3clFbF" id="6LCMmpRkLAH" role="3cqZAp">
                         <node concept="2OqwBi" id="6LCMmpRkLAC" role="3clFbG">
                           <node concept="3TrEf2" id="6LCMmpRkLAF" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:6LCMmpRdR$4" />
+                            <ref role="3Tt5mk" to="28lk:6LCMmpRdR$4" resolve="index" />
                           </node>
                           <node concept="30H73N" id="6LCMmpRkLAG" role="2Oq$k0" />
                         </node>
@@ -13967,7 +13967,7 @@
                   <node concept="2OqwBi" id="5jkMFwE8aZT" role="3clFbG">
                     <node concept="30H73N" id="5jkMFwE8aLl" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5jkMFwE8bg4" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" />
+                      <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" resolve="elements" />
                     </node>
                   </node>
                 </node>

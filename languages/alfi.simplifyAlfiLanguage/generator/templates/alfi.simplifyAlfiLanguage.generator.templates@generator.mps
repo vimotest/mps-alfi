@@ -384,7 +384,7 @@
                     <node concept="3clFbF" id="3Edw2s_miro" role="3cqZAp">
                       <node concept="2YIFZM" id="3Edw2s_mits" role="3clFbG">
                         <ref role="37wK5l" to="mbf3:3Edw2s_lB2T" resolve="toVariableTypeName" />
-                        <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSequenceSimplificationHelper" />
+                        <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSimplificationHelper" />
                         <node concept="37vLTw" id="3Edw2s_miv8" role="37wK5m">
                           <ref role="3cqZAo" node="3Edw2s_mikK" resolve="expression" />
                         </node>
@@ -511,7 +511,7 @@
               </node>
               <node concept="2YIFZM" id="64vLWnJ2oUw" role="33vP2m">
                 <ref role="37wK5l" to="mbf3:3Edw2s_juU1" resolve="findFirstChainedOptionalExpression" />
-                <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSequenceSimplificationHelper" />
+                <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSimplificationHelper" />
                 <node concept="30H73N" id="64vLWnJ2oUx" role="37wK5m" />
               </node>
             </node>
@@ -642,7 +642,7 @@
           <node concept="3clFbF" id="59QkE2cTsTD" role="3cqZAp">
             <node concept="2YIFZM" id="59QkE2cTsUX" role="3clFbG">
               <ref role="37wK5l" to="mbf3:59QkE2cTqfs" resolve="isImplicitOptionalBooleanExpression" />
-              <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSequenceSimplificationHelper" />
+              <ref role="1Pybhc" to="mbf3:3Edw2s_jr7f" resolve="AlfSimplificationHelper" />
               <node concept="30H73N" id="59QkE2cTsXH" role="37wK5m" />
             </node>
           </node>

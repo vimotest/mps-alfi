@@ -879,7 +879,7 @@
                 <node concept="ZC_QK" id="2N4oO4quRN$" role="2tJFKM">
                   <ref role="2aWVGs" to="davt:5jkMFwx341q" resolve="CppAnnotations" />
                   <node concept="ZC_QK" id="2N4oO4quRN_" role="2aWVGa">
-                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileName" />
+                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileNameWithoutExtension" />
                   </node>
                 </node>
               </node>
@@ -929,7 +929,7 @@
                 <node concept="ZC_QK" id="2N4oO4quTFH" role="2tJFKM">
                   <ref role="2aWVGs" to="davt:5jkMFwx341q" resolve="CppAnnotations" />
                   <node concept="ZC_QK" id="2N4oO4quTFI" role="2aWVGa">
-                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileName" />
+                    <ref role="2aWVGs" to="davt:2N4oO4quNXy" resolve="CustomCppFileNameWithoutExtension" />
                   </node>
                 </node>
               </node>
@@ -2313,7 +2313,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="5jkMFwxjMXr" role="37wK5m">
-              <ref role="3cqZAo" node="5jkMFwxjIjm" resolve="virtualPackage" />
+              <ref role="3cqZAo" node="5jkMFwxjIjm" resolve="defaultVirtualPackage" />
             </node>
           </node>
         </node>
@@ -2411,7 +2411,7 @@
                     <ref role="3cqZAo" node="27q4jmdXdpt" resolve="parentType" />
                   </node>
                   <node concept="3TrEf2" id="27q4jmdXdJv" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yjel:27q4jmdWXhm" />
+                    <ref role="3Tt5mk" to="yjel:27q4jmdWXhm" resolve="referencedType" />
                   </node>
                 </node>
                 <node concept="Jnkvi" id="27q4jmdXhhI" role="37vLTx">
@@ -2648,7 +2648,7 @@
                 <ref role="37wK5l" node="5jkMFw$M8jO" resolve="autocompleteParentForMemberReference" />
                 <node concept="2OqwBi" id="5jkMFw$QloP" role="37wK5m">
                   <node concept="3TrEf2" id="5jkMFw$QloQ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yjel:42EL3I6oIv9" />
+                    <ref role="3Tt5mk" to="yjel:42EL3I6oIv9" resolve="parent" />
                   </node>
                   <node concept="37vLTw" id="5jkMFw$QloR" role="2Oq$k0">
                     <ref role="3cqZAo" node="5jkMFw$M8l8" resolve="node" />

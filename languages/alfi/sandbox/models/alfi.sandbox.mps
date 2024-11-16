@@ -328,7 +328,7 @@
     <node concept="3mGtyY" id="7GHN9f$BVWC" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f$BVWD" role="$kHGj">
         <node concept="2RqM1Q" id="7GHN9f$BVWE" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="Test2" />
+          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
       </node>
     </node>
@@ -366,7 +366,7 @@
     <node concept="3mGtyY" id="7GHN9f$BVWT" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f$BVWQ" role="$kHGj">
         <node concept="2RqM1Q" id="7GHN9f$BVWR" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="Test2" />
+          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
         <node concept="2RqM1Q" id="7GHN9f_xxza" role="_vnH8">
           <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
@@ -383,7 +383,7 @@
     <node concept="3mGtyY" id="7GHN9f_96RE" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f_96RB" role="$kHGj">
         <node concept="2RqM1Q" id="7GHN9f_96RC" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="Test2" />
+          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
         <node concept="2RqM1Q" id="7GHN9f_96RD" role="_vnH8">
           <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
@@ -432,7 +432,7 @@
     <node concept="3mGtyY" id="2X39vz3bZzx" role="3mGtxR">
       <node concept="_vnHb" id="2X39vz3bZzv" role="$kHGj">
         <node concept="2RqM1Q" id="2X39vz3bZzw" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="Foo" />
+          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
         </node>
       </node>
     </node>
@@ -447,7 +447,7 @@
     <node concept="3mGtyY" id="2X39vz3bZzE" role="3mGtxR">
       <node concept="_vnHb" id="2X39vz3bZzB" role="$kHGj">
         <node concept="2RqM1Q" id="2X39vz3bZzC" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="Foo" />
+          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
         </node>
         <node concept="2RqM1Q" id="2X39vz3bZzD" role="_vnH8">
           <ref role="2RqM1R" node="2X39vz3bZzt" resolve="Foo1" />

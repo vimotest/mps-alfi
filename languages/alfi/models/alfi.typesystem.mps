@@ -4580,7 +4580,7 @@
         <node concept="1gVbGN" id="7hXYaidXwqN" role="3cqZAp">
           <node concept="2OqwBi" id="7hXYaidXwC3" role="1gVkn0">
             <node concept="37vLTw" id="7hXYaidXwty" role="2Oq$k0">
-              <ref role="3cqZAo" node="7hXYaidXwh2" resolve="expr" />
+              <ref role="3cqZAo" node="7hXYaidXwh2" resolve="expression" />
             </node>
             <node concept="3x8VRR" id="7hXYaidXwNq" role="2OqNvi" />
           </node>
@@ -4806,7 +4806,7 @@
                       <ref role="cht4Q" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
                     </node>
                     <node concept="2X3wrD" id="6LCMmpRfKVs" role="1m5AlR">
-                      <ref role="2X3Bk0" node="6LCMmpRfKVB" resolve="primaryType" />
+                      <ref role="2X3Bk0" node="6LCMmpRfKVB" resolve="concreteType" />
                     </node>
                   </node>
                 </node>
@@ -4973,7 +4973,7 @@
               <ref role="1YBMHb" node="6LCMmpRdY86" resolve="sequenceAccessExpression" />
             </node>
             <node concept="3TrEf2" id="6LCMmpRdYBy" role="2OqNvi">
-              <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" />
+              <ref role="3Tt5mk" to="28lk:6LCMmpRdR$3" resolve="primary" />
             </node>
           </node>
         </node>

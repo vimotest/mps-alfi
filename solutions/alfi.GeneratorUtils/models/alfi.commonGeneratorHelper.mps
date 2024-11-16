@@ -782,7 +782,7 @@
       <node concept="3Tm6S6" id="37zNn5LqZb7" role="1B3o_S" />
       <node concept="A3Dl8" id="37zNn5LqZdb" role="1tU5fm">
         <node concept="2sp9CU" id="37zNn5LqZe2" role="A3Ik2">
-          <ref role="2sp9C9" to="28lk:37zNn5KVxwQ" resolve="PredefinedStereoTypeDefinition" />
+          <ref role="2sp9C9" to="28lk:37zNn5KVxwQ" resolve="PredefinedStereotypeDefinition" />
         </node>
       </node>
       <node concept="2ShNRf" id="37zNn5LqZnL" role="33vP2m">
