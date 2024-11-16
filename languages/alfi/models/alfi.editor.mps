@@ -7047,6 +7047,20 @@
     <node concept="3EZMnI" id="5jkMFwCNCvs" role="2wV5jI">
       <node concept="PMmxH" id="5jkMFwCz9mo" role="3EZMnx">
         <ref role="PMmxG" node="5jkMFwCz9mi" resolve="IHasMultiplicity_Inspector_EC" />
+        <node concept="pkWqt" id="4SovtwLgy63" role="pqm2j">
+          <node concept="3clFbS" id="4SovtwLgy64" role="2VODD2">
+            <node concept="3clFbF" id="4SovtwLgyv7" role="3cqZAp">
+              <node concept="3fqX7Q" id="4SovtwLgzLE" role="3clFbG">
+                <node concept="2OqwBi" id="4SovtwLgzLG" role="3fr31v">
+                  <node concept="pncrf" id="4SovtwLgzLH" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4SovtwLgzLI" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:6LCMmpTvSGO" resolve="inferType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="4SovtwKPBTA" role="3EZMnx">
         <property role="3F0ifm" value="infer type:" />
