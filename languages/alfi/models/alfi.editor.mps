@@ -6993,24 +6993,6 @@
       <node concept="PMmxH" id="5jkMFwCz9mo" role="3EZMnx">
         <ref role="PMmxG" node="5jkMFwCz9mi" resolve="IHasMultiplicity_Inspector_EC" />
       </node>
-      <node concept="3F0A7n" id="5jkMFwCNCvv" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6cBsaQxenbq" resolve="old_hasMultiplicity" />
-        <node concept="pkWqt" id="5jkMFwCNCvx" role="pqm2j">
-          <node concept="3clFbS" id="5jkMFwCNCvy" role="2VODD2">
-            <node concept="3clFbF" id="5jkMFwCNCS_" role="3cqZAp">
-              <node concept="2OqwBi" id="5jkMFwCNDmu" role="3clFbG">
-                <node concept="pncrf" id="5jkMFwCNCS$" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5jkMFwCNDEd" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:6cBsaQxenbq" resolve="old_hasMultiplicity" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="VechU" id="5jkMFwD6HYs" role="3F10Kt">
-          <property role="Vb096" value="fLwANPn/red" />
-        </node>
-      </node>
     </node>
     <node concept="1PE4EZ" id="64vLWnJifTh" role="1PM95z">
       <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />

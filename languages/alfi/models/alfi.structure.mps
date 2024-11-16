@@ -38,7 +38,6 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -479,12 +478,6 @@
     </node>
     <node concept="PrWs8" id="5jkMFwCz86_" role="PzmwI">
       <ref role="PrY4T" node="5jkMFwCz7PH" resolve="IHasMultiplicity" />
-    </node>
-    <node concept="1TJgyi" id="6cBsaQxenbq" role="1TKVEl">
-      <property role="IQ2nx" value="7144803224883131098" />
-      <property role="TrG5h" value="old_hasMultiplicity" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="5jkMFwCNCvr" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cBsaQxgGNc">
