@@ -97,6 +97,9 @@
     <node concept="PrWs8" id="6ldY1Si$Wi6" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6LCMmpRV2xH" role="PrDN$">
+      <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0w3">
     <property role="EcuMT" value="3328952194368014339" />
