@@ -19,6 +19,10 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -32,6 +36,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -80,6 +85,7 @@
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
+        <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
@@ -88,6 +94,7 @@
       <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
         <reference id="8401916545537438643" name="kind" index="1dDu$A" />
       </concept>
+      <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
@@ -114,6 +121,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
@@ -1328,6 +1338,57 @@
         <node concept="3clFbF" id="6LCMmpSnOqv" role="3cqZAp">
           <node concept="3clFbT" id="6LCMmpSnOqu" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4SovtwKMi$V">
+    <property role="3GE5qa" value="statements" />
+    <ref role="1M2myG" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
+    <node concept="EnEH3" id="4SovtwKMi$W" role="1MhHOB">
+      <ref role="EomxK" to="28lk:6LCMmpTvSGO" resolve="inferType" />
+      <node concept="1LLf8_" id="4SovtwKMiBh" role="1LXaQT">
+        <node concept="3clFbS" id="4SovtwKMiBi" role="2VODD2">
+          <node concept="3clFbF" id="4SovtwKMiFr" role="3cqZAp">
+            <node concept="37vLTI" id="4SovtwKMlGf" role="3clFbG">
+              <node concept="1Wqviy" id="4SovtwKMmyK" role="37vLTx" />
+              <node concept="2OqwBi" id="4SovtwKMiUl" role="37vLTJ">
+                <node concept="EsrRn" id="4SovtwKMiFq" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4SovtwKMjfi" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6LCMmpTvSGO" resolve="inferType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4SovtwKMmCH" role="3cqZAp">
+            <node concept="3clFbS" id="4SovtwKMmCJ" role="3clFbx">
+              <node concept="3clFbF" id="4SovtwKMmGy" role="3cqZAp">
+                <node concept="2OqwBi" id="4SovtwKMnOk" role="3clFbG">
+                  <node concept="2OqwBi" id="4SovtwKMmVs" role="2Oq$k0">
+                    <node concept="EsrRn" id="4SovtwKMmGx" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4SovtwKMnAV" role="2OqNvi">
+                      <ref role="3Tt5mk" to="28lk:6cBsaQxenbl" resolve="typeName" />
+                    </node>
+                  </node>
+                  <node concept="zfrQC" id="4SovtwKMo2s" role="2OqNvi">
+                    <ref role="1A9B2P" to="28lk:1KdBIfXINXy" resolve="AnyTypeName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4SovtwKO0MI" role="3cqZAp">
+                <node concept="37vLTI" id="4SovtwKO4iA" role="3clFbG">
+                  <node concept="3clFbT" id="4SovtwKO4iX" role="37vLTx" />
+                  <node concept="2OqwBi" id="4SovtwKO14h" role="37vLTJ">
+                    <node concept="EsrRn" id="4SovtwKO0MH" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4SovtwKO1sh" role="2OqNvi">
+                      <ref role="3TsBF5" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wqviy" id="4SovtwKMmDw" role="3clFbw" />
           </node>
         </node>
       </node>

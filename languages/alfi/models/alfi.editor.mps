@@ -1458,17 +1458,73 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="tpen:hshT0O9" resolve="LocalVariable" />
       </node>
+      <node concept="3F0ifn" id="4SovtwKMbky" role="3EZMnx">
+        <property role="3F0ifm" value="reference" />
+        <node concept="pkWqt" id="4SovtwKMbkz" role="pqm2j">
+          <node concept="3clFbS" id="4SovtwKMbk$" role="2VODD2">
+            <node concept="3clFbF" id="4SovtwKMbk_" role="3cqZAp">
+              <node concept="2OqwBi" id="4SovtwKMbkA" role="3clFbG">
+                <node concept="pncrf" id="4SovtwKMbkB" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4SovtwKMbkC" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6LCMmpTvSGP" resolve="isReference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VSNWy" id="4SovtwKMbkD" role="3F10Kt">
+          <property role="1lJzqX" value="7" />
+        </node>
+        <node concept="VechU" id="4SovtwKMbkE" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="11L4FC" id="4SovtwKMbkF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2SqB2G" id="4SovtwKMbkG" role="2SqHTX">
+          <property role="TrG5h" value="ignoreTextGenGen" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6cBsaQxeqe2" role="3EZMnx">
         <property role="3F0ifm" value=":" />
         <node concept="11L4FC" id="6cBsaQxeqe7" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="6cBsaQxeqem" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="typeName" />
-      </node>
-      <node concept="PMmxH" id="5jkMFwCza7$" role="3EZMnx">
-        <ref role="PMmxG" node="5jkMFwCz8RJ" resolve="IHasMultiplicity_EC" />
+      <node concept="1QoScp" id="4SovtwKMeQw" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="4SovtwKMeQz" role="3e4ffs">
+          <node concept="3clFbS" id="4SovtwKMeQ_" role="2VODD2">
+            <node concept="3clFbF" id="4SovtwKMgdK" role="3cqZAp">
+              <node concept="3fqX7Q" id="4SovtwKMgdI" role="3clFbG">
+                <node concept="2OqwBi" id="4SovtwKMhhU" role="3fr31v">
+                  <node concept="pncrf" id="4SovtwKMgCF" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4SovtwKMhBV" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:6LCMmpTvSGO" resolve="inferType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="4SovtwKMfoF" role="1QoVPY">
+          <property role="3F0ifm" value="&lt;&lt;inferred&gt;&gt;" />
+          <node concept="VechU" id="4SovtwKMfL6" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+          <node concept="Vb9p2" id="4SovtwKMfL8" role="3F10Kt">
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="4SovtwKO010" role="1QoS34">
+          <node concept="2iRfu4" id="4SovtwKO011" role="2iSdaV" />
+          <node concept="3F1sOY" id="6cBsaQxeqem" role="3EZMnx">
+            <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="typeName" />
+          </node>
+          <node concept="PMmxH" id="5jkMFwCza7$" role="3EZMnx">
+            <ref role="PMmxG" node="5jkMFwCz8RJ" resolve="IHasMultiplicity_EC" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="6cBsaQxetl8" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -6989,10 +7045,42 @@
     <property role="TrG5h" value="LocalNameDeclarationStatement_Inspector_EC" />
     <ref role="1XX52x" to="28lk:6cBsaQxe3SA" resolve="LocalNameDeclarationStatement" />
     <node concept="3EZMnI" id="5jkMFwCNCvs" role="2wV5jI">
-      <node concept="2iRfu4" id="5jkMFwCNCvt" role="2iSdaV" />
       <node concept="PMmxH" id="5jkMFwCz9mo" role="3EZMnx">
         <ref role="PMmxG" node="5jkMFwCz9mi" resolve="IHasMultiplicity_Inspector_EC" />
       </node>
+      <node concept="3F0ifn" id="4SovtwKPBTA" role="3EZMnx">
+        <property role="3F0ifm" value="infer type:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="4SovtwKPBTF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4SovtwKPBTD" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6LCMmpTvSGO" resolve="inferType" />
+      </node>
+      <node concept="3F0ifn" id="4SovtwKPBTH" role="3EZMnx">
+        <property role="3F0ifm" value="is reference:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="4SovtwKPBTI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4SovtwKPBTG" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6LCMmpTvSGP" resolve="isReference" />
+      </node>
+      <node concept="3F0ifn" id="4SovtwKPBTK" role="3EZMnx">
+        <property role="3F0ifm" value="(note: only relevant for target languages with explicit reference type, like '&amp;' in C++)" />
+        <node concept="VechU" id="4SovtwKPBTM" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="VSNWy" id="4SovtwKPBTO" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+        <node concept="Vb9p2" id="4SovtwKPBTS" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4SovtwKPBT$" role="2iSdaV" />
     </node>
     <node concept="1PE4EZ" id="64vLWnJifTh" role="1PM95z">
       <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
@@ -7153,6 +7241,7 @@
     <node concept="3EZMnI" id="5jkMFwCz9mk" role="2wV5jI">
       <node concept="3F0ifn" id="5jkMFwCz9ml" role="3EZMnx">
         <property role="3F0ifm" value="hasMultiplicity:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F0A7n" id="5jkMFwCz9mm" role="3EZMnx">
         <ref role="1NtTu8" to="28lk:5jkMFwCNBVd" resolve="hasMultiplicity" />

@@ -459,6 +459,22 @@
     <property role="TrG5h" value="LocalNameDeclarationStatement" />
     <property role="34LRSv" value="let" />
     <ref role="1TJDcQ" node="2SMO68r$0w3" resolve="Statement" />
+    <node concept="1TJgyi" id="6LCMmpTvSGO" role="1TKVEl">
+      <property role="IQ2nx" value="7811714995636374324" />
+      <property role="TrG5h" value="inferType" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6LCMmpTvSGR" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which defines type-inference (also for transformation, e.g., auto in C++, var in Java)" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="6LCMmpTvSGP" role="1TKVEl">
+      <property role="IQ2nx" value="7811714995636374325" />
+      <property role="TrG5h" value="isReference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6LCMmpTvSGQ" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which forces the variable to be a reference in target languages where applicable (e.g., '&amp;' in C++)" />
+      </node>
+    </node>
     <node concept="1TJgyj" id="6cBsaQxenbj" role="1TKVEi">
       <property role="IQ2ns" value="7144803224883131091" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
