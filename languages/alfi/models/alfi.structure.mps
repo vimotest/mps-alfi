@@ -2173,7 +2173,7 @@
     <property role="EcuMT" value="7811714995598096642" />
     <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <property role="TrG5h" value="SequenceAccessExpression" />
-    <property role="34LRSv" value="SequenceOperationExpression" />
+    <property role="34LRSv" value="SequenceAccessExpression" />
     <ref role="1TJDcQ" node="2kuSLC0kNK2" resolve="Expression" />
     <node concept="1TJgyj" id="6LCMmpRdR$3" role="1TKVEi">
       <property role="IQ2ns" value="7811714995598096643" />
