@@ -394,7 +394,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="5tK9548cRiS" role="1TViLv">
-          <property role="TrG5h" value="alfi.generator" />
+          <property role="TrG5h" value="alfi.toAlf" />
           <property role="3LESm3" value="0ba813eb-88cf-4e97-a8c0-918a532854cd" />
           <node concept="1BupzO" id="5tK9548cRiY" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
@@ -549,6 +549,11 @@
               <node concept="3qWCbU" id="by5CuptvCo" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6LCMmpS4RW6" role="3bR37C">
+            <node concept="3bR9La" id="6LCMmpS4RW7" role="1SiIV1">
+              <ref role="3bR37D" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
             </node>
           </node>
         </node>
