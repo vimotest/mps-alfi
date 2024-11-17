@@ -564,6 +564,7 @@
       </concept>
       <concept id="6843536562191001275" name="CppBaseLanguage.structure.VariableReference" flags="ng" index="3UcWq5">
         <reference id="7769220957754731528" name="variableDeclaration" index="zF7P4" />
+        <child id="8455554985454239504" name="parent" index="33$5l_" />
       </concept>
       <concept id="6843536562191167670" name="CppBaseLanguage.structure.PostIncrementExpression" flags="ng" index="3Ud528">
         <child id="6843536562191167671" name="primaryExpression" index="3Ud529" />
@@ -705,6 +706,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7236635212850979475" name="jetbrains.mps.lang.smodel.structure.Node_HasNextSiblingOperation" flags="nn" index="rvlfL" />
       <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
@@ -798,6 +800,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
         <property id="779128492853934523" name="cellId" index="1K8rM7" />
@@ -3808,6 +3814,91 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="f$GqqjTu7_" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="28lk:74z8RZk6PrV" resolve="NullExpression" />
+      <node concept="gft3U" id="f$GqqjTu7A" role="1lVwrX">
+        <node concept="15s5l7" id="f$GqqjZlHK" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  nullopt (variableDeclaration) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;variableDeclaration&quot;;FLAVOUR_RULE_ID=&quot;[r:ca9175a4-0b4d-4321-96a3-42d92ff99c93(CppBaseLanguage.constraints)/8486949719366977570]&quot;;" />
+          <property role="huDt6" value="The reference  nullopt (variableDeclaration) is out of search scope" />
+        </node>
+        <node concept="3UcWq5" id="f$GqqjZlHI" role="gfFT$">
+          <ref role="zF7P4" to="sta3:3Edw2s$Vj6h" resolve="nullopt" />
+          <node concept="1VUwCF" id="f$GqqjZlHJ" role="33$5l_">
+            <ref role="2aT8gA" to="sta3:5wP$QAQ5gra" resolve="std" />
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="f$GqqjTve0" role="30HLyM">
+        <node concept="3clFbS" id="f$GqqjTve1" role="2VODD2">
+          <node concept="3cpWs8" id="f$GqqjTCP_" role="3cqZAp">
+            <node concept="3cpWsn" id="f$GqqjTCPA" role="3cpWs9">
+              <property role="TrG5h" value="invocationExpression" />
+              <node concept="3Tqbb2" id="f$GqqjTCNk" role="1tU5fm">
+                <ref role="ehGHo" to="28lk:2kuSLC0p549" resolve="BehaviorInvocationExpression" />
+              </node>
+              <node concept="1PxgMI" id="f$GqqjTCPB" role="33vP2m">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="f$GqqjTCPC" role="3oSUPX">
+                  <ref role="cht4Q" to="28lk:2kuSLC0p549" resolve="BehaviorInvocationExpression" />
+                </node>
+                <node concept="2OqwBi" id="f$GqqjTCPD" role="1m5AlR">
+                  <node concept="2OqwBi" id="f$GqqjTCPE" role="2Oq$k0">
+                    <node concept="30H73N" id="f$GqqjTCPF" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="f$GqqjTCPG" role="2OqNvi" />
+                  </node>
+                  <node concept="1mfA1w" id="f$GqqjTCPH" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="f$GqqjTEkh" role="3cqZAp">
+            <node concept="3clFbS" id="f$GqqjTEkj" role="3clFbx">
+              <node concept="3cpWs6" id="f$GqqjTF_4" role="3cqZAp">
+                <node concept="17R0WA" id="f$GqqjTPpx" role="3cqZAk">
+                  <node concept="2tJFMh" id="f$GqqjTPNH" role="3uHU7w">
+                    <node concept="ZC_QK" id="f$GqqjTQd0" role="2tJFKM">
+                      <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" />
+                      <node concept="ZC_QK" id="f$GqqjTQAl" role="2aWVGa">
+                        <ref role="2aWVGs" to="hsxa:37zNn5KVo9F" resolve="Testing" />
+                        <node concept="ZC_QK" id="f$GqqjTQZD" role="2aWVGa">
+                          <ref role="2aWVGs" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="f$GqqjTMGP" role="3uHU7B">
+                    <node concept="2OqwBi" id="f$GqqjTKgU" role="2Oq$k0">
+                      <node concept="2OqwBi" id="f$GqqjTHwM" role="2Oq$k0">
+                        <node concept="37vLTw" id="f$GqqjTFAA" role="2Oq$k0">
+                          <ref role="3cqZAo" node="f$GqqjTCPA" resolve="invocationExpression" />
+                        </node>
+                        <node concept="3TrEf2" id="f$GqqjTIo_" role="2OqNvi">
+                          <ref role="3Tt5mk" to="28lk:2kuSLC0p54a" resolve="target" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="f$GqqjTL20" role="2OqNvi">
+                        <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+                      </node>
+                    </node>
+                    <node concept="iZEcu" id="f$GqqjTNm1" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="f$GqqjTEYB" role="3clFbw">
+              <node concept="37vLTw" id="f$GqqjTEzb" role="2Oq$k0">
+                <ref role="3cqZAo" node="f$GqqjTCPA" resolve="invocationExpression" />
+              </node>
+              <node concept="3x8VRR" id="f$GqqjTFha" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="f$GqqjTEhX" role="3cqZAp">
+            <node concept="3clFbT" id="f$GqqjTEhW" role="3clFbG" />
           </node>
         </node>
       </node>
