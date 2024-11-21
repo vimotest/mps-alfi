@@ -7363,5 +7363,54 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6RKU0s8QYl1">
+    <property role="3GE5qa" value="expressions.primary.literal" />
+    <ref role="1XX52x" to="28lk:6RKU0s8QXra" resolve="MultiLineStringLiteralExpression" />
+    <node concept="3EZMnI" id="6RKU0s8QZeI" role="2wV5jI">
+      <node concept="3F0ifn" id="6RKU0s8QZeM" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;&quot;&quot;" />
+        <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        <node concept="Vb9p2" id="6RKU0s8QZf2" role="3F10Kt" />
+        <node concept="VSNWy" id="6RKU0s8ZaKs" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+        <node concept="VechU" id="6RKU0s8ZaKv" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6RKU0s8QZeU" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6RKU0s8QYl0" resolve="content" />
+        <node concept="l2Vlx" id="6RKU0s8QZeW" role="2czzBx" />
+        <node concept="pVoyu" id="6RKU0s8QZeX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="6RKU0s8QZeY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6RKU0s8ZaKx" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;&quot;&quot;" />
+        <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        <node concept="Vb9p2" id="6RKU0s8ZaKy" role="3F10Kt" />
+        <node concept="VSNWy" id="6RKU0s8ZaKz" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+        <node concept="VechU" id="6RKU0s8ZaK$" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6RKU0s8QZeL" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="6RKU0s9_JQe" role="6VMZX">
+      <node concept="l2Vlx" id="6RKU0s9_JQf" role="2iSdaV" />
+      <node concept="3F0ifn" id="6RKU0s9_JQg" role="3EZMnx">
+        <property role="3F0ifm" value="line separator:" />
+      </node>
+      <node concept="3F0A7n" id="6RKU0s9_JQi" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="28lk:6RKU0s8Z5Dk" resolve="newLineSeparator" />
+      </node>
+    </node>
+  </node>
 </model>
 

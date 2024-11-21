@@ -2198,5 +2198,31 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="6RKU0s8QXra">
+    <property role="EcuMT" value="7922086861455742666" />
+    <property role="3GE5qa" value="expressions.primary.literal" />
+    <property role="TrG5h" value="MultiLineStringLiteralExpression" />
+    <property role="34LRSv" value="&quot;&quot;&quot;" />
+    <property role="R4oN_" value="multi line string literal" />
+    <ref role="1TJDcQ" node="2kuSLC0kNK3" resolve="LiteralExpression" />
+    <node concept="1TJgyj" id="6RKU0s8QYl0" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861455746368" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2kuSLC0lUpG" resolve="StringLiteralExpression" />
+    </node>
+    <node concept="t5JxF" id="6RKU0s8Z4q5" role="lGtFl">
+      <property role="t5JxN" value="non-ALF literal expression, which a handy new-line String literal" />
+    </node>
+    <node concept="1TJgyi" id="6RKU0s8Z5Dk" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861457873492" />
+      <property role="TrG5h" value="newLineSeparator" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="6RKU0s8Z5Dl" role="lGtFl">
+        <property role="t5JxN" value="the new-line separator used for transformation, default '\n'" />
+      </node>
+    </node>
+  </node>
 </model>
 

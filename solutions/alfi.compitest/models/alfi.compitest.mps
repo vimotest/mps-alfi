@@ -260,6 +260,10 @@
       <concept id="2021446509812382885" name="alfi.structure.FormalParameter" flags="ng" index="3xR696">
         <property id="2021446509812382886" name="direction" index="3xR695" />
       </concept>
+      <concept id="7922086861455742666" name="alfi.structure.MultiLineStringLiteralExpression" flags="ng" index="1_aNVd">
+        <property id="7922086861457873492" name="newLineSeparator" index="1_3b9j" />
+        <child id="7922086861455746368" name="content" index="1_aKP7" />
+      </concept>
       <concept id="6112733486551708929" name="alfi.structure.SequenceExpressionList" flags="ng" index="1Wm7YT">
         <child id="6112733486551708931" name="expression" index="1Wm7YV" />
       </concept>
@@ -910,6 +914,30 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="6RKU0s8ZaC$" role="PCHzz" />
+        <node concept="_jtW9" id="6RKU0s8Zas9" role="PCHzz">
+          <node concept="_uF8j" id="6RKU0s8Zasa" role="_jtWe">
+            <node concept="_vnHb" id="6RKU0s8Zasb" role="_uF8g">
+              <node concept="2RqM1Q" id="6RKU0s8Zasc" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="6RKU0s8Zasd" role="_uFfl">
+              <node concept="1_aNVd" id="6RKU0s8ZaHY" role="_vku1">
+                <property role="1_3b9j" value="\n" />
+                <node concept="_iklQ" id="6RKU0s8ZaHZ" role="1_aKP7">
+                  <property role="_iklR" value="Line1" />
+                </node>
+                <node concept="_iklQ" id="6RKU0s8ZaIN" role="1_aKP7">
+                  <property role="_iklR" value="Line2" />
+                </node>
+                <node concept="_iklQ" id="6RKU0s8ZaJB" role="1_aKP7">
+                  <property role="_iklR" value="Line3" />
                 </node>
               </node>
             </node>
