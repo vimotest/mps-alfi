@@ -8954,6 +8954,10 @@
           <property role="1sVAO0" value="true" />
           <node concept="3clFb_" id="2jVOGaCXEjP" role="jymVt">
             <property role="TrG5h" value="foo_concrete" />
+            <node concept="15s5l7" id="7sJEEFkzKLX" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Method does not override method from its superclass&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4540477783368646804]&quot;;" />
+              <property role="huDt6" value="Error: Method does not override method from its superclass" />
+            </node>
             <node concept="37vLTG" id="2jVOGaCXEjQ" role="3clF46">
               <property role="TrG5h" value="b" />
               <node concept="10P_77" id="2jVOGaCXEjR" role="1tU5fm" />
@@ -9044,6 +9048,22 @@
                         <node concept="3TrEf2" id="2jVOGaCXEkF" role="2OqNvi">
                           <ref role="3Tt5mk" to="28lk:3Ud70gdRyip" resolve="returnParameter" />
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2AHcQZ" id="7sJEEFkyxvk" role="2AJF6D">
+              <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+              <node concept="1W57fq" id="7sJEEFkyyoK" role="lGtFl">
+                <node concept="3IZrLx" id="7sJEEFkyyoL" role="3IZSJc">
+                  <node concept="3clFbS" id="7sJEEFkyyoM" role="2VODD2">
+                    <node concept="3clFbF" id="1CWniaVUdzo" role="3cqZAp">
+                      <node concept="2YIFZM" id="1CWniaVUdLN" role="3clFbG">
+                        <ref role="37wK5l" to="stu:1CWniaVTizW" resolve="isRedefinedOperation" />
+                        <ref role="1Pybhc" to="stu:46wqe1xNYo8" resolve="SpecializationHelper" />
+                        <node concept="30H73N" id="1CWniaVUdMI" role="37wK5m" />
                       </node>
                     </node>
                   </node>
