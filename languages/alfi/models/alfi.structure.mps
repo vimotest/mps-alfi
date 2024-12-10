@@ -1702,6 +1702,22 @@
       <property role="TrG5h" value="direction" />
       <ref role="AX2Wp" node="1KdBIfXPktv" resolve="ParameterDirection" />
     </node>
+    <node concept="1TJgyi" id="6aXgG51PGSy" role="1TKVEl">
+      <property role="IQ2nx" value="7114916384115969570" />
+      <property role="TrG5h" value="isReference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6aXgG51PGSz" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which forces the variable to be a reference in target languages where applicable (e.g., '&amp;' in C++)" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="6aXgG520GQF" role="1TKVEl">
+      <property role="IQ2nx" value="7114916384118853035" />
+      <property role="TrG5h" value="isConst" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6aXgG520GQG" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which forces the variable to be unmodifiable/const in target languages where applicable (e.g., 'const' in C++)" />
+      </node>
+    </node>
   </node>
   <node concept="25R3W" id="1KdBIfXPktv">
     <property role="3F6X1D" value="2021446509812598623" />

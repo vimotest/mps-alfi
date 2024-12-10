@@ -4769,6 +4769,60 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="6aXgG51POki" role="3EZMnx">
+        <property role="3F0ifm" value="const" />
+        <node concept="pkWqt" id="6aXgG51POkj" role="pqm2j">
+          <node concept="3clFbS" id="6aXgG51POkk" role="2VODD2">
+            <node concept="3clFbF" id="6aXgG51POkl" role="3cqZAp">
+              <node concept="2OqwBi" id="6aXgG520J2F" role="3clFbG">
+                <node concept="pncrf" id="6aXgG520I$N" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6aXgG520JzM" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6aXgG520GQF" resolve="isConst" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VSNWy" id="6aXgG51POkp" role="3F10Kt">
+          <property role="1lJzqX" value="7" />
+        </node>
+        <node concept="VechU" id="6aXgG51POkq" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="11L4FC" id="6aXgG51POkr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2SqB2G" id="6aXgG51POks" role="2SqHTX">
+          <property role="TrG5h" value="ignoreTextGenGen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6aXgG520H9f" role="3EZMnx">
+        <property role="3F0ifm" value="reference" />
+        <node concept="pkWqt" id="6aXgG520H9g" role="pqm2j">
+          <node concept="3clFbS" id="6aXgG520H9h" role="2VODD2">
+            <node concept="3clFbF" id="6aXgG520H9i" role="3cqZAp">
+              <node concept="2OqwBi" id="6aXgG520H9j" role="3clFbG">
+                <node concept="pncrf" id="6aXgG520H9k" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6aXgG520H9l" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:6aXgG51PGSy" resolve="isReference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VSNWy" id="6aXgG520H9m" role="3F10Kt">
+          <property role="1lJzqX" value="7" />
+        </node>
+        <node concept="VechU" id="6aXgG520H9n" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="11L4FC" id="6aXgG520H9o" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2SqB2G" id="6aXgG520H9p" role="2SqHTX">
+          <property role="TrG5h" value="ignoreTextGenGen" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="1KdBIfXOvZk" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
@@ -7494,6 +7548,61 @@
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="28lk:6RKU0s8Z5Dk" resolve="newLineSeparator" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6aXgG51PMk_">
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="FormalParameter_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:1KdBIfXOvM_" resolve="FormalParameter" />
+    <node concept="1PE4EZ" id="6aXgG51PNfr" role="1PM95z">
+      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
+    </node>
+    <node concept="3EZMnI" id="6aXgG51PNhb" role="2wV5jI">
+      <node concept="3F0ifn" id="6aXgG51PNhn" role="3EZMnx">
+        <property role="3F0ifm" value="is reference:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="6aXgG51PNho" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6aXgG51PNhp" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6aXgG51PGSy" resolve="isReference" />
+      </node>
+      <node concept="3F0ifn" id="6aXgG51PNhq" role="3EZMnx">
+        <property role="3F0ifm" value="(note: only relevant for target languages with explicit reference type, like '&amp;' in C++)" />
+        <node concept="VechU" id="6aXgG51PNhr" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="VSNWy" id="6aXgG51PNhs" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+        <node concept="Vb9p2" id="6aXgG51PNht" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6aXgG520GQM" role="3EZMnx">
+        <property role="3F0ifm" value="is const:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="6aXgG520GQN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6aXgG520GQL" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:6aXgG520GQF" resolve="isConst" />
+      </node>
+      <node concept="3F0ifn" id="6aXgG520GQH" role="3EZMnx">
+        <property role="3F0ifm" value="(note: only relevant for target languages with const is supported, like 'const' in C++)" />
+        <node concept="VechU" id="6aXgG520GQI" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="VSNWy" id="6aXgG520GQJ" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+        <node concept="Vb9p2" id="6aXgG520GQK" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6aXgG51PNhu" role="2iSdaV" />
     </node>
   </node>
 </model>
