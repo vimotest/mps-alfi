@@ -12318,6 +12318,12 @@
         <ref role="v9R2y" node="1CWniaWjpSd" resolve="reduce_Class.h" />
       </node>
     </node>
+    <node concept="3aamgX" id="6477CZi1xy9" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+      <node concept="j$656" id="6477CZi1xyb" role="1lVwrX">
+        <ref role="v9R2y" node="5jkMFwyRfgK" resolve="reduce_Struct.h" />
+      </node>
+    </node>
     <node concept="3aamgX" id="1CWniaWk4_l" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:3_puicMj8j7" resolve="EnumerationDefinition" />
       <node concept="j$656" id="1CWniaWk4_m" role="1lVwrX">
