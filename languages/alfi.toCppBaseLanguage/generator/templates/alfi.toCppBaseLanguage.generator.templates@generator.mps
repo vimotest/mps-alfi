@@ -1228,19 +1228,19 @@
         <node concept="3clFbS" id="38oQBiSlUdH" role="2VODD2">
           <node concept="3clFbF" id="38oQBiSlUdL" role="3cqZAp">
             <node concept="1Wc70l" id="5jkMFwyQLv9" role="3clFbG">
-              <node concept="3fqX7Q" id="5jkMFwyGgIJ" role="3uHU7w">
-                <node concept="2OqwBi" id="5jkMFwyGgIL" role="3fr31v">
-                  <node concept="30H73N" id="5jkMFwyGgIM" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="5jkMFwyGgIN" role="2OqNvi">
-                    <ref role="37wK5l" to="bqjt:5jkMFwygPWV" resolve="isNestedInClassLikeClassifierDefinition" />
-                  </node>
-                </node>
-              </node>
               <node concept="3fqX7Q" id="38oQBiSlUdN" role="3uHU7B">
                 <node concept="2OqwBi" id="38oQBiSlUdO" role="3fr31v">
                   <node concept="30H73N" id="38oQBiSlUdP" role="2Oq$k0" />
                   <node concept="3TrcHB" id="38oQBiSlUdQ" role="2OqNvi">
                     <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="5jkMFwyGgIJ" role="3uHU7w">
+                <node concept="2OqwBi" id="5jkMFwyGgIL" role="3fr31v">
+                  <node concept="30H73N" id="5jkMFwyGgIM" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5jkMFwyGgIN" role="2OqNvi">
+                    <ref role="37wK5l" to="bqjt:5jkMFwygPWV" resolve="isNestedInClassLikeClassifierDefinition" />
                   </node>
                 </node>
               </node>
@@ -12485,16 +12485,16 @@
         <node concept="3clFbS" id="38oQBiSAx67" role="2VODD2">
           <node concept="3clFbF" id="38oQBiSAx68" role="3cqZAp">
             <node concept="1Wc70l" id="38oQBiSAx69" role="3clFbG">
+              <node concept="2YIFZM" id="38oQBiSAx6d" role="3uHU7B">
+                <ref role="37wK5l" to="stu:37zNn5Lm0yI" resolve="needsSpecialTestGeneration" />
+                <ref role="1Pybhc" to="stu:37zNn5Lm0u6" resolve="TestGenerationHelper" />
+                <node concept="30H73N" id="38oQBiSAx6e" role="37wK5m" />
+              </node>
               <node concept="2OqwBi" id="38oQBiSAx6a" role="3uHU7w">
                 <node concept="30H73N" id="38oQBiSAx6b" role="2Oq$k0" />
                 <node concept="2qgKlT" id="38oQBiSAx6c" role="2OqNvi">
                   <ref role="37wK5l" to="bqjt:7tDI0mP2wi_" resolve="isRootOfUnit" />
                 </node>
-              </node>
-              <node concept="2YIFZM" id="38oQBiSAx6d" role="3uHU7B">
-                <ref role="37wK5l" to="stu:37zNn5Lm0yI" resolve="needsSpecialTestGeneration" />
-                <ref role="1Pybhc" to="stu:37zNn5Lm0u6" resolve="TestGenerationHelper" />
-                <node concept="30H73N" id="38oQBiSAx6e" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -12515,11 +12515,18 @@
       <node concept="30G5F_" id="1CWniaWka2r" role="30HLyM">
         <node concept="3clFbS" id="1CWniaWka2s" role="2VODD2">
           <node concept="3clFbF" id="1CWniaWka2W" role="3cqZAp">
-            <node concept="3fqX7Q" id="1CWniaWka2Y" role="3clFbG">
-              <node concept="2YIFZM" id="1CWniaWka2Z" role="3fr31v">
-                <ref role="37wK5l" to="stu:7lsupuWk_N_" resolve="isInterface" />
-                <ref role="1Pybhc" to="stu:46wqe1xNYo8" resolve="SpecializationHelper" />
-                <node concept="30H73N" id="1CWniaWka30" role="37wK5m" />
+            <node concept="1Wc70l" id="J7oo22sclg" role="3clFbG">
+              <node concept="3fqX7Q" id="1CWniaWka2Y" role="3uHU7B">
+                <node concept="2YIFZM" id="1CWniaWka2Z" role="3fr31v">
+                  <ref role="37wK5l" to="stu:7lsupuWk_N_" resolve="isInterface" />
+                  <ref role="1Pybhc" to="stu:46wqe1xNYo8" resolve="SpecializationHelper" />
+                  <node concept="30H73N" id="1CWniaWka30" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="3a2LbIbVE1C" role="3uHU7w">
+                <ref role="37wK5l" to="ow8f:3a2LbIbV$$l" resolve="shouldGenerateSourceFile" />
+                <ref role="1Pybhc" to="ow8f:3a2LbIbV$zf" resolve="CppSourceFileHelper" />
+                <node concept="30H73N" id="3a2LbIbVErf" role="37wK5m" />
               </node>
             </node>
           </node>
