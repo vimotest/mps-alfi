@@ -23,6 +23,7 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="3120704408893095330" name="alfi.structure.ClassDefinition" flags="ng" index="6nSm2" />
       <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt">
         <child id="3331415707833704702" name="comment" index="2AFz0h" />
       </concept>
@@ -1951,6 +1952,97 @@
           <node concept="3oM_SD" id="2SV$eY8tAyX" role="1PaTwD">
             <property role="3oM_SC" value="supported" />
           </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8Li" role="PCHHv">
+        <property role="TrG5h" value="Collection" />
+        <node concept="2Aju2r" id="4xrdFydR8Ns" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8NF" role="PCHHv">
+        <property role="TrG5h" value="Set" />
+        <node concept="2Aju2r" id="4xrdFydR8NG" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR8Oz" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR8O$" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8Li" resolve="Collection" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8P8" role="PCHHv">
+        <property role="TrG5h" value="OrderedSet" />
+        <node concept="2Aju2r" id="4xrdFydR8P9" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR8Pa" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR8Pb" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8NF" resolve="Set" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8RL" role="PCHHv">
+        <property role="TrG5h" value="Bag" />
+        <node concept="2Aju2r" id="4xrdFydR8RM" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR8RN" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR8RO" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8Li" resolve="Collection" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8VO" role="PCHHv">
+        <property role="TrG5h" value="List" />
+        <node concept="2Aju2r" id="4xrdFydR8VP" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR8VQ" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR8VR" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8RL" resolve="Bag" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR8Yt" role="PCHHv">
+        <property role="TrG5h" value="Queue" />
+        <node concept="2Aju2r" id="4xrdFydR8Yu" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR8Yv" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR8Yw" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8Li" resolve="Collection" />
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="4xrdFydR91B" role="PCHHv">
+        <property role="TrG5h" value="Dequeue" />
+        <node concept="2Aju2r" id="4xrdFydR91C" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="4xrdFydR91D" role="3x6$oQ">
+          <node concept="2RqM1Q" id="4xrdFydR91E" role="_vnH8">
+            <ref role="2RqM1R" node="4xrdFydR8Yt" resolve="Queue" />
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="4xrdFydR8NE" role="PCHHv" />
+      <node concept="6nSm2" id="4xrdFydR8Mn" role="PCHHv">
+        <property role="TrG5h" value="Map" />
+        <node concept="2Aju2r" id="4xrdFydR8Mo" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="Key" />
+        </node>
+        <node concept="2Aju2r" id="4xrdFydR8Mp" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="Value" />
         </node>
       </node>
     </node>
