@@ -38,6 +38,7 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -368,6 +369,13 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7qCenb1KL$4" resolve="NameReference" />
     </node>
+    <node concept="1TJgyj" id="4xrdFydVgPo" role="1TKVEi">
+      <property role="IQ2ns" value="5213821159894486360" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nameBinding" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kuSLC0oTxk" resolve="NameBinding" />
+    </node>
     <node concept="PrWs8" id="6OepWIVoPpF" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -385,6 +393,12 @@
       <property role="20kJfa" value="nameRef" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4xrdFydVgSq" role="1TKVEi">
+      <property role="IQ2ns" value="5213821159894486554" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="templateBinding" />
+      <ref role="20lvS9" node="4xrdFydVgSh" resolve="TemplateBinding" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kuSLC0oUio">
@@ -1396,6 +1410,10 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
     </node>
+    <node concept="asaX9" id="4xrdFydVgPj" role="lGtFl" />
+    <node concept="t5JxF" id="4xrdFydVgPk" role="lGtFl">
+      <property role="t5JxN" value="Use NameBinding, AlfNamedConceptReference is not in ALF standard" />
+    </node>
   </node>
   <node concept="25R3W" id="6OepWIVA92D">
     <property role="3F6X1D" value="7858332524531454121" />
@@ -2238,6 +2256,27 @@
       <node concept="t5JxF" id="6RKU0s8Z5Dl" role="lGtFl">
         <property role="t5JxN" value="the new-line separator used for transformation, default '\n'" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4xrdFydVgSh">
+    <property role="EcuMT" value="5213821159894486545" />
+    <property role="3GE5qa" value="expressions.names.template" />
+    <property role="TrG5h" value="TemplateBinding" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2SMO68r_I0M" resolve="SyntaxElement" />
+  </node>
+  <node concept="1TIwiD" id="4xrdFydVgSk">
+    <property role="EcuMT" value="5213821159894486548" />
+    <property role="3GE5qa" value="expressions.names.template" />
+    <property role="TrG5h" value="PositionalTemplateBinding" />
+    <property role="34LRSv" value="&lt;T&gt;" />
+    <ref role="1TJDcQ" node="4xrdFydVgSh" resolve="TemplateBinding" />
+    <node concept="1TJgyj" id="4xrdFydVgSn" role="1TKVEi">
+      <property role="IQ2ns" value="5213821159894486551" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="argumentName" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
     </node>
   </node>
 </model>

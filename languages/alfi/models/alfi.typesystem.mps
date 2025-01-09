@@ -5030,5 +5030,36 @@
       <ref role="1YaFvo" to="28lk:6LCMmpRdR$2" resolve="SequenceAccessExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4xrdFydVcoW">
+    <property role="TrG5h" value="typeof_NameBinding" />
+    <property role="3GE5qa" value="expressions.names" />
+    <node concept="3clFbS" id="4xrdFydVcoX" role="18ibNy">
+      <node concept="1Z5TYs" id="4xrdFydVcIR" role="3cqZAp">
+        <node concept="mw_s8" id="4xrdFydVcJ3" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4xrdFydVcIZ" role="mwGJk">
+            <node concept="2OqwBi" id="4xrdFydVcRv" role="1Z2MuG">
+              <node concept="1YBJjd" id="4xrdFydVcJh" role="2Oq$k0">
+                <ref role="1YBMHb" node="4xrdFydVcoZ" resolve="nameBinding" />
+              </node>
+              <node concept="3TrEf2" id="4xrdFydVeGj" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4xrdFydVcIU" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4xrdFydVcpX" role="mwGJk">
+            <node concept="1YBJjd" id="4xrdFydVcrO" role="1Z2MuG">
+              <ref role="1YBMHb" node="4xrdFydVcoZ" resolve="nameBinding" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4xrdFydVcoZ" role="1YuTPh">
+      <property role="TrG5h" value="nameBinding" />
+      <ref role="1YaFvo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
+    </node>
+  </node>
 </model>
 
