@@ -203,15 +203,15 @@
     <node concept="3Tm1VV" id="2drrmxNCft3" role="1B3o_S" />
     <node concept="3tTeZs" id="2drrmxNCft4" role="jymVt">
       <property role="3tTeZt" value="&lt;no execute after&gt;" />
-      <ref role="3tTeZr" to="slm6:7ay_HjIMt1a" />
+      <ref role="3tTeZr" to="slm6:7ay_HjIMt1a" resolve="execute after" />
     </node>
     <node concept="3tTeZs" id="2drrmxNCft5" role="jymVt">
       <property role="3tTeZt" value="&lt;no required data&gt;" />
-      <ref role="3tTeZr" to="slm6:5TUCQr2FPTh" />
+      <ref role="3tTeZr" to="slm6:5TUCQr2FPTh" resolve="requires annotation data" />
     </node>
     <node concept="3tTeZs" id="2drrmxNCft6" role="jymVt">
       <property role="3tTeZt" value="&lt;no produced data&gt;" />
-      <ref role="3tTeZr" to="slm6:5TUCQr2C271" />
+      <ref role="3tTeZr" to="slm6:5TUCQr2C271" resolve="produces annotation data" />
     </node>
     <node concept="2tJIrI" id="2drrmxNCft7" role="jymVt" />
     <node concept="3tYpMH" id="2drrmxNCft8" role="jymVt">
@@ -241,7 +241,7 @@
                         <ref role="3cqZAo" node="2drrmxNCEXC" resolve="qualifiedName" />
                       </node>
                       <node concept="3Tsc0h" id="2drrmxNCUIl" role="2OqNvi">
-                        <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" />
+                        <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" resolve="names" />
                       </node>
                     </node>
                     <node concept="2es0OD" id="2drrmxND6Cg" role="2OqNvi">
@@ -408,7 +408,7 @@
                                   <ref role="3cqZAo" node="2drrmxND6Ck" resolve="it" />
                                 </node>
                                 <node concept="3TrEf2" id="2drrmxNDWx5" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" />
+                                  <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="2drrmxNDIX4" role="37vLTJ">
@@ -416,7 +416,7 @@
                                   <ref role="3cqZAo" node="2drrmxNDoBf" resolve="nameBinding" />
                                 </node>
                                 <node concept="3TrEf2" id="2drrmxNDL_Q" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                                  <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                 </node>
                               </node>
                             </node>

@@ -356,7 +356,7 @@
                       <node concept="2OqwBi" id="4SovtwKT5dg" role="1m5AlR">
                         <node concept="2OqwBi" id="4SovtwKT5dh" role="2Oq$k0">
                           <node concept="3TrEf2" id="4SovtwKT5di" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:6cBsaQxenbj" />
+                            <ref role="3Tt5mk" to="28lk:6cBsaQxenbj" resolve="expression" />
                           </node>
                           <node concept="30H73N" id="4SovtwKT5dj" role="2Oq$k0" />
                         </node>

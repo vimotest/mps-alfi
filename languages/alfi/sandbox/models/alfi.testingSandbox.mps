@@ -695,7 +695,7 @@
               <node concept="_uYbk" id="f$GqqjTcqz" role="_vku1">
                 <node concept="_vnHb" id="f$GqqjTcq$" role="_uYbl">
                   <node concept="2RqM1Q" id="f$GqqjTcq_" role="_vnH8">
-                    <ref role="2RqM1R" node="f$GqqjTcqq" resolve="valueInt" />
+                    <ref role="2RqM1R" node="f$GqqjTcqq" resolve="optionalBool" />
                   </node>
                 </node>
               </node>

@@ -2755,7 +2755,7 @@
                 <ref role="3cqZAo" node="5jkMFwvE9Z0" resolve="unit" />
               </node>
               <node concept="3TrEf2" id="5jkMFwvQjve" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:6OepWIVJVYW" />
+                <ref role="3Tt5mk" to="28lk:6OepWIVJVYW" resolve="namespaceDeclaration" />
               </node>
             </node>
           </node>
@@ -2955,7 +2955,7 @@
                 <ref role="3cqZAo" node="GirOujtXCc" resolve="packageUnit" />
               </node>
               <node concept="3TrEf2" id="GirOujtZh3" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:6OepWIVJVYY" />
+                <ref role="3Tt5mk" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
               </node>
             </node>
           </node>
@@ -3071,7 +3071,7 @@
                     <ref role="3cqZAo" node="1KdBIfWqi3Y" resolve="nameReference" />
                   </node>
                   <node concept="3TrEf2" id="1KdBIfWqimm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" />
+                    <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
                   </node>
                 </node>
               </node>
@@ -3083,7 +3083,7 @@
                     <ref role="3cqZAo" node="1KdBIfWq4f1" resolve="containingNamespace" />
                   </node>
                   <node concept="3Tsc0h" id="1KdBIfWqaQI" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" />
+                    <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" resolve="names" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="1KdBIfWqjEV" role="2OqNvi">
@@ -3145,7 +3145,7 @@
                 <ref role="3cqZAo" node="1KdBIfWqnvr" resolve="result" />
               </node>
               <node concept="3TrEf2" id="1KdBIfWqoha" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:4jcHaHwBAYS" />
+                <ref role="3Tt5mk" to="28lk:4jcHaHwBAYS" resolve="namespace" />
               </node>
             </node>
           </node>

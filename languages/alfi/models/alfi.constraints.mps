@@ -626,7 +626,7 @@
           <node concept="17R0WA" id="6LCMmpSxxhc" role="3clFbw">
             <node concept="359W_D" id="6LCMmpSxxhd" role="3uHU7w">
               <ref role="359W_E" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              <ref role="359W_F" to="tpck:4uZwTti3__2" />
+              <ref role="359W_F" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
             <node concept="2DA6wF" id="6LCMmpSxxhe" role="3uHU7B" />
           </node>
@@ -704,7 +704,7 @@
           <node concept="17R0WA" id="6LCMmpSxCQm" role="3clFbw">
             <node concept="359W_D" id="6LCMmpSxCQn" role="3uHU7w">
               <ref role="359W_E" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              <ref role="359W_F" to="tpck:4uZwTti3__2" />
+              <ref role="359W_F" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
             <node concept="2DA6wF" id="6LCMmpSxCQo" role="3uHU7B" />
           </node>
@@ -1331,7 +1331,7 @@
             <node concept="2DA6wF" id="6LCMmpSnKK2" role="3uHU7B" />
             <node concept="359W_D" id="6LCMmpSnOkS" role="3uHU7w">
               <ref role="359W_E" to="28lk:3_puicMj8j7" resolve="EnumerationDefinition" />
-              <ref role="359W_F" to="28lk:2SMO68r$0GX" />
+              <ref role="359W_F" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
             </node>
           </node>
         </node>
