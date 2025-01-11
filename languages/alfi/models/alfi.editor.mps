@@ -1355,7 +1355,7 @@
     <ref role="1XX52x" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
     <node concept="3F2HdR" id="2kuSLC0oTxw" role="2wV5jI">
       <property role="2czwfO" value="::" />
-      <ref role="1NtTu8" to="28lk:4xrdFydVgPo" />
+      <ref role="1NtTu8" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
       <node concept="2iRfu4" id="2kuSLC0oTxy" role="2czzBx" />
       <node concept="tppnM" id="2kuSLC0oTxJ" role="sWeuL">
         <ref role="1k5W1q" to="tpen:hFDnyG9" resolve="Dot" />
@@ -1364,7 +1364,7 @@
     <node concept="3EZMnI" id="4xrdFye9oHM" role="6VMZX">
       <node concept="l2Vlx" id="4xrdFye9oHN" role="2iSdaV" />
       <node concept="3F2HdR" id="4xrdFye9oHO" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:2kuSLC0oTxi" />
+        <ref role="1NtTu8" to="28lk:2kuSLC0oTxi" resolve="names" />
         <node concept="l2Vlx" id="4xrdFye9oHP" role="2czzBx" />
       </node>
     </node>
