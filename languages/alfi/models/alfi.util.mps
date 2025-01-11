@@ -1902,7 +1902,7 @@
     </node>
     <node concept="2tJIrI" id="7GHN9f$Q3GH" role="jymVt" />
     <node concept="2YIFZL" id="1KdBIfXz175" role="jymVt">
-      <property role="TrG5h" value="makeNameReference" />
+      <property role="TrG5h" value="makeNameBinding" />
       <node concept="3clFbS" id="1KdBIfXz177" role="3clF47">
         <node concept="1gVbGN" id="1KdBIfXz178" role="3cqZAp">
           <node concept="2OqwBi" id="1KdBIfXz179" role="1gVkn0">
@@ -1928,7 +1928,7 @@
               </node>
               <node concept="3cpWs3" id="37zNn5L27U1" role="3uHU7B">
                 <node concept="Xl_RD" id="37zNn5L1U09" role="3uHU7B">
-                  <property role="Xl_RC" value="makeNameReference: target==null, did you import alfStandardModelLibrary in model '" />
+                  <property role="Xl_RC" value="makeNameBinding: target==null, did you import alfStandardModelLibrary in model '" />
                 </node>
                 <node concept="2OqwBi" id="37zNn5L2e1e" role="3uHU7w">
                   <node concept="37vLTw" id="37zNn5L2cVX" role="2Oq$k0">
@@ -1948,7 +1948,7 @@
               <node concept="3cpWs3" id="37zNn5L1lyF" role="3uHU7B">
                 <node concept="3cpWs3" id="37zNn5L1gUr" role="3uHU7B">
                   <node concept="Xl_RD" id="37zNn5L1cOA" role="3uHU7B">
-                    <property role="Xl_RC" value="cannot make NameReference for target: " />
+                    <property role="Xl_RC" value="cannot make NameBinding for target: " />
                   </node>
                   <node concept="2OqwBi" id="37zNn5L1i_J" role="3uHU7w">
                     <node concept="37vLTw" id="37zNn5L1hKN" role="2Oq$k0">
@@ -1968,12 +1968,12 @@
           <node concept="3cpWsn" id="1KdBIfXz17e" role="3cpWs9">
             <property role="TrG5h" value="node" />
             <node concept="3Tqbb2" id="1KdBIfXz17f" role="1tU5fm">
-              <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+              <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
             </node>
             <node concept="2ShNRf" id="1KdBIfXz17g" role="33vP2m">
               <node concept="3zrR0B" id="1KdBIfXz17h" role="2ShVmc">
                 <node concept="3Tqbb2" id="1KdBIfXz17i" role="3zrR0E">
-                  <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+                  <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                 </node>
               </node>
             </node>
@@ -1995,7 +1995,7 @@
                 <ref role="3cqZAo" node="1KdBIfXz17e" resolve="node" />
               </node>
               <node concept="3TrEf2" id="1KdBIfXz17q" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
+                <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
               </node>
             </node>
           </node>
@@ -2007,7 +2007,7 @@
                 <ref role="3cqZAo" node="1KdBIfXz17e" resolve="node" />
               </node>
               <node concept="3TrEf2" id="3_DBZqKhZ5V" role="2OqNvi">
-                <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
+                <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
               </node>
             </node>
             <node concept="3x8VRR" id="3_DBZqKi0kv" role="2OqNvi" />
@@ -2044,7 +2044,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="1KdBIfXz17u" role="3clF45">
-        <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+        <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
       </node>
       <node concept="37vLTG" id="1KdBIfXz17v" role="3clF46">
         <property role="TrG5h" value="target" />
@@ -2216,7 +2216,7 @@
                 <ref role="3cqZAo" node="US4hClKx00" resolve="name" />
               </node>
               <node concept="3Tsc0h" id="US4hClKx0a" role="2OqNvi">
-                <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" resolve="names" />
+                <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
               </node>
             </node>
             <node concept="TSZUe" id="US4hClKx0b" role="2OqNvi">
@@ -2261,7 +2261,7 @@
                     <ref role="3cqZAo" node="US4hClKx00" resolve="name" />
                   </node>
                   <node concept="3Tsc0h" id="US4hClKx0s" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" resolve="names" />
+                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="US4hClKx0t" role="2OqNvi">
@@ -2293,7 +2293,7 @@
                           </node>
                           <node concept="359W_D" id="US4hClKx0D" role="37wK5m">
                             <ref role="359W_E" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
-                            <ref role="359W_F" to="28lk:2kuSLC0oTxi" resolve="names" />
+                            <ref role="359W_F" to="28lk:4xrdFydVgPo" />
                           </node>
                           <node concept="37vLTw" id="US4hClKx0E" role="37wK5m">
                             <ref role="3cqZAo" node="US4hClKx0F" resolve="i" />

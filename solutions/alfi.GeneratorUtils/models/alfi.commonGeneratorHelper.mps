@@ -3050,12 +3050,12 @@
               <node concept="3cpWsn" id="1KdBIfWqi3Y" role="3cpWs9">
                 <property role="TrG5h" value="nameReference" />
                 <node concept="3Tqbb2" id="1KdBIfWqi1T" role="1tU5fm">
-                  <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+                  <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                 </node>
                 <node concept="2ShNRf" id="1KdBIfWqi3Z" role="33vP2m">
                   <node concept="3zrR0B" id="1KdBIfWqi40" role="2ShVmc">
                     <node concept="3Tqbb2" id="1KdBIfWqi41" role="3zrR0E">
-                      <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+                      <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                     </node>
                   </node>
                 </node>
@@ -3071,7 +3071,7 @@
                     <ref role="3cqZAo" node="1KdBIfWqi3Y" resolve="nameReference" />
                   </node>
                   <node concept="3TrEf2" id="1KdBIfWqimm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
+                    <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
                   </node>
                 </node>
               </node>
@@ -3083,7 +3083,7 @@
                     <ref role="3cqZAo" node="1KdBIfWq4f1" resolve="containingNamespace" />
                   </node>
                   <node concept="3Tsc0h" id="1KdBIfWqaQI" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:2kuSLC0oTxi" resolve="names" />
+                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="1KdBIfWqjEV" role="2OqNvi">
