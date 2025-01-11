@@ -779,7 +779,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="5jkMFwxjPVl" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                   </node>
                 </node>
                 <node concept="3$u5V9" id="5jkMFwxjPVm" role="2OqNvi">
@@ -792,7 +792,7 @@
                               <ref role="3cqZAo" node="5jkMFwxjPVv" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="5jkMFwxjPVt" role="2OqNvi">
-                              <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                              <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="5jkMFwxjPVu" role="2OqNvi">

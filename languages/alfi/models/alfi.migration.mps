@@ -365,7 +365,7 @@
                                             </node>
                                             <node concept="359W_D" id="3$LKQbDWIGx" role="3uHU7w">
                                               <ref role="359W_E" to="28lk:7qCenb1KL$4" resolve="NameReference" />
-                                              <ref role="359W_F" to="28lk:7qCenb1KL$5" />
+                                              <ref role="359W_F" to="28lk:7qCenb1KL$5" resolve="target" />
                                             </node>
                                           </node>
                                           <node concept="3clFbS" id="3$LKQbDX8t8" role="3clFbx">
@@ -378,7 +378,7 @@
                                                   <ref role="37wK5l" to="tpcu:6Gg5KlvuxxF" resolve="setLink" />
                                                   <node concept="359W_D" id="3$LKQbDXFEs" role="37wK5m">
                                                     <ref role="359W_E" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
-                                                    <ref role="359W_F" to="28lk:3m3bKNZGB$m" />
+                                                    <ref role="359W_F" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                                   </node>
                                                 </node>
                                               </node>

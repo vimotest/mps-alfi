@@ -2,7 +2,7 @@
 <model ref="r:66d0990f-87f7-461c-9c14-b2fa12592aab(alfi.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
   </languages>
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
@@ -38,7 +38,10 @@
         <child id="2674824929519882447" name="tuple" index="_uFfl" />
       </concept>
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
-        <child id="2674824929519835218" name="names" index="_vnH8" />
+        <child id="5213821159894486360" name="nameBinding" index="35HzJw" />
+      </concept>
+      <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
+        <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
       <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
         <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
@@ -55,9 +58,6 @@
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
-      </concept>
-      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
-        <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
       <concept id="7144803224899245198" name="alfi.structure.AssignmentExpression" flags="ng" index="3122gz">
         <property id="7144803224899377876" name="operator" index="315yDT" />
@@ -118,8 +118,8 @@
             <property role="32T38g" value="1" />
           </node>
           <node concept="3xHE8C" id="4Vswoj0ERYD" role="327w9S">
-            <node concept="2RqM1Q" id="4Vswoj0ERYF" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            <node concept="_vnHe" id="4Vswoj0ERYF" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
         </node>
@@ -127,8 +127,8 @@
           <node concept="3122gz" id="4Vswoj0ERY1" role="_jtWe">
             <node concept="3122r3" id="4Vswoj0ERY3" role="315$Eb">
               <node concept="_vnHb" id="4Vswoj0ERY5" role="3122r2">
-                <node concept="2RqM1Q" id="4Vswoj0ERY7" role="_vnH8">
-                  <ref role="2RqM1R" node="3Ligvcm1gx6" resolve="b" />
+                <node concept="_vnHe" id="4Vswoj0ERY7" role="35HzJw">
+                  <ref role="3acloq" node="3Ligvcm1gx6" resolve="b" />
                 </node>
               </node>
             </node>
@@ -142,8 +142,8 @@
             <property role="315yDT" value="6cBsaQygTbN/PlusCompoundAssignment" />
             <node concept="3122r3" id="4Vswoj0ES0I" role="315$Eb">
               <node concept="_vnHb" id="4Vswoj0ES0K" role="3122r2">
-                <node concept="2RqM1Q" id="4Vswoj0ES0M" role="_vnH8">
-                  <ref role="2RqM1R" node="3Ligvcm1gx6" resolve="b" />
+                <node concept="_vnHe" id="4Vswoj0ES0M" role="35HzJw">
+                  <ref role="3acloq" node="3Ligvcm1gx6" resolve="b" />
                 </node>
               </node>
             </node>
@@ -157,8 +157,8 @@
             <property role="315yDT" value="6cBsaQygTbU/MultiplicationCompoundAssignment" />
             <node concept="3122r3" id="4Vswoj0ES2k" role="315$Eb">
               <node concept="_vnHb" id="4Vswoj0ES2m" role="3122r2">
-                <node concept="2RqM1Q" id="4Vswoj0ES2o" role="_vnH8">
-                  <ref role="2RqM1R" node="3Ligvcm1gx6" resolve="b" />
+                <node concept="_vnHe" id="4Vswoj0ES2o" role="35HzJw">
+                  <ref role="3acloq" node="3Ligvcm1gx6" resolve="b" />
                 </node>
               </node>
             </node>
@@ -177,17 +177,17 @@
         <property role="3xR695" value="3Ud70gdvRyt/return" />
         <property role="TrG5h" value="__return__" />
         <node concept="3xHE8C" id="3LigvclWGAm" role="3xMlr6">
-          <node concept="2RqM1Q" id="3LigvclWGAo" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfUD" resolve="Alf" />
+          <node concept="_vnHe" id="3LigvclWGAo" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfUD" resolve="Alf" />
           </node>
-          <node concept="2RqM1Q" id="3LigvclWGBq" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfUK" resolve="Library" />
+          <node concept="_vnHe" id="3LigvclWGBq" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfUK" resolve="Library" />
           </node>
-          <node concept="2RqM1Q" id="3LigvclWGBI" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+          <node concept="_vnHe" id="3LigvclWGBI" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
           </node>
-          <node concept="2RqM1Q" id="3LigvclWGC3" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+          <node concept="_vnHe" id="3LigvclWGC3" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
           </node>
         </node>
       </node>
@@ -212,8 +212,8 @@
                 <property role="32T38g" value="1" />
               </node>
               <node concept="3xHE8C" id="7GHN9f$Q44o" role="327w9S">
-                <node concept="2RqM1Q" id="7GHN9f$Q44q" role="_vnH8">
-                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="_vnHe" id="7GHN9f$Q44q" role="35HzJw">
+                  <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
                 </node>
               </node>
             </node>
@@ -225,8 +225,8 @@
                     <property role="32T38g" value="2" />
                   </node>
                   <node concept="3xHE8C" id="3LigvclY9tx" role="327w9S">
-                    <node concept="2RqM1Q" id="3LigvclY9tz" role="_vnH8">
-                      <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                    <node concept="_vnHe" id="3LigvclY9tz" role="35HzJw">
+                      <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
                     </node>
                   </node>
                 </node>
@@ -235,25 +235,25 @@
             <node concept="_jtW9" id="3LigvclY9vA" role="PCHzz">
               <node concept="_uF8j" id="3LigvclY9vu" role="_jtWe">
                 <node concept="_vnHb" id="3LigvclY9vw" role="_uF8g">
-                  <node concept="2RqM1Q" id="3LigvclY9vy" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  <node concept="_vnHe" id="3LigvclY9vy" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
                   </node>
                 </node>
                 <node concept="_vku0" id="3LigvclY9v$" role="_uFfl">
                   <node concept="_uF8j" id="3LigvclY9yc" role="_vku1">
                     <node concept="_vnHb" id="3LigvclY9yd" role="_uF8g">
-                      <node concept="2RqM1Q" id="3LigvclY9ye" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                      <node concept="_vnHe" id="3LigvclY9ye" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
                       </node>
-                      <node concept="2RqM1Q" id="3LigvclY9yO" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                      <node concept="_vnHe" id="3LigvclY9yO" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
                       </node>
                     </node>
                     <node concept="_vku0" id="3LigvclY9yf" role="_uFfl">
                       <node concept="_uYbk" id="3LigvclY9z6" role="_vku1">
                         <node concept="_vnHb" id="3LigvclY9z7" role="_uYbl">
-                          <node concept="2RqM1Q" id="3LigvclY9z8" role="_vnH8">
-                            <ref role="2RqM1R" node="7GHN9f$Q44g" resolve="a" />
+                          <node concept="_vnHe" id="3LigvclY9z8" role="35HzJw">
+                            <ref role="3acloq" node="7GHN9f$Q44g" resolve="a" />
                           </node>
                         </node>
                       </node>
@@ -265,25 +265,25 @@
             <node concept="_jtW9" id="3LigvclY9zr" role="PCHzz">
               <node concept="_uF8j" id="3LigvclY9zs" role="_jtWe">
                 <node concept="_vnHb" id="3LigvclY9zt" role="_uF8g">
-                  <node concept="2RqM1Q" id="3LigvclY9zu" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                  <node concept="_vnHe" id="3LigvclY9zu" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
                   </node>
                 </node>
                 <node concept="_vku0" id="3LigvclY9zv" role="_uFfl">
                   <node concept="_uF8j" id="3LigvclY9zw" role="_vku1">
                     <node concept="_vnHb" id="3LigvclY9zx" role="_uF8g">
-                      <node concept="2RqM1Q" id="3LigvclY9zy" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
+                      <node concept="_vnHe" id="3LigvclY9zy" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:7GHN9f$Q481" resolve="IntegerFunctions" />
                       </node>
-                      <node concept="2RqM1Q" id="3LigvclY9zz" role="_vnH8">
-                        <ref role="2RqM1R" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+                      <node concept="_vnHe" id="3LigvclY9zz" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
                       </node>
                     </node>
                     <node concept="_vku0" id="3LigvclY9z$" role="_uFfl">
                       <node concept="_uYbk" id="3LigvclY9z_" role="_vku1">
                         <node concept="_vnHb" id="3LigvclY9zA" role="_uYbl">
-                          <node concept="2RqM1Q" id="3LigvclY9Aj" role="_vnH8">
-                            <ref role="2RqM1R" node="3LigvclY9tp" resolve="b" />
+                          <node concept="_vnHe" id="3LigvclY9Aj" role="35HzJw">
+                            <ref role="3acloq" node="3LigvclY9tp" resolve="b" />
                           </node>
                         </node>
                       </node>
@@ -327,8 +327,8 @@
     </node>
     <node concept="3mGtyY" id="7GHN9f$BVWC" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f$BVWD" role="$kHGj">
-        <node concept="2RqM1Q" id="7GHN9f$BVWE" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
+        <node concept="_vnHe" id="7GHN9f$BVWE" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
       </node>
     </node>
@@ -345,8 +345,8 @@
             <property role="32T38g" value="1" />
           </node>
           <node concept="3xHE8C" id="7GHN9f$MwVy" role="327w9S">
-            <node concept="2RqM1Q" id="7GHN9f$MwV$" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="_vnHe" id="7GHN9f$MwV$" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             </node>
           </node>
         </node>
@@ -356,8 +356,8 @@
             <property role="_iklR" value="asd" />
           </node>
           <node concept="3xHE8C" id="7GHN9f$OKVD" role="327w9S">
-            <node concept="2RqM1Q" id="7GHN9f$OKVF" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="7GHN9f$OKVF" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -365,11 +365,11 @@
     </node>
     <node concept="3mGtyY" id="7GHN9f$BVWT" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f$BVWQ" role="$kHGj">
-        <node concept="2RqM1Q" id="7GHN9f$BVWR" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
+        <node concept="_vnHe" id="7GHN9f$BVWR" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
-        <node concept="2RqM1Q" id="7GHN9f_xxza" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
+        <node concept="_vnHe" id="7GHN9f_xxza" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f$BVWI" resolve="Test2a" />
         </node>
       </node>
     </node>
@@ -382,11 +382,11 @@
     </node>
     <node concept="3mGtyY" id="7GHN9f_96RE" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f_96RB" role="$kHGj">
-        <node concept="2RqM1Q" id="7GHN9f_96RC" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
+        <node concept="_vnHe" id="7GHN9f_96RC" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f$BVWx" resolve="TestVariableAndWriteLine" />
         </node>
-        <node concept="2RqM1Q" id="7GHN9f_96RD" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
+        <node concept="_vnHe" id="7GHN9f_96RD" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f$BVWI" resolve="Test2a" />
         </node>
       </node>
     </node>
@@ -410,8 +410,8 @@
                 <property role="32T38g" value="1" />
               </node>
               <node concept="3xHE8C" id="7X0jqo9zn7q" role="327w9S">
-                <node concept="2RqM1Q" id="7X0jqo9zn7s" role="_vnH8">
-                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="_vnHe" id="7X0jqo9zn7s" role="35HzJw">
+                  <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
                 </node>
               </node>
             </node>
@@ -431,8 +431,8 @@
     </node>
     <node concept="3mGtyY" id="2X39vz3bZzx" role="3mGtxR">
       <node concept="_vnHb" id="2X39vz3bZzv" role="$kHGj">
-        <node concept="2RqM1Q" id="2X39vz3bZzw" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
+        <node concept="_vnHe" id="2X39vz3bZzw" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
         </node>
       </node>
     </node>
@@ -446,11 +446,11 @@
     </node>
     <node concept="3mGtyY" id="2X39vz3bZzE" role="3mGtxR">
       <node concept="_vnHb" id="2X39vz3bZzB" role="$kHGj">
-        <node concept="2RqM1Q" id="2X39vz3bZzC" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
+        <node concept="_vnHe" id="2X39vz3bZzC" role="35HzJw">
+          <ref role="3acloq" node="7GHN9f_xd8g" resolve="NestedPackageActivity" />
         </node>
-        <node concept="2RqM1Q" id="2X39vz3bZzD" role="_vnH8">
-          <ref role="2RqM1R" node="2X39vz3bZzt" resolve="Foo1" />
+        <node concept="_vnHe" id="2X39vz3bZzD" role="35HzJw">
+          <ref role="3acloq" node="2X39vz3bZzt" resolve="Foo1" />
         </node>
       </node>
     </node>

@@ -4981,7 +4981,7 @@
                                   </node>
                                 </node>
                                 <node concept="3Tsc0h" id="5hkZeVaLs6z" role="2OqNvi">
-                                  <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                                  <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                                 </node>
                               </node>
                               <node concept="3$u5V9" id="5hkZeVaLs6$" role="2OqNvi">
@@ -4994,7 +4994,7 @@
                                             <ref role="3cqZAo" node="3widqAzUBT0" resolve="it" />
                                           </node>
                                           <node concept="3TrEf2" id="7tDI0mOqeda" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                                            <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                           </node>
                                         </node>
                                         <node concept="3TrcHB" id="7tDI0mOqfzT" role="2OqNvi">
@@ -5179,7 +5179,7 @@
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="5hkZeVaLFtn" role="2OqNvi">
-                            <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                            <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                           </node>
                         </node>
                         <node concept="3$u5V9" id="5hkZeVaLFto" role="2OqNvi">
@@ -5192,7 +5192,7 @@
                                       <ref role="3cqZAo" node="3widqAzUBT2" resolve="it" />
                                     </node>
                                     <node concept="3TrEf2" id="7tDI0mOpX8K" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                                      <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                     </node>
                                   </node>
                                   <node concept="3TrcHB" id="7tDI0mOq1ow" role="2OqNvi">

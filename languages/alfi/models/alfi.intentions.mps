@@ -1168,7 +1168,7 @@
                     <ref role="3cqZAo" node="1KdBIfWq4f1" resolve="containingNamespace" />
                   </node>
                   <node concept="3Tsc0h" id="1KdBIfWqaQI" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="1KdBIfWqjEV" role="2OqNvi">

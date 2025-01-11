@@ -5979,7 +5979,7 @@
                   <ref role="3cqZAo" node="2CGYajy_zYe" resolve="node" />
                 </node>
                 <node concept="3Tsc0h" id="2CGYajy_FJG" role="2OqNvi">
-                  <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                  <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                 </node>
               </node>
               <node concept="TSZUe" id="2CGYajy_Kf9" role="2OqNvi">

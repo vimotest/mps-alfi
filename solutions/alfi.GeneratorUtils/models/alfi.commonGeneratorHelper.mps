@@ -3071,7 +3071,7 @@
                     <ref role="3cqZAo" node="1KdBIfWqi3Y" resolve="nameReference" />
                   </node>
                   <node concept="3TrEf2" id="1KdBIfWqimm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                    <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                   </node>
                 </node>
               </node>
@@ -3083,7 +3083,7 @@
                     <ref role="3cqZAo" node="1KdBIfWq4f1" resolve="containingNamespace" />
                   </node>
                   <node concept="3Tsc0h" id="1KdBIfWqaQI" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                    <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="1KdBIfWqjEV" role="2OqNvi">

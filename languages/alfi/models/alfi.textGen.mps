@@ -1419,7 +1419,7 @@
           <node concept="2OqwBi" id="2X39vz2WbZi" role="2GsD0m">
             <node concept="117lpO" id="2X39vz2WbZh" role="2Oq$k0" />
             <node concept="3Tsc0h" id="2X39vz2WbZe" role="2OqNvi">
-              <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+              <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
             </node>
           </node>
         </node>
@@ -21164,7 +21164,7 @@
           <node concept="2OqwBi" id="2X39vz2Wfdq" role="2GsD0m">
             <node concept="117lpO" id="2X39vz2Wfdp" role="2Oq$k0" />
             <node concept="3Tsc0h" id="2X39vz2Wfdm" role="2OqNvi">
-              <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+              <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
             </node>
           </node>
         </node>

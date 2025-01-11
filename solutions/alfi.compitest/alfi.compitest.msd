@@ -18,7 +18,7 @@
     <dependency reexport="false">d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
+    <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="1" />
     <language slang="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" version="0" />
     <language slang="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" version="0" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />

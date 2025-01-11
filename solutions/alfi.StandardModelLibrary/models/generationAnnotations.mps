@@ -2,7 +2,7 @@
 <model ref="r:9d2fb39f-5375-4c80-8980-936f0533f829(generationAnnotations)">
   <persistence version="9" />
   <languages>
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
   </languages>
   <imports />
   <registry>
