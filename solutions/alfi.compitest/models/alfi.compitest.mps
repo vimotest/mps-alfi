@@ -80,6 +80,7 @@
       </concept>
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
+        <child id="5213821159894486554" name="templateBinding" index="35Hzyy" />
       </concept>
       <concept id="8164141882416860677" name="alfi.structure.ICanBeAbstract" flags="ngI" index="G55nc">
         <property id="3328952194368015168" name="isAbstract" index="PCHGy" />
@@ -223,6 +224,9 @@
       </concept>
       <concept id="7144803224892617712" name="alfi.structure.HexadecimalLiteralExpression" flags="ng" index="32Vkdt">
         <property id="7144803224894579862" name="valueText" index="32NPgV" />
+      </concept>
+      <concept id="5213821159894486548" name="alfi.structure.PositionalTemplateBinding" flags="ng" index="35HzyG">
+        <child id="5213821159894486551" name="argumentName" index="35HzyJ" />
       </concept>
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
@@ -6691,7 +6695,38 @@
       <property role="3GE5qa" value="statements" />
       <property role="TrG5h" value="CollectionsTest" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <node concept="PCHzy" id="4xrdFydR957" role="PCHGa" />
+      <node concept="PCHzy" id="4xrdFydR957" role="PCHGa">
+        <node concept="327OUb" id="3HL5NEyD95K" role="PCHzz">
+          <property role="TrG5h" value="list" />
+          <node concept="31diN3" id="3HL5NEyD9aA" role="327w9Y">
+            <node concept="_vnHb" id="3HL5NEyD9aC" role="31diN2">
+              <node concept="_vnHe" id="3HL5NEyD9bZ" role="35HzJw">
+                <ref role="3acloq" to="gkn4:4xrdFydR8VO" resolve="List" />
+                <node concept="35HzyG" id="3HL5NEyD9dh" role="35Hzyy">
+                  <node concept="_vnHb" id="3HL5NEyD9di" role="35HzyJ">
+                    <node concept="_vnHe" id="3HL5NEyD9gX" role="35HzJw">
+                      <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_vku0" id="3HL5NEyD9aE" role="_uFfl" />
+          </node>
+          <node concept="3xHE8C" id="3HL5NEyD96j" role="327w9S">
+            <node concept="_vnHe" id="3HL5NEyD96h" role="35HzJw">
+              <ref role="3acloq" to="gkn4:4xrdFydR8VO" resolve="List" />
+              <node concept="35HzyG" id="3HL5NEyD98$" role="35Hzyy">
+                <node concept="_vnHb" id="3HL5NEyD98_" role="35HzyJ">
+                  <node concept="_vnHe" id="3HL5NEyD99K" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
