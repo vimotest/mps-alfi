@@ -1732,83 +1732,108 @@
       <ref role="13i0hy" to="tpcu:52_Geb4QFgX" resolve="getScope" />
       <node concept="3clFbS" id="6OepWIVp32a" role="3clF47">
         <node concept="3clFbJ" id="3_DBZqKpYeg" role="3cqZAp">
-          <node concept="17QLQc" id="6OepWIVp5sp" role="3clFbw">
-            <node concept="37vLTw" id="6OepWIVp4x8" role="3uHU7B">
-              <ref role="3cqZAo" node="6OepWIVp32O" resolve="link" />
+          <node concept="1Wc70l" id="3HL5NEyyUnD" role="3clFbw">
+            <node concept="17R0WA" id="3HL5NEyyRxn" role="3uHU7B">
+              <node concept="37vLTw" id="6OepWIVp4x8" role="3uHU7B">
+                <ref role="3cqZAo" node="6OepWIVp32O" resolve="link" />
+              </node>
+              <node concept="359W_D" id="6OepWIVp54g" role="3uHU7w">
+                <ref role="359W_E" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
+                <ref role="359W_F" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
+              </node>
             </node>
-            <node concept="359W_D" id="6OepWIVp54g" role="3uHU7w">
-              <ref role="359W_E" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
-              <ref role="359W_F" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
+            <node concept="17R0WA" id="3HL5NEyyUSA" role="3uHU7w">
+              <node concept="37vLTw" id="3HL5NEyyUSB" role="3uHU7B">
+                <ref role="3cqZAo" node="6OepWIVp32M" resolve="kind" />
+              </node>
+              <node concept="35c_gC" id="3HL5NEyyUSC" role="3uHU7w">
+                <ref role="35c_gD" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="3_DBZqKpYeh" role="3clFbx">
-            <node concept="2xdQw9" id="3_DBZqKpYei" role="3cqZAp">
-              <property role="2xdLsb" value="gZ5fksE/warn" />
-              <node concept="3cpWs3" id="3_DBZqKpYej" role="9lYJi">
-                <node concept="2OqwBi" id="6OepWIVp6i$" role="3uHU7w">
-                  <node concept="37vLTw" id="6OepWIVp5WQ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6OepWIVp32O" resolve="link" />
-                  </node>
-                  <node concept="liA8E" id="6OepWIVp6yO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                  </node>
+            <node concept="3clFbJ" id="3_DBZqKpYe$" role="3cqZAp">
+              <node concept="3clFbS" id="3_DBZqKpYe_" role="3clFbx">
+                <node concept="3cpWs6" id="3_DBZqKpYeA" role="3cqZAp">
+                  <node concept="iy90A" id="3_DBZqKpYeB" role="3cqZAk" />
                 </node>
-                <node concept="Xl_RD" id="3_DBZqKpYek" role="3uHU7B">
-                  <property role="Xl_RC" value="Requested scope from qualified name for unknown link: " />
+              </node>
+              <node concept="3clFbC" id="3_DBZqKpYeC" role="3clFbw">
+                <node concept="3cmrfG" id="3_DBZqKpYeD" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="37vLTw" id="3_DBZqKpYeE" role="3uHU7B">
+                  <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="3_DBZqKpYel" role="3cqZAp">
-              <node concept="10Nm6u" id="3_DBZqKpYem" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3_DBZqKpYen" role="3cqZAp">
-          <node concept="3clFbS" id="3_DBZqKpYeo" role="3clFbx">
-            <node concept="2xdQw9" id="3_DBZqKpYep" role="3cqZAp">
-              <property role="2xdLsb" value="gZ5fksE/warn" />
-              <node concept="3cpWs3" id="3_DBZqKpYeq" role="9lYJi">
-                <node concept="2OqwBi" id="3_DBZqKpYer" role="3uHU7w">
-                  <node concept="37vLTw" id="3_DBZqKpYes" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6OepWIVp32M" resolve="kind" />
-                  </node>
-                  <node concept="liA8E" id="3_DBZqKpYet" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3_DBZqKpYeu" role="3uHU7B">
-                  <property role="Xl_RC" value="Requested scope from qualified name for unsupported kind: " />
+            <node concept="3cpWs6" id="3HL5NEyz8Xo" role="3cqZAp">
+              <node concept="BsUDl" id="3HL5NEyz8XV" role="3cqZAk">
+                <ref role="37wK5l" node="3HL5NEyyVM9" resolve="getNameScope" />
+                <node concept="37vLTw" id="3HL5NEyz90w" role="37wK5m">
+                  <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="3_DBZqKpYev" role="3cqZAp">
-              <node concept="10Nm6u" id="3_DBZqKpYew" role="3cqZAk" />
-            </node>
           </node>
-          <node concept="17QLQc" id="3_DBZqKpYex" role="3clFbw">
-            <node concept="37vLTw" id="3_DBZqKpYey" role="3uHU7B">
-              <ref role="3cqZAo" node="6OepWIVp32M" resolve="kind" />
+        </node>
+        <node concept="3clFbF" id="3HL5NEyzdX9" role="3cqZAp">
+          <node concept="2OqwBi" id="3HL5NEyzdX6" role="3clFbG">
+            <node concept="13iAh5" id="3HL5NEyzdX7" role="2Oq$k0">
+              <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="35c_gC" id="3_DBZqKpYez" role="3uHU7w">
-              <ref role="35c_gD" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+            <node concept="2qgKlT" id="3HL5NEyzdX8" role="2OqNvi">
+              <ref role="37wK5l" to="tpcu:52_Geb4QFgX" resolve="getScope" />
+              <node concept="37vLTw" id="3HL5NEyzdX3" role="37wK5m">
+                <ref role="3cqZAo" node="6OepWIVp32M" resolve="kind" />
+              </node>
+              <node concept="37vLTw" id="3HL5NEyzdX4" role="37wK5m">
+                <ref role="3cqZAo" node="6OepWIVp32O" resolve="link" />
+              </node>
+              <node concept="37vLTw" id="3HL5NEyzdX5" role="37wK5m">
+                <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="3_DBZqKpYe$" role="3cqZAp">
-          <node concept="3clFbS" id="3_DBZqKpYe_" role="3clFbx">
-            <node concept="3cpWs6" id="3_DBZqKpYeA" role="3cqZAp">
-              <node concept="iy90A" id="3_DBZqKpYeB" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="3clFbC" id="3_DBZqKpYeC" role="3clFbw">
-            <node concept="3cmrfG" id="3_DBZqKpYeD" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="37vLTw" id="3_DBZqKpYeE" role="3uHU7B">
-              <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
-            </node>
+      </node>
+      <node concept="37vLTG" id="6OepWIVp32M" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <node concept="3bZ5Sz" id="6OepWIVp32N" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6OepWIVp32O" role="3clF46">
+        <property role="TrG5h" value="link" />
+        <node concept="3uibUv" id="6OepWIVp32P" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6OepWIVp32Q" role="3clF46">
+        <property role="TrG5h" value="index" />
+        <node concept="10Oyi0" id="6OepWIVp32R" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="6OepWIVp32S" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="3Tm1VV" id="6OepWIVp32T" role="1B3o_S" />
+      <node concept="P$JXv" id="3_DBZqKq51u" role="lGtFl">
+        <node concept="TZ5HA" id="3_DBZqKq51v" role="TZ5H$">
+          <node concept="1dT_AC" id="3_DBZqKq51w" role="1dT_Ay">
+            <property role="1dT_AB" value="This overload of getScope with SContainmentLink is used in AlfScopeHelper" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3HL5NEyyVM9" role="13h7CS">
+      <property role="TrG5h" value="getNameScopeAtIndex" />
+      <node concept="37vLTG" id="3HL5NEyyXOu" role="3clF46">
+        <property role="TrG5h" value="index" />
+        <node concept="10Oyi0" id="3HL5NEyyXOv" role="1tU5fm" />
+      </node>
+      <node concept="3Tm6S6" id="3HL5NEyyWnu" role="1B3o_S" />
+      <node concept="3uibUv" id="3HL5NEyyWnK" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="3clFbS" id="3HL5NEyyVMc" role="3clF47">
         <node concept="3cpWs8" id="3_DBZqKpYeF" role="3cqZAp">
           <node concept="3cpWsn" id="3_DBZqKpYeG" role="3cpWs9">
             <property role="TrG5h" value="targetOneToTheLeft" />
@@ -1829,7 +1854,7 @@
                       <property role="3cmrfH" value="1" />
                     </node>
                     <node concept="37vLTw" id="3_DBZqKpYeQ" role="3uHU7B">
-                      <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
+                      <ref role="3cqZAo" node="3HL5NEyyXOu" resolve="index" />
                     </node>
                   </node>
                 </node>
@@ -1892,31 +1917,6 @@
               <ref role="37wK5l" node="6OepWIVxmmj" resolve="getScopeWithMembers" />
               <node concept="13iPFW" id="3_DBZqKpYfe" role="37wK5m" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6OepWIVp32M" role="3clF46">
-        <property role="TrG5h" value="kind" />
-        <node concept="3bZ5Sz" id="6OepWIVp32N" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="6OepWIVp32O" role="3clF46">
-        <property role="TrG5h" value="link" />
-        <node concept="3uibUv" id="6OepWIVp32P" role="1tU5fm">
-          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6OepWIVp32Q" role="3clF46">
-        <property role="TrG5h" value="index" />
-        <node concept="10Oyi0" id="6OepWIVp32R" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="6OepWIVp32S" role="3clF45">
-        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
-      </node>
-      <node concept="3Tm1VV" id="6OepWIVp32T" role="1B3o_S" />
-      <node concept="P$JXv" id="3_DBZqKq51u" role="lGtFl">
-        <node concept="TZ5HA" id="3_DBZqKq51v" role="TZ5H$">
-          <node concept="1dT_AC" id="3_DBZqKq51w" role="1dT_Ay">
-            <property role="1dT_AB" value="This overload of getScope with SContainmentLink is used in AlfScopeHelper" />
           </node>
         </node>
       </node>
