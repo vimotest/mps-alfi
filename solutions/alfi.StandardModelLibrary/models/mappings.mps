@@ -109,6 +109,25 @@
         <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
       </node>
     </node>
+    <node concept="3HHQsS" id="1AHeRpjYqpj" role="1V1JAH">
+      <property role="TrG5h" value="CollectionClasses" />
+      <node concept="3HHQsX" id="1AHeRpjYqpk" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR8VO" resolve="List" />
+        <ref role="3HHQyS" to="33ny:~List" resolve="List" />
+      </node>
+      <node concept="3HHQsX" id="1AHeRpjZciM" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR91B" resolve="Dequeue" />
+        <ref role="3HHQyS" to="33ny:~Deque" resolve="Deque" />
+      </node>
+      <node concept="3HHQsX" id="1AHeRpjZciN" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR8NF" resolve="Set" />
+        <ref role="3HHQyS" to="33ny:~Set" resolve="Set" />
+      </node>
+      <node concept="3HHQsX" id="1AHeRpjZciP" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR8Mn" resolve="Map" />
+        <ref role="3HHQyS" to="33ny:~Map" resolve="Map" />
+      </node>
+    </node>
     <node concept="3HHQsS" id="6sZBH0sfPZB" role="1V1JAH">
       <property role="TrG5h" value="CollectionFunctions" />
       <node concept="3HHQsX" id="6sZBH0sfPZC" role="3HHZ2s">
@@ -269,6 +288,13 @@
       <node concept="3HHQsX" id="72umVLUQmPi" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
         <ref role="3HHQyS" to="w5zs:7loaBmQtdK1" resolve="to_string" />
+      </node>
+    </node>
+    <node concept="3HHQsS" id="1AHeRpjZciQ" role="1V1JAH">
+      <property role="TrG5h" value="CollectionClasses" />
+      <node concept="3HHQsX" id="1AHeRpjZciR" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR8VO" resolve="List" />
+        <ref role="3HHQyS" to="sta3:4h_5oU1Kna2" resolve="vector" />
       </node>
     </node>
     <node concept="3HHQsS" id="72umVLUQmPj" role="1V1JAH">
