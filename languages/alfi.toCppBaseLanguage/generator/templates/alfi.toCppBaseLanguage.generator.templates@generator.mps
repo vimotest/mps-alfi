@@ -10080,7 +10080,7 @@
     <node concept="j$LIH" id="64vLWnJ4uFC" role="jxRDz">
       <node concept="1lLz0L" id="64vLWnJ4uFD" role="1lHHLF">
         <property role="1lMjX7" value="h1lM37o/error" />
-        <property role="1lLB17" value="switch_TypeName: failed to map type" />
+        <property role="1lLB17" value="switch_LocalNameDeclarationType: failed to map type" />
       </node>
     </node>
   </node>
