@@ -2009,6 +2009,45 @@
           </node>
         </node>
       </node>
+      <node concept="6nSm2" id="1mbJ82n9vbh" role="PCHHv">
+        <property role="TrG5h" value="ArrayList" />
+        <node concept="2Aju2r" id="1mbJ82n9vbi" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="1mbJ82n9vbj" role="3x6$oQ">
+          <node concept="_vnHe" id="1mbJ82n9vbk" role="35HzJw">
+            <ref role="3acloq" node="4xrdFydR8VO" resolve="List" />
+          </node>
+        </node>
+        <node concept="IbWbt" id="1mbJ82n9vdf" role="I883a">
+          <node concept="1PaTwC" id="1mbJ82n9vdg" role="IbWbu">
+            <node concept="3oM_SD" id="1mbJ82n9vdh" role="1PaTwD">
+              <property role="3oM_SC" value="Non-standard" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="1mbJ82n9vct" role="PCHHv">
+        <property role="TrG5h" value="LinkedList" />
+        <node concept="2Aju2r" id="1mbJ82n9vcu" role="2AjnfU">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="T" />
+        </node>
+        <node concept="_vnHb" id="1mbJ82n9vcv" role="3x6$oQ">
+          <node concept="_vnHe" id="1mbJ82n9vcw" role="35HzJw">
+            <ref role="3acloq" node="4xrdFydR8VO" resolve="List" />
+          </node>
+        </node>
+        <node concept="IbWbt" id="1mbJ82n9vdv" role="I883a">
+          <node concept="1PaTwC" id="1mbJ82n9vdw" role="IbWbu">
+            <node concept="3oM_SD" id="1mbJ82n9vdx" role="1PaTwD">
+              <property role="3oM_SC" value="Non-standard" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="1mbJ82n9vbg" role="PCHHv" />
       <node concept="6nSm2" id="4xrdFydR8Yt" role="PCHHv">
         <property role="TrG5h" value="Queue" />
         <node concept="2Aju2r" id="4xrdFydR8Yu" role="2AjnfU">

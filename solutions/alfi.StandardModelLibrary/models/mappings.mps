@@ -113,7 +113,15 @@
       <property role="TrG5h" value="CollectionClasses" />
       <node concept="3HHQsX" id="1AHeRpjYqpk" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:4xrdFydR8VO" resolve="List" />
-        <ref role="3HHQyS" to="33ny:~List" resolve="List" />
+        <ref role="3HHQyS" to="33ny:~ArrayList" resolve="ArrayList" />
+      </node>
+      <node concept="3HHQsX" id="1mbJ82n9vge" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1mbJ82n9vbh" resolve="ArrayList" />
+        <ref role="3HHQyS" to="33ny:~ArrayList" resolve="ArrayList" />
+      </node>
+      <node concept="3HHQsX" id="1mbJ82n9vgf" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1mbJ82n9vct" resolve="LinkedList" />
+        <ref role="3HHQyS" to="33ny:~LinkedList" resolve="LinkedList" />
       </node>
       <node concept="3HHQsX" id="1AHeRpjZciM" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:4xrdFydR91B" resolve="Dequeue" />
@@ -295,6 +303,18 @@
       <node concept="3HHQsX" id="1AHeRpjZciR" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:4xrdFydR8VO" resolve="List" />
         <ref role="3HHQyS" to="sta3:4h_5oU1Kna2" resolve="vector" />
+      </node>
+      <node concept="3HHQsX" id="1mbJ82n9vgk" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1mbJ82n9vbh" resolve="ArrayList" />
+        <ref role="3HHQyS" to="sta3:4h_5oU1Kna2" resolve="vector" />
+      </node>
+      <node concept="3HHQsX" id="1mbJ82n9vzk" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1mbJ82n9vct" resolve="LinkedList" />
+        <ref role="3HHQyS" to="sta3:5wP$QAQ5gr5" resolve="list" />
+      </node>
+      <node concept="3HHQsX" id="fL94M_CPzD" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:4xrdFydR8Yt" resolve="Queue" />
+        <ref role="3HHQyS" to="sta3:5wP$QAQ5grh" resolve="queue" />
       </node>
     </node>
     <node concept="3HHQsS" id="72umVLUQmPj" role="1V1JAH">
