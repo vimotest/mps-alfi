@@ -588,11 +588,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5tK9548cRoH" role="3bR37C">
-          <node concept="3bR9La" id="5tK9548cRoI" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5tK9548cRoJ" role="3bR37C">
           <node concept="3bR9La" id="5tK9548cRoK" role="1SiIV1">
             <ref role="3bR37D" node="5tK9548cRi8" resolve="alfi" />
