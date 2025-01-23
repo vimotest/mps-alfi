@@ -36,18 +36,17 @@ if (!project.hasProperty("mpsPlugins")) {
 def mpsZipFile = file("build/download/mps-${mpsVersion}.zip")
 def pluginsDirectory = file("build/download/plugins")
 def outputBundleDirectory = file("build/mps-bundle")
+def dependenciesDirectory = file("$outputBundleDirectory/dependencies")
 
 def targetFolderName = "$outputBundleDirectory/mps"
 if (isMac()) {
     targetFolderName = "$outputBundleDirectory/Contents"
 }
 
-task downloadMpsAndPlugins {
+task downloadMps {
     group 'mps-download'
     onlyIf {
-        !mpsZipFile.exists() ||
-        mpsPlugins.any { !file("$pluginsDirectory/mps-${getEffectivePluginName(it.key)}.zip").exists() } ||
-        project.hasProperty("customMpsPlugins") && customMpsPlugins.any { !file("$pluginsDirectory/mps-${it.key}.zip").exists() }
+        !mpsZipFile.exists()
     }
     doLast {
         if (!mpsZipFile.exists()) {
@@ -56,6 +55,31 @@ task downloadMpsAndPlugins {
             println("downloading $mpsDownloadLink ... (might take few minutes, since it is ca. 400-500 MB)")
             new URL(mpsDownloadLink).withInputStream { downloadInputStream -> mpsZipFile.withOutputStream { it << downloadInputStream } }
         }
+    }
+}
+
+/*
+  Gradle tasks to redownload plugins if necessary.
+ */
+task downloadPlugins() {
+    group 'mps-download'
+    dependsOn downloadMps
+
+    onlyIf {
+        requirePluginsToRedownload() ||
+                mpsPlugins.any { !file("$pluginsDirectory/mps-${getEffectivePluginName(it.key)}.zip").exists() } ||
+                project.hasProperty("customMpsPlugins") && customMpsPlugins.any { !file("$pluginsDirectory/mps-${it.key}.zip").exists() }
+    }
+
+    doLast {
+        if (pluginsDirectory.exists()) {
+            println("deleting old plugins in $pluginsDirectory")
+            pluginsDirectory.deleteDir()
+        }
+        if (dependenciesDirectory.exists()) {
+            println("deleting old dependencies in $dependenciesDirectory")
+            dependenciesDirectory.deleteDir()
+        }
 
         if (!mpsPlugins.isEmpty()) {
             downloadPlugins(pluginsDirectory)
@@ -63,6 +87,11 @@ task downloadMpsAndPlugins {
         if (project.hasProperty("customMpsPlugins") && !customMpsPlugins.isEmpty()) {
             downloadCustomPlugins(pluginsDirectory)
         }
+
+        if (file("$buildDir/mps-bundle").exists()) {
+            extractPlugins(pluginsDirectory, dependenciesDirectory)
+        }
+        writeDownloadedPluginsInfo(pluginsDirectory)
     }
 }
 
@@ -126,9 +155,43 @@ private def downloadCustomPlugins(def pluginsDirectory) {
     }
 }
 
+private boolean requirePluginsToRedownload() {
+    def downloadedPluginsInfoFile = file("$buildDir/download/plugins/downloaded.txt")
+    if (!downloadedPluginsInfoFile.exists()) {
+        return true
+    }
+
+    Set<String> downloadedPlugins = downloadedPluginsInfoFile.readLines().collect { it.trim() }.toSet()
+    return getAllPluginInfos().collect { it.trim() }.any {
+        if (!downloadedPlugins.contains(it)) {
+            println("plugin $it needs to be redownloaded")
+        }
+        !downloadedPlugins.contains(it)
+    }
+}
+
+private def writeDownloadedPluginsInfo(def pluginsDirectory) {
+    def downloadedPluginsInfoFile = file("$pluginsDirectory/downloaded.txt")
+    downloadedPluginsInfoFile.parentFile.mkdirs()
+    downloadedPluginsInfoFile.write(getAllPluginInfos().join("\n"))
+}
+
+private def getAllPluginInfos() {
+    def result = []
+    mpsPlugins.each {
+        result.add("$it.key|$it.value")
+    }
+    if (project.hasProperty("customMpsPlugins")) {
+        customMpsPlugins.each {
+            result.add("$it.key|$it.value")
+        }
+    }
+    return result
+}
+
 task buildMpsZipBundle {
     group 'mps-download'
-    dependsOn downloadMpsAndPlugins
+    dependsOn downloadMps, downloadPlugins
     description "build a generic MPS $mpsVersion bundle which contains convenient plugins (see task 'listPlugins')"
 
     onlyIf {
@@ -149,19 +212,22 @@ task buildMpsZipBundle {
 
         addLocalPluginsPathToVmOptions("$targetFolderName")
 
-        def outputDependenciesDirectory = file("$outputBundleDirectory/dependencies")
-        copy {
-            fileTree(dir: pluginsDirectory, includes: ['**/*.zip']).each { zipFile ->
-                println("unzipping $zipFile into $targetFolderName/plugins")
-                from zipTree(zipFile)
-            }
-            into outputDependenciesDirectory
-        }
-
-        moveNestedPluginsUp(outputDependenciesDirectory)
+        extractPlugins(pluginsDirectory, dependenciesDirectory)
 
         println("finished prepare of MPS Version $mpsVersion")
     }
+}
+
+private def extractPlugins(def pluginsDirectory, def outputDependenciesDirectory) {
+    copy {
+        fileTree(dir: pluginsDirectory, includes: ['**/*.zip']).each { zipFile ->
+            println("unzipping $zipFile into $pluginsDirectory")
+            from zipTree(zipFile)
+        }
+        into outputDependenciesDirectory
+    }
+
+    moveNestedPluginsUp(outputDependenciesDirectory)
 }
 
 private void addLocalPluginsPathToVmOptions(String targetFolderName) {
@@ -201,7 +267,7 @@ private static Map<String, Integer> collectDependencies(String pluginName, int p
         throw new RuntimeException("couldn't find plugin dependencies for $pluginName")
     }
 
-    def builtInDependencies = [ "jetbrains.mps.core", "jetbrains.mps.build", "jetbrains.mps.vcs" ].toSet()
+    def builtInDependencies = [ "jetbrains.mps.core", "jetbrains.mps.build", "jetbrains.mps.vcs", "jetbrains.mps.testing" ].toSet()
 
     def json = new JsonSlurper().parseText(response)
     def dependencies = json
