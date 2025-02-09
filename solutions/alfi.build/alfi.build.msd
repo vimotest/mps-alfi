@@ -23,7 +23,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" version="0" />
-    <module reference="4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)" version="0" />
     <module reference="e0dff4ef-b148-4138-9688-d6ea326721c6(CsStdLibrary.build)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" version="0" />
