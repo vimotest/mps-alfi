@@ -1935,7 +1935,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="6VCJ4C0gVqg" role="3uHU7B">
-                    <ref role="3cqZAo" node="6VCJ4C0gVqb" resolve="b" />
+                    <ref role="3cqZAo" node="6VCJ4C0gVqb" resolve="isOnStack" />
                   </node>
                 </node>
               </node>
@@ -8677,19 +8677,19 @@
                           <node concept="2OqwBi" id="1mbJ82nnnlR" role="2Oq$k0">
                             <node concept="2OqwBi" id="1mbJ82nnjX2" role="2Oq$k0">
                               <node concept="3Tsc0h" id="1mbJ82nnjX5" role="2OqNvi">
-                                <ref role="3TtcxE" to="28lk:4xrdFydVgPo" />
+                                <ref role="3TtcxE" to="28lk:4xrdFydVgPo" resolve="nameBinding" />
                               </node>
                               <node concept="30H73N" id="1mbJ82nnjX6" role="2Oq$k0" />
                             </node>
                             <node concept="1yVyf7" id="1mbJ82nnpPT" role="2OqNvi" />
                           </node>
                           <node concept="3TrEf2" id="1mbJ82nnsER" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:4xrdFydVgSq" />
+                            <ref role="3Tt5mk" to="28lk:4xrdFydVgSq" resolve="templateBinding" />
                           </node>
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="1mbJ82nnvTO" role="2OqNvi">
-                        <ref role="3TtcxE" to="28lk:4xrdFydVgSn" />
+                        <ref role="3TtcxE" to="28lk:4xrdFydVgSn" resolve="argumentName" />
                       </node>
                     </node>
                   </node>

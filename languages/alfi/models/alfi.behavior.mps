@@ -1769,7 +1769,7 @@
             </node>
             <node concept="3cpWs6" id="3HL5NEyz8Xo" role="3cqZAp">
               <node concept="BsUDl" id="3HL5NEyz8XV" role="3cqZAk">
-                <ref role="37wK5l" node="3HL5NEyyVM9" resolve="getNameScope" />
+                <ref role="37wK5l" node="3HL5NEyyVM9" resolve="getNameScopeAtIndex" />
                 <node concept="37vLTw" id="3HL5NEyz90w" role="37wK5m">
                   <ref role="3cqZAo" node="6OepWIVp32Q" resolve="index" />
                 </node>

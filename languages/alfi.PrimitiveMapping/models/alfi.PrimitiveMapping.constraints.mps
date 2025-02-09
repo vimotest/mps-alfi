@@ -315,7 +315,7 @@
                                     <node concept="3clFbF" id="2X39vz36p7h" role="3cqZAp">
                                       <node concept="17R0WA" id="2X39vz36pzh" role="3clFbG">
                                         <node concept="37vLTw" id="2X39vz36qhM" role="3uHU7w">
-                                          <ref role="3cqZAo" node="3widqAzUBSL" resolve="it" />
+                                          <ref role="3cqZAo" node="3widqAzUBSL" resolve="member" />
                                         </node>
                                         <node concept="37vLTw" id="2X39vz36p7g" role="3uHU7B">
                                           <ref role="3cqZAo" node="3widqAzUBSH" resolve="from" />

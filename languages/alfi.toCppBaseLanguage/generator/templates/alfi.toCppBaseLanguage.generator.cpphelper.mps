@@ -828,7 +828,7 @@
         </node>
         <node concept="3clFbF" id="1mbJ82ncL9Q" role="3cqZAp">
           <node concept="37vLTw" id="1mbJ82ncNL_" role="3clFbG">
-            <ref role="3cqZAo" node="1mbJ82ncNLv" resolve="node" />
+            <ref role="3cqZAo" node="1mbJ82ncNLv" resolve="mappedType" />
           </node>
         </node>
       </node>
