@@ -28,6 +28,7 @@
         <dependency reexport="false">bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)</dependency>
         <dependency reexport="false">1d1d297f-1148-4f73-96d6-f1b7f59d96f1(alfi.GeneratorUtils)</dependency>
         <dependency reexport="false">d74e25c9-4d91-43b6-bad7-d18af7bf6674(CsBaseLanguage)</dependency>
+        <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" version="4" />
@@ -61,6 +62,7 @@
         <module reference="cb88ff13-d660-40de-a423-a6eaea0e21b9(alfi.toCsBaseLanguage.generator)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
