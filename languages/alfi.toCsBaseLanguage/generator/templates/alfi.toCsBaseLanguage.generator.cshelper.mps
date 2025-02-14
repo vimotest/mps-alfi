@@ -5,6 +5,7 @@
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
+    <import index="stu" ref="r:3d4c677e-9995-49a6-a26d-5a02e8d59528(alfi.commonGeneratorHelper)" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -20,6 +21,10 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -47,6 +52,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -69,9 +78,16 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -201,6 +217,38 @@
     </node>
     <node concept="2tJIrI" id="5TI98jjcdEN" role="jymVt" />
     <node concept="3Tm1VV" id="5TI98jjcdEe" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6gxiAP3jNbs">
+    <property role="TrG5h" value="CsQualifiedNameTargetResolver" />
+    <node concept="2YIFZL" id="1mbJ82nci8X" role="jymVt">
+      <property role="TrG5h" value="isCollectionType" />
+      <node concept="3clFbS" id="1mbJ82nci90" role="3clF47">
+        <node concept="3clFbF" id="1mbJ82ncsup" role="3cqZAp">
+          <node concept="2YIFZM" id="1mbJ82ncsyg" role="3clFbG">
+            <ref role="37wK5l" to="stu:1AHeRpjVdKe" resolve="isBuiltinCollectionClass" />
+            <ref role="1Pybhc" to="stu:2X39vz3eZiV" resolve="GenericQualifiedNameTargetResolver" />
+            <node concept="1PxgMI" id="1mbJ82ncuFO" role="37wK5m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1mbJ82ncuO7" role="3oSUPX">
+                <ref role="cht4Q" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
+              </node>
+              <node concept="37vLTw" id="1mbJ82ncsA7" role="1m5AlR">
+                <ref role="3cqZAo" node="1mbJ82ncG6r" resolve="member" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1mbJ82nci4r" role="1B3o_S" />
+      <node concept="10P_77" id="1mbJ82nci8n" role="3clF45" />
+      <node concept="37vLTG" id="1mbJ82ncG6r" role="3clF46">
+        <property role="TrG5h" value="member" />
+        <node concept="3Tqbb2" id="1mbJ82ncG6s" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6gxiAP3jNbt" role="1B3o_S" />
   </node>
 </model>
 

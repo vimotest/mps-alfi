@@ -2459,7 +2459,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="4TIfAhWmYm9">
-    <property role="TrG5h" value="switch_ForLoop" />
+    <property role="TrG5h" value="reduce_ForLoop" />
     <property role="3GE5qa" value="statements" />
     <ref role="3gUMe" to="28lk:6cBsaQxChVb" resolve="ForStatement" />
     <node concept="1N15co" id="4TIfAhWnqIp" role="1s_3oS">
@@ -2638,7 +2638,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="37zNn5M6DQ4">
-    <property role="TrG5h" value="switch_ForLoopWithNumberRange" />
+    <property role="TrG5h" value="reduce_ForLoopWithNumberRange" />
     <property role="3GE5qa" value="statements" />
     <ref role="3gUMe" to="28lk:6cBsaQxChVb" resolve="ForStatement" />
     <node concept="LmIGC" id="4gRCGxdykIR" role="13RCb5">
