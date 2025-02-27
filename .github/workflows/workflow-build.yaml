@@ -73,8 +73,13 @@ jobs:
       - name: Copy C# Binaries
         run: |
           mkdir -p build/compitest/dotnet-binaries
-          cp -r solutions/alfi.compitest/dotnet-build/obj/bin/* build/compitest/dotnet-binaries/
-          chmod +x build/compitest/dotnet-binaries/*
+          if [ -d "solutions/alfi.compitest/dotnet-build/obj/bin" ]; then
+            cp -r solutions/alfi.compitest/dotnet-build/obj/bin/* build/compitest/dotnet-binaries/ || true
+            if [ -n "$(ls -A build/compitest/dotnet-binaries 2>/dev/null)" ]; then
+              chmod +x build/compitest/dotnet-binaries/* || true
+            fi
+          fi
+        continue-on-error: true
 
       # Archive Main Build Artifacts
       - name: Archive language artifacts
