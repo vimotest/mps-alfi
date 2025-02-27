@@ -16,6 +16,7 @@ apply from: 'gradle/init-gradle-scripts.gradle'
 
 apply from: 'gradle/install-alf.gradle'
 apply from: 'gradle/compitest.gradle'
+apply from: 'gradle/compitest/generateCsProjFiles.gradle'
 
 task prepareMps {
     group 'mps'
