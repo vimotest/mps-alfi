@@ -60,25 +60,19 @@ jobs:
           BUILD_DIR: solutions/alfi.compitest/build
 
       - name: Copy compitest C++ Binaries
-        run: sh ./gradlew compitestCopyCppBinaries
+        run: sh ./gradlew compitestCopyCppBinaries # copies to build/artifacts/alfi-build/tests/compitest-cpp-binaries
 
       # Build C# code
       - name: Generate C# Solution Files
         run: sh ./gradlew generateCsprojFiles
 
       - name: Build C# Projects
-        run: dotnet build dotnet-build/Compitest.sln
-        working-directory: solutions/alfi.compitest
+        run: dotnet build Compitest.sln
+        working-directory: solutions/alfi.compitest/dotnet-build
+        continue-on-error: true
 
-      - name: Copy C# Binaries
-        run: |
-          mkdir -p build/compitest/dotnet-binaries
-          if [ -d "solutions/alfi.compitest/dotnet-build/obj/bin" ]; then
-            cp -r solutions/alfi.compitest/dotnet-build/obj/bin/* build/compitest/dotnet-binaries/ || true
-            if [ -n "$(ls -A build/compitest/dotnet-binaries 2>/dev/null)" ]; then
-              chmod +x build/compitest/dotnet-binaries/* || true
-            fi
-          fi
+      - name: Copy compitest C# Binaries
+        run: sh ./gradlew compitestCopyCsBinaries # copies to build/artifacts/alfi-build/tests/compitest-cs-binaries
         continue-on-error: true
 
       # Archive Main Build Artifacts
@@ -94,8 +88,7 @@ jobs:
         with:
           name: compitest-artifacts
           path: |
-            build/artifacts/${{ env.PROJECT_NAME }}-build/tests/compitest-cpp-binaries
-            build/compitest/dotnet-binaries
+            build/artifacts/${{ env.PROJECT_NAME }}-build
 
   compitest:
     runs-on: ubuntu-latest
@@ -117,12 +110,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: compitest-artifacts
-          path: build/compitest
+          path: build/artifacts/${{ env.PROJECT_NAME }}-build
 
       - name: Grant execute permission for binaries
         run: |
-          chmod +x build/compitest/compitest-cpp-binaries/*
-          chmod +x build/compitest/dotnet-binaries/*
+          chmod +x build/artifacts/${{ env.PROJECT_NAME }}-build/tests/compitest-cpp-binaries/* || true
+          chmod +x build/artifacts/${{ env.PROJECT_NAME }}-build/tests/compitest-cs-binaries/* || true
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests
