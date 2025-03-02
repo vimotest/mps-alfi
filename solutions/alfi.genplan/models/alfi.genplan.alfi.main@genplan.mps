@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(alfi.genplan.alfi.toJavaBaseLanguage@genplan)" />
-    <import index="4snh" ref="r:0374a2a3-2e83-460e-8228-7bd146963871(alfi.genplan.alfi.toCppBaseLanguage@genplan)" />
+    <import index="4snh" ref="r:0374a2a3-2e83-460e-8228-7bd146963871(alfi.genplan.alfi.toCppBaseLanguage)" />
     <import index="a4ka" ref="r:40561aac-5491-43fc-a1e6-30abe63e5a61(alfi.genplan.alfi.toCsBaseLanguage@genplan)" />
   </imports>
   <registry>
