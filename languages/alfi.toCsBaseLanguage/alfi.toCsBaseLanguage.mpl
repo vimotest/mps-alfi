@@ -30,6 +30,7 @@
         <dependency reexport="false">d74e25c9-4d91-43b6-bad7-d18af7bf6674(CsBaseLanguage)</dependency>
         <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
         <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+        <dependency reexport="false">0e5f29d3-1825-4400-ab4a-0a6f471d84b1(CsStdLib)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" version="4" />
@@ -54,6 +55,7 @@
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="d74e25c9-4d91-43b6-bad7-d18af7bf6674(CsBaseLanguage)" version="0" />
+        <module reference="0e5f29d3-1825-4400-ab4a-0a6f471d84b1(CsStdLib)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
