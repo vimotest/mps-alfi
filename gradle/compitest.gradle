@@ -37,10 +37,14 @@ task compitestCopyCsBinaries(type: Copy) {
     group 'compitest'
     description 'Copies the built C# binaries for comparison tests'
 
-    def sourceDir = file("$projectDir/solutions/alfi.compitest/dotnet-build")
+    def sourceDir = file("$projectDir/solutions/alfi.compitest/dotnet-build/bin")
     def targetDir = file("$buildDir/artifacts/alfi-build/tests/compitest-cs-binaries")
 
     from sourceDir
-    include("*Activity.dll")
+    include("**/Activity*.dll")
     into targetDir
+    eachFile { fileCopyDetails ->
+        fileCopyDetails.path = fileCopyDetails.name
+    }
+    includeEmptyDirs = false
 }
