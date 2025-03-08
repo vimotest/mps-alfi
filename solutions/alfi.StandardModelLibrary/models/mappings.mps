@@ -14,6 +14,7 @@
     <import index="sta3" ref="r:0f7d3034-07e3-4074-946c-3d35273fd44e(CppStdLib.containers)" />
     <import index="eipx" ref="r:1deed0c1-6cfe-409d-ab5c-6ed9f22e37c0(CppStdLib.testing)" />
     <import index="erwg" ref="r:2d4627cd-619d-43a9-8ed3-4b164bbd09b2(wrappers.javaWrappers)" />
+    <import index="1bf1" ref="r:6630646d-2fe0-4791-bab6-8310bdf101e1(wrappers.csWrappers)" />
   </imports>
   <registry>
     <language id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping">
@@ -515,6 +516,37 @@
   </node>
   <node concept="1V1JAE" id="1OZ38Q7JXtJ">
     <property role="1V1JAF" value="1OZ38Q7JXtK/cs" />
+    <node concept="3HHQsS" id="3suNEZ8cXA4" role="1V1JAH">
+      <property role="TrG5h" value="Behaviors" />
+      <node concept="3HHQsX" id="3suNEZ8cXA5" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfYm" resolve="ReadLine" />
+        <ref role="3HHQyS" to="1bf1:3szbYByGe7C" resolve="ReadLine" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXA6" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+        <ref role="3HHQyS" to="1bf1:1hI0yqU98Y7" resolve="WriteLine" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXA7" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
+        <ref role="3HHQyS" to="1bf1:3suNEZ8d12Q" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXA8" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+        <ref role="3HHQyS" to="1bf1:1hI0yqU98Sb" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXA9" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
+        <ref role="3HHQyS" to="1bf1:1hI0yqU98V_" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXAa" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
+        <ref role="3HHQyS" to="1bf1:1hI0yqU98Sb" resolve="ToString" />
+      </node>
+      <node concept="3HHQsX" id="3suNEZ8cXAb" role="3HHZ2s">
+        <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
+        <ref role="3HHQyS" to="1bf1:1hI0yqU98Sb" resolve="ToString" />
+      </node>
+    </node>
   </node>
 </model>
 
