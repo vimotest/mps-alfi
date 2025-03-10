@@ -59,6 +59,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -285,6 +286,21 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1utWeBRf_Lc" role="3cqZAp">
+          <node concept="3clFbS" id="1utWeBRf_Le" role="3clFbx">
+            <node concept="3cpWs6" id="1utWeBRfChX" role="3cqZAp">
+              <node concept="Xl_RD" id="1utWeBRfCvd" role="3cqZAk">
+                <property role="Xl_RC" value="MyNamespace" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1utWeBRfBiv" role="3clFbw">
+            <node concept="37vLTw" id="1utWeBRf_Yf" role="2Oq$k0">
+              <ref role="3cqZAo" node="5jkMFwxjPVc" resolve="defaultNamespace" />
+            </node>
+            <node concept="17RlXB" id="1utWeBRfC6I" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="5TI98jjcgLt" role="3cqZAp">

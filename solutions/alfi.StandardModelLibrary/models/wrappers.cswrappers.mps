@@ -52,6 +52,9 @@
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>
       <concept id="3129541975290303051" name="CsBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
+      <concept id="8360783199046853415" name="CsBaseLanguage.structure.ExpressionListInBrackets" flags="ng" index="3reDGy">
+        <child id="8360783199046853416" name="expressionList" index="3reDGH" />
+      </concept>
       <concept id="6167894786982645659" name="CsBaseLanguage.structure.IGenericTypeList" flags="ngI" index="1FzkKU">
         <child id="6167894786982659430" name="typeParameter" index="1Fzgr7" />
       </concept>
@@ -60,6 +63,9 @@
       </concept>
       <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
+      </concept>
+      <concept id="6843536562190902729" name="CsBaseLanguage.structure.ExpressionList" flags="ng" index="3Uc4nR">
+        <child id="6843536562190902730" name="expression" index="3Uc4nO" />
       </concept>
       <concept id="6843536562191036574" name="CsBaseLanguage.structure.PrimaryDotExpression" flags="ng" index="3Uc_2w">
         <child id="6843536562191036577" name="member" index="3Uc_2v" />
@@ -83,6 +89,10 @@
       <concept id="6843536562191075788" name="CsBaseLanguage.structure.FunctionCallExpression" flags="ng" index="3UdiBM">
         <child id="6843536562191075791" name="argumentsList" index="3UdiBL" />
         <child id="6843536562191075789" name="primaryExpression" index="3UdiBN" />
+      </concept>
+      <concept id="6843536562191098257" name="CsBaseLanguage.structure.ExpressionListExpression" flags="ng" index="3Udk6J">
+        <child id="6843536562191098260" name="expressionList" index="3Udk6E" />
+        <child id="6843536562191098258" name="primaryExpression" index="3Udk6G" />
       </concept>
       <concept id="6843536562190653623" name="CsBaseLanguage.structure.BinaryOperation" flags="ng" index="3Ufby9">
         <child id="6843536562190653628" name="leftExpression" index="3Ufby2" />
@@ -353,6 +363,59 @@
           <node concept="2qAx6t" id="5hCiKtcGlZe" role="3SE3Wx" />
           <node concept="2qAK3s" id="5hCiKtcGlZH" role="3SE3Wx" />
           <node concept="31Lcgi" id="5hCiKtcGm9B" role="1Fzgr7">
+            <property role="TrG5h" value="T" />
+          </node>
+        </node>
+        <node concept="31KRCM" id="1utWeBRaWwv" role="31Leeq">
+          <property role="TrG5h" value="At" />
+          <node concept="1ux1M" id="1utWeBRaWww" role="31KRCR">
+            <node concept="2YuCjO" id="1utWeBRaWwx" role="1ux1N">
+              <node concept="3Udk6J" id="1utWeBRaWwY" role="2YuCjP">
+                <node concept="3UcWq5" id="1utWeBRaWx2" role="3Udk6G">
+                  <ref role="zF7P4" node="1utWeBRaWwC" resolve="collection" />
+                </node>
+                <node concept="3reDGy" id="1utWeBRaWwZ" role="3Udk6E">
+                  <node concept="3Uc4nR" id="1utWeBRaWx0" role="3reDGH">
+                    <node concept="3UcWq5" id="1utWeBRaWx3" role="3Uc4nO">
+                      <ref role="zF7P4" node="1utWeBRaWwN" resolve="index" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ux1I" id="1utWeBRaWwB" role="1fIg$P">
+            <node concept="31KZC3" id="1utWeBRaWwC" role="1ux1J">
+              <property role="TrG5h" value="collection" />
+              <node concept="3UfwP1" id="1utWeBRaWwD" role="2UegB9">
+                <node concept="2Gatwc" id="1utWeBRaWwE" role="3UfBpY">
+                  <ref role="2Gaslz" to="xrxg:5hCiKtcGj90" resolve="ICollection" />
+                  <node concept="2Gatwc" id="1utWeBRaWwF" role="2GaslH">
+                    <ref role="2Gaslz" to="xrxg:5xrpOE7zdMI" resolve="System.Collections.Generic" />
+                  </node>
+                  <node concept="3UfwP1" id="1utWeBRaWwG" role="2GavS0">
+                    <node concept="3XeaDR" id="1utWeBRaWwH" role="3UfBpY">
+                      <ref role="3XeaDO" node="1utWeBRaWwM" resolve="T" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="31KZC3" id="1utWeBRaWwN" role="1ux1J">
+              <property role="TrG5h" value="index" />
+              <node concept="3UfwP1" id="1utWeBRaWwO" role="2UegB9">
+                <node concept="3UfM66" id="1utWeBRaWwQ" role="3UfBpY" />
+              </node>
+            </node>
+          </node>
+          <node concept="3UfwP1" id="1utWeBRaWwI" role="3Sw9wT">
+            <node concept="3XeaDR" id="1utWeBRaWwT" role="3UfBpY">
+              <ref role="3XeaDO" node="1utWeBRaWwM" resolve="T" />
+            </node>
+          </node>
+          <node concept="2qAx6t" id="1utWeBRaWwK" role="3SE3Wx" />
+          <node concept="2qAK3s" id="1utWeBRaWwL" role="3SE3Wx" />
+          <node concept="31Lcgi" id="1utWeBRaWwM" role="1Fzgr7">
             <property role="TrG5h" value="T" />
           </node>
         </node>
