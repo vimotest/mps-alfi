@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="g62g" ref="r:1e9d143c-336b-47cf-80c8-52a9dd6125e2(System.Console)" />
+    <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)" />
   </imports>
   <registry>
     <language id="d74e25c9-4d91-43b6-bad7-d18af7bf6674" name="CsBaseLanguage">
@@ -21,6 +22,13 @@
       <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
         <child id="7575174424947156020" name="formalParameterList" index="1fIg$P" />
       </concept>
+      <concept id="2439281069887047993" name="CsBaseLanguage.structure.NotGenericParameterTypeReference" flags="ng" index="2Gatwc">
+        <reference id="2439281069887050838" name="referencedType" index="2Gaslz" />
+      </concept>
+      <concept id="2439281069887055987" name="CsBaseLanguage.structure.TypeReference" flags="ng" index="2Gav_6">
+        <child id="2439281069887050840" name="parentType" index="2GaslH" />
+        <child id="2439281069887057717" name="genericTypeParameters" index="2GavS0" />
+      </concept>
       <concept id="1945218857514060490" name="CsBaseLanguage.structure.ReturnStatement" flags="ng" index="2YuCjO">
         <child id="1945218857514060491" name="expression" index="2YuCjP" />
       </concept>
@@ -33,6 +41,7 @@
       <concept id="7232527154588476195" name="CsBaseLanguage.structure.FormalParameter" flags="ng" index="31KZC3">
         <child id="8700838527816343363" name="type" index="2UegB9" />
       </concept>
+      <concept id="7232527154588409138" name="CsBaseLanguage.structure.TypeParameter" flags="ng" index="31Lcgi" />
       <concept id="7232527154588302801" name="CsBaseLanguage.structure.NamespaceDeclaration" flags="ng" index="31LijL">
         <child id="7232527154588310410" name="namespaceMemberDeclaration" index="31LkaE" />
       </concept>
@@ -43,14 +52,24 @@
         <child id="7232527154588304251" name="namespaceMemberDeclaration" index="31LlDr" />
       </concept>
       <concept id="3129541975290303051" name="CsBaseLanguage.structure.VoidType" flags="ng" index="1pH0Yj" />
+      <concept id="6167894786982645659" name="CsBaseLanguage.structure.IGenericTypeList" flags="ngI" index="1FzkKU">
+        <child id="6167894786982659430" name="typeParameter" index="1Fzgr7" />
+      </concept>
       <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
       <concept id="6209812394072707160" name="CsBaseLanguage.structure.IHaveModifiers" flags="ngI" index="3SE3Ww">
         <child id="6209812394072707161" name="iModifier" index="3SE3Wx" />
       </concept>
+      <concept id="6843536562191036574" name="CsBaseLanguage.structure.PrimaryDotExpression" flags="ng" index="3Uc_2w">
+        <child id="6843536562191036577" name="member" index="3Uc_2v" />
+        <child id="6843536562191036575" name="primaryExpression" index="3Uc_2x" />
+      </concept>
       <concept id="6843536562190981623" name="CsBaseLanguage.structure.StringLiteral" flags="ng" index="3UcVB9">
         <property id="3129541975290891879" name="value" index="1pzheZ" />
+      </concept>
+      <concept id="6843536562190981614" name="CsBaseLanguage.structure.IntLiteral" flags="ng" index="3UcVBg">
+        <property id="3129541975290926181" name="value" index="1pzoAX" />
       </concept>
       <concept id="6843536562191001275" name="CsBaseLanguage.structure.VariableReference" flags="ng" index="3UcWq5">
         <reference id="7769220957754731528" name="variableDeclaration" index="zF7P4" />
@@ -69,6 +88,7 @@
         <child id="6843536562190653628" name="leftExpression" index="3Ufby2" />
         <child id="6843536562190653626" name="rightExpression" index="3Ufby4" />
       </concept>
+      <concept id="6843536562190666513" name="CsBaseLanguage.structure.EqualsExpression" flags="ng" index="3UfeGJ" />
       <concept id="6843536562190757247" name="CsBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
         <child id="6843536562190767680" name="nonArrayType" index="3UfBpY" />
       </concept>
@@ -80,6 +100,9 @@
       <concept id="6531566641162929002" name="CsBaseLanguage.structure.MemberReference" flags="ng" index="1VUwCF">
         <reference id="7783118190387115239" name="memberDeclaration" index="2aT8gA" />
         <child id="7783118190387115237" name="anotherMemberReference" index="2aT8g$" />
+      </concept>
+      <concept id="45245710896469196" name="CsBaseLanguage.structure.GenericTypeParameterReference" flags="ng" index="3XeaDR">
+        <reference id="45245710896469199" name="typeParameter" index="3XeaDO" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -274,6 +297,64 @@
           </node>
           <node concept="2qAx6t" id="3szbYByGe7L" role="3SE3Wx" />
           <node concept="2qAK3s" id="3szbYByGe7M" role="3SE3Wx" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="31LFg6" id="5hCiKtcGlSh">
+    <property role="TrG5h" value="CollectionFunctions.cs" />
+    <property role="3GE5qa" value="alf.library.collectionfunctions" />
+    <node concept="31LijL" id="5hCiKtcGlSi" role="31LlDr">
+      <property role="TrG5h" value="Alf.Library.PrimitiveBehaviors" />
+      <node concept="31LiCz" id="5hCiKtcGlSj" role="31LkaE">
+        <property role="TrG5h" value="CollectionFunctions" />
+        <node concept="2qAx6t" id="5hCiKtcGlSk" role="3SE3Wx" />
+        <node concept="2qAK3s" id="5hCiKtcGlSl" role="3SE3Wx" />
+        <node concept="31KRCM" id="5hCiKtcGlYg" role="31Leeq">
+          <property role="TrG5h" value="IsEmpty" />
+          <node concept="1ux1M" id="5hCiKtcGlYh" role="31KRCR">
+            <node concept="2YuCjO" id="5hCiKtcGmbP" role="1ux1N">
+              <node concept="3UfeGJ" id="5hCiKtcGmf0" role="2YuCjP">
+                <node concept="3Uc_2w" id="5hCiKtcGme5" role="3Ufby2">
+                  <node concept="3UcWq5" id="5hCiKtcGmdB" role="3Uc_2x">
+                    <ref role="zF7P4" node="5hCiKtcGm2s" resolve="collection" />
+                  </node>
+                  <node concept="1VUwCF" id="5hCiKtcGme6" role="3Uc_2v">
+                    <ref role="2aT8gA" to="xrxg:5hCiKtcGjzd" resolve="Count" />
+                  </node>
+                </node>
+                <node concept="3UcVBg" id="5hCiKtcGmf2" role="3Ufby4">
+                  <property role="1pzoAX" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1ux1I" id="5hCiKtcGlYj" role="1fIg$P">
+            <node concept="31KZC3" id="5hCiKtcGm2s" role="1ux1J">
+              <property role="TrG5h" value="collection" />
+              <node concept="3UfwP1" id="5hCiKtcGm2t" role="2UegB9">
+                <node concept="2Gatwc" id="5hCiKtcGm6r" role="3UfBpY">
+                  <ref role="2Gaslz" to="xrxg:5hCiKtcGj90" resolve="ICollection" />
+                  <node concept="2Gatwc" id="5hCiKtcGm7M" role="2GaslH">
+                    <ref role="2Gaslz" to="xrxg:5xrpOE7zdMI" resolve="System.Collections.Generic" />
+                  </node>
+                  <node concept="3UfwP1" id="5hCiKtcGm8g" role="2GavS0">
+                    <node concept="3XeaDR" id="5hCiKtcGmaw" role="3UfBpY">
+                      <ref role="3XeaDO" node="5hCiKtcGm9B" resolve="T" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3UfwP1" id="5hCiKtcGm13" role="3Sw9wT">
+            <node concept="3UfLA2" id="5hCiKtcGm1y" role="3UfBpY" />
+          </node>
+          <node concept="2qAx6t" id="5hCiKtcGlZe" role="3SE3Wx" />
+          <node concept="2qAK3s" id="5hCiKtcGlZH" role="3SE3Wx" />
+          <node concept="31Lcgi" id="5hCiKtcGm9B" role="1Fzgr7">
+            <property role="TrG5h" value="T" />
+          </node>
         </node>
       </node>
     </node>
