@@ -281,7 +281,7 @@
               </node>
               <node concept="3uJxvA" id="5jkMFwxjPVx" role="2OqNvi">
                 <node concept="Xl_RD" id="5jkMFwxjPVy" role="3uJOhx">
-                  <property role="Xl_RC" value="::" />
+                  <property role="Xl_RC" value="." />
                 </node>
               </node>
             </node>
