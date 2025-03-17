@@ -354,6 +354,10 @@
       <concept id="267924987110481430" name="CsBaseLanguage.structure.IInheritedTypeList" flags="ngI" index="KB09d">
         <child id="3754772800029021409" name="inheritedType" index="3U7fkm" />
       </concept>
+      <concept id="5261601040797406172" name="CsBaseLanguage.structure.StringFragmentValue" flags="ng" index="2NyImo" />
+      <concept id="5261601040797405695" name="CsBaseLanguage.structure.VerbatimStringLiteral" flags="ng" index="2NyIuV">
+        <child id="3622501686254305173" name="lines" index="ddkA2" />
+      </concept>
       <concept id="5261601040797402860" name="CsBaseLanguage.structure.VarType" flags="ng" index="2NyJ2C" />
       <concept id="1945218857514060490" name="CsBaseLanguage.structure.ReturnStatement" flags="ng" index="2YuCjO">
         <child id="1945218857514060491" name="expression" index="2YuCjP" />
@@ -5471,13 +5475,27 @@
                         </node>
                       </node>
                       <node concept="3fqX7Q" id="3Edw2s$OI0z" role="3clFbw">
-                        <node concept="2OqwBi" id="3Edw2s$OI0$" role="3fr31v">
-                          <node concept="37vLTw" id="3Edw2s$OI0_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3Edw2s$OHZR" resolve="targetNode" />
-                          </node>
-                          <node concept="1mIQ4w" id="3Edw2s$OI0A" role="2OqNvi">
-                            <node concept="chp4Y" id="3Edw2s$OI0B" role="cj9EA">
-                              <ref role="cht4Q" to="80bi:6hv6i2_B6ci" resolve="MethodDeclaration" />
+                        <node concept="1eOMI4" id="7cOZsiZIfs7" role="3fr31v">
+                          <node concept="22lmx$" id="7cOZsiZIhhE" role="1eOMHV">
+                            <node concept="2OqwBi" id="7cOZsiZIfs8" role="3uHU7B">
+                              <node concept="37vLTw" id="7cOZsiZIfs9" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3Edw2s$OHZR" resolve="targetNode" />
+                              </node>
+                              <node concept="1mIQ4w" id="7cOZsiZIfsa" role="2OqNvi">
+                                <node concept="chp4Y" id="7cOZsiZIfsb" role="cj9EA">
+                                  <ref role="cht4Q" to="80bi:6hv6i2_B6ci" resolve="MethodDeclaration" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="7cOZsiZIi6Q" role="3uHU7w">
+                              <node concept="37vLTw" id="7cOZsiZIi6R" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3Edw2s$OHZR" resolve="targetNode" />
+                              </node>
+                              <node concept="1mIQ4w" id="7cOZsiZIi6S" role="2OqNvi">
+                                <node concept="chp4Y" id="7cOZsiZIi6T" role="cj9EA">
+                                  <ref role="cht4Q" to="80bi:6$wrg4AAmeZ" resolve="InterfaceMethodDeclaration" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -5844,10 +5862,40 @@
           </node>
         </node>
       </node>
-      <node concept="j$LIH" id="1OZ38Q7Js6B" role="1lVwrX">
-        <node concept="1lLz0L" id="1OZ38Q7Js6C" role="1lHHLF">
-          <property role="1lMjX7" value="h1lM37o/error" />
-          <property role="1lLB17" value="&quot;CsBaseLanguage MultiLineStringLiteral support missing&quot;" />
+      <node concept="gft3U" id="7cOZsiZIyIS" role="1lVwrX">
+        <node concept="2NyIuV" id="7cOZsiZIyWO" role="gfFT$">
+          <node concept="2NyImo" id="7cOZsiZI_LG" role="ddkA2">
+            <node concept="1WS0z7" id="7cOZsiZIA0p" role="lGtFl">
+              <node concept="3JmXsc" id="7cOZsiZIA0s" role="3Jn$fo">
+                <node concept="3clFbS" id="7cOZsiZIA0t" role="2VODD2">
+                  <node concept="3clFbF" id="7cOZsiZIA0z" role="3cqZAp">
+                    <node concept="2OqwBi" id="7cOZsiZIA0u" role="3clFbG">
+                      <node concept="3Tsc0h" id="7cOZsiZIA0x" role="2OqNvi">
+                        <ref role="3TtcxE" to="28lk:6RKU0s8QYl0" resolve="content" />
+                      </node>
+                      <node concept="30H73N" id="7cOZsiZIA0y" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17Uvod" id="7cOZsiZIAMM" role="lGtFl">
+              <property role="2qtEX9" value="value" />
+              <property role="P4ACc" value="d74e25c9-4d91-43b6-bad7-d18af7bf6674/5261601040797406172/3622501686255345426" />
+              <node concept="3zFVjK" id="7cOZsiZIAMP" role="3zH0cK">
+                <node concept="3clFbS" id="7cOZsiZIAMQ" role="2VODD2">
+                  <node concept="3clFbF" id="7cOZsiZIAMW" role="3cqZAp">
+                    <node concept="2OqwBi" id="7cOZsiZIAMR" role="3clFbG">
+                      <node concept="3TrcHB" id="7cOZsiZIAMU" role="2OqNvi">
+                        <ref role="3TsBF5" to="28lk:2kuSLC0lUpH" resolve="value" />
+                      </node>
+                      <node concept="30H73N" id="7cOZsiZIAMV" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -6034,10 +6082,17 @@
           </node>
         </node>
       </node>
-      <node concept="j$LIH" id="1OZ38Q7JCE4" role="1lVwrX">
-        <node concept="1lLz0L" id="1OZ38Q7JCE5" role="1lHHLF">
-          <property role="1lMjX7" value="h1lM37o/error" />
-          <property role="1lLB17" value="&quot;CsBaseLanguage empty seq-initializer support missing&quot;" />
+      <node concept="gft3U" id="7cOZsiZICwV" role="1lVwrX">
+        <node concept="3UdfaV" id="7cOZsiZIQAu" role="gfFT$">
+          <node concept="3UfwP1" id="7cOZsiZIQAv" role="3UdfaS">
+            <node concept="2Gatwc" id="7cOZsiZIQAy" role="3UfBpY">
+              <ref role="2Gaslz" to="xrxg:5xrpOE7zdSx" resolve="List" />
+              <node concept="2Gatwc" id="7cOZsiZIQA$" role="2GaslH">
+                <ref role="2Gaslz" to="xrxg:5xrpOE7zdSw" resolve="System.Collections.Generic" />
+              </node>
+            </node>
+          </node>
+          <node concept="3UdiBG" id="7cOZsiZIQAx" role="3UdfaP" />
         </node>
       </node>
     </node>
