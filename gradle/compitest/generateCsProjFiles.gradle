@@ -1,18 +1,47 @@
 task generateCsprojFiles {
-    description 'Generate individual .csproj files for each CS file'
+    description 'Generate individual .csproj files for each CS file with a shared library reference'
     group 'compitest'
 
     doLast {
         def compitestDir = file('solutions/alfi.compitest')
         def sourceDir = file("${compitestDir}/source_gen/alfi/compitest")
         def outputDir = file("${compitestDir}/dotnet-build")
+        def stdLibDir = file("$projectDir/solutions/alfi.StandardModelLibrary/source_gen/wrappers/csWrappers")
 
         if (!outputDir.exists()) {
             outputDir.mkdirs()
         }
 
+        // Create AlfLibrary.csproj for standard sources
+        def libraryProjectFile = new File(outputDir, "AlfLibrary.csproj")
+        def libraryProjectGuid = java.util.UUID.randomUUID().toString()
+
+        // Find all .cs files in the standard library directory
+        def stdLibFiles = stdLibDir.listFiles().findAll { it.name.endsWith('.cs') }
+
+        // Generate the library project file
+        libraryProjectFile.text = """<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Alfi.StandardModelLibrary</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+"""
+
+        // Add each standard library file to the project
+        stdLibFiles.each { stdLibFile ->
+            libraryProjectFile.append("""    <Compile Include="${stdLibFile.absolutePath.replace('\\', '/')}" />
+""")
+        }
+
+        libraryProjectFile.append("""  </ItemGroup>
+</Project>
+""")
+
         // Find all .cs files in the source directory
-        def csFiles = sourceDir.listFiles().findAll { it.name.endsWith('.cs') }
+        def csFiles = sourceDir.listFiles().findAll { it.name.endsWith('Test.cs') }
 
         // Create a solution file
         def solutionFile = new File(outputDir, 'Compitest.sln')
@@ -23,6 +52,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 """
 
         def projectGuids = [:]
+        projectGuids["AlfLibrary"] = libraryProjectGuid
+
+        // Add library project to solution
+        solutionFile.append("""Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfLibrary", "AlfLibrary.csproj", "{${libraryProjectGuid}}"
+EndProject
+""")
 
         // Generate a .csproj file for each .cs file
         csFiles.each { csFile ->
@@ -38,6 +73,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
     <RootNamespace>Alfi.Compitest</RootNamespace>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="AlfLibrary.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="../source_gen/alfi/compitest/${csFile.name}" />
@@ -80,6 +119,7 @@ EndGlobal
             targetProps.text = dirBuildProps.text
         }
 
-        println "Generated ${csFiles.size()} .csproj files and solution in ${outputDir.absolutePath}"
+        println "Generated shared library project with ${stdLibFiles.size()} standard files"
+        println "Generated ${csFiles.size()} test project files and solution in ${outputDir.absolutePath}"
     }
 }
