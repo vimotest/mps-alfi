@@ -17,6 +17,9 @@
       <concept id="7486903154347131570" name="CsBaseLanguage.structure.Block" flags="ng" index="1ux1M">
         <child id="7486903154347131571" name="statement" index="1ux1N" />
       </concept>
+      <concept id="3126865292757808582" name="CsBaseLanguage.structure.UsingNamespaceDirective" flags="ng" index="2gdQUG">
+        <child id="3126865292760098553" name="reference" index="2g4BQj" />
+      </concept>
       <concept id="3766354144460199614" name="CsBaseLanguage.structure.Public" flags="ng" index="2qAx6t" />
       <concept id="3766354144460261375" name="CsBaseLanguage.structure.Static" flags="ng" index="2qAK3s" />
       <concept id="3766354144459872182" name="CsBaseLanguage.structure.IFunctionHeader" flags="ngI" index="2qBh2l">
@@ -58,6 +61,10 @@
       <concept id="6167894786982645659" name="CsBaseLanguage.structure.IGenericTypeList" flags="ngI" index="1FzkKU">
         <child id="6167894786982659430" name="typeParameter" index="1Fzgr7" />
       </concept>
+      <concept id="451639884280407984" name="CsBaseLanguage.structure.NamespaceContainer" flags="ng" index="3MEyI$">
+        <child id="7232527154588292748" name="usingDirectives" index="31LgYG" />
+      </concept>
+      <concept id="451639884260410390" name="CsBaseLanguage.structure.NamespaceReference" flags="ng" index="3PYgw2" />
       <concept id="6209812394075305792" name="CsBaseLanguage.structure.IHaveTypeOrVoid" flags="ngI" index="3Sw9wS">
         <child id="6209812394075305793" name="typeOrVoid" index="3Sw9wT" />
       </concept>
@@ -170,7 +177,7 @@
     <node concept="31LijL" id="1hI0yqU98S7" role="31LlDr">
       <property role="TrG5h" value="Alf.Library.PrimitiveBehaviors" />
       <node concept="31LiCz" id="1hI0yqU98S8" role="31LkaE">
-        <property role="TrG5h" value="BooleanFunctions" />
+        <property role="TrG5h" value="IntegerFunctions" />
         <node concept="2qAx6t" id="1hI0yqU98S9" role="3SE3Wx" />
         <node concept="2qAK3s" id="1hI0yqU98Sa" role="3SE3Wx" />
         <node concept="31KRCM" id="1hI0yqU98Sb" role="31Leeq">
@@ -310,6 +317,11 @@
         </node>
       </node>
     </node>
+    <node concept="2gdQUG" id="4AA3v1n9beL" role="31LgYG">
+      <node concept="3PYgw2" id="4AA3v1n9beM" role="2g4BQj">
+        <ref role="2Gaslz" to="g62g:5xrpOE7zdIE" resolve="System" />
+      </node>
+    </node>
   </node>
   <node concept="31LFg6" id="5hCiKtcGlSh">
     <property role="TrG5h" value="CollectionFunctions.cs" />
@@ -389,14 +401,14 @@
               <property role="TrG5h" value="collection" />
               <node concept="3UfwP1" id="1utWeBRaWwD" role="2UegB9">
                 <node concept="2Gatwc" id="1utWeBRaWwE" role="3UfBpY">
-                  <ref role="2Gaslz" to="xrxg:5hCiKtcGj90" resolve="ICollection" />
-                  <node concept="2Gatwc" id="1utWeBRaWwF" role="2GaslH">
-                    <ref role="2Gaslz" to="xrxg:5xrpOE7zdMI" resolve="System.Collections.Generic" />
-                  </node>
+                  <ref role="2Gaslz" to="xrxg:5hCiKtcGj6L" resolve="IList" />
                   <node concept="3UfwP1" id="1utWeBRaWwG" role="2GavS0">
                     <node concept="3XeaDR" id="1utWeBRaWwH" role="3UfBpY">
                       <ref role="3XeaDO" node="1utWeBRaWwM" resolve="T" />
                     </node>
+                  </node>
+                  <node concept="2Gatwc" id="3MnGZtGAzRl" role="2GaslH">
+                    <ref role="2Gaslz" to="xrxg:5xrpOE7zdIE" resolve="System.Collections.Generic" />
                   </node>
                 </node>
               </node>
