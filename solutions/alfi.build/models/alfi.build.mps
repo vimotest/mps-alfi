@@ -9,6 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="gwjr" ref="r:9d11b55c-368f-4d5a-8409-18718d1d42b0(CppBaseLanguage.build)" />
+    <import index="jn6j" ref="r:ded66146-2842-4fe9-8436-576d58b859d9(CsBaseLanguage.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -249,6 +250,12 @@
         <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="4rp03ZzFlsh" role="1l3spa">
+      <ref role="1l3spb" to="jn6j:4xDflt7HBlw" resolve="CsBaseLanguage" />
+      <node concept="398BVA" id="4rp03ZzFlsj" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
+      </node>
+    </node>
     <node concept="m$_wf" id="5tK9548cRhB" role="3989C9">
       <property role="m$_wk" value="alfi" />
       <node concept="2pNNFK" id="5ZmQMJIlskz" role="20twgj">
@@ -287,6 +294,9 @@
       <node concept="m$f5U" id="2EDlefGO41R" role="m$_yh">
         <ref role="m$f5T" node="2EDlefGO40K" resolve="alfi-transformation-cpp" />
       </node>
+      <node concept="m$f5U" id="4rp03ZzFlDy" role="m$_yh">
+        <ref role="m$f5T" node="4rp03ZzFlBo" resolve="alfi-transformation-cs" />
+      </node>
       <node concept="m$_yC" id="5tK9548cRk9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -298,6 +308,9 @@
       </node>
       <node concept="m$_yC" id="1pkjUYu4$U" role="m$_yJ">
         <ref role="m$_y1" to="gwjr:4h_5oU0U7hQ" resolve="CppBaseLanguage" />
+      </node>
+      <node concept="m$_yC" id="4rp03ZzFlsf" role="m$_yJ">
+        <ref role="m$_y1" to="jn6j:4xDflt7HBlO" />
       </node>
     </node>
     <node concept="2G$12M" id="5tK9548cRhY" role="3989C9">
@@ -479,6 +492,11 @@
             <ref role="3bR37D" to="gwjr:3SvoVjum9y6" resolve="CppStdLib" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4rp03ZzFlst" role="3bR37C">
+          <node concept="3bR9La" id="4rp03ZzFlsu" role="1SiIV1">
+            <ref role="3bR37D" to="jn6j:4V5uMVt96eO" resolve="CsStdLib" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2EDlefGO3Zg" role="3989C9">
@@ -645,6 +663,11 @@
         <node concept="1SiIV0" id="1pkjUYtEXi" role="3bR37C">
           <node concept="3bR9La" id="1pkjUYtEXj" role="1SiIV1">
             <ref role="3bR37D" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4rp03ZzFlsG" role="3bR37C">
+          <node concept="3bR9La" id="4rp03ZzFlsH" role="1SiIV1">
+            <ref role="3bR37D" to="jn6j:4xDflt7HBlG" resolve="CsBaseLanguage" />
           </node>
         </node>
       </node>
@@ -1012,6 +1035,114 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="4rp03ZzFlBo" role="3989C9">
+      <property role="TrG5h" value="alfi-transformation-cs" />
+      <node concept="1E1JtD" id="4rp03ZzFlBp" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.toCsBaseLanguage" />
+        <property role="3LESm3" value="0f0152f2-19d3-46ec-9e98-47a1e2ed7e0b" />
+        <node concept="55IIr" id="4rp03ZzFlBq" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4rp03ZzFlBr" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4rp03ZzFlBs" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.toCsBaseLanguage" />
+              <node concept="2Ry0Ak" id="4rp03ZzFlC2" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.toCsBaseLanguage.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4rp03ZzFlBu" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4rp03ZzFlD2" role="1HemKq">
+            <node concept="55IIr" id="4rp03ZzFlCY" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4rp03ZzFlCZ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4rp03ZzFlD0" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.toCsBaseLanguage" />
+                  <node concept="2Ry0Ak" id="4rp03ZzFlD1" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4rp03ZzFlD3" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4rp03ZzFlB_" role="1TViLv">
+          <property role="TrG5h" value="alfi.toCsBaseLanguage.generator" />
+          <property role="3LESm3" value="cb88ff13-d660-40de-a423-a6eaea0e21b9" />
+          <node concept="1SiIV0" id="4rp03ZzFlBA" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlBB" role="1SiIV1">
+              <ref role="3bR37D" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4rp03ZzFlBC" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlBD" role="1SiIV1">
+              <ref role="3bR37D" node="5tK9548cRi8" resolve="alfi" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="4rp03ZzFlBE" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4rp03ZzFlDf" role="1HemKq">
+              <node concept="55IIr" id="4rp03ZzFlDa" role="3LXTmr">
+                <node concept="2Ry0Ak" id="4rp03ZzFlDb" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4rp03ZzFlDc" role="2Ry0An">
+                    <property role="2Ry0Am" value="alfi.toCsBaseLanguage" />
+                    <node concept="2Ry0Ak" id="4rp03ZzFlDd" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4rp03ZzFlDe" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4rp03ZzFlDg" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4rp03ZzFlBM" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlBN" role="1SiIV1">
+              <ref role="3bR37D" node="2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4rp03ZzFlBS" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlBT" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4rp03ZzFlD6" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlD7" role="1SiIV1">
+              <ref role="3bR37D" to="jn6j:4xDflt7HBlG" resolve="CsBaseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4rp03ZzFlD8" role="3bR37C">
+            <node concept="3bR9La" id="4rp03ZzFlD9" role="1SiIV1">
+              <ref role="3bR37D" to="jn6j:4V5uMVt96eO" resolve="CsStdLib" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4rp03ZzFlCW" role="3bR37C">
+          <node concept="3bR9La" id="4rp03ZzFlCX" role="1SiIV1">
+            <ref role="3bR37D" node="5tK9548cRi8" resolve="alfi" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4rp03ZzFlD4" role="3bR37C">
+          <node concept="Rbm2T" id="4rp03ZzFlD5" role="1SiIV1">
+            <ref role="1E1Vl2" to="jn6j:4xDflt7HBlG" resolve="CsBaseLanguage" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="5tK9548cRZm" role="3989C9">
       <property role="TrG5h" value="testing" />
       <node concept="1E1JtA" id="5tK9548cS2Q" role="2G$12L">
@@ -1229,6 +1360,11 @@
         <node concept="1SiIV0" id="2SeqMAc5Wqt" role="3bR37C">
           <node concept="3bR9La" id="2SeqMAc5Wqu" role="1SiIV1">
             <ref role="3bR37D" to="gwjr:4h_5oU0U7hO" resolve="CppBaseLanguage.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4rp03ZzFltu" role="3bR37C">
+          <node concept="3bR9La" id="4rp03ZzFltv" role="1SiIV1">
+            <ref role="3bR37D" to="jn6j:7d6JWQ55TB$" resolve="CsBaseLanguage.build" />
           </node>
         </node>
       </node>
