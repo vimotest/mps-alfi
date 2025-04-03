@@ -50,7 +50,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '9.0.x'
 
       # Build C++ code
       - name: Build compitest C++ Files
@@ -87,8 +87,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: compitest-artifacts
-          path: |
-            build/artifacts/${{ env.PROJECT_NAME }}-build
+          path: build/artifacts/${{ env.PROJECT_NAME }}-build
 
   compitest:
     runs-on: ubuntu-latest
