@@ -100,6 +100,11 @@
         <child id="6843536562191098260" name="expressionList" index="3Udk6E" />
         <child id="6843536562191098258" name="primaryExpression" index="3Udk6G" />
       </concept>
+      <concept id="6843536562190617631" name="CsBaseLanguage.structure.TernaryOperatorExpression" flags="ng" index="3Uf2Kx">
+        <child id="6843536562190617637" name="ifFalse" index="3Uf2Kr" />
+        <child id="6843536562190617634" name="ifTrue" index="3Uf2Ks" />
+        <child id="6843536562190617632" name="condition" index="3Uf2Ku" />
+      </concept>
       <concept id="6843536562190653623" name="CsBaseLanguage.structure.BinaryOperation" flags="ng" index="3Ufby9">
         <child id="6843536562190653628" name="leftExpression" index="3Ufby2" />
         <child id="6843536562190653626" name="rightExpression" index="3Ufby4" />
@@ -143,12 +148,15 @@
           <property role="TrG5h" value="ToString" />
           <node concept="1ux1M" id="3suNEZ8d12R" role="31KRCR">
             <node concept="2YuCjO" id="3suNEZ8d19K" role="1ux1N">
-              <node concept="3UfPk6" id="3suNEZ8d1dK" role="2YuCjP">
-                <node concept="3UcVB9" id="3suNEZ8d1f_" role="3Ufby4">
-                  <property role="1pzheZ" value="&quot;&quot;" />
-                </node>
-                <node concept="3UcWq5" id="3suNEZ8d1ef" role="3Ufby2">
+              <node concept="3Uf2Kx" id="1AP9phYJI9W" role="2YuCjP">
+                <node concept="3UcWq5" id="1AP9phYJIa0" role="3Uf2Ku">
                   <ref role="zF7P4" node="3suNEZ8d17V" resolve="x" />
+                </node>
+                <node concept="3UcVB9" id="1AP9phYJIa2" role="3Uf2Ks">
+                  <property role="1pzheZ" value="&quot;true&quot;" />
+                </node>
+                <node concept="3UcVB9" id="1AP9phYJIa3" role="3Uf2Kr">
+                  <property role="1pzheZ" value="&quot;false&quot;" />
                 </node>
               </node>
             </node>
