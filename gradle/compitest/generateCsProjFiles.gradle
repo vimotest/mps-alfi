@@ -41,7 +41,8 @@ task generateCsprojFiles {
 """)
 
         // Find all .cs files in the source directory
-        def csFiles = sourceDir.listFiles().findAll { it.name.endsWith('Test.cs') }
+        def csFiles = sourceDir.listFiles()
+                .findAll { it.name.endsWith('.cs') && it.text.contains('static void Main') }
 
         // Create a solution file
         def solutionFile = new File(outputDir, 'Compitest.sln')
