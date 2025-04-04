@@ -24,7 +24,6 @@ task generateCsprojFiles {
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Alfi.StandardModelLibrary</RootNamespace>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
   <ItemGroup>
@@ -72,7 +71,6 @@ EndProject
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Alfi.Compitest</RootNamespace>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
   <ItemGroup>
