@@ -6,6 +6,9 @@ on:
 env:
   PROJECT_NAME: "alfi"
   LANGUAGE_NAME: "alfi"
+  DOTNET_VERSION: '9.0.x'
+  JAVA_VERSION: '17'
+  CMAKE_VERSION: '3.17.x'
 
 jobs:
   build:
@@ -13,10 +16,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 15
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '15'
+          java-version: ${{ env.JAVA_VERSION }}
           distribution: 'adopt'
 
       # Install Xvfb for avoiding X11 window server AWTError when running tests (https://arbitrary-but-fixed.net/2022/01/21/headless-gui-github-actions.html)
@@ -45,12 +48,12 @@ jobs:
       - name: Setup CMake
         uses: jwlawson/actions-setup-cmake@v1.5
         with:
-          cmake-version: '3.17.x'
+          cmake-version: ${{ env.CMAKE_VERSION }}
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: ${{ env.DOTNET_VERSION }}
 
       # Build C++ code
       - name: Build compitest C++ Files
@@ -95,11 +98,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: ${{ env.JAVA_VERSION }}
           distribution: 'adopt'
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Install alf
         run: sh ./gradlew installAlf
