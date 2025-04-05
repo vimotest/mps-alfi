@@ -41,7 +41,9 @@ task generateCsprojFiles {
 
         // Find all .cs files in the source directory
         def csFiles = sourceDir.listFiles()
-                .findAll { it.name.endsWith('.cs') && it.text.contains('static void Main') }
+                .findAll { it.name.endsWith('.cs') && it.name.startsWith('Activity') }
+        def csHelperFiles = sourceDir.listFiles()
+                .findAll { it.name.endsWith('.cs') && !it.name.startsWith('Activity') }
 
         // Create a solution file
         def solutionFile = new File(outputDir, 'Compitest.sln')
@@ -59,6 +61,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 EndProject
 """)
 
+        // Add include statements for helper files
+        def helperIncludes = csHelperFiles.collect { helperFile ->
+            def relativeHelperName = helperFile.absolutePath.substring(helperFile.absolutePath.lastIndexOf('alfi/compitest/') + 'alfi/compitest/'.length())
+            return """    <Compile Include="../source_gen/alfi/compitest/${relativeHelperName}" />"""
+        }.join('\n')
         // Generate a .csproj file for each .cs file
         csFiles.each { csFile ->
             def className = csFile.name.take(csFile.name.lastIndexOf('.'))
@@ -79,6 +86,9 @@ EndProject
 
   <ItemGroup>
     <Compile Include="../source_gen/alfi/compitest/${csFile.name}" />
+  </ItemGroup>
+  <ItemGroup>
+${helperIncludes}
   </ItemGroup>
 </Project>
 """
