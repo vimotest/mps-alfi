@@ -40,8 +40,12 @@
       <concept id="7232527154588443410" name="CsBaseLanguage.structure.MethodDeclaration" flags="ng" index="31KRCM">
         <child id="7232527154588443415" name="body" index="31KRCR" />
       </concept>
+      <concept id="7232527154588443580" name="CsBaseLanguage.structure.ParameterModifier" flags="ng" index="31KREs">
+        <property id="6664183163638125553" name="value" index="QGvMQ" />
+      </concept>
       <concept id="7232527154588476195" name="CsBaseLanguage.structure.FormalParameter" flags="ng" index="31KZC3">
         <child id="8700838527816343363" name="type" index="2UegB9" />
+        <child id="6190096177244677895" name="parameterModifier" index="1JMSiE" />
       </concept>
       <concept id="7232527154588409138" name="CsBaseLanguage.structure.TypeParameter" flags="ng" index="31Lcgi" />
       <concept id="7232527154588302801" name="CsBaseLanguage.structure.NamespaceDeclaration" flags="ng" index="31LijL">
@@ -374,6 +378,9 @@
                   </node>
                 </node>
               </node>
+              <node concept="31KREs" id="FQdpsQyeIZ" role="1JMSiE">
+                <property role="QGvMQ" value="5LVVOtEMxfS/this" />
+              </node>
             </node>
           </node>
           <node concept="3UfwP1" id="5hCiKtcGm13" role="3Sw9wT">
@@ -418,6 +425,9 @@
                     <ref role="2Gaslz" to="xrxg:5xrpOE7zdIE" resolve="System.Collections.Generic" />
                   </node>
                 </node>
+              </node>
+              <node concept="31KREs" id="FQdpsQyeJ0" role="1JMSiE">
+                <property role="QGvMQ" value="5LVVOtEMxfS/this" />
               </node>
             </node>
             <node concept="31KZC3" id="1utWeBRaWwN" role="1ux1J">
