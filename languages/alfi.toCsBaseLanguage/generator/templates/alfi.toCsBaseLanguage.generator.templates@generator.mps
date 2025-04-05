@@ -7555,6 +7555,42 @@
               <node concept="2Gatwc" id="15A6FxfzfoL" role="2GaslH">
                 <ref role="2Gaslz" to="xrxg:5xrpOE7zdSw" resolve="System.Collections.Generic" />
               </node>
+              <node concept="3UfwP1" id="FQdpsQW6bz" role="2GavS0">
+                <node concept="3UfNVn" id="FQdpsQW6b$" role="3UfBpY">
+                  <node concept="1sPUBX" id="FQdpsQW6b_" role="lGtFl">
+                    <ref role="v9R2y" node="3Edw2s$fZYh" resolve="switch_TypeName" />
+                    <node concept="3NFfHV" id="FQdpsQW6bA" role="1sPUBK">
+                      <node concept="3clFbS" id="FQdpsQW6bB" role="2VODD2">
+                        <node concept="3clFbF" id="FQdpsQXqYC" role="3cqZAp">
+                          <node concept="2OqwBi" id="FQdpsQZJkY" role="3clFbG">
+                            <node concept="1PxgMI" id="FQdpsQZIVa" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
+                              <node concept="chp4Y" id="FQdpsQZJ42" role="3oSUPX">
+                                <ref role="cht4Q" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+                              </node>
+                              <node concept="2OqwBi" id="FQdpsQX$ge" role="1m5AlR">
+                                <node concept="2OqwBi" id="FQdpsQXvqZ" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="FQdpsQXrce" role="2Oq$k0">
+                                    <node concept="30H73N" id="FQdpsQXqYB" role="2Oq$k0" />
+                                    <node concept="3Tsc0h" id="FQdpsQXrul" role="2OqNvi">
+                                      <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" resolve="expression" />
+                                    </node>
+                                  </node>
+                                  <node concept="1uHKPH" id="FQdpsQXxJ0" role="2OqNvi" />
+                                </node>
+                                <node concept="3JvlWi" id="FQdpsQX$GY" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="FQdpsQZJHv" role="2OqNvi">
+                              <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
