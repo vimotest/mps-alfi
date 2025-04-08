@@ -20,6 +20,7 @@
     <import index="hsxa" ref="r:4c138178-7acc-4278-9b8a-f54e3af48fe0(testing)" />
     <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)" />
     <import index="80bi" ref="r:95fc96a8-27f5-4ee9-87a9-d1035329badc(CsBaseLanguage.structure)" />
+    <import index="1bf1" ref="r:6630646d-2fe0-4791-bab6-8310bdf101e1(wrappers.csWrappers)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -6485,6 +6486,71 @@
                 </node>
               </node>
               <node concept="1iwH7S" id="15A6Fxf_A9U" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5ClcDMlxP8F" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
+      <node concept="gft3U" id="5ClcDMlxP8G" role="1lVwrX">
+        <node concept="3UdiBM" id="5ClcDMlDwY3" role="gfFT$">
+          <node concept="3Uc_2w" id="5ClcDMlxP8H" role="3UdiBN">
+            <node concept="3Uc1vy" id="5ClcDMlxP8I" role="3Uc_2x">
+              <node concept="29HgVG" id="5ClcDMlxP8J" role="lGtFl">
+                <node concept="3NFfHV" id="5ClcDMlxP8K" role="3NFExx">
+                  <node concept="3clFbS" id="5ClcDMlxP8L" role="2VODD2">
+                    <node concept="3clFbF" id="5ClcDMlxP8M" role="3cqZAp">
+                      <node concept="2OqwBi" id="5ClcDMlxP8N" role="3clFbG">
+                        <node concept="3TrEf2" id="5ClcDMlxP8O" role="2OqNvi">
+                          <ref role="3Tt5mk" to="28lk:6sZBH0rPpQG" resolve="primary" />
+                        </node>
+                        <node concept="30H73N" id="5ClcDMlxP8P" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1VUwCF" id="5ClcDMlxP8Q" role="3Uc_2v">
+              <ref role="2aT8gA" to="1bf1:6mT97Lr12FR" resolve="StructAt" />
+            </node>
+          </node>
+          <node concept="3UdiBG" id="5ClcDMlDwY4" role="3UdiBL">
+            <node concept="3UdiBH" id="5ClcDMlDx4u" role="3UdiBE">
+              <node concept="3Uf2Ky" id="5ClcDMlDx4v" role="3UdiBb">
+                <node concept="29HgVG" id="5ClcDMlDx4w" role="lGtFl" />
+              </node>
+              <node concept="3ejVUv" id="5ClcDMlDx4x" role="lGtFl">
+                <node concept="3JmXsc" id="5ClcDMlDx4y" role="3_Rtg">
+                  <node concept="3clFbS" id="5ClcDMlDx4z" role="2VODD2">
+                    <node concept="3clFbF" id="5ClcDMlDx4$" role="3cqZAp">
+                      <node concept="2OqwBi" id="5ClcDMlDx4_" role="3clFbG">
+                        <node concept="2OqwBi" id="5ClcDMlDx4A" role="2Oq$k0">
+                          <node concept="30H73N" id="5ClcDMlDx4B" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="5ClcDMlDx4C" role="2OqNvi">
+                            <ref role="3Tt5mk" to="28lk:2kuSLC0p53f" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="5ClcDMlDx4D" role="2OqNvi">
+                          <ref role="37wK5l" to="bqjt:5hkZeVaJ1ko" resolve="getOrderedExpressions" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="5ClcDMlxP9Q" role="30HLyM">
+        <node concept="3clFbS" id="5ClcDMlxP9R" role="2VODD2">
+          <node concept="3clFbF" id="5ClcDMlxP9S" role="3cqZAp">
+            <node concept="2YIFZM" id="5ClcDMly1_m" role="3clFbG">
+              <ref role="37wK5l" to="tpfx:5ClcDMlxY_r" resolve="mapsToStructAt" />
+              <ref role="1Pybhc" to="tpfx:6gxiAP3jNbs" resolve="CsQualifiedNameTargetResolver" />
+              <node concept="30H73N" id="5ClcDMly1_o" role="37wK5m" />
             </node>
           </node>
         </node>
