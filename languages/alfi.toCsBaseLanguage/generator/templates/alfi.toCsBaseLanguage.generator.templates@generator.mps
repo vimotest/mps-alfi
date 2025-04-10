@@ -1247,6 +1247,21 @@
         </node>
       </node>
       <node concept="raruj" id="o9CX9FuD0k" role="lGtFl" />
+      <node concept="17Uvod" id="6vEdwrGB8TK" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6vEdwrGB8TL" role="3zH0cK">
+          <node concept="3clFbS" id="6vEdwrGB8TM" role="2VODD2">
+            <node concept="3clFbF" id="6vEdwrGB9w0" role="3cqZAp">
+              <node concept="2YIFZM" id="6vEdwrGB9w1" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6vEdwrGB9w2" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="o9CX9FuDED">
@@ -1254,7 +1269,7 @@
     <property role="TrG5h" value="reduce_Class.cs" />
     <ref role="3gUMe" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     <node concept="31LFg6" id="o9CX9FuDEE" role="13RCb5">
-      <property role="3GE5qa" value="activities" />
+      <property role="3GE5qa" value="classes.class" />
       <property role="TrG5h" value="Class.cs" />
       <node concept="31LijL" id="o9CX9FuDEF" role="31LlDr">
         <property role="TrG5h" value="_NamespaceClassDefinition" />
@@ -1300,6 +1315,21 @@
         </node>
       </node>
       <node concept="raruj" id="o9CX9FuDF3" role="lGtFl" />
+      <node concept="17Uvod" id="6vEdwrGB1W3" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6vEdwrGB1W4" role="3zH0cK">
+          <node concept="3clFbS" id="6vEdwrGB1W5" role="2VODD2">
+            <node concept="3clFbF" id="6vEdwrGB2mt" role="3cqZAp">
+              <node concept="2YIFZM" id="6vEdwrGB2BZ" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6vEdwrGB2Tm" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="o9CX9FuKu0">
@@ -1307,7 +1337,7 @@
     <property role="TrG5h" value="reduce_DataType.cs" />
     <ref role="3gUMe" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
     <node concept="31LFg6" id="o9CX9FuKu1" role="13RCb5">
-      <property role="3GE5qa" value="activities" />
+      <property role="3GE5qa" value="classes.datatype" />
       <property role="TrG5h" value="DataType.cs" />
       <node concept="31LijL" id="o9CX9FuKu2" role="31LlDr">
         <property role="TrG5h" value="_NamespaceDataTypeDefinition" />
@@ -1353,6 +1383,21 @@
         </node>
       </node>
       <node concept="raruj" id="o9CX9FuKuq" role="lGtFl" />
+      <node concept="17Uvod" id="6vEdwrGB7zB" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6vEdwrGB7zC" role="3zH0cK">
+          <node concept="3clFbS" id="6vEdwrGB7zD" role="2VODD2">
+            <node concept="3clFbF" id="6vEdwrGB7Vb" role="3cqZAp">
+              <node concept="2YIFZM" id="6vEdwrGB7Vc" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6vEdwrGB7Vd" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="o9CX9FuX86">
@@ -1360,8 +1405,8 @@
     <property role="TrG5h" value="reduce_Enum.cs" />
     <ref role="3gUMe" to="28lk:3_puicMj8j7" resolve="EnumerationDefinition" />
     <node concept="31LFg6" id="o9CX9FuX87" role="13RCb5">
-      <property role="3GE5qa" value="activities" />
-      <property role="TrG5h" value="Class.cs" />
+      <property role="3GE5qa" value="enums" />
+      <property role="TrG5h" value="Enum.cs" />
       <node concept="31LijL" id="o9CX9FuX88" role="31LlDr">
         <property role="TrG5h" value="_NamespaceEnumDefinition" />
         <node concept="17Uvod" id="o9CX9FuX8h" role="lGtFl">
@@ -1406,6 +1451,21 @@
         </node>
       </node>
       <node concept="raruj" id="o9CX9FuX8u" role="lGtFl" />
+      <node concept="17Uvod" id="6vEdwrGB5Em" role="lGtFl">
+        <property role="2qtEX9" value="virtualPackage" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+        <node concept="3zFVjK" id="6vEdwrGB5En" role="3zH0cK">
+          <node concept="3clFbS" id="6vEdwrGB5Eo" role="2VODD2">
+            <node concept="3clFbF" id="6vEdwrGB61g" role="3cqZAp">
+              <node concept="2YIFZM" id="6vEdwrGB61h" role="3clFbG">
+                <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
+                <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
+                <node concept="30H73N" id="6vEdwrGB61i" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="yIFSV1fcQ9">
