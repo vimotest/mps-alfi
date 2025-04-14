@@ -15,6 +15,7 @@
       <concept id="7232527154588302801" name="CsBaseLanguage.structure.NamespaceDeclaration" flags="ng" index="31LijL">
         <child id="7232527154588310410" name="namespaceMemberDeclaration" index="31LkaE" />
       </concept>
+      <concept id="7232527154588300035" name="CsBaseLanguage.structure.ClassDeclaration" flags="ng" index="31LiCz" />
       <concept id="7232527154588300038" name="CsBaseLanguage.structure.InterfaceDeclaration" flags="ng" index="31LiCA">
         <child id="7575174424947101368" name="interfaceMemberDeclaration" index="1fIeeT" />
       </concept>
@@ -44,6 +45,24 @@
           <node concept="1ux1I" id="yIFSV1gmtR" role="1fIg$P" />
           <node concept="1pH0Yj" id="yIFSV1gmtT" role="3Sw9wT" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="31LFg6" id="6RhH0UXKY1r">
+    <property role="TrG5h" value="UnitTesting.cs" />
+    <node concept="31LijL" id="6RhH0UXKY1t" role="31LlDr">
+      <property role="TrG5h" value="Microsoft.VisualStudio.TestTools.UnitTesting" />
+      <node concept="31LiCz" id="6RhH0UXKY1v" role="31LkaE">
+        <property role="TrG5h" value="TestClass" />
+      </node>
+      <node concept="31LiCz" id="6RhH0UXL3zU" role="31LkaE">
+        <property role="TrG5h" value="TestInitialize" />
+      </node>
+      <node concept="31LiCz" id="6RhH0UXL3zV" role="31LkaE">
+        <property role="TrG5h" value="TestCleanup" />
+      </node>
+      <node concept="31LiCz" id="6RhH0UXL3zW" role="31LkaE">
+        <property role="TrG5h" value="TestMethod" />
       </node>
     </node>
   </node>
