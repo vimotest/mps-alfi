@@ -1050,6 +1050,27 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="37zNn5Lmchp" role="3acgRq">
+      <ref role="30HIoZ" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+      <node concept="30G5F_" id="37zNn5LmhQ5" role="30HLyM">
+        <node concept="3clFbS" id="37zNn5LmhQ6" role="2VODD2">
+          <node concept="3clFbF" id="37zNn5LmiGV" role="3cqZAp">
+            <node concept="2YIFZM" id="2SeqMAbZeSJ" role="3clFbG">
+              <ref role="37wK5l" to="stu:37zNn5Lm0yI" resolve="needsSpecialTestGeneration" />
+              <ref role="1Pybhc" to="stu:37zNn5Lm0u6" resolve="TestGenerationHelper" />
+              <node concept="30H73N" id="37zNn5LmiGZ" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="37zNn5LmiNe" role="1lVwrX">
+        <node concept="2VYdi" id="37zNn5LmiNg" role="gfFT$">
+          <node concept="1sPUBX" id="37zNn5LmiO_" role="lGtFl">
+            <ref role="v9R2y" node="37zNn5LkBLt" resolve="switch_testingDefinitions" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="7tDI0mOibfl" role="3acgRq">
       <ref role="30HIoZ" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
       <node concept="gft3U" id="2jVOGaCX_Rm" role="1lVwrX">
@@ -1137,8 +1158,7 @@
     <property role="TrG5h" value="switch_NamespaceDefinition.cs" />
     <property role="3GE5qa" value="_root" />
     <node concept="3aamgX" id="6RhH0UXKgFM" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="28lk:2SMO68r$0GW" resolve="NamespaceDefinition" />
+      <ref role="30HIoZ" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
       <node concept="gft3U" id="6RhH0UXKgFN" role="1lVwrX">
         <node concept="2VYdi" id="6RhH0UXKgFO" role="gfFT$">
           <node concept="1sPUBX" id="6RhH0UXKgFP" role="lGtFl">
@@ -1153,6 +1173,27 @@
               <ref role="37wK5l" to="stu:37zNn5Lm0yI" resolve="needsSpecialTestGeneration" />
               <ref role="1Pybhc" to="stu:37zNn5Lm0u6" resolve="TestGenerationHelper" />
               <node concept="30H73N" id="6RhH0UXKgFU" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="6rN02BBgxLg" role="3aUrZf">
+      <ref role="30HIoZ" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+      <node concept="gft3U" id="6rN02BBgxLh" role="1lVwrX">
+        <node concept="2VYdi" id="6rN02BBgxLi" role="gfFT$">
+          <node concept="1sPUBX" id="6rN02BBgxLj" role="lGtFl">
+            <ref role="v9R2y" node="6RhH0UXKfng" resolve="switch_NamespaceDefinition_Test.cs" />
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="6rN02BBgxLk" role="30HLyM">
+        <node concept="3clFbS" id="6rN02BBgxLl" role="2VODD2">
+          <node concept="3clFbF" id="6rN02BBgxLm" role="3cqZAp">
+            <node concept="2YIFZM" id="6rN02BBgxLn" role="3clFbG">
+              <ref role="37wK5l" to="stu:37zNn5Lm0yI" resolve="needsSpecialTestGeneration" />
+              <ref role="1Pybhc" to="stu:37zNn5Lm0u6" resolve="TestGenerationHelper" />
+              <node concept="30H73N" id="6rN02BBgxLo" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -11117,7 +11158,27 @@
         <node concept="31KRCM" id="6RhH0UXKzmm" role="gfFT$">
           <property role="TrG5h" value="testCase" />
           <node concept="1ux1M" id="6RhH0UXKzmn" role="31KRCR">
-            <node concept="31KRCQ" id="6RhH0UXKzmo" role="1ux1N" />
+            <node concept="31KRCQ" id="6RhH0UXKzmo" role="1ux1N">
+              <node concept="2b32R4" id="6rN02BBnbPa" role="lGtFl">
+                <node concept="3JmXsc" id="6rN02BBnbPd" role="2P8S$">
+                  <node concept="3clFbS" id="6rN02BBnbPe" role="2VODD2">
+                    <node concept="3clFbF" id="6rN02BBnc4i" role="3cqZAp">
+                      <node concept="2OqwBi" id="6rN02BBnc4j" role="3clFbG">
+                        <node concept="2OqwBi" id="6rN02BBnc4k" role="2Oq$k0">
+                          <node concept="30H73N" id="6rN02BBnc4l" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6rN02BBnc4m" role="2OqNvi">
+                            <ref role="3Tt5mk" to="28lk:75cQW_toFlm" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="6rN02BBnc4n" role="2OqNvi">
+                          <ref role="3TtcxE" to="28lk:2SMO68r$0y1" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1ux1I" id="6RhH0UXKzmp" role="1fIg$P" />
           <node concept="1pH0Yj" id="6RhH0UXKzmr" role="3Sw9wT" />
@@ -11492,7 +11553,6 @@
         <node concept="31LFg6" id="6RhH0UXL3RL" role="gfFT$">
           <property role="TrG5h" value="_TestSuite_ClassDefinition.cs" />
           <node concept="pLYZS" id="6RhH0UXLaKb" role="31LlDr">
-            <node concept="raruj" id="6RhH0UXLaKc" role="lGtFl" />
             <node concept="1W57fq" id="6RhH0UXLaKd" role="lGtFl">
               <node concept="3IZrLx" id="6RhH0UXLaKe" role="3IZSJc">
                 <node concept="3clFbS" id="6RhH0UXLaKf" role="2VODD2">
@@ -11542,9 +11602,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="raruj" id="6RhH0UXLaK_" role="lGtFl">
-              <ref role="2sdACS" node="2X39vz3fRRw" resolve="namedNode" />
             </node>
             <node concept="31KRIa" id="6RhH0UXLaLr" role="31Leeq">
               <node concept="1ux1y" id="6RhH0UXLaLs" role="31KRJH">

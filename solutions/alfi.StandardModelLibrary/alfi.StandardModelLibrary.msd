@@ -15,6 +15,7 @@
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">b0ab0748-a24f-440a-a643-9b7b13e80a3f(CppStdLib)</dependency>
     <dependency reexport="false">0e5f29d3-1825-4400-ab4a-0a6f471d84b1(CsStdLib)</dependency>
+    <dependency reexport="false">cb88ff13-d660-40de-a423-a6eaea0e21b9(alfi.toCsBaseLanguage.generator)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" version="0" />
@@ -33,6 +34,7 @@
     <module reference="368addf7-d0a2-464c-9c1e-7d06503a5670(CsStdLibrary)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
+    <module reference="cb88ff13-d660-40de-a423-a6eaea0e21b9(alfi.toCsBaseLanguage.generator)" version="0" />
   </dependencyVersions>
 </solution>
 
