@@ -17,7 +17,7 @@
     <import index="1bf1" ref="r:6630646d-2fe0-4791-bab6-8310bdf101e1(wrappers.csWrappers)" />
     <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)" />
     <import index="f3t" ref="r:ce8eb5c9-544c-4088-a4a6-681bab703d23(System.Runtime)" />
-    <import index="n7n1" ref="r:3d22faf1-92fc-4728-a86c-596fb9023ddb(alfi.toCsBaseLanguage.generator.alfiCsStdLib)" />
+    <import index="rieo" ref="r:aa96a7e4-0b43-4b4a-ac6f-5d4242e71c1c(MSTest.TestFramework)" />
   </imports>
   <registry>
     <language id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping">
@@ -730,15 +730,15 @@
       <property role="TrG5h" value="Testing" />
       <node concept="3HHQsX" id="6rN02BBb22u" role="3HHZ2s">
         <ref role="3HHQsK" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
-        <ref role="3HHQyS" to="n7n1:6rN02BBb22$" resolve="AreEqual" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$g" resolve="AreEqual" />
       </node>
       <node concept="3HHQsX" id="6rN02BBb22v" role="3HHZ2s">
         <ref role="3HHQsK" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
-        <ref role="3HHQyS" to="n7n1:6rN02BBb22P" resolve="IsTrue" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$q" resolve="IsTrue" />
       </node>
       <node concept="3HHQsX" id="6rN02BBb22w" role="3HHZ2s">
         <ref role="3HHQsK" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
-        <ref role="3HHQyS" to="n7n1:6rN02BBb235" resolve="IsFalse" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$x" resolve="IsFalse" />
       </node>
     </node>
   </node>
