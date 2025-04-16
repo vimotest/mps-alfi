@@ -1597,6 +1597,46 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="2X0wUhzCsAJ" role="3cqZAp">
+              <node concept="1PaTwC" id="2X0wUhzCsAK" role="1aUNEU">
+                <node concept="3oM_SD" id="2X0wUhzCsAL" role="1PaTwD">
+                  <property role="3oM_SC" value="Note:" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt1n" role="1PaTwD">
+                  <property role="3oM_SC" value="session" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt1P" role="1PaTwD">
+                  <property role="3oM_SC" value="object" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt1X" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt21" role="1PaTwD">
+                  <property role="3oM_SC" value="global," />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt2u" role="1PaTwD">
+                  <property role="3oM_SC" value="add" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt2R" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;/cs&quot;" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt4i" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt4m" role="1PaTwD">
+                  <property role="3oM_SC" value="avoid" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt4t" role="1PaTwD">
+                  <property role="3oM_SC" value="clashes" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt4A" role="1PaTwD">
+                  <property role="3oM_SC" value="with" />
+                </node>
+                <node concept="3oM_SD" id="2X0wUhzCt4G" role="1PaTwD">
+                  <property role="3oM_SC" value="Java" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="4euogOalEQx" role="3cqZAp">
               <node concept="3clFbS" id="4euogOalEQz" role="3clFbx">
                 <node concept="3clFbF" id="4euogOalE8S" role="3cqZAp">
@@ -1609,7 +1649,7 @@
                       <node concept="2fSANN" id="4euogOalEwc" role="2OqNvi">
                         <node concept="3cpWs3" id="4euogOalGfk" role="2fWi3N">
                           <node concept="Xl_RD" id="4euogOalEAY" role="3uHU7w">
-                            <property role="Xl_RC" value=".cs/onlyToAlf" />
+                            <property role="Xl_RC" value=".cs/cs/onlyToAlf" />
                           </node>
                           <node concept="3cpWs3" id="HR$VOJG8vv" role="3uHU7B">
                             <node concept="2OqwBi" id="HR$VOJzUmN" role="3uHU7w">
@@ -12067,7 +12107,7 @@
                           <node concept="2fSANN" id="4euogOalJ60" role="2OqNvi">
                             <node concept="3cpWs3" id="4euogOalJ61" role="2fWi3N">
                               <node concept="Xl_RD" id="4euogOalJ62" role="3uHU7w">
-                                <property role="Xl_RC" value="/onlyToAlf" />
+                                <property role="Xl_RC" value="/cs/onlyToAlf" />
                               </node>
                               <node concept="2OqwBi" id="4euogOalJ64" role="3uHU7B">
                                 <node concept="37vLTw" id="4euogOalJ65" role="2Oq$k0">
@@ -12108,15 +12148,15 @@
                       <node concept="Xl_RD" id="5tK9549goay" role="3uHU7w">
                         <property role="Xl_RC" value=" (.cs) which originally contained @onlyToAlf annotation" />
                       </node>
-                      <node concept="3cpWs3" id="5tK9549goaz" role="3uHU7B">
-                        <node concept="Xl_RD" id="5tK9549goa$" role="3uHU7B">
-                          <property role="Xl_RC" value="Drop node " />
-                        </node>
+                      <node concept="3cpWs3" id="2X0wUhzCsao" role="3uHU7B">
                         <node concept="2OqwBi" id="5tK9549goa_" role="3uHU7w">
+                          <node concept="2Iv5rx" id="5tK9549goaB" role="2OqNvi" />
                           <node concept="37vLTw" id="5tK9549goaA" role="2Oq$k0">
                             <ref role="3cqZAo" node="5tK9549go5k" resolve="it" />
                           </node>
-                          <node concept="2Iv5rx" id="5tK9549goaB" role="2OqNvi" />
+                        </node>
+                        <node concept="Xl_RD" id="5tK9549goa$" role="3uHU7B">
+                          <property role="Xl_RC" value="Drop node " />
                         </node>
                       </node>
                     </node>
