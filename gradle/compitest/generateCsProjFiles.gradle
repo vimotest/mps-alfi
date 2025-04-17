@@ -17,7 +17,12 @@ task generateCsprojFiles {
         def libraryProjectGuid = java.util.UUID.randomUUID().toString()
 
         // Find all .cs files in the standard library directory
-        def stdLibFiles = stdLibDir.listFiles().findAll { it.name.endsWith('.cs') }
+        def stdLibFiles = []
+        stdLibDir.eachFileRecurse(groovy.io.FileType.FILES) { file ->
+            if (file.name.endsWith('.cs')) {
+                stdLibFiles << file
+            }
+        }
 
         // Generate the library project file
         libraryProjectFile.text = """<Project Sdk="Microsoft.NET.Sdk">
