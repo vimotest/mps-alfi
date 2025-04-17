@@ -1130,6 +1130,16 @@
               <ref role="3bR37D" to="jn6j:4V5uMVt96eO" resolve="CsStdLib" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5$AbQfcyC5t" role="3bR37C">
+            <node concept="3bR9La" id="5$AbQfcyC5u" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5$AbQfcyC5v" role="3bR37C">
+            <node concept="3bR9La" id="5$AbQfcyC5w" role="1SiIV1">
+              <ref role="3bR37D" node="2SeqMAc5VN9" resolve="alfi.toCppBaseLanguage.generator" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4rp03ZzFlCW" role="3bR37C">
           <node concept="3bR9La" id="4rp03ZzFlCX" role="1SiIV1">

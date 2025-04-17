@@ -1170,6 +1170,9 @@
     <node concept="1puMqW" id="5ClcDMlI5oq" role="1pvy6N">
       <ref role="1puQsG" node="6LCMmpSFpTS" resolve="simplifyMinusExpressions" />
     </node>
+    <node concept="1puMqW" id="5$AbQfcro1D" role="1pvy6N">
+      <ref role="1puQsG" node="1pkjUYvScE" resolve="generateGeneratedPropsFile" />
+    </node>
   </node>
   <node concept="jVnub" id="1CWniaWiCVe">
     <property role="TrG5h" value="switch_NamespaceDefinition.cs" />
@@ -12176,6 +12179,21 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="1pkjUYvScE">
+    <property role="3GE5qa" value="scripts" />
+    <property role="TrG5h" value="generateGeneratedPropsFile" />
+    <node concept="1pplIY" id="1pkjUYvScF" role="1pqMTA">
+      <node concept="3clFbS" id="1pkjUYvScG" role="2VODD2">
+        <node concept="3clFbF" id="3Edw2s$JZ4P" role="3cqZAp">
+          <node concept="2YIFZM" id="3Edw2s$K38E" role="3clFbG">
+            <ref role="37wK5l" to="tpfx:3Edw2s$K0qc" resolve="generateCMake" />
+            <ref role="1Pybhc" to="tpfx:3Edw2s$JmR2" resolve="PropsGeneratorHelper" />
+            <node concept="1Q6Npb" id="3Edw2s$K399" role="37wK5m" />
           </node>
         </node>
       </node>
