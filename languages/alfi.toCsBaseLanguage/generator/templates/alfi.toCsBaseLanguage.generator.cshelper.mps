@@ -2426,7 +2426,7 @@
                             <node concept="3clFbF" id="5$AbQfcoF5l" role="3cqZAp">
                               <node concept="17R0WA" id="5$AbQfcoWMP" role="3clFbG">
                                 <node concept="Xl_RD" id="5$AbQfcoXi6" role="3uHU7w">
-                                  <property role="Xl_RC" value="TestSuite" />
+                                  <property role="Xl_RC" value="TestClass" />
                                 </node>
                                 <node concept="2OqwBi" id="5$AbQfcoQHB" role="3uHU7B">
                                   <node concept="2OqwBi" id="5$AbQfcoOcq" role="2Oq$k0">
