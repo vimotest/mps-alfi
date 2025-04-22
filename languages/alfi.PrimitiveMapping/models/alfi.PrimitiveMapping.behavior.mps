@@ -11,6 +11,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" />
     <import index="yjel" ref="r:dab63655-c42b-4e25-8556-f957cf01259a(CppBaseLanguage.structure)" />
+    <import index="80bi" ref="r:95fc96a8-27f5-4ee9-87a9-d1035329badc(CsBaseLanguage.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -252,6 +253,43 @@
                   <node concept="3clFbF" id="7loaBmQWUa2" role="3cqZAp">
                     <node concept="37vLTw" id="7loaBmQX1Bc" role="3clFbG">
                       <ref role="3cqZAo" node="7loaBmQX1B4" resolve="referencableMembers" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="3szbYByGjO_" role="3X5gkp">
+              <node concept="21nZrQ" id="3szbYByGjOA" role="3X5Uda">
+                <ref role="21nZrZ" to="sk9k:1OZ38Q7JXtK" resolve="cs" />
+              </node>
+              <node concept="3X5gDB" id="3szbYByGjOB" role="3X5gFO">
+                <node concept="3clFbS" id="3szbYByGjOC" role="3X5gD$">
+                  <node concept="3cpWs8" id="3szbYByGjOD" role="3cqZAp">
+                    <node concept="3cpWsn" id="3szbYByGjOE" role="3cpWs9">
+                      <property role="TrG5h" value="referencableMembers" />
+                      <node concept="3uibUv" id="3szbYByGjOF" role="1tU5fm">
+                        <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                      </node>
+                      <node concept="2YIFZM" id="3szbYByGjOG" role="33vP2m">
+                        <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                        <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                        <node concept="2OqwBi" id="3szbYByGjOH" role="37wK5m">
+                          <node concept="2OqwBi" id="3szbYByGjOI" role="2Oq$k0">
+                            <node concept="13iPFW" id="3szbYByGjOJ" role="2Oq$k0" />
+                            <node concept="I4A8Y" id="3szbYByGjOK" role="2OqNvi" />
+                          </node>
+                          <node concept="1j9C0f" id="3szbYByGjOL" role="2OqNvi">
+                            <node concept="chp4Y" id="3szbYByGlBo" role="3MHPCF">
+                              <ref role="cht4Q" to="80bi:1HkqSaCLgAV" resolve="IReferencableMemberDeclaration" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="3szbYByGjOV" role="3cqZAp">
+                    <node concept="37vLTw" id="3szbYByGjOW" role="3clFbG">
+                      <ref role="3cqZAo" node="3szbYByGjOE" resolve="referencableMembers" />
                     </node>
                   </node>
                 </node>

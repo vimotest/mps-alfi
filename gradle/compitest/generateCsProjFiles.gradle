@@ -1,0 +1,130 @@
+task generateCsprojFiles {
+    description 'Generate individual .csproj files for each CS file with a shared library reference'
+    group 'compitest'
+
+    doLast {
+        def compitestDir = file('solutions/alfi.compitest')
+        def sourceDir = file("${compitestDir}/source_gen/alfi/compitest")
+        def outputDir = file("${compitestDir}/dotnet-build")
+        def stdLibDir = file("$projectDir/solutions/alfi.StandardModelLibrary/source_gen/wrappers/csWrappers")
+
+        if (!outputDir.exists()) {
+            outputDir.mkdirs()
+        }
+
+        // Create AlfLibrary.csproj for standard sources
+        def libraryProjectFile = new File(outputDir, "AlfLibrary.csproj")
+        def libraryProjectGuid = java.util.UUID.randomUUID().toString()
+
+        // Find all .cs files in the standard library directory
+        def stdLibFiles = []
+        stdLibDir.eachFileRecurse(groovy.io.FileType.FILES) { file ->
+            if (file.name.endsWith('.cs')) {
+                stdLibFiles << file
+            }
+        }
+
+        // Generate the library project file
+        libraryProjectFile.text = """<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Alfi.StandardModelLibrary</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+"""
+
+        // Add each standard library file to the project
+        stdLibFiles.each { stdLibFile ->
+            libraryProjectFile.append("""    <Compile Include="${stdLibFile.absolutePath.replace('\\', '/')}" />
+""")
+        }
+
+        libraryProjectFile.append("""  </ItemGroup>
+</Project>
+""")
+
+        // Find all .cs files in the source directory
+        def csFiles = sourceDir.listFiles()
+                .findAll { it.name.endsWith('.cs') && it.name.startsWith('Activity') }
+
+        // Create a solution file
+        def solutionFile = new File(outputDir, 'Compitest.sln')
+        solutionFile.text = """Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+"""
+
+        def projectGuids = [:]
+        projectGuids["AlfLibrary"] = libraryProjectGuid
+
+        // Add library project to solution
+        solutionFile.append("""Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfLibrary", "AlfLibrary.csproj", "{${libraryProjectGuid}}"
+EndProject
+""")
+
+        // Generate a .csproj file for each .cs file
+        csFiles.each { csFile ->
+            def className = csFile.name.take(csFile.name.lastIndexOf('.'))
+            def projectFile = new File(outputDir, "${className}.csproj")
+            def projectGuid = java.util.UUID.randomUUID().toString()
+            projectGuids[className] = projectGuid
+
+            projectFile.text = """<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Alfi.Compitest</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="AlfLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="../source_gen/alfi/compitest/${csFile.name}" />
+  </ItemGroup>
+  <Import Project="../source_gen/alfi/compitest/alfi.compitest.props" />
+</Project>
+"""
+
+            // Add project to solution
+            solutionFile.append("""Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "${className}", "${className}.csproj", "{${projectGuid}}"
+EndProject
+""")
+        }
+
+        // Complete solution file structure
+        solutionFile.append("""Global
+\tGlobalSection(SolutionConfigurationPlatforms) = preSolution
+\t\tDebug|Any CPU = Debug|Any CPU
+\t\tRelease|Any CPU = Release|Any CPU
+\tEndGlobalSection
+\tGlobalSection(ProjectConfigurationPlatforms) = postSolution
+""")
+
+        // Add configuration for each project
+        projectGuids.each { className, guid ->
+            solutionFile.append("""\t\t{${guid}}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+\t\t{${guid}}.Debug|Any CPU.Build.0 = Debug|Any CPU
+\t\t{${guid}}.Release|Any CPU.ActiveCfg = Release|Any CPU
+\t\t{${guid}}.Release|Any CPU.Build.0 = Release|Any CPU
+""")
+        }
+
+        solutionFile.append("""\tEndGlobalSection
+EndGlobal
+""")
+
+        // Copy Directory.Build.props to the output directory
+        def dirBuildProps = file('Directory.Build.props')
+        if (dirBuildProps.exists()) {
+            def targetProps = new File(outputDir, 'Directory.Build.props')
+            targetProps.text = dirBuildProps.text
+        }
+
+        println "Generated shared library project with ${stdLibFiles.size()} standard files"
+        println "Generated ${csFiles.size()} test project files and solution in ${outputDir.absolutePath}"
+    }
+}

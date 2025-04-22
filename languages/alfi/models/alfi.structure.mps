@@ -1163,17 +1163,17 @@
     </node>
     <node concept="25R33" id="6cBsaQygTcB" role="25R1y">
       <property role="3tVfz5" value="7144803224900571943" />
-      <property role="TrG5h" value="LeftShiftCompundAssigment" />
+      <property role="TrG5h" value="LeftShiftCompoundAssigment" />
       <property role="1L1pqM" value="&lt;&lt;=" />
     </node>
     <node concept="25R33" id="6cBsaQygTcM" role="25R1y">
       <property role="3tVfz5" value="7144803224900571954" />
-      <property role="TrG5h" value="SignedRightShiftCompundAssigment" />
+      <property role="TrG5h" value="SignedRightShiftCompoundAssigment" />
       <property role="1L1pqM" value="&gt;&gt;=" />
     </node>
     <node concept="25R33" id="6cBsaQygTcY" role="25R1y">
       <property role="3tVfz5" value="7144803224900571966" />
-      <property role="TrG5h" value="UnsingedRightShiftCompundAssignment" />
+      <property role="TrG5h" value="UnsignedRightShiftCompoundAssignment" />
       <property role="1L1pqM" value="&gt;&gt;&gt;=" />
     </node>
   </node>

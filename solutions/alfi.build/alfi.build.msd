@@ -14,6 +14,7 @@
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)</dependency>
     <dependency reexport="false">4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)</dependency>
+    <dependency reexport="false">4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
