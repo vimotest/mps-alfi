@@ -51,7 +51,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>alfi</id>
         <name>alfi</name>
-        <version>1.1.5</version>
+        <version>2024.3.0-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
@@ -199,6 +199,7 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="6d8eccd3-c581-4162-8861-ea350ccdcc45(jetbrains.mps.lang.doctext.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
         </dependencies>
@@ -1155,7 +1156,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>alfi</id>
         <name>alfi</name>
-        <version>1.1.5</version>
+        <version>2024.3.0-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
@@ -1303,6 +1304,7 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="6d8eccd3-c581-4162-8861-ea350ccdcc45(jetbrains.mps.lang.doctext.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
         </dependencies>
@@ -2590,6 +2592,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/doctext/jetbrains.mps.lang.doctext.runtime.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/alfi.toAlf">
@@ -2807,6 +2810,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -3673,7 +3677,7 @@
     <path location="${build.layout}/tests/alfi.test.jar" id="mps.tests.path" />
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">      
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports=".">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />
@@ -3701,15 +3705,13 @@
         <path refid="mps.tests.path" />
       </testmodules>
     </launchtests>
-    <copy todir=".">      
-      <fileset dir="${build.tmp}">
-        <include name="TEST*.xml" />
-        <include name="junit-platform-events*.xml" />
+    <move todir=".">      
+      <fileset dir=".">
+        <include name="TEST-junit-jupiter.xml" />
+        <include name="TEST-junit-vintage.xml" />
       </fileset>
-      
       <globmapper from="*.xml" to="*-alfi-build.xml" />
-      
-    </copy>
+    </move>
   </target>
   
   <target name="cleanSources">
