@@ -14,16 +14,18 @@ Additionally, it contains generators to the following programming languages:
 
 - Java BaseLanguage (MPS official)
 - simple C++ BaseLanguage (https://github.com/Fumapps/CppBaseLanguage)
+- simple C# BaseLanguage (https://github.com/Fumapps/CsBaseLanguage)
 
 The project is based on [version 1.1 of the ALF Standard](http://www.omg.org/spec/ALF/1.1).
 The ALF standard reference implementation is available on GitHub: https://github.com/ModelDriven/Alf-Reference-Implementation
 
 ## Version Support
 
-| ALFI Version | MPS Version |
-|--------------|-------------|
-| 1.0.3-1.0.4  | 2024.1      |
-| 1.0.0-1.0.2  | 2023.3      |
+| ALFI Version | MPS Version         |
+|--------------|---------------------|
+| 2024.3.x     | same as major/minor |
+| 1.0.3-1.0.5  | 2024.1              |
+| 1.0.0-1.0.2  | 2023.3              |
 
 ## State of the project
 
