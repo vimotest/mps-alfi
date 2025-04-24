@@ -9,7 +9,7 @@ ext.mpsPlugins = [
 ext.customMpsPlugins = [
     "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2024.3.0/TextGenGen.zip",
     "CppBaseLanguage": "https://github.com/Fumapps/CppBaseLanguage/releases/download/2024.3.0/CppBaseLanguage.zip",
-    "CsBaseLanguage": "https://github.com/Fumapps/CsBaseLanguage/releases/download/2024.3.1-alpha2/CsBaseLanguage.zip"
+    "CsBaseLanguage": "https://github.com/Fumapps/CsBaseLanguage/releases/download/2024.3.1/CsBaseLanguage.zip"
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
