@@ -2352,7 +2352,7 @@
     <node concept="3aamgX" id="4TIfAhWmO37" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQxChVb" resolve="ForStatement" />
       <node concept="j$656" id="4TIfAhWuQC7" role="1lVwrX">
-        <ref role="v9R2y" node="37zNn5M6DQ4" resolve="switch_ForLoopWithNumberRange" />
+        <ref role="v9R2y" node="37zNn5M6DQ4" resolve="reduce_ForLoopWithNumberRange" />
       </node>
       <node concept="30G5F_" id="37zNn5M73NY" role="30HLyM">
         <node concept="3clFbS" id="37zNn5M73NZ" role="2VODD2">
@@ -2370,7 +2370,7 @@
     <node concept="3aamgX" id="37zNn5M7294" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQxChVb" resolve="ForStatement" />
       <node concept="j$656" id="37zNn5M7295" role="1lVwrX">
-        <ref role="v9R2y" node="4TIfAhWmYm9" resolve="switch_ForLoop" />
+        <ref role="v9R2y" node="4TIfAhWmYm9" resolve="reduce_ForLoop" />
         <node concept="3cpWs3" id="37zNn5M7296" role="v9R3O">
           <node concept="Xl_RD" id="37zNn5M7297" role="3uHU7w">
             <property role="Xl_RC" value="_" />
@@ -3299,7 +3299,7 @@
         <node concept="3clFbS" id="6477CZi5i0A" role="2VODD2">
           <node concept="3clFbF" id="1OZ38Q7JvSB" role="3cqZAp">
             <node concept="2YIFZM" id="1OZ38Q7Jw6v" role="3clFbG">
-              <ref role="37wK5l" to="stu:1OZ38Q7Ju$a" resolve="hasNewLineSeparator" />
+              <ref role="37wK5l" to="stu:1OZ38Q7Ju$a" resolve="hasRealNewLineSeparator" />
               <ref role="1Pybhc" to="stu:1OZ38Q7JuyM" resolve="ExpressionGenerationHelper" />
               <node concept="30H73N" id="1OZ38Q7Jwkj" role="37wK5m" />
             </node>
@@ -4801,7 +4801,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e6M$" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcB" resolve="LeftShiftCompundAssigment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcB" resolve="LeftShiftCompoundAssigment" />
                   </node>
                 </node>
               </node>
@@ -4865,7 +4865,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e79H" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcM" resolve="SignedRightShiftCompundAssigment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcM" resolve="SignedRightShiftCompoundAssigment" />
                   </node>
                 </node>
               </node>
@@ -4929,7 +4929,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e7Dp" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcY" resolve="UnsingedRightShiftCompundAssignment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcY" resolve="UnsignedRightShiftCompoundAssignment" />
                   </node>
                 </node>
               </node>

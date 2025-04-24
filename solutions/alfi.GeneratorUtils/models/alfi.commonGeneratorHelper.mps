@@ -779,7 +779,7 @@
         <node concept="3clFbF" id="5A1wWooC$YN" role="3cqZAp">
           <node concept="2OqwBi" id="5A1wWooC__C" role="3clFbG">
             <node concept="1rXfSq" id="5A1wWooC$YM" role="2Oq$k0">
-              <ref role="37wK5l" node="5A1wWooC3j0" resolve="getEffectiveRedefinitionBaseOperation" />
+              <ref role="37wK5l" node="5A1wWooC3j0" resolve="getEffectiveRedefinitionBaseOperations" />
               <node concept="37vLTw" id="5A1wWooC_aL" role="37wK5m">
                 <ref role="3cqZAo" node="1CWniaVTiMw" resolve="operationDefinition" />
               </node>
@@ -875,7 +875,7 @@
         <node concept="3clFbH" id="5A1wWooCtYt" role="3cqZAp" />
         <node concept="3cpWs6" id="5A1wWooC4Fm" role="3cqZAp">
           <node concept="1rXfSq" id="5A1wWooC4Fn" role="3cqZAk">
-            <ref role="37wK5l" node="5A1wWooCwPy" resolve="getImplicitRedefinitionOperation" />
+            <ref role="37wK5l" node="5A1wWooCwPy" resolve="getImplicitRedefinitionOperations" />
             <node concept="37vLTw" id="5A1wWooC4Fo" role="37wK5m">
               <ref role="3cqZAo" node="5A1wWooC55d" resolve="operationDefinition" />
             </node>
@@ -894,7 +894,7 @@
         <node concept="3clFbF" id="5A1wWooCPb3" role="3cqZAp">
           <node concept="2OqwBi" id="5A1wWooCRvT" role="3clFbG">
             <node concept="1rXfSq" id="5A1wWooCPb2" role="2Oq$k0">
-              <ref role="37wK5l" node="5A1wWooCwPy" resolve="getImplicitRedefinitionOperation" />
+              <ref role="37wK5l" node="5A1wWooCwPy" resolve="getImplicitRedefinitionOperations" />
               <node concept="37vLTw" id="5A1wWooCQJx" role="37wK5m">
                 <ref role="3cqZAo" node="1CWniaVTphe" resolve="operationDefinition" />
               </node>
@@ -1793,7 +1793,7 @@
             </node>
             <node concept="Rm8GO" id="3Edw2s_3kJn" role="3uHU7w">
               <ref role="Rm8GQ" node="4Vswoj0Iksi" resolve="Optional" />
-              <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypeWrapper" />
+              <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
             </node>
           </node>
         </node>
@@ -3494,7 +3494,7 @@
                       <ref role="1M0zk5" node="RZKkt7dieO" resolve="assignment" />
                     </node>
                     <node concept="3TrEf2" id="RZKkt7o2ID" role="2OqNvi">
-                      <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" />
+                      <ref role="3Tt5mk" to="28lk:6cBsaQycjCA" resolve="leftHandSide" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="RZKkt7o2bE" role="Jncv$">
@@ -3516,15 +3516,15 @@
                                       <ref role="1M0zk5" node="RZKkt7o2bG" resolve="lhs" />
                                     </node>
                                     <node concept="3TrEf2" id="RZKkt7o5LF" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="28lk:6cBsaQybPpw" />
+                                      <ref role="3Tt5mk" to="28lk:6cBsaQybPpw" resolve="feature" />
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="RZKkt7o5LG" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlG" />
+                                    <ref role="3Tt5mk" to="28lk:6cBsaQxVTlG" resolve="nameBinding" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="RZKkt7o5LH" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+                                  <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                 </node>
                               </node>
                               <node concept="3JvlWi" id="RZKkt7o6wJ" role="2OqNvi" />
@@ -3533,7 +3533,7 @@
                         </node>
                         <node concept="Rm8GO" id="RZKkt7o5DD" role="3uHU7w">
                           <ref role="Rm8GQ" node="4Vswoj0IlHh" resolve="None" />
-                          <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypeWrapper" />
+                          <ref role="1Px2BO" node="4Vswoj0Ikdr" resolve="TypedElementDefinitionTranslator.TypeWrapper" />
                         </node>
                       </node>
                     </node>
@@ -3599,7 +3599,7 @@
                             <ref role="1M0zk5" node="5QSnpBVL6_p" resolve="invocation" />
                           </node>
                           <node concept="3TrEf2" id="5QSnpBVLhgN" role="2OqNvi">
-                            <ref role="3Tt5mk" to="28lk:2kuSLC0p54a" />
+                            <ref role="3Tt5mk" to="28lk:2kuSLC0p54a" resolve="target" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="5QSnpBVLhgO" role="2OqNvi">
@@ -3625,7 +3625,7 @@
                       </node>
                       <node concept="2tJFMh" id="5QSnpBVLdyv" role="3uHU7w">
                         <node concept="ZC_QK" id="5QSnpBVLdLu" role="2tJFKM">
-                          <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" />
+                          <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" resolve="Testing" />
                           <node concept="ZC_QK" id="5QSnpBVLe3V" role="2aWVGa">
                             <ref role="2aWVGs" to="hsxa:37zNn5KVo9F" resolve="Testing" />
                             <node concept="ZC_QK" id="5QSnpBVLepR" role="2aWVGa">
@@ -3641,7 +3641,7 @@
                       </node>
                       <node concept="2tJFMh" id="5QSnpBVLiYo" role="3uHU7w">
                         <node concept="ZC_QK" id="5QSnpBVLiYp" role="2tJFKM">
-                          <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" />
+                          <ref role="2aWVGs" to="hsxa:37zNn5KViQ6" resolve="Testing" />
                           <node concept="ZC_QK" id="5QSnpBVLiYq" role="2aWVGa">
                             <ref role="2aWVGs" to="hsxa:37zNn5KVo9F" resolve="Testing" />
                             <node concept="ZC_QK" id="5QSnpBVLiYr" role="2aWVGa">

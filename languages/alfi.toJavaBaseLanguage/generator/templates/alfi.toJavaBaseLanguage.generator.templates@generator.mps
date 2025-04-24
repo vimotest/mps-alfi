@@ -7222,7 +7222,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e6M$" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcB" resolve="LeftShiftCompundAssigment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcB" resolve="LeftShiftCompoundAssigment" />
                   </node>
                 </node>
               </node>
@@ -7287,7 +7287,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e79H" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcM" resolve="SignedRightShiftCompundAssigment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcM" resolve="SignedRightShiftCompoundAssigment" />
                   </node>
                 </node>
               </node>
@@ -7352,7 +7352,7 @@
                     <ref role="1XH99l" to="28lk:6cBsaQygTbL" resolve="AssigmentOperator" />
                   </node>
                   <node concept="2ViDtV" id="5KQf2y8e7Dp" role="2OqNvi">
-                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcY" resolve="UnsingedRightShiftCompundAssignment" />
+                    <ref role="2ViDtZ" to="28lk:6cBsaQygTcY" resolve="UnsignedRightShiftCompoundAssignment" />
                   </node>
                 </node>
               </node>
