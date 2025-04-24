@@ -7,7 +7,7 @@ env:
   PROJECT_NAME: "alfi"
   LANGUAGE_NAME: "alfi"
   DOTNET_VERSION: '9.0.x'
-  JAVA_VERSION: '17'
+  JAVA_VERSION: '21'
   CMAKE_VERSION: '3.17.x'
 
 jobs:
