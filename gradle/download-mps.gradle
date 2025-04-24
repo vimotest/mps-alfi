@@ -17,9 +17,11 @@ def jbrMappings = [
         "2022.3": "17.0.6-b653.34",
         "2023.1": "17.0.10-b829.27",
         "2023.2": "17.0.10-b1000.50",
-        "2023.3": "17.0.10-b1087.23",
-        "2024.1": "17.0.11-b1207.24",
-        "2024.2": "17.0.11-b1312.2" ]
+        "2023.3": "17.0.12-b1087.25",
+        "2024.1": "17.0.12-b1207.37",
+        "2024.2": "17.0.11-b1312.2",
+        "2024.3": "21.0.6-b631.39",
+        "2025.1": "21.0.6-b895.97" ]
 
 
 if (!project.hasProperty("mpsVersion")) {
@@ -241,11 +243,30 @@ private void addLocalPluginsPathToVmOptions(String targetFolderName) {
 
 private def moveNestedPluginsUp(def outputDependenciesDirectory) {
     def movedNestedPluginsCounters = [:]
+
+    // Regard nested plugins with META-INF/plugin.xml
     fileTree(dir: outputDependenciesDirectory, includes: ['*/*/META-INF/plugin.xml']).each { nestedPluginXml ->
         def nestedPluginDir = nestedPluginXml.parentFile.parentFile
         def bundleDirectory = nestedPluginDir.parentFile
         Files.move(nestedPluginDir.toPath(), outputDependenciesDirectory.toPath().resolve(nestedPluginDir.name))
         movedNestedPluginsCounters.put(bundleDirectory.name, movedNestedPluginsCounters.get(bundleDirectory.name, 0) + 1)
+    }
+
+    // Regard nested plugins with alternative structure (e.g. languages and lib directories)
+    outputDependenciesDirectory.listFiles().each { bundleDir ->
+        if (bundleDir.isDirectory()) {
+            bundleDir.listFiles().each { possiblePluginDir ->
+                if (possiblePluginDir.isDirectory()) {
+                    def hasLanguagesDir = new File(possiblePluginDir, "languages").exists()
+                    def hasLibDir = new File(possiblePluginDir, "lib").exists()
+
+                    if (hasLanguagesDir && hasLibDir) {
+                        Files.move(possiblePluginDir.toPath(), outputDependenciesDirectory.toPath().resolve(possiblePluginDir.name))
+                        movedNestedPluginsCounters.put(bundleDir.name, movedNestedPluginsCounters.get(bundleDir.name, 0) + 1)
+                    }
+                }
+            }
+        }
     }
 
     movedNestedPluginsCounters.each { bundleName, count ->
@@ -354,6 +375,27 @@ task copyOsSpecificBinFiles {
         file("$targetFolderName/bin/$binFolderName").exists()
     }
     doLast {
+        // from 2024.3, we need special handling for aarch64/amd64 folders
+        def isAtLeastMps2024_3 = mpsVersion.startsWith("2024.3") || mpsVersion.takeBefore(".").toInteger() >= 2025
+        if (isMac() && isAtLeastMps2024_3) {
+            def binSubDir = Os.isArch("aarch64") ? "aarch64" : "amd64"
+            copy {
+                from fileTree("$targetFolderName/bin/mac/$binSubDir")
+                into file("$targetFolderName/bin/mac")
+            }
+            file("$targetFolderName/bin/mac/aarch64").deleteDir()
+            file("$targetFolderName/bin/mac/amd64").deleteDir()
+
+            def executableName = Os.isArch("aarch64") ? "mps-aarch64" : "mps-x64"
+            file("$targetFolderName/bin/mac/Contents/MacOS/$executableName").renameTo("$targetFolderName/bin/mac/Contents/MacOS/mps")
+
+            // the product-info.json file is not included in the generic distribution, so we need to download it
+            def productInfoUrl = "https://github.com/JetBrains/MPS/raw/$mpsVersion/plugins/mps-build/solutions/mpsBuild/source_gen/jetbrains/mps/ide/build/product-info-macos-${binSubDir}.json"
+            def productInfoFile = file("$targetFolderName/bin/mac/Contents/Resources/product-info.json")
+            println("downloading $productInfoUrl ... (to $productInfoFile)")
+            new URL(productInfoUrl).withInputStream { downloadInputStream -> productInfoFile.withOutputStream { it << downloadInputStream } }
+        }
+
         copy {
             from fileTree("$targetFolderName/bin/$binFolderName")
             into file("$targetFolderName/bin")
