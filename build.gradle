@@ -1,4 +1,4 @@
-ext.mpsVersion = "2025.1"
+ext.mpsVersion = "2025.2"
 ext.languageName = "alfi"
 
 ext.alfVersion = "1.1.0k"
@@ -7,9 +7,9 @@ ext.mpsPlugins = [
 ]
 
 ext.customMpsPlugins = [
-    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2025.1.0/TextGenGen.zip",
-    "CppBaseLanguage": "https://github.com/Fumapps/CppBaseLanguage/releases/download/2025.1.0/CppBaseLanguage.zip",
-    "CsBaseLanguage": "https://github.com/Fumapps/CsBaseLanguage/releases/download/2025.1.0/CsBaseLanguage.zip"
+    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2025.2.0/TextGenGen.zip",
+    "CppBaseLanguage": "https://github.com/Fumapps/CppBaseLanguage/releases/download/2025.2.0/CppBaseLanguage.zip",
+    "CsBaseLanguage": "https://github.com/Fumapps/CsBaseLanguage/releases/download/2025.2.0/CsBaseLanguage.zip"
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
