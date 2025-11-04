@@ -49,7 +49,7 @@
       <idea-plugin>
         <id>alfi</id>
         <name>alfi</name>
-        <version>2025.2.0</version>
+        <version>2025.2.1-SNAPSHOT</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
@@ -1154,7 +1154,7 @@
       <idea-plugin>
         <id>alfi</id>
         <name>alfi</name>
-        <version>2025.2.0</version>
+        <version>2025.2.1-SNAPSHOT</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
