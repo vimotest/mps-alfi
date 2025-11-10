@@ -85,7 +85,7 @@ EndProject
   <ItemGroup>
     <Compile Include="../source_gen/alfi/compitest/${csFile.name}" />
   </ItemGroup>
-  <Import Project="../source_gen/alfi/compitest/alfi.compitest.props" />
+  <Import Project="../source_gen/alfi/compitest/alfi.compitest.sources.props" />
 </Project>
 """
 
