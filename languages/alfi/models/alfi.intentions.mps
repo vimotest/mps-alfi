@@ -103,6 +103,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -126,6 +129,11 @@
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -201,6 +209,12 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -222,6 +236,7 @@
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2031,6 +2046,92 @@
               </node>
             </node>
             <node concept="3w_OXm" id="5jkMFwx1r4H" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4$4BtXe1v11">
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="AttachTestSourceAttributeIntention" />
+    <ref role="2ZfgGC" to="28lk:6OepWIVJVYV" resolve="Unit" />
+    <node concept="2S6ZIM" id="4$4BtXe1v12" role="2ZfVej">
+      <node concept="3clFbS" id="4$4BtXe1v13" role="2VODD2">
+        <node concept="3clFbF" id="4$4BtXe1vb$" role="3cqZAp">
+          <node concept="3cpWs3" id="4$4BtXe1Y7J" role="3clFbG">
+            <node concept="Xl_RD" id="4$4BtXe1Y8X" role="3uHU7w">
+              <property role="Xl_RC" value=" @isTestSource" />
+            </node>
+            <node concept="1eOMI4" id="4$4BtXe1XAh" role="3uHU7B">
+              <node concept="3K4zz7" id="4$4BtXe1vM1" role="1eOMHV">
+                <node concept="Xl_RD" id="4$4BtXe1vSU" role="3K4E3e">
+                  <property role="Xl_RC" value="Attach" />
+                </node>
+                <node concept="Xl_RD" id="4$4BtXe1vUC" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+                <node concept="2OqwBi" id="4$4BtXe1wJM" role="3K4Cdx">
+                  <node concept="2OqwBi" id="4$4BtXe1wfc" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="4$4BtXe1vY_" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="4$4BtXe1ww6" role="2OqNvi">
+                      <node concept="3CFYIy" id="4$4BtXe1w_A" role="3CFYIz">
+                        <ref role="3CFYIx" to="28lk:45CbWX$YivZ" resolve="IsTestSourceAttribute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="4$4BtXe1wZw" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4$4BtXe1v14" role="2ZfgGD">
+      <node concept="3clFbS" id="4$4BtXe1v15" role="2VODD2">
+        <node concept="3clFbJ" id="4$4BtXe1x6$" role="3cqZAp">
+          <node concept="3clFbS" id="4$4BtXe1x6A" role="3clFbx">
+            <node concept="3clFbF" id="4$4BtXe1x8P" role="3cqZAp">
+              <node concept="2OqwBi" id="4$4BtXe1x8R" role="3clFbG">
+                <node concept="2OqwBi" id="4$4BtXe1x8S" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="4$4BtXe1x8T" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="4$4BtXe1x8U" role="2OqNvi">
+                    <node concept="3CFYIy" id="4$4BtXe1x8V" role="3CFYIz">
+                      <ref role="3CFYIx" to="28lk:45CbWX$YivZ" resolve="IsTestSourceAttribute" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="4$4BtXe1xEf" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4$4BtXe1x7r" role="3clFbw">
+            <node concept="2OqwBi" id="4$4BtXe1x7s" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4$4BtXe1x7t" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4$4BtXe1x7u" role="2OqNvi">
+                <node concept="3CFYIy" id="4$4BtXe1x7v" role="3CFYIz">
+                  <ref role="3CFYIx" to="28lk:45CbWX$YivZ" resolve="IsTestSourceAttribute" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4$4BtXe1x7w" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="4$4BtXe1xFE" role="9aQIa">
+            <node concept="3clFbS" id="4$4BtXe1xFF" role="9aQI4">
+              <node concept="3clFbF" id="4$4BtXe1xHc" role="3cqZAp">
+                <node concept="2OqwBi" id="4$4BtXe1xHe" role="3clFbG">
+                  <node concept="2OqwBi" id="4$4BtXe1xHf" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="4$4BtXe1xHg" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="4$4BtXe1xHh" role="2OqNvi">
+                      <node concept="3CFYIy" id="4$4BtXe1xHi" role="3CFYIz">
+                        <ref role="3CFYIx" to="28lk:45CbWX$YivZ" resolve="IsTestSourceAttribute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="4$4BtXe1xYv" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
