@@ -131,6 +131,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="4323500428136740385" name="jetbrains.mps.lang.editor.structure.CellIdReferenceSelector" flags="ng" index="2TlHUq">
         <reference id="4323500428136742952" name="id" index="2TlMyj" />
       </concept>
@@ -7773,6 +7774,17 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4$4BtXe2shc">
+    <property role="3GE5qa" value="units.util" />
+    <ref role="1XX52x" to="28lk:45CbWX$YivZ" resolve="IsTestSourceAttribute" />
+    <node concept="3EZMnI" id="4$4BtXe2skm" role="2wV5jI">
+      <node concept="3F0ifn" id="4$4BtXe2slc" role="3EZMnx">
+        <property role="3F0ifm" value="@isTestSource" />
+      </node>
+      <node concept="2SsqMj" id="4$4BtXe2snd" role="3EZMnx" />
+      <node concept="2iRkQZ" id="4$4BtXe2skp" role="2iSdaV" />
     </node>
   </node>
 </model>
