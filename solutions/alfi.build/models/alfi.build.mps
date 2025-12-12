@@ -276,7 +276,7 @@
       </node>
       <node concept="3_J27D" id="5tK9548cRhE" role="m$_w8">
         <node concept="3Mxwew" id="34Tk5u5i9Zj" role="3MwsjC">
-          <property role="3MwjfP" value="2025.2.4" />
+          <property role="3MwjfP" value="2025.2.5-SNAPSHOT" />
         </node>
       </node>
       <node concept="m$f5U" id="5tK9548cRk7" role="m$_yh">
@@ -735,6 +735,7 @@
         </node>
         <node concept="1SiIV0" id="2SeqMAc5VXM" role="3bR37C">
           <node concept="3bR9La" id="2SeqMAc5VXN" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
@@ -1031,6 +1032,21 @@
         <node concept="1SiIV0" id="1pkjUZ7o8G" role="3bR37C">
           <node concept="3bR9La" id="1pkjUZ7o8H" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1jxp2r5q9ac" role="3bR37C">
+          <node concept="3bR9La" id="1jxp2r5q9ad" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1jxp2r5q9ae" role="3bR37C">
+          <node concept="3bR9La" id="1jxp2r5q9af" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1jxp2r5q9ag" role="3bR37C">
+          <node concept="3bR9La" id="1jxp2r5q9ah" role="1SiIV1">
+            <ref role="3bR37D" node="2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
           </node>
         </node>
       </node>
