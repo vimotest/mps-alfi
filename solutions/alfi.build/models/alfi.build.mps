@@ -148,6 +148,19 @@
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375805250" name="extends" index="3LEz9a" />
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375805242" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitRef" flags="ng" index="3LEz8M">
+        <reference id="322010710375805243" name="devkit" index="3LEz8N" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
+      </concept>
+      <concept id="322010710375832954" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportSolution" flags="ng" index="3LEDTM">
+        <reference id="322010710375832955" name="solution" index="3LEDTN" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -1170,6 +1183,21 @@
         <node concept="1E0d5M" id="7LqUIc_4Su8" role="1E1XAP">
           <ref role="1E0d5P" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
         </node>
+        <node concept="1SiIV0" id="4uIv2y$hvY6" role="3bR37C">
+          <node concept="3bR9La" id="4uIv2y$hvY7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4uIv2y$hvY8" role="3bR37C">
+          <node concept="3bR9La" id="4uIv2y$hvY9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4uIv2y$hvYa" role="3bR37C">
+          <node concept="3bR9La" id="4uIv2y$hvYb" role="1SiIV1">
+            <ref role="3bR37D" node="2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5tK9548cRZm" role="3989C9">
@@ -1395,6 +1423,148 @@
           <node concept="3bR9La" id="4rp03ZzFltv" role="1SiIV1">
             <ref role="3bR37D" to="jn6j:7d6JWQ55TB$" resolve="CsBaseLanguage.build" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="3iVvXTz_Xva" role="3989C9">
+      <property role="TrG5h" value="alfi-devkits" />
+      <node concept="3LEwk6" id="3iVvXTz_Xwn" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.all.devkit" />
+        <property role="3LESm3" value="3480a401-485a-4fe3-84d3-7880843682ac" />
+        <node concept="55IIr" id="3iVvXTz_Xwo" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3iVvXTz_XxA" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="3iVvXTz_Xy2" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.all.devkit" />
+              <node concept="2Ry0Ak" id="6eEjB9iJEQW" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.all.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESp" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
+        </node>
+        <node concept="3LEDTM" id="6eEjB9iJESq" role="3LEDUa">
+          <ref role="3LEDTN" node="5tK9548cRTP" resolve="alfi.genplan" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESr" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESs" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESt" role="3LEDUa">
+          <ref role="3LEDTV" node="2SeqMAc5VJ2" resolve="alfi.toCppBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESu" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRl1" resolve="alfi.toJavaBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESv" role="3LEDUa">
+          <ref role="3LEDTV" node="4rp03ZzFlBp" resolve="alfi.toCsBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESw" role="3LEDUa">
+          <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
+        </node>
+        <node concept="3LEz8M" id="6eEjB9iJEU4" role="3LEz9a">
+          <ref role="3LEz8N" node="3iVvXTz_Xzi" resolve="alfi.cpp.devkit" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="3iVvXTz_Xys" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.java.devkit" />
+        <property role="3LESm3" value="d82d7362-c35f-45a9-84d9-cef387e4c575" />
+        <node concept="55IIr" id="3iVvXTz_Xyt" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3iVvXTz_Xyu" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="3iVvXTz_Xyv" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.java.devkit" />
+              <node concept="2Ry0Ak" id="6eEjB9iJEQZ" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.java.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESx" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESy" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRl1" resolve="alfi.toJavaBaseLanguage" />
+        </node>
+        <node concept="3LEDTM" id="6eEjB9iJESz" role="3LEDUa">
+          <ref role="3LEDTN" node="5tK9548cRTP" resolve="alfi.genplan" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJES$" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJES_" role="3LEDUa">
+          <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESA" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="3iVvXTz_Xzi" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.cpp.devkit" />
+        <property role="3LESm3" value="1909918a-fcce-429c-85cb-e873bef10985" />
+        <node concept="55IIr" id="3iVvXTz_Xzj" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3iVvXTz_Xzk" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="3iVvXTz_Xzl" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.cpp.devkit" />
+              <node concept="2Ry0Ak" id="6eEjB9iJER2" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.cpp.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESB" role="3LEDUa">
+          <ref role="3LEDTV" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESC" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESD" role="3LEDUa">
+          <ref role="3LEDTV" node="2SeqMAc5VJ2" resolve="alfi.toCppBaseLanguage" />
+        </node>
+        <node concept="3LEDTM" id="6eEjB9iJESE" role="3LEDUa">
+          <ref role="3LEDTN" node="5tK9548cRTP" resolve="alfi.genplan" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESF" role="3LEDUa">
+          <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="3iVvXTz_X$8" role="2G$12L">
+        <property role="TrG5h" value="alfi.cs.devkit" />
+        <property role="BnDLt" value="true" />
+        <property role="3LESm3" value="3738f73e-fe23-4d75-921c-2c5614262784" />
+        <node concept="55IIr" id="3iVvXTz_X$9" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3iVvXTz_X$a" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="3iVvXTz_XAW" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.cs.devkit" />
+              <node concept="2Ry0Ak" id="6eEjB9iJER5" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.cs.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESG" role="3LEDUa">
+          <ref role="3LEDTV" to="jn6j:4xDflt7HBlG" resolve="CsBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESH" role="3LEDUa">
+          <ref role="3LEDTV" node="4rp03ZzFlBp" resolve="alfi.toCsBaseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESI" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
+        </node>
+        <node concept="3LEDTM" id="6eEjB9iJESJ" role="3LEDUa">
+          <ref role="3LEDTN" node="5tK9548cRTP" resolve="alfi.genplan" />
+        </node>
+        <node concept="3LEDTy" id="6eEjB9iJESK" role="3LEDUa">
+          <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
         </node>
       </node>
     </node>
