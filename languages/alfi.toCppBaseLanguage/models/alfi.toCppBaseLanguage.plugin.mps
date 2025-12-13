@@ -13,11 +13,11 @@
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="nam6" ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1/java:alfi.GeneratorUtils(alfi.GeneratorUtils/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="nam6" ref="1d1d297f-1148-4f73-96d6-f1b7f59d96f1/java:alfi.GeneratorUtils(alfi.GeneratorUtils/)" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" implicit="true" />
   </imports>
   <registry>
@@ -496,7 +496,7 @@
                   <node concept="3clFbS" id="5z_3jBmNUvE" role="1zxBo7">
                     <node concept="3clFbF" id="1jxp2r5pTWJ" role="3cqZAp">
                       <node concept="2YIFZM" id="31xvKEybNaW" role="3clFbG">
-                        <ref role="37wK5l" to="nam6:~CppFormatter.format(String)" resolve="format" />
+                        <ref role="37wK5l" to="nam6:~CppFormatter.format(java.lang.String)" resolve="format" />
                         <ref role="1Pybhc" to="nam6:~CppFormatter" resolve="CppFormatter" />
                         <node concept="2GrUjf" id="31xvKEybNaX" role="37wK5m">
                           <ref role="2Gs0qQ" node="7oR9O$EHT_O" resolve="filePath" />
