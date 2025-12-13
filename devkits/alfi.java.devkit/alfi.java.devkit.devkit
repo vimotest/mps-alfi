@@ -2,8 +2,10 @@
 <dev-kit name="alfi.java.devkit" uuid="d82d7362-c35f-45a9-84d9-cef387e4c575">
   <exported-language name="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" />
   <exported-language name="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toJavaBaseLanguage)" />
+  <exported-language name="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" />
   <exported-solutions>
     <exported-solution>76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)</exported-solution>
+    <exported-solution>e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(alfi.genplan.alfi.toJavaBaseLanguage@genplan)" />
 </dev-kit>

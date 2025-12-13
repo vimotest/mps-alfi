@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="alfi.all.devkit" uuid="3480a401-485a-4fe3-84d3-7880843682ac">
   <exported-language name="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" />
+  <exported-language name="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" />
   <extendedDevKits>
     <extendedDevKit>1909918a-fcce-429c-85cb-e873bef10985(alfi.cpp.devkit)</extendedDevKit>
+    <extendedDevKit>3738f73e-fe23-4d75-921c-2c5614262784(alfi.cs.devkit)</extendedDevKit>
+    <extendedDevKit>d82d7362-c35f-45a9-84d9-cef387e4c575(alfi.java.devkit)</extendedDevKit>
   </extendedDevKits>
   <exported-solutions>
     <exported-solution>76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)</exported-solution>
+    <exported-solution>e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:c244be8e-58a1-4c25-8a07-068555a48d71(alfi.genplan.alfi.main@genplan)" />
 </dev-kit>

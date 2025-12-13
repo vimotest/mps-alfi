@@ -3,17 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
-    <use id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping" version="0" />
-    <use id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toJavaBaseLanguage" version="0" />
-    <use id="0f0152f2-19d3-46ec-9e98-47a1e2ed7e0b" name="alfi.toCsBaseLanguage" version="0" />
-    <use id="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf" name="alfi.toCppBaseLanguage" version="0" />
-    <engage id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping" />
-    <engage id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" />
-    <engage id="d0e1230a-72e3-4b6b-88f2-98d924f7de11" name="alfi.toJavaBaseLanguage" />
+    <devkit ref="3480a401-485a-4fe3-84d3-7880843682ac(alfi.all.devkit)" />
   </languages>
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
-    <import index="yz4v" ref="r:c244be8e-58a1-4c25-8a07-068555a48d71(alfi.genplan.alfi.main@genplan)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
