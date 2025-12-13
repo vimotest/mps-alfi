@@ -17,6 +17,7 @@ apply from: 'gradle/init-gradle-scripts.gradle'
 apply from: 'gradle/install-alf.gradle'
 apply from: 'gradle/compitest.gradle'
 apply from: 'gradle/compitest/generateCsProjFiles.gradle'
+apply from: 'gradle/compile-generator-utils.gradle'
 
 task prepareMps {
     group 'mps'
@@ -57,3 +58,5 @@ task compiTest {
 compitestRunTests.configure {
     mustRunAfter mpsBuild
 }
+mpsAntGenerate.dependsOn buildGeneratorUtils
+openProjectInMps.dependsOn buildGeneratorUtils

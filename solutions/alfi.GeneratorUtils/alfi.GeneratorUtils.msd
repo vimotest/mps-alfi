@@ -4,15 +4,14 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/classes_gen" type="java_classes">
-      <sourceRoot path="${module}/classes_gen" />
-      <excluded path="${module}/classes_gen/alfi/commonGeneratorHelper" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="alfi.GeneratorUtils.java_src.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="yes">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <source location="${module}/java_src" />
+      <library location="${module}/lib/alfi.GeneratorUtils.java_src.jar" />
     </facet>
   </facets>
   <dependencies>

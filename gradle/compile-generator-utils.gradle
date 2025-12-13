@@ -1,0 +1,22 @@
+
+task compileGeneratorUtilsJava(type: JavaCompile) {
+    group = 'other'
+    description = 'Compiles GeneratorUtils java sources'
+    source = fileTree(dir: 'solutions/alfi.GeneratorUtils/java_src', include: '**/*.java')
+    destinationDirectory.set(file("$buildDir/generatorUtils/classes"))
+    classpath = files()
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+    options.encoding = 'UTF-8'
+    options.fork = true
+    options.forkOptions.javaHome = file(javaHome)
+}
+
+task buildGeneratorUtils(type: Jar) {
+    dependsOn compileGeneratorUtilsJava
+    group = 'mps'
+    description = 'Packages GeneratorUtils java sources into a jar'
+    from compileGeneratorUtilsJava.destinationDirectory
+    archiveFileName = 'alfi.GeneratorUtils.java_src.jar'
+    destinationDirectory = file('solutions/alfi.GeneratorUtils/lib')
+}

@@ -32,6 +32,9 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -135,6 +138,9 @@
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
+      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
+        <child id="4278635856200826394" name="path" index="1BurEY" />
+      </concept>
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
@@ -219,6 +225,29 @@
       <node concept="m$_wl" id="5tK9548dnsR" role="39821P">
         <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
         <node concept="pUk6x" id="5tK9548dnt9" role="pUk7w" />
+        <node concept="398223" id="10rWYitKfVo" role="39821P">
+          <node concept="3_J27D" id="10rWYitKfVq" role="Nbhlr">
+            <node concept="3Mxwew" id="10rWYitKfVx" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="1DLcvdqqPkg" role="39821P">
+            <node concept="55IIr" id="1DLcvdqqPkh" role="28jJRO">
+              <node concept="2Ry0Ak" id="1DLcvdqqPkp" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1DLcvdqqPks" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.GeneratorUtils" />
+                  <node concept="2Ry0Ak" id="1DLcvdqqPkv" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="1DLcvdqqPky" role="2Ry0An">
+                      <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3981dG" id="5tK9548dnu3" role="39821P">
         <node concept="3_J27D" id="5tK9548dnu5" role="Nbhlr">
@@ -228,6 +257,29 @@
         </node>
         <node concept="m$_wl" id="5tK9548dnuq" role="39821P">
           <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
+          <node concept="398223" id="10rWYitKfVB" role="39821P">
+            <node concept="3_J27D" id="10rWYitKfVC" role="Nbhlr">
+              <node concept="3Mxwew" id="10rWYitKfVD" role="3MwsjC">
+                <property role="3MwjfP" value="lib" />
+              </node>
+            </node>
+            <node concept="28jJK3" id="10rWYitKfVE" role="39821P">
+              <node concept="55IIr" id="10rWYitKfVF" role="28jJRO">
+                <node concept="2Ry0Ak" id="10rWYitKfVG" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="10rWYitKfVH" role="2Ry0An">
+                    <property role="2Ry0Am" value="alfi.GeneratorUtils" />
+                    <node concept="2Ry0Ak" id="10rWYitKfVI" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="10rWYitKfVJ" role="2Ry0An">
+                        <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="pUk6x" id="5tK9548dnuG" role="pUk7w" />
         </node>
       </node>
@@ -791,21 +843,21 @@
             </node>
           </node>
         </node>
-        <node concept="1BupzO" id="3ADPG$KryZR" role="3bR31x">
-          <node concept="3LXTmp" id="3ADPG$KryZT" role="1HemKq">
-            <node concept="55IIr" id="3ADPG$KryZV" role="3LXTmr">
-              <node concept="2Ry0Ak" id="3ADPG$Krz00" role="iGT6I">
+        <node concept="1SiIV0" id="1DLcvdqbfGf" role="3bR37C">
+          <node concept="1BurEX" id="1DLcvdqbfGg" role="1SiIV1">
+            <node concept="55IIr" id="1DLcvdqbfGa" role="1BurEY">
+              <node concept="2Ry0Ak" id="1DLcvdqbfGb" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3ADPG$Krz04" role="2Ry0An">
+                <node concept="2Ry0Ak" id="1DLcvdqbfGc" role="2Ry0An">
                   <property role="2Ry0Am" value="alfi.GeneratorUtils" />
-                  <node concept="2Ry0Ak" id="3ADPG$Krz07" role="2Ry0An">
-                    <property role="2Ry0Am" value="java_src" />
+                  <node concept="2Ry0Ak" id="1DLcvdqbfGd" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="1DLcvdqbfGe" role="2Ry0An">
+                      <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3qWCbU" id="3ADPG$Krz08" role="3LXTna">
-              <property role="3qWCbO" value="**/*.java" />
             </node>
           </node>
         </node>
