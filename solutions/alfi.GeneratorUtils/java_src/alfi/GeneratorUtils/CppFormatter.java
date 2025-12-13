@@ -59,6 +59,8 @@ public final class CppFormatter {
     List<Integer> extraIndentByLevel = new ArrayList<>();
     extraIndentByLevel.add(0);
     boolean lastWasBlank = false;
+    boolean lastWasComment = false;
+    int pendingBlankLines = 0;
 
     for (String originalLine : lines) {
       String line = originalLine == null ? "" : originalLine;
@@ -66,13 +68,29 @@ public final class CppFormatter {
 
       String trimmed = line.trim();
       if (trimmed.isEmpty()) {
-        if (!lastWasBlank) {
-          out.add("");
+        // Only count blank line if we already have content and last wasn't blank
+        if (!out.isEmpty() && !lastWasBlank) {
+          pendingBlankLines++;
           lastWasBlank = true;
         }
         continue;
       }
+      
+      // Check if current line is a comment
+      boolean isComment = trimmed.startsWith("//") || trimmed.startsWith("/*");
+      boolean startsWithClosingBrace = trimmed.startsWith("}");
+      
+      // Only add pending blank lines if not transitioning from comment to non-comment
+      // and not before a closing brace
+      if (pendingBlankLines > 0) {
+        if (!(lastWasComment && !isComment) && !startsWithClosingBrace) {
+          out.add("");
+        }
+        pendingBlankLines = 0;
+      }
+      
       lastWasBlank = false;
+      lastWasComment = isComment || trimmed.endsWith("*/");
 
       String content = lstrip(line);
       String contentTrimmedLeft = content; // already left-trimmed
@@ -89,27 +107,34 @@ public final class CppFormatter {
         if (startsWithCaseOrDefault(contentTrimmedLeft)) {
           effectiveIndentLevel = Math.max(0, effectiveIndentLevel - 1);
         }
+        
+        // Access specifiers should be at the same level as class braces (no indentation inside class)
+        if (isAccessSpecifier) {
+          effectiveIndentLevel = Math.max(0, effectiveIndentLevel - 1);
+        }
       }
 
       int extra = 0;
-      if (!isPreprocessor) {
+      if (!isPreprocessor && !isAccessSpecifier) {
         extra = extraIndentByLevel.get(Math.min(effectiveIndentLevel, extraIndentByLevel.size() - 1));
       }
 
       if (isPreprocessor) {
         out.add(contentTrimmedLeft);
       } else {
-        int formattedIndentLevel = isAccessSpecifier ? effectiveIndentLevel : (effectiveIndentLevel + extra);
-        out.add(spaces(indentSize * formattedIndentLevel) + contentTrimmedLeft);
+        int formattedIndentLevel = effectiveIndentLevel + extra;
+        String normalizedContent = normalizeSpacing(contentTrimmedLeft);
+        out.add(spaces(indentSize * formattedIndentLevel) + normalizedContent);
       }
 
       if (!isPreprocessor) {
         BraceCount delta = countBracesOutsideStringsAndComments(contentTrimmedLeft, state);
 
-        // If we see an access specifier at the current level, indent subsequent members one extra level.
+        // If we see an access specifier at the current level, do NOT add extra indent
+        // since access specifier is already outdented, members should just use normal indent level
         if (isAccessSpecifier) {
           ensureSize(extraIndentByLevel, indentLevel + 1);
-          extraIndentByLevel.set(indentLevel, 1);
+          extraIndentByLevel.set(indentLevel, 0);
         }
 
         // Update indentation stack for closing braces first, then opening braces.
@@ -197,6 +222,184 @@ public final class CppFormatter {
       }
     }
     return start == 0 ? s : s.substring(start);
+  }
+
+  /**
+   * Normalizes spacing within a line:
+   * - Removes spaces after opening parentheses/brackets: "( " -> "("
+   * - Removes spaces before closing parentheses/brackets: " )" -> ")"
+   * - Removes spaces inside empty parentheses/brackets: "( )" -> "()"
+   * - Ensures space after commas (but not before): ", " is correct
+   * - Handles strings and comments to avoid modifying content within them.
+   */
+  private static String normalizeSpacing(String line) {
+    if (line == null || line.isEmpty()) {
+      return line;
+    }
+
+    StringBuilder result = new StringBuilder();
+    boolean inString = false;
+    boolean inChar = false;
+    boolean inLineComment = false;
+    int i = 0;
+
+    while (i < line.length()) {
+      char c = line.charAt(i);
+
+      // Handle line comments
+      if (!inString && !inChar && c == '/' && i + 1 < line.length() && line.charAt(i + 1) == '/') {
+        // Append rest of line as-is (it's a comment)
+        result.append(line.substring(i));
+        break;
+      }
+
+      // Handle string literals
+      if (!inChar && !inLineComment && c == '"') {
+        // Check for raw string R"..."
+        if (!inString && i > 0 && line.charAt(i - 1) == 'R') {
+          // Raw string - find the end and copy as-is
+          int rawEnd = findRawStringEnd(line, i);
+          if (rawEnd > i) {
+            result.append(line, i, rawEnd);
+            i = rawEnd;
+            continue;
+          }
+        }
+        inString = !inString;
+        result.append(c);
+        i++;
+        continue;
+      }
+
+      // Handle escape sequences in strings
+      if (inString && c == '\\' && i + 1 < line.length()) {
+        result.append(c);
+        result.append(line.charAt(i + 1));
+        i += 2;
+        continue;
+      }
+
+      // Handle char literals
+      if (!inString && !inLineComment && c == '\'') {
+        inChar = !inChar;
+        result.append(c);
+        i++;
+        continue;
+      }
+
+      // Handle escape sequences in char literals
+      if (inChar && c == '\\' && i + 1 < line.length()) {
+        result.append(c);
+        result.append(line.charAt(i + 1));
+        i += 2;
+        continue;
+      }
+
+      // If inside string or char literal, copy as-is
+      if (inString || inChar) {
+        result.append(c);
+        i++;
+        continue;
+      }
+
+      // Outside of strings/comments - apply spacing rules
+      if (c == ' ' || c == '\t') {
+        // Look back: was previous non-space an opening bracket?
+        char prevNonSpace = lastNonSpaceChar(result);
+        // Look ahead: is next non-space a closing bracket?
+        char nextNonSpace = nextNonSpaceChar(line, i + 1);
+
+        // Skip space after opening brackets (but not < which is also a comparison operator)
+        if (prevNonSpace == '(' || prevNonSpace == '[') {
+          i++;
+          continue;
+        }
+
+        // Skip space before closing brackets and semicolons (but not > which is also a comparison operator)
+        if (nextNonSpace == ')' || nextNonSpace == ']' || nextNonSpace == ';') {
+          i++;
+          continue;
+        }
+
+        // Collapse multiple spaces into one
+        if (result.length() > 0 && result.charAt(result.length() - 1) == ' ') {
+          i++;
+          continue;
+        }
+
+        result.append(' ');
+        i++;
+        continue;
+      }
+
+      // Ensure space after comma (if not already there and not followed by closing bracket)
+      if (c == ',') {
+        result.append(c);
+        // Skip any existing spaces after comma
+        int j = i + 1;
+        while (j < line.length() && (line.charAt(j) == ' ' || line.charAt(j) == '\t')) {
+          j++;
+        }
+        // Add single space if next char is not end of line and not a closing bracket
+        if (j < line.length()) {
+          char nextChar = line.charAt(j);
+          if (nextChar != ')' && nextChar != ']' && nextChar != '>') {
+            result.append(' ');
+          }
+        }
+        i = j;
+        continue;
+      }
+
+      result.append(c);
+      i++;
+    }
+
+    return result.toString();
+  }
+
+  private static char lastNonSpaceChar(StringBuilder sb) {
+    for (int i = sb.length() - 1; i >= 0; i--) {
+      char c = sb.charAt(i);
+      if (c != ' ' && c != '\t') {
+        return c;
+      }
+    }
+    return '\0';
+  }
+
+  private static char nextNonSpaceChar(String s, int start) {
+    for (int i = start; i < s.length(); i++) {
+      char c = s.charAt(i);
+      if (c != ' ' && c != '\t') {
+        return c;
+      }
+    }
+    return '\0';
+  }
+
+  private static int findRawStringEnd(String line, int quoteIndex) {
+    // line[quoteIndex] == '"', line[quoteIndex-1] == 'R'
+    int i = quoteIndex + 1;
+    StringBuilder delim = new StringBuilder();
+    while (i < line.length()) {
+      char c = line.charAt(i);
+      if (c == '(') {
+        // Found start, now find )DELIM"
+        String needle = ")" + delim.toString() + "\"";
+        int endIdx = line.indexOf(needle, i + 1);
+        if (endIdx >= 0) {
+          return endIdx + needle.length();
+        }
+        return line.length(); // Raw string continues on next line
+      }
+      if (c == ' ' || c == '\t' || c == '\\' || c == '"') {
+        break;
+      }
+      delim.append(c);
+      i++;
+    }
+    return quoteIndex + 1; // Not a valid raw string, just move past the quote
   }
 
   private static void consumeCommentsAndRawStrings(String line, ScanState state) {
