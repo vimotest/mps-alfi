@@ -73,6 +73,23 @@ public final class CsFormatter {
 
     for (String originalLine : lines) {
       String line = originalLine == null ? "" : originalLine;
+
+      // If we're inside a verbatim string literal (@"..."), output the line as-is (no formatting, no rstrip)
+      if (state.inVerbatimString) {
+        out.add(line);
+        // Update state to detect when verbatim string ends
+        consumeCommentsAndStrings(line, state);
+        continue;
+      }
+
+      // If we're inside a block comment, output the line as-is (preserve formatting)
+      if (state.inBlockComment) {
+        out.add(rstrip(line));
+        // Update state to detect when block comment ends
+        consumeCommentsAndStrings(line, state);
+        continue;
+      }
+
       line = rstrip(line);
 
       String trimmed = line.trim();
@@ -163,10 +180,15 @@ public final class CsFormatter {
       return line;
     }
 
+    // If we're inside a block comment, return line as-is
+    if (state != null && state.inBlockComment) {
+      return line;
+    }
+
     StringBuilder result = new StringBuilder();
-    boolean inString = state.inString;
-    boolean inChar = state.inChar;
-    boolean inVerbatimString = state.inVerbatimString;
+    boolean inString = state != null && state.inString;
+    boolean inChar = state != null && state.inChar;
+    boolean inVerbatimString = state != null && state.inVerbatimString;
     int i = 0;
 
     while (i < line.length()) {

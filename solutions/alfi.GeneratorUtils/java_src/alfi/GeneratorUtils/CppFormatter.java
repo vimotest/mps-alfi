@@ -64,6 +64,23 @@ public final class CppFormatter {
 
     for (String originalLine : lines) {
       String line = originalLine == null ? "" : originalLine;
+
+      // If we're inside a raw string literal, output the line as-is (no formatting, no rstrip)
+      if (state.inRawString) {
+        out.add(line);
+        // Update state to detect when raw string ends
+        consumeCommentsAndRawStrings(line, state);
+        continue;
+      }
+
+      // If we're inside a block comment, output the line as-is (preserve formatting)
+      if (state.inBlockComment) {
+        out.add(rstrip(line));
+        // Update state to detect when block comment ends
+        consumeCommentsAndRawStrings(line, state);
+        continue;
+      }
+
       line = rstrip(line);
 
       String trimmed = line.trim();
@@ -123,7 +140,7 @@ public final class CppFormatter {
         out.add(contentTrimmedLeft);
       } else {
         int formattedIndentLevel = effectiveIndentLevel + extra;
-        String normalizedContent = normalizeSpacing(contentTrimmedLeft);
+        String normalizedContent = normalizeSpacing(contentTrimmedLeft, state);
         out.add(spaces(indentSize * formattedIndentLevel) + normalizedContent);
       }
 
@@ -232,8 +249,13 @@ public final class CppFormatter {
    * - Ensures space after commas (but not before): ", " is correct
    * - Handles strings and comments to avoid modifying content within them.
    */
-  private static String normalizeSpacing(String line) {
+  private static String normalizeSpacing(String line, ScanState state) {
     if (line == null || line.isEmpty()) {
+      return line;
+    }
+
+    // If we're inside a block comment, return line as-is
+    if (state != null && state.inBlockComment) {
       return line;
     }
 
