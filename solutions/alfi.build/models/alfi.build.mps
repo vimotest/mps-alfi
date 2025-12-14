@@ -50,7 +50,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -222,56 +221,25 @@
     </node>
     <node concept="55IIr" id="5tK9548cmXz" role="auvoZ" />
     <node concept="1l3spV" id="5tK9548cmX$" role="1l3spN">
-      <node concept="m$_wl" id="5tK9548dnsR" role="39821P">
+      <node concept="m$_wl" id="yz72nqmA60" role="39821P">
         <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
-        <node concept="pUk6x" id="5tK9548dnt9" role="pUk7w" />
-        <node concept="398223" id="10rWYitKfVo" role="39821P">
-          <node concept="3_J27D" id="10rWYitKfVq" role="Nbhlr">
-            <node concept="3Mxwew" id="10rWYitKfVx" role="3MwsjC">
-              <property role="3MwjfP" value="lib" />
-            </node>
-          </node>
-          <node concept="28jJK3" id="1DLcvdqqPkg" role="39821P">
-            <node concept="55IIr" id="1DLcvdqqPkh" role="28jJRO">
-              <node concept="2Ry0Ak" id="1DLcvdqqPkp" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1DLcvdqqPks" role="2Ry0An">
-                  <property role="2Ry0Am" value="alfi.GeneratorUtils" />
-                  <node concept="2Ry0Ak" id="1DLcvdqqPkv" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1DLcvdqqPky" role="2Ry0An">
-                      <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
-                    </node>
-                  </node>
-                </node>
+        <node concept="pUk6x" id="yz72nqmA61" role="pUk7w" />
+        <node concept="398223" id="yz72nqmA62" role="39821P">
+          <node concept="398223" id="7mAwIJBm0UY" role="39821P">
+            <node concept="3_J27D" id="7mAwIJBm0V0" role="Nbhlr">
+              <node concept="3Mxwew" id="7mAwIJBm0V7" role="3MwsjC">
+                <property role="3MwjfP" value="alfi-transformations" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3981dG" id="5tK9548dnu3" role="39821P">
-        <node concept="3_J27D" id="5tK9548dnu5" role="Nbhlr">
-          <node concept="3Mxwew" id="5tK9548dnuo" role="3MwsjC">
-            <property role="3MwjfP" value="alfi.zip" />
-          </node>
-        </node>
-        <node concept="m$_wl" id="5tK9548dnuq" role="39821P">
-          <ref role="m_rDy" node="5tK9548cRhB" resolve="alfi" />
-          <node concept="398223" id="10rWYitKfVB" role="39821P">
-            <node concept="3_J27D" id="10rWYitKfVC" role="Nbhlr">
-              <node concept="3Mxwew" id="10rWYitKfVD" role="3MwsjC">
-                <property role="3MwjfP" value="lib" />
-              </node>
-            </node>
-            <node concept="28jJK3" id="10rWYitKfVE" role="39821P">
-              <node concept="55IIr" id="10rWYitKfVF" role="28jJRO">
-                <node concept="2Ry0Ak" id="10rWYitKfVG" role="iGT6I">
+            <node concept="28jJK3" id="yz72nqmA63" role="39821P">
+              <node concept="55IIr" id="yz72nqmA64" role="28jJRO">
+                <node concept="2Ry0Ak" id="yz72nqmA65" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="10rWYitKfVH" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="yz72nqmA66" role="2Ry0An">
                     <property role="2Ry0Am" value="alfi.GeneratorUtils" />
-                    <node concept="2Ry0Ak" id="10rWYitKfVI" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="yz72nqmA67" role="2Ry0An">
                       <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="10rWYitKfVJ" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="yz72nqmA68" role="2Ry0An">
                         <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
                       </node>
                     </node>
@@ -280,7 +248,11 @@
               </node>
             </node>
           </node>
-          <node concept="pUk6x" id="5tK9548dnuG" role="pUk7w" />
+          <node concept="3_J27D" id="yz72nqmA69" role="Nbhlr">
+            <node concept="3Mxwew" id="yz72nqmA6a" role="3MwsjC">
+              <property role="3MwjfP" value="languages" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="398223" id="5tK9548e0qw" role="39821P">
@@ -843,16 +815,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1DLcvdqbfGf" role="3bR37C">
-          <node concept="1BurEX" id="1DLcvdqbfGg" role="1SiIV1">
-            <node concept="55IIr" id="1DLcvdqbfGa" role="1BurEY">
-              <node concept="2Ry0Ak" id="1DLcvdqbfGb" role="iGT6I">
+        <node concept="1SiIV0" id="yz72nqgUjA" role="3bR37C">
+          <node concept="1BurEX" id="yz72nqgUjB" role="1SiIV1">
+            <node concept="55IIr" id="yz72nqgUjx" role="1BurEY">
+              <node concept="2Ry0Ak" id="yz72nqgUjy" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1DLcvdqbfGc" role="2Ry0An">
+                <node concept="2Ry0Ak" id="yz72nqgUjz" role="2Ry0An">
                   <property role="2Ry0Am" value="alfi.GeneratorUtils" />
-                  <node concept="2Ry0Ak" id="1DLcvdqbfGd" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="yz72nqgUj$" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1DLcvdqbfGe" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="yz72nqgUj_" role="2Ry0An">
                       <property role="2Ry0Am" value="alfi.GeneratorUtils.java_src.jar" />
                     </node>
                   </node>

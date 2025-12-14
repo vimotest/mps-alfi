@@ -24,11 +24,21 @@ task prepareMps {
     dependsOn 'buildOsSpecificBundle'
 }
 
+// Zipping ouside the build module to avoid path confusion of GeneratorUtils extra jar
+task zipAlfiPluginLayout(type: Zip) {
+    group 'mps'
+    from "$buildDir/artifacts/alfi-build"
+    include 'alfi/**'
+    archiveFileName = 'alfi.zip'
+    destinationDirectory = file("$buildDir/artifacts/alfi-build")
+}
+
 task mpsBuild {
     group 'mps'
-    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'zipAlfiPluginLayout'
 }
 mpsAntBuild.dependsOn mpsAntGenerate
+zipAlfiPluginLayout.mustRunAfter mpsAntBuild
 
 task mpsClean {
     group 'mps'
