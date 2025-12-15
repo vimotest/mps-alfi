@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="alfi.cpp.devkit" uuid="1909918a-fcce-429c-85cb-e873bef10985">
   <exported-language name="caee2629-07dd-4ee1-aceb-6d1e4dce0f12(CppBaseLanguage)" />
-  <exported-language name="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" />
   <exported-language name="e745d4a0-ccf7-4cb3-8db8-0f77222a00bf(alfi.toCppBaseLanguage)" />
-  <exported-language name="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" />
+  <extendedDevKits>
+    <extendedDevKit>bc1fa781-580e-4c7c-a586-16d0c26f21b0(alfi.core.devkit)</extendedDevKit>
+  </extendedDevKits>
   <exported-solutions>
     <exported-solution>76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)</exported-solution>
-    <exported-solution>e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</exported-solution>
   </exported-solutions>
   <generation-plan model="r:0374a2a3-2e83-460e-8228-7bd146963871(alfi.genplan.alfi.toCppBaseLanguage@genplan)" />
 </dev-kit>

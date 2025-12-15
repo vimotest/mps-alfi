@@ -1458,6 +1458,31 @@
     </node>
     <node concept="2G$12M" id="3iVvXTz_Xva" role="3989C9">
       <property role="TrG5h" value="alfi-devkits" />
+      <node concept="3LEwk6" id="7PgUtPC6tVz" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.core.devkit" />
+        <property role="3LESm3" value="bc1fa781-580e-4c7c-a586-16d0c26f21b0" />
+        <node concept="55IIr" id="7PgUtPC6tVA" role="3LF7KH">
+          <node concept="2Ry0Ak" id="7PgUtPC6tVN" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7PgUtPC6tW0" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.core.devkit" />
+              <node concept="2Ry0Ak" id="7PgUtPC6tWd" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.core.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="7PgUtPC6tXF" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
+        </node>
+        <node concept="3LEDTy" id="7PgUtPC6tXG" role="3LEDUa">
+          <ref role="3LEDTV" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
+        </node>
+        <node concept="3LEDTM" id="7PgUtPC6tXH" role="3LEDUa">
+          <ref role="3LEDTN" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+        </node>
+      </node>
       <node concept="3LEwk6" id="3ADPG$KpXCe" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="alfi.all.devkit" />
@@ -1528,9 +1553,6 @@
             </node>
           </node>
         </node>
-        <node concept="3LEDTy" id="6eEjB9iJESx" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
-        </node>
         <node concept="3LEDTy" id="6eEjB9iJESy" role="3LEDUa">
           <ref role="3LEDTV" node="5tK9548cRl1" resolve="alfi.toJavaBaseLanguage" />
         </node>
@@ -1546,11 +1568,8 @@
         <node concept="3LEDTy" id="6eEjB9iJESA" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
         </node>
-        <node concept="3LEDTy" id="6Fi$fdXGhae" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
-        </node>
-        <node concept="3LEDTM" id="6Fi$fdXGhaf" role="3LEDUa">
-          <ref role="3LEDTN" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+        <node concept="3LEz8M" id="7PgUtPC6tZb" role="3LEz9a">
+          <ref role="3LEz8N" node="7PgUtPC6tVz" resolve="alfi.core.devkit" />
         </node>
       </node>
       <node concept="3LEwk6" id="3iVvXTz_Xzi" role="2G$12L">
@@ -1571,9 +1590,6 @@
         <node concept="3LEDTy" id="6eEjB9iJESB" role="3LEDUa">
           <ref role="3LEDTV" to="gwjr:4h_5oU0U7hC" resolve="CppBaseLanguage" />
         </node>
-        <node concept="3LEDTy" id="6eEjB9iJESC" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
-        </node>
         <node concept="3LEDTy" id="6eEjB9iJESD" role="3LEDUa">
           <ref role="3LEDTV" node="2SeqMAc5VJ2" resolve="alfi.toCppBaseLanguage" />
         </node>
@@ -1583,11 +1599,8 @@
         <node concept="3LEDTy" id="6eEjB9iJESF" role="3LEDUa">
           <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
         </node>
-        <node concept="3LEDTy" id="6Fi$fdXGhag" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
-        </node>
-        <node concept="3LEDTM" id="6Fi$fdXGhah" role="3LEDUa">
-          <ref role="3LEDTN" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+        <node concept="3LEz8M" id="7PgUtPC6tZc" role="3LEz9a">
+          <ref role="3LEz8N" node="7PgUtPC6tVz" resolve="alfi.core.devkit" />
         </node>
       </node>
       <node concept="3LEwk6" id="3iVvXTz_X$8" role="2G$12L">
@@ -1611,20 +1624,14 @@
         <node concept="3LEDTy" id="6eEjB9iJESH" role="3LEDUa">
           <ref role="3LEDTV" node="4rp03ZzFlBp" resolve="alfi.toCsBaseLanguage" />
         </node>
-        <node concept="3LEDTy" id="6eEjB9iJESI" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRi8" resolve="alfi" />
-        </node>
         <node concept="3LEDTM" id="6eEjB9iJESJ" role="3LEDUa">
           <ref role="3LEDTN" node="5tK9548cRTP" resolve="alfi.genplan" />
         </node>
         <node concept="3LEDTy" id="6eEjB9iJESK" role="3LEDUa">
           <ref role="3LEDTV" node="by5Cuptvrb" resolve="alfi.simplifyAlfiLanguage" />
         </node>
-        <node concept="3LEDTy" id="6Fi$fdXGhai" role="3LEDUa">
-          <ref role="3LEDTV" node="5tK9548cRmP" resolve="alfi.PrimitiveMapping" />
-        </node>
-        <node concept="3LEDTM" id="6Fi$fdXGhaj" role="3LEDUa">
-          <ref role="3LEDTN" node="5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+        <node concept="3LEz8M" id="7PgUtPC6tZd" role="3LEz9a">
+          <ref role="3LEz8N" node="7PgUtPC6tVz" resolve="alfi.core.devkit" />
         </node>
       </node>
     </node>

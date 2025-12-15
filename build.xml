@@ -1184,6 +1184,19 @@
     </jar>
     <mkdir dir="${build.layout}/alfi/languages" />
     <mkdir dir="${build.layout}/alfi/languages/alfi-devkits" />
+    <mkdir dir="${build.tmp}/default/alfi.core.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/alfi.core.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/alfi.core.devkit.jar/META-INF/module.xml">
+      <module namespace="alfi.core.devkit" type="devkit" uuid="bc1fa781-580e-4c7c-a586-16d0c26f21b0">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="alfi.core.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfi/languages/alfi-devkits/alfi.core.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/alfi.core.devkit/alfi.core.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/alfi.core.devkit.jar" />
+    </jar>
     <mkdir dir="${build.tmp}/default/alfi.all.devkit.jar" />
     <mkdir dir="${build.tmp}/default/alfi.all.devkit.jar/META-INF" />
     <echoxml file="${build.tmp}/default/alfi.all.devkit.jar/META-INF/module.xml">
@@ -1435,6 +1448,7 @@
         <module file="${basedir}/solutions/alfi.GeneratorUtils/alfi.GeneratorUtils.msd" />
         <module file="${basedir}/solutions/alfi.StandardModelLibrary/alfi.StandardModelLibrary.msd" />
         <module file="${basedir}/devkits/alfi.all.devkit/alfi.all.devkit.devkit" />
+        <module file="${basedir}/devkits/alfi.core.devkit/alfi.core.devkit.devkit" />
         <module file="${basedir}/devkits/alfi.cpp.devkit/alfi.cpp.devkit.devkit" />
         <module file="${basedir}/devkits/alfi.cs.devkit/alfi.cs.devkit.devkit" />
         <module file="${basedir}/devkits/alfi.java.devkit/alfi.java.devkit.devkit" />
