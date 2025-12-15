@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="alfi.cs.devkit" uuid="3738f73e-fe23-4d75-921c-2c5614262784">
+  <exported-language name="d74e25c9-4d91-43b6-bad7-d18af7bf6674(CsBaseLanguage)" />
+  <exported-language name="0f0152f2-19d3-46ec-9e98-47a1e2ed7e0b(alfi.toCsBaseLanguage)" />
+  <extendedDevKits>
+    <extendedDevKit>bc1fa781-580e-4c7c-a586-16d0c26f21b0(alfi.core.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:40561aac-5491-43fc-a1e6-30abe63e5a61(alfi.genplan.alfi.toCsBaseLanguage@genplan)" />
+</dev-kit>
+

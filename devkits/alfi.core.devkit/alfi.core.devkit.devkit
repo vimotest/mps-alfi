@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="alfi.core.devkit" uuid="bc1fa781-580e-4c7c-a586-16d0c26f21b0">
+  <exported-language name="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" />
+  <exported-language name="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" />
+  <exported-solutions>
+    <exported-solution>e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

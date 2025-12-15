@@ -2,6 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/alfi.all.devkit/alfi.all.devkit.devkit" folder="build" />
+      <modulePath path="$PROJECT_DIR$/devkits/alfi.core.devkit/alfi.core.devkit.devkit" folder="build" />
+      <modulePath path="$PROJECT_DIR$/devkits/alfi.cpp.devkit/alfi.cpp.devkit.devkit" folder="build" />
+      <modulePath path="$PROJECT_DIR$/devkits/alfi.cs.devkit/alfi.cs.devkit.devkit" folder="build" />
+      <modulePath path="$PROJECT_DIR$/devkits/alfi.java.devkit/alfi.java.devkit.devkit" folder="build" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.PrimitiveMapping/alfi.PrimitiveMapping.mpl" folder="alfi.primitives" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.simplifyAlfiLanguage/alfi.simplifyAlfiLanguage.mpl" folder="alfi.generation" />
       <modulePath path="$PROJECT_DIR$/languages/alfi.toCppBaseLanguage/alfi.toCppBaseLanguage.mpl" folder="alfi.generation" />
