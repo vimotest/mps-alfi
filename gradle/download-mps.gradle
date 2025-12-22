@@ -23,7 +23,7 @@ def jbrMappings = [
         "2024.3": "21.0.6-b631.52",
         "2025.1": "21.0.7-b895.130",
         "2025.2": "21.0.8-b1038.71",
-        "2025.3": "21.0.8-b1163.59" ]
+        "2025.3": "21.0.8-b1163.69" ]
 
 // Global cache directory in Gradle user home to avoid re-downloading across projects
 ext {
@@ -352,7 +352,8 @@ task downloadJbrForCurrentPlatform {
     if (jbrVersion == null) {
         throw new RuntimeException("no JBR mapping defined for MPS $mpsMajorMinorVersion - please configure the variable 'jbrMappings' by looking up https://github.com/JetBrains/JetBrainsRuntime/tree/master#releases")
     }
-    def jbrTarGzFile = file("build/download/${getJbrArchiveName(mpsMajorMinorVersion)}")
+    def jbrVersionString = jbrMappings[mpsMajorMinorVersion]
+    def jbrTarGzFile = file("build/download/${getJbrArchiveName(jbrVersionString)}")
 
     // Declare inputs and outputs for Gradle caching
     inputs.property('mpsMajorMinorVersion', mpsMajorMinorVersion)
@@ -363,7 +364,7 @@ task downloadJbrForCurrentPlatform {
         !jbrTarGzFile.exists() && System.env.getOrDefault('PREINSTALLED_JAVA_PATH',"") == ""
     }
     doLast {
-        def cachedJbrFile = file("$globalJbrCacheDir/${getJbrArchiveName(mpsMajorMinorVersion)}")
+        def cachedJbrFile = file("$globalJbrCacheDir/${getJbrArchiveName(jbrVersionString)}")
         def downloadLink = "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-${jbrVersion[0]}-${currentOs}-${jbrVersion[1]}.tar.gz"
         downloadAndCacheFile(cachedJbrFile, jbrTarGzFile, downloadLink, "JBR (ca. 200 MB)")
     }
@@ -377,8 +378,9 @@ task extractJbrToMpsBundle {
         !file("$targetFolderName/jbr").exists() && System.env.getOrDefault('PREINSTALLED_JAVA_PATH',"") == ""
     }
     doLast {
+        def jbrVersionString = jbrMappings[mpsMajorMinorVersion]
         copy {
-            def jbrArchive = file("build/download/${getJbrArchiveName(mpsMajorMinorVersion)}")
+            def jbrArchive = file("build/download/${getJbrArchiveName(jbrVersionString)}")
             from tarTree(jbrArchive)
             into file("$targetFolderName")
         }
@@ -503,9 +505,9 @@ task listPlugins {
     }
 }
 
-private static String getJbrArchiveName(String mpsMajorMinorVersion) {
+private static String getJbrArchiveName(String jbrVersion) {
     def currentOs = getOsJbrVariantName()
-    return "jbr-${mpsMajorMinorVersion}-${currentOs}.tar.gz"
+    return "jbr-${jbrVersion}-${currentOs}.tar.gz"
 }
 
 private static String getOsJbrVariantName() {

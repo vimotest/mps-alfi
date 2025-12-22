@@ -10,6 +10,8 @@ task compileGeneratorUtilsJava(type: JavaCompile) {
     options.encoding = 'UTF-8'
     options.fork = true
     options.forkOptions.javaHome = file(javaHome)
+
+    mustRunAfter 'buildOsSpecificBundle'
 }
 
 task buildGeneratorUtils(type: Jar) {

@@ -2,7 +2,7 @@
 <model ref="r:40561aac-5491-43fc-a1e6-30abe63e5a61(alfi.genplan.alfi.toCsBaseLanguage@genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
   </languages>
   <imports />
   <registry>

@@ -6,7 +6,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -213,15 +213,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes">
@@ -1433,18 +1429,104 @@
         </node>
       </node>
       <node concept="P$JXv" id="5jkMFwzjmoE" role="lGtFl">
-        <node concept="TZ5HA" id="5jkMFwzjmoF" role="TZ5H$">
-          <node concept="1dT_AC" id="5jkMFwzjmoG" role="1dT_Ay">
-            <property role="1dT_AB" value="Derived property as specified in the ALF Spec (13.2.22):" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5jkMFwzjtr4" role="TZ5H$">
-          <node concept="1dT_AC" id="5jkMFwzjtr5" role="1dT_Ay">
-            <property role="1dT_AB" value="Constraint: An instance creation expression is constructorless if its referent is a class." />
-          </node>
-        </node>
         <node concept="x79VA" id="5jkMFwzjmoH" role="3nqlJM">
-          <property role="x79VB" value="Whether this is a constructorless object creation expression." />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="5GxqF0s8M1P" role="1Vez_I">
+            <node concept="3oM_SD" id="5GxqF0s8M1Q" role="1PaTwD">
+              <property role="3oM_SC" value="Whether" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1R" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1S" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1T" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1U" role="1PaTwD">
+              <property role="3oM_SC" value="constructorless" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1V" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1W" role="1PaTwD">
+              <property role="3oM_SC" value="creation" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M1X" role="1PaTwD">
+              <property role="3oM_SC" value="expression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5GxqF0s8M1t" role="1Vez_I">
+          <node concept="3oM_SD" id="5GxqF0s8M1u" role="1PaTwD">
+            <property role="3oM_SC" value="Derived" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1v" role="1PaTwD">
+            <property role="3oM_SC" value="property" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1w" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1x" role="1PaTwD">
+            <property role="3oM_SC" value="specified" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1y" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1z" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1$" role="1PaTwD">
+            <property role="3oM_SC" value="ALF" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1_" role="1PaTwD">
+            <property role="3oM_SC" value="Spec" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1A" role="1PaTwD">
+            <property role="3oM_SC" value="(13.2.22):" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5GxqF0s8M1B" role="1Vez_I">
+          <node concept="3oM_SD" id="5GxqF0s8M1C" role="1PaTwD">
+            <property role="3oM_SC" value="Constraint:" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1D" role="1PaTwD">
+            <property role="3oM_SC" value="An" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1E" role="1PaTwD">
+            <property role="3oM_SC" value="instance" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1F" role="1PaTwD">
+            <property role="3oM_SC" value="creation" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1G" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1H" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1I" role="1PaTwD">
+            <property role="3oM_SC" value="constructorless" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1J" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1K" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1L" role="1PaTwD">
+            <property role="3oM_SC" value="referent" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1M" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1N" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M1O" role="1PaTwD">
+            <property role="3oM_SC" value="class." />
+          </node>
         </node>
       </node>
     </node>
@@ -1477,18 +1559,131 @@
         </node>
       </node>
       <node concept="P$JXv" id="5jkMFwzjq_u" role="lGtFl">
-        <node concept="TZ5HA" id="5jkMFwzjq_v" role="TZ5H$">
-          <node concept="1dT_AC" id="5jkMFwzjq_w" role="1dT_Ay">
-            <property role="1dT_AB" value="Derived property as specified in the ALF Spec (13.2.22)" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5jkMFwzjt_Q" role="TZ5H$">
-          <node concept="1dT_AC" id="5jkMFwzjt_R" role="1dT_Ay">
-            <property role="1dT_AB" value="Constraint: An instance creation expression is an object creation if its referent is not a data type." />
-          </node>
-        </node>
         <node concept="x79VA" id="5jkMFwzjq_x" role="3nqlJM">
-          <property role="x79VB" value="Whether this is an object creation expression or a data value creation expression." />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="5GxqF0s8M2q" role="1Vez_I">
+            <node concept="3oM_SD" id="5GxqF0s8M2r" role="1PaTwD">
+              <property role="3oM_SC" value="Whether" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2s" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2t" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2u" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2v" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2w" role="1PaTwD">
+              <property role="3oM_SC" value="creation" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2x" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2y" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2z" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2$" role="1PaTwD">
+              <property role="3oM_SC" value="data" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2_" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2A" role="1PaTwD">
+              <property role="3oM_SC" value="creation" />
+            </node>
+            <node concept="3oM_SD" id="5GxqF0s8M2B" role="1PaTwD">
+              <property role="3oM_SC" value="expression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5GxqF0s8M1Y" role="1Vez_I">
+          <node concept="3oM_SD" id="5GxqF0s8M1Z" role="1PaTwD">
+            <property role="3oM_SC" value="Derived" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M20" role="1PaTwD">
+            <property role="3oM_SC" value="property" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M21" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M22" role="1PaTwD">
+            <property role="3oM_SC" value="specified" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M23" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M24" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M25" role="1PaTwD">
+            <property role="3oM_SC" value="ALF" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M26" role="1PaTwD">
+            <property role="3oM_SC" value="Spec" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M27" role="1PaTwD">
+            <property role="3oM_SC" value="(13.2.22)" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5GxqF0s8M28" role="1Vez_I">
+          <node concept="3oM_SD" id="5GxqF0s8M29" role="1PaTwD">
+            <property role="3oM_SC" value="Constraint:" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2a" role="1PaTwD">
+            <property role="3oM_SC" value="An" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2b" role="1PaTwD">
+            <property role="3oM_SC" value="instance" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2c" role="1PaTwD">
+            <property role="3oM_SC" value="creation" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2d" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2e" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2f" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2g" role="1PaTwD">
+            <property role="3oM_SC" value="object" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2h" role="1PaTwD">
+            <property role="3oM_SC" value="creation" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2i" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2j" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2k" role="1PaTwD">
+            <property role="3oM_SC" value="referent" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2l" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2m" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2n" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2o" role="1PaTwD">
+            <property role="3oM_SC" value="data" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2p" role="1PaTwD">
+            <property role="3oM_SC" value="type." />
+          </node>
         </node>
       </node>
     </node>
@@ -1816,9 +2011,36 @@
       </node>
       <node concept="3Tm1VV" id="6OepWIVp32T" role="1B3o_S" />
       <node concept="P$JXv" id="3_DBZqKq51u" role="lGtFl">
-        <node concept="TZ5HA" id="3_DBZqKq51v" role="TZ5H$">
-          <node concept="1dT_AC" id="3_DBZqKq51w" role="1dT_Ay">
-            <property role="1dT_AB" value="This overload of getScope with SContainmentLink is used in AlfScopeHelper" />
+        <node concept="1PaTwC" id="5GxqF0s8M2C" role="1Vez_I">
+          <node concept="3oM_SD" id="5GxqF0s8M2D" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2E" role="1PaTwD">
+            <property role="3oM_SC" value="overload" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2F" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2G" role="1PaTwD">
+            <property role="3oM_SC" value="getScope" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2H" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2I" role="1PaTwD">
+            <property role="3oM_SC" value="SContainmentLink" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2J" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2K" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2L" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5GxqF0s8M2M" role="1PaTwD">
+            <property role="3oM_SC" value="AlfScopeHelper" />
           </node>
         </node>
       </node>

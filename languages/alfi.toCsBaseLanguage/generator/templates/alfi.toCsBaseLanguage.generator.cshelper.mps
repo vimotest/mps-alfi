@@ -174,16 +174,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
@@ -2213,9 +2207,66 @@
     </node>
     <node concept="3Tm1VV" id="5jkMFw$M6Mj" role="1B3o_S" />
     <node concept="3UR2Jj" id="5jkMFw$M6VI" role="lGtFl">
-      <node concept="TZ5HA" id="5jkMFw$M6VJ" role="TZ5H$">
-        <node concept="1dT_AC" id="5jkMFw$M6VK" role="1dT_Ay">
-          <property role="1dT_AB" value="Note: Should be fixed in CsBaseLanguage .autocompleteParent() methods, by using ancestor, and not parent. Parent does not work with Class-Visibility-intermediates." />
+      <node concept="1PaTwC" id="5GxqF0s8M12" role="1Vez_I">
+        <node concept="3oM_SD" id="5GxqF0s8M13" role="1PaTwD">
+          <property role="3oM_SC" value="Note:" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M14" role="1PaTwD">
+          <property role="3oM_SC" value="Should" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M15" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M16" role="1PaTwD">
+          <property role="3oM_SC" value="fixed" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M17" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M18" role="1PaTwD">
+          <property role="3oM_SC" value="CsBaseLanguage" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M19" role="1PaTwD">
+          <property role="3oM_SC" value=".autocompleteParent()" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1a" role="1PaTwD">
+          <property role="3oM_SC" value="methods," />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1b" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1c" role="1PaTwD">
+          <property role="3oM_SC" value="using" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1d" role="1PaTwD">
+          <property role="3oM_SC" value="ancestor," />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1e" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1f" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1g" role="1PaTwD">
+          <property role="3oM_SC" value="parent." />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1h" role="1PaTwD">
+          <property role="3oM_SC" value="Parent" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1i" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1j" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1k" role="1PaTwD">
+          <property role="3oM_SC" value="work" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1l" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="5GxqF0s8M1m" role="1PaTwD">
+          <property role="3oM_SC" value="Class-Visibility-intermediates." />
         </node>
       </node>
     </node>
