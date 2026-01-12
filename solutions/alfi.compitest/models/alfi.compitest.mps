@@ -941,6 +941,43 @@
             </node>
           </node>
         </node>
+        <node concept="32prLx" id="4fz1u1vG4Qi" role="PCHzz">
+          <node concept="32pbwo" id="4fz1u1vG4Qk" role="32oX99">
+            <node concept="32prLw" id="4fz1u1vG4Qm" role="32pbwr">
+              <node concept="31uMWx" id="4fz1u1vG4XC" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_iklQ" id="4fz1u1vG4Z7" role="31szGQ">
+                  <property role="_iklR" value="a\&quot;=\\\nb" />
+                </node>
+                <node concept="1_aNVd" id="4fz1u1vSjag" role="31szGO">
+                  <property role="1_3b9j" value="\n" />
+                  <node concept="_iklQ" id="4fz1u1vG4XK" role="1_aKP7">
+                    <property role="_iklR" value="a\&quot;=\\" />
+                  </node>
+                  <node concept="_iklQ" id="4fz1u1vG53K" role="1_aKP7">
+                    <property role="_iklR" value="b" />
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="4fz1u1vG4Qq" role="32prLT">
+                <node concept="_jtW9" id="4fz1u1vG50e" role="PCHzz">
+                  <node concept="_uF8j" id="4fz1u1vG50f" role="_jtWe">
+                    <node concept="_vnHb" id="4fz1u1vG50g" role="_uF8g">
+                      <node concept="_vnHe" id="4fz1u1vG50h" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="4fz1u1vG50i" role="_uFfl">
+                      <node concept="_iklQ" id="4fz1u1vG50j" role="_vku1">
+                        <property role="_iklR" value="multiline equals" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

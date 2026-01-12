@@ -3473,6 +3473,122 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="4fz1u1vW8NI" role="jymVt">
+      <property role="TrG5h" value="replaceBackslashForVerbatimString" />
+      <node concept="3clFbS" id="4fz1u1vW8NL" role="3clF47">
+        <node concept="3SKdUt" id="4fz1u1vW2k3" role="3cqZAp">
+          <node concept="1PaTwC" id="4fz1u1vW2k4" role="1aUNEU">
+            <node concept="3oM_SD" id="4fz1u1vW2MT" role="1PaTwD">
+              <property role="3oM_SC" value="Regex:" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2MW" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2Nc" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2Ni" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2Nm" role="1PaTwD">
+              <property role="3oM_SC" value="extra" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2NC" role="1PaTwD">
+              <property role="3oM_SC" value="escape" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2OA" role="1PaTwD">
+              <property role="3oM_SC" value="\\" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4fz1u1vW2As" role="3cqZAp">
+          <node concept="1PaTwC" id="4fz1u1vW2At" role="1aUNEU">
+            <node concept="3oM_SD" id="4fz1u1vW2Au" role="1PaTwD">
+              <property role="3oM_SC" value="`\\&quot;`" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2Hi" role="1PaTwD">
+              <property role="3oM_SC" value="=&gt;" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2Hy" role="1PaTwD">
+              <property role="3oM_SC" value="`&quot;&quot;`" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4fz1u1vW2S1" role="3cqZAp">
+          <node concept="1PaTwC" id="4fz1u1vW2RV" role="1aUNEU">
+            <node concept="3oM_SD" id="4fz1u1vW2RU" role="1PaTwD">
+              <property role="3oM_SC" value="`\\\\`" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW3d_" role="1PaTwD">
+              <property role="3oM_SC" value="=&gt;" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW3ez" role="1PaTwD">
+              <property role="3oM_SC" value="`\`" />
+            </node>
+            <node concept="3oM_SD" id="4fz1u1vW2K2" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4fz1u1w3qkj" role="3cqZAp">
+          <node concept="37vLTI" id="4fz1u1w3rnF" role="3clFbG">
+            <node concept="37vLTw" id="4fz1u1w3qkh" role="37vLTJ">
+              <ref role="3cqZAo" node="4fz1u1vWaGn" resolve="value" />
+            </node>
+            <node concept="2OqwBi" id="4fz1u1w3rnI" role="37vLTx">
+              <node concept="37vLTw" id="4fz1u1w3rnJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="4fz1u1vWaGn" resolve="value" />
+              </node>
+              <node concept="liA8E" id="4fz1u1w3rnK" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                <node concept="Xl_RD" id="4fz1u1w3rnL" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\\&quot;" />
+                </node>
+                <node concept="37vLTw" id="4fz1u1w3rnM" role="37wK5m">
+                  <ref role="3cqZAo" node="4fz1u1vWfcn" resolve="quoteReplacemant" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="15r1ZbAR65J" role="3cqZAp">
+          <node concept="37vLTI" id="4fz1u1w3rHO" role="3clFbG">
+            <node concept="37vLTw" id="4fz1u1w3rM4" role="37vLTJ">
+              <ref role="3cqZAo" node="4fz1u1vWaGn" resolve="value" />
+            </node>
+            <node concept="2OqwBi" id="15r1ZbAR8JF" role="37vLTx">
+              <node concept="37vLTw" id="15r1ZbAR65H" role="2Oq$k0">
+                <ref role="3cqZAo" node="4fz1u1vWaGn" resolve="value" />
+              </node>
+              <node concept="liA8E" id="15r1ZbARc1y" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                <node concept="Xl_RD" id="15r1ZbARc1Y" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\\\\\" />
+                </node>
+                <node concept="Xl_RD" id="15r1ZbARcEl" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4fz1u1w3rTJ" role="3cqZAp">
+          <node concept="37vLTw" id="4fz1u1w3rTH" role="3clFbG">
+            <ref role="3cqZAo" node="4fz1u1vWaGn" resolve="value" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4fz1u1vW7Eo" role="1B3o_S" />
+      <node concept="17QB3L" id="4fz1u1vW8P6" role="3clF45" />
+      <node concept="37vLTG" id="4fz1u1vWaGn" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="4fz1u1vWaGm" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4fz1u1vWfcn" role="3clF46">
+        <property role="TrG5h" value="quoteReplacemant" />
+        <node concept="17QB3L" id="4fz1u1vWgeJ" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2YIFZL" id="RZKkt7d8rE" role="jymVt">
       <property role="TrG5h" value="needsToForceOptionalValueExpression" />
       <node concept="3clFbS" id="RZKkt7d8rH" role="3clF47">

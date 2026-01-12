@@ -9628,7 +9628,7 @@
         <node concept="3clFbF" id="6RKU0s8Z6zr" role="3cqZAp">
           <node concept="37vLTI" id="6RKU0s8Z9$5" role="3clFbG">
             <node concept="Xl_RD" id="6RKU0s8Z9$n" role="37vLTx">
-              <property role="Xl_RC" value="\n" />
+              <property role="Xl_RC" value="\\n" />
             </node>
             <node concept="2OqwBi" id="6RKU0s8Z6KJ" role="37vLTJ">
               <node concept="13iPFW" id="6RKU0s8Z6zq" role="2Oq$k0" />
