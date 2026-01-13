@@ -732,12 +732,24 @@
         <ref role="3HHQsK" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
         <ref role="3HHQyS" to="rieo:HR$VOIYr$g" resolve="AreEqual" />
       </node>
+      <node concept="3HHQsX" id="7NQ16AKNcC_" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:7NQ16AKJOZm" resolve="AssertEqualWithMessage" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$g" resolve="AreEqual" />
+      </node>
       <node concept="3HHQsX" id="6rN02BBb22v" role="3HHZ2s">
         <ref role="3HHQsK" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
         <ref role="3HHQyS" to="rieo:HR$VOIYr$q" resolve="IsTrue" />
       </node>
+      <node concept="3HHQsX" id="7NQ16AKNcDN" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:7NQ16AKJQ8p" resolve="AssertTrueWithMessage" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$q" resolve="IsTrue" />
+      </node>
       <node concept="3HHQsX" id="6rN02BBb22w" role="3HHZ2s">
         <ref role="3HHQsK" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
+        <ref role="3HHQyS" to="rieo:HR$VOIYr$x" resolve="IsFalse" />
+      </node>
+      <node concept="3HHQsX" id="7NQ16AKNcEa" role="3HHZ2s">
+        <ref role="3HHQsK" to="hsxa:7NQ16AKJQBy" resolve="AssertFalseWithMessage" />
         <ref role="3HHQyS" to="rieo:HR$VOIYr$x" resolve="IsFalse" />
       </node>
     </node>
