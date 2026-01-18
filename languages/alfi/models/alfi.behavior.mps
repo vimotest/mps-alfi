@@ -8436,7 +8436,21 @@
     <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
     <ref role="13h7C2" to="28lk:6sZBH0rPpO$" resolve="SequenceOperationExpression" />
     <node concept="13hLZK" id="6sZBH0rPpQK" role="13h7CW">
-      <node concept="3clFbS" id="6sZBH0rPpQL" role="2VODD2" />
+      <node concept="3clFbS" id="6sZBH0rPpQL" role="2VODD2">
+        <node concept="3clFbF" id="6Nin$ihbGkf" role="3cqZAp">
+          <node concept="2OqwBi" id="6Nin$ihbIH6" role="3clFbG">
+            <node concept="2OqwBi" id="6Nin$ihbGyl" role="2Oq$k0">
+              <node concept="13iPFW" id="6Nin$ihbGke" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6Nin$ihbIw6" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:6sZBH0rPpQG" resolve="primary" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6Nin$ihbISh" role="2OqNvi">
+              <ref role="1A9B2P" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6sZBH0rPpR2" role="13h7CS">
       <property role="TrG5h" value="isConstructorInvocation" />
