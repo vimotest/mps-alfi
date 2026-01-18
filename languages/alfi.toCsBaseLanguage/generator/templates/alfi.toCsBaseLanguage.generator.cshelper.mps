@@ -15,8 +15,10 @@
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="80bi" ref="r:95fc96a8-27f5-4ee9-87a9-d1035329badc(CsBaseLanguage.structure)" />
+    <import index="xrxg" ref="r:5164dfe6-bc8e-4792-abad-7b89a2b17f59(System.Collections)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -251,11 +253,15 @@
       <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
         <child id="7400021826774799510" name="ref" index="2tJFKM" />
       </concept>
+      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
+        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -267,11 +273,15 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="3648723375513868532" name="jetbrains.mps.lang.smodel.structure.NodePointer_ResolveOperation" flags="ng" index="Vyspw" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
@@ -569,6 +579,166 @@
       </node>
       <node concept="3Tm1VV" id="2SeqMAc0yn8" role="1B3o_S" />
     </node>
+    <node concept="2YIFZL" id="6Nin$ih_TWV" role="jymVt">
+      <property role="TrG5h" value="getConcreteTargetForInstanceCreation" />
+      <node concept="37vLTG" id="6Nin$ih_U1H" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="3Tqbb2" id="6Nin$ih_U1I" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6Nin$ih_U1J" role="3clF46">
+        <property role="TrG5h" value="mappingLabelAccessor" />
+        <node concept="3uibUv" id="6Nin$ih_U1K" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3Tqbb2" id="6Nin$ih_U1L" role="11_B2D">
+            <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+          </node>
+          <node concept="3Tqbb2" id="6Nin$ih_U1M" role="11_B2D">
+            <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="6Nin$ih_TWY" role="3clF47">
+        <node concept="3cpWs8" id="6Nin$ihMnkQ" role="3cqZAp">
+          <node concept="3cpWsn" id="6Nin$ihMnkR" role="3cpWs9">
+            <property role="TrG5h" value="targetAlfiNode" />
+            <node concept="3Tqbb2" id="6Nin$ihMn1m" role="1tU5fm">
+              <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+            </node>
+            <node concept="2OqwBi" id="6Nin$ihMnkS" role="33vP2m">
+              <node concept="37vLTw" id="6Nin$ihMnkT" role="2Oq$k0">
+                <ref role="3cqZAo" node="6Nin$ih_U1H" resolve="name" />
+              </node>
+              <node concept="2qgKlT" id="6Nin$ihMnkU" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6Nin$ih_U5j" role="3cqZAp">
+          <node concept="3clFbS" id="6Nin$ih_U5k" role="3clFbx">
+            <node concept="3cpWs6" id="6Nin$ih_U5l" role="3cqZAp">
+              <node concept="2OqwBi" id="6Nin$ih_U5m" role="3cqZAk">
+                <node concept="2tJFMh" id="6Nin$ih_U5n" role="2Oq$k0">
+                  <node concept="ZC_QK" id="6Nin$ihGWL0" role="2tJFKM">
+                    <ref role="2aWVGs" to="xrxg:5hCiKtcGiQK" resolve="Dictionary.cs" />
+                    <node concept="ZC_QK" id="6Nin$ihGWL1" role="2aWVGa">
+                      <ref role="2aWVGs" to="xrxg:5hCiKtcGiQL" resolve="System.Collections.Generic" />
+                      <node concept="ZC_QK" id="6Nin$ihGWL2" role="2aWVGa">
+                        <ref role="2aWVGs" to="xrxg:5hCiKtcGiQM" resolve="Dictionary" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Vyspw" id="6Nin$ih_U5p" role="2OqNvi">
+                  <node concept="2OqwBi" id="6Nin$ih_U5q" role="Vysub">
+                    <node concept="2JrnkZ" id="6Nin$ih_U5r" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6Nin$ih_U5s" role="2JrQYb">
+                        <node concept="37vLTw" id="6Nin$ih_U5t" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6Nin$ihMnkR" resolve="targetAlfiNode" />
+                        </node>
+                        <node concept="I4A8Y" id="6Nin$ih_U5u" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6Nin$ih_U5v" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="6Nin$ih_U5w" role="3clFbw">
+            <node concept="2OqwBi" id="6Nin$ih_U5x" role="3uHU7B">
+              <node concept="37vLTw" id="6Nin$ihMnkV" role="2Oq$k0">
+                <ref role="3cqZAo" node="6Nin$ihMnkR" resolve="targetAlfiNode" />
+              </node>
+              <node concept="iZEcu" id="6Nin$ih_U5_" role="2OqNvi" />
+            </node>
+            <node concept="2tJFMh" id="6Nin$ih_U5A" role="3uHU7w">
+              <node concept="ZC_QK" id="6Nin$ih_U5B" role="2tJFKM">
+                <ref role="2aWVGs" to="gkn4:2SV$eY8tdWI" resolve="CollectionClasses" />
+                <node concept="ZC_QK" id="6Nin$ih_U5C" role="2aWVGa">
+                  <ref role="2aWVGs" to="gkn4:2SV$eY8tdWH" resolve="CollectionClasses" />
+                  <node concept="ZC_QK" id="6Nin$ih_U5D" role="2aWVGa">
+                    <ref role="2aWVGs" to="gkn4:4xrdFydR8Mn" resolve="Map" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6Nin$ih_U5E" role="3cqZAp">
+          <node concept="3clFbS" id="6Nin$ih_U5F" role="3clFbx">
+            <node concept="3cpWs6" id="6Nin$ih_U5G" role="3cqZAp">
+              <node concept="2OqwBi" id="6Nin$ih_U5H" role="3cqZAk">
+                <node concept="2tJFMh" id="6Nin$ih_U5I" role="2Oq$k0">
+                  <node concept="ZC_QK" id="6Nin$ih_U5o" role="2tJFKM">
+                    <ref role="2aWVGs" to="xrxg:5hCiKtcGiW5" resolve="HashSet.cs" />
+                    <node concept="ZC_QK" id="6Nin$ihGVWn" role="2aWVGa">
+                      <ref role="2aWVGs" to="xrxg:5hCiKtcGiW6" resolve="System.Collections.Generic" />
+                      <node concept="ZC_QK" id="6Nin$ihGWey" role="2aWVGa">
+                        <ref role="2aWVGs" to="xrxg:5hCiKtcGiW7" resolve="HashSet" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Vyspw" id="6Nin$ih_U5K" role="2OqNvi">
+                  <node concept="2OqwBi" id="6Nin$ih_U5L" role="Vysub">
+                    <node concept="2JrnkZ" id="6Nin$ih_U5M" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6Nin$ih_U5N" role="2JrQYb">
+                        <node concept="37vLTw" id="6Nin$ih_U5O" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6Nin$ihMnkR" resolve="targetAlfiNode" />
+                        </node>
+                        <node concept="I4A8Y" id="6Nin$ih_U5P" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6Nin$ih_U5Q" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="6Nin$ih_U5R" role="3clFbw">
+            <node concept="2OqwBi" id="6Nin$ih_U5S" role="3uHU7B">
+              <node concept="37vLTw" id="6Nin$ihMnkW" role="2Oq$k0">
+                <ref role="3cqZAo" node="6Nin$ihMnkR" resolve="targetAlfiNode" />
+              </node>
+              <node concept="iZEcu" id="6Nin$ih_U5W" role="2OqNvi" />
+            </node>
+            <node concept="2tJFMh" id="6Nin$ih_U5X" role="3uHU7w">
+              <node concept="ZC_QK" id="6Nin$ih_U5Y" role="2tJFKM">
+                <ref role="2aWVGs" to="gkn4:2SV$eY8tdWI" resolve="CollectionClasses" />
+                <node concept="ZC_QK" id="6Nin$ih_U5Z" role="2aWVGa">
+                  <ref role="2aWVGs" to="gkn4:2SV$eY8tdWH" resolve="CollectionClasses" />
+                  <node concept="ZC_QK" id="6Nin$ih_U60" role="2aWVGa">
+                    <ref role="2aWVGs" to="gkn4:4xrdFydR8NF" resolve="Set" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6Nin$ih_Uwl" role="3cqZAp">
+          <node concept="1rXfSq" id="6Nin$ih_Uwj" role="3clFbG">
+            <ref role="37wK5l" node="2SeqMAc0ymZ" resolve="getTargetNode" />
+            <node concept="37vLTw" id="6Nin$ih_UAm" role="37wK5m">
+              <ref role="3cqZAo" node="6Nin$ih_U1H" resolve="name" />
+            </node>
+            <node concept="37vLTw" id="6Nin$ih_UEQ" role="37wK5m">
+              <ref role="3cqZAo" node="6Nin$ih_U1J" resolve="mappingLabelAccessor" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6Nin$ih_TRW" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6Nin$ih_TUj" role="3clF45">
+        <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      </node>
+    </node>
     <node concept="2YIFZL" id="57cKp9M45gd" role="jymVt">
       <property role="TrG5h" value="getTargetNode" />
       <node concept="3clFbS" id="57cKp9M45ge" role="3clF47">
@@ -686,7 +856,7 @@
           <node concept="3cpWsn" id="1mbJ82ncNLv" role="3cpWs9">
             <property role="TrG5h" value="mappedType" />
             <node concept="3Tqbb2" id="1mbJ82ncNwp" role="1tU5fm">
-              <ref role="ehGHo" to="80bi:6hv6i2_Azc3" resolve="ClassDeclaration" />
+              <ref role="ehGHo" to="80bi:6hv6i2_Azc2" resolve="TypeDeclaration" />
             </node>
             <node concept="1PxgMI" id="1mbJ82ncNLw" role="33vP2m">
               <property role="1BlNFB" value="true" />
@@ -700,7 +870,7 @@
                 </node>
               </node>
               <node concept="chp4Y" id="1mbJ82nl5nE" role="3oSUPX">
-                <ref role="cht4Q" to="80bi:6hv6i2_Azc3" resolve="ClassDeclaration" />
+                <ref role="cht4Q" to="80bi:6hv6i2_Azc2" resolve="TypeDeclaration" />
               </node>
             </node>
           </node>
@@ -744,7 +914,7 @@
       </node>
       <node concept="3Tm1VV" id="1mbJ82nc_RO" role="1B3o_S" />
       <node concept="3Tqbb2" id="1mbJ82nc_RP" role="3clF45">
-        <ref role="ehGHo" to="80bi:6hv6i2_Azc3" resolve="ClassDeclaration" />
+        <ref role="ehGHo" to="80bi:6hv6i2_Azc2" resolve="TypeDeclaration" />
       </node>
       <node concept="37vLTG" id="1mbJ82ncKSC" role="3clF46">
         <property role="TrG5h" value="name" />
