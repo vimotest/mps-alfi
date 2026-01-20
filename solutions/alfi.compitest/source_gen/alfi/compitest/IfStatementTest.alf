@@ -1,0 +1,100 @@
+
+
+
+
+activity IfStatementTest (  ) {
+  if ( false ) {
+    WriteLine ( "ignored" );
+
+  } 
+
+
+  if ( true ) {
+    WriteLine ( "a1" );
+
+  } else if ( true ) {
+    WriteLine ( "a2" );
+
+  } or if ( true ) {
+    WriteLine ( "a3" );
+
+  } else if ( true ) {
+    WriteLine ( "a4" );
+
+  } else {
+    WriteLine ( "a5" );
+
+  } 
+
+
+  if ( false ) {
+    WriteLine ( "b1" );
+
+  } else if ( true ) {
+    WriteLine ( "b2" );
+
+  } or if ( true ) {
+    WriteLine ( "b3" );
+
+  } else if ( true ) {
+    WriteLine ( "b4" );
+
+  } else {
+    WriteLine ( "b5" );
+
+  } 
+
+
+  if ( false ) {
+    WriteLine ( "c1" );
+
+  } else if ( false ) {
+    WriteLine ( "c2" );
+
+  } or if ( true ) {
+    WriteLine ( "c3" );
+
+  } else if ( true ) {
+    WriteLine ( "c4" );
+
+  } else {
+    WriteLine ( "c5" );
+
+  } 
+
+  if ( false ) {
+    WriteLine ( "d1" );
+
+  } else if ( false ) {
+    WriteLine ( "d2" );
+
+  } or if ( false ) {
+    WriteLine ( "d3" );
+
+  } else if ( true ) {
+    WriteLine ( "d4" );
+
+  } else {
+    WriteLine ( "d5" );
+
+  } 
+
+
+  if ( false ) {
+    WriteLine ( "e1" );
+
+  } else if ( false ) {
+    WriteLine ( "e2" );
+
+  } or if ( false ) {
+    WriteLine ( "e3" );
+
+  } else if ( false ) {
+    WriteLine ( "e4" );
+
+  } else {
+    WriteLine ( "e5" );
+
+  } 
+
+}

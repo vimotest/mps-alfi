@@ -1,0 +1,25 @@
+
+
+
+
+activity EnumTest (  ) {
+  let enumValue: EnumTrafficLightColor = EnumTrafficLightColor:: GREEN;
+
+
+  if ( enumValue == EnumTrafficLightColor:: GREEN ) {
+    WriteLine ( "GREEN!" );
+
+  } 
+
+  enumValue = EnumTrafficLightColor:: RED;
+
+
+  if ( enumValue == EnumTrafficLightColor:: GREEN ) {
+    WriteLine ( "GREEN!" );
+
+  } else if ( enumValue == EnumTrafficLightColor:: RED ) {
+    WriteLine ( "RED!" );
+
+  } 
+
+}

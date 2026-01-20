@@ -1,0 +1,50 @@
+
+
+
+
+activity LiteralExpressionsTest (  ) {
+  let a: String = "Test";
+
+  WriteLine ( a );
+
+  let b: Boolean = false;
+
+  WriteLine ( BooleanFunctions:: ToString ( b ) );
+
+  let c: Boolean = true;
+
+  WriteLine ( BooleanFunctions:: ToString ( c ) );
+
+  let d: Integer = 12309;
+
+  WriteLine ( IntegerFunctions:: ToString ( d ) );
+
+  let e: Integer = 0b10111;
+
+  WriteLine ( IntegerFunctions:: ToString ( e ) );
+
+  let f: Integer = 0xA09F;
+
+  WriteLine ( IntegerFunctions:: ToString ( f ) );
+
+  let g: Integer = 012307;
+
+  WriteLine ( IntegerFunctions:: ToString ( g ) );
+
+
+  let emptyString: String = "";
+
+  if ( emptyString == "" ) {
+    WriteLine ( "empty" );
+
+  } 
+
+
+  WriteLine ( "Line1\nLine2\nLine3" );
+
+  if ( "a\"=\\\nb" == "a\"=\\\nb" ) {
+    WriteLine ( "multiline equals" );
+
+  } 
+
+}

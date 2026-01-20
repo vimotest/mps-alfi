@@ -1,0 +1,24 @@
+
+
+
+
+activity DoStatementTest (  ) {
+  let a: Integer = 0;
+
+  let b: Integer = 0;
+
+  do {
+    b = a * 2;
+
+    a = a + 1;
+
+    WriteLine ( IntegerFunctions:: ToString ( a ) );
+
+    WriteLine ( IntegerFunctions:: ToString ( b ) );
+
+  } while ( b < 20 );
+
+
+  WriteLine ( "End: " + IntegerFunctions:: ToString ( a ) );
+
+}

@@ -1,0 +1,29 @@
+
+
+
+
+activity UnaryExpressionsTest (  ) {
+// Boolean
+
+
+  let b: Boolean = false;
+
+  WriteLine ( BooleanFunctions:: ToString ( !b ) );
+
+
+// BitString
+
+
+  let i: Integer = 123;
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )~i ) );
+
+
+// Numeric
+
+
+  WriteLine ( IntegerFunctions:: ToString ( +i ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( -i ) );
+
+}

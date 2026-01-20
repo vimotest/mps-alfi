@@ -1,0 +1,24 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityWhileStatementTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityUnaryExpressionsTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityLiteralExpressionsTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityIfStatementTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityHelloWorld.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityHello.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityForStatementTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityDoStatementTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityBreakStatementTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityBinaryExpressionsTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityCarsTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivitySequencesTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityEnumTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ActivityCollectionsTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/IHasColor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/Vehicle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sequences/SequenceHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sequences/SeqRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EnumTrafficLightColor.cs" />
+  </ItemGroup>
+</Project>

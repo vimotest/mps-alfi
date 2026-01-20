@@ -1,0 +1,185 @@
+
+
+public import Sequences :: * ;
+
+activity SequencesTest (  ) {
+  let sequenceHolder: SequenceHolder = new SequenceHolder (  );
+
+
+  sequenceHolder.names->add ( "Test1" );
+
+  sequenceHolder.names->add ( "Test2" );
+
+  sequenceHolder.names->add ( "Test3" );
+
+  WriteLine ( IntegerFunctions:: ToString ( sequenceHolder.names->size (  ) ) );
+
+
+  for ( String name : sequenceHolder.names ) {
+    WriteLine ( name );
+
+  } 
+
+
+  sequenceHolder.names->remove ( "Test2" );
+
+  sequenceHolder.names->removeAt ( 1 );
+
+
+  for ( String name : sequenceHolder.names ) {
+    WriteLine ( name );
+
+  } 
+
+
+  let row1: SeqRow = new SeqRow ( false );
+
+  sequenceHolder.rows->add ( row1 );
+
+  row1.values->add ( "val1" );
+
+  row1.values->add ( "val2" );
+
+  WriteLine ( sequenceHolder.rows->at ( 1 ).values->at ( 1 ) ?? "null" );
+
+
+// Nested null-propagation-access
+
+  if ( true ) {
+    if ( true ) {
+      WriteLine ( BooleanFunctions:: ToString ( sequenceHolder.rows->at ( 1 ).marked ?? false ) );
+
+    } 
+
+  } 
+
+
+  let rowAt1: SeqRow = sequenceHolder.rows->at ( 1 );
+
+  WriteLine ( BooleanFunctions:: ToString ( rowAt1.marked ?? false ) );
+
+  sequenceHolder.markAt ( 1 );
+
+  WriteLine ( BooleanFunctions:: ToString ( rowAt1.marked ?? false ) );
+
+
+  let integers: Integer [] = null;
+
+  integers->add ( 1 );
+
+  integers->add ( 2 );
+
+  integers->add ( 3 );
+
+  for ( Integer number : integers ) {
+    WriteLine ( IntegerFunctions:: ToString ( number ) );
+
+  } 
+
+
+  let firstInt: Integer = integers->at ( 1 );
+
+  if ( firstInt != null ) {
+    if ( firstInt > 0 ) {
+      WriteLine ( IntegerFunctions:: ToString ( firstInt ?? -1 ) );
+
+    } 
+
+  } 
+
+
+// test assigment with rhs is Optional
+
+  let newRow: SeqRow = new SeqRow ( false );
+
+  let row1Marked: Boolean = sequenceHolder.rows->at ( 1 ).marked;
+
+  if ( row1Marked != null ) {
+// lhs is not Optional
+
+    newRow.marked = row1Marked;
+
+// lhs is Optional
+
+    rowAt1.marked = row1Marked;
+
+  } 
+
+  if ( rowAt1.IsMarkedEqual ( newRow ) ) {
+    WriteLine ( "IsMarkedEqual==true" );
+
+  } 
+
+// lhs is object variable, rhs is Optional PropertyAccess
+
+  let optionalRow: SeqRow = null;
+
+  optionalRow = sequenceHolder.optionalSpecialRow;
+
+
+// test optional boolean as if argument
+
+  if ( rowAt1 != null ) {
+    rowAt1.marked = false;
+
+    if ( rowAt1.marked ) {
+      WriteLine ( "Marked!" );
+
+    } else {
+      WriteLine ( "Unmarked!" );
+
+    } 
+
+    rowAt1.marked = true;
+
+    if ( rowAt1.marked ) {
+      WriteLine ( "Marked!" );
+
+    } else {
+      WriteLine ( "Unmarked!" );
+
+    } 
+
+  } 
+
+// test calling operation on optional object
+
+  optionalRow.RowOperation (  );
+
+
+// sequence creation expression
+
+  sequenceHolder.setNames ( new String [] { "A",  "B" } );
+
+  for ( String name : sequenceHolder.names ) {
+    WriteLine ( name );
+
+  } 
+
+
+// sequence access expression
+
+  WriteLine ( sequenceHolder.names[ 1 ] ?? "null" );
+
+  WriteLine ( sequenceHolder.names[ 1 ] ?? "" );
+
+
+// inference test
+
+  let namesInferred: String [] = sequenceHolder.names;
+
+  for ( String name : namesInferred ) {
+    WriteLine ( name );
+
+  } 
+
+
+// map/set creation collections
+
+// note: methods like add, get, includes, etc. are not supported yet
+
+  let myMap: Map <String, String> = new Map <String, String> (  );
+
+  let mySet: Set <Integer> = new Set <Integer> (  );
+
+}

@@ -1,0 +1,124 @@
+
+
+
+
+activity BinaryExpressionsTest (  ) {
+// Arithmetic Expressions
+
+
+  WriteLine ( IntegerFunctions:: ToString ( 12 + 45 ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( 12 - 45 ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( 12 * 45 ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( 121 % 5 ) );
+
+
+// Shift Expressions
+
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )( 121 << 2 ) ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )( 121 >> 2 ) ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )( 121 >>> 2 ) ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )( -121 >> 2 ) ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( ( Integer )( -121 >>> 2 ) ) );
+
+
+// Relational Expressions
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 < 9 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 < 5 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 < 3 ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 <= 9 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 <= 5 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 <= 3 ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 > 9 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 > 5 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 > 3 ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 >= 9 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 >= 5 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 5 >= 3 ) );
+
+
+// Equality Expressions
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 1 == 1 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 1 == 3 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( "a" == "a" ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( "a" == "ab" ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( 1 != 1 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( 1 != 3 ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( "a" != "a" ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( "a" != "ab" ) );
+
+
+// Logical Expression
+
+
+  WriteLine ( BooleanFunctions:: ToString ( true & true ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( true & false ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( false & false ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( true ^ true ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( true ^ false ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( false ^ false ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( true | true ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( true | false ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( false | false ) );
+
+
+// Conditional Expression
+
+
+  WriteLine ( BooleanFunctions:: ToString ( true && true ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( true && false ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( false && false ) );
+
+
+  WriteLine ( BooleanFunctions:: ToString ( true || true ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( true || false ) );
+
+  WriteLine ( BooleanFunctions:: ToString ( false || false ) );
+
+}

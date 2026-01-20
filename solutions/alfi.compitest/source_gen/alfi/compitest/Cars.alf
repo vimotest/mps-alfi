@@ -1,0 +1,94 @@
+
+
+
+
+package Cars {
+  
+  public abstract class IHasColor {
+    
+    public abstract getColor (  ) : String  ;
+  }
+  
+  public abstract class Vehicle {
+    
+    public drive (  ) {
+      this.distance = this.distance + 1;
+
+    }
+    
+    
+    protected getSpeed (  ) : Integer  {
+      return 5;
+
+    }
+    
+    protected defaultStartEngine (  ) {
+      WriteLine ( "Vehicle engine started" );
+
+    }
+    
+    
+    public abstract startEngine (  ) ;
+    
+    public distance : Integer = 0;
+  }
+  
+  public class Car specializes Vehicle, IHasColor {
+    
+    public getSpeed (  ) : Integer  {
+      return 10;
+
+    }
+    
+    public startEngine (  ) {
+      WriteLine ( "Car engine started" );
+
+      WriteLine ( "Initial speed: " + IntegerFunctions:: ToString ( this.getSpeed (  ) ) );
+
+
+      super.defaultStartEngine (  );
+
+    }
+    
+    public getColor (  ) : String  {
+      return this.color;
+
+    }
+    
+    public setColor (     in color: String  ) {
+      this.color = color;
+
+    }
+    
+    private color : String = "Black";
+    
+    
+    public class Wheel {
+      
+      public size : Integer = 10;
+    }
+    
+    public wheels : Wheel [ * ]  ;
+    
+    public addWheel (     in wheel: Wheel  ) {
+      WriteLine ( "Adding wheel: " + IntegerFunctions:: ToString ( wheel.size ) );
+
+      this.wheels->add ( wheel );
+
+    }
+    
+    
+    public enum ModelKind {
+      PKW, Limousine
+    }
+    
+    public datatype Model {
+      
+      public Name : String  ;
+      
+      public Kind : ModelKind  ;
+    }
+    
+    public model : Model  ;
+  }
+}

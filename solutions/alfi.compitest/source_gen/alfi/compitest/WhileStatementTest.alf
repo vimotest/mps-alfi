@@ -1,0 +1,18 @@
+
+
+
+
+activity WhileStatementTest (  ) {
+  let a: Integer = 0;
+
+
+  while ( a < 10 ) {
+    a = a + 1;
+
+    WriteLine ( IntegerFunctions:: ToString ( a ) );
+
+  } 
+
+  WriteLine ( "End: " + IntegerFunctions:: ToString ( a ) );
+
+}

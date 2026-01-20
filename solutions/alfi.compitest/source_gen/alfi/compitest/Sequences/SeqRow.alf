@@ -1,0 +1,27 @@
+namespace Sequences ;
+
+
+
+class SeqRow {
+  @Create
+  public SeqRow (   in marked: Boolean  ) {
+    this.marked = marked;
+
+  }
+  
+  
+  public values : String [ * ]sequence ;
+  
+  public marked : Boolean  ;
+  
+  
+  public RowOperation (  ) {
+    WriteLine ( ">> RowOperation" );
+
+  }
+  
+  public IsMarkedEqual (   in other: SeqRow  ) : Boolean  {
+    return this.marked == other.marked;
+
+  }
+}

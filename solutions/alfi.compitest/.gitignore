@@ -1,2 +1,4 @@
 cmake-build-*
 dotnet-build
+!source_gen
+trace.info

@@ -1,0 +1,24 @@
+
+
+
+
+activity BreakStatementTest (  ) {
+  let a: Integer = 0;
+
+
+  while ( true ) {
+    a = a + 1;
+
+    WriteLine ( IntegerFunctions:: ToString ( a ) );
+
+    if ( a > 10 ) {
+      break;
+
+    } 
+
+  } 
+
+  WriteLine ( "End: " + IntegerFunctions:: ToString ( a ) );
+
+
+}

@@ -1,0 +1,33 @@
+/// <filename>
+///     ActivityEnumTest.cs
+/// </filename>
+using Alf.Library;
+
+public class ActivityEnumTest
+{
+    public static void EnumTest()
+    {
+        EnumTrafficLightColor enumValue = EnumTrafficLightColor.GREEN;
+
+        if (enumValue == EnumTrafficLightColor.GREEN)
+        {
+            BasicInputOutput.WriteLine("GREEN!");
+        }
+
+        enumValue = EnumTrafficLightColor.RED;
+
+        if (enumValue == EnumTrafficLightColor.GREEN)
+        {
+            BasicInputOutput.WriteLine("GREEN!");
+        }
+        else if (enumValue == EnumTrafficLightColor.RED)
+        {
+            BasicInputOutput.WriteLine("RED!");
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        ActivityEnumTest.EnumTest();
+    }
+}

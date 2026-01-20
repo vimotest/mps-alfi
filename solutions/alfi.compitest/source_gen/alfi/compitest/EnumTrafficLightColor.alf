@@ -1,0 +1,7 @@
+
+
+
+
+enum EnumTrafficLightColor {
+  RED, YELLOW, GREEN
+}

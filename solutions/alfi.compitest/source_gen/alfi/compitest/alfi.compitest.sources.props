@@ -1,0 +1,10 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/IHasColor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/Vehicle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars/Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sequences/SequenceHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sequences/SeqRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EnumTrafficLightColor.cs" />
+  </ItemGroup>
+</Project>

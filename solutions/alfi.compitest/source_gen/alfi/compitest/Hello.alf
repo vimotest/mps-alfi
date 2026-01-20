@@ -1,0 +1,21 @@
+
+
+
+
+activity Hello (  ) {
+  WriteLine ( "Hello!" );
+
+  WriteLine ( "How are you?" );
+
+  let input: String = ReadLine (  );
+
+
+  if ( input == "good" ) {
+    WriteLine ( "Ok nice" );
+
+  } else {
+    WriteLine ( "Ok" );
+
+  } 
+
+}

@@ -1,0 +1,8 @@
+
+
+
+
+activity CollectionsTest (  ) {
+  let list: List <String> = new List <String> (  );
+
+}

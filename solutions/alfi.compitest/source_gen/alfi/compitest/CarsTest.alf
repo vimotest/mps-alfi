@@ -1,0 +1,49 @@
+
+
+public import Cars:: Car ;
+
+activity CarsTest (  ) {
+  let car: Cars:: Car = new Cars:: Car (  );
+
+  car.startEngine (  );
+
+  WriteLine ( IntegerFunctions:: ToString ( car.distance ) );
+
+  let vehicle: Cars:: Vehicle = car;
+
+  vehicle.drive (  );
+
+  WriteLine ( IntegerFunctions:: ToString ( vehicle.distance ) );
+
+  WriteLine ( IntegerFunctions:: ToString ( car.distance ) );
+
+  car.drive (  );
+
+  WriteLine ( IntegerFunctions:: ToString ( car.distance ) );
+
+  WriteLine ( car.getColor (  ) );
+
+  car.setColor ( "Red" );
+
+  WriteLine ( car.getColor (  ) );
+
+
+// nested classifiers
+
+  let model: Car:: Model = new Car:: Model ( "My Model", Car:: ModelKind:: Limousine );
+
+  car.model = model;
+
+  WriteLine ( car.model.Name );
+
+  if ( model.Kind == Car:: ModelKind:: Limousine ) {
+    WriteLine ( "Limousine" );
+
+  } 
+
+
+  let wheel: Car:: Wheel = new Car:: Wheel (  );
+
+  car.addWheel ( wheel );
+
+}
