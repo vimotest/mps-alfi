@@ -10,3 +10,10 @@ dependencies text merge=mps
 *.mps text merge=mps
 
 *.sh text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.cs text eol=lf
+*.alf text eol=lf
+*.cmake text eol=lf
+*.java text eol=lf
