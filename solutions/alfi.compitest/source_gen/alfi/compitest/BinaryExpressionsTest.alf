@@ -121,4 +121,16 @@ activity BinaryExpressionsTest (  ) {
 
   WriteLine ( BooleanFunctions:: ToString ( false || false ) );
 
+
+// Conditional Test Expression
+
+
+  WriteLine ( true ? "val1" : "val2" );
+
+  WriteLine ( false ? "val1" : "val2" );
+
+  WriteLine ( true ? ( true ? "val1" : "val2" ) : ( true ? "val3" : "val4" ) );
+
+  WriteLine ( false ? ( true ? "val1" : "val2" ) : ( true ? "val3" : "val4" ) );
+
 }

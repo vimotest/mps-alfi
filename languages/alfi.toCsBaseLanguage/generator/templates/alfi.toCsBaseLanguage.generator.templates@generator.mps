@@ -626,6 +626,11 @@
         <child id="6843536562191272975" name="expression" index="3UdyKL" />
       </concept>
       <concept id="6843536562191273034" name="CsBaseLanguage.structure.UncheckedExpression" flags="ng" index="3UdyLO" />
+      <concept id="6843536562190617631" name="CsBaseLanguage.structure.TernaryOperatorExpression" flags="ng" index="3Uf2Kx">
+        <child id="6843536562190617637" name="ifFalse" index="3Uf2Kr" />
+        <child id="6843536562190617634" name="ifTrue" index="3Uf2Ks" />
+        <child id="6843536562190617632" name="condition" index="3Uf2Ku" />
+      </concept>
       <concept id="6843536562190617628" name="CsBaseLanguage.structure.Expression" flags="ng" index="3Uf2Ky" />
       <concept id="6843536562190656627" name="CsBaseLanguage.structure.AndExpression" flags="ng" index="3Uf8hd" />
       <concept id="6843536562190659751" name="CsBaseLanguage.structure.BitwiseOrExpression" flags="ng" index="3Uf92p" />
@@ -7437,6 +7442,62 @@
                     <node concept="30H73N" id="5jkMFwE8aLl" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5jkMFwE8bg4" role="2OqNvi">
                       <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" resolve="elements" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="13h_j7ZjFZk" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="28lk:20D8auLbZ4Q" resolve="ConditionalTestExpression" />
+      <node concept="gft3U" id="13h_j7ZjG1C" role="1lVwrX">
+        <node concept="3Uf2Kx" id="13h_j7ZjG2a" role="gfFT$">
+          <node concept="3Uf2Ky" id="13h_j7ZjG2b" role="3Uf2Ku">
+            <node concept="29HgVG" id="13h_j7ZjG2u" role="lGtFl">
+              <node concept="3NFfHV" id="13h_j7ZjG2v" role="3NFExx">
+                <node concept="3clFbS" id="13h_j7ZjG2w" role="2VODD2">
+                  <node concept="3clFbF" id="13h_j7ZjG2A" role="3cqZAp">
+                    <node concept="2OqwBi" id="13h_j7ZjG2x" role="3clFbG">
+                      <node concept="3TrEf2" id="13h_j7ZjG2$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:20D8auLc0Zf" resolve="operand1" />
+                      </node>
+                      <node concept="30H73N" id="13h_j7ZjG2_" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="13h_j7ZjG2c" role="3Uf2Ks">
+            <node concept="29HgVG" id="13h_j7ZjG7S" role="lGtFl">
+              <node concept="3NFfHV" id="13h_j7ZjG7T" role="3NFExx">
+                <node concept="3clFbS" id="13h_j7ZjG7U" role="2VODD2">
+                  <node concept="3clFbF" id="13h_j7ZjG80" role="3cqZAp">
+                    <node concept="2OqwBi" id="13h_j7ZjG7V" role="3clFbG">
+                      <node concept="3TrEf2" id="13h_j7ZjG7Y" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:20D8auLc0Zh" resolve="operand2" />
+                      </node>
+                      <node concept="30H73N" id="13h_j7ZjG7Z" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Uf2Ky" id="13h_j7ZjG2d" role="3Uf2Kr">
+            <node concept="29HgVG" id="13h_j7ZjG9g" role="lGtFl">
+              <node concept="3NFfHV" id="13h_j7ZjG9h" role="3NFExx">
+                <node concept="3clFbS" id="13h_j7ZjG9i" role="2VODD2">
+                  <node concept="3clFbF" id="13h_j7ZjG9o" role="3cqZAp">
+                    <node concept="2OqwBi" id="13h_j7ZjG9j" role="3clFbG">
+                      <node concept="3TrEf2" id="13h_j7ZjG9m" role="2OqNvi">
+                        <ref role="3Tt5mk" to="28lk:20D8auLc0Zj" resolve="operand3" />
+                      </node>
+                      <node concept="30H73N" id="13h_j7ZjG9n" role="2Oq$k0" />
                     </node>
                   </node>
                 </node>

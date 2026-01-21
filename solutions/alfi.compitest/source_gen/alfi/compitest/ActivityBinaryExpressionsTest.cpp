@@ -67,4 +67,10 @@ void ActivityBinaryExpressionsTest::BinaryExpressionsTest()
   alf::library::BasicInputOutput::WriteLine(alf::library::primitivebehaviors::BooleanFunctions::ToString(true || true));
   alf::library::BasicInputOutput::WriteLine(alf::library::primitivebehaviors::BooleanFunctions::ToString(true || false));
   alf::library::BasicInputOutput::WriteLine(alf::library::primitivebehaviors::BooleanFunctions::ToString(false || false));
+
+  // Conditional Test Expression
+  alf::library::BasicInputOutput::WriteLine(true ? std::string("val1") : std::string("val2"));
+  alf::library::BasicInputOutput::WriteLine(false ? std::string("val1") : std::string("val2"));
+  alf::library::BasicInputOutput::WriteLine(true ? (true ? std::string("val1") : std::string("val2")) : (true ? std::string("val3") : std::string("val4")));
+  alf::library::BasicInputOutput::WriteLine(false ? (true ? std::string("val1") : std::string("val2")) : (true ? std::string("val3") : std::string("val4")));
 }

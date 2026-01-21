@@ -70,6 +70,12 @@ public class ActivityBinaryExpressionsTest
         BasicInputOutput.WriteLine(BooleanFunctions.ToString(true || true));
         BasicInputOutput.WriteLine(BooleanFunctions.ToString(true || false));
         BasicInputOutput.WriteLine(BooleanFunctions.ToString(false || false));
+
+        // Conditional Test Expression
+        BasicInputOutput.WriteLine(true ? "val1" : "val2");
+        BasicInputOutput.WriteLine(false ? "val1" : "val2");
+        BasicInputOutput.WriteLine(true ? (true ? "val1" : "val2") : (true ? "val3" : "val4"));
+        BasicInputOutput.WriteLine(false ? (true ? "val1" : "val2") : (true ? "val3" : "val4"));
     }
 
     public static void Main(string[] args)

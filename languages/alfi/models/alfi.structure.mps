@@ -2317,5 +2317,33 @@
       <property role="t5JxN" value="Simple attribute to mark a node as a source for a test module (e.g., helper class used in test suite)" />
     </node>
   </node>
+  <node concept="1TIwiD" id="20D8auLbZ4Q">
+    <property role="EcuMT" value="2317419387863167286" />
+    <property role="3GE5qa" value="expressions.other" />
+    <property role="TrG5h" value="ConditionalTestExpression" />
+    <property role="34LRSv" value="?:" />
+    <ref role="1TJDcQ" node="2kuSLC0kNK2" resolve="Expression" />
+    <node concept="1TJgyj" id="20D8auLc0Zf" role="1TKVEi">
+      <property role="IQ2ns" value="2317419387863175119" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="20D8auLc0Zh" role="1TKVEi">
+      <property role="IQ2ns" value="2317419387863175121" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand2" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="20D8auLc0Zj" role="1TKVEi">
+      <property role="IQ2ns" value="2317419387863175123" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand3" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
