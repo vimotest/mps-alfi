@@ -72,7 +72,6 @@ jobs:
       - name: Build C# Projects
         run: dotnet build Compitest.sln
         working-directory: solutions/alfi.compitest/dotnet-build
-        continue-on-error: true
 
       - name: Copy compitest C# Binaries
         run: sh ./gradlew compitestCopyCsBinaries # copies to build/artifacts/alfi-build/tests/compitest-cs-binaries
