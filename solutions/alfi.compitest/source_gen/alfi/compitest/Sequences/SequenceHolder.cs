@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Sequences
 {
-    internal class SequenceHolder
+    public class SequenceHolder
     {
         public System.Collections.Generic.List<string> names = new System.Collections.Generic.List<string>();
 

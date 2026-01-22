@@ -7,7 +7,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityCarsTest
 {
-    public static void CarsTest()
+    public static void Execute()
     {
         Cars.Car car = new Cars.Car();
         car.startEngine();
@@ -37,6 +37,6 @@ public class ActivityCarsTest
 
     public static void Main(string[] args)
     {
-        ActivityCarsTest.CarsTest();
+        ActivityCarsTest.Execute();
     }
 }

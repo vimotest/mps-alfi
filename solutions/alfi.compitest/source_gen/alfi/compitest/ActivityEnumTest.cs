@@ -5,11 +5,11 @@ using Alf.Library;
 
 public class ActivityEnumTest
 {
-    public static void EnumTest()
+    public static void Execute()
     {
         EnumTrafficLightColor enumValue = EnumTrafficLightColor.GREEN;
 
-        BasicInputOutput.WriteLine(EnumTrafficLightColorToString.EnumTrafficLightColorToString(EnumTrafficLightColor.GREEN));
+        BasicInputOutput.WriteLine(EnumTrafficLightColorToString.Execute(EnumTrafficLightColor.GREEN));
 
         if (enumValue == EnumTrafficLightColor.GREEN)
         {
@@ -30,6 +30,6 @@ public class ActivityEnumTest
 
     public static void Main(string[] args)
     {
-        ActivityEnumTest.EnumTest();
+        ActivityEnumTest.Execute();
     }
 }

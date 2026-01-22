@@ -8,7 +8,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivitySequencesTest
 {
-    public static void SequencesTest()
+    public static void Execute()
     {
         Sequences.SequenceHolder sequenceHolder = new Sequences.SequenceHolder();
 
@@ -155,6 +155,6 @@ public class ActivitySequencesTest
 
     public static void Main(string[] args)
     {
-        ActivitySequencesTest.SequencesTest();
+        ActivitySequencesTest.Execute();
     }
 }

@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityBreakStatementTest
 {
-    public static void BreakStatementTest()
+    public static void Execute()
     {
         int a = 0;
         while (true)
@@ -23,6 +23,6 @@ public class ActivityBreakStatementTest
 
     public static void Main(string[] args)
     {
-        ActivityBreakStatementTest.BreakStatementTest();
+        ActivityBreakStatementTest.Execute();
     }
 }

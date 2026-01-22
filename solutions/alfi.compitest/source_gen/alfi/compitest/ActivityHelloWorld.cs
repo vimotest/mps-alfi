@@ -5,13 +5,13 @@ using Alf.Library;
 
 public class ActivityHelloWorld
 {
-    public static void HelloWorld()
+    public static void Execute()
     {
         BasicInputOutput.WriteLine("Hello World");
     }
 
     public static void Main(string[] args)
     {
-        ActivityHelloWorld.HelloWorld();
+        ActivityHelloWorld.Execute();
     }
 }

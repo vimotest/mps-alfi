@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Sequences
 {
-    internal class SeqRow
+    public class SeqRow
     {
 
         public SeqRow(bool marked)

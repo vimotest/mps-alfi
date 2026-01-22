@@ -5,7 +5,7 @@ using Alf.Library;
 
 public class ActivityHello
 {
-    public static void Hello()
+    public static void Execute()
     {
         BasicInputOutput.WriteLine("Hello!");
         BasicInputOutput.WriteLine("How are you?");
@@ -23,6 +23,6 @@ public class ActivityHello
 
     public static void Main(string[] args)
     {
-        ActivityHello.Hello();
+        ActivityHello.Execute();
     }
 }

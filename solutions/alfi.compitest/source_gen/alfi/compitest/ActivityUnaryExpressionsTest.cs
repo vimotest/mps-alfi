@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityUnaryExpressionsTest
 {
-    public static void UnaryExpressionsTest()
+    public static void Execute()
     {
         // Boolean
         bool b = false;
@@ -23,6 +23,6 @@ public class ActivityUnaryExpressionsTest
 
     public static void Main(string[] args)
     {
-        ActivityUnaryExpressionsTest.UnaryExpressionsTest();
+        ActivityUnaryExpressionsTest.Execute();
     }
 }

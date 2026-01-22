@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityBinaryExpressionsTest
 {
-    public static void BinaryExpressionsTest()
+    public static void Execute()
     {
         // Arithmetic Expressions
         BasicInputOutput.WriteLine(IntegerFunctions.ToString(12 + 45));
@@ -80,6 +80,6 @@ public class ActivityBinaryExpressionsTest
 
     public static void Main(string[] args)
     {
-        ActivityBinaryExpressionsTest.BinaryExpressionsTest();
+        ActivityBinaryExpressionsTest.Execute();
     }
 }

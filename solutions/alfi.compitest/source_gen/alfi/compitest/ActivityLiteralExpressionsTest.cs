@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityLiteralExpressionsTest
 {
-    public static void LiteralExpressionsTest()
+    public static void Execute()
     {
         string a = "Test";
         BasicInputOutput.WriteLine(a);
@@ -41,6 +41,6 @@ b" == "a\"=\\\nb")
 
     public static void Main(string[] args)
     {
-        ActivityLiteralExpressionsTest.LiteralExpressionsTest();
+        ActivityLiteralExpressionsTest.Execute();
     }
 }

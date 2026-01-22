@@ -3,7 +3,7 @@
 /// </filename>
 public class EnumTrafficLightColorToString
 {
-    public static string EnumTrafficLightColorToString(EnumTrafficLightColor value)
+    public static string Execute(EnumTrafficLightColor value)
     {
         if (value == EnumTrafficLightColor.RED)
         {

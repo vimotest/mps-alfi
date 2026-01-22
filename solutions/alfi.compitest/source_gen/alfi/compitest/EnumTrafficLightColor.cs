@@ -1,7 +1,7 @@
 /// <filename>
 ///     EnumTrafficLightColor.cs
 /// </filename>
-internal enum EnumTrafficLightColor
+public enum EnumTrafficLightColor
 {
     RED /* no value */,
     YELLOW /* no value */,

@@ -5,7 +5,7 @@ using Alf.Library;
 
 public class ActivityIfStatementTest
 {
-    public static void IfStatementTest()
+    public static void Execute()
     {
         if (false)
         {
@@ -119,6 +119,6 @@ public class ActivityIfStatementTest
 
     public static void Main(string[] args)
     {
-        ActivityIfStatementTest.IfStatementTest();
+        ActivityIfStatementTest.Execute();
     }
 }

@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityWhileStatementTest
 {
-    public static void WhileStatementTest()
+    public static void Execute()
     {
         int a = 0;
         while (a < 10)
@@ -19,6 +19,6 @@ public class ActivityWhileStatementTest
 
     public static void Main(string[] args)
     {
-        ActivityWhileStatementTest.WhileStatementTest();
+        ActivityWhileStatementTest.Execute();
     }
 }

@@ -6,7 +6,7 @@ using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityDoStatementTest
 {
-    public static void DoStatementTest()
+    public static void Execute()
     {
         int a = 0;
         int b = 0;
@@ -24,6 +24,6 @@ public class ActivityDoStatementTest
 
     public static void Main(string[] args)
     {
-        ActivityDoStatementTest.DoStatementTest();
+        ActivityDoStatementTest.Execute();
     }
 }

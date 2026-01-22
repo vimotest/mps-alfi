@@ -6800,8 +6800,8 @@
   </node>
   <node concept="3mGtxK" id="3_puicMkyMc">
     <node concept="b5vR$" id="3_puicMkyN1" role="3mGtxP">
-      <property role="PCHHn" value="6OepWIVA92I/package" />
       <property role="TrG5h" value="EnumTrafficLightColor" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="b5qeC" id="3_puicMkyOr" role="PCHHv">
         <property role="TrG5h" value="RED" />
       </node>
