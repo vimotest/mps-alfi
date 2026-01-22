@@ -1,5 +1,6 @@
 <Project>  
   <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)EnumTrafficLightColorToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cars/IHasColor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cars/Vehicle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cars/Car.cs" />

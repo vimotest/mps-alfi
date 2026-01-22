@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityHello::Hello()
+void Hello()
 {
   alf::library::BasicInputOutput::WriteLine(std::string("Hello!"));
   alf::library::BasicInputOutput::WriteLine(std::string("How are you?"));

@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityHelloWorld activity;
-  activity.HelloWorld();
+  HelloWorld();
   return 0;
 }

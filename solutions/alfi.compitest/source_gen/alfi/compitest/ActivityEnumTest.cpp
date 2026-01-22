@@ -1,11 +1,14 @@
 #include "ActivityEnumTest.h"
 #include "EnumTrafficLightColor.h"
 #include <alf/library/BasicInputOutput.hpp>
+#include "EnumTrafficLightColorToString.h"
 #include <string>
 
-void ActivityEnumTest::EnumTest()
+void EnumTest()
 {
   EnumTrafficLightColor enumValue = EnumTrafficLightColor::GREEN;
+
+  alf::library::BasicInputOutput::WriteLine(EnumTrafficLightColorToString(EnumTrafficLightColor::GREEN));
 
   if (enumValue == EnumTrafficLightColor::GREEN)
   {

@@ -15,6 +15,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/ActivitySequencesTest.cpp
   ${CMAKE_CURRENT_LIST_DIR}/ActivityEnumTest.cpp
   ${CMAKE_CURRENT_LIST_DIR}/ActivityCollectionsTest.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/EnumTrafficLightColorToString.cpp
   ${CMAKE_CURRENT_LIST_DIR}/Cars/Vehicle.cpp
   ${CMAKE_CURRENT_LIST_DIR}/Cars/Car.cpp
   ${CMAKE_CURRENT_LIST_DIR}/Sequences/SequenceHolder.cpp
@@ -36,6 +37,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/ActivitySequencesTest.h
   ${CMAKE_CURRENT_LIST_DIR}/ActivityEnumTest.h
   ${CMAKE_CURRENT_LIST_DIR}/ActivityCollectionsTest.h
+  ${CMAKE_CURRENT_LIST_DIR}/EnumTrafficLightColorToString.h
   ${CMAKE_CURRENT_LIST_DIR}/Cars/IHasColor.h
   ${CMAKE_CURRENT_LIST_DIR}/Cars/Vehicle.h
   ${CMAKE_CURRENT_LIST_DIR}/Cars/Car.h

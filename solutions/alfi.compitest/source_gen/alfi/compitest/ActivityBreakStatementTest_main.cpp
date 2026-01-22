@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityBreakStatementTest activity;
-  activity.BreakStatementTest();
+  BreakStatementTest();
   return 0;
 }

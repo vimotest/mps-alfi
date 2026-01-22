@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityCollectionsTest activity;
-  activity.CollectionsTest();
+  CollectionsTest();
   return 0;
 }

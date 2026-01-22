@@ -3,7 +3,7 @@
 #include <string>
 #include <alf/library/primitivebehaviors/BooleanFunctions.hpp>
 
-void ActivityBinaryExpressionsTest::BinaryExpressionsTest()
+void BinaryExpressionsTest()
 {
   // Arithmetic Expressions
   alf::library::BasicInputOutput::WriteLine(std::to_string(12 + 45));

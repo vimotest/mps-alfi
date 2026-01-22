@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityWhileStatementTest activity;
-  activity.WhileStatementTest();
+  WhileStatementTest();
   return 0;
 }

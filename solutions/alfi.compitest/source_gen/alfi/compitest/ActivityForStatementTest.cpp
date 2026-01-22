@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityForStatementTest::ForStatementTest()
+void ForStatementTest()
 {
   // print 5,6,7,8,9
   for (int i = 5; i <= 9; i++)

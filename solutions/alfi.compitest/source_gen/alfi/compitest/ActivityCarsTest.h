@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityCarsTest
-{
-public:
-  static void CarsTest();
-};
+void CarsTest();

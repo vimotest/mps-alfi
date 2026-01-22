@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityForStatementTest
-{
-public:
-  static void ForStatementTest();
-};
+void ForStatementTest();

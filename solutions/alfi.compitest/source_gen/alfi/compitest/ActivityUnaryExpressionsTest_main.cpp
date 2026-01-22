@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityUnaryExpressionsTest activity;
-  activity.UnaryExpressionsTest();
+  UnaryExpressionsTest();
   return 0;
 }

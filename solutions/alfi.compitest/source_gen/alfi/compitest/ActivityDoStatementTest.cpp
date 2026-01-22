@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityDoStatementTest::DoStatementTest()
+void DoStatementTest()
 {
   int a = 0;
   int b = 0;

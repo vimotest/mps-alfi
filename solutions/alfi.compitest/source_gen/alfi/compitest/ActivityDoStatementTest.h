@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityDoStatementTest
-{
-public:
-  static void DoStatementTest();
-};
+void DoStatementTest();

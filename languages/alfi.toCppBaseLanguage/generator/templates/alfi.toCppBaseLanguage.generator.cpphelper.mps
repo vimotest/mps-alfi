@@ -1045,28 +1045,38 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="4gRCGxdCrMJ" role="3cqZAp">
-          <node concept="2OqwBi" id="4gRCGxdCs32" role="3clFbw">
-            <node concept="37vLTw" id="4gRCGxdCrOm" role="2Oq$k0">
-              <ref role="3cqZAo" node="4gRCGxdCrCK" resolve="node" />
-            </node>
-            <node concept="1mIQ4w" id="4gRCGxdCsje" role="2OqNvi">
-              <node concept="chp4Y" id="4gRCGxdCsmQ" role="cj9EA">
-                <ref role="cht4Q" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
+        <node concept="Jncv_" id="7o$TBWU2a7Z" role="3cqZAp">
+          <ref role="JncvD" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
+          <node concept="37vLTw" id="7o$TBWU2acZ" role="JncvB">
+            <ref role="3cqZAo" node="4gRCGxdCrCK" resolve="node" />
+          </node>
+          <node concept="3clFbS" id="7o$TBWU2a83" role="Jncv$">
+            <node concept="3clFbJ" id="7o$TBWU2axp" role="3cqZAp">
+              <node concept="2OqwBi" id="7o$TBWU2bg5" role="3clFbw">
+                <node concept="Jnkvi" id="7o$TBWU2aQS" role="2Oq$k0">
+                  <ref role="1M0zk5" node="7o$TBWU2a85" resolve="activity" />
+                </node>
+                <node concept="2qgKlT" id="7o$TBWU2bY2" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:YDkOF2CbAi" resolve="isMainProgram" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="7o$TBWU2axr" role="3clFbx">
+                <node concept="3clFbF" id="4gRCGxdCsJ8" role="3cqZAp">
+                  <node concept="37vLTI" id="4gRCGxdCvdQ" role="3clFbG">
+                    <node concept="Xl_RD" id="4gRCGxdCvvj" role="37vLTx">
+                      <property role="Xl_RC" value="Activity" />
+                    </node>
+                    <node concept="37vLTw" id="4gRCGxdCsJ7" role="37vLTJ">
+                      <ref role="3cqZAo" node="4gRCGxdCsCt" resolve="prefix" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="4gRCGxdCrML" role="3clFbx">
-            <node concept="3clFbF" id="4gRCGxdCsJ8" role="3cqZAp">
-              <node concept="37vLTI" id="4gRCGxdCvdQ" role="3clFbG">
-                <node concept="Xl_RD" id="4gRCGxdCvvj" role="37vLTx">
-                  <property role="Xl_RC" value="Activity" />
-                </node>
-                <node concept="37vLTw" id="4gRCGxdCsJ7" role="37vLTJ">
-                  <ref role="3cqZAo" node="4gRCGxdCsCt" resolve="prefix" />
-                </node>
-              </node>
-            </node>
+          <node concept="JncvC" id="7o$TBWU2a85" role="JncvA">
+            <property role="TrG5h" value="activity" />
+            <node concept="2jxLKc" id="7o$TBWU2a86" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs6" id="4gRCGxdCv_u" role="3cqZAp">

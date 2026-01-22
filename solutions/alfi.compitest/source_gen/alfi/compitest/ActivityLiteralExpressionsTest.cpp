@@ -3,7 +3,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <alf/library/primitivebehaviors/BooleanFunctions.hpp>
 
-void ActivityLiteralExpressionsTest::LiteralExpressionsTest()
+void LiteralExpressionsTest()
 {
   std::string a = std::string("Test");
   alf::library::BasicInputOutput::WriteLine(a);

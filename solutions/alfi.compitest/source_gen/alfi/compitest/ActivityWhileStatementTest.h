@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityWhileStatementTest
-{
-public:
-  static void WhileStatementTest();
-};
+void WhileStatementTest();

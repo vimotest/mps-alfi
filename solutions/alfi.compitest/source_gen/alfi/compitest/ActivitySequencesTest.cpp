@@ -11,7 +11,7 @@
 #include <map>
 #include <set>
 
-void ActivitySequencesTest::SequencesTest()
+void SequencesTest()
 {
   std::shared_ptr<Sequences::SequenceHolder> sequenceHolder = std::make_shared<Sequences::SequenceHolder>();
 

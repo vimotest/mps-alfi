@@ -6,6 +6,9 @@ activity EnumTest (  ) {
   let enumValue: EnumTrafficLightColor = EnumTrafficLightColor:: GREEN;
 
 
+  WriteLine ( EnumTrafficLightColorToString ( EnumTrafficLightColor:: GREEN ) );
+
+
   if ( enumValue == EnumTrafficLightColor:: GREEN ) {
     WriteLine ( "GREEN!" );
 

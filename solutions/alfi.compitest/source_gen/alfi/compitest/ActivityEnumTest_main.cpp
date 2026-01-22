@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityEnumTest activity;
-  activity.EnumTest();
+  EnumTest();
   return 0;
 }

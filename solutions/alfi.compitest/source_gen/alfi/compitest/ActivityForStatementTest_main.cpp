@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityForStatementTest activity;
-  activity.ForStatementTest();
+  ForStatementTest();
   return 0;
 }

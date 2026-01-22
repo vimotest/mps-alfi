@@ -5,7 +5,7 @@
 #include <string>
 #include "Cars/Vehicle.h"
 
-void ActivityCarsTest::CarsTest()
+void CarsTest()
 {
   std::shared_ptr<Cars::Car> car = std::make_shared<Cars::Car>();
   car->startEngine();

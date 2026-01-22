@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityIfStatementTest
-{
-public:
-  static void IfStatementTest();
-};
+void IfStatementTest();

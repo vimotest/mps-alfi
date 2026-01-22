@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-void ActivityCollectionsTest::CollectionsTest()
+void CollectionsTest()
 {
   std::vector<std::string> list = { };
 }

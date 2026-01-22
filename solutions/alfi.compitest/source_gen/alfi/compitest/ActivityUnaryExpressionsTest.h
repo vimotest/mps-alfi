@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityUnaryExpressionsTest
-{
-public:
-  static void UnaryExpressionsTest();
-};
+void UnaryExpressionsTest();

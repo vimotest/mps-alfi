@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityLiteralExpressionsTest activity;
-  activity.LiteralExpressionsTest();
+  LiteralExpressionsTest();
   return 0;
 }

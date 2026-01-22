@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityEnumTest
-{
-public:
-  static void EnumTest();
-};
+void EnumTest();

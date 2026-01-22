@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityCarsTest activity;
-  activity.CarsTest();
+  CarsTest();
   return 0;
 }

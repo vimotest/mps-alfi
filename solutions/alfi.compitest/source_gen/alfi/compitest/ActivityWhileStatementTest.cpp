@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityWhileStatementTest::WhileStatementTest()
+void WhileStatementTest()
 {
   int a = 0;
   while (a < 10)

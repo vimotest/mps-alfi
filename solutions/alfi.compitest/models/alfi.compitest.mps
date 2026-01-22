@@ -6837,6 +6837,37 @@
           </node>
         </node>
         <node concept="PDbRn" id="3_puicMojCj" role="PCHzz" />
+        <node concept="_jtW9" id="7o$TBWTYtwb" role="PCHzz">
+          <node concept="_uF8j" id="7o$TBWTYtwc" role="_jtWe">
+            <node concept="_vnHb" id="7o$TBWTYtwd" role="_uF8g">
+              <node concept="_vnHe" id="7o$TBWTYtwe" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+              </node>
+            </node>
+            <node concept="_vku0" id="7o$TBWTYtwf" role="_uFfl">
+              <node concept="_uF8j" id="7o$TBWTYtAC" role="_vku1">
+                <node concept="_vnHb" id="7o$TBWTYtAD" role="_uF8g">
+                  <node concept="_vnHe" id="7o$TBWTYtBc" role="35HzJw">
+                    <ref role="3acloq" node="7o$TBWTYs5p" resolve="EnumTrafficLightColorToString" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="7o$TBWTYtAE" role="_uFfl">
+                  <node concept="_uYbk" id="7o$TBWTYtHU" role="_vku1">
+                    <node concept="_vnHb" id="7o$TBWTYtHV" role="_uYbl">
+                      <node concept="_vnHe" id="7o$TBWTYtHW" role="35HzJw">
+                        <ref role="3acloq" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                      </node>
+                      <node concept="_vnHe" id="7o$TBWTYtHX" role="35HzJw">
+                        <ref role="3acloq" node="3_puicMogDt" resolve="GREEN" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PDbRn" id="7o$TBWTYtrh" role="PCHzz" />
         <node concept="32prLx" id="3_puicMojHn" role="PCHzz">
           <node concept="32pbwo" id="3_puicMojHp" role="32oX99">
             <node concept="32prLw" id="3_puicMojHr" role="32pbwr">
@@ -7020,6 +7051,136 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="7o$TBWTYs3O">
+    <node concept="PCHHj" id="7o$TBWTYs5p" role="3mGtxP">
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="TrG5h" value="EnumTrafficLightColorToString" />
+      <node concept="PCHzy" id="7o$TBWTYs6o" role="PCHGa">
+        <node concept="32prLx" id="7o$TBWTYs9I" role="PCHzz">
+          <node concept="32pbwo" id="7o$TBWTYs9K" role="32oX99">
+            <node concept="32prLw" id="7o$TBWTYs9M" role="32pbwr">
+              <node concept="31uMWx" id="7o$TBWTYsb3" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="7o$TBWTYsbE" role="31szGO">
+                  <node concept="_vnHb" id="7o$TBWTYsbG" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYscf" role="35HzJw">
+                      <ref role="3acloq" node="7o$TBWTYs6W" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="7o$TBWTYsEs" role="31szGQ">
+                  <node concept="_vnHb" id="7o$TBWTYsEt" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYsEu" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="_vnHe" id="7o$TBWTYsEv" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMkyOr" resolve="RED" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="7o$TBWTYs9Q" role="32prLT">
+                <node concept="32G6VT" id="7o$TBWTYsPt" role="PCHzz">
+                  <node concept="_iklQ" id="7o$TBWTYsPE" role="2vFQ1F">
+                    <property role="_iklR" value="RED" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="32prLx" id="7o$TBWTYsQo" role="PCHzz">
+          <node concept="32pbwo" id="7o$TBWTYsQp" role="32oX99">
+            <node concept="32prLw" id="7o$TBWTYsQq" role="32pbwr">
+              <node concept="31uMWx" id="7o$TBWTYsQr" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="7o$TBWTYsQs" role="31szGO">
+                  <node concept="_vnHb" id="7o$TBWTYsQt" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYsQu" role="35HzJw">
+                      <ref role="3acloq" node="7o$TBWTYs6W" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="7o$TBWTYsQv" role="31szGQ">
+                  <node concept="_vnHb" id="7o$TBWTYsQw" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYsQx" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="_vnHe" id="7o$TBWTYsQy" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMogDt" resolve="GREEN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="7o$TBWTYsQz" role="32prLT">
+                <node concept="32G6VT" id="7o$TBWTYsQ$" role="PCHzz">
+                  <node concept="_iklQ" id="7o$TBWTYsQ_" role="2vFQ1F">
+                    <property role="_iklR" value="GREEN" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="32prLx" id="7o$TBWTYsQL" role="PCHzz">
+          <node concept="32pbwo" id="7o$TBWTYsQM" role="32oX99">
+            <node concept="32prLw" id="7o$TBWTYsQN" role="32pbwr">
+              <node concept="31uMWx" id="7o$TBWTYsQO" role="32prLz">
+                <property role="31uMWw" value="6cBsaQyn5Y8/EqualTo" />
+                <node concept="_uYbk" id="7o$TBWTYsQP" role="31szGO">
+                  <node concept="_vnHb" id="7o$TBWTYsQQ" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYsQR" role="35HzJw">
+                      <ref role="3acloq" node="7o$TBWTYs6W" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="_uYbk" id="7o$TBWTYsQS" role="31szGQ">
+                  <node concept="_vnHb" id="7o$TBWTYsQT" role="_uYbl">
+                    <node concept="_vnHe" id="7o$TBWTYsQU" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+                    </node>
+                    <node concept="_vnHe" id="7o$TBWTYsQV" role="35HzJw">
+                      <ref role="3acloq" node="3_puicMogCS" resolve="YELLOW" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="7o$TBWTYsQW" role="32prLT">
+                <node concept="32G6VT" id="7o$TBWTYsQX" role="PCHzz">
+                  <node concept="_iklQ" id="7o$TBWTYsQY" role="2vFQ1F">
+                    <property role="_iklR" value="YELLOW" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="32G6VT" id="7o$TBWTYsZx" role="PCHzz">
+          <node concept="_iklQ" id="7o$TBWTYt2H" role="2vFQ1F">
+            <property role="_iklR" value="?" />
+          </node>
+        </node>
+      </node>
+      <node concept="3xR696" id="7o$TBWTYs6W" role="PCHHv">
+        <property role="3xR695" value="1KdBIfXPktw/in" />
+        <property role="TrG5h" value="value" />
+        <node concept="3xHE8C" id="7o$TBWTYs8g" role="3xMlr6">
+          <node concept="_vnHe" id="7o$TBWTYs8e" role="35HzJw">
+            <ref role="3acloq" node="3_puicMkyN1" resolve="EnumTrafficLightColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="3xR696" id="7o$TBWTYsKf" role="NkNyt">
+        <property role="3xR695" value="3Ud70gdvRyt/return" />
+        <property role="TrG5h" value="__return__" />
+        <node concept="3xHE8C" id="7o$TBWTYsNW" role="3xMlr6">
+          <node concept="_vnHe" id="7o$TBWTYsNV" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
           </node>
         </node>
       </node>

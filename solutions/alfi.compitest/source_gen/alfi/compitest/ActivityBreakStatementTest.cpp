@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityBreakStatementTest::BreakStatementTest()
+void BreakStatementTest()
 {
   int a = 0;
   while (true)

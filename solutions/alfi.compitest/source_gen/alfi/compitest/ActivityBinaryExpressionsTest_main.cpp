@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityBinaryExpressionsTest activity;
-  activity.BinaryExpressionsTest();
+  BinaryExpressionsTest();
   return 0;
 }

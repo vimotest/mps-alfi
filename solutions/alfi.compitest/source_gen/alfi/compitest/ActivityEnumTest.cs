@@ -9,6 +9,8 @@ public class ActivityEnumTest
     {
         EnumTrafficLightColor enumValue = EnumTrafficLightColor.GREEN;
 
+        BasicInputOutput.WriteLine(EnumTrafficLightColorToString.EnumTrafficLightColorToString(EnumTrafficLightColor.GREEN));
+
         if (enumValue == EnumTrafficLightColor.GREEN)
         {
             BasicInputOutput.WriteLine("GREEN!");

@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityIfStatementTest activity;
-  activity.IfStatementTest();
+  IfStatementTest();
   return 0;
 }

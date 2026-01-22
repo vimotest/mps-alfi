@@ -2,7 +2,7 @@
 #include <alf/library/BasicInputOutput.hpp>
 #include <string>
 
-void ActivityIfStatementTest::IfStatementTest()
+void IfStatementTest()
 {
   if (false)
   {

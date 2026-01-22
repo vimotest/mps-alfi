@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivitySequencesTest
-{
-public:
-  static void SequencesTest();
-};
+void SequencesTest();

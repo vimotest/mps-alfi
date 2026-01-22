@@ -1,0 +1,23 @@
+
+
+
+
+activity EnumTrafficLightColorToString ( in value: EnumTrafficLightColor  ) : String  {
+  if ( value == EnumTrafficLightColor:: RED ) {
+    return "RED";
+
+  } 
+
+  if ( value == EnumTrafficLightColor:: GREEN ) {
+    return "GREEN";
+
+  } 
+
+  if ( value == EnumTrafficLightColor:: YELLOW ) {
+    return "YELLOW";
+
+  } 
+
+  return "?";
+
+}

@@ -24,6 +24,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -2166,14 +2167,11 @@
         <node concept="3IZrLx" id="1hFxxc1h9yY" role="3IZSJc">
           <node concept="3clFbS" id="1hFxxc1h9yZ" role="2VODD2">
             <node concept="3clFbF" id="1hFxxc1hakY" role="3cqZAp">
-              <node concept="2OqwBi" id="1hFxxc1hdUh" role="3clFbG">
-                <node concept="2OqwBi" id="1hFxxc1haMl" role="2Oq$k0">
-                  <node concept="30H73N" id="1hFxxc1hakX" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="1hFxxc1hbjo" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
-                  </node>
+              <node concept="2OqwBi" id="1hFxxc1haMl" role="3clFbG">
+                <node concept="30H73N" id="1hFxxc1hakX" role="2Oq$k0" />
+                <node concept="2qgKlT" id="YDkOF2CfJ1" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:YDkOF2CbAi" resolve="isMainProgram" />
                 </node>
-                <node concept="1v1jN8" id="1hFxxc1hiqH" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -2196,15 +2194,41 @@
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
       <node concept="3zFVjK" id="7T9E0ztsTvn" role="3zH0cK">
         <node concept="3clFbS" id="7T9E0ztsTvo" role="2VODD2">
+          <node concept="3clFbJ" id="YDkOF2C7ki" role="3cqZAp">
+            <node concept="3clFbS" id="YDkOF2C7kk" role="3clFbx">
+              <node concept="3cpWs6" id="YDkOF2CgSC" role="3cqZAp">
+                <node concept="3cpWs3" id="7o$TBWTRInY" role="3cqZAk">
+                  <node concept="2YIFZM" id="YDkOF2CDEG" role="3uHU7w">
+                    <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                    <node concept="2OqwBi" id="YDkOF2CjSq" role="37wK5m">
+                      <node concept="30H73N" id="YDkOF2Chxb" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="YDkOF2CkJP" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3zGtF$" id="7o$TBWTRKOP" role="3uHU7B" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="YDkOF2Cgbj" role="3clFbw">
+              <node concept="30H73N" id="YDkOF2Cgbk" role="2Oq$k0" />
+              <node concept="2qgKlT" id="YDkOF2Cgbl" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:YDkOF2CbAi" resolve="isMainProgram" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="7T9E0ztsTEv" role="3cqZAp">
-            <node concept="3cpWs3" id="7T9E0ztsU5E" role="3clFbG">
-              <node concept="2OqwBi" id="7T9E0ztsUw_" role="3uHU7w">
-                <node concept="30H73N" id="7T9E0ztsUeY" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7T9E0ztsUPn" role="2OqNvi">
+            <node concept="2YIFZM" id="7o$TBWTRGLC" role="3clFbG">
+              <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <node concept="2OqwBi" id="7o$TBWTRGLD" role="37wK5m">
+                <node concept="30H73N" id="7o$TBWTRGLE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7o$TBWTRGLF" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-              <node concept="3zGtF$" id="7T9E0ztsTEu" role="3uHU7B" />
             </node>
           </node>
         </node>

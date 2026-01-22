@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivityDoStatementTest activity;
-  activity.DoStatementTest();
+  DoStatementTest();
   return 0;
 }

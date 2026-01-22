@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityCollectionsTest
-{
-public:
-  static void CollectionsTest();
-};
+void CollectionsTest();

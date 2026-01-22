@@ -3,7 +3,7 @@
 #include <alf/library/primitivebehaviors/BooleanFunctions.hpp>
 #include <string>
 
-void ActivityUnaryExpressionsTest::UnaryExpressionsTest()
+void UnaryExpressionsTest()
 {
   // Boolean
   bool b = false;

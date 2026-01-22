@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityBreakStatementTest
-{
-public:
-  static void BreakStatementTest();
-};
+void BreakStatementTest();

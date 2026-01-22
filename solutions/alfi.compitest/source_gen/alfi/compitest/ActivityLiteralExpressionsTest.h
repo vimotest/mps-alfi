@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityLiteralExpressionsTest
-{
-public:
-  static void LiteralExpressionsTest();
-};
+void LiteralExpressionsTest();

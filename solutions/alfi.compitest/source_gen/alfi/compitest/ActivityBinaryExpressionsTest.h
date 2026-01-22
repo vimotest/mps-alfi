@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityBinaryExpressionsTest
-{
-public:
-  static void BinaryExpressionsTest();
-};
+void BinaryExpressionsTest();

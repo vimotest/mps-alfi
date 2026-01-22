@@ -3,8 +3,4 @@
 /*
 
  */
-class ActivityHelloWorld
-{
-public:
-  static void HelloWorld();
-};
+void HelloWorld();

@@ -2,7 +2,6 @@
 
 int main()
 {
-  ActivitySequencesTest activity;
-  activity.SequencesTest();
+  SequencesTest();
   return 0;
 }
