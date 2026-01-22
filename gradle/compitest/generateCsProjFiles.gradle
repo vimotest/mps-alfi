@@ -29,6 +29,8 @@ task generateCsprojFiles {
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Alfi.StandardModelLibrary</RootNamespace>
+    <UseAppHost>false</UseAppHost>
+    <NoWarn>\$(NoWarn);CS0162</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -76,6 +78,8 @@ EndProject
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Alfi.Compitest</RootNamespace>
+    <UseAppHost>false</UseAppHost>
+    <NoWarn>\$(NoWarn);CS0162</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -116,13 +120,6 @@ EndProject
         solutionFile.append("""\tEndGlobalSection
 EndGlobal
 """)
-
-        // Copy Directory.Build.props to the output directory
-        def dirBuildProps = file('Directory.Build.props')
-        if (dirBuildProps.exists()) {
-            def targetProps = new File(outputDir, 'Directory.Build.props')
-            targetProps.text = dirBuildProps.text
-        }
 
         println "Generated shared library project with ${stdLibFiles.size()} standard files"
         println "Generated ${csFiles.size()} test project files and solution in ${outputDir.absolutePath}"
