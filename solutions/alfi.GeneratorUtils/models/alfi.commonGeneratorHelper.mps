@@ -797,6 +797,36 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="2Cw5LweaiIL" role="jymVt">
+      <property role="TrG5h" value="isDataTypeOperation" />
+      <node concept="37vLTG" id="2Cw5Lweak8a" role="3clF46">
+        <property role="TrG5h" value="operationDefinition" />
+        <node concept="3Tqbb2" id="2Cw5Lweak8b" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2Cw5LweaiIO" role="3clF47">
+        <node concept="3clFbF" id="2Cw5LweakpJ" role="3cqZAp">
+          <node concept="2OqwBi" id="2Cw5LweanuO" role="3clFbG">
+            <node concept="2OqwBi" id="2Cw5LweakUe" role="2Oq$k0">
+              <node concept="37vLTw" id="2Cw5LweakpI" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Cw5Lweak8a" resolve="operationDefinition" />
+              </node>
+              <node concept="2qgKlT" id="2Cw5Lweance" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:3Edw2s$tSYU" resolve="getParentClassifier" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="2Cw5Lweao6L" role="2OqNvi">
+              <node concept="chp4Y" id="2Cw5LweaojT" role="cj9EA">
+                <ref role="cht4Q" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2Cw5LweahGg" role="1B3o_S" />
+      <node concept="10P_77" id="2Cw5Lweai_E" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="5A1wWooC3j0" role="jymVt">
       <property role="TrG5h" value="getEffectiveRedefinitionBaseOperations" />
       <node concept="37vLTG" id="5A1wWooC55d" role="3clF46">

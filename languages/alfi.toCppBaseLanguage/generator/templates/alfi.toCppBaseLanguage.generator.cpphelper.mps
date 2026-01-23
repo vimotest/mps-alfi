@@ -347,7 +347,7 @@
             </node>
             <node concept="2tJFMh" id="2SeqMAbZTyp" role="37wK5m">
               <node concept="ZC_QK" id="2SeqMAbZTJ0" role="2tJFKM">
-                <ref role="2aWVGs" to="hpoj:72umVLUQmP2" resolve="PMD for cpp" />
+                <ref role="2aWVGs" to="hpoj:72umVLUQmP2" />
               </node>
             </node>
           </node>
@@ -379,7 +379,7 @@
             </node>
             <node concept="2tJFMh" id="2SeqMAbZUYA" role="37wK5m">
               <node concept="ZC_QK" id="2SeqMAbZUYB" role="2tJFKM">
-                <ref role="2aWVGs" to="hpoj:72umVLUQmP2" resolve="PMD for cpp" />
+                <ref role="2aWVGs" to="hpoj:72umVLUQmP2" />
               </node>
             </node>
           </node>
