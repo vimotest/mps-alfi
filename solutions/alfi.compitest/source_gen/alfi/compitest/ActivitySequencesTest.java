@@ -149,19 +149,23 @@ public class ActivitySequencesTest {
         BasicInputOutput.WriteLine(name);
       }
     }
+    List<String> emptySequence = Arrays.asList();
+    if (emptySequence.isEmpty()) {
+      BasicInputOutput.WriteLine("emptySequence2: is empty");
+    }
 
     // sequence access expression
-    String helperVar_shvzm_ic0a = sequenceHolder.names.get(1 - 1);
-    BasicInputOutput.WriteLine((helperVar_shvzm_ic0a != null ? helperVar_shvzm_ic0a : "null"));
+    String helperVar_shvzm_kc0a = sequenceHolder.names.get(1 - 1);
+    BasicInputOutput.WriteLine((helperVar_shvzm_kc0a != null ? helperVar_shvzm_kc0a : "null"));
     BasicInputOutput.WriteLine(sequenceHolder.names.get(1 - 1));
 
     // inference test
     List<String> namesInferred = sequenceHolder.names;
     {
       // was a for loop
-      Iterator<String> forLoop_shvzm_rc0a_mainIterator = namesInferred.iterator();
-      while (forLoop_shvzm_rc0a_mainIterator.hasNext()) {
-        String name = forLoop_shvzm_rc0a_mainIterator.next();
+      Iterator<String> forLoop_shvzm_tc0a_mainIterator = namesInferred.iterator();
+      while (forLoop_shvzm_tc0a_mainIterator.hasNext()) {
+        String name = forLoop_shvzm_tc0a_mainIterator.next();
 
         BasicInputOutput.WriteLine(name);
       }

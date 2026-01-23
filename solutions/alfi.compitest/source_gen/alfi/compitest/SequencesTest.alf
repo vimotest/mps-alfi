@@ -156,6 +156,13 @@ activity SequencesTest (  ) {
 
   } 
 
+  let emptySequence: String [] = new String [] {  };
+
+  if ( emptySequence->isEmpty (  ) ) {
+    WriteLine ( "emptySequence2: is empty" );
+
+  } 
+
 
 // sequence access expression
 

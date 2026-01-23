@@ -9732,5 +9732,46 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="3Ds9OtI8jPB">
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <ref role="13h7C2" to="28lk:5jkMFwCzbk1" resolve="SequenceExpressionList" />
+    <node concept="13hLZK" id="3Ds9OtI8jPC" role="13h7CW">
+      <node concept="3clFbS" id="3Ds9OtI8jPD" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3Ds9OtI8lJd" role="13h7CS">
+      <property role="TrG5h" value="isEmpty" />
+      <ref role="13i0hy" node="3Ds9OtI8jMy" resolve="isEmpty" />
+      <node concept="3Tm1VV" id="3Ds9OtI8lJe" role="1B3o_S" />
+      <node concept="3clFbS" id="3Ds9OtI8lJh" role="3clF47">
+        <node concept="3clFbF" id="3Ds9OtI8lTi" role="3cqZAp">
+          <node concept="2OqwBi" id="3Ds9OtI8pgN" role="3clFbG">
+            <node concept="2OqwBi" id="3Ds9OtI8m6l" role="2Oq$k0">
+              <node concept="13iPFW" id="3Ds9OtI8lTh" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3Ds9OtI8mj1" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:5jkMFwCzbk3" resolve="expression" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="3Ds9OtI8ru8" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3Ds9OtI8lJi" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3Ds9OtI8kN6">
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <ref role="13h7C2" to="28lk:5jkMFwCzbjU" resolve="SequenceElements" />
+    <node concept="13i0hz" id="3Ds9OtI8jMy" role="13h7CS">
+      <property role="TrG5h" value="isEmpty" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3Ds9OtI8jMz" role="1B3o_S" />
+      <node concept="10P_77" id="3Ds9OtI8jNU" role="3clF45" />
+      <node concept="3clFbS" id="3Ds9OtI8jM_" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3Ds9OtI8kN7" role="13h7CW">
+      <node concept="3clFbS" id="3Ds9OtI8kN8" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

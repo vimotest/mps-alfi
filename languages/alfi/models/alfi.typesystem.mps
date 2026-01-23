@@ -5310,5 +5310,38 @@
       <ref role="1YaFvo" to="28lk:6cBsaQyo9wy" resolve="ConditionalLogicalExpression" />
     </node>
   </node>
+  <node concept="18kY7G" id="smLYfHeryr">
+    <property role="TrG5h" value="check_SequenceConstructionExpression" />
+    <property role="3GE5qa" value="expressions.primary.invocation.sequence" />
+    <node concept="3clFbS" id="smLYfHerys" role="18ibNy">
+      <node concept="3clFbJ" id="smLYfHesvy" role="3cqZAp">
+        <node concept="2OqwBi" id="smLYfHev1X" role="3clFbw">
+          <node concept="2OqwBi" id="smLYfHesGo" role="2Oq$k0">
+            <node concept="1YBJjd" id="smLYfHesvF" role="2Oq$k0">
+              <ref role="1YBMHb" node="smLYfHeryu" resolve="sequenceConstructionExpression" />
+            </node>
+            <node concept="3TrEf2" id="smLYfHeuAD" role="2OqNvi">
+              <ref role="3Tt5mk" to="28lk:5jkMFwCzbkr" resolve="elements" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="smLYfHevho" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="smLYfHesv$" role="3clFbx">
+          <node concept="a7r0C" id="smLYfHevqC" role="3cqZAp">
+            <node concept="Xl_RD" id="smLYfHevqE" role="a7wSD">
+              <property role="Xl_RC" value="SequenceConstructionExpression should specify SequenceElements" />
+            </node>
+            <node concept="1YBJjd" id="smLYfHevzu" role="1urrMF">
+              <ref role="1YBMHb" node="smLYfHeryu" resolve="sequenceConstructionExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="smLYfHeryu" role="1YuTPh">
+      <property role="TrG5h" value="sequenceConstructionExpression" />
+      <ref role="1YaFvo" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
+    </node>
+  </node>
 </model>
 

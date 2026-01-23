@@ -6373,6 +6373,61 @@
             </node>
           </node>
         </node>
+        <node concept="327OUb" id="3Ds9OtHPP3h" role="PCHzz">
+          <property role="TrG5h" value="emptySequence" />
+          <property role="327w9R" value="true" />
+          <node concept="3xHE8C" id="3Ds9OtHPP3i" role="327w9S">
+            <node concept="_vnHe" id="3Ds9OtHPP3j" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            </node>
+          </node>
+          <node concept="1Wmaf1" id="3Ds9OtHPP3k" role="327w9Y">
+            <property role="327w9R" value="true" />
+            <node concept="_vnHb" id="3Ds9OtHPP3l" role="1Wmaf7">
+              <node concept="_vnHe" id="3Ds9OtHPP3m" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+            </node>
+            <node concept="1Wm7YT" id="3Ds9OtHQ3o5" role="1Wm7Yz" />
+          </node>
+        </node>
+        <node concept="32prLx" id="3Ds9OtHPYlh" role="PCHzz">
+          <node concept="32pbwo" id="3Ds9OtHPYli" role="32oX99">
+            <node concept="32prLw" id="3Ds9OtHPYlj" role="32pbwr">
+              <node concept="1WUwfO" id="3Ds9OtHPYlk" role="32prLz">
+                <node concept="_vnHb" id="3Ds9OtHPYln" role="1WUwfQ">
+                  <node concept="_vnHe" id="3Ds9OtHPYlo" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:2SV$eY8zGnR" resolve="isEmpty" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="3Ds9OtHPYlp" role="_uFfl" />
+                <node concept="_uYbk" id="3Ds9OtI5TD5" role="1WUwdW">
+                  <node concept="_vnHb" id="3Ds9OtI5TD7" role="_uYbl">
+                    <node concept="_vnHe" id="3Ds9OtI5TFn" role="35HzJw">
+                      <ref role="3acloq" node="3Ds9OtHPP3h" resolve="emptySequence" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="PCHzy" id="3Ds9OtHPYlq" role="32prLT">
+                <node concept="_jtW9" id="3Ds9OtHPYlr" role="PCHzz">
+                  <node concept="_uF8j" id="3Ds9OtHPYls" role="_jtWe">
+                    <node concept="_vnHb" id="3Ds9OtHPYlt" role="_uF8g">
+                      <node concept="_vnHe" id="3Ds9OtHPYlu" role="35HzJw">
+                        <ref role="3acloq" to="gkn4:1KdBIfXrfY_" resolve="WriteLine" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3Ds9OtHPYlv" role="_uFfl">
+                      <node concept="_iklQ" id="3Ds9OtHPYlw" role="_vku1">
+                        <property role="_iklR" value="emptySequence2: is empty" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="PDbRn" id="6LCMmpRg4kd" role="PCHzz" />
         <node concept="PDIRi" id="6LCMmpRg4k8" role="PCHzz">
           <node concept="1PaTwC" id="6LCMmpRg4k9" role="I4nmN">

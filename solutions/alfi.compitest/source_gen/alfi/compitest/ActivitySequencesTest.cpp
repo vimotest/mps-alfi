@@ -137,10 +137,15 @@ void SequencesTest()
   {
     alf::library::BasicInputOutput::WriteLine(name);
   }
+  std::vector<std::string> emptySequence = { };
+  if (emptySequence.empty())
+  {
+    alf::library::BasicInputOutput::WriteLine(std::string("emptySequence2: is empty"));
+  }
 
   // sequence access expression
-  std::optional<std::string> helperVar_shvzm_ic0a_0 = alf::library::primitivebehaviors::CollectionFunctions::at(sequenceHolder->names, 0);
-  alf::library::BasicInputOutput::WriteLine(helperVar_shvzm_ic0a_0.value_or(std::string("null")));
+  std::optional<std::string> helperVar_shvzm_kc0a_0 = alf::library::primitivebehaviors::CollectionFunctions::at(sequenceHolder->names, 0);
+  alf::library::BasicInputOutput::WriteLine(helperVar_shvzm_kc0a_0.value_or(std::string("null")));
   alf::library::BasicInputOutput::WriteLine(sequenceHolder->names.at(0));
 
   // inference test

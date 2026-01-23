@@ -134,10 +134,15 @@ public class ActivitySequencesTest
         {
             BasicInputOutput.WriteLine(name);
         }
+        System.Collections.Generic.List<string> emptySequence = new System.Collections.Generic.List<string> { };
+        if (emptySequence.IsEmpty())
+        {
+            BasicInputOutput.WriteLine("emptySequence2: is empty");
+        }
 
         // sequence access expression
-        string helperVar_shvzm_ic0a_1 = sequenceHolder.names.At(0);
-        BasicInputOutput.WriteLine(helperVar_shvzm_ic0a_1 ?? "null");
+        string helperVar_shvzm_kc0a_1 = sequenceHolder.names.At(0);
+        BasicInputOutput.WriteLine(helperVar_shvzm_kc0a_1 ?? "null");
         BasicInputOutput.WriteLine(sequenceHolder.names[0]);
 
         // inference test
