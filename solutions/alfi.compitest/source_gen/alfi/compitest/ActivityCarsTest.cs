@@ -3,7 +3,7 @@
 /// </filename>
 using Cars;
 using Alf.Library;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 public class ActivityCarsTest
 {
@@ -11,13 +11,13 @@ public class ActivityCarsTest
     {
         Cars.Car car = new Cars.Car();
         car.startEngine();
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+        BasicInputOutput.WriteLine(Convert.ToString(car.distance));
         Cars.Vehicle vehicle = car;
         vehicle.drive();
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(vehicle.distance));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+        BasicInputOutput.WriteLine(Convert.ToString(vehicle.distance));
+        BasicInputOutput.WriteLine(Convert.ToString(car.distance));
         car.drive();
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+        BasicInputOutput.WriteLine(Convert.ToString(car.distance));
         BasicInputOutput.WriteLine(car.getColor());
         car.setColor("Red");
         BasicInputOutput.WriteLine(car.getColor());

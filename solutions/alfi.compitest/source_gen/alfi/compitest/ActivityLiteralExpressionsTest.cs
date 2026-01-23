@@ -3,6 +3,7 @@
 /// </filename>
 using Alf.Library;
 using Alf.Library.PrimitiveBehaviors;
+using System;
 
 public class ActivityLiteralExpressionsTest
 {
@@ -15,13 +16,13 @@ public class ActivityLiteralExpressionsTest
         bool c = true;
         BasicInputOutput.WriteLine(BooleanFunctions.ToString(c));
         int d = 12309;
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(d));
+        BasicInputOutput.WriteLine(Convert.ToString(d));
         int e = 23;
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(e));
+        BasicInputOutput.WriteLine(Convert.ToString(e));
         int f = 0xA09F;
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(f));
+        BasicInputOutput.WriteLine(Convert.ToString(f));
         int g = 5319;
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(g));
+        BasicInputOutput.WriteLine(Convert.ToString(g));
 
         string emptyString = "";
         if (emptyString == "")

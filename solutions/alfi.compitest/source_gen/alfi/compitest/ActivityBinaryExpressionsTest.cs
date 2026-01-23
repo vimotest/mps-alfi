@@ -2,6 +2,7 @@
 ///     ActivityBinaryExpressionsTest.cs
 /// </filename>
 using Alf.Library;
+using System;
 using Alf.Library.PrimitiveBehaviors;
 
 public class ActivityBinaryExpressionsTest
@@ -9,17 +10,17 @@ public class ActivityBinaryExpressionsTest
     public static void Execute()
     {
         // Arithmetic Expressions
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(12 + 45));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(-33));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(12 * 45));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(121 % 5));
+        BasicInputOutput.WriteLine(Convert.ToString(12 + 45));
+        BasicInputOutput.WriteLine(Convert.ToString(-33));
+        BasicInputOutput.WriteLine(Convert.ToString(12 * 45));
+        BasicInputOutput.WriteLine(Convert.ToString(121 % 5));
 
         // Shift Expressions
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) (121 << 2)));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) (121 >> 2)));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) ((int) (unchecked((uint) 121) >> 2))));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) (-121 >> 2)));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) ((int) (unchecked((uint) -121) >> 2))));
+        BasicInputOutput.WriteLine(Convert.ToString((int) (121 << 2)));
+        BasicInputOutput.WriteLine(Convert.ToString((int) (121 >> 2)));
+        BasicInputOutput.WriteLine(Convert.ToString((int) ((int) (unchecked((uint) 121) >> 2))));
+        BasicInputOutput.WriteLine(Convert.ToString((int) (-121 >> 2)));
+        BasicInputOutput.WriteLine(Convert.ToString((int) ((int) (unchecked((uint) -121) >> 2))));
 
         // Relational Expressions
         BasicInputOutput.WriteLine(BooleanFunctions.ToString(5 < 9));

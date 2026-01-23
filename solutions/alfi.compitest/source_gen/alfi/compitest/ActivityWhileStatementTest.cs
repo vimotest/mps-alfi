@@ -2,7 +2,7 @@
 ///     ActivityWhileStatementTest.cs
 /// </filename>
 using Alf.Library;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 public class ActivityWhileStatementTest
 {
@@ -12,9 +12,9 @@ public class ActivityWhileStatementTest
         while (a < 10)
         {
             a = a + 1;
-            BasicInputOutput.WriteLine(IntegerFunctions.ToString(a));
+            BasicInputOutput.WriteLine(Convert.ToString(a));
         }
-        BasicInputOutput.WriteLine("End: " + IntegerFunctions.ToString(a));
+        BasicInputOutput.WriteLine("End: " + Convert.ToString(a));
     }
 
     public static void Main(string[] args)

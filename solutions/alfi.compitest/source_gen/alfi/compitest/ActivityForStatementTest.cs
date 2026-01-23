@@ -2,7 +2,7 @@
 ///     ActivityForStatementTest.cs
 /// </filename>
 using Alf.Library;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 public class ActivityForStatementTest
 {
@@ -11,7 +11,7 @@ public class ActivityForStatementTest
         // print 5,6,7,8,9
         for (int i = 5; i <= 9; i++)
         {
-            BasicInputOutput.WriteLine(IntegerFunctions.ToString(i));
+            BasicInputOutput.WriteLine(Convert.ToString(i));
         }
     }
 

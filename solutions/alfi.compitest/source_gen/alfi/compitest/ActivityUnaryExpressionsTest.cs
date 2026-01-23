@@ -3,6 +3,7 @@
 /// </filename>
 using Alf.Library;
 using Alf.Library.PrimitiveBehaviors;
+using System;
 
 public class ActivityUnaryExpressionsTest
 {
@@ -14,11 +15,11 @@ public class ActivityUnaryExpressionsTest
 
         // BitString
         int i = 123;
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((int) ~(i)));
+        BasicInputOutput.WriteLine(Convert.ToString((int) ~(i)));
 
         // Numeric
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(+i));
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(-i));
+        BasicInputOutput.WriteLine(Convert.ToString(+i));
+        BasicInputOutput.WriteLine(Convert.ToString(-i));
     }
 
     public static void Main(string[] args)

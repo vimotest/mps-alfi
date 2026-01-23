@@ -4,6 +4,7 @@
 using Sequences;
 using System.Collections.Generic;
 using Alf.Library;
+using System;
 using Alf.Library.PrimitiveBehaviors;
 
 public class ActivitySequencesTest
@@ -15,7 +16,7 @@ public class ActivitySequencesTest
         sequenceHolder.names.Add("Test1");
         sequenceHolder.names.Add("Test2");
         sequenceHolder.names.Add("Test3");
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(sequenceHolder.names.Count));
+        BasicInputOutput.WriteLine(Convert.ToString(sequenceHolder.names.Count));
 
         foreach (var name in sequenceHolder.names)
         {
@@ -63,7 +64,7 @@ public class ActivitySequencesTest
         integers.Add(3);
         foreach (var number in integers)
         {
-            BasicInputOutput.WriteLine(IntegerFunctions.ToString(number));
+            BasicInputOutput.WriteLine(Convert.ToString(number));
         }
 
         int? firstInt = integers.StructAt(0);
@@ -71,7 +72,7 @@ public class ActivitySequencesTest
         {
             if (firstInt > 0)
             {
-                BasicInputOutput.WriteLine(IntegerFunctions.ToString(firstInt ?? -1));
+                BasicInputOutput.WriteLine(Convert.ToString(firstInt ?? -1));
             }
         }
 

@@ -2,7 +2,7 @@
 ///     Car.cs
 /// </filename>
 using Alf.Library;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 using Cars;
 using System.Collections.Generic;
 
@@ -18,7 +18,7 @@ namespace Cars
         public override void startEngine()
         {
             BasicInputOutput.WriteLine("Car engine started");
-            BasicInputOutput.WriteLine("Initial speed: " + IntegerFunctions.ToString(this.getSpeed()));
+            BasicInputOutput.WriteLine("Initial speed: " + Convert.ToString(this.getSpeed()));
 
             base.defaultStartEngine();
         }
@@ -44,7 +44,7 @@ namespace Cars
 
         public virtual void addWheel(Cars.Car.Wheel wheel)
         {
-            BasicInputOutput.WriteLine("Adding wheel: " + IntegerFunctions.ToString(wheel.size));
+            BasicInputOutput.WriteLine("Adding wheel: " + Convert.ToString(wheel.size));
             this.wheels.Add(wheel);
         }
 

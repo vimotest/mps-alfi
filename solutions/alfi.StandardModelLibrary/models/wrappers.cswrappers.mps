@@ -131,11 +131,9 @@
       <concept id="6843536562190757247" name="CsBaseLanguage.structure.Type" flags="ng" index="3UfwP1">
         <child id="6843536562190767680" name="nonArrayType" index="3UfBpY" />
       </concept>
-      <concept id="6843536562190694846" name="CsBaseLanguage.structure.DoubleType" flags="ng" index="3UfLA0" />
       <concept id="6843536562190694844" name="CsBaseLanguage.structure.BoolType" flags="ng" index="3UfLA2" />
       <concept id="6843536562190680504" name="CsBaseLanguage.structure.IntType" flags="ng" index="3UfM66" />
       <concept id="6843536562190687977" name="CsBaseLanguage.structure.StringType" flags="ng" index="3UfNVn" />
-      <concept id="6843536562190710072" name="CsBaseLanguage.structure.PlusExpression" flags="ng" index="3UfPk6" />
       <concept id="6531566641162929002" name="CsBaseLanguage.structure.MemberReference" flags="ng" index="1VUwCF">
         <reference id="7783118190387115239" name="memberDeclaration" index="2aT8gA" />
         <child id="7783118190387115237" name="anotherMemberReference" index="2aT8g$" />
@@ -194,86 +192,6 @@
           </node>
           <node concept="2qAx6t" id="3suNEZ8d15D" role="3SE3Wx" />
           <node concept="2qAK3s" id="3suNEZ8d16$" role="3SE3Wx" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="31LFg6" id="1hI0yqU98S6">
-    <property role="TrG5h" value="IntegerFunctions.cs" />
-    <property role="3GE5qa" value="alf.library.primitivebehaviors" />
-    <node concept="31LijL" id="1hI0yqU98S7" role="31LlDr">
-      <property role="TrG5h" value="Alf.Library.PrimitiveBehaviors" />
-      <node concept="31LiCz" id="1hI0yqU98S8" role="31LkaE">
-        <property role="TrG5h" value="IntegerFunctions" />
-        <node concept="2qAx6t" id="1hI0yqU98S9" role="3SE3Wx" />
-        <node concept="2qAK3s" id="1hI0yqU98Sa" role="3SE3Wx" />
-        <node concept="31KRCM" id="1hI0yqU98Sb" role="31Leeq">
-          <property role="TrG5h" value="ToString" />
-          <node concept="1ux1M" id="1hI0yqU98Sc" role="31KRCR">
-            <node concept="2YuCjO" id="1hI0yqU98Sd" role="1ux1N">
-              <node concept="3UfPk6" id="1hI0yqU98Se" role="2YuCjP">
-                <node concept="3UcVB9" id="1hI0yqU98Sf" role="3Ufby4">
-                  <property role="1pzheZ" value="&quot;&quot;" />
-                </node>
-                <node concept="3UcWq5" id="1hI0yqU98Sg" role="3Ufby2">
-                  <ref role="zF7P4" node="1hI0yqU98Si" resolve="x" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1ux1I" id="1hI0yqU98Sh" role="1fIg$P">
-            <node concept="31KZC3" id="1hI0yqU98Si" role="1ux1J">
-              <property role="TrG5h" value="x" />
-              <node concept="3UfwP1" id="1hI0yqU98Sj" role="2UegB9">
-                <node concept="3UfM66" id="1hI0yqU98Ua" role="3UfBpY" />
-              </node>
-            </node>
-          </node>
-          <node concept="3UfwP1" id="1hI0yqU98Sl" role="3Sw9wT">
-            <node concept="3UfNVn" id="1hI0yqU98Sm" role="3UfBpY" />
-          </node>
-          <node concept="2qAx6t" id="1hI0yqU98Sn" role="3SE3Wx" />
-          <node concept="2qAK3s" id="1hI0yqU98So" role="3SE3Wx" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="31LFg6" id="1hI0yqU98Vw">
-    <property role="TrG5h" value="RealFunctions.cs" />
-    <property role="3GE5qa" value="alf.library.primitivebehaviors" />
-    <node concept="31LijL" id="1hI0yqU98Vx" role="31LlDr">
-      <property role="TrG5h" value="Alf.Library.PrimitiveBehaviors" />
-      <node concept="31LiCz" id="1hI0yqU98Vy" role="31LkaE">
-        <property role="TrG5h" value="RealFunctions" />
-        <node concept="2qAx6t" id="1hI0yqU98Vz" role="3SE3Wx" />
-        <node concept="2qAK3s" id="1hI0yqU98V$" role="3SE3Wx" />
-        <node concept="31KRCM" id="1hI0yqU98V_" role="31Leeq">
-          <property role="TrG5h" value="ToString" />
-          <node concept="1ux1M" id="1hI0yqU98VA" role="31KRCR">
-            <node concept="2YuCjO" id="1hI0yqU98VB" role="1ux1N">
-              <node concept="3UfPk6" id="1hI0yqU98VC" role="2YuCjP">
-                <node concept="3UcVB9" id="1hI0yqU98VD" role="3Ufby4">
-                  <property role="1pzheZ" value="&quot;&quot;" />
-                </node>
-                <node concept="3UcWq5" id="1hI0yqU98VE" role="3Ufby2">
-                  <ref role="zF7P4" node="1hI0yqU98VG" resolve="x" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1ux1I" id="1hI0yqU98VF" role="1fIg$P">
-            <node concept="31KZC3" id="1hI0yqU98VG" role="1ux1J">
-              <property role="TrG5h" value="x" />
-              <node concept="3UfwP1" id="1hI0yqU98VH" role="2UegB9">
-                <node concept="3UfLA0" id="1hI0yqU98X$" role="3UfBpY" />
-              </node>
-            </node>
-          </node>
-          <node concept="3UfwP1" id="1hI0yqU98VJ" role="3Sw9wT">
-            <node concept="3UfNVn" id="1hI0yqU98VK" role="3UfBpY" />
-          </node>
-          <node concept="2qAx6t" id="1hI0yqU98VL" role="3SE3Wx" />
-          <node concept="2qAK3s" id="1hI0yqU98VM" role="3SE3Wx" />
         </node>
       </node>
     </node>
