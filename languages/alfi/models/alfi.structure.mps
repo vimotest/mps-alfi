@@ -1497,6 +1497,14 @@
     <node concept="PrWs8" id="1YkfrxE8Znj" role="PzmwI">
       <ref role="PrY4T" to="tpe3:hGB2rPm" resolve="ITestCase" />
     </node>
+    <node concept="1TJgyi" id="2N3YSvlYOv3" role="1TKVEl">
+      <property role="IQ2nx" value="3225698318956578755" />
+      <property role="TrG5h" value="decoupleVirtualPackage" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="2N3YSvlYOv4" role="lGtFl">
+        <property role="t5JxN" value="If set, ALFI does not force to synchronize with namespace" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="1KdBIfWJWns">
     <property role="EcuMT" value="2021446509794411996" />

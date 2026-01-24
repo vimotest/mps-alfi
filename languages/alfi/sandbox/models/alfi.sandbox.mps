@@ -81,6 +81,7 @@
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
+        <property id="3225698318956578755" name="decoupleVirtualPackage" index="3TebL4" />
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
         <child id="7858332524534022076" name="namespaceDeclaration" index="3mGtxR" />
       </concept>
@@ -453,6 +454,15 @@
           <ref role="3acloq" node="2X39vz3bZzt" resolve="Foo1" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="2N3YSvm7H2k">
+    <property role="3TebL4" value="true" />
+    <property role="3GE5qa" value="MyPackage" />
+    <node concept="PCHHj" id="2N3YSvm7H2m" role="3mGtxP">
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="TrG5h" value="DecoupledPackageActivity" />
+      <node concept="PCHzy" id="2N3YSvm7H2u" role="PCHGa" />
     </node>
   </node>
 </model>

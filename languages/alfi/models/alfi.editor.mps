@@ -3994,7 +3994,18 @@
         <property role="3F0ifm" value="virtual package:" />
       </node>
       <node concept="3F0A7n" id="1YdqyHmJFdD" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="none" />
         <ref role="1NtTu8" to="tpck:hnGE5uv" resolve="virtualPackage" />
+      </node>
+      <node concept="3F0ifn" id="2N3YSvlYTSU" role="3EZMnx">
+        <property role="3F0ifm" value="decouple virtual package:" />
+        <node concept="pVoyu" id="2N3YSvlYTSX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2N3YSvlYTSZ" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:2N3YSvlYOv3" resolve="decoupleVirtualPackage" />
       </node>
     </node>
   </node>
