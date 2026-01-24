@@ -67,6 +67,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -1365,20 +1368,15 @@
     <node concept="2YIFZL" id="1z1MMtqsNVt" role="jymVt">
       <property role="TrG5h" value="setUseJavaOptionalForGeneration" />
       <node concept="3clFbS" id="1z1MMtqsNVw" role="3clF47">
-        <node concept="3clFbF" id="1z1MMtqsO3E" role="3cqZAp">
-          <node concept="37vLTI" id="1z1MMtqsOsE" role="3clFbG">
-            <node concept="3clFbT" id="1z1MMtqsOuY" role="37vLTx">
-              <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="2N3YSvmhQq5" role="3cqZAp">
+          <node concept="2YIFZM" id="2N3YSvmhQuP" role="3clFbG">
+            <ref role="37wK5l" node="2N3YSvmhP$d" resolve="setUseJavaOptionalForGeneration" />
+            <ref role="1Pybhc" node="2N3YSvmhPyv" resolve="AlfiGenerationContextOptionHandler" />
+            <node concept="37vLTw" id="2N3YSvmhQuQ" role="37wK5m">
+              <ref role="3cqZAo" node="1z1MMtqsO02" resolve="genContext" />
             </node>
-            <node concept="2OqwBi" id="1z1MMtqsOdr" role="37vLTJ">
-              <node concept="37vLTw" id="1z1MMtqsO3D" role="2Oq$k0">
-                <ref role="3cqZAo" node="1z1MMtqsO02" resolve="genContext" />
-              </node>
-              <node concept="2fSANN" id="1z1MMtqsOjg" role="2OqNvi">
-                <node concept="Xl_RD" id="1z1MMtqsOko" role="2fWi3N">
-                  <property role="Xl_RC" value="useJavaOptionals" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="2N3YSvmhQD1" role="37wK5m">
+              <ref role="3cqZAo" node="1z1MMtqsO0I" resolve="useJavaOptional" />
             </node>
           </node>
         </node>
@@ -1397,80 +1395,12 @@
     <node concept="2YIFZL" id="1z1MMtqsOxu" role="jymVt">
       <property role="TrG5h" value="getUseJavaOptionalForGeneration" />
       <node concept="3clFbS" id="1z1MMtqsOxv" role="3clF47">
-        <node concept="3cpWs8" id="1z1MMtqsQ7M" role="3cqZAp">
-          <node concept="3cpWsn" id="1z1MMtqsQ7N" role="3cpWs9">
-            <property role="TrG5h" value="value" />
-            <node concept="3uibUv" id="1z1MMtqsQ6R" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-            </node>
-            <node concept="0kSF2" id="1z1MMtqsRaC" role="33vP2m">
-              <node concept="3uibUv" id="1z1MMtqsRaF" role="0kSFW">
-                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-              </node>
-              <node concept="2OqwBi" id="1z1MMtqsQ7O" role="0kSFX">
-                <node concept="37vLTw" id="1z1MMtqsQ7P" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1z1MMtqsOxD" resolve="genContext" />
-                </node>
-                <node concept="2fSANN" id="1z1MMtqsQ7Q" role="2OqNvi">
-                  <node concept="Xl_RD" id="1z1MMtqsQ7R" role="2fWi3N">
-                    <property role="Xl_RC" value="useJavaOptionals" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="RZKkt7t_sA" role="3cqZAp">
-          <node concept="1PaTwC" id="RZKkt7t_sB" role="1aUNEU">
-            <node concept="3oM_SD" id="RZKkt7t_wx" role="1PaTwD">
-              <property role="3oM_SC" value="default" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_wz" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_wB" role="1PaTwD">
-              <property role="3oM_SC" value="false," />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_wV" role="1PaTwD">
-              <property role="3oM_SC" value="since" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_xg" role="1PaTwD">
-              <property role="3oM_SC" value="currently" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_xA" role="1PaTwD">
-              <property role="3oM_SC" value="no" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_xH" role="1PaTwD">
-              <property role="3oM_SC" value="Java" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_z8" role="1PaTwD">
-              <property role="3oM_SC" value="Optional" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_zh" role="1PaTwD">
-              <property role="3oM_SC" value="generation" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_zr" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_zA" role="1PaTwD">
-              <property role="3oM_SC" value="consistently" />
-            </node>
-            <node concept="3oM_SD" id="RZKkt7t_$2" role="1PaTwD">
-              <property role="3oM_SC" value="implemented" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1z1MMtqsOxw" role="3cqZAp">
-          <node concept="3K4zz7" id="1z1MMtqsR21" role="3clFbG">
-            <node concept="37vLTw" id="1z1MMtqsR5s" role="3K4E3e">
-              <ref role="3cqZAo" node="1z1MMtqsQ7N" resolve="value" />
-            </node>
-            <node concept="3clFbT" id="1z1MMtqsS8n" role="3K4GZi" />
-            <node concept="3y3z36" id="1z1MMtqsQxT" role="3K4Cdx">
-              <node concept="10Nm6u" id="1z1MMtqsQAZ" role="3uHU7w" />
-              <node concept="37vLTw" id="1z1MMtqsQ7S" role="3uHU7B">
-                <ref role="3cqZAo" node="1z1MMtqsQ7N" resolve="value" />
-              </node>
+        <node concept="3clFbF" id="2N3YSvmhQ98" role="3cqZAp">
+          <node concept="2YIFZM" id="2N3YSvmhQdf" role="3clFbG">
+            <ref role="37wK5l" node="2N3YSvmhP$s" resolve="getUseJavaOptionalForGeneration" />
+            <ref role="1Pybhc" node="2N3YSvmhPyv" resolve="AlfiGenerationContextOptionHandler" />
+            <node concept="37vLTw" id="2N3YSvmhQhA" role="37wK5m">
+              <ref role="3cqZAo" node="1z1MMtqsOxD" resolve="genContext" />
             </node>
           </node>
         </node>
@@ -3973,7 +3903,235 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2N3YSvmhQTK" role="jymVt" />
+    <node concept="Wx3nA" id="2N3YSvmhPJt" role="jymVt">
+      <property role="TrG5h" value="OPTION_USE_JAVA_OPTIONALS" />
+      <node concept="3Tm1VV" id="2N3YSvmhPHq" role="1B3o_S" />
+      <node concept="17QB3L" id="2N3YSvmhPIR" role="1tU5fm" />
+      <node concept="Xl_RD" id="2N3YSvmhPLx" role="33vP2m">
+        <property role="Xl_RC" value="useJavaOptionals" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2N3YSvmhRfg" role="jymVt" />
+    <node concept="Wx3nA" id="2N3YSvmhRc$" role="jymVt">
+      <property role="TrG5h" value="OPTION_GENERATE_ONLY_CPP_H" />
+      <node concept="3Tm1VV" id="2N3YSvmhRc_" role="1B3o_S" />
+      <node concept="17QB3L" id="2N3YSvmhRcA" role="1tU5fm" />
+      <node concept="Xl_RD" id="2N3YSvmeFyF" role="33vP2m">
+        <property role="Xl_RC" value="generateCppOnlyH" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2N3YSvmhQTL" role="jymVt" />
     <node concept="3Tm1VV" id="59iRbdSsEwK" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2N3YSvmhPyv">
+    <property role="TrG5h" value="AlfiGenerationContextOptionHandler" />
+    <node concept="2YIFZL" id="2N3YSvmhP$d" role="jymVt">
+      <property role="TrG5h" value="setUseJavaOptionalForGeneration" />
+      <node concept="3clFbS" id="2N3YSvmhP$e" role="3clF47">
+        <node concept="3clFbF" id="2N3YSvmhP$f" role="3cqZAp">
+          <node concept="37vLTI" id="2N3YSvmhP$g" role="3clFbG">
+            <node concept="3clFbT" id="2N3YSvmhP$h" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="2N3YSvmhP$i" role="37vLTJ">
+              <node concept="37vLTw" id="2N3YSvmhP$j" role="2Oq$k0">
+                <ref role="3cqZAo" node="2N3YSvmhP$o" resolve="genContext" />
+              </node>
+              <node concept="2fSANN" id="2N3YSvmhP$k" role="2OqNvi">
+                <node concept="10M0yZ" id="2N3YSvmhR1K" role="2fWi3N">
+                  <ref role="3cqZAo" node="2N3YSvmhPJt" resolve="OPTION_USE_JAVA_OPTIONALS" />
+                  <ref role="1PxDUh" node="59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2N3YSvmhP$m" role="1B3o_S" />
+      <node concept="3cqZAl" id="2N3YSvmhP$n" role="3clF45" />
+      <node concept="37vLTG" id="2N3YSvmhP$o" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmhP$p" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2N3YSvmhP$q" role="3clF46">
+        <property role="TrG5h" value="useJavaOptional" />
+        <node concept="10P_77" id="2N3YSvmhP$r" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2N3YSvmhP$s" role="jymVt">
+      <property role="TrG5h" value="getUseJavaOptionalForGeneration" />
+      <node concept="3clFbS" id="2N3YSvmhP$t" role="3clF47">
+        <node concept="3cpWs8" id="2N3YSvmhP$u" role="3cqZAp">
+          <node concept="3cpWsn" id="2N3YSvmhP$v" role="3cpWs9">
+            <property role="TrG5h" value="value" />
+            <node concept="3uibUv" id="2N3YSvmhP$w" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+            </node>
+            <node concept="0kSF2" id="2N3YSvmhP$x" role="33vP2m">
+              <node concept="3uibUv" id="2N3YSvmhP$y" role="0kSFW">
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+              </node>
+              <node concept="2OqwBi" id="2N3YSvmhP$z" role="0kSFX">
+                <node concept="37vLTw" id="2N3YSvmhP$$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2N3YSvmhP$Y" resolve="genContext" />
+                </node>
+                <node concept="2fSANN" id="2N3YSvmhP$_" role="2OqNvi">
+                  <node concept="10M0yZ" id="2N3YSvmhQYa" role="2fWi3N">
+                    <ref role="1PxDUh" node="59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
+                    <ref role="3cqZAo" node="2N3YSvmhPJt" resolve="OPTION_USE_JAVA_OPTIONALS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2N3YSvmhP$B" role="3cqZAp">
+          <node concept="1PaTwC" id="2N3YSvmhP$C" role="1aUNEU">
+            <node concept="3oM_SD" id="2N3YSvmhP$D" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$E" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$F" role="1PaTwD">
+              <property role="3oM_SC" value="false," />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$G" role="1PaTwD">
+              <property role="3oM_SC" value="since" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$H" role="1PaTwD">
+              <property role="3oM_SC" value="currently" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$I" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$J" role="1PaTwD">
+              <property role="3oM_SC" value="Java" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$K" role="1PaTwD">
+              <property role="3oM_SC" value="Optional" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$L" role="1PaTwD">
+              <property role="3oM_SC" value="generation" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$M" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$N" role="1PaTwD">
+              <property role="3oM_SC" value="consistently" />
+            </node>
+            <node concept="3oM_SD" id="2N3YSvmhP$O" role="1PaTwD">
+              <property role="3oM_SC" value="implemented" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N3YSvmhP$P" role="3cqZAp">
+          <node concept="3K4zz7" id="2N3YSvmhP$Q" role="3clFbG">
+            <node concept="37vLTw" id="2N3YSvmhP$R" role="3K4E3e">
+              <ref role="3cqZAo" node="2N3YSvmhP$v" resolve="value" />
+            </node>
+            <node concept="3clFbT" id="2N3YSvmhP$S" role="3K4GZi" />
+            <node concept="3y3z36" id="2N3YSvmhP$T" role="3K4Cdx">
+              <node concept="10Nm6u" id="2N3YSvmhP$U" role="3uHU7w" />
+              <node concept="37vLTw" id="2N3YSvmhP$V" role="3uHU7B">
+                <ref role="3cqZAo" node="2N3YSvmhP$v" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2N3YSvmhP$W" role="1B3o_S" />
+      <node concept="10P_77" id="2N3YSvmhP$X" role="3clF45" />
+      <node concept="37vLTG" id="2N3YSvmhP$Y" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmhP$Z" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2N3YSvmhShW" role="jymVt">
+      <property role="TrG5h" value="setGenerateOnlyCppH" />
+      <node concept="3clFbS" id="2N3YSvmhShX" role="3clF47">
+        <node concept="3clFbF" id="2N3YSvmhShY" role="3cqZAp">
+          <node concept="37vLTI" id="2N3YSvmhShZ" role="3clFbG">
+            <node concept="3clFbT" id="2N3YSvmhSi0" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="2N3YSvmhSi1" role="37vLTJ">
+              <node concept="37vLTw" id="2N3YSvmhSi2" role="2Oq$k0">
+                <ref role="3cqZAo" node="2N3YSvmhSi7" resolve="genContext" />
+              </node>
+              <node concept="2fSANN" id="2N3YSvmhSi3" role="2OqNvi">
+                <node concept="10M0yZ" id="2N3YSvmhSui" role="2fWi3N">
+                  <ref role="3cqZAo" node="2N3YSvmhRc$" resolve="OPTION_GENERATE_ONLY_CPP_H" />
+                  <ref role="1PxDUh" node="59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2N3YSvmhSi5" role="1B3o_S" />
+      <node concept="3cqZAl" id="2N3YSvmhSi6" role="3clF45" />
+      <node concept="37vLTG" id="2N3YSvmhSi7" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmhSi8" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2N3YSvmhSi9" role="3clF46">
+        <property role="TrG5h" value="useJavaOptional" />
+        <node concept="10P_77" id="2N3YSvmhSia" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2N3YSvmhSij" role="jymVt">
+      <property role="TrG5h" value="getGenerateOnlyCppH" />
+      <node concept="3clFbS" id="2N3YSvmhSik" role="3clF47">
+        <node concept="3cpWs8" id="2N3YSvmhSil" role="3cqZAp">
+          <node concept="3cpWsn" id="2N3YSvmhSim" role="3cpWs9">
+            <property role="TrG5h" value="value" />
+            <node concept="3uibUv" id="2N3YSvmhSin" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+            </node>
+            <node concept="0kSF2" id="2N3YSvmhSio" role="33vP2m">
+              <node concept="3uibUv" id="2N3YSvmhSip" role="0kSFW">
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+              </node>
+              <node concept="2OqwBi" id="2N3YSvmhSiq" role="0kSFX">
+                <node concept="37vLTw" id="2N3YSvmhSir" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2N3YSvmhSiP" resolve="genContext" />
+                </node>
+                <node concept="2fSANN" id="2N3YSvmhSis" role="2OqNvi">
+                  <node concept="10M0yZ" id="2N3YSvmhSwO" role="2fWi3N">
+                    <ref role="3cqZAo" node="2N3YSvmhRc$" resolve="OPTION_GENERATE_ONLY_CPP_H" />
+                    <ref role="1PxDUh" node="59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N3YSvmhSiG" role="3cqZAp">
+          <node concept="3K4zz7" id="2N3YSvmhSiH" role="3clFbG">
+            <node concept="37vLTw" id="2N3YSvmhSiI" role="3K4E3e">
+              <ref role="3cqZAo" node="2N3YSvmhSim" resolve="value" />
+            </node>
+            <node concept="3clFbT" id="2N3YSvmhSiJ" role="3K4GZi" />
+            <node concept="3y3z36" id="2N3YSvmhSiK" role="3K4Cdx">
+              <node concept="10Nm6u" id="2N3YSvmhSiL" role="3uHU7w" />
+              <node concept="37vLTw" id="2N3YSvmhSiM" role="3uHU7B">
+                <ref role="3cqZAo" node="2N3YSvmhSim" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2N3YSvmhSiN" role="1B3o_S" />
+      <node concept="10P_77" id="2N3YSvmhSiO" role="3clF45" />
+      <node concept="37vLTG" id="2N3YSvmhSiP" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmhSiQ" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2N3YSvmhP$c" role="jymVt" />
+    <node concept="3Tm1VV" id="2N3YSvmhPyw" role="1B3o_S" />
   </node>
 </model>
 

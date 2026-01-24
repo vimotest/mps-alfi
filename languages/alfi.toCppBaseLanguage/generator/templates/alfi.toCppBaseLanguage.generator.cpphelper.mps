@@ -979,6 +979,10 @@
     </node>
     <node concept="2YIFZL" id="59iRbdSBNJv" role="jymVt">
       <property role="TrG5h" value="toCppHeaderOnlyFileName" />
+      <node concept="37vLTG" id="2N3YSvmeKVS" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmeKZ9" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="59iRbdSBNMV" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="59iRbdSBNMW" role="1tU5fm">
@@ -999,16 +1003,82 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2N3YSvmeJIV" role="3cqZAp">
+          <node concept="3cpWsn" id="2N3YSvmeJIW" role="3cpWs9">
+            <property role="TrG5h" value="fileName" />
+            <node concept="17QB3L" id="2N3YSvme_qy" role="1tU5fm" />
+            <node concept="1rXfSq" id="2N3YSvmeJIX" role="33vP2m">
+              <ref role="37wK5l" node="4gRCGxdCrmP" resolve="toCppHeaderFileName" />
+              <node concept="37vLTw" id="2N3YSvmeJIY" role="37wK5m">
+                <ref role="3cqZAo" node="59iRbdSBNMV" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2N3YSvmeKeR" role="3cqZAp">
+          <node concept="3clFbS" id="2N3YSvmeKeT" role="3clFbx">
+            <node concept="3SKdUt" id="2N3YSvmeLfd" role="3cqZAp">
+              <node concept="1PaTwC" id="2N3YSvmeLfe" role="1aUNEU">
+                <node concept="3oM_SD" id="2N3YSvmeLff" role="1PaTwD">
+                  <property role="3oM_SC" value="if" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLiN" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLjl" role="1PaTwD">
+                  <property role="3oM_SC" value=".h" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLjA" role="1PaTwD">
+                  <property role="3oM_SC" value="shall" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLjB" role="1PaTwD">
+                  <property role="3oM_SC" value="be" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLjC" role="1PaTwD">
+                  <property role="3oM_SC" value="generated," />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLjT" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLka" role="1PaTwD">
+                  <property role="3oM_SC" value="not" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLkr" role="1PaTwD">
+                  <property role="3oM_SC" value="append" />
+                </node>
+                <node concept="3oM_SD" id="2N3YSvmeLks" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;pp&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2N3YSvmeKu5" role="3cqZAp">
+              <node concept="37vLTw" id="2N3YSvmeKEa" role="3cqZAk">
+                <ref role="3cqZAo" node="2N3YSvmeJIW" resolve="fileName" />
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="2N3YSvmeKl8" role="3clFbw">
+            <ref role="37wK5l" node="2N3YSvmeEyV" resolve="shouldGenerateOnlyDotH" />
+            <ref role="1Pybhc" node="3a2LbIbV$zf" resolve="CppSourceFileHelper" />
+            <node concept="37vLTw" id="2N3YSvmeL75" role="37wK5m">
+              <ref role="3cqZAo" node="2N3YSvmeKVS" resolve="genContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2N3YSvmeLvt" role="3cqZAp">
+          <node concept="1PaTwC" id="2N3YSvmeLvu" role="1aUNEU">
+            <node concept="3oM_SD" id="2N3YSvmeLvv" role="1PaTwD">
+              <property role="3oM_SC" value=".hpp" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="59iRbdSBNP6" role="3cqZAp">
           <node concept="3cpWs3" id="59iRbdSBOpX" role="3clFbG">
             <node concept="Xl_RD" id="59iRbdSBOsR" role="3uHU7w">
               <property role="Xl_RC" value="pp" />
             </node>
-            <node concept="1rXfSq" id="59iRbdSBNP5" role="3uHU7B">
-              <ref role="37wK5l" node="4gRCGxdCrmP" resolve="toCppHeaderFileName" />
-              <node concept="37vLTw" id="59iRbdSBNTo" role="37wK5m">
-                <ref role="3cqZAo" node="59iRbdSBNMV" resolve="node" />
-              </node>
+            <node concept="37vLTw" id="2N3YSvmeJIZ" role="3uHU7B">
+              <ref role="3cqZAo" node="2N3YSvmeJIW" resolve="fileName" />
             </node>
           </node>
         </node>
@@ -2981,6 +3051,26 @@
         <node concept="3Tqbb2" id="3a2LbIbV_U_" role="1tU5fm">
           <ref role="ehGHo" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
         </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2N3YSvmeEyV" role="jymVt">
+      <property role="TrG5h" value="shouldGenerateOnlyDotH" />
+      <node concept="3clFbS" id="2N3YSvmeEyY" role="3clF47">
+        <node concept="3clFbF" id="2N3YSvmhSPC" role="3cqZAp">
+          <node concept="2YIFZM" id="2N3YSvmhSRX" role="3clFbG">
+            <ref role="37wK5l" to="stu:2N3YSvmhSij" resolve="getGenerateOnlyCppH" />
+            <ref role="1Pybhc" to="stu:2N3YSvmhPyv" resolve="AlfiGenerationContextOptionHandler" />
+            <node concept="37vLTw" id="2N3YSvmhSTY" role="37wK5m">
+              <ref role="3cqZAo" node="2N3YSvmeED3" resolve="genContext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2N3YSvmeEvf" role="1B3o_S" />
+      <node concept="10P_77" id="2N3YSvmeEyB" role="3clF45" />
+      <node concept="37vLTG" id="2N3YSvmeED3" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2N3YSvmeED0" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="3a2LbIbV$zg" role="1B3o_S" />
