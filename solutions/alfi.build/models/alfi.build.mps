@@ -313,7 +313,7 @@
       </node>
       <node concept="3_J27D" id="5tK9548cRhE" role="m$_w8">
         <node concept="3Mxwew" id="34Tk5u5i9Zj" role="3MwsjC">
-          <property role="3MwjfP" value="2025.3.8-SNAPSHOT" />
+          <property role="3MwjfP" value="2025.3.8" />
         </node>
       </node>
       <node concept="m$f5U" id="5tK9548cRk7" role="m$_yh">
