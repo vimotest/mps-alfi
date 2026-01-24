@@ -94,23 +94,23 @@
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2f" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
-        <ref role="3HHQyS" to="erwg:3mBLEfjFMiJ" resolve="ToString" />
+        <ref role="3HHQyS" to="wyt6:~Boolean.toString(boolean)" resolve="toString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2_" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
-        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
+        <ref role="3HHQyS" to="wyt6:~Integer.toString(int)" resolve="toString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2L" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
-        <ref role="3HHQyS" to="erwg:3mBLEfjFMuj" resolve="ToString" />
+        <ref role="3HHQyS" to="wyt6:~Double.toString(double)" resolve="toString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_2Y" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
-        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
+        <ref role="3HHQyS" to="wyt6:~Integer.toString(int)" resolve="toString" />
       </node>
       <node concept="3HHQsX" id="2X39vz3a_3c" role="3HHZ2s">
         <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
-        <ref role="3HHQyS" to="erwg:3mBLEfjFMt2" resolve="ToString" />
+        <ref role="3HHQyS" to="wyt6:~Integer.toString(int)" resolve="toString" />
       </node>
     </node>
     <node concept="3HHQsS" id="1AHeRpjYqpj" role="1V1JAH">

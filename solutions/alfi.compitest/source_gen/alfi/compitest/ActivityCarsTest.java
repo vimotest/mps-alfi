@@ -4,7 +4,6 @@ package alfi.compitest;
 
 import alfi.compitest.Cars.Car;
 import wrappers.javaWrappers.BasicInputOutput;
-import wrappers.javaWrappers.IntegerFunctions;
 import alfi.compitest.Cars.Vehicle;
 import java.util.Objects;
 
@@ -15,13 +14,13 @@ public class ActivityCarsTest {
   public static void CarsTest() {
     Car car = new Car();
     car.startEngine();
-    BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+    BasicInputOutput.WriteLine(Integer.toString(car.distance));
     Vehicle vehicle = car;
     vehicle.drive();
-    BasicInputOutput.WriteLine(IntegerFunctions.ToString(vehicle.distance));
-    BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+    BasicInputOutput.WriteLine(Integer.toString(vehicle.distance));
+    BasicInputOutput.WriteLine(Integer.toString(car.distance));
     car.drive();
-    BasicInputOutput.WriteLine(IntegerFunctions.ToString(car.distance));
+    BasicInputOutput.WriteLine(Integer.toString(car.distance));
     BasicInputOutput.WriteLine(car.getColor());
     car.setColor("Red");
     BasicInputOutput.WriteLine(car.getColor());

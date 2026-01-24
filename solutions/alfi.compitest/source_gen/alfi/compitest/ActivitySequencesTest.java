@@ -4,11 +4,9 @@ package alfi.compitest;
 
 import alfi.compitest.Sequences.SequenceHolder;
 import wrappers.javaWrappers.BasicInputOutput;
-import wrappers.javaWrappers.IntegerFunctions;
 import java.util.Iterator;
 import alfi.compitest.Sequences.SeqRow;
 import java.util.List;
-import wrappers.javaWrappers.BooleanFunctions;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Arrays;
@@ -27,7 +25,7 @@ public class ActivitySequencesTest {
     sequenceHolder.names.add("Test1");
     sequenceHolder.names.add("Test2");
     sequenceHolder.names.add("Test3");
-    BasicInputOutput.WriteLine(IntegerFunctions.ToString(sequenceHolder.names.size()));
+    BasicInputOutput.WriteLine(Integer.toString(sequenceHolder.names.size()));
 
     {
       // was a for loop
@@ -66,16 +64,16 @@ public class ActivitySequencesTest {
       if (true) {
         SeqRow helperVar_shvzm_a0a0a0a0w0a = sequenceHolder.rows.get(1 - 1);
         Boolean helperVar_shvzm_a0a0a0a0v0a = helperVar_shvzm_a0a0a0a0w0a.marked;
-        BasicInputOutput.WriteLine(BooleanFunctions.ToString((helperVar_shvzm_a0a0a0a0v0a != null ? helperVar_shvzm_a0a0a0a0v0a : false)));
+        BasicInputOutput.WriteLine(Boolean.toString((helperVar_shvzm_a0a0a0a0v0a != null ? helperVar_shvzm_a0a0a0a0v0a : false)));
       }
     }
 
     SeqRow rowAt1 = sequenceHolder.rows.get(1 - 1);
     Boolean helperVar_shvzm_y0a = rowAt1.marked;
-    BasicInputOutput.WriteLine(BooleanFunctions.ToString((helperVar_shvzm_y0a != null ? helperVar_shvzm_y0a : false)));
+    BasicInputOutput.WriteLine(Boolean.toString((helperVar_shvzm_y0a != null ? helperVar_shvzm_y0a : false)));
     sequenceHolder.markAt(1);
     Boolean helperVar_shvzm_ab0a = rowAt1.marked;
-    BasicInputOutput.WriteLine(BooleanFunctions.ToString((helperVar_shvzm_ab0a != null ? helperVar_shvzm_ab0a : false)));
+    BasicInputOutput.WriteLine(Boolean.toString((helperVar_shvzm_ab0a != null ? helperVar_shvzm_ab0a : false)));
 
     List<Integer> integers = new ArrayList<>();
     integers.add(1);
@@ -87,14 +85,14 @@ public class ActivitySequencesTest {
       while (forLoop_shvzm_lb0a_mainIterator.hasNext()) {
         Integer number = forLoop_shvzm_lb0a_mainIterator.next();
 
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString(number));
+        BasicInputOutput.WriteLine(Integer.toString(number));
       }
     }
 
     Integer firstInt = integers.get(1 - 1);
     if (!(Objects.equals(firstInt, null))) {
       if (firstInt > 0) {
-        BasicInputOutput.WriteLine(IntegerFunctions.ToString((firstInt != null ? firstInt : -1)));
+        BasicInputOutput.WriteLine(Integer.toString((firstInt != null ? firstInt : -1)));
       }
     }
 
