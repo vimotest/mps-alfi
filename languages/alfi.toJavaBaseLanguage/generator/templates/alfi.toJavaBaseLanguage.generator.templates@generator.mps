@@ -2194,41 +2194,9 @@
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
       <node concept="3zFVjK" id="7T9E0ztsTvn" role="3zH0cK">
         <node concept="3clFbS" id="7T9E0ztsTvo" role="2VODD2">
-          <node concept="3clFbJ" id="YDkOF2C7ki" role="3cqZAp">
-            <node concept="3clFbS" id="YDkOF2C7kk" role="3clFbx">
-              <node concept="3cpWs6" id="YDkOF2CgSC" role="3cqZAp">
-                <node concept="3cpWs3" id="7o$TBWTRInY" role="3cqZAk">
-                  <node concept="2YIFZM" id="YDkOF2CDEG" role="3uHU7w">
-                    <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
-                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                    <node concept="2OqwBi" id="YDkOF2CjSq" role="37wK5m">
-                      <node concept="30H73N" id="YDkOF2Chxb" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="YDkOF2CkJP" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3zGtF$" id="7o$TBWTRKOP" role="3uHU7B" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="YDkOF2Cgbj" role="3clFbw">
-              <node concept="30H73N" id="YDkOF2Cgbk" role="2Oq$k0" />
-              <node concept="2qgKlT" id="YDkOF2Cgbl" role="2OqNvi">
-                <ref role="37wK5l" to="bqjt:YDkOF2CbAi" resolve="isMainProgram" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="7T9E0ztsTEv" role="3cqZAp">
-            <node concept="2YIFZM" id="7o$TBWTRGLC" role="3clFbG">
-              <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <node concept="2OqwBi" id="7o$TBWTRGLD" role="37wK5m">
-                <node concept="30H73N" id="7o$TBWTRGLE" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7o$TBWTRGLF" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
+          <node concept="3clFbF" id="59iRbdSBEub" role="3cqZAp">
+            <node concept="1mL9RQ" id="59iRbdSBEua" role="3clFbG">
+              <ref role="1mL9RD" node="59iRbdSB_rf" resolve="baseName" />
             </node>
           </node>
         </node>
@@ -2244,6 +2212,54 @@
               <ref role="37wK5l" to="stu:6dpAtW5ZREn" resolve="determineVirtualPackageForAlfElement" />
               <ref role="1Pybhc" to="stu:6dpAtW5ZRDd" resolve="AlfNamespaceHelper" />
               <node concept="30H73N" id="6dpAtW609r$" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ps_y7" id="59iRbdSB_re" role="lGtFl">
+      <node concept="1ps_xZ" id="59iRbdSB_rf" role="1ps_xO">
+        <property role="TrG5h" value="baseName" />
+        <node concept="2jfdEK" id="59iRbdSB_rg" role="1ps_xN">
+          <node concept="3clFbS" id="59iRbdSB_rh" role="2VODD2">
+            <node concept="3clFbJ" id="YDkOF2C7ki" role="3cqZAp">
+              <node concept="3clFbS" id="YDkOF2C7kk" role="3clFbx">
+                <node concept="3cpWs6" id="YDkOF2CgSC" role="3cqZAp">
+                  <node concept="3cpWs3" id="7o$TBWTRInY" role="3cqZAk">
+                    <node concept="2YIFZM" id="YDkOF2CDEG" role="3uHU7w">
+                      <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                      <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                      <node concept="2OqwBi" id="YDkOF2CjSq" role="37wK5m">
+                        <node concept="30H73N" id="YDkOF2Chxb" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="YDkOF2CkJP" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="59iRbdSBFOx" role="3uHU7B">
+                      <property role="Xl_RC" value="Activity" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="YDkOF2Cgbj" role="3clFbw">
+                <node concept="30H73N" id="YDkOF2Cgbk" role="2Oq$k0" />
+                <node concept="2qgKlT" id="YDkOF2Cgbl" role="2OqNvi">
+                  <ref role="37wK5l" to="bqjt:YDkOF2CbAi" resolve="isMainProgram" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7T9E0ztsTEv" role="3cqZAp">
+              <node concept="2YIFZM" id="7o$TBWTRGLC" role="3clFbG">
+                <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="2OqwBi" id="7o$TBWTRGLD" role="37wK5m">
+                  <node concept="30H73N" id="7o$TBWTRGLE" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7o$TBWTRGLF" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2352,20 +2368,18 @@
                   <node concept="2OqwBi" id="4euogOalElY" role="37vLTJ">
                     <node concept="1iwH7S" id="4euogOalE8R" role="2Oq$k0" />
                     <node concept="2fSANN" id="4euogOalEwc" role="2OqNvi">
-                      <node concept="3cpWs3" id="4euogOalGfk" role="2fWi3N">
-                        <node concept="Xl_RD" id="4euogOalEAY" role="3uHU7w">
-                          <property role="Xl_RC" value="/onlyToAlf" />
+                      <node concept="3cpWs3" id="59iRbdSsSSR" role="2fWi3N">
+                        <node concept="3cpWs3" id="4euogOalGfk" role="3uHU7B">
+                          <node concept="Xl_RD" id="4euogOalEAY" role="3uHU7w">
+                            <property role="Xl_RC" value="/java/" />
+                          </node>
+                          <node concept="1mL9RQ" id="59iRbdSBJXs" role="3uHU7B">
+                            <ref role="1mL9RD" node="59iRbdSB_rf" resolve="baseName" />
+                          </node>
                         </node>
-                        <node concept="3cpWs3" id="4euogOalGhQ" role="3uHU7B">
-                          <node concept="2OqwBi" id="4euogOalGhR" role="3uHU7w">
-                            <node concept="30H73N" id="4euogOalGhS" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="4euogOalGhT" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="4euogOalH8V" role="3uHU7B">
-                            <property role="Xl_RC" value="Activity" />
-                          </node>
+                        <node concept="10M0yZ" id="59iRbdSsJGQ" role="3uHU7w">
+                          <ref role="3cqZAo" to="stu:59iRbdSsEz4" resolve="ONLY_TO_ALF" />
+                          <ref role="1PxDUh" to="stu:59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
                         </node>
                       </node>
                     </node>
@@ -2377,8 +2391,9 @@
               <node concept="30H73N" id="4euogOalETq" role="2Oq$k0" />
               <node concept="2qgKlT" id="4euogOalFAm" role="2OqNvi">
                 <ref role="37wK5l" to="bqjt:1o9RtatNMEN" resolve="containsStereotype" />
-                <node concept="Xl_RD" id="4euogOalFBH" role="37wK5m">
-                  <property role="Xl_RC" value="onlyToAlf" />
+                <node concept="10M0yZ" id="59iRbdSsVtc" role="37wK5m">
+                  <ref role="3cqZAo" to="stu:59iRbdSsEz4" resolve="ONLY_TO_ALF" />
+                  <ref role="1PxDUh" to="stu:59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
                 </node>
               </node>
             </node>
@@ -10272,17 +10287,23 @@
                         <node concept="2OqwBi" id="4euogOalJ5Y" role="33vP2m">
                           <node concept="1iwH7S" id="4euogOalJ5Z" role="2Oq$k0" />
                           <node concept="2fSANN" id="4euogOalJ60" role="2OqNvi">
-                            <node concept="3cpWs3" id="4euogOalJ61" role="2fWi3N">
-                              <node concept="Xl_RD" id="4euogOalJ62" role="3uHU7w">
-                                <property role="Xl_RC" value="/onlyToAlf" />
+                            <node concept="3cpWs3" id="59iRbdSsWDf" role="2fWi3N">
+                              <node concept="3cpWs3" id="4euogOalJ61" role="3uHU7B">
+                                <node concept="2OqwBi" id="4euogOalJ64" role="3uHU7B">
+                                  <node concept="37vLTw" id="4euogOalJ65" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5tK9549gazg" resolve="it" />
+                                  </node>
+                                  <node concept="3TrcHB" id="4euogOalJ66" role="2OqNvi">
+                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="4euogOalJ62" role="3uHU7w">
+                                  <property role="Xl_RC" value="/java/" />
+                                </node>
                               </node>
-                              <node concept="2OqwBi" id="4euogOalJ64" role="3uHU7B">
-                                <node concept="37vLTw" id="4euogOalJ65" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5tK9549gazg" resolve="it" />
-                                </node>
-                                <node concept="3TrcHB" id="4euogOalJ66" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                </node>
+                              <node concept="10M0yZ" id="59iRbdSsWDi" role="3uHU7w">
+                                <ref role="3cqZAo" to="stu:59iRbdSsEz4" resolve="ONLY_TO_ALF" />
+                                <ref role="1PxDUh" to="stu:59iRbdSsEwJ" resolve="AlfiGenerationConstants" />
                               </node>
                             </node>
                           </node>
@@ -10313,7 +10334,7 @@
                   <node concept="2xdQw9" id="5tK9549goaw" role="3cqZAp">
                     <node concept="3cpWs3" id="5tK9549goax" role="9lYJi">
                       <node concept="Xl_RD" id="5tK9549goay" role="3uHU7w">
-                        <property role="Xl_RC" value=" which originally contained @onlyToAlf annotation" />
+                        <property role="Xl_RC" value=" (.java) which originally contained @onlyToAlf annotation" />
                       </node>
                       <node concept="3cpWs3" id="5tK9549goaz" role="3uHU7B">
                         <node concept="Xl_RD" id="5tK9549goa$" role="3uHU7B">
