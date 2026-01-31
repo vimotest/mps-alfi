@@ -4671,6 +4671,33 @@
         <node concept="3F1sOY" id="1KdBIfXMQp0" role="3EZMnx">
           <ref role="1NtTu8" to="28lk:1KdBIfXMcwv" resolve="_multiplicityRange" />
         </node>
+        <node concept="3F0ifn" id="44mdOvgCDFP" role="3EZMnx">
+          <property role="3F0ifm" value="forceOptional" />
+          <node concept="pkWqt" id="44mdOvgCDFQ" role="pqm2j">
+            <node concept="3clFbS" id="44mdOvgCDFR" role="2VODD2">
+              <node concept="3clFbF" id="44mdOvgCDFS" role="3cqZAp">
+                <node concept="2OqwBi" id="44mdOvgCDFT" role="3clFbG">
+                  <node concept="pncrf" id="44mdOvgCDFU" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="44mdOvgCDFV" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:44mdOvgur6j" resolve="forceOptional" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="VSNWy" id="44mdOvgCDFW" role="3F10Kt">
+            <property role="1lJzqX" value="7" />
+          </node>
+          <node concept="VechU" id="44mdOvgCDFX" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+          <node concept="11L4FC" id="44mdOvgCDFY" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2SqB2G" id="44mdOvgCDFZ" role="2SqHTX">
+            <property role="TrG5h" value="ignoreTextGenGen" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="5rdMfD7_aTJ" role="3EZMnx">
           <property role="3F0ifm" value="" />
           <node concept="pkWqt" id="5rdMfD7_b5Q" role="pqm2j">
@@ -6792,7 +6819,7 @@
   </node>
   <node concept="PKFIW" id="US4hClQ9dC">
     <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
-    <property role="TrG5h" value="TypedElementDefinition_EC" />
+    <property role="TrG5h" value="AdHocTypedElementDefinition_EC" />
     <ref role="1XX52x" to="28lk:4D6i1lAC2_1" resolve="AdHocTypedElementDefinition" />
     <node concept="3EZMnI" id="US4hClQ9dE" role="2wV5jI">
       <node concept="3EZMnI" id="US4hClRnXy" role="3EZMnx">
@@ -7808,6 +7835,9 @@
       <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
     </node>
     <node concept="3EZMnI" id="6aXgG51PNhb" role="2wV5jI">
+      <node concept="PMmxH" id="44mdOvgutl6" role="3EZMnx">
+        <ref role="PMmxG" node="44mdOvgutdj" resolve="TypedElementDefinition_Inspector_EC" />
+      </node>
       <node concept="3F0ifn" id="6aXgG51PNhn" role="3EZMnx">
         <property role="3F0ifm" value="is reference:" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -8029,6 +8059,75 @@
     <ref role="1XX52x" to="28lk:20D8auLbZ4Q" resolve="ConditionalTestExpression" />
     <node concept="PMmxH" id="20D8auLc1ZR" role="2wV5jI">
       <ref role="PMmxG" node="20D8auLc02C" resolve="ConditionalTestExpression_EC" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="44mdOvgutdj">
+    <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
+    <property role="TrG5h" value="TypedElementDefinition_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+    <node concept="3EZMnI" id="44mdOvgutl7" role="2wV5jI">
+      <node concept="3EZMnI" id="44mdOvgutli" role="3EZMnx">
+        <node concept="pVoyu" id="44mdOvgutlc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRfu4" id="44mdOvgutlj" role="2iSdaV" />
+        <node concept="3F0ifn" id="44mdOvgutlb" role="3EZMnx">
+          <property role="3F0ifm" value="force optional" />
+          <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        </node>
+        <node concept="3F0A7n" id="44mdOvgutld" role="3EZMnx">
+          <ref role="1NtTu8" to="28lk:44mdOvgur6j" resolve="forceOptional" />
+        </node>
+        <node concept="3F0ifn" id="44mdOvgutle" role="3EZMnx">
+          <property role="3F0ifm" value="(note: only relevant for target languages with explicit optional types combinable with lists, like 'std::optional' in C++)" />
+          <node concept="VechU" id="44mdOvgutlf" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+          <node concept="VSNWy" id="44mdOvgutlg" role="3F10Kt">
+            <property role="1lJzqX" value="8" />
+          </node>
+          <node concept="Vb9p2" id="44mdOvgutlh" role="3F10Kt">
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          </node>
+        </node>
+        <node concept="pkWqt" id="44mdOvgutlk" role="pqm2j">
+          <node concept="3clFbS" id="44mdOvgutll" role="2VODD2">
+            <node concept="3clFbF" id="44mdOvgutNl" role="3cqZAp">
+              <node concept="3fqX7Q" id="44mdOvgCDaI" role="3clFbG">
+                <node concept="2OqwBi" id="44mdOvgCDaK" role="3fr31v">
+                  <node concept="pncrf" id="44mdOvgCDaL" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="44mdOvgCDaM" role="2OqNvi">
+                    <ref role="37wK5l" to="bqjt:37zNn5M6fDT" resolve="isOptional" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="44mdOvgutla" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="44mdOvgASen">
+    <property role="3GE5qa" value="units.features.attributes" />
+    <property role="TrG5h" value="AttributeDefinition_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+    <node concept="1PE4EZ" id="44mdOvgASep" role="1PM95z">
+      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
+    </node>
+    <node concept="PMmxH" id="44mdOvgASeq" role="2wV5jI">
+      <ref role="PMmxG" node="44mdOvgutdj" resolve="TypedElementDefinition_Inspector_EC" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="44mdOvgZZ8c">
+    <property role="3GE5qa" value="units.features.properties.typedElementDefinition" />
+    <property role="TrG5h" value="AdHocTypedElementDefinition_Inspector_EC" />
+    <ref role="1XX52x" to="28lk:4D6i1lAC2_1" resolve="AdHocTypedElementDefinition" />
+    <node concept="PMmxH" id="44mdOvgZZ9M" role="2wV5jI">
+      <ref role="PMmxG" node="44mdOvgutdj" resolve="TypedElementDefinition_Inspector_EC" />
+    </node>
+    <node concept="1PE4EZ" id="44mdOvgZZ9g" role="1PM95z">
+      <ref role="1PE7su" node="64vLWnJifT8" resolve="DocumentedElement_Inspector_EC" />
     </node>
   </node>
 </model>

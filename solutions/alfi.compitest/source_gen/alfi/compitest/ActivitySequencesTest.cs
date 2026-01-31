@@ -89,7 +89,7 @@ public class ActivitySequencesTest
         }
 
         bool? helperVar_shvzm_tb0a_1 = rowAt1.IsMarkedEqual(newRow);
-        if (helperVar_shvzm_tb0a_1 == true)
+        if (helperVar_shvzm_tb0a_1 ?? false == true)
         {
             BasicInputOutput.WriteLine("IsMarkedEqual==true");
         }
@@ -103,7 +103,7 @@ public class ActivitySequencesTest
         {
             rowAt1.marked = false;
             bool? helperVar_shvzm_b0a0zb0a_1 = rowAt1.marked;
-            if (helperVar_shvzm_b0a0zb0a_1 == true)
+            if (helperVar_shvzm_b0a0zb0a_1 ?? false == true)
             {
                 BasicInputOutput.WriteLine("Marked!");
             }
@@ -113,7 +113,7 @@ public class ActivitySequencesTest
             }
             rowAt1.marked = true;
             bool? helperVar_shvzm_d0a0zb0a_1 = rowAt1.marked;
-            if (helperVar_shvzm_d0a0zb0a_1 == true)
+            if (helperVar_shvzm_d0a0zb0a_1 ?? false == true)
             {
                 BasicInputOutput.WriteLine("Marked!");
             }
@@ -145,6 +145,14 @@ public class ActivitySequencesTest
         string helperVar_shvzm_kc0a_1 = sequenceHolder.names.At(0);
         BasicInputOutput.WriteLine(helperVar_shvzm_kc0a_1 ?? "null");
         BasicInputOutput.WriteLine(sequenceHolder.names[0]);
+
+        // optional sequence
+        sequenceHolder.optionalRows = sequenceHolder.rows;
+        if (sequenceHolder.optionalRows != null)
+        {
+            Sequences.SeqRow firstOptionalRow = sequenceHolder.optionalRows[0];
+            BasicInputOutput.WriteLine(firstOptionalRow.marked == true ? "true" : "false");
+        }
 
         // inference test
         var namesInferred = sequenceHolder.names;

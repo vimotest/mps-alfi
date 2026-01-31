@@ -1668,6 +1668,14 @@
       <property role="TrG5h" value="isNonunique" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="44mdOvgur6j" role="1TKVEl">
+      <property role="IQ2nx" value="4689996843532792211" />
+      <property role="TrG5h" value="forceOptional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="44mdOvgur6k" role="lGtFl">
+        <property role="t5JxN" value="non-ALF standard flag, which forces the type to be an optional type target languages where applicable (e.g., 'std::optional&lt;&gt;' in C++)" />
+      </node>
+    </node>
   </node>
   <node concept="PlHQZ" id="1KdBIfXLfIO">
     <property role="EcuMT" value="2021446509811530676" />

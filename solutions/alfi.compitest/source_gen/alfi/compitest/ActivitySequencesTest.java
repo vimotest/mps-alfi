@@ -157,13 +157,20 @@ public class ActivitySequencesTest {
     BasicInputOutput.WriteLine((helperVar_shvzm_kc0a != null ? helperVar_shvzm_kc0a : "null"));
     BasicInputOutput.WriteLine(sequenceHolder.names.get(1 - 1));
 
+    // optional sequence
+    sequenceHolder.optionalRows = sequenceHolder.rows;
+    if (!(Objects.equals(sequenceHolder.optionalRows, null))) {
+      SeqRow firstOptionalRow = sequenceHolder.optionalRows.get(1 - 1);
+      BasicInputOutput.WriteLine((Objects.equals(firstOptionalRow.marked, true) ? "true" : "false"));
+    }
+
     // inference test
     List<String> namesInferred = sequenceHolder.names;
     {
       // was a for loop
-      Iterator<String> forLoop_shvzm_tc0a_mainIterator = namesInferred.iterator();
-      while (forLoop_shvzm_tc0a_mainIterator.hasNext()) {
-        String name = forLoop_shvzm_tc0a_mainIterator.next();
+      Iterator<String> forLoop_shvzm_xc0a_mainIterator = namesInferred.iterator();
+      while (forLoop_shvzm_xc0a_mainIterator.hasNext()) {
+        String name = forLoop_shvzm_xc0a_mainIterator.next();
 
         BasicInputOutput.WriteLine(name);
       }

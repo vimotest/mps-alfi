@@ -171,6 +171,18 @@ activity SequencesTest (  ) {
   WriteLine ( sequenceHolder.names[ 1 ] ?? "" );
 
 
+// optional sequence
+
+  sequenceHolder.optionalRows = sequenceHolder.rows;
+
+  if ( sequenceHolder.optionalRows != null ) {
+    let firstOptionalRow: SeqRow = sequenceHolder.optionalRows[ 1 ];
+
+    WriteLine ( firstOptionalRow.marked == true ? "true" : "false" );
+
+  } 
+
+
 // inference test
 
   let namesInferred: String [] = sequenceHolder.names;

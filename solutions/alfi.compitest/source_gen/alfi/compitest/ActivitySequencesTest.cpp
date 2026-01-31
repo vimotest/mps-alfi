@@ -91,7 +91,7 @@ void SequencesTest()
   }
 
   std::optional<bool> helperVar_shvzm_tb0a_0 = rowAt1.value()->IsMarkedEqual(newRow);
-  if (helperVar_shvzm_tb0a_0 == true)
+  if (helperVar_shvzm_tb0a_0.value() == true)
   {
     alf::library::BasicInputOutput::WriteLine(std::string("IsMarkedEqual==true"));
   }
@@ -105,7 +105,7 @@ void SequencesTest()
   {
     rowAt1.value()->marked = false;
     std::optional<bool> helperVar_shvzm_b0a0zb0a_0 = rowAt1.has_value() ? rowAt1.value()->marked : std::optional<bool>();
-    if (helperVar_shvzm_b0a0zb0a_0 == true)
+    if (helperVar_shvzm_b0a0zb0a_0.value() == true)
     {
       alf::library::BasicInputOutput::WriteLine(std::string("Marked!"));
     }
@@ -115,7 +115,7 @@ void SequencesTest()
     }
     rowAt1.value()->marked = true;
     std::optional<bool> helperVar_shvzm_d0a0zb0a_0 = rowAt1.has_value() ? rowAt1.value()->marked : std::optional<bool>();
-    if (helperVar_shvzm_d0a0zb0a_0 == true)
+    if (helperVar_shvzm_d0a0zb0a_0.value() == true)
     {
       alf::library::BasicInputOutput::WriteLine(std::string("Marked!"));
     }
@@ -147,6 +147,14 @@ void SequencesTest()
   std::optional<std::string> helperVar_shvzm_kc0a_0 = alf::library::primitivebehaviors::CollectionFunctions::at(sequenceHolder->names, 0);
   alf::library::BasicInputOutput::WriteLine(helperVar_shvzm_kc0a_0.value_or(std::string("null")));
   alf::library::BasicInputOutput::WriteLine(sequenceHolder->names.at(0));
+
+  // optional sequence
+  sequenceHolder->optionalRows = sequenceHolder->rows;
+  if (sequenceHolder->optionalRows.has_value())
+  {
+    std::shared_ptr<Sequences::SeqRow> firstOptionalRow = sequenceHolder->optionalRows.value().at(0);
+    alf::library::BasicInputOutput::WriteLine(firstOptionalRow->marked == true ? std::string("true") : std::string("false"));
+  }
 
   // inference test
   auto& namesInferred = sequenceHolder->names;
