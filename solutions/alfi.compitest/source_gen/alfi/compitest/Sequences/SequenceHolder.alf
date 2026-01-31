@@ -8,6 +8,8 @@ class SequenceHolder {
   
   public rows : SeqRow [ * ]sequence ;
   
+  public optionalRows : SeqRow [ * ] = new SeqRow [] { new SeqRow ( true ) };
+  
   
   public markAt (   in rowIndex: Integer  ) {
     this.rows->at ( rowIndex ).marked = true;

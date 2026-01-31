@@ -4,14 +4,16 @@ package alfi.compitest.Sequences;
 
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Arrays;
 
 public class SequenceHolder {
   public List<String> names = new LinkedList<>();
   public List<SeqRow> rows = new LinkedList<>();
+  public List<SeqRow> optionalRows = Arrays.asList(new SeqRow(true));
 
   public void markAt(Integer rowIndex) {
-    SeqRow helperVar_ekeyye_a0d0 = this.rows.get(rowIndex - 1);
-    helperVar_ekeyye_a0d0.marked = true;
+    SeqRow helperVar_ekeyye_a0e0 = this.rows.get(rowIndex - 1);
+    helperVar_ekeyye_a0e0.marked = true;
   }
 
   public SeqRow optionalSpecialRow;
