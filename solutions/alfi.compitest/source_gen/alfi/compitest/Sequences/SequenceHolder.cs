@@ -15,6 +15,10 @@ namespace Sequences
 
         public System.Collections.Generic.List<Sequences.SeqRow> optionalRows = new System.Collections.Generic.List<Sequences.SeqRow>();
 
+        /*
+
+      Marks row at rowIndex
+     */
         public virtual void markAt(int rowIndex)
         {
             Sequences.SeqRow helperVar_ekeyye_a0e0_1 = this.rows.At(rowIndex - 1);

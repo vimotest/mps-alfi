@@ -10,7 +10,8 @@ class SequenceHolder {
   
   public optionalRows : SeqRow [ * ]  ;
   
-  
+  /**   Marks row at rowIndex */
+
   public markAt (   in rowIndex: Integer  ) {
     this.rows->at ( rowIndex ).marked = true;
 

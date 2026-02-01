@@ -1992,7 +1992,7 @@
       <property role="IQ2ns" value="3331415707833704702" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="comment" />
-      <ref role="20lvS9" node="2SMO68r_3QK" resolve="EndOfLineComment" />
+      <ref role="20lvS9" node="2SMO68rCwpT" resolve="LexicalComment" />
     </node>
   </node>
   <node concept="PlHQZ" id="2SV$eY8gJiu">
