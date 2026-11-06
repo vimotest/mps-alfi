@@ -8369,11 +8369,11 @@
           <node concept="zF7EM" id="FQdpsR33_A" role="2YDbI4">
             <property role="TrG5h" value="j" />
             <node concept="3Uf9Pm" id="FQdpsR33_N" role="1qY_RL">
-              <node concept="1VUwCF" id="FQdpsR33_T" role="3Ufby2">
-                <ref role="2aT8gA" node="FQdpsR33_A" resolve="j" />
+              <node concept="3UcWq5" id="FQdpsR33_T" role="3Ufby2">
+                <ref role="zF7P4" node="FQdpsR33_A" resolve="j" />
                 <node concept="1ZhdrF" id="FQdpsRbZDB" role="lGtFl">
-                  <property role="2qtEX8" value="memberDeclaration" />
-                  <property role="P3scX" value="d74e25c9-4d91-43b6-bad7-d18af7bf6674/6531566641162929002/7783118190387115239" />
+                  <property role="2qtEX8" value="variableDeclaration" />
+                  <property role="P3scX" value="d74e25c9-4d91-43b6-bad7-d18af7bf6674/6843536562191001275/7769220957754731528" />
                   <node concept="3$xsQk" id="FQdpsRbZDE" role="3$ytzL">
                     <node concept="3clFbS" id="FQdpsRbZDF" role="2VODD2">
                       <node concept="3cpWs8" id="RZKkt7d1KK" role="3cqZAp">
@@ -8494,7 +8494,7 @@
                           <node concept="2xdQw9" id="RZKkt7d1Lt" role="3cqZAp">
                             <property role="2xdLsb" value="gZ5fh_4/error" />
                             <node concept="Xl_RD" id="RZKkt7d1Lu" role="9lYJi">
-                              <property role="Xl_RC" value="While reducing Name expression: Target does not map to a IReferencableMemberDeclaration" />
+                              <property role="Xl_RC" value="While reducing Name expression: Target does not map to a IReferencableVariableDeclaration" />
                             </node>
                           </node>
                           <node concept="3cpWs6" id="RZKkt7d1Lv" role="3cqZAp">
@@ -8508,7 +8508,7 @@
                             </node>
                             <node concept="1mIQ4w" id="RZKkt7d1L$" role="2OqNvi">
                               <node concept="chp4Y" id="RZKkt7d1L_" role="cj9EA">
-                                <ref role="cht4Q" to="80bi:1HkqSaCLgAV" resolve="IReferencableMemberDeclaration" />
+                                <ref role="cht4Q" to="80bi:6JhOkL8vqKa" resolve="IReferencableVariableDeclaration" />
                               </node>
                             </node>
                           </node>
@@ -8521,7 +8521,7 @@
                             <ref role="3cqZAo" node="RZKkt7d1KL" resolve="targetNode" />
                           </node>
                           <node concept="chp4Y" id="RZKkt7d1LD" role="3oSUPX">
-                            <ref role="cht4Q" to="80bi:1HkqSaCLgAV" resolve="IReferencableMemberDeclaration" />
+                            <ref role="cht4Q" to="80bi:6JhOkL8vqKa" resolve="IReferencableVariableDeclaration" />
                           </node>
                         </node>
                       </node>
