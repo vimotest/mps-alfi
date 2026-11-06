@@ -1,5 +1,3 @@
-/* This file is downloaded from https://github.com/vimotest/mps-gradle-scripts/raw/main/gradle/run-mps-ant.gradle */
-
 /*
   Several Gradle tasks which make calls to ANT.
 
@@ -16,26 +14,33 @@ ext.antHome = "$mpsHome/lib/ant"
 def antLauncherJarPath = "$antHome/lib/ant-launcher.jar"
 def mpsUtilJarPath = getConcatenatedMpsUtilJarPaths()
 
+def getAntBuildFileArgs() {
+    if (project.hasProperty('antBuildFile')) {
+        return ["-buildfile", project.property('antBuildFile')]
+    }
+    return []
+}
+
 task mpsAntGenerate(type: Exec) {
     group 'mps-ant-wrapper'
-    commandLine "$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath, "generate"
+    commandLine(["$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath] + getAntBuildFileArgs() + ["generate"])
 }
 
 task mpsAntBuild(type: Exec) {
     group 'mps-ant-wrapper'
-    commandLine "$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath, "build"
+    commandLine(["$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath] + getAntBuildFileArgs() + ["build"])
     mustRunAfter mpsAntGenerate
 }
 
 task mpsAntCheck(type: Exec) {
     group 'mps-ant-wrapper'
-    commandLine "$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath, "check"
+    commandLine(["$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath] + getAntBuildFileArgs() + ["check"])
 }
 
 task mpsAntCommand(type: Exec) {
     group 'mps-ant-wrapper'
     description 'Run <antCmd> using ant. Example: gradlew mpsAntCommand -PantCmd=clean'
-    commandLine "$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath, findProperty('antCmd') ?: '-p'
+    commandLine(["$javaHome/bin/java", "-classpath", antLauncherJarPath, "-Dmps_home=$mpsHome", "-Dproject_home=$projectDir", "org.apache.tools.ant.launch.Launcher", "-cp", mpsUtilJarPath] + getAntBuildFileArgs() + [findProperty('antCmd') ?: '-p'])
 }
 
 task parseTestReportAfterAntCheck {

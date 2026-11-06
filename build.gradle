@@ -1,4 +1,4 @@
-ext.mpsVersion = "2025.3"
+ext.mpsVersion = "2026.1"
 ext.languageName = "alfi"
 
 ext.alfVersion = "1.1.0k"
@@ -6,10 +6,14 @@ ext.alfVersion = "1.1.0k"
 ext.mpsPlugins = [
 ]
 
+def textGenGenPluginUrl = project.findProperty("textGenGenPluginUrl") ?: "https://github.com/Fumapps/textGenGen/releases/download/2026.1.0/TextGenGen.zip"
+def cppBaseLanguagePluginUrl = project.findProperty("cppBaseLanguagePluginUrl") ?: "https://github.com/Fumapps/CppBaseLanguage/releases/download/2026.1.0/CppBaseLanguage.zip"
+def csBaseLanguagePluginUrl = project.findProperty("csBaseLanguagePluginUrl") ?: "https://github.com/Fumapps/CsBaseLanguage/releases/download/2026.1.0/CsBaseLanguage.zip"
+
 ext.customMpsPlugins = [
-    "TextGenGen-Fum": "https://github.com/Fumapps/textGenGen/releases/download/2025.3.0/TextGenGen.zip",
-    "CppBaseLanguage": "https://github.com/Fumapps/CppBaseLanguage/releases/download/2025.3.0/CppBaseLanguage.zip",
-    "CsBaseLanguage": "https://github.com/Fumapps/CsBaseLanguage/releases/download/2025.3.1/CsBaseLanguage.zip"
+    "TextGenGen-Fum": textGenGenPluginUrl,
+    "CppBaseLanguage": cppBaseLanguagePluginUrl,
+    "CsBaseLanguage": csBaseLanguagePluginUrl
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
