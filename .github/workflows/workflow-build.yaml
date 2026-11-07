@@ -7,7 +7,7 @@ env:
   PROJECT_NAME: "alfi"
   LANGUAGE_NAME: "alfi"
   DOTNET_VERSION: '9.0.x'
-  JAVA_VERSION: '25'
+  JAVA_VERSION: '21'
   CMAKE_VERSION: '3.17.x'
 
 jobs:
@@ -97,7 +97,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up JDK
+      - name: Set up JDK 25 for compitest bytecode execution
+        uses: actions/setup-java@v3
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+
+      - name: Set up JDK for Gradle
         uses: actions/setup-java@v3
         with:
           java-version: ${{ env.JAVA_VERSION }}
@@ -125,6 +131,8 @@ jobs:
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests
+        env:
+          COMPITEST_JAVA: ${{ env.JAVA_HOME_25_X64 }}/bin/java
 
       - name: Upload test results
         if: always()

@@ -24,8 +24,9 @@ def standardModelLibrary = "${ARTIFACTS_ALFI_DIR}/alfi/languages/alfi-modules/al
 def testSuiteJar = "${ARTIFACTS_ALFI_DIR}/tests/alfi.compitest.jar"
 def testSuiteSrcJar = "${ARTIFACTS_ALFI_DIR}/tests/alfi.compitest-src.jar"
 
+def javaCmd = System.getenv("COMPITEST_JAVA") ?: (System.getenv("JAVA_HOME_25_X64") ? "${System.getenv('JAVA_HOME_25_X64')}/bin/java" : "java")
 def executorToCmd = [
-        "AlfiJava": ["java", "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
+        "AlfiJava": [javaCmd, "-cp", "$standardModelLibrary:$testSuiteJar", "alfi.compitest.Activity%TESTCASE%"].join(" "),
         "AlfiAlf": ["bash", "${ALFI_REPO_ROOT}/alf.sh", "-m", "$COMPITEST_WORK_DIR/src/alfi/compitest", "%TESTCASE%"].join(" "),
         "AlfiCpp": ["${ARTIFACTS_ALFI_DIR}/tests/compitest-cpp-binaries/alfi.compitest.Activity%TESTCASE%"].join(" "),
         "AlfiCs": ["dotnet", "${ARTIFACTS_ALFI_DIR}/tests/compitest-cs-binaries/Activity%TESTCASE%.dll"].join(" ")
