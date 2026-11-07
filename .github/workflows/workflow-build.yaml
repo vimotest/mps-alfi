@@ -7,7 +7,7 @@ env:
   PROJECT_NAME: "alfi"
   LANGUAGE_NAME: "alfi"
   DOTNET_VERSION: '9.0.x'
-  JAVA_VERSION: '21'
+  JAVA_VERSION: '25'
   CMAKE_VERSION: '3.17.x'
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: ${{ env.JAVA_VERSION }}
-          distribution: 'adopt'
+          distribution: 'temurin'
 
       # Install Xvfb for avoiding X11 window server AWTError when running tests (https://arbitrary-but-fixed.net/2022/01/21/headless-gui-github-actions.html)
       - name: Setup xvfb for X11 window server
@@ -101,7 +101,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: ${{ env.JAVA_VERSION }}
-          distribution: 'adopt'
+          distribution: 'temurin'
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
