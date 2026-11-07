@@ -23,6 +23,9 @@
     <import index="mwat" ref="r:86c02d28-9bd7-4eb6-bfc1-57f556dae16e(alfi.PrimitiveMapping.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -119,7 +122,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -185,13 +187,13 @@
               <node concept="37vLTw" id="1AHeRpjYxpd" role="2Oq$k0">
                 <ref role="3cqZAo" node="1AHeRpjYxoi" resolve="member" />
               </node>
-              <node concept="2qgKlT" id="1AHeRpjYxpe" role="2OqNvi">
+              <node concept="3zqWPK" id="5Y8Qx$drPl" role="2OqNvi">
                 <ref role="37wK5l" to="bqjt:2jVOGaCXNbv" resolve="containsStereotype" />
-                <node concept="2OqwBi" id="1AHeRpjYxpf" role="37wK5m">
-                  <node concept="1XH99k" id="1AHeRpjYxpg" role="2Oq$k0">
+                <node concept="2OqwBi" id="5Y8Qx$drPn" role="37wK5m">
+                  <node concept="1XH99k" id="5Y8Qx$drPo" role="2Oq$k0">
                     <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
                   </node>
-                  <node concept="2ViDtV" id="1AHeRpjYxph" role="2OqNvi">
+                  <node concept="2ViDtV" id="5Y8Qx$drPp" role="2OqNvi">
                     <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
                   </node>
                 </node>
@@ -265,7 +267,7 @@
                                         <node concept="1xIGOp" id="2X39vz36ie6" role="1xVPHs" />
                                       </node>
                                     </node>
-                                    <node concept="2qgKlT" id="6sZBH0sgbED" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5Y8Qx$drPq" role="2OqNvi">
                                       <ref role="37wK5l" to="mwat:6sZBH0sfYXh" resolve="getAllMappings" />
                                     </node>
                                   </node>
@@ -373,7 +375,7 @@
                   <node concept="1xIGOp" id="2X39vz36iAf" role="1xVPHs" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="2X39vz36aKO" role="2OqNvi">
+              <node concept="3zqWPK" id="5Y8Qx$drPs" role="2OqNvi">
                 <ref role="37wK5l" to="mwat:2X39vz35Z7a" resolve="getTargetScope" />
               </node>
             </node>

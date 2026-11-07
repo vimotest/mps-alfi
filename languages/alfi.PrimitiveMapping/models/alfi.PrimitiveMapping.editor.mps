@@ -13,6 +13,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -85,9 +88,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
   </registry>
   <node concept="24kQdi" id="2X39vz2X4Pa">
     <ref role="1XX52x" to="sk9k:2X39vz2X4b5" resolve="MappingRule" />
@@ -104,7 +104,7 @@
                 <node concept="3clFbF" id="2X39vz2XJZY" role="3cqZAp">
                   <node concept="2OqwBi" id="2X39vz2XKeZ" role="3clFbG">
                     <node concept="1NM5Ph" id="2X39vz2XJZX" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2X39vz2XKwX" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Y8Qx$drPu" role="2OqNvi">
                       <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                     </node>
                   </node>
@@ -126,7 +126,7 @@
                 <node concept="3clFbF" id="2X39vz3a_fD" role="3cqZAp">
                   <node concept="2OqwBi" id="2X39vz3a_s2" role="3clFbG">
                     <node concept="1NM5Ph" id="2X39vz3a_fC" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2X39vz3a_Ra" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Y8Qx$drPw" role="2OqNvi">
                       <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                     </node>
                   </node>

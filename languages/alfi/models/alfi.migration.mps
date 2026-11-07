@@ -21,6 +21,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -142,7 +145,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -359,7 +361,7 @@
                                               <node concept="Jnkvi" id="3$LKQbDXaFl" role="2Oq$k0">
                                                 <ref role="1M0zk5" node="3$LKQbDUaIj" resolve="referenceMacro" />
                                               </node>
-                                              <node concept="2qgKlT" id="3$LKQbDXk4J" role="2OqNvi">
+                                              <node concept="3zqWPK" id="5Y8Qx$drMj" role="2OqNvi">
                                                 <ref role="37wK5l" to="tpcu:1avfQ4BEFo6" resolve="getLink" />
                                               </node>
                                             </node>
@@ -374,9 +376,9 @@
                                                 <node concept="Jnkvi" id="3$LKQbDXyY8" role="2Oq$k0">
                                                   <ref role="1M0zk5" node="3$LKQbDUaIj" resolve="referenceMacro" />
                                                 </node>
-                                                <node concept="2qgKlT" id="3$LKQbDXDE1" role="2OqNvi">
+                                                <node concept="3zqWPK" id="5Y8Qx$drMl" role="2OqNvi">
                                                   <ref role="37wK5l" to="tpcu:6Gg5KlvuxxF" resolve="setLink" />
-                                                  <node concept="359W_D" id="3$LKQbDXFEs" role="37wK5m">
+                                                  <node concept="359W_D" id="5Y8Qx$drMn" role="37wK5m">
                                                     <ref role="359W_E" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                                                     <ref role="359W_F" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                                                   </node>
