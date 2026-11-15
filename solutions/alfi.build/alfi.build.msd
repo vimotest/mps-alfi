@@ -27,6 +27,7 @@
     <module reference="4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)" version="0" />
     <module reference="e0dff4ef-b148-4138-9688-d6ea326721c6(CsStdLibrary.build)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
     <module reference="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="6bffa3b0-556a-4592-8452-60ab12ac8190(jetbrains.mps.LangDoc.build)" version="0" />
